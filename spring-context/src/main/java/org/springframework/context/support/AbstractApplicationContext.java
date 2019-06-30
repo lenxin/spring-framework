@@ -515,40 +515,52 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	public void refresh() throws BeansException, IllegalStateException {
 		synchronized (this.startupShutdownMonitor) {
 			// Prepare this context for refreshing.
+			/*为刷新准备新的context*/
 			prepareRefresh();
 
 			// Tell the subclass to refresh the internal bean factory.
+			/*刷新所有BeanFactory子容器*/
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			// Prepare the bean factory for use in this context.
+			/*创建BeanFactory*/
 			prepareBeanFactory(beanFactory);
 
 			try {
 				// Allows post-processing of the bean factory in context subclasses.
+				/*注册实现了BeanPostProcessor接口的Bean*/
 				postProcessBeanFactory(beanFactory);
 
 				// Invoke factory processors registered as beans in the context.
+				/*初始化和执行BeanFactoryPostProcessor beans*/
 				invokeBeanFactoryPostProcessors(beanFactory);
 
 				// Register bean processors that intercept bean creation.
+				/*初始化和执行BeanPostProcessor beans*/
 				registerBeanPostProcessors(beanFactory);
 
 				// Initialize message source for this context.
+				/*初始化MessageSource*/
 				initMessageSource();
 
 				// Initialize event multicaster for this context.
+				/*初始化 event multicaster*/
 				initApplicationEventMulticaster();
 
 				// Initialize other special beans in specific context subclasses.
+				/*刷新由子类实现的方法*/
 				onRefresh();
 
 				// Check for listener beans and register them.
+				/*检查注册事件*/
 				registerListeners();
 
 				// Instantiate all remaining (non-lazy-init) singletons.
+				/*初始化non-lazy-init单例bean*/
 				finishBeanFactoryInitialization(beanFactory);
 
 				// Last step: publish corresponding event.
+				/*执行LifecycleProcessor.onRefresh()和ContextRefreshedEvent事件*/
 				finishRefresh();
 			}
 
@@ -559,6 +571,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				}
 
 				// Destroy already created singletons to avoid dangling resources.
+				/*销毁beans*/
 				destroyBeans();
 
 				// Reset 'active' flag.
