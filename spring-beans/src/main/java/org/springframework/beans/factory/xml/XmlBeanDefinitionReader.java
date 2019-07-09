@@ -515,7 +515,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 		/*在实例化BeanDefinitionReader时候会将BeanDefinitionRegistry传入，默认使用继承自DefaultListableBeanFactory的子类*/
 		/*记录统计前BeanDefinition的加载个数*/
 		int countBefore = getRegistry().getBeanDefinitionCount();
-		/*加载及注册Bean*/
+		/*加载及注册Bean，应用了单一职责原则，将逻辑处理委托给单一BeanDefinitionDocumentReader类进行处理*/
 		documentReader.registerBeanDefinitions(doc, createReaderContext(resource));
 		/*记录本次加载的BeanDefinition的个数*/
 		return getRegistry().getBeanDefinitionCount() - countBefore;

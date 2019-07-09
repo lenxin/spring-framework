@@ -118,6 +118,7 @@ public abstract class StringUtils {
 	 * @see #hasLength(CharSequence)
 	 * @see #hasText(String)
 	 */
+	/*判断字符串不为空*/
 	public static boolean hasLength(@Nullable String str) {
 		return (str != null && !str.isEmpty());
 	}
@@ -153,6 +154,7 @@ public abstract class StringUtils {
 	 * length is greater than 0, and it does not contain whitespace only
 	 * @see #hasText(CharSequence)
 	 */
+	/*判断字符串是否包含非空的元素*/
 	public static boolean hasText(@Nullable String str) {
 		return (str != null && !str.isEmpty() && containsText(str));
 	}
