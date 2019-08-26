@@ -128,6 +128,7 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 		BeanDefinitionParserDelegate parent = this.delegate;
 		this.delegate = createDelegate(getReaderContext(), root, parent);
 
+		/*根元素的名称空间为空或者等于http://www.springframework.org/schema/beans时*/
 		if (this.delegate.isDefaultNamespace(root)) {
 			/*处理profile属性*/
 			/**
