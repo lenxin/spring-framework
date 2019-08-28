@@ -1347,6 +1347,7 @@ public class BeanDefinitionParserDelegate {
 		return TRUE_VALUE.equals(value);
 	}
 
+	/*spring的XML配置里面有两大类Bean声明方式，自定义：<tx:annotation-driven/>*/
 	@Nullable
 	public BeanDefinition parseCustomElement(Element ele) {
 		return parseCustomElement(ele, null);

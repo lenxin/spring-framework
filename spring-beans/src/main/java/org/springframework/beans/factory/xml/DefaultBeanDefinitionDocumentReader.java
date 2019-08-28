@@ -203,6 +203,7 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 		}
 	}
 
+	/*spring的XML配置里面有两大类Bean声明方式，默认：<bean id="test" class="test.TestBean"/>*/
 	private void parseDefaultElement(Element ele, BeanDefinitionParserDelegate delegate) {
 		if (delegate.nodeNameEquals(ele, IMPORT_ELEMENT)) {
 			importBeanDefinitionResource(ele);
@@ -320,11 +321,17 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 * and registering it with the registry.
 	 */
 	protected void processBeanDefinition(Element ele, BeanDefinitionParserDelegate delegate) {
+		/*
+		 * 委托BeanDefinitionParserDelegate的parseBeanDefinitionElement()方法进行元素解析，
+		 * 返回BeanDefinitionHolder类型的实例bdHolder，bdHolder实例已经包含id、name、class、alias等属性
+		 */
 		BeanDefinitionHolder bdHolder = delegate.parseBeanDefinitionElement(ele);
 		if (bdHolder != null) {
+			/*若存在默认标签的子节点下再有自定义属性，需再次对自定义标签进行解析*/
 			bdHolder = delegate.decorateBeanDefinitionIfRequired(ele, bdHolder);
 			try {
 				// Register the final decorated instance.
+				/*委托BeanDefinitionReaderUtils的registerBeanDefinition()方法进行注册*/
 				BeanDefinitionReaderUtils.registerBeanDefinition(bdHolder, getReaderContext().getRegistry());
 			}
 			catch (BeanDefinitionStoreException ex) {
@@ -332,6 +339,7 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 						bdHolder.getBeanName() + "'", ele, ex);
 			}
 			// Send registration event.
+			/*发送响应事件，通知相关的监听器，这个bean已经加载完成*/
 			getReaderContext().fireComponentRegistered(new BeanComponentDefinition(bdHolder));
 		}
 	}
