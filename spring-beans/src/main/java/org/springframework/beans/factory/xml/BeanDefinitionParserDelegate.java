@@ -237,6 +237,8 @@ public class BeanDefinitionParserDelegate {
 	 * Stores all used bean names so we can enforce uniqueness on a per
 	 * beans-element basis. Duplicate bean ids/names may not exist within the
 	 * same level of beans element nesting, but may be duplicated across levels.
+	 * 存储所有使用的bean名称，这样我们就可以在每个bean元素的基础上强制惟一性。
+	 * 重复的bean ids/名称可能不存在于bean元素嵌套的同一级别中，但是可以跨级别复制。
 	 */
 	private final Set<String> usedNames = new HashSet<>();
 
@@ -438,6 +440,7 @@ public class BeanDefinitionParserDelegate {
 		if (beanDefinition != null) {
 			if (!StringUtils.hasText(beanName)) {
 				try {
+					/*如果beanName不存在，则根据spring中提供的命名规则为当前bean生成对应的beanName*/
 					if (containingBean != null) {
 						beanName = BeanDefinitionReaderUtils.generateBeanName(
 								beanDefinition, this.readerContext.getRegistry(), true);
@@ -474,6 +477,7 @@ public class BeanDefinitionParserDelegate {
 	/**
 	 * Validate that the specified bean name and aliases have not been used already
 	 * within the current level of beans element nesting.
+	 * 验证指定的bean名称和别名在当前bean元素嵌套级别中尚未使用。
 	 */
 	protected void checkNameUniqueness(String beanName, List<String> aliases, Element beanElement) {
 		String foundName = null;
@@ -484,6 +488,7 @@ public class BeanDefinitionParserDelegate {
 		if (foundName == null) {
 			foundName = CollectionUtils.findFirstMatch(this.usedNames, aliases);
 		}
+		/*如果发现bean名称或者别名已经被使用，上报问题*/
 		if (foundName != null) {
 			error("Bean name '" + foundName + "' is already used in this <beans> element", beanElement);
 		}
@@ -503,17 +508,21 @@ public class BeanDefinitionParserDelegate {
 		this.parseState.push(new BeanEntry(beanName));
 
 		String className = null;
+		/*解析class属性*/
 		if (ele.hasAttribute(CLASS_ATTRIBUTE)) {
 			className = ele.getAttribute(CLASS_ATTRIBUTE).trim();
 		}
 		String parent = null;
+		/*解析parent属性*/
 		if (ele.hasAttribute(PARENT_ATTRIBUTE)) {
 			parent = ele.getAttribute(PARENT_ATTRIBUTE);
 		}
 
 		try {
+			/*创建用于承载属性的AbstractBeanDefinition类型的GenericBeanDefinition*/
 			AbstractBeanDefinition bd = createBeanDefinition(className, parent);
 
+			/*硬编码解析默认bean的各种属性*/
 			parseBeanDefinitionAttributes(ele, beanName, containingBean, bd);
 			bd.setDescription(DomUtils.getChildElementValueByTagName(ele, DESCRIPTION_ELEMENT));
 
