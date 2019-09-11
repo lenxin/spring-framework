@@ -436,6 +436,7 @@ public class BeanDefinitionParserDelegate {
 			checkNameUniqueness(beanName, aliases, ele);
 		}
 
+		/*进一步解析其他所有属性并统一封装至GenericBeanDefinition类型的实例中*/
 		AbstractBeanDefinition beanDefinition = parseBeanDefinitionElement(ele, beanName, containingBean);
 		if (beanDefinition != null) {
 			if (!StringUtils.hasText(beanName)) {
@@ -524,14 +525,21 @@ public class BeanDefinitionParserDelegate {
 
 			/*硬编码解析默认bean的各种属性*/
 			parseBeanDefinitionAttributes(ele, beanName, containingBean, bd);
+			/*提取description*/
 			bd.setDescription(DomUtils.getChildElementValueByTagName(ele, DESCRIPTION_ELEMENT));
 
+			/*解析元数据*/
 			parseMetaElements(ele, bd);
+			/*解析lookup-method属性*/
 			parseLookupOverrideSubElements(ele, bd.getMethodOverrides());
+			/*解析replaced-method属性*/
 			parseReplacedMethodSubElements(ele, bd.getMethodOverrides());
 
+			/*解析构造函数参数*/
 			parseConstructorArgElements(ele, bd);
+			/*解析property属性*/
 			parsePropertyElements(ele, bd);
+			/*解析qualifier子元素*/
 			parseQualifierElements(ele, bd);
 
 			bd.setResource(this.readerContext.getResource());
