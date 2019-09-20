@@ -683,12 +683,21 @@ public class BeanDefinitionParserDelegate {
 
 	/**
 	 * Parse constructor-arg sub-elements of the given bean element.
+	 * <bean id="helloBean" class="com.HelloBean">
+	 *     <constructor-arg index="0">
+	 *         <value>value1</value>
+	 *     </constructor-arg>
+	 *     <constructor-arg index="1">
+	 * 	       <value>value2</value>
+	 * 	   </constructor-arg>
+	 * </bean>
 	 */
 	public void parseConstructorArgElements(Element beanEle, BeanDefinition bd) {
 		NodeList nl = beanEle.getChildNodes();
 		for (int i = 0; i < nl.getLength(); i++) {
 			Node node = nl.item(i);
 			if (isCandidateElement(node) && nodeNameEquals(node, CONSTRUCTOR_ARG_ELEMENT)) {
+				/*解析constructor-arg*/
 				parseConstructorArgElement((Element) node, bd);
 			}
 		}
