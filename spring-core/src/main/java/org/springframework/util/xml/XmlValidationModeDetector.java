@@ -82,12 +82,13 @@ public class XmlValidationModeDetector {
 	/**
 	 * Detect the validation mode for the XML document in the supplied {@link InputStream}.
 	 * Note that the supplied {@link InputStream} is closed by this method before returning.
+	 * 检测XML资源的验证模式
+	 * 判断在XML开始标记之前是否包含DOCTYPE，包含就是DTD，否则就是XSD
 	 * @param inputStream the InputStream to parse
 	 * @throws IOException in case of I/O failure
 	 * @see #VALIDATION_DTD
 	 * @see #VALIDATION_XSD
 	 */
-	/*检测XML资源的验证模式*/
 	public int detectValidationMode(InputStream inputStream) throws IOException {
 		// Peek into the file to look for DOCTYPE.
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
@@ -126,8 +127,8 @@ public class XmlValidationModeDetector {
 
 	/**
 	 * Does the content contain the DTD DOCTYPE declaration?
+	 * 内容是否包含DTD DOCTYPE声明?
 	 */
-	/*内容是否包含DTD DOCTYPE声明?*/
 	private boolean hasDoctype(String content) {
 		return content.contains(DOCTYPE);
 	}
@@ -136,11 +137,14 @@ public class XmlValidationModeDetector {
 	 * Does the supplied content contain an XML opening tag. If the parse state is currently
 	 * in an XML comment then this method always returns false. It is expected that all comment
 	 * tokens will have consumed for the supplied content before passing the remainder to this method.
+	 * 所提供的内容是否包含XML开始标记。
 	 */
 	private boolean hasOpeningTag(String content) {
+		/*如果所提供的内容在注释范围内，则不包含XML开始标记，返回false*/
 		if (this.inComment) {
 			return false;
 		}
+		/*所提供的内容中包含<，且<后的下一个元素是字母*/
 		int openTagIndex = content.indexOf('<');
 		return (openTagIndex > -1 && (content.length() > openTagIndex + 1) &&
 				Character.isLetter(content.charAt(openTagIndex + 1)));
