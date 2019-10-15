@@ -844,6 +844,7 @@ public class BeanDefinitionParserDelegate {
 	 * Parse a property element.
 	 */
 	public void parsePropertyElement(Element ele, BeanDefinition bd) {
+		/*获取配置元素的name的值*/
 		String propertyName = ele.getAttribute(NAME_ATTRIBUTE);
 		if (!StringUtils.hasLength(propertyName)) {
 			error("Tag 'property' must have a 'name' attribute", ele);
@@ -851,6 +852,7 @@ public class BeanDefinitionParserDelegate {
 		}
 		this.parseState.push(new PropertyEntry(propertyName));
 		try {
+			/*不允许多次对同一属性配置*/
 			if (bd.getPropertyValues().contains(propertyName)) {
 				error("Multiple 'property' definitions for property '" + propertyName + "'", ele);
 				return;
