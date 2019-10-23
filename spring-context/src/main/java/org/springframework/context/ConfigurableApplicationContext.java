@@ -90,6 +90,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	/**
 	 * Set the unique id of this application context.
 	 * @since 3.0
+	 * 设置应用程序上下文唯一的id
 	 */
 	void setId(String id);
 
@@ -100,6 +101,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * for example in case of WebApplicationContext setup.
 	 * @param parent the parent context
 	 * @see org.springframework.web.context.ConfigurableWebApplicationContext
+	 * 设置应用程序上下文的父级
 	 */
 	void setParent(@Nullable ApplicationContext parent);
 
@@ -107,6 +109,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * Set the {@code Environment} for this application context.
 	 * @param environment the new environment
 	 * @since 3.1
+	 * 设置应用程序上下文的环境
 	 */
 	void setEnvironment(ConfigurableEnvironment environment);
 
@@ -114,6 +117,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * Return the {@code Environment} for this application context in configurable
 	 * form, allowing for further customization.
 	 * @since 3.1
+	 * 获取应用程序上下文的环境
 	 */
 	@Override
 	ConfigurableEnvironment getEnvironment();
@@ -123,6 +127,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * bean factory of this application context on refresh, before any of the
 	 * bean definitions get evaluated. To be invoked during context configuration.
 	 * @param postProcessor the factory processor to register
+	 * 添加一个新的BeanFactoryPostProcessor
 	 */
 	void addBeanFactoryPostProcessor(BeanFactoryPostProcessor postProcessor);
 
@@ -135,6 +140,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * @param listener the ApplicationListener to register
 	 * @see org.springframework.context.event.ContextRefreshedEvent
 	 * @see org.springframework.context.event.ContextClosedEvent
+	 * 添加应用程序监听器
 	 */
 	void addApplicationListener(ApplicationListener<?> listener);
 
@@ -144,6 +150,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * <p>Any such resolver will be invoked ahead of this context's standard
 	 * resolution rules. It may therefore also override any default rules.
 	 * @since 4.3
+	 * 添加协议解析器，可能会覆盖默认的规则
 	 */
 	void addProtocolResolver(ProtocolResolver resolver);
 
@@ -156,6 +163,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * @throws BeansException if the bean factory could not be initialized
 	 * @throws IllegalStateException if already initialized and multiple refresh
 	 * attempts are not supported
+	 * 加载或者刷新配置
 	 */
 	void refresh() throws BeansException, IllegalStateException;
 
@@ -166,6 +174,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * (at max) will be registered for each context instance.
 	 * @see java.lang.Runtime#addShutdownHook
 	 * @see #close()
+	 * 向JVM runtime注册一个关闭钩子，JVM关闭时关闭这个上下文
 	 */
 	void registerShutdownHook();
 
@@ -187,6 +196,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * @see #refresh()
 	 * @see #close()
 	 * @see #getBeanFactory()
+	 * 应用程序上下文是否是激活状态
 	 */
 	boolean isActive();
 
@@ -208,6 +218,7 @@ public interface ConfigurableApplicationContext extends ApplicationContext, Life
 	 * @see #refresh()
 	 * @see #close()
 	 * @see #addBeanFactoryPostProcessor
+	 * 获取应用上下文内部的bean factory
 	 */
 	ConfigurableListableBeanFactory getBeanFactory() throws IllegalStateException;
 
