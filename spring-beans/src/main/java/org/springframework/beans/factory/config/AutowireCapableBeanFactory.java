@@ -67,6 +67,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @see #createBean
 	 * @see #autowire
 	 * @see #autowireBeanProperties
+	 * 不进行装配
 	 */
 	int AUTOWIRE_NO = 0;
 
@@ -76,6 +77,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @see #createBean
 	 * @see #autowire
 	 * @see #autowireBeanProperties
+	 * 根据名字进行装配
 	 */
 	int AUTOWIRE_BY_NAME = 1;
 
@@ -85,6 +87,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @see #createBean
 	 * @see #autowire
 	 * @see #autowireBeanProperties
+	 * 根据类型进行装配
 	 */
 	int AUTOWIRE_BY_TYPE = 2;
 
@@ -93,6 +96,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * can be satisfied (involves resolving the appropriate constructor).
 	 * @see #createBean
 	 * @see #autowire
+	 * 根据构造函数进行装配
 	 */
 	int AUTOWIRE_CONSTRUCTOR = 3;
 
@@ -103,6 +107,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @see #autowire
 	 * @deprecated as of Spring 3.0: If you are using mixed autowiring strategies,
 	 * prefer annotation-based autowiring for clearer demarcation of autowiring needs.
+	 * Spring3.0已经过时的方法，通过省视bean来决定适当的装载策略
 	 */
 	@Deprecated
 	int AUTOWIRE_AUTODETECT = 4;
@@ -116,6 +121,7 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @see #initializeBean(Object, String)
 	 * @see #applyBeanPostProcessorsBeforeInitialization(Object, String)
 	 * @see #applyBeanPostProcessorsAfterInitialization(Object, String)
+	 * Spring5.1后增加，原始实例的后缀，例如"com.mypackage.MyClass.ORIGINAL"，强制返回给定的实例（没有代理）
 	 */
 	String ORIGINAL_INSTANCE_SUFFIX = ".ORIGINAL";
 
@@ -135,6 +141,8 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * @param beanClass the class of the bean to create
 	 * @return the new bean instance
 	 * @throws BeansException if instantiation or wiring failed
+	 * 完全创建给定类的一个新的实例，包括所有适用的BeanPostProcessor
+	 * 填充注解的field和方法，并且会应用所有的初始化回调函数
 	 */
 	<T> T createBean(Class<T> beanClass) throws BeansException;
 
@@ -147,6 +155,8 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * use {@link #autowireBeanProperties} for those purposes.
 	 * @param existingBean the existing bean instance
 	 * @throws BeansException if wiring failed
+	 * 装配bean，通过应用初始化之后的回调函数和bean属性的后置处理来填充给定的bean的实例
+	 * 本质上是为了在创建新的实例或者反序列化实例时，填充（重新填充）实例中注解的field和方法
 	 */
 	void autowireBean(Object existingBean) throws BeansException;
 
