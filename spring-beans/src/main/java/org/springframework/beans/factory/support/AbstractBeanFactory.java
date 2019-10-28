@@ -108,6 +108,13 @@ import org.springframework.util.StringValueResolver;
  * @see #createBean
  * @see AbstractAutowireCapableBeanFactory#createBean
  * @see DefaultListableBeanFactory#getBeanDefinition
+ * 单例缓存
+ * 别名的管理
+ * FactoryBean的处理
+ * 用于子bean定义的bean的合并
+ * bean的摧毁接口
+ * 自定义的摧毁方法
+ * BeanFactory的继承管理
  */
 public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport implements ConfigurableBeanFactory {
 
@@ -1755,6 +1762,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * @return if this bean factory contains a bean definition with the given name
 	 * @see #containsBean
 	 * @see org.springframework.beans.factory.ListableBeanFactory#containsBeanDefinition
+	 * 是否包含给定名字的bean的定义
 	 */
 	protected abstract boolean containsBeanDefinition(String beanName);
 
@@ -1776,6 +1784,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * @see RootBeanDefinition
 	 * @see ChildBeanDefinition
 	 * @see org.springframework.beans.factory.config.ConfigurableListableBeanFactory#getBeanDefinition
+	 * 根据bean的名字来获取bean的定义，子类通常要实现缓存
 	 */
 	protected abstract BeanDefinition getBeanDefinition(String beanName) throws BeansException;
 
@@ -1789,6 +1798,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * @param args explicit arguments to use for constructor or factory method invocation
 	 * @return a new instance of the bean
 	 * @throws BeanCreationException if the bean could not be created
+	 * 为给定的已经合并了的bean的定义创建bean的实例
 	 */
 	protected abstract Object createBean(String beanName, RootBeanDefinition mbd, @Nullable Object[] args)
 			throws BeanCreationException;

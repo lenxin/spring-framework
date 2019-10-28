@@ -117,6 +117,9 @@ import org.springframework.util.StringUtils;
  * @see RootBeanDefinition
  * @see DefaultListableBeanFactory
  * @see BeanDefinitionRegistry
+ * 提供了bean的创建、属性填充、装配和初始化
+ * 处理运行时bean的引用，解析管理的集合、调用初始化方法等
+ * 支持构造器自动装配，根据类型来对属性进行装配，根据名字来对属性进行装配
  */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory
 		implements AutowireCapableBeanFactory {
