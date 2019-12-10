@@ -519,7 +519,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 			prepareRefresh();
 
 			// Tell the subclass to refresh the internal bean factory.
-			/*刷新所有BeanFactory子容器*/
+			/*刷新所有BeanFactory子容器，在子类中启动refreshBeanFactory的入口*/
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			// Prepare the bean factory for use in this context.
@@ -528,31 +528,31 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 			try {
 				// Allows post-processing of the bean factory in context subclasses.
-				/*注册实现了BeanPostProcessor接口的Bean*/
+				/*注册实现了BeanPostProcessor接口的Bean，设置BeanFactory的后置处理*/
 				postProcessBeanFactory(beanFactory);
 
 				// Invoke factory processors registered as beans in the context.
-				/*初始化和执行BeanFactoryPostProcessor beans*/
+				/*初始化和执行BeanFactoryPostProcessor beans，调用BeanFactory的后置处理器*/
 				invokeBeanFactoryPostProcessors(beanFactory);
 
 				// Register bean processors that intercept bean creation.
-				/*初始化和执行BeanPostProcessor beans*/
+				/*初始化和执行BeanPostProcessor beans，注册Bean的后处理器，在Bean创建过程中调用*/
 				registerBeanPostProcessors(beanFactory);
 
 				// Initialize message source for this context.
-				/*初始化MessageSource*/
+				/*初始化上下文的消息源MessageSource*/
 				initMessageSource();
 
 				// Initialize event multicaster for this context.
-				/*初始化 event multicaster*/
+				/*初始化上下文的事件机制 event multicaster*/
 				initApplicationEventMulticaster();
 
 				// Initialize other special beans in specific context subclasses.
-				/*刷新由子类实现的方法*/
+				/*刷新由子类实现的方法，初始化其他的特殊Bean*/
 				onRefresh();
 
 				// Check for listener beans and register them.
-				/*检查注册事件*/
+				/*检查注册事件，检查监听Bean并且将这些Bean向容器注册*/
 				registerListeners();
 
 				// Instantiate all remaining (non-lazy-init) singletons.
@@ -560,7 +560,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				finishBeanFactoryInitialization(beanFactory);
 
 				// Last step: publish corresponding event.
-				/*执行LifecycleProcessor.onRefresh()和ContextRefreshedEvent事件*/
+				/*发布容器事件，结束refresh过程，执行LifecycleProcessor.onRefresh()和ContextRefreshedEvent事件*/
 				finishRefresh();
 			}
 
@@ -571,10 +571,11 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				}
 
 				// Destroy already created singletons to avoid dangling resources.
-				/*销毁beans*/
+				/*为防止Bean资源占用，在异常处理中销毁已经在前面过程中生成的单例bean*/
 				destroyBeans();
 
 				// Reset 'active' flag.
+				/*重置'active'标志*/
 				cancelRefresh(ex);
 
 				// Propagate exception to caller.
