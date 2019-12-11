@@ -685,9 +685,10 @@ public class BeanDefinitionParserDelegate {
 
 	/**
 	 * Parse property sub-elements of the given bean element.
-	 * 解析constructor-arg
+	 * 解析property元素
 	 */
 	public void parsePropertyElements(Element beanEle, BeanDefinition bd) {
+		/*遍历所有bean元素下定义的property元素*/
 		NodeList nl = beanEle.getChildNodes();
 		for (int i = 0; i < nl.getLength(); i++) {
 			Node node = nl.item(i);
@@ -832,11 +833,15 @@ public class BeanDefinitionParserDelegate {
 		}
 		this.parseState.push(new PropertyEntry(propertyName));
 		try {
-			/*不允许多次对同一属性配置*/
+			/*不允许多次对同一属性配置，如果有同名的property设置，只第一个起作用*/
 			if (bd.getPropertyValues().contains(propertyName)) {
 				error("Multiple 'property' definitions for property '" + propertyName + "'", ele);
 				return;
 			}
+			/*
+			 * 这里是解析property值的地方，返回的对象对应对bean定义的property属性设置的解析结果，
+			 * 这个解析结果会封装到PropertyValue对象中，然后设置到BeanDefinitionHolder中去
+			 */
 			Object val = parsePropertyValue(ele, bd, propertyName);
 			PropertyValue pv = new PropertyValue(propertyName, val);
 			parseMetaElements(ele, pv);
@@ -915,7 +920,10 @@ public class BeanDefinitionParserDelegate {
 			}
 		}
 
-		/*解析constructor-arg上的ref属性*/
+		/*
+		 * 解析constructor-arg上的ref属性
+		 * 判断property的属性是ref还是value，不允许同时是ref和value
+		 */
 		boolean hasRefAttribute = ele.hasAttribute(REF_ATTRIBUTE);
 		/*解析constructor-arg上的value属性*/
 		boolean hasValueAttribute = ele.hasAttribute(VALUE_ATTRIBUTE);
@@ -1110,6 +1118,7 @@ public class BeanDefinitionParserDelegate {
 		target.setSource(extractSource(collectionEle));
 		target.setElementTypeName(defaultElementType);
 		target.setMergeEnabled(parseMergeAttribute(collectionEle));
+		/*具体的List元素的解析过程*/
 		parseCollectionElements(nl, target, bd, defaultElementType);
 		return target;
 	}
@@ -1130,10 +1139,11 @@ public class BeanDefinitionParserDelegate {
 
 	protected void parseCollectionElements(
 			NodeList elementNodes, Collection<Object> target, @Nullable BeanDefinition bd, String defaultElementType) {
-
+		/*遍历所有的元素节点，并判断其类型是否为Element*/
 		for (int i = 0; i < elementNodes.getLength(); i++) {
 			Node node = elementNodes.item(i);
 			if (node instanceof Element && !nodeNameEquals(node, DESCRIPTION_ELEMENT)) {
+				/*加入到target中，target是一个ManagedList，同时触发对下一层子元素的解析过程，这是一个递归调用*/
 				target.add(parsePropertySubElement((Element) node, bd, defaultElementType));
 			}
 		}
