@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.core;
 
 import java.util.ArrayList;
@@ -210,6 +194,8 @@ public class SimpleAliasRegistry implements AliasRegistry {
 	 * Determine the raw name, resolving aliases to canonical names.
 	 * @param name the user-specified name
 	 * @return the transformed name
+	 * 取指定alias所表示的最终beanName，若没有指向的别名则返回name
+	 * 例:别名A指向别名B，别名B指向名称为C的bean则返回C
 	 */
 	public String canonicalName(String name) {
 		String canonicalName = name;
@@ -224,5 +210,4 @@ public class SimpleAliasRegistry implements AliasRegistry {
 		while (resolvedName != null);
 		return canonicalName;
 	}
-
 }
