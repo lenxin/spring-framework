@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.beans;
 
 import java.beans.PropertyEditor;
@@ -113,7 +97,6 @@ public class PropertyEditorRegistrySupport implements PropertyEditorRegistry {
 	@Nullable
 	private Map<Class<?>, PropertyEditor> customEditorCache;
 
-
 	/**
 	 * Specify a Spring 3.0 ConversionService to use for converting
 	 * property values, as an alternative to JavaBeans PropertyEditors.
@@ -129,7 +112,6 @@ public class PropertyEditorRegistrySupport implements PropertyEditorRegistry {
 	public ConversionService getConversionService() {
 		return this.conversionService;
 	}
-
 
 	//---------------------------------------------------------------------
 	// Management of default editors
@@ -278,7 +260,6 @@ public class PropertyEditorRegistrySupport implements PropertyEditorRegistry {
 		target.defaultEditors = this.defaultEditors;
 		target.overriddenDefaultEditors = this.overriddenDefaultEditors;
 	}
-
 
 	//---------------------------------------------------------------------
 	// Management of custom editors
@@ -486,7 +467,6 @@ public class PropertyEditorRegistrySupport implements PropertyEditorRegistry {
 		}
 	}
 
-
 	/**
 	 * Add property paths with all variations of stripped keys and/or indexes.
 	 * Invokes itself recursively with nested paths.
@@ -511,7 +491,6 @@ public class PropertyEditorRegistrySupport implements PropertyEditorRegistry {
 			}
 		}
 	}
-
 
 	/**
 	 * Holder for a registered custom editor with property name.
@@ -559,5 +538,4 @@ public class PropertyEditorRegistrySupport implements PropertyEditorRegistry {
 			}
 		}
 	}
-
 }
