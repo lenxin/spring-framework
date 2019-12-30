@@ -70,19 +70,35 @@ import org.springframework.util.StringUtils;
  */
 public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements SingletonBeanRegistry {
 
-	/** Cache of singleton objects: bean name to bean instance. */
+	/**
+	 * Cache of singleton objects: bean name to bean instance.
+	 * 用于保存BeanName和创建bean实例之间的关系
+	 */
 	private final Map<String, Object> singletonObjects = new ConcurrentHashMap<>(256);
 
-	/** Cache of singleton factories: bean name to ObjectFactory. */
+	/**
+	 * Cache of singleton factories: bean name to ObjectFactory.
+	 * 用于保存BeanName和创建bean的工厂之间的关系
+	 */
 	private final Map<String, ObjectFactory<?>> singletonFactories = new HashMap<>(16);
 
-	/** Cache of early singleton objects: bean name to bean instance. */
+	/**
+	 * Cache of early singleton objects: bean name to bean instance.
+	 * 用于保存BeanName和创建bean实例之间的关系，与singletonObjects不同之处在于，当一个单例bean被放在里面之后，
+	 * 那么当bean还在创建过程中，就可以通过getBean方法获取到了，其目的是用来检测循环引用
+	 */
 	private final Map<String, Object> earlySingletonObjects = new HashMap<>(16);
 
-	/** Set of registered singletons, containing the bean names in registration order. */
+	/**
+	 * Set of registered singletons, containing the bean names in registration order.
+	 * 用来按顺序保存当前所有已注册的BeanName
+	 */
 	private final Set<String> registeredSingletons = new LinkedHashSet<>(256);
 
-	/** Names of beans that are currently in creation. */
+	/**
+	 * Names of beans that are currently in creation.
+	 * 用来保存当前正在创建的BeanName
+	 */
 	private final Set<String> singletonsCurrentlyInCreation =
 			Collections.newSetFromMap(new ConcurrentHashMap<>(16));
 
