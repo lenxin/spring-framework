@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.core.env;
 
 import java.security.AccessControlException;
@@ -231,6 +215,8 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * property and assign its value to the set of active profiles.
 	 * @see #getActiveProfiles()
 	 * @see #ACTIVE_PROFILES_PROPERTY_NAME
+	 * 如果有效配置集activeProfiles为空，则检查spring.profiles.active属性是否存在，
+	 * spring.profiles.active属性以','隔开，并将其放到有效配置集activeProfiles中去
 	 */
 	protected Set<String> doGetActiveProfiles() {
 		synchronized (this.activeProfiles) {
@@ -245,6 +231,7 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 		}
 	}
 
+	/*设置有效配置集activeProfiles*/
 	@Override
 	public void setActiveProfiles(String... profiles) {
 		Assert.notNull(profiles, "Profile array must not be null");
@@ -289,6 +276,9 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * @see #getDefaultProfiles()
 	 * @see #DEFAULT_PROFILES_PROPERTY_NAME
 	 * @see #getReservedDefaultProfiles()
+	 * 如果默认配置集defaultProfiles和保留配置集相同，则检查spring.profiles.default属性是否存在，
+	 * spring.profiles.default属性以','隔开，并将其放到默认配置集defaultProfiles中去,
+	 * 如果不同直接返回默认配置集defaultProfiles
 	 */
 	protected Set<String> doGetDefaultProfiles() {
 		synchronized (this.defaultProfiles) {
@@ -323,10 +313,17 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 		}
 	}
 
+
 	@Override
 	@Deprecated
 	public boolean acceptsProfiles(String... profiles) {
 		Assert.notEmpty(profiles, "Must specify at least one profile");
+		/**
+		 * 如果多个配置中的某一个profile以'!'开头，则配置profile无效时，配置profile被接受
+		 * 如果多个配置中的某一个profile不以'!'开头，则配置profile有效时，配置profile被接受
+		 * 如果多个配置中的所有配置profile都无效时，则配置profile不被接受
+		 * 多配置是或(||)的关系
+		 */
 		for (String profile : profiles) {
 			if (StringUtils.hasLength(profile) && profile.charAt(0) == '!') {
 				if (!isProfileActive(profile.substring(1))) {
@@ -350,6 +347,8 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * Return whether the given profile is active, or if active profiles are empty
 	 * whether the profile should be active by default.
 	 * @throws IllegalArgumentException per {@link #validateProfile(String)}
+	 * 如果有效配置集activeProfiles中包含配置profile或者有效配置集为空时，
+	 * 默认配置集defaultProfiles中包含配置profile，则配置profile有效
 	 */
 	protected boolean isProfileActive(String profile) {
 		validateProfile(profile);
@@ -367,6 +366,7 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * @see #acceptsProfiles
 	 * @see #addActiveProfile
 	 * @see #setDefaultProfiles
+	 * 验证配置：如果配置profile不包含任何元素或者以!开头，则验证不通过，抛出IllegalArgumentException异常
 	 */
 	protected void validateProfile(String profile) {
 		if (!StringUtils.hasText(profile)) {
