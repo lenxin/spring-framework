@@ -177,6 +177,8 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 * Parse the elements at the root level in the document:
 	 * "import", "alias", "bean".
 	 * @param root the DOM root element of the document
+	 * 默认：<bean id="test" class="test.TestBean"/>
+	 * 自定义：<tx:annotation-driven/>
 	 */
 	protected void parseBeanDefinitions(Element root, BeanDefinitionParserDelegate delegate) {
 		/*默认命名空间对根节点beans的处理*/
@@ -349,7 +351,6 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 		}
 	}
 
-
 	/**
 	 * Allow the XML to be extensible by processing any custom element types first,
 	 * before we start to process the bean definitions. This method is a natural
@@ -375,5 +376,4 @@ public class DefaultBeanDefinitionDocumentReader implements BeanDefinitionDocume
 	 */
 	protected void postProcessXml(Element root) {
 	}
-
 }

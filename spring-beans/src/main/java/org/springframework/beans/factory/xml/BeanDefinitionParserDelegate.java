@@ -34,7 +34,7 @@ import java.util.*;
  * @since 2.0
  */
 public class BeanDefinitionParserDelegate {
-
+	/*Spring默认命名空间*/
 	public static final String BEANS_NAMESPACE_URI = "http://www.springframework.org/schema/beans";
 
 	public static final String MULTI_VALUE_ATTRIBUTE_DELIMITERS = ",; ";
@@ -341,7 +341,6 @@ public class BeanDefinitionParserDelegate {
 		String candidatePattern = this.defaults.getAutowireCandidates();
 		return (candidatePattern != null ? StringUtils.commaDelimitedListToStringArray(candidatePattern) : null);
 	}
-
 
 	/**
 	 * Parses the supplied {@code <bean>} element. May return {@code null}
@@ -1423,7 +1422,6 @@ public class BeanDefinitionParserDelegate {
 		return new BeanDefinitionHolder(innerDefinition, id);
 	}
 
-
 	/**
 	 * Get the namespace URI for the supplied node.
 	 * <p>The default implementation uses {@link Node#getNamespaceURI}.
@@ -1478,5 +1476,4 @@ public class BeanDefinitionParserDelegate {
 	private boolean isCandidateElement(Node node) {
 		return (node instanceof Element && (isDefaultNamespace(node) || !isDefaultNamespace(node.getParentNode())));
 	}
-
 }

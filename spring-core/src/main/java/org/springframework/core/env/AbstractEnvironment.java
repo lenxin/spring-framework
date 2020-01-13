@@ -84,7 +84,6 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 */
 	protected static final String RESERVED_DEFAULT_PROFILE_NAME = "default";
 
-
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	private final Set<String> activeProfiles = new LinkedHashSet<>();
@@ -96,7 +95,6 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	private final ConfigurablePropertyResolver propertyResolver =
 			new PropertySourcesPropertyResolver(this.propertySources);
 
-
 	/**
 	 * Create a new {@code Environment} instance, calling back to
 	 * {@link #customizePropertySources(MutablePropertySources)} during construction to
@@ -107,7 +105,6 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	public AbstractEnvironment() {
 		customizePropertySources(this.propertySources);
 	}
-
 
 	/**
 	 * Customize the set of {@link PropertySource} objects to be searched by this
@@ -198,7 +195,6 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 		return Collections.singleton(RESERVED_DEFAULT_PROFILE_NAME);
 	}
 
-
 	//---------------------------------------------------------------------
 	// Implementation of ConfigurableEnvironment interface
 	//---------------------------------------------------------------------
@@ -259,7 +255,6 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 		}
 	}
 
-
 	@Override
 	public String[] getDefaultProfiles() {
 		return StringUtils.toStringArray(doGetDefaultProfiles());
@@ -312,7 +307,6 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 			}
 		}
 	}
-
 
 	@Override
 	@Deprecated
@@ -478,7 +472,6 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 		}
 	}
 
-
 	//---------------------------------------------------------------------
 	// Implementation of ConfigurablePropertyResolver interface
 	//---------------------------------------------------------------------
@@ -522,7 +515,6 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	public void validateRequiredProperties() throws MissingRequiredPropertiesException {
 		this.propertyResolver.validateRequiredProperties();
 	}
-
 
 	//---------------------------------------------------------------------
 	// Implementation of PropertyResolver interface
@@ -581,5 +573,4 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 		return getClass().getSimpleName() + " {activeProfiles=" + this.activeProfiles +
 				", defaultProfiles=" + this.defaultProfiles + ", propertySources=" + this.propertySources + "}";
 	}
-
 }
