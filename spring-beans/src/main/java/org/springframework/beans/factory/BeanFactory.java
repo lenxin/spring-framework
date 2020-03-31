@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  *
  * <p>This interface is implemented by objects that hold a number of bean definitions,
  * each uniquely identified by a String name. Depending on the bean definition,
- * the factory will return either an independent instance of a contained object
+ * the factory will return eitheMr an independent instance of a contained object
  * (the Prototype design pattern), or a single shared instance (a superior
  * alternative to the Singleton design pattern, in which the instance is a
  * singleton in the scope of the factory). Which type of instance will be returned
