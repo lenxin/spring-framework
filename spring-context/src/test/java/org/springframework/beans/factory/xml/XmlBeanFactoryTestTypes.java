@@ -1,42 +1,18 @@
-/*
- * Copyright 2002-2017 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.beans.factory.xml;
 
-import java.beans.ConstructorProperties;
-import java.io.Serializable;
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.BeanFactoryAware;
-import org.springframework.beans.factory.BeanNameAware;
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.beans.factory.support.MethodReplacer;
 import org.springframework.tests.sample.beans.ITestBean;
 import org.springframework.tests.sample.beans.IndexedTestBean;
 import org.springframework.tests.sample.beans.TestBean;
 import org.springframework.tests.sample.beans.factory.DummyFactory;
+
+import java.beans.ConstructorProperties;
+import java.io.Serializable;
+import java.lang.reflect.Method;
+import java.util.*;
 
 /**
  * Types used by {@link XmlBeanFactoryTests} and its attendant XML config files.
@@ -45,7 +21,6 @@ import org.springframework.tests.sample.beans.factory.DummyFactory;
  */
 final class XmlBeanFactoryTestTypes {
 }
-
 
 /**
  * Simple bean used to check constructor dependency checking.
@@ -125,7 +100,6 @@ class ConstructorDependenciesBean implements Serializable {
 	}
 }
 
-
 class SimpleConstructorArgBean {
 
 	private int age;
@@ -151,7 +125,6 @@ class SimpleConstructorArgBean {
 		return name;
 	}
 }
-
 
 /**
  * Bean testing the ability to use both lookup method overrides
@@ -186,14 +159,13 @@ abstract class ConstructorInjectedOverrides {
 	}
 }
 
-
 /**
  * Simple bean used to check constructor dependency checking.
  *
  * @author Juergen Hoeller
  * @since 09.11.2003
  */
-@SuppressWarnings({ "serial", "unused" })
+@SuppressWarnings({"serial", "unused"})
 class DerivedConstructorDependenciesBean extends ConstructorDependenciesBean {
 
 	boolean initialized;
@@ -226,7 +198,6 @@ class DerivedConstructorDependenciesBean extends ConstructorDependenciesBean {
 	}
 }
 
-
 /**
  * @author Rod Johnson
  */
@@ -234,7 +205,6 @@ interface DummyBo {
 
 	void something();
 }
-
 
 /**
  * @author Rod Johnson
@@ -252,13 +222,11 @@ class DummyBoImpl implements DummyBo {
 	}
 }
 
-
 /**
  * @author Rod Johnson
  */
 class DummyDao {
 }
-
 
 /**
  * @author Juergen Hoeller
@@ -303,7 +271,6 @@ class DummyReferencer {
 		return testBean2;
 	}
 }
-
 
 /**
  * Test class for Spring's ability to create objects using static
@@ -403,6 +370,7 @@ class FactoryMethods {
 
 /**
  * Fixed method replacer for String return types
+ *
  * @author Rod Johnson
  */
 class FixedMethodReplacer implements MethodReplacer {
@@ -414,7 +382,6 @@ class FixedMethodReplacer implements MethodReplacer {
 		return VALUE;
 	}
 }
-
 
 /**
  * @author Chris Beams
@@ -436,7 +403,6 @@ class MapAndSet {
 	}
 }
 
-
 /**
  * @author Rod Johnson
  */
@@ -446,7 +412,6 @@ class MethodReplaceCandidate {
 		return echo;
 	}
 }
-
 
 /**
  * Bean that exposes a simple property that can be set
@@ -465,7 +430,6 @@ class MixedCollectionBean {
 	}
 }
 
-
 /**
  * @author Juergen Hoeller
  */
@@ -475,7 +439,6 @@ interface OverrideInterface {
 
 	TestBean getPrototypeDependency(Object someParam);
 }
-
 
 /**
  * @author Rod Johnson
@@ -515,10 +478,9 @@ abstract class OverrideOneMethod extends MethodReplaceCandidate implements Overr
 
 	@Override
 	public String replaceMe(String someParam) {
-		return "replaceMe:"  + someParam;
+		return "replaceMe:" + someParam;
 	}
 }
-
 
 /**
  * Subclass of OverrideOneMethod, to check that overriding is
@@ -533,7 +495,6 @@ abstract class OverrideOneMethodSubclass extends OverrideOneMethod {
 		// It's not overloaded
 	}
 }
-
 
 /**
  * Simple test of BeanFactory initialization and lifecycle callbacks.
@@ -655,7 +616,6 @@ class ProtectedLifecycleBean implements BeanNameAware, BeanFactoryAware, Initial
 		return destroyed;
 	}
 
-
 	public static class PostProcessor implements BeanPostProcessor {
 
 		@Override
@@ -676,7 +636,6 @@ class ProtectedLifecycleBean implements BeanNameAware, BeanFactoryAware, Initial
 	}
 }
 
-
 /**
  * @author Rod Johnson
  */
@@ -690,7 +649,6 @@ class ReverseMethodReplacer implements MethodReplacer, Serializable {
 	}
 }
 
-
 /**
  * @author Rod Johnson
  */
@@ -699,7 +657,6 @@ abstract class SerializableMethodReplacerCandidate extends MethodReplaceCandidat
 
 	//public abstract Point getPoint();
 }
-
 
 /**
  * @author Juergen Hoeller
