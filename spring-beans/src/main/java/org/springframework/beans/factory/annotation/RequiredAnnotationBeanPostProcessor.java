@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.beans.factory.annotation;
 
 import java.beans.PropertyDescriptor;
@@ -99,7 +83,6 @@ public class RequiredAnnotationBeanPostProcessor extends InstantiationAwareBeanP
 	 */
 	private final Set<String> validatedBeanNames = Collections.newSetFromMap(new ConcurrentHashMap<>(64));
 
-
 	/**
 	 * Set the 'required' annotation type, to be used on bean property
 	 * setter methods.
@@ -136,7 +119,6 @@ public class RequiredAnnotationBeanPostProcessor extends InstantiationAwareBeanP
 	public int getOrder() {
 		return this.order;
 	}
-
 
 	@Override
 	public void postProcessMergedBeanDefinition(RootBeanDefinition beanDefinition, Class<?> beanType, String beanName) {
@@ -226,5 +208,4 @@ public class RequiredAnnotationBeanPostProcessor extends InstantiationAwareBeanP
 		sb.append(" required for bean '").append(beanName).append("'");
 		return sb.toString();
 	}
-
 }

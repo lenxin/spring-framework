@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2017 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.context.support;
 
 import java.io.IOException;
@@ -47,7 +31,6 @@ public abstract class AbstractXmlApplicationContext extends AbstractRefreshableC
 
 	private boolean validating = true;
 
-
 	/**
 	 * Create a new AbstractXmlApplicationContext with no parent.
 	 */
@@ -62,14 +45,12 @@ public abstract class AbstractXmlApplicationContext extends AbstractRefreshableC
 		super(parent);
 	}
 
-
 	/**
 	 * Set whether to use XML validation. Default is {@code true}.
 	 */
 	public void setValidating(boolean validating) {
 		this.validating = validating;
 	}
-
 
 	/**
 	 * Loads the bean definitions via an XmlBeanDefinitionReader.
@@ -149,5 +130,4 @@ public abstract class AbstractXmlApplicationContext extends AbstractRefreshableC
 	protected Resource[] getConfigResources() {
 		return null;
 	}
-
 }

@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.context.support;
 
 import java.io.IOException;
@@ -77,7 +61,6 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	/** Synchronization monitor for the internal BeanFactory. */
 	private final Object beanFactoryMonitor = new Object();
 
-
 	/**
 	 * Create a new AbstractRefreshableApplicationContext with no parent.
 	 */
@@ -91,7 +74,6 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	public AbstractRefreshableApplicationContext(@Nullable ApplicationContext parent) {
 		super(parent);
 	}
-
 
 	/**
 	 * Set whether it should be allowed to override bean definitions by registering
@@ -114,7 +96,6 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 		this.allowCircularReferences = allowCircularReferences;
 	}
 
-
 	/**
 	 * This implementation performs an actual refresh of this context's underlying
 	 * bean factory, shutting down the previous bean factory (if any) and
@@ -128,6 +109,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 			closeBeanFactory();
 		}
 		try {
+			/*创建并设置DefaultListableBeanFactory，同时调用loadBeanDefinitions方法载入BeanDefinition信息*/
 			DefaultListableBeanFactory beanFactory = createBeanFactory();
 			beanFactory.setSerializationId(getId());
 			customizeBeanFactory(beanFactory);
@@ -245,5 +227,4 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	 */
 	protected abstract void loadBeanDefinitions(DefaultListableBeanFactory beanFactory)
 			throws BeansException, IOException;
-
 }
