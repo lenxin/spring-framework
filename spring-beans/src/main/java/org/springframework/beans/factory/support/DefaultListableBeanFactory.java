@@ -284,7 +284,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		return this.autowireCandidateResolver;
 	}
 
-
 	@Override
 	public void copyConfigurationFrom(ConfigurableBeanFactory otherFactory) {
 		super.copyConfigurationFrom(otherFactory);
@@ -1667,7 +1666,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		return (result instanceof Optional ? (Optional<?>) result : Optional.ofNullable(result));
 	}
 
-
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder(ObjectUtils.identityToString(this));
@@ -1682,7 +1680,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		}
 		return sb.toString();
 	}
-
 
 	//---------------------------------------------------------------------
 	// Serialization support
@@ -1700,7 +1697,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 			throw new NotSerializableException("DefaultListableBeanFactory has no serialization id");
 		}
 	}
-
 
 	/**
 	 * Minimal id reference to the factory.
@@ -1729,7 +1725,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		}
 	}
 
-
 	/**
 	 * A dependency descriptor marker for nested elements.
 	 */
@@ -1741,7 +1736,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		}
 	}
 
-
 	/**
 	 * A dependency descriptor for a multi-element declaration with nested elements.
 	 */
@@ -1751,7 +1745,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 			super(original);
 		}
 	}
-
 
 	/**
 	 * A dependency descriptor marker for stream access to multiple elements.
@@ -1770,10 +1763,8 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		}
 	}
 
-
 	private interface BeanObjectProvider<T> extends ObjectProvider<T>, Serializable {
 	}
-
 
 	/**
 	 * Serializable ObjectFactory/ObjectProvider for lazy resolution of a dependency.
@@ -1889,7 +1880,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 			return (result instanceof Stream ? (Stream<Object>) result : Stream.of(result));
 		}
 	}
-
 
 	/**
 	 * Separate inner class for avoiding a hard dependency on the {@code javax.inject} API.
