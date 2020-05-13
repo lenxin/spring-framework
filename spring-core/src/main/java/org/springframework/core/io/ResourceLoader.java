@@ -24,7 +24,6 @@ import org.springframework.util.ResourceUtils;
  * @since 10.03.2004
  */
 public interface ResourceLoader {
-
 	/**
 	 * Pseudo URL prefix for loading from the class path: "classpath:".
 	 */

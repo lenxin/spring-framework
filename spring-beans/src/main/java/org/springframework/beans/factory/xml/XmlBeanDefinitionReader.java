@@ -50,7 +50,6 @@ import java.util.Set;
  * @since 26.11.2003
  */
 public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
-
 	/**
 	 * Indicates that the validation should be disabled.
 	 */

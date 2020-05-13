@@ -30,7 +30,6 @@ import java.util.Set;
  * @since 11.12.2003
  */
 public abstract class AbstractBeanDefinitionReader implements BeanDefinitionReader, EnvironmentCapable {
-
 	/**
 	 * Logger available to subclasses.
 	 */
@@ -224,7 +223,7 @@ public abstract class AbstractBeanDefinitionReader implements BeanDefinitionRead
 						"Could not resolve bean definition resource pattern [" + location + "]", ex);
 			}
 		} else {
-			// Can only load single resources by  UabsoluteRL.
+			// Can only load single resources by absolute URL.
 			/*调用DefaultResourceLoader的getResource完成具体的Resource定位*/
 			Resource resource = resourceLoader.getResource(location);
 			int count = loadBeanDefinitions(resource);

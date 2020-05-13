@@ -37,7 +37,6 @@ import java.io.IOException;
  * @since 1.0.2
  */
 public interface ResourcePatternResolver extends ResourceLoader {
-
 	/**
 	 * Pseudo URL prefix for all matching resources from the class path: "classpath*:"
 	 * This differs from ResourceLoader's classpath URL prefix in that it
