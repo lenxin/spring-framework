@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2017 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.beans.factory.parsing;
 
 import org.springframework.core.io.Resource;
@@ -23,12 +7,9 @@ import org.springframework.lang.Nullable;
  * Context that gets passed along a bean definition reading process,
  * encapsulating all relevant configuration as well as state.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
  * @since 2.0
  */
 public class ReaderContext {
-
 	private final Resource resource;
 
 	private final ProblemReporter problemReporter;
@@ -37,17 +18,16 @@ public class ReaderContext {
 
 	private final SourceExtractor sourceExtractor;
 
-
 	/**
 	 * Construct a new {@code ReaderContext}.
-	 * @param resource the XML bean definition resource
+	 *
+	 * @param resource        the XML bean definition resource
 	 * @param problemReporter the problem reporter in use
-	 * @param eventListener the event listener in use
+	 * @param eventListener   the event listener in use
 	 * @param sourceExtractor the source extractor in use
 	 */
 	public ReaderContext(Resource resource, ProblemReporter problemReporter,
-			ReaderEventListener eventListener, SourceExtractor sourceExtractor) {
-
+						 ReaderEventListener eventListener, SourceExtractor sourceExtractor) {
 		this.resource = resource;
 		this.problemReporter = problemReporter;
 		this.eventListener = eventListener;
@@ -57,7 +37,6 @@ public class ReaderContext {
 	public final Resource getResource() {
 		return this.resource;
 	}
-
 
 	// Errors and warnings
 
@@ -148,7 +127,6 @@ public class ReaderContext {
 		this.problemReporter.warning(new Problem(message, location, parseState, cause));
 	}
 
-
 	// Explicit parse events
 
 	/**
@@ -186,7 +164,6 @@ public class ReaderContext {
 		this.eventListener.importProcessed(new ImportDefinition(importedResource, actualResources, source));
 	}
 
-
 	// Source extraction
 
 	/**
@@ -198,6 +175,7 @@ public class ReaderContext {
 
 	/**
 	 * Call the source extractor for the given source object.
+	 *
 	 * @param sourceCandidate the original source object
 	 * @return the source object to store, or {@code null} for none.
 	 * @see #getSourceExtractor()
@@ -207,5 +185,4 @@ public class ReaderContext {
 	public Object extractSource(Object sourceCandidate) {
 		return this.sourceExtractor.extractSource(sourceCandidate, this.resource);
 	}
-
 }

@@ -24,11 +24,6 @@ import java.util.*;
  * {@link BeanDefinitionParser BeanDefinitionParsers} or
  * {@link BeanDefinitionDecorator BeanDefinitionDecorators}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Rod Johnson
- * @author Mark Fisher
- * @author Gary Russell
  * @see ParserContext
  * @see DefaultBeanDefinitionDocumentReader
  * @since 2.0
@@ -381,7 +376,7 @@ public class BeanDefinitionParserDelegate {
 			checkNameUniqueness(beanName, aliases, ele);
 		}
 
-		/*进一步解析其他所有属性并统一封装至GenericBeanDefinition类型的实例中*/
+		/*进一步解析其他所有属性并统一封装至GenericBeanDefinition类型的实例中，对bean元素的详细解析*/
 		AbstractBeanDefinition beanDefinition = parseBeanDefinitionElement(ele, beanName, containingBean);
 		if (beanDefinition != null) {
 			if (!StringUtils.hasText(beanName)) {
@@ -448,7 +443,6 @@ public class BeanDefinitionParserDelegate {
 	@Nullable
 	public AbstractBeanDefinition parseBeanDefinitionElement(
 			Element ele, String beanName, @Nullable BeanDefinition containingBean) {
-
 		this.parseState.push(new BeanEntry(beanName));
 
 		String className = null;
@@ -512,7 +506,6 @@ public class BeanDefinitionParserDelegate {
 	 */
 	public AbstractBeanDefinition parseBeanDefinitionAttributes(Element ele, String beanName,
 																@Nullable BeanDefinition containingBean, AbstractBeanDefinition bd) {
-
 		/*singleton属性已被替换为scope属性*/
 		if (ele.hasAttribute(SINGLETON_ATTRIBUTE)) {
 			error("Old 1.x 'singleton' attribute in use - upgrade to 'scope' declaration", ele);
@@ -607,7 +600,6 @@ public class BeanDefinitionParserDelegate {
 	 */
 	protected AbstractBeanDefinition createBeanDefinition(@Nullable String className, @Nullable String parentName)
 			throws ClassNotFoundException {
-
 		return BeanDefinitionReaderUtils.createBeanDefinition(
 				parentName, className, this.readerContext.getBeanClassLoader());
 	}
@@ -663,12 +655,12 @@ public class BeanDefinitionParserDelegate {
 	/**
 	 * Parse constructor-arg sub-elements of the given bean element.
 	 * <bean id="helloBean" class="com.HelloBean">
-	 *     <constructor-arg index="0">
-	 *         <value>value1</value>
-	 *     </constructor-arg>
-	 *     <constructor-arg index="1">
-	 * 	       <value>value2</value>
-	 * 	   </constructor-arg>
+	 * <constructor-arg index="0">
+	 * <value>value1</value>
+	 * </constructor-arg>
+	 * <constructor-arg index="1">
+	 * <value>value2</value>
+	 * </constructor-arg>
 	 * </bean>
 	 */
 	public void parseConstructorArgElements(Element beanEle, BeanDefinition bd) {
@@ -822,6 +814,7 @@ public class BeanDefinitionParserDelegate {
 
 	/**
 	 * Parse a property element.
+	 * 解析property子元素
 	 */
 	public void parsePropertyElement(Element ele, BeanDefinition bd) {
 		/*获取配置元素的name的值*/
@@ -1079,7 +1072,6 @@ public class BeanDefinitionParserDelegate {
 	 */
 	protected TypedStringValue buildTypedStringValue(String value, @Nullable String targetTypeName)
 			throws ClassNotFoundException {
-
 		ClassLoader classLoader = this.readerContext.getBeanClassLoader();
 		TypedStringValue typedValue;
 		if (!StringUtils.hasText(targetTypeName)) {
@@ -1360,7 +1352,6 @@ public class BeanDefinitionParserDelegate {
 
 	public BeanDefinitionHolder decorateBeanDefinitionIfRequired(
 			Element ele, BeanDefinitionHolder definitionHolder, @Nullable BeanDefinition containingBd) {
-
 		BeanDefinitionHolder finalDefinition = definitionHolder;
 
 		// Decorate based on custom attributes first.
@@ -1383,7 +1374,6 @@ public class BeanDefinitionParserDelegate {
 
 	public BeanDefinitionHolder decorateIfRequired(
 			Node node, BeanDefinitionHolder originalDef, @Nullable BeanDefinition containingBd) {
-
 		String namespaceUri = getNamespaceURI(node);
 		if (namespaceUri != null && !isDefaultNamespace(namespaceUri)) {
 			NamespaceHandler handler = this.readerContext.getNamespaceHandlerResolver().resolve(namespaceUri);
