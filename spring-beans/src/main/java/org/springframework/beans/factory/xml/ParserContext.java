@@ -1,23 +1,4 @@
-/*
- * Copyright 2002-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.beans.factory.xml;
-
-import java.util.ArrayDeque;
-import java.util.Deque;
 
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.parsing.BeanComponentDefinition;
@@ -27,19 +8,19 @@ import org.springframework.beans.factory.support.BeanDefinitionReaderUtils;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.lang.Nullable;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * Context that gets passed along a bean definition parsing process,
  * encapsulating all relevant configuration as well as state.
  * Nested inside an {@link XmlReaderContext}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @since 2.0
  * @see XmlReaderContext
  * @see BeanDefinitionParserDelegate
+ * @since 2.0
  */
 public final class ParserContext {
-
 	private final XmlReaderContext readerContext;
 
 	private final BeanDefinitionParserDelegate delegate;
@@ -49,20 +30,17 @@ public final class ParserContext {
 
 	private final Deque<CompositeComponentDefinition> containingComponents = new ArrayDeque<>();
 
-
 	public ParserContext(XmlReaderContext readerContext, BeanDefinitionParserDelegate delegate) {
 		this.readerContext = readerContext;
 		this.delegate = delegate;
 	}
 
 	public ParserContext(XmlReaderContext readerContext, BeanDefinitionParserDelegate delegate,
-			@Nullable BeanDefinition containingBeanDefinition) {
-
+						 @Nullable BeanDefinition containingBeanDefinition) {
 		this.readerContext = readerContext;
 		this.delegate = delegate;
 		this.containingBeanDefinition = containingBeanDefinition;
 	}
-
 
 	public final XmlReaderContext getReaderContext() {
 		return this.readerContext;
@@ -115,8 +93,7 @@ public final class ParserContext {
 		CompositeComponentDefinition containingComponent = getContainingComponent();
 		if (containingComponent != null) {
 			containingComponent.addNestedComponent(component);
-		}
-		else {
+		} else {
 			this.readerContext.fireComponentRegistered(component);
 		}
 	}
@@ -125,5 +102,4 @@ public final class ParserContext {
 		BeanDefinitionReaderUtils.registerBeanDefinition(component, getRegistry());
 		registerComponent(component);
 	}
-
 }
