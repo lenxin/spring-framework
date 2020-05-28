@@ -618,7 +618,7 @@ public class BeanDefinitionParserDelegate {
 
 	/**
 	 * 解析子元素meta
-	 * <bean id"myTestBean" class="bean.MyTestBean">
+	 * <bean id="myTestBean" class="bean.MyTestBean">
 	 * <meta key="testStr" value="1234"/>
 	 * </bean>
 	 *
@@ -1471,6 +1471,7 @@ public class BeanDefinitionParserDelegate {
 		return isDefaultNamespace(getNamespaceURI(node));
 	}
 
+	/*当value为空或者default时，则为默认值*/
 	private boolean isDefaultValue(String value) {
 		return (DEFAULT_VALUE.equals(value) || "".equals(value));
 	}
