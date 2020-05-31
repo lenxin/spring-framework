@@ -11,24 +11,25 @@ import org.springframework.lang.Nullable;
  * @since 2.0.2
  */
 public class DocumentDefaultsDefinition implements DefaultsDefinition {
+	/*初始化懒加载*/
 	@Nullable
 	private String lazyInit;
-
+	/**/
 	@Nullable
 	private String merge;
-
+	/*自动装载类型*/
 	@Nullable
 	private String autowire;
-
+	/**/
 	@Nullable
 	private String autowireCandidates;
-
+	/*初始化方法*/
 	@Nullable
 	private String initMethod;
-
+	/*销毁方法*/
 	@Nullable
 	private String destroyMethod;
-
+	/*配置源对象*/
 	@Nullable
 	private Object source;
 
