@@ -1,49 +1,23 @@
-/*
- * Copyright 2002-2016 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.beans.factory.xml;
+
+import org.springframework.beans.factory.config.*;
+import org.springframework.beans.factory.support.AbstractBeanDefinition;
+import org.springframework.beans.factory.support.BeanDefinitionBuilder;
+import org.springframework.util.StringUtils;
+import org.w3c.dom.Element;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-import org.w3c.dom.Element;
-
-import org.springframework.beans.factory.config.FieldRetrievingFactoryBean;
-import org.springframework.beans.factory.config.ListFactoryBean;
-import org.springframework.beans.factory.config.MapFactoryBean;
-import org.springframework.beans.factory.config.PropertiesFactoryBean;
-import org.springframework.beans.factory.config.PropertyPathFactoryBean;
-import org.springframework.beans.factory.config.SetFactoryBean;
-import org.springframework.beans.factory.support.AbstractBeanDefinition;
-import org.springframework.beans.factory.support.BeanDefinitionBuilder;
-import org.springframework.util.StringUtils;
-
 /**
  * {@link NamespaceHandler} for the {@code util} namespace.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
  * @since 2.0
  */
 public class UtilNamespaceHandler extends NamespaceHandlerSupport {
-
 	private static final String SCOPE_ATTRIBUTE = "scope";
-
 
 	@Override
 	public void init() {
@@ -55,9 +29,7 @@ public class UtilNamespaceHandler extends NamespaceHandlerSupport {
 		registerBeanDefinitionParser("properties", new PropertiesBeanDefinitionParser());
 	}
 
-
 	private static class ConstantBeanDefinitionParser extends AbstractSimpleBeanDefinitionParser {
-
 		@Override
 		protected Class<?> getBeanClass(Element element) {
 			return FieldRetrievingFactoryBean.class;
@@ -73,9 +45,7 @@ public class UtilNamespaceHandler extends NamespaceHandlerSupport {
 		}
 	}
 
-
 	private static class PropertyPathBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
-
 		@Override
 		protected Class<?> getBeanClass(Element element) {
 			return PropertyPathFactoryBean.class;
@@ -110,9 +80,7 @@ public class UtilNamespaceHandler extends NamespaceHandlerSupport {
 		}
 	}
 
-
 	private static class ListBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
-
 		@Override
 		protected Class<?> getBeanClass(Element element) {
 			return ListFactoryBean.class;
@@ -135,9 +103,7 @@ public class UtilNamespaceHandler extends NamespaceHandlerSupport {
 		}
 	}
 
-
 	private static class SetBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
-
 		@Override
 		protected Class<?> getBeanClass(Element element) {
 			return SetFactoryBean.class;
@@ -160,9 +126,7 @@ public class UtilNamespaceHandler extends NamespaceHandlerSupport {
 		}
 	}
 
-
 	private static class MapBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
-
 		@Override
 		protected Class<?> getBeanClass(Element element) {
 			return MapFactoryBean.class;
@@ -185,9 +149,7 @@ public class UtilNamespaceHandler extends NamespaceHandlerSupport {
 		}
 	}
 
-
 	private static class PropertiesBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
-
 		@Override
 		protected Class<?> getBeanClass(Element element) {
 			return PropertiesFactoryBean.class;
@@ -217,5 +179,4 @@ public class UtilNamespaceHandler extends NamespaceHandlerSupport {
 			}
 		}
 	}
-
 }

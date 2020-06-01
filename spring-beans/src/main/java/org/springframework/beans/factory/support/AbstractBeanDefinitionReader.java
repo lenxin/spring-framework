@@ -24,8 +24,6 @@ import java.util.Set;
  * <p>Provides common properties like the bean factory to work on
  * and the class loader to use for loading bean classes.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
  * @see BeanDefinitionReaderUtils
  * @since 11.12.2003
  */
