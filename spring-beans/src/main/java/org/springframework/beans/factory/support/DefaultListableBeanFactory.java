@@ -45,13 +45,6 @@ import java.util.stream.Stream;
  * have a look at {@link StaticListableBeanFactory}, which manages existing
  * bean instances rather than creating new ones based on bean definitions.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Costin Leau
- * @author Chris Beams
- * @author Phillip Webb
- * @author Stephane Nicoll
  * @see #registerBeanDefinition
  * @see #addBeanPostProcessor
  * @see #getBean
@@ -852,7 +845,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		}
 	}
 
-
 	//---------------------------------------------------------------------
 	// Implementation of BeanDefinitionRegistry interface
 	//---------------------------------------------------------------------
@@ -1145,7 +1137,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	@Nullable
 	public Object doResolveDependency(DependencyDescriptor descriptor, @Nullable String beanName,
 									  @Nullable Set<String> autowiredBeanNames, @Nullable TypeConverter typeConverter) throws BeansException {
-
 		InjectionPoint previousInjectionPoint = ConstructorResolver.setCurrentInjectionPoint(descriptor);
 		try {
 			Object shortcut = descriptor.resolveShortcut(this);
@@ -1234,7 +1225,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	@Nullable
 	private Object resolveMultipleBeans(DependencyDescriptor descriptor, @Nullable String beanName,
 										@Nullable Set<String> autowiredBeanNames, @Nullable TypeConverter typeConverter) {
-
 		final Class<?> type = descriptor.getDependencyType();
 
 		if (descriptor instanceof StreamDependencyDescriptor) {

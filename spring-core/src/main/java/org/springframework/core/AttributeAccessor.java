@@ -5,6 +5,7 @@ import org.springframework.lang.Nullable;
 /**
  * Interface defining a generic contract for attaching and accessing metadata
  * to/from arbitrary objects.
+ * 元数据操作接口
  *
  * @since 2.0
  */
@@ -18,6 +19,7 @@ public interface AttributeAccessor {
 	 *
 	 * @param name  the unique attribute key
 	 * @param value the attribute value to be attached
+	 *              设置元数据
 	 */
 	void setAttribute(String name, @Nullable Object value);
 
@@ -27,6 +29,7 @@ public interface AttributeAccessor {
 	 *
 	 * @param name the unique attribute key
 	 * @return the current value of the attribute, if any
+	 * 获取元数据
 	 */
 	@Nullable
 	Object getAttribute(String name);
@@ -37,6 +40,7 @@ public interface AttributeAccessor {
 	 *
 	 * @param name the unique attribute key
 	 * @return the last value of the attribute, if any
+	 * 删除元数据
 	 */
 	@Nullable
 	Object removeAttribute(String name);
@@ -46,11 +50,13 @@ public interface AttributeAccessor {
 	 * Otherwise return {@code false}.
 	 *
 	 * @param name the unique attribute key
+	 *             是否含有元数据
 	 */
 	boolean hasAttribute(String name);
 
 	/**
 	 * Return the names of all attributes.
+	 * 获取所有元数据的名字
 	 */
 	String[] attributeNames();
 }

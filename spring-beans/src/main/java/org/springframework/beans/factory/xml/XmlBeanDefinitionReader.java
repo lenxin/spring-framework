@@ -38,9 +38,6 @@ import java.util.Set;
  * talking to the latter's implementation of the
  * {@link org.springframework.beans.factory.support.BeanDefinitionRegistry} interface.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Chris Beams
  * @see #setDocumentReaderClass
  * @see BeanDefinitionDocumentReader
  * @see DefaultBeanDefinitionDocumentReader

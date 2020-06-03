@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.beans.factory.support;
 
 import org.springframework.beans.*;
@@ -55,10 +39,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * respectively. Default implementations of those operations can be found in
  * {@link DefaultListableBeanFactory} and {@link AbstractAutowireCapableBeanFactory}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Costin Leau
- * @author Chris Beams
  * @see #getBeanDefinition
  * @see #createBean
  * @see AbstractAutowireCapableBeanFactory#createBean
@@ -73,7 +53,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * @since 15 April 2001
  */
 public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport implements ConfigurableBeanFactory {
-
 	/**
 	 * Parent bean factory, for bean inheritance support.
 	 */
@@ -172,7 +151,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	private final ThreadLocal<Object> prototypesCurrentlyInCreation =
 			new NamedThreadLocal<>("Prototype beans currently in creation");
 
-
 	/**
 	 * Create a new AbstractBeanFactory.
 	 */
@@ -188,7 +166,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	public AbstractBeanFactory(@Nullable BeanFactory parentBeanFactory) {
 		this.parentBeanFactory = parentBeanFactory;
 	}
-
 
 	//---------------------------------------------------------------------
 	// Implementation of BeanFactory interface
@@ -221,7 +198,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 */
 	public <T> T getBean(String name, @Nullable Class<T> requiredType, @Nullable Object... args)
 			throws BeansException {
-
 		return doGetBean(name, requiredType, args, false);
 	}
 
@@ -692,7 +668,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		return StringUtils.toStringArray(aliases);
 	}
 
-
 	//---------------------------------------------------------------------
 	// Implementation of HierarchicalBeanFactory interface
 	//---------------------------------------------------------------------
@@ -709,7 +684,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		return ((containsSingleton(beanName) || containsBeanDefinition(beanName)) &&
 				(!BeanFactoryUtils.isFactoryDereference(name) || isFactoryBean(beanName)));
 	}
-
 
 	//---------------------------------------------------------------------
 	// Implementation of ConfigurableBeanFactory interface
@@ -1129,7 +1103,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		}
 	}
 
-
 	//---------------------------------------------------------------------
 	// Implementation methods
 	//---------------------------------------------------------------------
@@ -1216,7 +1189,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 					registry.registerCustomEditor(requiredType, BeanUtils.instantiateClass(editorClass)));
 		}
 	}
-
 
 	/**
 	 * Return a merged RootBeanDefinition, traversing the parent bean definition
@@ -1490,7 +1462,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		}
 		return this.beanExpressionResolver.evaluate(value, new BeanExpressionContext(this, scope));
 	}
-
 
 	/**
 	 * Predict the eventual bean type (of the processed bean instance) for the
@@ -1768,7 +1739,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		}
 	}
 
-
 	//---------------------------------------------------------------------
 	// Abstract methods to be implemented by subclasses
 	//---------------------------------------------------------------------
@@ -1829,5 +1799,4 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 */
 	protected abstract Object createBean(String beanName, RootBeanDefinition mbd, @Nullable Object[] args)
 			throws BeanCreationException;
-
 }

@@ -1,39 +1,16 @@
-/*
- * Copyright 2002-2017 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.util.xml;
-
-import java.io.BufferedReader;
-import java.io.CharConversionException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
 
+import java.io.*;
+
 /**
  * Detects whether an XML stream is using DTD- or XSD-based validation.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
  * @since 2.0
  */
 public class XmlValidationModeDetector {
-
 	/**
 	 * Indicates that the validation should be disabled.
 	 */
@@ -55,7 +32,6 @@ public class XmlValidationModeDetector {
 	 */
 	public static final int VALIDATION_XSD = 3;
 
-
 	/**
 	 * The token in a XML document that declares the DTD to use for validation
 	 * and thus that DTD validation is being used.
@@ -72,18 +48,17 @@ public class XmlValidationModeDetector {
 	 */
 	private static final String END_COMMENT = "-->";
 
-
 	/**
 	 * Indicates whether or not the current parse position is inside an XML comment.
 	 */
 	private boolean inComment;
-
 
 	/**
 	 * Detect the validation mode for the XML document in the supplied {@link InputStream}.
 	 * Note that the supplied {@link InputStream} is closed by this method before returning.
 	 * 检测XML资源的验证模式
 	 * 判断在XML开始标记之前是否包含DOCTYPE，包含就是DTD，否则就是XSD
+	 *
 	 * @param inputStream the InputStream to parse
 	 * @throws IOException in case of I/O failure
 	 * @see #VALIDATION_DTD
@@ -113,17 +88,14 @@ public class XmlValidationModeDetector {
 				}
 			}
 			return (isDtdValidated ? VALIDATION_DTD : VALIDATION_XSD);
-		}
-		catch (CharConversionException ex) {
+		} catch (CharConversionException ex) {
 			// Choked on some character encoding...
 			// Leave the decision up to the caller.
 			return VALIDATION_AUTO;
-		}
-		finally {
+		} finally {
 			reader.close();
 		}
 	}
-
 
 	/**
 	 * Does the content contain the DTD DOCTYPE declaration?
@@ -182,6 +154,7 @@ public class XmlValidationModeDetector {
 
 	/**
 	 * Try to consume the {@link #START_COMMENT} token.
+	 *
 	 * @see #commentToken(String, String, boolean)
 	 */
 	private int startComment(String line) {
@@ -199,10 +172,9 @@ public class XmlValidationModeDetector {
 	 */
 	private int commentToken(String line, String token, boolean inCommentIfPresent) {
 		int index = line.indexOf(token);
-		if (index > - 1) {
+		if (index > -1) {
 			this.inComment = inCommentIfPresent;
 		}
 		return (index == -1 ? index : index + token.length());
 	}
-
 }

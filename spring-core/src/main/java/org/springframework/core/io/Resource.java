@@ -18,7 +18,6 @@ import java.nio.channels.ReadableByteChannel;
  * physical form, but a URL or File handle can just be returned for
  * certain resources. The actual behavior is implementation-specific.
  *
- * @author Juergen Hoeller
  * @see #getInputStream()
  * @see #getURL()
  * @see #getURI()
@@ -34,7 +33,6 @@ import java.nio.channels.ReadableByteChannel;
  * @since 28.12.2003
  */
 public interface Resource extends InputStreamSource {
-
 	/**
 	 * Determine whether this resource actually exists in physical form.
 	 * <p>This method performs a definitive existence check, whereas the

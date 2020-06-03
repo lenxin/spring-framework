@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2017 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.beans;
 
 import org.springframework.lang.Nullable;
@@ -24,11 +8,9 @@ import org.springframework.util.ObjectUtils;
  * Holder for a key-value style attribute that is part of a bean definition.
  * Keeps track of the definition source in addition to the key-value pair.
  *
- * @author Juergen Hoeller
  * @since 2.5
  */
 public class BeanMetadataAttribute implements BeanMetadataElement {
-
 	private final String name;
 
 	@Nullable
@@ -37,10 +19,10 @@ public class BeanMetadataAttribute implements BeanMetadataElement {
 	@Nullable
 	private Object source;
 
-
 	/**
 	 * Create a new AttributeValue instance.
-	 * @param name the name of the attribute (never {@code null})
+	 *
+	 * @param name  the name of the attribute (never {@code null})
 	 * @param value the value of the attribute (possibly before type conversion)
 	 */
 	public BeanMetadataAttribute(String name, @Nullable Object value) {
@@ -48,7 +30,6 @@ public class BeanMetadataAttribute implements BeanMetadataElement {
 		this.name = name;
 		this.value = value;
 	}
-
 
 	/**
 	 * Return the name of the attribute.
@@ -79,7 +60,6 @@ public class BeanMetadataAttribute implements BeanMetadataElement {
 		return this.source;
 	}
 
-
 	@Override
 	public boolean equals(Object other) {
 		if (this == other) {
@@ -103,5 +83,4 @@ public class BeanMetadataAttribute implements BeanMetadataElement {
 	public String toString() {
 		return "metadata attribute '" + this.name + "'";
 	}
-
 }

@@ -37,7 +37,6 @@ public abstract class BeanDefinitionReaderUtils {
 	 */
 	public static AbstractBeanDefinition createBeanDefinition(
 			@Nullable String parentName, @Nullable String className, @Nullable ClassLoader classLoader) throws ClassNotFoundException {
-
 		GenericBeanDefinition bd = new GenericBeanDefinition();
 		bd.setParentName(parentName);
 		if (className != null) {
@@ -85,7 +84,6 @@ public abstract class BeanDefinitionReaderUtils {
 	public static String generateBeanName(
 			BeanDefinition definition, BeanDefinitionRegistry registry, boolean isInnerBean)
 			throws BeanDefinitionStoreException {
-
 		String generatedBeanName = definition.getBeanClassName();
 		if (generatedBeanName == null) {
 			if (definition.getParentName() != null) {
@@ -134,7 +132,6 @@ public abstract class BeanDefinitionReaderUtils {
 
 	/**
 	 * Register the given bean definition with the given bean factory.
-	 * 向IOC容器注册解析得到的BeanDefinition
 	 *
 	 * @param definitionHolder the bean definition including name and aliases
 	 * @param registry         the bean factory to register with
