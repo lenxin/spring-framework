@@ -109,8 +109,10 @@ public class DefaultNamespaceHandlerResolver implements NamespaceHandlerResolver
 		if (handlerOrClassName == null) {
 			return null;
 		} else if (handlerOrClassName instanceof NamespaceHandler) {
+			/*已经做过解析的情况，直接从缓存获取*/
 			return (NamespaceHandler) handlerOrClassName;
 		} else {
+			/*没有做过解析的情况，则返回的是类路径*/
 			String className = (String) handlerOrClassName;
 			try {
 				Class<?> handlerClass = ClassUtils.forName(className, this.classLoader);
@@ -120,6 +122,7 @@ public class DefaultNamespaceHandlerResolver implements NamespaceHandlerResolver
 				}
 				NamespaceHandler namespaceHandler = (NamespaceHandler) BeanUtils.instantiateClass(handlerClass);
 				namespaceHandler.init();
+				/*缓存解析后的类*/
 				handlerMappings.put(namespaceUri, namespaceHandler);
 				return namespaceHandler;
 			} catch (ClassNotFoundException ex) {
@@ -134,6 +137,7 @@ public class DefaultNamespaceHandlerResolver implements NamespaceHandlerResolver
 
 	/**
 	 * Load the specified NamespaceHandler mappings lazily.
+	 * 懒加载所有已经配置的NamespaceHandler映射
 	 */
 	private Map<String, Object> getHandlerMappings() {
 		Map<String, Object> handlerMappings = this.handlerMappings;

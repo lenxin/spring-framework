@@ -45,10 +45,12 @@ public abstract class AbstractSingleBeanDefinitionParser extends AbstractBeanDef
 		if (parentName != null) {
 			builder.getRawBeanDefinition().setParentName(parentName);
 		}
+		/*获取自定义标签的class，此时会调用自定义解析器BeanDefinitionParser的getBeanClass方法*/
 		Class<?> beanClass = getBeanClass(element);
 		if (beanClass != null) {
 			builder.getRawBeanDefinition().setBeanClass(beanClass);
 		} else {
+			/*若子类没有重写getBeanClass方法，则调用getBeanClassName方法*/
 			String beanClassName = getBeanClassName(element);
 			if (beanClassName != null) {
 				builder.getRawBeanDefinition().setBeanClassName(beanClassName);
@@ -77,6 +79,7 @@ public abstract class AbstractSingleBeanDefinitionParser extends AbstractBeanDef
 	 * @param element the {@code Element} that is being parsed
 	 * @return the name of the parent bean for the currently parsed bean,
 	 * or {@code null} if none
+	 * 相当于xml配置中的parent属性内容
 	 */
 	@Nullable
 	protected String getParentName(Element element) {
@@ -95,6 +98,7 @@ public abstract class AbstractSingleBeanDefinitionParser extends AbstractBeanDef
 	 * @return the {@link Class} of the bean that is being defined via parsing
 	 * the supplied {@code Element}, or {@code null} if none
 	 * @see #getBeanClassName
+	 * 相当于xml配置中的class属性内容
 	 */
 	@Nullable
 	protected Class<?> getBeanClass(Element element) {
@@ -108,6 +112,7 @@ public abstract class AbstractSingleBeanDefinitionParser extends AbstractBeanDef
 	 * @return the class name of the bean that is being defined via parsing
 	 * the supplied {@code Element}, or {@code null} if none
 	 * @see #getBeanClass
+	 * 相当于xml配置中的class属性内容
 	 */
 	@Nullable
 	protected String getBeanClassName(Element element) {
@@ -136,6 +141,7 @@ public abstract class AbstractSingleBeanDefinitionParser extends AbstractBeanDef
 	 *
 	 * @param element the XML element being parsed
 	 * @param builder used to define the {@code BeanDefinition}
+	 * 模板方法，子类重写此方法解析元素Element填充BeanDefinitionBuilder
 	 */
 	protected void doParse(Element element, BeanDefinitionBuilder builder) {
 	}
