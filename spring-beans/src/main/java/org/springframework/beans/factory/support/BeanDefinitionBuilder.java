@@ -14,6 +14,7 @@ import java.util.function.Supplier;
  * {@link org.springframework.beans.factory.xml.NamespaceHandler NamespaceHandlers}.
  *
  * @since 2.0
+ * 构造器模式，用于构建BeanDefinition
  */
 public final class BeanDefinitionBuilder {
 	/**

@@ -1,22 +1,4 @@
-/*
- * Copyright 2002-2018 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.cache.config;
-
-import org.w3c.dom.Element;
 
 import org.springframework.aop.config.AopNamespaceUtils;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -31,6 +13,7 @@ import org.springframework.cache.interceptor.CacheInterceptor;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
+import org.w3c.dom.Element;
 
 /**
  * {@link org.springframework.beans.factory.xml.BeanDefinitionParser}
@@ -49,12 +32,9 @@ import org.springframework.util.StringUtils;
  * with {@code CacheResult}, {@code CachePut}, {@code CacheRemove} or
  * {@code CacheRemoveAll} are also registered.
  *
- * @author Costin Leau
- * @author Stephane Nicoll
  * @since 3.1
  */
 class AnnotationDrivenCacheBeanDefinitionParser implements BeanDefinitionParser {
-
 	private static final String CACHE_ASPECT_CLASS_NAME =
 			"org.springframework.cache.aspectj.AnnotationCacheAspect";
 
@@ -72,7 +52,6 @@ class AnnotationDrivenCacheBeanDefinitionParser implements BeanDefinitionParser 
 				"org.springframework.cache.jcache.interceptor.DefaultJCacheOperationSource", classLoader);
 	}
 
-
 	/**
 	 * Parses the '{@code <cache:annotation-driven>}' tag. Will
 	 * {@link AopNamespaceUtils#registerAutoProxyCreatorIfNecessary
@@ -85,8 +64,7 @@ class AnnotationDrivenCacheBeanDefinitionParser implements BeanDefinitionParser 
 		if ("aspectj".equals(mode)) {
 			// mode="aspectj"
 			registerCacheAspect(element, parserContext);
-		}
-		else {
+		} else {
 			// mode="proxy"
 			registerCacheAdvisor(element, parserContext);
 		}
@@ -132,7 +110,6 @@ class AnnotationDrivenCacheBeanDefinitionParser implements BeanDefinitionParser 
 			def.getPropertyValues().add("errorHandler", new RuntimeBeanReference(name.trim()));
 		}
 	}
-
 
 	/**
 	 * Configure the necessary infrastructure to support the Spring's caching annotations.
@@ -198,7 +175,6 @@ class AnnotationDrivenCacheBeanDefinitionParser implements BeanDefinitionParser 
 			}
 		}
 	}
-
 
 	/**
 	 * Configure the necessary infrastructure to support the standard JSR-107 caching annotations.
@@ -270,5 +246,4 @@ class AnnotationDrivenCacheBeanDefinitionParser implements BeanDefinitionParser 
 			return sourceDef;
 		}
 	}
-
 }

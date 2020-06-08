@@ -29,15 +29,8 @@ import java.util.*;
  *
  * <p>Mainly for use within the framework, but to some degree also
  * useful for application classes.
- *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Sam Brannen
- * @author Sebastien Deleuze
  */
 public abstract class BeanUtils {
-
 	private static final Log logger = LogFactory.getLog(BeanUtils.class);
 
 	private static final Set<Class<?>> unknownEditorTypes =
