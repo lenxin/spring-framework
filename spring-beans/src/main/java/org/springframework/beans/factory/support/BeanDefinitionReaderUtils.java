@@ -61,6 +61,7 @@ public abstract class BeanDefinitionReaderUtils {
 	 * @throws BeanDefinitionStoreException if no unique name can be generated
 	 *                                      for the given bean definition
 	 * @see #generateBeanName(BeanDefinition, BeanDefinitionRegistry, boolean)
+	 * 为给定的顶级BeanDefinition生成在IOC容器BeanDefinitionRegistry中唯一的beanName
 	 */
 	public static String generateBeanName(BeanDefinition beanDefinition, BeanDefinitionRegistry registry)
 			throws BeanDefinitionStoreException {
@@ -80,6 +81,7 @@ public abstract class BeanDefinitionReaderUtils {
 	 * @return the generated bean name
 	 * @throws BeanDefinitionStoreException if no unique name can be generated
 	 *                                      for the given bean definition
+	 * 为给定的BeanDefinition生成在IOC容器BeanDefinitionRegistry中唯一的beanName
 	 */
 	public static String generateBeanName(
 			BeanDefinition definition, BeanDefinitionRegistry registry, boolean isInnerBean)
@@ -117,6 +119,7 @@ public abstract class BeanDefinitionReaderUtils {
 	 *                 registered with (to check for existing bean names)
 	 * @return the unique bean name to use
 	 * @since 5.1
+	 * 转换给定的beanName(beanName + GENERATED_BEAN_NAME_SEPARATOR(#) + 从0开始的数字)直到在IOC容器中唯一
 	 */
 	public static String uniqueBeanName(String beanName, BeanDefinitionRegistry registry) {
 		String id = beanName;
