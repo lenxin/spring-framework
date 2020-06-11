@@ -6,6 +6,7 @@ import org.springframework.lang.Nullable;
 /**
  * Context that gets passed along a bean definition reading process,
  * encapsulating all relevant configuration as well as state.
+ * 定义bean读取过程传递的上下文，封装所有相关配置和状态。
  *
  * @since 2.0
  */
@@ -28,7 +29,6 @@ public class ReaderContext {
 	 */
 	public ReaderContext(Resource resource, ProblemReporter problemReporter,
 						 ReaderEventListener eventListener, SourceExtractor sourceExtractor) {
-
 		this.resource = resource;
 		this.problemReporter = problemReporter;
 		this.eventListener = eventListener;

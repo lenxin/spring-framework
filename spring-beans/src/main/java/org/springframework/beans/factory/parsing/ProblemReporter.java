@@ -3,6 +3,7 @@ package org.springframework.beans.factory.parsing;
 /**
  * SPI interface allowing tools and other external processes to handle errors
  * and warnings reported during bean definition parsing.
+ * SPI是串行外设接口（Serial Peripheral Interface）的缩写
  *
  * @see Problem
  * @since 2.0

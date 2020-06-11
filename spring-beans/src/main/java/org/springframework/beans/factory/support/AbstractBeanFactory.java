@@ -168,7 +168,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	}
 
 	//---------------------------------------------------------------------
-	// Implementation of BeanFactory interface
+	// BeanFactory接口的实现
 	//---------------------------------------------------------------------
 
 	@Override
@@ -1110,6 +1110,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	/**
 	 * Return the bean name, stripping out the factory dereference prefix if necessary,
 	 * and resolving aliases to canonical names.
+	 * 返回实际使用bean名称,去除重复的工厂间接引用前缀&并获取对应的别名，若没有指向的别名则返回去除重复的工厂间接引用前缀&的name
 	 *
 	 * @param name the user-specified name
 	 * @return the transformed bean name

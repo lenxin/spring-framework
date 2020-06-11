@@ -15,6 +15,7 @@ import java.util.Deque;
  * Context that gets passed along a bean definition parsing process,
  * encapsulating all relevant configuration as well as state.
  * Nested inside an {@link XmlReaderContext}.
+ * 定义bean解析过程传递的上下文，封装了相关配置和状态。嵌套在XmlReaderContext中。
  *
  * @see XmlReaderContext
  * @see BeanDefinitionParserDelegate
