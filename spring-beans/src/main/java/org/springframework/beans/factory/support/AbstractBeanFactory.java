@@ -204,7 +204,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	/**
 	 * Return an instance, which may be shared or independent, of the specified bean.
 	 *
-	 * @param name          the name of the bean to retrieve
+	 * @param name          the name of the bean to retrieve，bean名称、别名、FactoryBean
 	 * @param requiredType  the required type of the bean to retrieve
 	 * @param args          arguments to use when creating a bean instance using explicit arguments
 	 *                      (only applied when creating a new instance as opposed to retrieving an existing one)
@@ -259,8 +259,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			// Check if bean definition exists in this factory.
 			/*
 			 * 这里对IOC容器中的BeanDefinition是否存在进行检查，检查是否能在当前的BeanFactory中取得
-			 * 需要的Bean。如果在当前的工厂中取不到，则到双亲BeanFactory中去取；
-			 * 如果当前的双亲工厂取不到，那就顺着双亲BeanFactory链一直向上查找
+			 * 需要的Bean。如果在当前的工厂中取不到，则到双亲BeanFactory中去取
 			 */
 			BeanFactory parentBeanFactory = getParentBeanFactory();
 			if (parentBeanFactory != null && !containsBeanDefinition(beanName)) {
