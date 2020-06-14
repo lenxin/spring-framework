@@ -20,8 +20,6 @@ import java.beans.PropertyDescriptor;
  * is "false", to avoid side effects caused by getter method invocations.
  * Turn this to "true" to expose present property values to custom editors.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @since 13 April 2001
  * @see PropertyAccessor
  * @see PropertyEditorRegistry
@@ -31,7 +29,6 @@ import java.beans.PropertyDescriptor;
  * @see org.springframework.validation.DataBinder#initBeanPropertyAccess()
  */
 public interface BeanWrapper extends ConfigurablePropertyAccessor {
-
 	/**
 	 * Specify a limit for array and collection auto-growing.
 	 * <p>Default is unlimited on a plain BeanWrapper.
@@ -71,5 +68,4 @@ public interface BeanWrapper extends ConfigurablePropertyAccessor {
 	 * @throws InvalidPropertyException if there is no such property
 	 */
 	PropertyDescriptor getPropertyDescriptor(String propertyName) throws InvalidPropertyException;
-
 }
