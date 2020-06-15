@@ -12,15 +12,12 @@ package org.springframework.beans.factory;
  * <p>For a list of all bean lifecycle methods, see the
  * {@link BeanFactory BeanFactory javadocs}.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
- * @since 2.0
  * @see BeanNameAware
  * @see BeanFactoryAware
  * @see InitializingBean
+ * @since 2.0
  */
 public interface BeanClassLoaderAware extends Aware {
-
 	/**
 	 * Callback that supplies the bean {@link ClassLoader class loader} to
 	 * a bean instance.
@@ -29,8 +26,8 @@ public interface BeanClassLoaderAware extends Aware {
 	 * {@link InitializingBean InitializingBean's}
 	 * {@link InitializingBean#afterPropertiesSet()}
 	 * method or a custom init-method.
+	 *
 	 * @param classLoader the owning class loader
 	 */
 	void setBeanClassLoader(ClassLoader classLoader);
-
 }

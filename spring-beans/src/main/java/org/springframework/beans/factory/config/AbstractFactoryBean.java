@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.factory.config;
 
 import java.lang.reflect.InvocationHandler;
@@ -39,8 +37,6 @@ import org.springframework.util.ReflectionUtils;
  * for implementing the abstract {@link #createInstance()} template
  * method to actually create the object(s) to expose.
  *
- * @author Juergen Hoeller
- * @author Keith Donald
  * @since 1.0.2
  * @param <T> the bean type
  * @see #setSingleton
@@ -48,7 +44,6 @@ import org.springframework.util.ReflectionUtils;
  */
 public abstract class AbstractFactoryBean<T>
 		implements FactoryBean<T>, BeanClassLoaderAware, BeanFactoryAware, InitializingBean, DisposableBean {
-
 	/** Logger available to subclasses. */
 	protected final Log logger = LogFactory.getLog(getClass());
 
@@ -67,7 +62,6 @@ public abstract class AbstractFactoryBean<T>
 
 	@Nullable
 	private T earlySingletonInstance;
-
 
 	/**
 	 * Set if a singleton should be created, or a new object on each request
@@ -130,7 +124,6 @@ public abstract class AbstractFactoryBean<T>
 		}
 	}
 
-
 	/**
 	 * Expose the singleton instance or create a new prototype instance.
 	 * @see #createInstance()
@@ -186,7 +179,6 @@ public abstract class AbstractFactoryBean<T>
 		}
 	}
 
-
 	/**
 	 * This abstract method declaration mirrors the method in the FactoryBean
 	 * interface, for a consistent offering of abstract template methods.
@@ -237,12 +229,10 @@ public abstract class AbstractFactoryBean<T>
 	protected void destroyInstance(@Nullable T instance) throws Exception {
 	}
 
-
 	/**
 	 * Reflective InvocationHandler for lazy access to the actual singleton object.
 	 */
 	private class EarlySingletonInvocationHandler implements InvocationHandler {
-
 		@Override
 		public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 			if (ReflectionUtils.isEqualsMethod(method)) {
@@ -265,5 +255,4 @@ public abstract class AbstractFactoryBean<T>
 			}
 		}
 	}
-
 }

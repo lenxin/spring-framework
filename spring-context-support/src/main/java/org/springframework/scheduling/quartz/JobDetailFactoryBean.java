@@ -1,15 +1,10 @@
-
-
 package org.springframework.scheduling.quartz;
-
-import java.util.Map;
 
 import org.quartz.Job;
 import org.quartz.JobDataMap;
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.impl.JobDetailImpl;
-
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -17,6 +12,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.util.Map;
 
 /**
  * A Spring {@link FactoryBean} for creating a Quartz {@link org.quartz.JobDetail}
@@ -26,16 +23,14 @@ import org.springframework.util.Assert;
  * sensible defaults. This class uses the Spring bean name as job name,
  * and the Quartz default group ("DEFAULT") as job group if not specified.
  *
- * @author Juergen Hoeller
- * @since 3.1
  * @see #setName
  * @see #setGroup
  * @see org.springframework.beans.factory.BeanNameAware
  * @see org.quartz.Scheduler#DEFAULT_GROUP
+ * @since 3.1
  */
 public class JobDetailFactoryBean
 		implements FactoryBean<JobDetail>, BeanNameAware, ApplicationContextAware, InitializingBean {
-
 	@Nullable
 	private String name;
 
@@ -66,7 +61,6 @@ public class JobDetailFactoryBean
 	@Nullable
 	private JobDetail jobDetail;
 
-
 	/**
 	 * Specify the job's name.
 	 */
@@ -90,6 +84,7 @@ public class JobDetailFactoryBean
 
 	/**
 	 * Set the job's JobDataMap.
+	 *
 	 * @see #setJobDataAsMap
 	 */
 	public void setJobDataMap(JobDataMap jobDataMap) {
@@ -110,8 +105,9 @@ public class JobDetailFactoryBean
 	 * <p>Note: When using persistent Jobs whose JobDetail will be kept in the
 	 * database, do not put Spring-managed beans or an ApplicationContext
 	 * reference into the JobDataMap but rather into the SchedulerContext.
+	 *
 	 * @param jobDataAsMap a Map with String keys and any objects as values
-	 * (for example Spring-managed beans)
+	 *                     (for example Spring-managed beans)
 	 * @see org.springframework.scheduling.quartz.SchedulerFactoryBean#setSchedulerContextAsMap
 	 */
 	public void setJobDataAsMap(Map<String, ?> jobDataAsMap) {
@@ -164,13 +160,13 @@ public class JobDetailFactoryBean
 	 * <p><b>Note: When using persistent job stores where JobDetail contents will
 	 * be kept in the database, do not put an ApplicationContext reference into
 	 * the JobDataMap but rather into the SchedulerContext.</b>
+	 *
 	 * @see org.springframework.scheduling.quartz.SchedulerFactoryBean#setApplicationContextSchedulerContextKey
 	 * @see org.springframework.context.ApplicationContext
 	 */
 	public void setApplicationContextJobDataKey(String applicationContextJobDataKey) {
 		this.applicationContextJobDataKey = applicationContextJobDataKey;
 	}
-
 
 	@Override
 	public void afterPropertiesSet() {
@@ -186,7 +182,7 @@ public class JobDetailFactoryBean
 			if (this.applicationContext == null) {
 				throw new IllegalStateException(
 						"JobDetailBean needs to be set up in an ApplicationContext " +
-						"to be able to handle an 'applicationContextJobDataKey'");
+								"to be able to handle an 'applicationContextJobDataKey'");
 			}
 			getJobDataMap().put(this.applicationContextJobDataKey, this.applicationContext);
 		}
@@ -201,7 +197,6 @@ public class JobDetailFactoryBean
 		jdi.setDescription(this.description);
 		this.jobDetail = jdi;
 	}
-
 
 	@Override
 	@Nullable
@@ -218,5 +213,4 @@ public class JobDetailFactoryBean
 	public boolean isSingleton() {
 		return true;
 	}
-
 }
