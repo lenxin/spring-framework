@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.factory;
 
 import org.springframework.beans.BeansException;
@@ -7,29 +5,31 @@ import org.springframework.util.ClassUtils;
 
 /**
  * Thrown when a bean doesn't match the expected type.
- *
- * @author Rod Johnson
- * @author Juergen Hoeller
  */
 @SuppressWarnings("serial")
 public class BeanNotOfRequiredTypeException extends BeansException {
-
-	/** The name of the instance that was of the wrong type. */
+	/**
+	 * The name of the instance that was of the wrong type.
+	 */
 	private final String beanName;
 
-	/** The required type. */
+	/**
+	 * The required type.
+	 */
 	private final Class<?> requiredType;
 
-	/** The offending type. */
+	/**
+	 * The offending type.
+	 */
 	private final Class<?> actualType;
-
 
 	/**
 	 * Create a new BeanNotOfRequiredTypeException.
-	 * @param beanName the name of the bean requested
+	 *
+	 * @param beanName     the name of the bean requested
 	 * @param requiredType the required type
-	 * @param actualType the actual type returned, which did not match
-	 * the expected type
+	 * @param actualType   the actual type returned, which did not match
+	 *                     the expected type
 	 */
 	public BeanNotOfRequiredTypeException(String beanName, Class<?> requiredType, Class<?> actualType) {
 		super("Bean named '" + beanName + "' is expected to be of type '" + ClassUtils.getQualifiedName(requiredType) +
@@ -38,7 +38,6 @@ public class BeanNotOfRequiredTypeException extends BeansException {
 		this.requiredType = requiredType;
 		this.actualType = actualType;
 	}
-
 
 	/**
 	 * Return the name of the instance that was of the wrong type.
@@ -60,5 +59,4 @@ public class BeanNotOfRequiredTypeException extends BeansException {
 	public Class<?> getActualType() {
 		return this.actualType;
 	}
-
 }

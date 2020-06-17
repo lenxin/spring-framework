@@ -14,14 +14,11 @@ import org.springframework.lang.Nullable;
  * and returns "null" from {@code #toString()}, which is how they can be tested
  * externally (since this class itself is not public).
  *
- * @author Juergen Hoeller
  * @since 5.0
  */
 final class NullBean {
-
 	NullBean() {
 	}
-
 
 	@Override
 	public boolean equals(@Nullable Object obj) {
@@ -37,5 +34,4 @@ final class NullBean {
 	public String toString() {
 		return "null";
 	}
-
 }

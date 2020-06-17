@@ -649,6 +649,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 	 * any sort of extended singleton creation phase. In particular, subclasses
 	 * should <i>not</i> have their own mutexes involved in singleton creation,
 	 * to avoid the potential for deadlocks in lazy-init situations.
+	 * 获取单例创建阶段的互斥锁
 	 */
 	public final Object getSingletonMutex() {
 		return this.singletonObjects;

@@ -137,6 +137,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 
 	/**
 	 * Map from bean name to merged RootBeanDefinition.
+	 * beanName和子bean与父bean合并的RootBeanDefinition的映射
 	 */
 	private final Map<String, RootBeanDefinition> mergedBeanDefinitions = new ConcurrentHashMap<>(256);
 
@@ -1219,7 +1220,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 */
 	protected RootBeanDefinition getMergedBeanDefinition(String beanName, BeanDefinition bd)
 			throws BeanDefinitionStoreException {
-
 		return getMergedBeanDefinition(beanName, bd, null);
 	}
 
@@ -1237,7 +1237,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	protected RootBeanDefinition getMergedBeanDefinition(
 			String beanName, BeanDefinition bd, @Nullable BeanDefinition containingBd)
 			throws BeanDefinitionStoreException {
-
 		synchronized (this.mergedBeanDefinitions) {
 			RootBeanDefinition mbd = null;
 
@@ -1619,6 +1618,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	/**
 	 * Get the object for the given bean instance, either the bean
 	 * instance itself or its created object in case of a FactoryBean.
+	 * 获取bean或者FactoryBean实例
 	 *
 	 * @param beanInstance the shared bean instance
 	 * @param name         name that may include factory dereference prefix
@@ -1628,7 +1628,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 */
 	protected Object getObjectForBeanInstance(
 			Object beanInstance, String name, String beanName, @Nullable RootBeanDefinition mbd) {
-
 		// Don't let calling code try to dereference the factory if the bean isn't a factory.
 		/*如果指定的name是工厂相关(以&为前缀)且beanInstance又不是FactoryBean类型则验证不通过*/
 		if (BeanFactoryUtils.isFactoryDereference(name)) {
@@ -1644,10 +1643,11 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		// If it's a FactoryBean, we use it to create a bean instance, unless the
 		// caller actually wants a reference to the factory.
 		/*
-		 * 现在我们有了个bean的实例，这个实例可能会是正常的bean或者是FactoryBean
+		 * 现在我们有了个bean的实例，这个实例可能会是普通的bean或者是FactoryBean
 		 * 如果是FactoryBean，我们使用它创建实例，但是如果用户想要直接获取工厂实例而不是工厂的
 		 * getObject方法对应的实例那么传入的name应该加入前缀&
 		 */
+		// 如果beanInstance是普通bean或者需要工厂FactoryBean
 		if (!(beanInstance instanceof FactoryBean) || BeanFactoryUtils.isFactoryDereference(name)) {
 			return beanInstance;
 		}
