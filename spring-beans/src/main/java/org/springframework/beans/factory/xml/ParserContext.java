@@ -23,12 +23,9 @@ import java.util.Deque;
  */
 public final class ParserContext {
 	private final XmlReaderContext readerContext;
-
 	private final BeanDefinitionParserDelegate delegate;
-
 	@Nullable
 	private BeanDefinition containingBeanDefinition;
-
 	private final Deque<CompositeComponentDefinition> containingComponents = new ArrayDeque<>();
 
 	public ParserContext(XmlReaderContext readerContext, BeanDefinitionParserDelegate delegate) {

@@ -10,18 +10,13 @@ import org.springframework.util.Assert;
  * <p>The default scope is "singleton", and the default is to <i>not</i> create
  * scoped-proxies.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @since 2.5
  * @see ScopeMetadataResolver
  * @see ScopedProxyMode
+ * @since 2.5
  */
 public class ScopeMetadata {
-
 	private String scopeName = BeanDefinition.SCOPE_SINGLETON;
-
 	private ScopedProxyMode scopedProxyMode = ScopedProxyMode.NO;
-
 
 	/**
 	 * Set the name of the scope.
@@ -52,5 +47,4 @@ public class ScopeMetadata {
 	public ScopedProxyMode getScopedProxyMode() {
 		return this.scopedProxyMode;
 	}
-
 }

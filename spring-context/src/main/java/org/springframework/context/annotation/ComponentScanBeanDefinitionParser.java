@@ -30,25 +30,15 @@ import java.util.regex.Pattern;
  */
 public class ComponentScanBeanDefinitionParser implements BeanDefinitionParser {
 	private static final String BASE_PACKAGE_ATTRIBUTE = "base-package";
-
 	private static final String RESOURCE_PATTERN_ATTRIBUTE = "resource-pattern";
-
 	private static final String USE_DEFAULT_FILTERS_ATTRIBUTE = "use-default-filters";
-
 	private static final String ANNOTATION_CONFIG_ATTRIBUTE = "annotation-config";
-
 	private static final String NAME_GENERATOR_ATTRIBUTE = "name-generator";
-
 	private static final String SCOPE_RESOLVER_ATTRIBUTE = "scope-resolver";
-
 	private static final String SCOPED_PROXY_ATTRIBUTE = "scoped-proxy";
-
 	private static final String EXCLUDE_FILTER_ELEMENT = "exclude-filter";
-
 	private static final String INCLUDE_FILTER_ELEMENT = "include-filter";
-
 	private static final String FILTER_TYPE_ATTRIBUTE = "type";
-
 	private static final String FILTER_EXPRESSION_ATTRIBUTE = "expression";
 
 	@Override
@@ -63,7 +53,6 @@ public class ComponentScanBeanDefinitionParser implements BeanDefinitionParser {
 		ClassPathBeanDefinitionScanner scanner = configureScanner(parserContext, element);
 		Set<BeanDefinitionHolder> beanDefinitions = scanner.doScan(basePackages);
 		registerComponents(parserContext.getReaderContext(), beanDefinitions, element);
-
 		return null;
 	}
 
@@ -106,7 +95,6 @@ public class ComponentScanBeanDefinitionParser implements BeanDefinitionParser {
 
 	protected void registerComponents(
 			XmlReaderContext readerContext, Set<BeanDefinitionHolder> beanDefinitions, Element element) {
-
 		Object source = readerContext.extractSource(element);
 		CompositeComponentDefinition compositeDef = new CompositeComponentDefinition(element.getTagName(), source);
 
@@ -196,7 +184,6 @@ public class ComponentScanBeanDefinitionParser implements BeanDefinitionParser {
 	@SuppressWarnings("unchecked")
 	protected TypeFilter createTypeFilter(Element element, @Nullable ClassLoader classLoader,
 										  ParserContext parserContext) throws ClassNotFoundException {
-
 		String filterType = element.getAttribute(FILTER_TYPE_ATTRIBUTE);
 		String expression = element.getAttribute(FILTER_EXPRESSION_ATTRIBUTE);
 		expression = parserContext.getReaderContext().getEnvironment().resolvePlaceholders(expression);
@@ -223,7 +210,6 @@ public class ComponentScanBeanDefinitionParser implements BeanDefinitionParser {
 	@SuppressWarnings("unchecked")
 	private Object instantiateUserDefinedStrategy(
 			String className, Class<?> strategyType, @Nullable ClassLoader classLoader) {
-
 		Object result;
 		try {
 			result = ReflectionUtils.accessibleConstructor(ClassUtils.forName(className, classLoader)).newInstance();

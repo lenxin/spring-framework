@@ -36,8 +36,6 @@ import java.util.Set;
  *
  * <pre class="code">com.xyz.FooServiceImpl -&gt; fooServiceImpl</pre>
  *
- * @author Juergen Hoeller
- * @author Mark Fisher
  * @see org.springframework.stereotype.Component#value()
  * @see org.springframework.stereotype.Repository#value()
  * @see org.springframework.stereotype.Service#value()

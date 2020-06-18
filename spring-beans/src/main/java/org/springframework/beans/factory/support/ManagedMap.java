@@ -1,38 +1,29 @@
-
-
 package org.springframework.beans.factory.support;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 import org.springframework.beans.BeanMetadataElement;
 import org.springframework.beans.Mergeable;
 import org.springframework.lang.Nullable;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 /**
  * Tag collection class used to hold managed Map values, which may
  * include runtime bean references (to be resolved into bean objects).
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @since 27.05.2003
  * @param <K> the key type
  * @param <V> the value type
+ * @since 27.05.2003
  */
 @SuppressWarnings("serial")
 public class ManagedMap<K, V> extends LinkedHashMap<K, V> implements Mergeable, BeanMetadataElement {
-
 	@Nullable
 	private Object source;
-
 	@Nullable
 	private String keyTypeName;
-
 	@Nullable
 	private String valueTypeName;
-
 	private boolean mergeEnabled;
-
 
 	public ManagedMap() {
 	}
@@ -40,7 +31,6 @@ public class ManagedMap<K, V> extends LinkedHashMap<K, V> implements Mergeable, 
 	public ManagedMap(int initialCapacity) {
 		super(initialCapacity);
 	}
-
 
 	/**
 	 * Set the configuration source {@code Object} for this metadata element.
@@ -116,5 +106,4 @@ public class ManagedMap<K, V> extends LinkedHashMap<K, V> implements Mergeable, 
 		merged.putAll(this);
 		return merged;
 	}
-
 }

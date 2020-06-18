@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation;
 
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
@@ -11,17 +9,15 @@ import org.springframework.lang.Nullable;
 /**
  * Context information for use by {@link Condition Conditions}.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
  * @since 4.0
  */
 public interface ConditionContext {
-
 	/**
 	 * Return the {@link BeanDefinitionRegistry} that will hold the bean definition
 	 * should the condition match.
+	 *
 	 * @throws IllegalStateException if no registry is available (which is unusual:
-	 * only the case with a plain {@link ClassPathScanningCandidateComponentProvider})
+	 *                               only the case with a plain {@link ClassPathScanningCandidateComponentProvider})
 	 */
 	BeanDefinitionRegistry getRegistry();
 
@@ -46,9 +42,9 @@ public interface ConditionContext {
 	/**
 	 * Return the {@link ClassLoader} that should be used to load additional classes
 	 * (only {@code null} if even the system ClassLoader isn't accessible).
+	 *
 	 * @see org.springframework.util.ClassUtils#forName(String, ClassLoader)
 	 */
 	@Nullable
 	ClassLoader getClassLoader();
-
 }

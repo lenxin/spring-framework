@@ -39,135 +39,70 @@ public class BeanDefinitionParserDelegate {
 	 * Anything else represents false. Case seNsItive.
 	 */
 	public static final String TRUE_VALUE = "true";
-
 	public static final String FALSE_VALUE = "false";
-
 	public static final String DEFAULT_VALUE = "default";
-
 	public static final String DESCRIPTION_ELEMENT = "description";
-
 	public static final String AUTOWIRE_NO_VALUE = "no";
-
 	public static final String AUTOWIRE_BY_NAME_VALUE = "byName";
-
 	public static final String AUTOWIRE_BY_TYPE_VALUE = "byType";
-
 	public static final String AUTOWIRE_CONSTRUCTOR_VALUE = "constructor";
-
 	public static final String AUTOWIRE_AUTODETECT_VALUE = "autodetect";
-
 	public static final String NAME_ATTRIBUTE = "name";
-
 	public static final String BEAN_ELEMENT = "bean";
-
 	public static final String META_ELEMENT = "meta";
-
 	public static final String ID_ATTRIBUTE = "id";
-
 	public static final String PARENT_ATTRIBUTE = "parent";
-
 	public static final String CLASS_ATTRIBUTE = "class";
-
 	public static final String ABSTRACT_ATTRIBUTE = "abstract";
-
 	public static final String SCOPE_ATTRIBUTE = "scope";
-
 	private static final String SINGLETON_ATTRIBUTE = "singleton";
-
 	public static final String LAZY_INIT_ATTRIBUTE = "lazy-init";
-
 	public static final String AUTOWIRE_ATTRIBUTE = "autowire";
-
 	public static final String AUTOWIRE_CANDIDATE_ATTRIBUTE = "autowire-candidate";
-
 	public static final String PRIMARY_ATTRIBUTE = "primary";
-
 	public static final String DEPENDS_ON_ATTRIBUTE = "depends-on";
-
 	public static final String INIT_METHOD_ATTRIBUTE = "init-method";
-
 	public static final String DESTROY_METHOD_ATTRIBUTE = "destroy-method";
-
 	public static final String FACTORY_METHOD_ATTRIBUTE = "factory-method";
-
 	public static final String FACTORY_BEAN_ATTRIBUTE = "factory-bean";
-
 	public static final String CONSTRUCTOR_ARG_ELEMENT = "constructor-arg";
-
 	public static final String INDEX_ATTRIBUTE = "index";
-
 	public static final String TYPE_ATTRIBUTE = "type";
-
 	public static final String VALUE_TYPE_ATTRIBUTE = "value-type";
-
 	public static final String KEY_TYPE_ATTRIBUTE = "key-type";
-
 	public static final String PROPERTY_ELEMENT = "property";
-
 	public static final String REF_ATTRIBUTE = "ref";
-
 	public static final String VALUE_ATTRIBUTE = "value";
-
 	public static final String LOOKUP_METHOD_ELEMENT = "lookup-method";
-
 	public static final String REPLACED_METHOD_ELEMENT = "replaced-method";
-
 	public static final String REPLACER_ATTRIBUTE = "replacer";
-
 	public static final String ARG_TYPE_ELEMENT = "arg-type";
-
 	public static final String ARG_TYPE_MATCH_ATTRIBUTE = "match";
-
 	public static final String REF_ELEMENT = "ref";
-
 	public static final String IDREF_ELEMENT = "idref";
-
 	public static final String BEAN_REF_ATTRIBUTE = "bean";
-
 	public static final String PARENT_REF_ATTRIBUTE = "parent";
-
 	public static final String VALUE_ELEMENT = "value";
-
 	public static final String NULL_ELEMENT = "null";
-
 	public static final String ARRAY_ELEMENT = "array";
-
 	public static final String LIST_ELEMENT = "list";
-
 	public static final String SET_ELEMENT = "set";
-
 	public static final String MAP_ELEMENT = "map";
-
 	public static final String ENTRY_ELEMENT = "entry";
-
 	public static final String KEY_ELEMENT = "key";
-
 	public static final String KEY_ATTRIBUTE = "key";
-
 	public static final String KEY_REF_ATTRIBUTE = "key-ref";
-
 	public static final String VALUE_REF_ATTRIBUTE = "value-ref";
-
 	public static final String PROPS_ELEMENT = "props";
-
 	public static final String PROP_ELEMENT = "prop";
-
 	public static final String MERGE_ATTRIBUTE = "merge";
-
 	public static final String QUALIFIER_ELEMENT = "qualifier";
-
 	public static final String QUALIFIER_ATTRIBUTE_ELEMENT = "attribute";
-
 	public static final String DEFAULT_LAZY_INIT_ATTRIBUTE = "default-lazy-init";
-
 	public static final String DEFAULT_MERGE_ATTRIBUTE = "default-merge";
-
 	public static final String DEFAULT_AUTOWIRE_ATTRIBUTE = "default-autowire";
-
 	public static final String DEFAULT_AUTOWIRE_CANDIDATES_ATTRIBUTE = "default-autowire-candidates";
-
 	public static final String DEFAULT_INIT_METHOD_ATTRIBUTE = "default-init-method";
-
 	public static final String DEFAULT_DESTROY_METHOD_ATTRIBUTE = "default-destroy-method";
 
 	protected final Log logger = LogFactory.getLog(getClass());
@@ -235,6 +170,7 @@ public class BeanDefinitionParserDelegate {
 
 	/**
 	 * Initialize the default settings assuming a {@code null} parent delegate.
+	 * 初始化默认设置，假设父委托为空。
 	 */
 	public void initDefaults(Element root) {
 		initDefaults(root, null);
@@ -245,6 +181,8 @@ public class BeanDefinitionParserDelegate {
 	 * init-method, destroy-method and merge settings. Support nested 'beans'
 	 * element use cases by falling back to the given parent in case the
 	 * defaults are not explicitly set locally.
+	 * 初始化默认的lazy-init, autowire, dependency check settings,init-method, destroy-method, merge settings.
+	 * 在嵌套beans元素定义中，若没有显示设置，则使用上层的设置
 	 *
 	 * @see #populateDefaults(DocumentDefaultsDefinition, DocumentDefaultsDefinition, org.w3c.dom.Element)
 	 * @see #getDefaults()
@@ -259,7 +197,7 @@ public class BeanDefinitionParserDelegate {
 	 * autowire, dependency check settings, init-method, destroy-method and merge settings.
 	 * Support nested 'beans' element use cases by falling back to {@code parentDefaults}
 	 * in case the defaults are not explicitly set locally.
-	 * 向DocumentDefaultsDefinition中填充默认值
+	 * 向DocumentDefaultsDefinition中填充默认值，在嵌套beans元素定义中，若没有显示设置，则使用上层的设置
 	 *
 	 * @param defaults       the defaults to populate
 	 * @param parentDefaults the parent BeanDefinitionParserDelegate (if any) defaults to fall back to
@@ -308,9 +246,6 @@ public class BeanDefinitionParserDelegate {
 		defaults.setSource(this.readerContext.extractSource(root));
 	}
 
-	/**
-	 * Return the defaults definition object.
-	 */
 	public DocumentDefaultsDefinition getDefaults() {
 		return this.defaults;
 	}
@@ -318,6 +253,7 @@ public class BeanDefinitionParserDelegate {
 	/**
 	 * Return the default settings for bean definitions as indicated within
 	 * the attributes of the top-level {@code <beans/>} element.
+	 * 返回顶级beans元素的属性中指示的bean定义的默认设置。
 	 */
 	public BeanDefinitionDefaults getBeanDefinitionDefaults() {
 		BeanDefinitionDefaults bdd = new BeanDefinitionDefaults();
@@ -331,6 +267,7 @@ public class BeanDefinitionParserDelegate {
 	/**
 	 * Return any patterns provided in the 'default-autowire-candidates'
 	 * attribute of the top-level {@code <beans/>} element.
+	 * 返回顶级beans元素的属性中设置的default-autowire-candidates属性，用逗号分隔
 	 */
 	@Nullable
 	public String[] getAutowireCandidatePatterns() {
@@ -350,9 +287,6 @@ public class BeanDefinitionParserDelegate {
 	}
 
 	/**
-	 * Parses the supplied {@code <bean>} element. May return {@code null}
-	 * if there were errors during parse. Errors are reported to the
-	 * {@link org.springframework.beans.factory.parsing.ProblemReporter}.
 	 * 解析提供的bean元素。如果在解析过程中出现错误，返回null。错误被报告给ProblemReporter
 	 */
 	@Nullable
@@ -386,9 +320,9 @@ public class BeanDefinitionParserDelegate {
 			return null;
 		}
 
+		/*如果beanName不存在，则根据spring中提供的命名规则为当前bean生成对应的beanName*/
 		if (!StringUtils.hasText(beanName)) {
 			try {
-				/*如果beanName不存在，则根据spring中提供的命名规则为当前bean生成对应的beanName*/
 				if (containingBean != null) {
 					beanName = BeanDefinitionReaderUtils.generateBeanName(
 							beanDefinition, this.readerContext.getRegistry(), true);

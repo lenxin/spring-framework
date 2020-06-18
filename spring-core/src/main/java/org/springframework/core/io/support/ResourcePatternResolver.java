@@ -28,7 +28,6 @@ import java.io.IOException;
  * expected to be a path without placeholders in this case (e.g. "/beans.xml");
  * JAR files or classes directories can contain multiple files of the same name.
  *
- * @author Juergen Hoeller
  * @see org.springframework.core.io.Resource
  * @see org.springframework.core.io.ResourceLoader
  * @see org.springframework.context.ApplicationContext

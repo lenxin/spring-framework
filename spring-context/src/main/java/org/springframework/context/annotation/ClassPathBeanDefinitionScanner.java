@@ -39,16 +39,11 @@ import java.util.Set;
  */
 public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateComponentProvider {
 	private final BeanDefinitionRegistry registry;
-
 	private BeanDefinitionDefaults beanDefinitionDefaults = new BeanDefinitionDefaults();
-
 	@Nullable
 	private String[] autowireCandidatePatterns;
-
 	private BeanNameGenerator beanNameGenerator = AnnotationBeanNameGenerator.INSTANCE;
-
 	private ScopeMetadataResolver scopeMetadataResolver = new AnnotationScopeMetadataResolver();
-
 	private boolean includeAnnotationConfig = true;
 
 	/**

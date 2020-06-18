@@ -1,10 +1,7 @@
-
-
 package org.springframework.core.env;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ObjectUtils;
@@ -34,23 +31,20 @@ import org.springframework.util.ObjectUtils;
  * annotation provides a convenient and declarative way of adding property sources to the
  * enclosing {@code Environment}.
  *
- * @author Chris Beams
- * @since 3.1
  * @param <T> the source type
  * @see PropertySources
  * @see PropertyResolver
  * @see PropertySourcesPropertyResolver
  * @see MutablePropertySources
  * @see org.springframework.context.annotation.PropertySource
+ * @since 3.1
  */
 public abstract class PropertySource<T> {
-
 	protected final Log logger = LogFactory.getLog(getClass());
 
 	protected final String name;
 
 	protected final T source;
-
 
 	/**
 	 * Create a new {@code PropertySource} with the given name and source object.
@@ -73,7 +67,6 @@ public abstract class PropertySource<T> {
 		this(name, (T) new Object());
 	}
 
-
 	/**
 	 * Return the name of this {@code PropertySource}.
 	 */
@@ -93,6 +86,7 @@ public abstract class PropertySource<T> {
 	 * <p>This implementation simply checks for a {@code null} return value
 	 * from {@link #getProperty(String)}. Subclasses may wish to implement
 	 * a more efficient algorithm if possible.
+	 *
 	 * @param name the property name to find
 	 */
 	public boolean containsProperty(String name) {
@@ -102,12 +96,12 @@ public abstract class PropertySource<T> {
 	/**
 	 * Return the value associated with the given name,
 	 * or {@code null} if not found.
+	 *
 	 * @param name the property to find
 	 * @see PropertyResolver#getRequiredProperty(String)
 	 */
 	@Nullable
 	public abstract Object getProperty(String name);
-
 
 	/**
 	 * This {@code PropertySource} object is equal to the given object if:
@@ -139,6 +133,7 @@ public abstract class PropertySource<T> {
 	 * <p>This variable verbosity is useful as a property source such as system properties
 	 * or environment variables may contain an arbitrary number of property pairs,
 	 * potentially leading to difficult to read exception and log messages.
+	 *
 	 * @see Log#isDebugEnabled()
 	 */
 	@Override
@@ -146,12 +141,10 @@ public abstract class PropertySource<T> {
 		if (logger.isDebugEnabled()) {
 			return getClass().getSimpleName() + "@" + System.identityHashCode(this) +
 					" {name='" + this.name + "', properties=" + this.source + "}";
-		}
-		else {
+		} else {
 			return getClass().getSimpleName() + " {name='" + this.name + "'}";
 		}
 	}
-
 
 	/**
 	 * Return a {@code PropertySource} implementation intended for collection comparison purposes only.
@@ -168,12 +161,12 @@ public abstract class PropertySource<T> {
 	 * The returned {@code PropertySource} will throw {@code UnsupportedOperationException}
 	 * if any methods other than {@code equals(Object)}, {@code hashCode()}, and {@code toString()}
 	 * are called.
+	 *
 	 * @param name the name of the comparison {@code PropertySource} to be created and returned.
 	 */
 	public static PropertySource<?> named(String name) {
 		return new ComparisonPropertySource(name);
 	}
-
 
 	/**
 	 * {@code PropertySource} to be used as a placeholder in cases where an actual
@@ -183,12 +176,12 @@ public abstract class PropertySource<T> {
 	 * {@code ApplicationContext}.  In such cases, a stub should be used to hold the
 	 * intended default position/order of the property source, then be replaced
 	 * during context refresh.
+	 *
 	 * @see org.springframework.context.support.AbstractApplicationContext#initPropertySources()
 	 * @see org.springframework.web.context.support.StandardServletEnvironment
 	 * @see org.springframework.web.context.support.ServletContextPropertySource
 	 */
 	public static class StubPropertySource extends PropertySource<Object> {
-
 		public StubPropertySource(String name) {
 			super(name, new Object());
 		}
@@ -203,7 +196,6 @@ public abstract class PropertySource<T> {
 		}
 	}
 
-
 	/**
 	 * A {@code PropertySource} implementation intended for collection comparison
 	 * purposes.
@@ -211,7 +203,6 @@ public abstract class PropertySource<T> {
 	 * @see PropertySource#named(String)
 	 */
 	static class ComparisonPropertySource extends StubPropertySource {
-
 		private static final String USAGE_ERROR =
 				"ComparisonPropertySource instances are for use with collection comparison only";
 
@@ -235,5 +226,4 @@ public abstract class PropertySource<T> {
 			throw new UnsupportedOperationException(USAGE_ERROR);
 		}
 	}
-
 }

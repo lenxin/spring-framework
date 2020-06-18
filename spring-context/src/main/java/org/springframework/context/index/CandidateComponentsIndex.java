@@ -1,15 +1,15 @@
 package org.springframework.context.index;
 
+import org.springframework.util.AntPathMatcher;
+import org.springframework.util.ClassUtils;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import org.springframework.util.AntPathMatcher;
-import org.springframework.util.ClassUtils;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 
 /**
  * Provide access to the candidates that are defined in {@code META-INF/spring.components}.
@@ -27,25 +27,21 @@ import org.springframework.util.MultiValueMap;
  * not a rule. Similarly, the {@code stereotype} is usually the fully qualified name of
  * a target type but it can be any marker really.
  *
- * @author Stephane Nicoll
  * @since 5.0
  */
 public class CandidateComponentsIndex {
-
 	private static final AntPathMatcher pathMatcher = new AntPathMatcher(".");
-
 	private final MultiValueMap<String, Entry> index;
-
 
 	CandidateComponentsIndex(List<Properties> content) {
 		this.index = parseIndex(content);
 	}
 
-
 	/**
 	 * Return the candidate types that are associated with the specified stereotype.
+	 *
 	 * @param basePackage the package to check for candidates
-	 * @param stereotype the stereotype to use
+	 * @param stereotype  the stereotype to use
 	 * @return the candidate types associated with the specified {@code stereotype}
 	 * or an empty set if none has been found for the specified {@code basePackage}
 	 */
@@ -85,12 +81,9 @@ public class CandidateComponentsIndex {
 		public boolean match(String basePackage) {
 			if (pathMatcher.isPattern(basePackage)) {
 				return pathMatcher.match(basePackage, this.packageName);
-			}
-			else {
+			} else {
 				return this.type.startsWith(basePackage);
 			}
 		}
-
 	}
-
 }

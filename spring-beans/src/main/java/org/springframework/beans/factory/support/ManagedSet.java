@@ -1,34 +1,26 @@
-
-
 package org.springframework.beans.factory.support;
-
-import java.util.LinkedHashSet;
-import java.util.Set;
 
 import org.springframework.beans.BeanMetadataElement;
 import org.springframework.beans.Mergeable;
 import org.springframework.lang.Nullable;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 /**
  * Tag collection class used to hold managed Set values, which may
  * include runtime bean references (to be resolved into bean objects).
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @since 21.01.2004
  * @param <E> the element type
+ * @since 21.01.2004
  */
 @SuppressWarnings("serial")
 public class ManagedSet<E> extends LinkedHashSet<E> implements Mergeable, BeanMetadataElement {
-
 	@Nullable
 	private Object source;
-
 	@Nullable
 	private String elementTypeName;
-
 	private boolean mergeEnabled;
-
 
 	public ManagedSet() {
 	}
@@ -36,7 +28,6 @@ public class ManagedSet<E> extends LinkedHashSet<E> implements Mergeable, BeanMe
 	public ManagedSet(int initialCapacity) {
 		super(initialCapacity);
 	}
-
 
 	/**
 	 * Set the configuration source {@code Object} for this metadata element.
@@ -97,5 +88,4 @@ public class ManagedSet<E> extends LinkedHashSet<E> implements Mergeable, BeanMe
 		merged.addAll(this);
 		return merged;
 	}
-
 }

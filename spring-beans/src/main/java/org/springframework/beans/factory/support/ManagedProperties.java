@@ -1,27 +1,22 @@
 package org.springframework.beans.factory.support;
 
-import java.util.Properties;
-
 import org.springframework.beans.BeanMetadataElement;
 import org.springframework.beans.Mergeable;
 import org.springframework.lang.Nullable;
+
+import java.util.Properties;
 
 /**
  * Tag class which represents a Spring-managed {@link Properties} instance
  * that supports merging of parent/child definitions.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
  * @since 2.0
  */
 @SuppressWarnings("serial")
 public class ManagedProperties extends Properties implements Mergeable, BeanMetadataElement {
-
 	@Nullable
 	private Object source;
-
 	private boolean mergeEnabled;
-
 
 	/**
 	 * Set the configuration source {@code Object} for this metadata element.
@@ -50,7 +45,6 @@ public class ManagedProperties extends Properties implements Mergeable, BeanMeta
 		return this.mergeEnabled;
 	}
 
-
 	@Override
 	public Object merge(@Nullable Object parent) {
 		if (!this.mergeEnabled) {
@@ -67,5 +61,4 @@ public class ManagedProperties extends Properties implements Mergeable, BeanMeta
 		merged.putAll(this);
 		return merged;
 	}
-
 }

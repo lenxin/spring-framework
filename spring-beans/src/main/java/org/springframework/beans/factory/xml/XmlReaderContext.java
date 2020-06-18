@@ -20,6 +20,7 @@ import java.io.StringReader;
  * Extension of {@link org.springframework.beans.factory.parsing.ReaderContext},
  * specific to use with an {@link XmlBeanDefinitionReader}. Provides access to the
  * {@link NamespaceHandlerResolver} configured in the {@link XmlBeanDefinitionReader}.
+ * 定义bean的XML读取过程传递的上下文，封装所有相关配置和状态。
  *
  * @since 2.0
  */

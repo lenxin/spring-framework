@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation;
 
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -7,13 +5,11 @@ import org.springframework.beans.factory.config.BeanDefinition;
 /**
  * Strategy interface for resolving the scope of bean definitions.
  *
- * @author Mark Fisher
- * @since 2.5
  * @see org.springframework.context.annotation.Scope
+ * @since 2.5
  */
 @FunctionalInterface
 public interface ScopeMetadataResolver {
-
 	/**
 	 * Resolve the {@link ScopeMetadata} appropriate to the supplied
 	 * bean {@code definition}.
@@ -23,9 +19,9 @@ public interface ScopeMetadataResolver {
 	 * present on {@link BeanDefinition#getBeanClassName() the class} of the
 	 * supplied {@code definition}, or to use metadata present in the
 	 * {@link BeanDefinition#attributeNames()} of the supplied {@code definition}.
+	 *
 	 * @param definition the target bean definition
 	 * @return the relevant scope metadata; never {@code null}
 	 */
 	ScopeMetadata resolveScopeMetadata(BeanDefinition definition);
-
 }
