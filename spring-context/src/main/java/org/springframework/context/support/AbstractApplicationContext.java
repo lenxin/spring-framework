@@ -66,10 +66,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * e.g. "mypackage/myresource.dat"), unless the {@link #getResourceByPath}
  * method is overridden in a subclass.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Mark Fisher
- * @author Stephane Nicoll
  * @see #refreshBeanFactory
  * @see #getBeanFactory
  * @see org.springframework.beans.factory.config.BeanFactoryPostProcessor
@@ -122,15 +118,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * Unique id for this context, if any.
 	 */
 	private String id = ObjectUtils.identityToString(this);
-
-	/**
-	 * Display name.
-	 */
 	private String displayName = ObjectUtils.identityToString(this);
-
-	/**
-	 * Parent context.
-	 */
 	@Nullable
 	private ApplicationContext parent;
 
@@ -512,28 +500,28 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	public void refresh() throws BeansException, IllegalStateException {
 		synchronized (this.startupShutdownMonitor) {
 			// Prepare this context for refreshing.
-			/*为刷新准备新的context*/
+			/*准备刷新新的context*/
 			prepareRefresh();
 
 			// Tell the subclass to refresh the internal bean factory.
-			/*刷新所有BeanFactory子容器，在子类中启动refreshBeanFactory的入口*/
+			/*刷新所有BeanFactory子容器，在子类中启动refreshBeanFactory的入口，并进行XML文件读取*/
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			// Prepare the bean factory for use in this context.
-			/*配置BeanFactory的上下文特征*/
+			/*配置BeanFactory的上下文特征，对BeanFactory进行各种功能填充*/
 			prepareBeanFactory(beanFactory);
 
 			try {
 				// Allows post-processing of the bean factory in context subclasses.
-				/*注册实现了BeanPostProcessor接口的Bean，设置BeanFactory的后置处理*/
+				/*注册实现了BeanPostProcessor接口的Bean，设置BeanFactory的后置处理，子类覆盖方法做额外的处理*/
 				postProcessBeanFactory(beanFactory);
 
 				// Invoke factory processors registered as beans in the context.
-				/*调用BeanFactory的后置处理器*/
+				// 调用BeanFactory的后置处理器，激活各种BeanFactory处理器
 				invokeBeanFactoryPostProcessors(beanFactory);
 
 				// Register bean processors that intercept bean creation.
-				/*注册Bean的后处理器，在Bean创建过程中调用*/
+				/*注册拦截Bean创建的Bean的后处理器，在Bean创建过程中(getBean方法)调用*/
 				registerBeanPostProcessors(beanFactory);
 
 				// Initialize message source for this context.
@@ -541,7 +529,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				initMessageSource();
 
 				// Initialize event multicaster for this context.
-				/*初始化上下文的事件机制 event multicaster*/
+				// 初始化上下文的事件机制 event multicaster
+				// 初始化应用消息广播器，并放入applicationEventMulticaster的bean中
 				initApplicationEventMulticaster();
 
 				// Initialize other special beans in specific context subclasses.
@@ -550,6 +539,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 				// Check for listener beans and register them.
 				/*检查注册事件，检查监听Bean并且将这些Bean向容器注册*/
+				// 在所有注册的bean中查找Listener Bean，注册到消息广播器中
 				registerListeners();
 
 				// Instantiate all remaining (non-lazy-init) singletons.
@@ -558,6 +548,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 				// Last step: publish corresponding event.
 				/*发布容器事件，结束refresh过程，执行LifecycleProcessor.onRefresh()和ContextRefreshedEvent事件*/
+				// 完成刷新过程，通知生命周期处理器LifecycleProcessor刷新过程，同时发出ContextRefreshedEvent通知别人
 				finishRefresh();
 			} catch (BeansException ex) {
 				if (logger.isWarnEnabled()) {
@@ -602,6 +593,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 		}
 
 		// Initialize any placeholder property sources in the context environment.
+		// 初始化上下文环境中的任何占位符属性源。
 		initPropertySources();
 
 		// Validate that all properties marked as required are resolvable:

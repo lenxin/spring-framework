@@ -14,7 +14,6 @@ import org.springframework.util.StringUtils;
  * {@link FileSystemXmlApplicationContext}, as well as
  * {@link org.springframework.web.context.support.XmlWebApplicationContext}.
  *
- * @author Juergen Hoeller
  * @see #setConfigLocation
  * @see #setConfigLocations
  * @see #getDefaultConfigLocations
@@ -22,7 +21,6 @@ import org.springframework.util.StringUtils;
  */
 public abstract class AbstractRefreshableConfigApplicationContext extends AbstractRefreshableApplicationContext
 		implements BeanNameAware, InitializingBean {
-
 	@Nullable
 	private String[] configLocations;
 
@@ -55,6 +53,7 @@ public abstract class AbstractRefreshableConfigApplicationContext extends Abstra
 	/**
 	 * Set the config locations for this application context.
 	 * <p>If not set, the implementation may use a default as appropriate.
+	 * 设置此应用程序上下文的配置位置。如果没有设置，则实现可以使用适当的默认值。
 	 */
 	public void setConfigLocations(@Nullable String... locations) {
 		if (locations != null) {
@@ -89,6 +88,7 @@ public abstract class AbstractRefreshableConfigApplicationContext extends Abstra
 	 * explicit config locations have been specified.
 	 * <p>The default implementation returns {@code null},
 	 * requiring explicit config locations.
+	 * 对于没有明确指定配置位置的情况，返回要使用的默认配置位置。默认实现返回null，要求显式配置位置。
 	 *
 	 * @return an array of default config locations, if any
 	 * @see #setConfigLocations
@@ -101,6 +101,7 @@ public abstract class AbstractRefreshableConfigApplicationContext extends Abstra
 	/**
 	 * Resolve the given path, replacing placeholders with corresponding
 	 * environment property values if necessary. Applied to config locations.
+	 * 解析给定的路径，必要时用相应的环境属性值替换占位符。应用到配置位置。
 	 *
 	 * @param path the original file path
 	 * @return the resolved file path
