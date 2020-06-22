@@ -6,16 +6,15 @@ import org.springframework.context.ApplicationEvent;
 /**
  * Base class for events raised for an {@code ApplicationContext}.
  *
- * @author Juergen Hoeller
  * @since 2.5
  */
 @SuppressWarnings("serial")
 public abstract class ApplicationContextEvent extends ApplicationEvent {
-
 	/**
 	 * Create a new ContextStartedEvent.
+	 *
 	 * @param source the {@code ApplicationContext} that the event is raised for
-	 * (must not be {@code null})
+	 *               (must not be {@code null})
 	 */
 	public ApplicationContextEvent(ApplicationContext source) {
 		super(source);
@@ -27,5 +26,4 @@ public abstract class ApplicationContextEvent extends ApplicationEvent {
 	public final ApplicationContext getApplicationContext() {
 		return (ApplicationContext) getSource();
 	}
-
 }

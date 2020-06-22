@@ -1,10 +1,8 @@
-
-
 package org.springframework.expression;
 
-import java.util.List;
-
 import org.springframework.lang.Nullable;
+
+import java.util.List;
 
 /**
  * Expressions are executed in an evaluation context. It is in this context that
@@ -14,12 +12,9 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.expression.spel.support.StandardEvaluationContext}
  * which can be extended, rather than having to implement everything manually.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
  * @since 3.0
  */
 public interface EvaluationContext {
-
 	/**
 	 * Return the default root context object against which unqualified
 	 * properties/methods/etc should be resolved. This can be overridden
@@ -72,17 +67,18 @@ public interface EvaluationContext {
 
 	/**
 	 * Set a named variable within this evaluation context to a specified value.
-	 * @param name variable to set
+	 *
+	 * @param name  variable to set
 	 * @param value value to be placed in the variable
 	 */
 	void setVariable(String name, @Nullable Object value);
 
 	/**
 	 * Look up a named variable within this evaluation context.
+	 *
 	 * @param name variable to lookup
 	 * @return the value of the variable, or {@code null} if not found
 	 */
 	@Nullable
 	Object lookupVariable(String name);
-
 }

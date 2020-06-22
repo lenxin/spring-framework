@@ -8,13 +8,9 @@ import org.springframework.lang.Nullable;
  * Encapsulates the details of a previously parsed expression string.
  * Provides a common abstraction for expression evaluation.
  *
- * @author Keith Donald
- * @author Andy Clement
- * @author Juergen Hoeller
  * @since 3.0
  */
 public interface Expression {
-
 	/**
 	 * Return the original string used to create this expression (unmodified).
 	 * @return the original expression string

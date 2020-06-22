@@ -76,7 +76,6 @@ import java.util.function.Supplier;
  * @since 1.1.2
  */
 public class GenericApplicationContext extends AbstractApplicationContext implements BeanDefinitionRegistry {
-
 	private final DefaultListableBeanFactory beanFactory;
 
 	@Nullable
@@ -310,7 +309,6 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	@Override
 	public void registerBeanDefinition(String beanName, BeanDefinition beanDefinition)
 			throws BeanDefinitionStoreException {
-
 		this.beanFactory.registerBeanDefinition(beanName, beanDefinition);
 	}
 
@@ -413,7 +411,6 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	 */
 	public final <T> void registerBean(
 			@Nullable String beanName, Class<T> beanClass, BeanDefinitionCustomizer... customizers) {
-
 		registerBean(beanName, beanClass, null, customizers);
 	}
 
@@ -432,7 +429,6 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	 */
 	public final <T> void registerBean(
 			Class<T> beanClass, Supplier<T> supplier, BeanDefinitionCustomizer... customizers) {
-
 		registerBean(null, beanClass, supplier, customizers);
 	}
 
@@ -454,7 +450,6 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	 */
 	public <T> void registerBean(@Nullable String beanName, Class<T> beanClass,
 								 @Nullable Supplier<T> supplier, BeanDefinitionCustomizer... customizers) {
-
 		ClassDerivedBeanDefinition beanDefinition = new ClassDerivedBeanDefinition(beanClass);
 		if (supplier != null) {
 			beanDefinition.setInstanceSupplier(supplier);
@@ -473,7 +468,6 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	 */
 	@SuppressWarnings("serial")
 	private static class ClassDerivedBeanDefinition extends RootBeanDefinition {
-
 		public ClassDerivedBeanDefinition(Class<?> beanClass) {
 			super(beanClass);
 		}

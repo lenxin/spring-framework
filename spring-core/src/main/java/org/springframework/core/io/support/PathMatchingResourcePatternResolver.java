@@ -131,11 +131,6 @@ import java.util.zip.ZipException;
  * Ant-style pattern in such a case, which will search <i>all</i> class path
  * locations that contain the root package.
  *
- * @author Juergen Hoeller
- * @author Colin Sampaleanu
- * @author Marius Bogoevici
- * @author Costin Leau
- * @author Phillip Webb
  * @see #CLASSPATH_ALL_URL_PREFIX
  * @see org.springframework.util.AntPathMatcher
  * @see org.springframework.core.io.ResourceLoader#getResource(String)
@@ -143,7 +138,6 @@ import java.util.zip.ZipException;
  * @since 1.0.2
  */
 public class PathMatchingResourcePatternResolver implements ResourcePatternResolver {
-
 	private static final Log logger = LogFactory.getLog(PathMatchingResourcePatternResolver.class);
 
 	@Nullable
@@ -162,7 +156,6 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	}
 
 	private final ResourceLoader resourceLoader;
-
 	private PathMatcher pathMatcher = new AntPathMatcher();
 
 	/**
@@ -548,7 +541,6 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 */
 	protected Set<Resource> doFindPathMatchingJarResources(Resource rootDirResource, URL rootDirURL, String subPattern)
 			throws IOException {
-
 		URLConnection con = rootDirURL.openConnection();
 		JarFile jarFile;
 		String jarFileUrl;
@@ -650,7 +642,6 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 */
 	protected Set<Resource> doFindPathMatchingFileResources(Resource rootDirResource, String subPattern)
 			throws IOException {
-
 		File rootDir;
 		try {
 			rootDir = rootDirResource.getFile().getAbsoluteFile();
@@ -791,10 +782,8 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 * Inner delegate class, avoiding a hard JBoss VFS API dependency at runtime.
 	 */
 	private static class VfsResourceMatchingDelegate {
-
 		public static Set<Resource> findMatchingResources(
 				URL rootDirURL, String locationPattern, PathMatcher pathMatcher) throws IOException {
-
 			Object root = VfsPatternUtils.findRoot(rootDirURL);
 			PatternVirtualFileVisitor visitor =
 					new PatternVirtualFileVisitor(VfsPatternUtils.getPath(root), locationPattern, pathMatcher);
@@ -808,13 +797,9 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 */
 	@SuppressWarnings("unused")
 	private static class PatternVirtualFileVisitor implements InvocationHandler {
-
 		private final String subPattern;
-
 		private final PathMatcher pathMatcher;
-
 		private final String rootPath;
-
 		private final Set<Resource> resources = new LinkedHashSet<>();
 
 		public PatternVirtualFileVisitor(String rootPath, String subPattern, PathMatcher pathMatcher) {

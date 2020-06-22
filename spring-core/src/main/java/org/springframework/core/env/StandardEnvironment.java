@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.env;
 
 /**
@@ -13,7 +11,7 @@ package org.springframework.core.env;
  * <li>{@linkplain AbstractEnvironment#getSystemProperties() system properties}
  * <li>{@linkplain AbstractEnvironment#getSystemEnvironment() system environment variables}
  * </ul>
- *
+ * <p>
  * That is, if the key "xyz" is present both in the JVM system properties as well as in
  * the set of environment variables for the current process, the value of key "xyz" from
  * system properties will return from a call to {@code environment.getProperty("xyz")}.
@@ -31,20 +29,21 @@ package org.springframework.core.env;
  * of property names in shell environments (e.g. Bash) that disallow period characters in
  * variable names.
  *
- * @author Chris Beams
- * @since 3.1
  * @see ConfigurableEnvironment
  * @see SystemEnvironmentPropertySource
  * @see org.springframework.web.context.support.StandardServletEnvironment
+ * @since 3.1
  */
 public class StandardEnvironment extends AbstractEnvironment {
-
-	/** System environment property source name: {@value}. */
+	/**
+	 * System environment property source name: {@value}.
+	 */
 	public static final String SYSTEM_ENVIRONMENT_PROPERTY_SOURCE_NAME = "systemEnvironment";
 
-	/** JVM system properties property source name: {@value}. */
+	/**
+	 * JVM system properties property source name: {@value}.
+	 */
 	public static final String SYSTEM_PROPERTIES_PROPERTY_SOURCE_NAME = "systemProperties";
-
 
 	/**
 	 * Customize the set of property sources with those appropriate for any standard
@@ -55,6 +54,7 @@ public class StandardEnvironment extends AbstractEnvironment {
 	 * </ul>
 	 * <p>Properties present in {@value #SYSTEM_PROPERTIES_PROPERTY_SOURCE_NAME} will
 	 * take precedence over those in {@value #SYSTEM_ENVIRONMENT_PROPERTY_SOURCE_NAME}.
+	 *
 	 * @see AbstractEnvironment#customizePropertySources(MutablePropertySources)
 	 * @see #getSystemProperties()
 	 * @see #getSystemEnvironment()
@@ -64,5 +64,4 @@ public class StandardEnvironment extends AbstractEnvironment {
 		propertySources.addLast(new MapPropertySource(SYSTEM_PROPERTIES_PROPERTY_SOURCE_NAME, getSystemProperties()));
 		propertySources.addLast(new SystemEnvironmentPropertySource(SYSTEM_ENVIRONMENT_PROPERTY_SOURCE_NAME, getSystemEnvironment()));
 	}
-
 }

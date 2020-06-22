@@ -24,7 +24,6 @@ package org.springframework.context;
  * {@link SmartLifecycle} interface provides sophisticated integration with the
  * application context's startup and shutdown phases.
  *
- * @author Juergen Hoeller
  * @see SmartLifecycle
  * @see ConfigurableApplicationContext
  * @see org.springframework.jms.listener.AbstractMessageListenerContainer

@@ -30,14 +30,11 @@ import org.springframework.util.StringUtils;
  * and working against the {@link MutablePropertySources} API.
  * See {@link ConfigurableEnvironment} javadoc for usage examples.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
  * @since 3.1
  * @see ConfigurableEnvironment
  * @see StandardEnvironment
  */
 public abstract class AbstractEnvironment implements ConfigurableEnvironment {
-
 	/**
 	 * System property that instructs Spring to ignore system environment variables,
 	 * i.e. to never attempt to retrieve such a variable via {@link System#getenv()}.
@@ -83,15 +80,10 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * @see AbstractEnvironment#ACTIVE_PROFILES_PROPERTY_NAME
 	 */
 	protected static final String RESERVED_DEFAULT_PROFILE_NAME = "default";
-
 	protected final Log logger = LogFactory.getLog(getClass());
-
 	private final Set<String> activeProfiles = new LinkedHashSet<>();
-
 	private final Set<String> defaultProfiles = new LinkedHashSet<>(getReservedDefaultProfiles());
-
 	private final MutablePropertySources propertySources = new MutablePropertySources();
-
 	private final ConfigurablePropertyResolver propertyResolver =
 			new PropertySourcesPropertyResolver(this.propertySources);
 

@@ -1,15 +1,9 @@
-
-
 package org.springframework.context.event;
-
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.core.annotation.AliasFor;
+
+import java.lang.annotation.*;
 
 /**
  * Annotation that marks a method as a listener for application events.
@@ -65,16 +59,13 @@ import org.springframework.core.annotation.AliasFor;
  * {@link org.springframework.core.annotation.Order @Order} annotation
  * alongside this event listener annotation.
  *
- * @author Stephane Nicoll
- * @author Sam Brannen
- * @since 4.2
  * @see EventListenerMethodProcessor
+ * @since 4.2
  */
 @Target({ElementType.METHOD, ElementType.ANNOTATION_TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface EventListener {
-
 	/**
 	 * Alias for {@link #classes}.
 	 */
@@ -113,5 +104,4 @@ public @interface EventListener {
 	 * </ul>
 	 */
 	String condition() default "";
-
 }

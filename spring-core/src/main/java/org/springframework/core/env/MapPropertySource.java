@@ -1,24 +1,20 @@
 package org.springframework.core.env;
 
-import java.util.Map;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.util.Map;
 
 /**
  * {@link PropertySource} that reads keys and values from a {@code Map} object.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @since 3.1
  * @see PropertiesPropertySource
+ * @since 3.1
  */
 public class MapPropertySource extends EnumerablePropertySource<Map<String, Object>> {
-
 	public MapPropertySource(String name, Map<String, Object> source) {
 		super(name, source);
 	}
-
 
 	@Override
 	@Nullable
@@ -35,5 +31,4 @@ public class MapPropertySource extends EnumerablePropertySource<Map<String, Obje
 	public String[] getPropertyNames() {
 		return StringUtils.toStringArray(this.source.keySet());
 	}
-
 }

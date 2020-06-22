@@ -1,5 +1,3 @@
-
-
 package org.springframework.context;
 
 import java.util.EventListener;
@@ -15,8 +13,6 @@ import java.util.EventListener;
  * {@code ApplicationContext}, events will be filtered accordingly, with the
  * listener getting invoked for matching event objects only.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @param <E> the specific {@code ApplicationEvent} subclass to listen to
  * @see org.springframework.context.ApplicationEvent
  * @see org.springframework.context.event.ApplicationEventMulticaster
@@ -24,11 +20,10 @@ import java.util.EventListener;
  */
 @FunctionalInterface
 public interface ApplicationListener<E extends ApplicationEvent> extends EventListener {
-
 	/**
 	 * Handle an application event.
+	 *
 	 * @param event the event to respond to
 	 */
 	void onApplicationEvent(E event);
-
 }

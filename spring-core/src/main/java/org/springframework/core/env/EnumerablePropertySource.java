@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.env;
 
 import org.springframework.util.ObjectUtils;
@@ -23,13 +21,10 @@ import org.springframework.util.ObjectUtils;
  * (via {@link #getProperty(String)}) in order to evaluate whether it is present
  * or not.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @since 3.1
  * @param <T> the source type
+ * @since 3.1
  */
 public abstract class EnumerablePropertySource<T> extends PropertySource<T> {
-
 	public EnumerablePropertySource(String name, T source) {
 		super(name, source);
 	}
@@ -38,11 +33,11 @@ public abstract class EnumerablePropertySource<T> extends PropertySource<T> {
 		super(name);
 	}
 
-
 	/**
 	 * Return whether this {@code PropertySource} contains a property with the given name.
 	 * <p>This implementation checks for the presence of the given name within the
 	 * {@link #getPropertyNames()} array.
+	 *
 	 * @param name the name of the property to find
 	 */
 	@Override
@@ -55,5 +50,4 @@ public abstract class EnumerablePropertySource<T> extends PropertySource<T> {
 	 * {@linkplain #getSource() source} object (never {@code null}).
 	 */
 	public abstract String[] getPropertyNames();
-
 }

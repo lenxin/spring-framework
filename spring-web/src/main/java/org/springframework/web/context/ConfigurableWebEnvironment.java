@@ -12,12 +12,10 @@ import javax.servlet.ServletContext;
  * earliest moment that the {@link ServletContext} and (optionally) {@link ServletConfig}
  * become available.
  *
- * @author Chris Beams
  * @see ConfigurableWebApplicationContext#getEnvironment()
  * @since 3.1.2
  */
 public interface ConfigurableWebEnvironment extends ConfigurableEnvironment {
-
 	/**
 	 * Replace any {@linkplain
 	 * org.springframework.core.env.PropertySource.StubPropertySource stub property source}

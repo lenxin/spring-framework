@@ -37,8 +37,6 @@ package org.springframework.context;
  * of the application context in any case. As a consequence, the bean definition
  * lazy-init flag has very limited actual effect on {@code SmartLifecycle} beans.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
  * @see LifecycleProcessor
  * @see ConfigurableApplicationContext
  * @since 3.0

@@ -1,16 +1,12 @@
-
-
 package org.springframework.expression;
 
 /**
  * Supported operations that an {@link OperatorOverloader} can implement for any pair of
  * operands.
  *
- * @author Andy Clement
  * @since 3.0
  */
 public enum Operation {
-
 	/**
 	 * Add operation.
 	 */
@@ -40,5 +36,4 @@ public enum Operation {
 	 * Power operation.
 	 */
 	POWER
-
 }

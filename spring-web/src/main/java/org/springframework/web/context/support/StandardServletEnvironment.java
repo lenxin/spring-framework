@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.context.support;
 
 import javax.servlet.ServletConfig;
@@ -24,12 +22,10 @@ import org.springframework.web.context.ConfigurableWebEnvironment;
  * {@link PropertySource} instances. See {@link #customizePropertySources} method
  * documentation for details.
  *
- * @author Chris Beams
  * @since 3.1
  * @see StandardEnvironment
  */
 public class StandardServletEnvironment extends StandardEnvironment implements ConfigurableWebEnvironment {
-
 	/** Servlet context init parameters property source name: {@value}. */
 	public static final String SERVLET_CONTEXT_PROPERTY_SOURCE_NAME = "servletContextInitParams";
 
@@ -38,7 +34,6 @@ public class StandardServletEnvironment extends StandardEnvironment implements C
 
 	/** JNDI property source name: {@value}. */
 	public static final String JNDI_PROPERTY_SOURCE_NAME = "jndiProperties";
-
 
 	/**
 	 * Customize the set of property sources with those contributed by superclasses as
@@ -80,5 +75,4 @@ public class StandardServletEnvironment extends StandardEnvironment implements C
 	public void initPropertySources(@Nullable ServletContext servletContext, @Nullable ServletConfig servletConfig) {
 		WebApplicationContextUtils.initServletPropertySources(getPropertySources(), servletContext, servletConfig);
 	}
-
 }

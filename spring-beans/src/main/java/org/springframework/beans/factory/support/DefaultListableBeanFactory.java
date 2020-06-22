@@ -54,7 +54,6 @@ import java.util.stream.Stream;
 @SuppressWarnings("serial")
 public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory
 		implements ConfigurableListableBeanFactory, BeanDefinitionRegistry, Serializable {
-
 	@Nullable
 	private static Class<?> javaxInjectProviderClass;
 
