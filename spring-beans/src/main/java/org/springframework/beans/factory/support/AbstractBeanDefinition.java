@@ -123,67 +123,42 @@ public abstract class AbstractBeanDefinition extends BeanMetadataAttributeAccess
 	/*Class类型或String类型*/
 	@Nullable
 	private volatile Object beanClass;
-
 	@Nullable
 	private String scope = SCOPE_DEFAULT;
-
 	private boolean abstractFlag = false;
-
 	@Nullable
 	private Boolean lazyInit;
-
 	private int autowireMode = AUTOWIRE_NO;
-
 	private int dependencyCheck = DEPENDENCY_CHECK_NONE;
-
 	@Nullable
 	private String[] dependsOn;
-
 	private boolean autowireCandidate = true;
-
 	private boolean primary = false;
-
 	private final Map<String, AutowireCandidateQualifier> qualifiers = new LinkedHashMap<>();
-
 	@Nullable
 	private Supplier<?> instanceSupplier;
-
 	private boolean nonPublicAccessAllowed = true;
-
 	private boolean lenientConstructorResolution = true;
-
 	@Nullable
 	private String factoryBeanName;
-
 	@Nullable
 	private String factoryMethodName;
-
 	@Nullable
 	private ConstructorArgumentValues constructorArgumentValues;
-
 	@Nullable
 	private MutablePropertyValues propertyValues;
-
 	@Nullable
 	private MethodOverrides methodOverrides;
-
 	@Nullable
 	private String initMethodName;
-
 	@Nullable
 	private String destroyMethodName;
-
 	private boolean enforceInitMethod = true;
-
 	private boolean enforceDestroyMethod = true;
-
 	private boolean synthetic = false;
-
 	private int role = BeanDefinition.ROLE_APPLICATION;
-
 	@Nullable
 	private String description;
-
 	@Nullable
 	private Resource resource;
 

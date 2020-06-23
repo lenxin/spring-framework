@@ -33,14 +33,10 @@ import java.util.function.Supplier;
 public class RootBeanDefinition extends AbstractBeanDefinition {
 	@Nullable
 	private BeanDefinitionHolder decoratedDefinition;
-
 	@Nullable
 	private AnnotatedElement qualifiedElement;
-
 	boolean allowCaching = true;
-
 	boolean isFactoryMethodUnique = false;
-
 	@Nullable
 	volatile ResolvableType targetType;
 
@@ -108,10 +104,8 @@ public class RootBeanDefinition extends AbstractBeanDefinition {
 
 	@Nullable
 	private Set<Member> externallyManagedConfigMembers;
-
 	@Nullable
 	private Set<String> externallyManagedInitMethods;
-
 	@Nullable
 	private Set<String> externallyManagedDestroyMethods;
 
