@@ -333,7 +333,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 					});
 					bean = getObjectForBeanInstance(sharedInstance, name, beanName, mbd);
 				} else if (mbd.isPrototype()) {
-					/*创建prototype bean*/
+					// 创建prototype bean
 					// It's a prototype -> create a new instance.
 					Object prototypeInstance = null;
 					try {
@@ -374,7 +374,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		}
 
 		// Check if required type matches the type of the actual bean instance.
-		/*对创建的bean进行类型检查，检查需要的类型是否符合bean的实际类型*/
+		// 对创建的bean进行类型检查，检查需要的类型是否符合bean的实际类型
 		if (requiredType != null && !requiredType.isInstance(bean)) {
 			try {
 				T convertedBean = getTypeConverter().convertIfNecessary(bean, requiredType);
@@ -1658,18 +1658,18 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			return beanInstance;
 		}
 
-		/*加载FactoryBean*/
+		// 加载FactoryBean
 		Object object = null;
 		if (mbd == null) {
-			/*尝试从缓存中加载bean*/
+			// 尝试从缓存中加载bean
 			object = getCachedObjectForFactoryBean(beanName);
 		}
 		if (object == null) {
 			// Return bean instance from factory.
-			/*到这里已经明确知道beanInstance一定是FactoryBean类型*/
+			// 到这里已经明确知道beanInstance一定是FactoryBean类型
 			FactoryBean<?> factory = (FactoryBean<?>) beanInstance;
 			// Caches object obtained from FactoryBean if it is a singleton.
-			/*containsBeanDefinition检测beanDefinitionMap中也就是在所有已经加载的类中检测是否定义beanName*/
+			// containsBeanDefinition检测beanDefinitionMap中也就是在所有已经加载的类中检测是否定义beanName
 			if (mbd == null && containsBeanDefinition(beanName)) {
 				/*
 				 * 将存储XML配置文件的GenericBeanDefinition转换为RootBeanDefinition，
@@ -1677,7 +1677,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				 */
 				mbd = getMergedLocalBeanDefinition(beanName);
 			}
-			/*是否是用户定义的而不是应用程序本身定义的*/
+			// 是否是用户定义的而不是应用程序本身定义的
 			boolean synthetic = (mbd != null && mbd.isSynthetic());
 			object = getObjectFromFactoryBean(factory, beanName, !synthetic);
 		}
