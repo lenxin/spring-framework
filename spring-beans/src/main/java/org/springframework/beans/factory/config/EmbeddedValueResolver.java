@@ -12,25 +12,20 @@ import org.springframework.util.StringValueResolver;
  * The {@link BeanExpressionContext} used is for the plain bean factory,
  * with no scope specified for any contextual objects to access.
  *
- * @author Juergen Hoeller
- * @since 4.3
  * @see ConfigurableBeanFactory#resolveEmbeddedValue(String)
  * @see ConfigurableBeanFactory#getBeanExpressionResolver()
  * @see BeanExpressionContext
+ * @since 4.3
  */
 public class EmbeddedValueResolver implements StringValueResolver {
-
 	private final BeanExpressionContext exprContext;
-
 	@Nullable
 	private final BeanExpressionResolver exprResolver;
-
 
 	public EmbeddedValueResolver(ConfigurableBeanFactory beanFactory) {
 		this.exprContext = new BeanExpressionContext(beanFactory, null);
 		this.exprResolver = beanFactory.getBeanExpressionResolver();
 	}
-
 
 	@Override
 	@Nullable
@@ -42,5 +37,4 @@ public class EmbeddedValueResolver implements StringValueResolver {
 		}
 		return value;
 	}
-
 }

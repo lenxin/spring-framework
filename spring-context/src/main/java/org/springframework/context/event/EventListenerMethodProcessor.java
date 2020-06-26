@@ -1,18 +1,7 @@
-
-
 package org.springframework.context.event;
-
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.aop.framework.autoproxy.AutoProxyUtils;
 import org.springframework.aop.scope.ScopedObject;
 import org.springframework.aop.scope.ScopedProxyUtils;
@@ -35,35 +24,30 @@ import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.CollectionUtils;
 
+import java.lang.reflect.Method;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * Registers {@link EventListener} methods as individual {@link ApplicationListener} instances.
  * Implements {@link BeanFactoryPostProcessor} (as of 5.1) primarily for early retrieval,
  * avoiding AOP checks for this processor bean and its {@link EventListenerFactory} delegates.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
- * @since 4.2
  * @see EventListenerFactory
  * @see DefaultEventListenerFactory
+ * @since 4.2
  */
 public class EventListenerMethodProcessor
 		implements SmartInitializingSingleton, ApplicationContextAware, BeanFactoryPostProcessor {
-
 	protected final Log logger = LogFactory.getLog(getClass());
-
 	@Nullable
 	private ConfigurableApplicationContext applicationContext;
-
 	@Nullable
 	private ConfigurableListableBeanFactory beanFactory;
-
 	@Nullable
 	private List<EventListenerFactory> eventListenerFactories;
-
 	private final EventExpressionEvaluator evaluator = new EventExpressionEvaluator();
-
 	private final Set<Class<?>> nonAnnotatedClasses = Collections.newSetFromMap(new ConcurrentHashMap<>(64));
-
 
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) {
@@ -75,13 +59,11 @@ public class EventListenerMethodProcessor
 	@Override
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) {
 		this.beanFactory = beanFactory;
-
 		Map<String, EventListenerFactory> beans = beanFactory.getBeansOfType(EventListenerFactory.class, false, false);
 		List<EventListenerFactory> factories = new ArrayList<>(beans.values());
 		AnnotationAwareOrderComparator.sort(factories);
 		this.eventListenerFactories = factories;
 	}
-
 
 	@Override
 	public void afterSingletonsInstantiated() {
@@ -93,8 +75,7 @@ public class EventListenerMethodProcessor
 				Class<?> type = null;
 				try {
 					type = AutoProxyUtils.determineTargetClass(beanFactory, beanName);
-				}
-				catch (Throwable ex) {
+				} catch (Throwable ex) {
 					// An unresolvable bean type, probably from a lazy bean - let's ignore it.
 					if (logger.isDebugEnabled()) {
 						logger.debug("Could not resolve target class for bean with name '" + beanName + "'", ex);
@@ -108,8 +89,7 @@ public class EventListenerMethodProcessor
 							if (targetClass != null) {
 								type = targetClass;
 							}
-						}
-						catch (Throwable ex) {
+						} catch (Throwable ex) {
 							// An invalid scoped proxy arrangement - let's ignore it.
 							if (logger.isDebugEnabled()) {
 								logger.debug("Could not resolve target bean for scoped proxy '" + beanName + "'", ex);
@@ -118,8 +98,7 @@ public class EventListenerMethodProcessor
 					}
 					try {
 						processBean(beanName, type);
-					}
-					catch (Throwable ex) {
+					} catch (Throwable ex) {
 						throw new BeanInitializationException("Failed to process @EventListener " +
 								"annotation on bean with name '" + beanName + "'", ex);
 					}
@@ -138,8 +117,7 @@ public class EventListenerMethodProcessor
 				annotatedMethods = MethodIntrospector.selectMethods(targetType,
 						(MethodIntrospector.MetadataLookup<EventListener>) method ->
 								AnnotatedElementUtils.findMergedAnnotation(method, EventListener.class));
-			}
-			catch (Throwable ex) {
+			} catch (Throwable ex) {
 				// An unresolvable type in a method signature, probably from a lazy bean - let's ignore it.
 				if (logger.isDebugEnabled()) {
 					logger.debug("Could not resolve methods for bean with name '" + beanName + "'", ex);
@@ -151,8 +129,7 @@ public class EventListenerMethodProcessor
 				if (logger.isTraceEnabled()) {
 					logger.trace("No @EventListener annotations found on bean class: " + targetType.getName());
 				}
-			}
-			else {
+			} else {
 				// Non-empty set of methods
 				ConfigurableApplicationContext context = this.applicationContext;
 				Assert.state(context != null, "No ApplicationContext set");
@@ -184,11 +161,11 @@ public class EventListenerMethodProcessor
 	 * Determine whether the given class is an {@code org.springframework}
 	 * bean class that is not annotated as a user or test {@link Component}...
 	 * which indicates that there is no {@link EventListener} to be found there.
+	 *
 	 * @since 5.1
 	 */
 	private static boolean isSpringContainerClass(Class<?> clazz) {
 		return (clazz.getName().startsWith("org.springframework.") &&
 				!AnnotatedElementUtils.isAnnotated(ClassUtils.getUserClass(clazz), Component.class));
 	}
-
 }

@@ -67,8 +67,6 @@ import java.util.function.Supplier;
  * special bean definition formats in a refreshable manner, consider deriving
  * from the {@link AbstractRefreshableApplicationContext} base class.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
  * @see #registerBeanDefinition
  * @see #refresh()
  * @see org.springframework.beans.factory.xml.XmlBeanDefinitionReader
@@ -77,12 +75,9 @@ import java.util.function.Supplier;
  */
 public class GenericApplicationContext extends AbstractApplicationContext implements BeanDefinitionRegistry {
 	private final DefaultListableBeanFactory beanFactory;
-
 	@Nullable
 	private ResourceLoader resourceLoader;
-
 	private boolean customClassLoader = false;
-
 	private final AtomicBoolean refreshed = new AtomicBoolean();
 
 	/**

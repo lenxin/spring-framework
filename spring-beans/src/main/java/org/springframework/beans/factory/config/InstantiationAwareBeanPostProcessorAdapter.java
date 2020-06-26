@@ -1,13 +1,11 @@
-
-
 package org.springframework.beans.factory.config;
-
-import java.beans.PropertyDescriptor;
-import java.lang.reflect.Constructor;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.PropertyValues;
 import org.springframework.lang.Nullable;
+
+import java.beans.PropertyDescriptor;
+import java.lang.reflect.Constructor;
 
 /**
  * Adapter that implements all methods on {@link SmartInstantiationAwareBeanPostProcessor}
@@ -20,12 +18,9 @@ import org.springframework.lang.Nullable;
  * is plain {@link BeanPostProcessor} functionality, prefer a straight
  * implementation of that (simpler) interface.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @since 2.0
  */
 public abstract class InstantiationAwareBeanPostProcessorAdapter implements SmartInstantiationAwareBeanPostProcessor {
-
 	@Override
 	@Nullable
 	public Class<?> predictBeanType(Class<?> beanClass, String beanName) throws BeansException {
@@ -78,5 +73,4 @@ public abstract class InstantiationAwareBeanPostProcessorAdapter implements Smar
 	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
 		return bean;
 	}
-
 }

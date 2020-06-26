@@ -1,5 +1,3 @@
-
-
 package org.springframework.expression;
 
 import org.springframework.core.convert.TypeDescriptor;
@@ -11,28 +9,22 @@ import org.springframework.util.ObjectUtils;
  * The type descriptor can contain generic declarations that would not
  * be accessible through a simple {@code getClass()} call on the object.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
  * @since 3.0
  */
 public class TypedValue {
-
 	/**
 	 * {@link TypedValue} for {@code null}.
 	 */
 	public static final TypedValue NULL = new TypedValue(null);
-
-
 	@Nullable
 	private final Object value;
-
 	@Nullable
 	private TypeDescriptor typeDescriptor;
-
 
 	/**
 	 * Create a {@link TypedValue} for a simple object. The {@link TypeDescriptor}
 	 * is inferred from the object, so no generic declarations are preserved.
+	 *
 	 * @param value the object value
 	 */
 	public TypedValue(@Nullable Object value) {
@@ -43,14 +35,14 @@ public class TypedValue {
 	/**
 	 * Create a {@link TypedValue} for a particular value with a particular
 	 * {@link TypeDescriptor} which may contain additional generic declarations.
-	 * @param value the object value
+	 *
+	 * @param value          the object value
 	 * @param typeDescriptor a type descriptor describing the type of the value
 	 */
 	public TypedValue(@Nullable Object value, @Nullable TypeDescriptor typeDescriptor) {
 		this.value = value;
 		this.typeDescriptor = typeDescriptor;
 	}
-
 
 	@Nullable
 	public Object getValue() {
@@ -64,7 +56,6 @@ public class TypedValue {
 		}
 		return this.typeDescriptor;
 	}
-
 
 	@Override
 	public boolean equals(Object other) {
@@ -90,5 +81,4 @@ public class TypedValue {
 	public String toString() {
 		return "TypedValue: '" + this.value + "' of [" + getTypeDescriptor() + "]";
 	}
-
 }

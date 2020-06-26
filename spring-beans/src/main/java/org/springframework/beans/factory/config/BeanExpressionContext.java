@@ -10,7 +10,6 @@ import org.springframework.util.Assert;
  */
 public class BeanExpressionContext {
 	private final ConfigurableBeanFactory beanFactory;
-
 	@Nullable
 	private final Scope scope;
 

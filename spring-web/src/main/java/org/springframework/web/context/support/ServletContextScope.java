@@ -1,14 +1,14 @@
 package org.springframework.web.context.support;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import javax.servlet.ServletContext;
-
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.config.Scope;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import javax.servlet.ServletContext;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * {@link Scope} wrapper for a ServletContext, i.e. for global web application attributes.
@@ -27,25 +27,22 @@ import org.springframework.util.Assert;
  * {@link org.springframework.web.context.WebApplicationContext#SCOPE_APPLICATION "application"}.
  *
  * @author Juergen Hoeller
- * @since 3.0
  * @see org.springframework.web.context.ContextCleanupListener
+ * @since 3.0
  */
 public class ServletContextScope implements Scope, DisposableBean {
-
 	private final ServletContext servletContext;
-
 	private final Map<String, Runnable> destructionCallbacks = new LinkedHashMap<>();
-
 
 	/**
 	 * Create a new Scope wrapper for the given ServletContext.
+	 *
 	 * @param servletContext the ServletContext to wrap
 	 */
 	public ServletContextScope(ServletContext servletContext) {
 		Assert.notNull(servletContext, "ServletContext must not be null");
 		this.servletContext = servletContext;
 	}
-
 
 	@Override
 	public Object get(String name, ObjectFactory<?> objectFactory) {
@@ -65,8 +62,7 @@ public class ServletContextScope implements Scope, DisposableBean {
 			this.servletContext.removeAttribute(name);
 			this.destructionCallbacks.remove(name);
 			return scopedObject;
-		}
-		else {
+		} else {
 			return null;
 		}
 	}
@@ -88,10 +84,10 @@ public class ServletContextScope implements Scope, DisposableBean {
 		return null;
 	}
 
-
 	/**
 	 * Invoke all registered destruction callbacks.
 	 * To be called on ServletContext shutdown.
+	 *
 	 * @see org.springframework.web.context.ContextCleanupListener
 	 */
 	@Override
@@ -101,5 +97,4 @@ public class ServletContextScope implements Scope, DisposableBean {
 		}
 		this.destructionCallbacks.clear();
 	}
-
 }

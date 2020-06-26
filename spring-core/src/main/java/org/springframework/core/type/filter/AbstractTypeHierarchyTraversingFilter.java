@@ -1,16 +1,13 @@
-
-
 package org.springframework.core.type.filter;
-
-import java.io.IOException;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.type.ClassMetadata;
 import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.core.type.classreading.MetadataReaderFactory;
 import org.springframework.lang.Nullable;
+
+import java.io.IOException;
 
 /**
  * Type filter that is aware of traversing over hierarchy.
@@ -20,29 +17,21 @@ import org.springframework.lang.Nullable;
  * strategy: if at any time a match is declared, no further processing is
  * carried out.
  *
- * @author Ramnivas Laddad
- * @author Mark Fisher
  * @since 2.5
  */
 public abstract class AbstractTypeHierarchyTraversingFilter implements TypeFilter {
-
 	protected final Log logger = LogFactory.getLog(getClass());
-
 	private final boolean considerInherited;
-
 	private final boolean considerInterfaces;
-
 
 	protected AbstractTypeHierarchyTraversingFilter(boolean considerInherited, boolean considerInterfaces) {
 		this.considerInherited = considerInherited;
 		this.considerInterfaces = considerInterfaces;
 	}
 
-
 	@Override
 	public boolean match(MetadataReader metadataReader, MetadataReaderFactory metadataReaderFactory)
 			throws IOException {
-
 		// This method optimizes avoiding unnecessary creation of ClassReaders
 		// as well as visiting over those readers.
 		if (matchSelf(metadataReader)) {
@@ -62,15 +51,13 @@ public abstract class AbstractTypeHierarchyTraversingFilter implements TypeFilte
 					if (superClassMatch.booleanValue()) {
 						return true;
 					}
-				}
-				else {
+				} else {
 					// Need to read super class to determine a match...
 					try {
 						if (match(metadata.getSuperClassName(), metadataReaderFactory)) {
 							return true;
 						}
-					}
-					catch (IOException ex) {
+					} catch (IOException ex) {
 						logger.debug("Could not read super class [" + metadata.getSuperClassName() +
 								"] of type-filtered class [" + metadata.getClassName() + "]");
 					}
@@ -86,15 +73,13 @@ public abstract class AbstractTypeHierarchyTraversingFilter implements TypeFilte
 					if (interfaceMatch.booleanValue()) {
 						return true;
 					}
-				}
-				else {
+				} else {
 					// Need to read interface to determine a match...
 					try {
 						if (match(ifc, metadataReaderFactory)) {
 							return true;
 						}
-					}
-					catch (IOException ex) {
+					} catch (IOException ex) {
 						logger.debug("Could not read interface [" + ifc + "] for type-filtered class [" +
 								metadata.getClassName() + "]");
 					}
@@ -140,5 +125,4 @@ public abstract class AbstractTypeHierarchyTraversingFilter implements TypeFilte
 	protected Boolean matchInterface(String interfaceName) {
 		return null;
 	}
-
 }

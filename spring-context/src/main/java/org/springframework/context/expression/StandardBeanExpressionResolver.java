@@ -1,9 +1,4 @@
-
-
 package org.springframework.context.expression;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanExpressionException;
@@ -22,34 +17,32 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * Standard implementation of the
  * {@link org.springframework.beans.factory.config.BeanExpressionResolver}
  * interface, parsing and evaluating Spring EL using Spring's expression module.
  *
- * @author Juergen Hoeller
- * @since 3.0
  * @see org.springframework.expression.ExpressionParser
  * @see org.springframework.expression.spel.standard.SpelExpressionParser
  * @see org.springframework.expression.spel.support.StandardEvaluationContext
+ * @since 3.0
  */
 public class StandardBeanExpressionResolver implements BeanExpressionResolver {
-
-	/** Default expression prefix: "#{". */
+	/**
+	 * Default expression prefix: "#{".
+	 */
 	public static final String DEFAULT_EXPRESSION_PREFIX = "#{";
-
-	/** Default expression suffix: "}". */
+	/**
+	 * Default expression suffix: "}".
+	 */
 	public static final String DEFAULT_EXPRESSION_SUFFIX = "}";
-
-
 	private String expressionPrefix = DEFAULT_EXPRESSION_PREFIX;
-
 	private String expressionSuffix = DEFAULT_EXPRESSION_SUFFIX;
-
 	private ExpressionParser expressionParser;
-
 	private final Map<String, Expression> expressionCache = new ConcurrentHashMap<>(256);
-
 	private final Map<BeanExpressionContext, StandardEvaluationContext> evaluationCache = new ConcurrentHashMap<>(8);
 
 	private final ParserContext beanExpressionParserContext = new ParserContext() {
@@ -57,16 +50,17 @@ public class StandardBeanExpressionResolver implements BeanExpressionResolver {
 		public boolean isTemplate() {
 			return true;
 		}
+
 		@Override
 		public String getExpressionPrefix() {
 			return expressionPrefix;
 		}
+
 		@Override
 		public String getExpressionSuffix() {
 			return expressionSuffix;
 		}
 	};
-
 
 	/**
 	 * Create a new {@code StandardBeanExpressionResolver} with default settings.
@@ -78,16 +72,17 @@ public class StandardBeanExpressionResolver implements BeanExpressionResolver {
 	/**
 	 * Create a new {@code StandardBeanExpressionResolver} with the given bean class loader,
 	 * using it as the basis for expression compilation.
+	 *
 	 * @param beanClassLoader the factory's bean class loader
 	 */
 	public StandardBeanExpressionResolver(@Nullable ClassLoader beanClassLoader) {
 		this.expressionParser = new SpelExpressionParser(new SpelParserConfiguration(null, beanClassLoader));
 	}
 
-
 	/**
 	 * Set the prefix that an expression string starts with.
 	 * The default is "#{".
+	 *
 	 * @see #DEFAULT_EXPRESSION_PREFIX
 	 */
 	public void setExpressionPrefix(String expressionPrefix) {
@@ -98,6 +93,7 @@ public class StandardBeanExpressionResolver implements BeanExpressionResolver {
 	/**
 	 * Set the suffix that an expression string ends with.
 	 * The default is "}".
+	 *
 	 * @see #DEFAULT_EXPRESSION_SUFFIX
 	 */
 	public void setExpressionSuffix(String expressionSuffix) {
@@ -114,7 +110,6 @@ public class StandardBeanExpressionResolver implements BeanExpressionResolver {
 		Assert.notNull(expressionParser, "ExpressionParser must not be null");
 		this.expressionParser = expressionParser;
 	}
-
 
 	@Override
 	@Nullable
@@ -145,8 +140,7 @@ public class StandardBeanExpressionResolver implements BeanExpressionResolver {
 				this.evaluationCache.put(evalContext, sec);
 			}
 			return expr.getValue(sec);
-		}
-		catch (Throwable ex) {
+		} catch (Throwable ex) {
 			throw new BeanExpressionException("Expression parsing failed", ex);
 		}
 	}
@@ -157,5 +151,4 @@ public class StandardBeanExpressionResolver implements BeanExpressionResolver {
 	 */
 	protected void customizeEvaluationContext(StandardEvaluationContext evalContext) {
 	}
-
 }

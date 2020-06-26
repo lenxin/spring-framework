@@ -13,7 +13,6 @@ package org.springframework.expression;
  * <p>They can become stale, and in that case should throw an AccessException - this will
  * cause the infrastructure to go back to the resolvers to ask for a new one.
  *
- * @author Andy Clement
  * @since 3.0
  */
 public interface ConstructorExecutor {

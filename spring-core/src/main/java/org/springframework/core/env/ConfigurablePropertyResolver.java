@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.env;
 
 import org.springframework.core.convert.support.ConfigurableConversionService;
@@ -11,11 +9,9 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.core.convert.ConversionService ConversionService}
  * used when converting property values from one type to another.
  *
- * @author Chris Beams
  * @since 3.1
  */
 public interface ConfigurablePropertyResolver extends PropertyResolver {
-
 	/**
 	 * Return the {@link ConfigurableConversionService} used when performing type
 	 * conversions on properties.
@@ -25,6 +21,7 @@ public interface ConfigurablePropertyResolver extends PropertyResolver {
 	 * ConfigurableConversionService cs = env.getConversionService();
 	 * cs.addConverter(new FooConverter());
 	 * </pre>
+	 *
 	 * @see PropertyResolver#getProperty(String, Class)
 	 * @see org.springframework.core.convert.converter.ConverterRegistry#addConverter
 	 */
@@ -37,6 +34,7 @@ public interface ConfigurablePropertyResolver extends PropertyResolver {
 	 * {@code ConversionService}, consider adding or removing individual
 	 * {@code Converter} instances by drilling into {@link #getConversionService()}
 	 * and calling methods such as {@code #addConverter}.
+	 *
 	 * @see PropertyResolver#getProperty(String, Class)
 	 * @see #getConversionService()
 	 * @see org.springframework.core.convert.converter.ConverterRegistry#addConverter
@@ -69,6 +67,7 @@ public interface ConfigurablePropertyResolver extends PropertyResolver {
 	 * <p>Implementations of {@link #getProperty(String)} and its variants must inspect
 	 * the value set here to determine correct behavior when property values contain
 	 * unresolvable placeholders.
+	 *
 	 * @since 3.2
 	 */
 	void setIgnoreUnresolvableNestedPlaceholders(boolean ignoreUnresolvableNestedPlaceholders);
@@ -83,9 +82,9 @@ public interface ConfigurablePropertyResolver extends PropertyResolver {
 	 * Validate that each of the properties specified by
 	 * {@link #setRequiredProperties} is present and resolves to a
 	 * non-{@code null} value.
+	 *
 	 * @throws MissingRequiredPropertiesException if any of the required
-	 * properties are not resolvable.
+	 *                                            properties are not resolvable.
 	 */
 	void validateRequiredProperties() throws MissingRequiredPropertiesException;
-
 }

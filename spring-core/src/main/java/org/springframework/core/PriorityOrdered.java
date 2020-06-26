@@ -17,11 +17,9 @@ package org.springframework.core;
  * affects their autowiring behavior: they will only be autowired against
  * beans which do not require eager initialization for type matching.
  *
- * @author Juergen Hoeller
- * @since 2.5
  * @see org.springframework.beans.factory.config.PropertyOverrideConfigurer
  * @see org.springframework.beans.factory.config.PropertyPlaceholderConfigurer
+ * @since 2.5
  */
 public interface PriorityOrdered extends Ordered {
-
 }

@@ -1,13 +1,13 @@
 package org.springframework.web.context.support;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
-
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.lang.Nullable;
 import org.springframework.web.context.ServletConfigAware;
 import org.springframework.web.context.ServletContextAware;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 
 /**
  * {@link org.springframework.beans.factory.config.BeanPostProcessor}
@@ -17,20 +17,15 @@ import org.springframework.web.context.ServletContextAware;
  * <p>Web application contexts will automatically register this with their
  * underlying bean factory. Applications do not use this directly.
  *
- * @author Juergen Hoeller
- * @author Phillip Webb
- * @since 12.03.2004
  * @see org.springframework.web.context.ServletContextAware
  * @see org.springframework.web.context.support.XmlWebApplicationContext#postProcessBeanFactory
+ * @since 12.03.2004
  */
 public class ServletContextAwareProcessor implements BeanPostProcessor {
-
 	@Nullable
 	private ServletContext servletContext;
-
 	@Nullable
 	private ServletConfig servletConfig;
-
 
 	/**
 	 * Create a new ServletContextAwareProcessor without an initial context or config.
@@ -61,7 +56,6 @@ public class ServletContextAwareProcessor implements BeanPostProcessor {
 		this.servletContext = servletContext;
 		this.servletConfig = servletConfig;
 	}
-
 
 	/**
 	 * Returns the {@link ServletContext} to be injected or {@code null}. This method
@@ -101,5 +95,4 @@ public class ServletContextAwareProcessor implements BeanPostProcessor {
 	public Object postProcessAfterInitialization(Object bean, String beanName) {
 		return bean;
 	}
-
 }

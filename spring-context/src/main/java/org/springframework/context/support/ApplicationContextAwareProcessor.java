@@ -30,9 +30,6 @@ import org.springframework.util.StringValueResolver;
  * <p>Application contexts will automatically register this with their
  * underlying bean factory. Applications do not use this directly.
  *
- * @author Juergen Hoeller
- * @author Costin Leau
- * @author Chris Beams
  * @since 10.10.2003
  * @see org.springframework.context.EnvironmentAware
  * @see org.springframework.context.EmbeddedValueResolverAware
@@ -43,11 +40,8 @@ import org.springframework.util.StringValueResolver;
  * @see org.springframework.context.support.AbstractApplicationContext#refresh()
  */
 class ApplicationContextAwareProcessor implements BeanPostProcessor {
-
 	private final ConfigurableApplicationContext applicationContext;
-
 	private final StringValueResolver embeddedValueResolver;
-
 
 	/**
 	 * Create a new ApplicationContextAwareProcessor for the given context.
@@ -56,7 +50,6 @@ class ApplicationContextAwareProcessor implements BeanPostProcessor {
 		this.applicationContext = applicationContext;
 		this.embeddedValueResolver = new EmbeddedValueResolver(applicationContext.getBeanFactory());
 	}
-
 
 	@Override
 	@Nullable
@@ -110,5 +103,4 @@ class ApplicationContextAwareProcessor implements BeanPostProcessor {
 	public Object postProcessAfterInitialization(Object bean, String beanName) {
 		return bean;
 	}
-
 }

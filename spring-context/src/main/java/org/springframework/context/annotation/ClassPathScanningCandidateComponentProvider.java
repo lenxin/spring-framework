@@ -57,27 +57,18 @@ import java.util.*;
  */
 public class ClassPathScanningCandidateComponentProvider implements EnvironmentCapable, ResourceLoaderAware {
 	static final String DEFAULT_RESOURCE_PATTERN = "**/*.class";
-
 	protected final Log logger = LogFactory.getLog(getClass());
-
 	private String resourcePattern = DEFAULT_RESOURCE_PATTERN;
-
 	private final List<TypeFilter> includeFilters = new LinkedList<>();
-
 	private final List<TypeFilter> excludeFilters = new LinkedList<>();
-
 	@Nullable
 	private Environment environment;
-
 	@Nullable
 	private ConditionEvaluator conditionEvaluator;
-
 	@Nullable
 	private ResourcePatternResolver resourcePatternResolver;
-
 	@Nullable
 	private MetadataReaderFactory metadataReaderFactory;
-
 	@Nullable
 	private CandidateComponentsIndex componentsIndex;
 

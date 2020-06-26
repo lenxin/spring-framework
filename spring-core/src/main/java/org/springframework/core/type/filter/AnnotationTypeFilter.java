@@ -1,15 +1,13 @@
-
-
 package org.springframework.core.type.filter;
-
-import java.lang.annotation.Annotation;
-import java.lang.annotation.Inherited;
 
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
+
+import java.lang.annotation.Annotation;
+import java.lang.annotation.Inherited;
 
 /**
  * A simple {@link TypeFilter} which matches classes with a given annotation,
@@ -22,18 +20,11 @@ import org.springframework.util.ClassUtils;
  * Similarly, the search for annotations on interfaces may optionally be enabled.
  * Consult the various constructors in this class for details.
  *
- * @author Mark Fisher
- * @author Ramnivas Laddad
- * @author Juergen Hoeller
- * @author Sam Brannen
  * @since 2.5
  */
 public class AnnotationTypeFilter extends AbstractTypeHierarchyTraversingFilter {
-
 	private final Class<? extends Annotation> annotationType;
-
 	private final boolean considerMetaAnnotations;
-
 
 	/**
 	 * Create a new {@code AnnotationTypeFilter} for the given annotation type.
@@ -41,6 +32,7 @@ public class AnnotationTypeFilter extends AbstractTypeHierarchyTraversingFilter 
 	 * meta-annotation matching, use the constructor that accepts a
 	 * '{@code considerMetaAnnotations}' argument.
 	 * <p>The filter will not match interfaces.
+	 *
 	 * @param annotationType the annotation type to match
 	 */
 	public AnnotationTypeFilter(Class<? extends Annotation> annotationType) {
@@ -50,7 +42,8 @@ public class AnnotationTypeFilter extends AbstractTypeHierarchyTraversingFilter 
 	/**
 	 * Create a new {@code AnnotationTypeFilter} for the given annotation type.
 	 * <p>The filter will not match interfaces.
-	 * @param annotationType the annotation type to match
+	 *
+	 * @param annotationType          the annotation type to match
 	 * @param considerMetaAnnotations whether to also match on meta-annotations
 	 */
 	public AnnotationTypeFilter(Class<? extends Annotation> annotationType, boolean considerMetaAnnotations) {
@@ -59,13 +52,13 @@ public class AnnotationTypeFilter extends AbstractTypeHierarchyTraversingFilter 
 
 	/**
 	 * Create a new {@code AnnotationTypeFilter} for the given annotation type.
-	 * @param annotationType the annotation type to match
+	 *
+	 * @param annotationType          the annotation type to match
 	 * @param considerMetaAnnotations whether to also match on meta-annotations
-	 * @param considerInterfaces whether to also match interfaces
+	 * @param considerInterfaces      whether to also match interfaces
 	 */
 	public AnnotationTypeFilter(
 			Class<? extends Annotation> annotationType, boolean considerMetaAnnotations, boolean considerInterfaces) {
-
 		super(annotationType.isAnnotationPresent(Inherited.class), considerInterfaces);
 		this.annotationType = annotationType;
 		this.considerMetaAnnotations = considerMetaAnnotations;
@@ -74,6 +67,7 @@ public class AnnotationTypeFilter extends AbstractTypeHierarchyTraversingFilter 
 	/**
 	 * Return the {@link Annotation} that this instance is using to filter
 	 * candidates.
+	 *
 	 * @since 5.0
 	 */
 	public final Class<? extends Annotation> getAnnotationType() {
@@ -103,8 +97,7 @@ public class AnnotationTypeFilter extends AbstractTypeHierarchyTraversingFilter 
 	protected Boolean hasAnnotation(String typeName) {
 		if (Object.class.getName().equals(typeName)) {
 			return false;
-		}
-		else if (typeName.startsWith("java")) {
+		} else if (typeName.startsWith("java")) {
 			if (!this.annotationType.getName().startsWith("java")) {
 				// Standard Java types do not have non-standard annotations on them ->
 				// skip any load attempt, in particular for Java language interfaces.
@@ -114,12 +107,10 @@ public class AnnotationTypeFilter extends AbstractTypeHierarchyTraversingFilter 
 				Class<?> clazz = ClassUtils.forName(typeName, getClass().getClassLoader());
 				return ((this.considerMetaAnnotations ? AnnotationUtils.getAnnotation(clazz, this.annotationType) :
 						clazz.getAnnotation(this.annotationType)) != null);
-			}
-			catch (Throwable ex) {
+			} catch (Throwable ex) {
 				// Class not regularly loadable - can't determine a match that way.
 			}
 		}
 		return null;
 	}
-
 }

@@ -1,27 +1,15 @@
-
-
 package org.springframework.expression.spel.support;
+
+import org.springframework.core.convert.TypeDescriptor;
+import org.springframework.expression.*;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-import org.springframework.core.convert.TypeDescriptor;
-import org.springframework.expression.BeanResolver;
-import org.springframework.expression.ConstructorResolver;
-import org.springframework.expression.EvaluationContext;
-import org.springframework.expression.MethodFilter;
-import org.springframework.expression.MethodResolver;
-import org.springframework.expression.OperatorOverloader;
-import org.springframework.expression.PropertyAccessor;
-import org.springframework.expression.TypeComparator;
-import org.springframework.expression.TypeConverter;
-import org.springframework.expression.TypeLocator;
-import org.springframework.expression.TypedValue;
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
 
 /**
  * A powerful and highly configurable {@link EvaluationContext} implementation.
@@ -32,10 +20,6 @@ import org.springframework.util.Assert;
  * consider using {@link SimpleEvaluationContext} instead which allows for
  * opting into several SpEL features as needed by specific evaluation cases.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @since 3.0
  * @see SimpleEvaluationContext
  * @see ReflectivePropertyAccessor
  * @see ReflectiveConstructorResolver
@@ -44,38 +28,27 @@ import org.springframework.util.Assert;
  * @see StandardTypeConverter
  * @see StandardTypeComparator
  * @see StandardOperatorOverloader
+ * @since 3.0
  */
 public class StandardEvaluationContext implements EvaluationContext {
-
 	private TypedValue rootObject;
-
 	@Nullable
 	private volatile List<PropertyAccessor> propertyAccessors;
-
 	@Nullable
 	private volatile List<ConstructorResolver> constructorResolvers;
-
 	@Nullable
 	private volatile List<MethodResolver> methodResolvers;
-
 	@Nullable
 	private volatile ReflectiveMethodResolver reflectiveMethodResolver;
-
 	@Nullable
 	private BeanResolver beanResolver;
-
 	@Nullable
 	private TypeLocator typeLocator;
-
 	@Nullable
 	private TypeConverter typeConverter;
-
 	private TypeComparator typeComparator = new StandardTypeComparator();
-
 	private OperatorOverloader operatorOverloader = new StandardOperatorOverloader();
-
 	private final Map<String, Object> variables = new ConcurrentHashMap<>();
-
 
 	/**
 	 * Create a {@code StandardEvaluationContext} with a null root object.
@@ -86,13 +59,13 @@ public class StandardEvaluationContext implements EvaluationContext {
 
 	/**
 	 * Create a {@code StandardEvaluationContext} with the given root object.
+	 *
 	 * @param rootObject the root object to use
 	 * @see #setRootObject
 	 */
 	public StandardEvaluationContext(Object rootObject) {
 		this.rootObject = new TypedValue(rootObject);
 	}
-
 
 	public void setRootObject(Object rootObject, TypeDescriptor typeDescriptor) {
 		this.rootObject = new TypedValue(rootObject, typeDescriptor);
@@ -222,8 +195,7 @@ public class StandardEvaluationContext implements EvaluationContext {
 		if (name != null) {
 			if (value != null) {
 				this.variables.put(name, value);
-			}
-			else {
+			} else {
 				this.variables.remove(name);
 			}
 		}
@@ -248,7 +220,8 @@ public class StandardEvaluationContext implements EvaluationContext {
 	 * for the specified type.
 	 * <p>The {@code MethodFilter} may remove methods and/or sort the methods which
 	 * will then be used by SpEL as the candidates to look through for a match.
-	 * @param type the type for which the filter should be called
+	 *
+	 * @param type   the type for which the filter should be called
 	 * @param filter a {@code MethodFilter}, or {@code null} to unregister a filter for the type
 	 * @throws IllegalStateException if the {@link ReflectiveMethodResolver} is not in use
 	 */
@@ -261,7 +234,6 @@ public class StandardEvaluationContext implements EvaluationContext {
 		}
 		resolver.registerMethodFilter(type, filter);
 	}
-
 
 	private List<PropertyAccessor> initPropertyAccessors() {
 		List<PropertyAccessor> accessors = this.propertyAccessors;
@@ -297,5 +269,4 @@ public class StandardEvaluationContext implements EvaluationContext {
 	private static <T> void addBeforeDefault(List<T> resolvers, T resolver) {
 		resolvers.add(resolvers.size() - 1, resolver);
 	}
-
 }

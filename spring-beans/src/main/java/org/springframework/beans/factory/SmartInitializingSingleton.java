@@ -21,12 +21,10 @@ package org.springframework.beans.factory;
  * implement {@link org.springframework.context.Lifecycle} instead which offers
  * a richer model for runtime management and allows for phased startup/shutdown.
  *
- * @author Juergen Hoeller
- * @since 4.1
  * @see org.springframework.beans.factory.config.ConfigurableListableBeanFactory#preInstantiateSingletons()
+ * @since 4.1
  */
 public interface SmartInitializingSingleton {
-
 	/**
 	 * Invoked right at the end of the singleton pre-instantiation phase,
 	 * with a guarantee that all regular singleton beans have been created
@@ -38,5 +36,4 @@ public interface SmartInitializingSingleton {
 	 * with the intended bootstrap semantics only.
 	 */
 	void afterSingletonsInstantiated();
-
 }
