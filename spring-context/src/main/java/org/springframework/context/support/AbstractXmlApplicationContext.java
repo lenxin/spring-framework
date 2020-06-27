@@ -21,14 +21,11 @@ import java.io.IOException;
  * environment-specific fashion, and/or {@link #getResourcePatternResolver}
  * for extended pattern resolution.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @see #getConfigResources
  * @see #getConfigLocations
  * @see org.springframework.beans.factory.xml.XmlBeanDefinitionReader
  */
 public abstract class AbstractXmlApplicationContext extends AbstractRefreshableConfigApplicationContext {
-
 	private boolean validating = true;
 
 	/**

@@ -1,13 +1,8 @@
-
-
 package org.springframework.web.context.support;
-
-import java.io.IOException;
 
 import groovy.lang.GroovyObject;
 import groovy.lang.GroovySystem;
 import groovy.lang.MetaClass;
-
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
 import org.springframework.beans.BeansException;
@@ -15,6 +10,8 @@ import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.lang.Nullable;
+
+import java.io.IOException;
 
 /**
  * {@link org.springframework.web.context.WebApplicationContext} implementation which takes
@@ -45,33 +42,36 @@ import org.springframework.lang.Nullable;
  * Such a context implementation can be specified as "contextClass" context-param
  * for ContextLoader or "contextClass" init-param for FrameworkServlet.
  *
- * @author Juergen Hoeller
- * @since 4.1
  * @see #setNamespace
  * @see #setConfigLocations
  * @see org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader
  * @see org.springframework.web.context.ContextLoader#initWebApplicationContext
  * @see org.springframework.web.servlet.FrameworkServlet#initWebApplicationContext
+ * @since 4.1
  */
 public class GroovyWebApplicationContext extends AbstractRefreshableWebApplicationContext implements GroovyObject {
-
-	/** Default config location for the root context. */
+	/**
+	 * Default config location for the root context.
+	 */
 	public static final String DEFAULT_CONFIG_LOCATION = "/WEB-INF/applicationContext.groovy";
 
-	/** Default prefix for building a config location for a namespace. */
+	/**
+	 * Default prefix for building a config location for a namespace.
+	 */
 	public static final String DEFAULT_CONFIG_LOCATION_PREFIX = "/WEB-INF/";
 
-	/** Default suffix for building a config location for a namespace. */
+	/**
+	 * Default suffix for building a config location for a namespace.
+	 */
 	public static final String DEFAULT_CONFIG_LOCATION_SUFFIX = ".groovy";
-
 
 	private final BeanWrapper contextWrapper = new BeanWrapperImpl(this);
 
 	private MetaClass metaClass = GroovySystem.getMetaClassRegistry().getMetaClass(getClass());
 
-
 	/**
 	 * Loads the bean definitions via an GroovyBeanDefinitionReader.
+	 *
 	 * @see org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader
 	 * @see #initBeanDefinitionReader
 	 * @see #loadBeanDefinitions
@@ -96,6 +96,7 @@ public class GroovyWebApplicationContext extends AbstractRefreshableWebApplicati
 	 * Initialize the bean definition reader used for loading the bean
 	 * definitions of this context. Default implementation is empty.
 	 * <p>Can be overridden in subclasses.
+	 *
 	 * @param beanDefinitionReader the bean definition reader used by this context
 	 */
 	protected void initBeanDefinitionReader(GroovyBeanDefinitionReader beanDefinitionReader) {
@@ -107,6 +108,7 @@ public class GroovyWebApplicationContext extends AbstractRefreshableWebApplicati
 	 * therefore this method is just supposed to load and/or register bean definitions.
 	 * <p>Delegates to a ResourcePatternResolver for resolving location patterns
 	 * into Resource instances.
+	 *
 	 * @throws IOException if the required Groovy script or XML file isn't found
 	 * @see #refreshBeanFactory
 	 * @see #getConfigLocations
@@ -130,13 +132,11 @@ public class GroovyWebApplicationContext extends AbstractRefreshableWebApplicati
 	@Override
 	protected String[] getDefaultConfigLocations() {
 		if (getNamespace() != null) {
-			return new String[] {DEFAULT_CONFIG_LOCATION_PREFIX + getNamespace() + DEFAULT_CONFIG_LOCATION_SUFFIX};
-		}
-		else {
-			return new String[] {DEFAULT_CONFIG_LOCATION};
+			return new String[]{DEFAULT_CONFIG_LOCATION_PREFIX + getNamespace() + DEFAULT_CONFIG_LOCATION_SUFFIX};
+		} else {
+			return new String[]{DEFAULT_CONFIG_LOCATION};
 		}
 	}
-
 
 	// Implementation of the GroovyObject interface
 
@@ -160,11 +160,9 @@ public class GroovyWebApplicationContext extends AbstractRefreshableWebApplicati
 	public Object getProperty(String property) {
 		if (containsBean(property)) {
 			return getBean(property);
-		}
-		else if (this.contextWrapper.isReadableProperty(property)) {
+		} else if (this.contextWrapper.isReadableProperty(property)) {
 			return this.contextWrapper.getPropertyValue(property);
 		}
 		throw new NoSuchBeanDefinitionException(property);
 	}
-
 }

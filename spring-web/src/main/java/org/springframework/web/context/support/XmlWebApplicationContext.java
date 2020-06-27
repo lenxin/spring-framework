@@ -35,8 +35,6 @@ import java.io.IOException;
  * Such a context implementation can be specified as "contextClass" context-param
  * for ContextLoader or "contextClass" init-param for FrameworkServlet.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @see #setNamespace
  * @see #setConfigLocations
  * @see org.springframework.beans.factory.xml.XmlBeanDefinitionReader

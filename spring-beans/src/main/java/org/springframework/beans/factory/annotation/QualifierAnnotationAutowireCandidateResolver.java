@@ -33,18 +33,13 @@ import java.util.Set;
  *
  * <p>Also supports JSR-330's {@link javax.inject.Qualifier} annotation, if available.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Stephane Nicoll
  * @see AutowireCandidateQualifier
  * @see Qualifier
  * @see Value
  * @since 2.5
  */
 public class QualifierAnnotationAutowireCandidateResolver extends GenericTypeAwareAutowireCandidateResolver {
-
 	private final Set<Class<? extends Annotation>> qualifierTypes = new LinkedHashSet<>(2);
-
 	private Class<? extends Annotation> valueAnnotationType = Value.class;
 
 	/**
@@ -202,7 +197,6 @@ public class QualifierAnnotationAutowireCandidateResolver extends GenericTypeAwa
 	 */
 	protected boolean checkQualifier(
 			BeanDefinitionHolder bdHolder, Annotation annotation, TypeConverter typeConverter) {
-
 		Class<? extends Annotation> type = annotation.annotationType();
 		RootBeanDefinition bd = (RootBeanDefinition) bdHolder.getBeanDefinition();
 

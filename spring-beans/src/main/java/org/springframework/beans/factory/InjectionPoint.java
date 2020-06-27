@@ -1,16 +1,14 @@
-
-
 package org.springframework.beans.factory;
-
-import java.lang.annotation.Annotation;
-import java.lang.reflect.AnnotatedElement;
-import java.lang.reflect.Field;
-import java.lang.reflect.Member;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ObjectUtils;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.AnnotatedElement;
+import java.lang.reflect.Field;
+import java.lang.reflect.Member;
 
 /**
  * A simple descriptor for an injection point, pointing to a method/constructor
@@ -18,25 +16,21 @@ import org.springframework.util.ObjectUtils;
  * Also available as an argument for factory methods, reacting to the
  * requesting injection point for building a customized bean instance.
  *
- * @author Juergen Hoeller
- * @since 4.3
  * @see UnsatisfiedDependencyException#getInjectionPoint()
  * @see org.springframework.beans.factory.config.DependencyDescriptor
+ * @since 4.3
  */
 public class InjectionPoint {
-
 	@Nullable
 	protected MethodParameter methodParameter;
-
 	@Nullable
 	protected Field field;
-
 	@Nullable
 	private volatile Annotation[] fieldAnnotations;
 
-
 	/**
 	 * Create an injection point descriptor for a method or constructor parameter.
+	 *
 	 * @param methodParameter the MethodParameter to wrap
 	 */
 	public InjectionPoint(MethodParameter methodParameter) {
@@ -46,6 +40,7 @@ public class InjectionPoint {
 
 	/**
 	 * Create an injection point descriptor for a field.
+	 *
 	 * @param field the field to wrap
 	 */
 	public InjectionPoint(Field field) {
@@ -55,6 +50,7 @@ public class InjectionPoint {
 
 	/**
 	 * Copy constructor.
+	 *
 	 * @param original the original descriptor to create a copy from
 	 */
 	protected InjectionPoint(InjectionPoint original) {
@@ -70,10 +66,10 @@ public class InjectionPoint {
 	protected InjectionPoint() {
 	}
 
-
 	/**
 	 * Return the wrapped MethodParameter, if any.
 	 * <p>Note: Either MethodParameter or Field is available.
+	 *
 	 * @return the MethodParameter, or {@code null} if none
 	 */
 	@Nullable
@@ -84,6 +80,7 @@ public class InjectionPoint {
 	/**
 	 * Return the wrapped Field, if any.
 	 * <p>Note: Either MethodParameter or Field is available.
+	 *
 	 * @return the Field, or {@code null} if none
 	 */
 	@Nullable
@@ -93,6 +90,7 @@ public class InjectionPoint {
 
 	/**
 	 * Return the wrapped MethodParameter, assuming it is present.
+	 *
 	 * @return the MethodParameter (never {@code null})
 	 * @throws IllegalStateException if no MethodParameter is available
 	 * @since 5.0
@@ -113,14 +111,14 @@ public class InjectionPoint {
 				this.fieldAnnotations = fieldAnnotations;
 			}
 			return fieldAnnotations;
-		}
-		else {
+		} else {
 			return obtainMethodParameter().getParameterAnnotations();
 		}
 	}
 
 	/**
 	 * Retrieve a field/parameter annotation of the given type, if any.
+	 *
 	 * @param annotationType the annotation type to retrieve
 	 * @return the annotation instance, or {@code null} if none found
 	 * @since 4.3.9
@@ -141,6 +139,7 @@ public class InjectionPoint {
 
 	/**
 	 * Returns the wrapped member, containing the injection point.
+	 *
 	 * @return the Field / Method / Constructor as Member
 	 */
 	public Member getMember() {
@@ -154,12 +153,12 @@ public class InjectionPoint {
 	 * (i.e. at the method/constructor level, not at the parameter level).
 	 * Use {@link #getAnnotations()} to obtain parameter-level annotations in
 	 * such a scenario, transparently with corresponding field annotations.
+	 *
 	 * @return the Field / Method / Constructor as AnnotatedElement
 	 */
 	public AnnotatedElement getAnnotatedElement() {
 		return (this.field != null ? this.field : obtainMethodParameter().getAnnotatedElement());
 	}
-
 
 	@Override
 	public boolean equals(Object other) {
@@ -183,5 +182,4 @@ public class InjectionPoint {
 	public String toString() {
 		return (this.field != null ? "field '" + this.field.getName() + "'" : String.valueOf(this.methodParameter));
 	}
-
 }

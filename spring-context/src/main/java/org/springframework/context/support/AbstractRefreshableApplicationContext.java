@@ -35,8 +35,6 @@ import java.io.IOException;
  * {@link org.springframework.context.annotation.AnnotationConfigApplicationContext}
  * supports {@code @Configuration}-annotated classes as a source of bean definitions.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
  * @see #loadBeanDefinitions
  * @see org.springframework.beans.factory.support.DefaultListableBeanFactory
  * @see org.springframework.web.context.support.AbstractRefreshableWebApplicationContext
@@ -47,19 +45,14 @@ import java.io.IOException;
  * @since 1.1.3
  */
 public abstract class AbstractRefreshableApplicationContext extends AbstractApplicationContext {
-
+	/*是否允许覆盖同名称的不同定义的对象*/
 	@Nullable
 	private Boolean allowBeanDefinitionOverriding;
-
+	/*是否允许bean之间存在循环依赖*/
 	@Nullable
 	private Boolean allowCircularReferences;
-
-	/**
-	 * Bean factory for this context.
-	 */
 	@Nullable
 	private DefaultListableBeanFactory beanFactory;
-
 	/**
 	 * Synchronization monitor for the internal BeanFactory.
 	 */
@@ -118,7 +111,9 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 		try {
 			/*创建并设置DefaultListableBeanFactory*/
 			DefaultListableBeanFactory beanFactory = createBeanFactory();
+			// 为了序列化指定id，如果需要的话，让这个BeanFactory从id反序列化到BeanFactory对象
 			beanFactory.setSerializationId(getId());
+			// 定制BeanFactory，设置相关属性，包括是否允许覆盖同名称的不同定义的对象以及循环依赖
 			customizeBeanFactory(beanFactory);
 			/*调用loadBeanDefinitions方法载入BeanDefinition信息*/
 			loadBeanDefinitions(beanFactory);
@@ -211,6 +206,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	 * and {@linkplain #setAllowCircularReferences "allowCircularReferences"} settings,
 	 * if specified. Can be overridden in subclasses to customize any of
 	 * {@link DefaultListableBeanFactory}'s settings.
+	 * 定制beanFactory属性
 	 *
 	 * @param beanFactory the newly created bean factory for this context
 	 * @see DefaultListableBeanFactory#setAllowBeanDefinitionOverriding
@@ -219,9 +215,11 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	 * @see DefaultListableBeanFactory#setAllowEagerClassLoading
 	 */
 	protected void customizeBeanFactory(DefaultListableBeanFactory beanFactory) {
+		// 是否允许覆盖同名称的不同定义的对象
 		if (this.allowBeanDefinitionOverriding != null) {
 			beanFactory.setAllowBeanDefinitionOverriding(this.allowBeanDefinitionOverriding);
 		}
+		// 是否允许bean之间存在循环依赖
 		if (this.allowCircularReferences != null) {
 			beanFactory.setAllowCircularReferences(this.allowCircularReferences);
 		}

@@ -1,8 +1,5 @@
 package org.springframework.beans.factory.support;
 
-import java.lang.reflect.Method;
-import java.util.Properties;
-
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.beans.factory.FactoryBean;
@@ -14,6 +11,9 @@ import org.springframework.core.ResolvableType;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 
+import java.lang.reflect.Method;
+import java.util.Properties;
+
 /**
  * Basic {@link AutowireCandidateResolver} that performs a full generic type
  * match with the candidate's type if the dependency is declared as a generic type
@@ -23,15 +23,12 @@ import org.springframework.util.ClassUtils;
  * {@link org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver},
  * providing an implementation all non-annotation-based resolution steps at this level.
  *
- * @author Juergen Hoeller
  * @since 4.0
  */
 public class GenericTypeAwareAutowireCandidateResolver extends SimpleAutowireCandidateResolver
 		implements BeanFactoryAware {
-
 	@Nullable
 	private BeanFactory beanFactory;
-
 
 	@Override
 	public void setBeanFactory(BeanFactory beanFactory) {
@@ -42,7 +39,6 @@ public class GenericTypeAwareAutowireCandidateResolver extends SimpleAutowireCan
 	protected final BeanFactory getBeanFactory() {
 		return this.beanFactory;
 	}
-
 
 	@Override
 	public boolean isAutowireCandidate(BeanDefinitionHolder bdHolder, DependencyDescriptor descriptor) {
@@ -160,5 +156,4 @@ public class GenericTypeAwareAutowireCandidateResolver extends SimpleAutowireCan
 		}
 		return null;
 	}
-
 }

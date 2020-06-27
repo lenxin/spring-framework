@@ -1,10 +1,10 @@
 package org.springframework.core.convert.converter;
 
-import java.util.Set;
-
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.util.Set;
 
 /**
  * Generic converter interface for converting between two or more types.
@@ -21,16 +21,13 @@ import org.springframework.util.Assert;
  *
  * <p>Implementations may additionally implement {@link ConditionalConverter}.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @since 3.0
  * @see TypeDescriptor
  * @see Converter
  * @see ConverterFactory
  * @see ConditionalConverter
+ * @since 3.0
  */
 public interface GenericConverter {
-
 	/**
 	 * Return the source and target types that this converter can convert between.
 	 * <p>Each entry is a convertible source-to-target type pair.
@@ -42,7 +39,8 @@ public interface GenericConverter {
 
 	/**
 	 * Convert the source object to the targetType described by the {@code TypeDescriptor}.
-	 * @param source the source object to convert (may be {@code null})
+	 *
+	 * @param source     the source object to convert (may be {@code null})
 	 * @param sourceType the type descriptor of the field we are converting from
 	 * @param targetType the type descriptor of the field we are converting to
 	 * @return the converted object
@@ -50,18 +48,16 @@ public interface GenericConverter {
 	@Nullable
 	Object convert(@Nullable Object source, TypeDescriptor sourceType, TypeDescriptor targetType);
 
-
 	/**
 	 * Holder for a source-to-target class pair.
 	 */
 	final class ConvertiblePair {
-
 		private final Class<?> sourceType;
-
 		private final Class<?> targetType;
 
 		/**
 		 * Create a new source-to-target pair.
+		 *
 		 * @param sourceType the source type
 		 * @param targetType the target type
 		 */
@@ -102,5 +98,4 @@ public interface GenericConverter {
 			return (this.sourceType.getName() + " -> " + this.targetType.getName());
 		}
 	}
-
 }

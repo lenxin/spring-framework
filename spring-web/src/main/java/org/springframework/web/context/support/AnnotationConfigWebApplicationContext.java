@@ -56,8 +56,6 @@ import java.util.Set;
  * definitions will override ones defined in earlier loaded files. This can be leveraged
  * to deliberately override certain bean definitions via an extra Configuration class.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
  * @see org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @since 3.0
  */
@@ -65,12 +63,9 @@ public class AnnotationConfigWebApplicationContext extends AbstractRefreshableWe
 		implements AnnotationConfigRegistry {
 	@Nullable
 	private BeanNameGenerator beanNameGenerator;
-
 	@Nullable
 	private ScopeMetadataResolver scopeMetadataResolver;
-
 	private final Set<Class<?>> annotatedClasses = new LinkedHashSet<>();
-
 	private final Set<String> basePackages = new LinkedHashSet<>();
 
 	/**
