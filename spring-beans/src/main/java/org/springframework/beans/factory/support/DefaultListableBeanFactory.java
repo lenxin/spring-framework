@@ -665,7 +665,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		return MergedAnnotation.missing();
 	}
 
-
 	//---------------------------------------------------------------------
 	// Implementation of ConfigurableListableBeanFactory interface
 	//---------------------------------------------------------------------
@@ -685,7 +684,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	@Override
 	public boolean isAutowireCandidate(String beanName, DependencyDescriptor descriptor)
 			throws NoSuchBeanDefinitionException {
-
 		return isAutowireCandidate(beanName, descriptor, getAutowireCandidateResolver());
 	}
 
@@ -700,7 +698,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 */
 	protected boolean isAutowireCandidate(String beanName, DependencyDescriptor descriptor, AutowireCandidateResolver resolver)
 			throws NoSuchBeanDefinitionException {
-
 		String beanDefinitionName = BeanFactoryUtils.transformedBeanName(beanName);
 		if (containsBeanDefinition(beanDefinitionName)) {
 			return isAutowireCandidate(beanName, getMergedLocalBeanDefinition(beanDefinitionName), descriptor, resolver);
@@ -732,7 +729,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 */
 	protected boolean isAutowireCandidate(String beanName, RootBeanDefinition mbd,
 										  DependencyDescriptor descriptor, AutowireCandidateResolver resolver) {
-
 		String beanDefinitionName = BeanFactoryUtils.transformedBeanName(beanName);
 		resolveBeanClass(mbd, beanDefinitionName);
 		if (mbd.isFactoryMethodUnique && mbd.factoryMethodToIntrospect == null) {
@@ -851,7 +847,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	@Override
 	public void registerBeanDefinition(String beanName, BeanDefinition beanDefinition)
 			throws BeanDefinitionStoreException {
-
 		Assert.hasText(beanName, "Bean name must not be empty");
 		Assert.notNull(beanDefinition, "BeanDefinition must not be null");
 
