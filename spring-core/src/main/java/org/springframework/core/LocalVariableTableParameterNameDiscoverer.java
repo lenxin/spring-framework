@@ -1,6 +1,10 @@
-
-
 package org.springframework.core;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.asm.*;
+import org.springframework.lang.Nullable;
+import org.springframework.util.ClassUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,19 +15,6 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import org.springframework.asm.ClassReader;
-import org.springframework.asm.ClassVisitor;
-import org.springframework.asm.Label;
-import org.springframework.asm.MethodVisitor;
-import org.springframework.asm.Opcodes;
-import org.springframework.asm.SpringAsmInfo;
-import org.springframework.asm.Type;
-import org.springframework.lang.Nullable;
-import org.springframework.util.ClassUtils;
-
 /**
  * Implementation of {@link ParameterNameDiscoverer} that uses the LocalVariableTable
  * information in the method attributes to discover parameter names. Returns
@@ -33,22 +24,14 @@ import org.springframework.util.ClassUtils;
  * caches the ASM discovered information for each introspected Class, in a thread-safe
  * manner. It is recommended to reuse ParameterNameDiscoverer instances as far as possible.
  *
- * @author Adrian Colyer
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Chris Beams
  * @since 2.0
  */
 public class LocalVariableTableParameterNameDiscoverer implements ParameterNameDiscoverer {
-
 	private static final Log logger = LogFactory.getLog(LocalVariableTableParameterNameDiscoverer.class);
-
 	// marker object for classes that do not have any debug info
 	private static final Map<Member, String[]> NO_DEBUG_INFO_MAP = Collections.emptyMap();
-
 	// the cache uses a nested index (value is a map) to keep the top level cache relatively small in size
 	private final Map<Class<?>, Map<Member, String[]>> parameterNamesCache = new ConcurrentHashMap<>(32);
-
 
 	@Override
 	@Nullable
@@ -101,42 +84,34 @@ public class LocalVariableTableParameterNameDiscoverer implements ParameterNameD
 			Map<Member, String[]> map = new ConcurrentHashMap<>(32);
 			classReader.accept(new ParameterNameDiscoveringVisitor(clazz, map), 0);
 			return map;
-		}
-		catch (IOException ex) {
+		} catch (IOException ex) {
 			if (logger.isDebugEnabled()) {
 				logger.debug("Exception thrown while reading '.class' file for class [" + clazz +
 						"] - unable to determine constructor/method parameter names", ex);
 			}
-		}
-		catch (IllegalArgumentException ex) {
+		} catch (IllegalArgumentException ex) {
 			if (logger.isDebugEnabled()) {
 				logger.debug("ASM ClassReader failed to parse class file [" + clazz +
 						"], probably due to a new Java class file version that isn't supported yet " +
 						"- unable to determine constructor/method parameter names", ex);
 			}
-		}
-		finally {
+		} finally {
 			try {
 				is.close();
-			}
-			catch (IOException ex) {
+			} catch (IOException ex) {
 				// ignore
 			}
 		}
 		return NO_DEBUG_INFO_MAP;
 	}
 
-
 	/**
 	 * Helper class that inspects all methods (constructor included) and then
 	 * attempts to find the parameter names for that member.
 	 */
 	private static class ParameterNameDiscoveringVisitor extends ClassVisitor {
-
 		private static final String STATIC_CLASS_INIT = "<clinit>";
-
 		private final Class<?> clazz;
-
 		private final Map<Member, String[]> memberMap;
 
 		public ParameterNameDiscoveringVisitor(Class<?> clazz, Map<Member, String[]> memberMap) {
@@ -164,23 +139,14 @@ public class LocalVariableTableParameterNameDiscoverer implements ParameterNameD
 		}
 	}
 
-
 	private static class LocalVariableTableVisitor extends MethodVisitor {
-
 		private static final String CONSTRUCTOR = "<init>";
-
 		private final Class<?> clazz;
-
 		private final Map<Member, String[]> memberMap;
-
 		private final String name;
-
 		private final Type[] args;
-
 		private final String[] parameterNames;
-
 		private final boolean isStatic;
-
 		private boolean hasLvtInfo = false;
 
 		/*
@@ -232,8 +198,7 @@ public class LocalVariableTableParameterNameDiscoverer implements ParameterNameD
 					return this.clazz.getDeclaredConstructor(argTypes);
 				}
 				return this.clazz.getDeclaredMethod(this.name, argTypes);
-			}
-			catch (NoSuchMethodException ex) {
+			} catch (NoSuchMethodException ex) {
 				throw new IllegalStateException("Method [" + this.name +
 						"] was discovered in the .class file but cannot be resolved in the class object", ex);
 			}
@@ -246,8 +211,7 @@ public class LocalVariableTableParameterNameDiscoverer implements ParameterNameD
 				lvtIndex[i] = nextIndex;
 				if (isWideType(paramTypes[i])) {
 					nextIndex += 2;
-				}
-				else {
+				} else {
 					nextIndex++;
 				}
 			}
@@ -259,5 +223,4 @@ public class LocalVariableTableParameterNameDiscoverer implements ParameterNameD
 			return (aType == Type.LONG_TYPE || aType == Type.DOUBLE_TYPE);
 		}
 	}
-
 }

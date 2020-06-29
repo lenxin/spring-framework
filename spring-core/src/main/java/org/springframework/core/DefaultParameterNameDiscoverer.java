@@ -1,5 +1,3 @@
-
-
 package org.springframework.core;
 
 /**
@@ -15,15 +13,12 @@ package org.springframework.core;
  *
  * <p>Further discoverers may be added through {@link #addDiscoverer(ParameterNameDiscoverer)}.
  *
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
- * @since 4.0
  * @see StandardReflectionParameterNameDiscoverer
  * @see LocalVariableTableParameterNameDiscoverer
  * @see KotlinReflectionParameterNameDiscoverer
+ * @since 4.0
  */
 public class DefaultParameterNameDiscoverer extends PrioritizedParameterNameDiscoverer {
-
 	public DefaultParameterNameDiscoverer() {
 		if (!GraalDetector.inImageCode()) {
 			if (KotlinDetector.isKotlinReflectPresent()) {
@@ -33,5 +28,4 @@ public class DefaultParameterNameDiscoverer extends PrioritizedParameterNameDisc
 			addDiscoverer(new LocalVariableTableParameterNameDiscoverer());
 		}
 	}
-
 }

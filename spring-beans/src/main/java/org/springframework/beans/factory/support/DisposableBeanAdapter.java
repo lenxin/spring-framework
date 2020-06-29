@@ -34,28 +34,18 @@ import java.util.List;
 @SuppressWarnings("serial")
 class DisposableBeanAdapter implements DisposableBean, Runnable, Serializable {
 	private static final String CLOSE_METHOD_NAME = "close";
-
 	private static final String SHUTDOWN_METHOD_NAME = "shutdown";
-
 	private static final Log logger = LogFactory.getLog(DisposableBeanAdapter.class);
-
 	private final Object bean;
-
 	private final String beanName;
-
 	private final boolean invokeDisposableBean;
-
 	private final boolean nonPublicAccessAllowed;
-
 	@Nullable
 	private final AccessControlContext acc;
-
 	@Nullable
 	private String destroyMethodName;
-
 	@Nullable
 	private transient Method destroyMethod;
-
 	@Nullable
 	private List<DestructionAwareBeanPostProcessor> beanPostProcessors;
 

@@ -1,11 +1,11 @@
 package org.springframework.core;
 
+import org.springframework.lang.Nullable;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.LinkedList;
 import java.util.List;
-
-import org.springframework.lang.Nullable;
 
 /**
  * {@link ParameterNameDiscoverer} implementation that tries several discoverer
@@ -14,14 +14,10 @@ import org.springframework.lang.Nullable;
  *
  * <p>The default behavior is to return {@code null} if no discoverer matches.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @since 2.0
  */
 public class PrioritizedParameterNameDiscoverer implements ParameterNameDiscoverer {
-
 	private final List<ParameterNameDiscoverer> parameterNameDiscoverers = new LinkedList<>();
-
 
 	/**
 	 * Add a further {@link ParameterNameDiscoverer} delegate to the list of
@@ -30,7 +26,6 @@ public class PrioritizedParameterNameDiscoverer implements ParameterNameDiscover
 	public void addDiscoverer(ParameterNameDiscoverer pnd) {
 		this.parameterNameDiscoverers.add(pnd);
 	}
-
 
 	@Override
 	@Nullable
@@ -55,5 +50,4 @@ public class PrioritizedParameterNameDiscoverer implements ParameterNameDiscover
 		}
 		return null;
 	}
-
 }

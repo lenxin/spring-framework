@@ -17,10 +17,8 @@ import java.util.List;
 public class BeanCreationException extends FatalBeanException {
 	@Nullable
 	private final String beanName;
-
 	@Nullable
 	private final String resourceDescription;
-
 	@Nullable
 	private List<Throwable> relatedCauses;
 

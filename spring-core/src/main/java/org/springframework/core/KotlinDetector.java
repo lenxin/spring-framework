@@ -1,30 +1,22 @@
-
-
 package org.springframework.core;
-
-import java.lang.annotation.Annotation;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
+
+import java.lang.annotation.Annotation;
 
 /**
  * A common delegate for detecting Kotlin's presence and for identifying Kotlin types.
  *
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
  * @since 5.0
  */
 @SuppressWarnings("unchecked")
 public abstract class KotlinDetector {
-
 	private static final Log logger = LogFactory.getLog(KotlinDetector.class);
-
 	@Nullable
 	private static final Class<? extends Annotation> kotlinMetadata;
-
 	private static final boolean kotlinReflectPresent;
 
 	static {
@@ -32,8 +24,7 @@ public abstract class KotlinDetector {
 		ClassLoader classLoader = KotlinDetector.class.getClassLoader();
 		try {
 			metadata = ClassUtils.forName("kotlin.Metadata", classLoader);
-		}
-		catch (ClassNotFoundException ex) {
+		} catch (ClassNotFoundException ex) {
 			// Kotlin API not available - no Kotlin support
 			metadata = null;
 		}
@@ -44,7 +35,6 @@ public abstract class KotlinDetector {
 		}
 	}
 
-
 	/**
 	 * Determine whether Kotlin is present in general.
 	 */
@@ -54,6 +44,7 @@ public abstract class KotlinDetector {
 
 	/**
 	 * Determine whether Kotlin reflection is present.
+	 *
 	 * @since 5.1
 	 */
 	public static boolean isKotlinReflectPresent() {
@@ -67,5 +58,4 @@ public abstract class KotlinDetector {
 	public static boolean isKotlinType(Class<?> clazz) {
 		return (kotlinMetadata != null && clazz.getDeclaredAnnotation(kotlinMetadata) != null);
 	}
-
 }
