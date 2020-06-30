@@ -18,9 +18,7 @@ import java.lang.reflect.Method;
  */
 public abstract class MethodOverride implements BeanMetadataElement {
 	private final String methodName;
-
 	private boolean overloaded = true;
-
 	@Nullable
 	private Object source;
 

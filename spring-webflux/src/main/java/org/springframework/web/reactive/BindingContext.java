@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive;
 
 import org.springframework.lang.Nullable;
@@ -20,16 +18,12 @@ import org.springframework.web.server.ServerWebExchange;
  *
  * <p>Container for the default model for the request.
  *
- * @author Rossen Stoyanchev
  * @since 5.0
  */
 public class BindingContext {
-
 	@Nullable
 	private final WebBindingInitializer initializer;
-
 	private final Model model = new BindingAwareConcurrentModel();
-
 
 	/**
 	 * Create a new {@code BindingContext}.
@@ -40,12 +34,12 @@ public class BindingContext {
 
 	/**
 	 * Create a new {@code BindingContext} with the given initializer.
+	 *
 	 * @param initializer the binding initializer to apply (may be {@code null})
 	 */
 	public BindingContext(@Nullable WebBindingInitializer initializer) {
 		this.initializer = initializer;
 	}
-
 
 	/**
 	 * Return the default model.
@@ -54,13 +48,13 @@ public class BindingContext {
 		return this.model;
 	}
 
-
 	/**
 	 * Create a {@link WebExchangeDataBinder} to apply data binding and
 	 * validation with on the target, command object.
+	 *
 	 * @param exchange the current exchange
-	 * @param target the object to create a data binder for
-	 * @param name the name of the target object
+	 * @param target   the object to create a data binder for
+	 * @param name     the name of the target object
 	 * @return the created data binder
 	 * @throws ServerErrorException if {@code @InitBinder} method invocation fails
 	 */
@@ -74,6 +68,7 @@ public class BindingContext {
 
 	/**
 	 * Initialize the data binder instance for the given exchange.
+	 *
 	 * @throws ServerErrorException if {@code @InitBinder} method invocation fails
 	 */
 	protected WebExchangeDataBinder initDataBinder(WebExchangeDataBinder binder, ServerWebExchange exchange) {
@@ -83,13 +78,13 @@ public class BindingContext {
 	/**
 	 * Create a {@link WebExchangeDataBinder} without a target object for type
 	 * conversion of request values to simple types.
+	 *
 	 * @param exchange the current exchange
-	 * @param name the name of the target object
+	 * @param name     the name of the target object
 	 * @return the created data binder
 	 * @throws ServerErrorException if {@code @InitBinder} method invocation fails
 	 */
 	public WebExchangeDataBinder createDataBinder(ServerWebExchange exchange, String name) {
 		return createDataBinder(exchange, null, name);
 	}
-
 }

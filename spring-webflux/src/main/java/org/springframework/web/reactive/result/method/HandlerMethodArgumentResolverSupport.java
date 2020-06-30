@@ -1,37 +1,30 @@
 package org.springframework.web.reactive.result.method;
 
-import java.lang.annotation.Annotation;
-import java.util.function.BiPredicate;
-import java.util.function.Predicate;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.core.ReactiveAdapter;
 import org.springframework.core.ReactiveAdapterRegistry;
 import org.springframework.util.Assert;
 
+import java.lang.annotation.Annotation;
+import java.util.function.BiPredicate;
+import java.util.function.Predicate;
+
 /**
  * Base class for {@link HandlerMethodArgumentResolver} implementations with access to a
  * {@code ReactiveAdapterRegistry} and methods to check for method parameter support.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
  * @since 5.0
  */
 public abstract class HandlerMethodArgumentResolverSupport implements HandlerMethodArgumentResolver {
-
 	protected final Log logger = LogFactory.getLog(getClass());
-
 	private final ReactiveAdapterRegistry adapterRegistry;
-
 
 	protected HandlerMethodArgumentResolverSupport(ReactiveAdapterRegistry adapterRegistry) {
 		Assert.notNull(adapterRegistry, "ReactiveAdapterRegistry is required");
 		this.adapterRegistry = adapterRegistry;
 	}
-
 
 	/**
 	 * Return the configured {@link ReactiveAdapterRegistry}.
@@ -39,7 +32,6 @@ public abstract class HandlerMethodArgumentResolverSupport implements HandlerMet
 	public ReactiveAdapterRegistry getAdapterRegistry() {
 		return this.adapterRegistry;
 	}
-
 
 	/**
 	 * Evaluate the {@code Predicate} on the method parameter type or on
@@ -96,7 +88,6 @@ public abstract class HandlerMethodArgumentResolverSupport implements HandlerMet
 	 */
 	protected <A extends Annotation> boolean checkAnnotatedParamNoReactiveWrapper(
 			MethodParameter parameter, Class<A> annotationType, BiPredicate<A, Class<?>> typePredicate) {
-
 		A annotation = parameter.getParameterAnnotation(annotationType);
 		if (annotation == null) {
 			return false;
@@ -121,5 +112,4 @@ public abstract class HandlerMethodArgumentResolverSupport implements HandlerMet
 
 		return false;
 	}
-
 }

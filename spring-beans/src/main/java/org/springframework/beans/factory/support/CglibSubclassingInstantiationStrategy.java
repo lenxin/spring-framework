@@ -1,13 +1,7 @@
-
-
 package org.springframework.beans.factory.support;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.beans.BeanInstantiationException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.BeanFactory;
@@ -15,16 +9,13 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.cglib.core.ClassGenerator;
 import org.springframework.cglib.core.DefaultGeneratorStrategy;
 import org.springframework.cglib.core.SpringNamingPolicy;
-import org.springframework.cglib.proxy.Callback;
-import org.springframework.cglib.proxy.CallbackFilter;
-import org.springframework.cglib.proxy.Enhancer;
-import org.springframework.cglib.proxy.Factory;
-import org.springframework.cglib.proxy.MethodInterceptor;
-import org.springframework.cglib.proxy.MethodProxy;
-import org.springframework.cglib.proxy.NoOp;
+import org.springframework.cglib.proxy.*;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 
 /**
  * Default object instantiation strategy for use in BeanFactories.
@@ -32,13 +23,9 @@ import org.springframework.util.StringUtils;
  * <p>Uses CGLIB to generate subclasses dynamically if methods need to be
  * overridden by the container to implement <em>Method Injection</em>.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Sam Brannen
  * @since 1.1
  */
 public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationStrategy {
-
 	/**
 	 * Index in the CGLIB callback array for passthrough behavior,
 	 * in which case the subclass won't override the original class.
@@ -57,7 +44,6 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 	 */
 	private static final int METHOD_REPLACER = 2;
 
-
 	@Override
 	protected Object instantiateWithMethodInjection(RootBeanDefinition bd, @Nullable String beanName, BeanFactory owner) {
 		return instantiateWithMethodInjection(bd, beanName, owner, null);
@@ -65,24 +51,19 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 
 	@Override
 	protected Object instantiateWithMethodInjection(RootBeanDefinition bd, @Nullable String beanName, BeanFactory owner,
-			@Nullable Constructor<?> ctor, Object... args) {
-
+													@Nullable Constructor<?> ctor, Object... args) {
 		// Must generate CGLIB subclass...
 		return new CglibSubclassCreator(bd, owner).instantiate(ctor, args);
 	}
-
 
 	/**
 	 * An inner class created for historical reasons to avoid external CGLIB dependency
 	 * in Spring versions earlier than 3.2.
 	 */
 	private static class CglibSubclassCreator {
-
 		private static final Class<?>[] CALLBACK_TYPES = new Class<?>[]
 				{NoOp.class, LookupOverrideMethodInterceptor.class, ReplaceOverrideMethodInterceptor.class};
-
 		private final RootBeanDefinition beanDefinition;
-
 		private final BeanFactory owner;
 
 		CglibSubclassCreator(RootBeanDefinition beanDefinition, BeanFactory owner) {
@@ -93,10 +74,11 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 		/**
 		 * Create a new instance of a dynamically generated subclass implementing the
 		 * required lookups.
+		 *
 		 * @param ctor constructor to use. If this is {@code null}, use the
-		 * no-arg constructor (no parameterization, or Setter Injection)
+		 *             no-arg constructor (no parameterization, or Setter Injection)
 		 * @param args arguments to use for the constructor.
-		 * Ignored if the {@code ctor} parameter is {@code null}.
+		 *             Ignored if the {@code ctor} parameter is {@code null}.
 		 * @return new instance of the dynamically generated subclass
 		 */
 		public Object instantiate(@Nullable Constructor<?> ctor, Object... args) {
@@ -104,13 +86,11 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 			Object instance;
 			if (ctor == null) {
 				instance = BeanUtils.instantiateClass(subclass);
-			}
-			else {
+			} else {
 				try {
 					Constructor<?> enhancedSubclassConstructor = subclass.getConstructor(ctor.getParameterTypes());
 					instance = enhancedSubclassConstructor.newInstance(args);
-				}
-				catch (Exception ex) {
+				} catch (Exception ex) {
 					throw new BeanInstantiationException(this.beanDefinition.getBeanClass(),
 							"Failed to invoke constructor for CGLIB enhanced subclass [" + subclass.getName() + "]", ex);
 				}
@@ -118,7 +98,7 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 			// SPR-10785: set callbacks directly on the instance instead of in the
 			// enhanced class (via the Enhancer) in order to avoid memory leaks.
 			Factory factory = (Factory) instance;
-			factory.setCallbacks(new Callback[] {NoOp.INSTANCE,
+			factory.setCallbacks(new Callback[]{NoOp.INSTANCE,
 					new LookupOverrideMethodInterceptor(this.beanDefinition, this.owner),
 					new ReplaceOverrideMethodInterceptor(this.beanDefinition, this.owner)});
 			return instance;
@@ -142,14 +122,12 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 		}
 	}
 
-
 	/**
 	 * Class providing hashCode and equals methods required by CGLIB to
 	 * ensure that CGLIB doesn't generate a distinct class per bean.
 	 * Identity is based on class and bean definition.
 	 */
 	private static class CglibIdentitySupport {
-
 		private final RootBeanDefinition beanDefinition;
 
 		public CglibIdentitySupport(RootBeanDefinition beanDefinition) {
@@ -172,14 +150,12 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 		}
 	}
 
-
 	/**
 	 * CGLIB GeneratorStrategy variant which exposes the application ClassLoader
 	 * as thread context ClassLoader for the time of class generation
 	 * (in order for ASM to pick it up when doing common superclass resolution).
 	 */
 	private static class ClassLoaderAwareGeneratorStrategy extends DefaultGeneratorStrategy {
-
 		@Nullable
 		private final ClassLoader classLoader;
 
@@ -197,8 +173,7 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 			ClassLoader threadContextClassLoader;
 			try {
 				threadContextClassLoader = currentThread.getContextClassLoader();
-			}
-			catch (Throwable ex) {
+			} catch (Throwable ex) {
 				// Cannot access thread context ClassLoader - falling back...
 				return super.generate(cg);
 			}
@@ -209,8 +184,7 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 			}
 			try {
 				return super.generate(cg);
-			}
-			finally {
+			} finally {
 				if (overrideClassLoader) {
 					// Reset original thread context ClassLoader.
 					currentThread.setContextClassLoader(threadContextClassLoader);
@@ -219,12 +193,10 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 		}
 	}
 
-
 	/**
 	 * CGLIB callback for filtering method interception behavior.
 	 */
 	private static class MethodOverrideCallbackFilter extends CglibIdentitySupport implements CallbackFilter {
-
 		private static final Log logger = LogFactory.getLog(MethodOverrideCallbackFilter.class);
 
 		public MethodOverrideCallbackFilter(RootBeanDefinition beanDefinition) {
@@ -239,18 +211,15 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 			}
 			if (methodOverride == null) {
 				return PASSTHROUGH;
-			}
-			else if (methodOverride instanceof LookupOverride) {
+			} else if (methodOverride instanceof LookupOverride) {
 				return LOOKUP_OVERRIDE;
-			}
-			else if (methodOverride instanceof ReplaceOverride) {
+			} else if (methodOverride instanceof ReplaceOverride) {
 				return METHOD_REPLACER;
 			}
 			throw new UnsupportedOperationException("Unexpected MethodOverride subclass: " +
 					methodOverride.getClass().getName());
 		}
 	}
-
 
 	/**
 	 * CGLIB MethodInterceptor to override methods, replacing them with an
@@ -274,8 +243,7 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 			if (StringUtils.hasText(lo.getBeanName())) {
 				return (argsToUse != null ? this.owner.getBean(lo.getBeanName(), argsToUse) :
 						this.owner.getBean(lo.getBeanName()));
-			}
-			else {
+			} else {
 				return (argsToUse != null ? this.owner.getBean(method.getReturnType(), argsToUse) :
 						this.owner.getBean(method.getReturnType()));
 			}

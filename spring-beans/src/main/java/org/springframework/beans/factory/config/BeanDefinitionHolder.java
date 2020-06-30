@@ -22,9 +22,7 @@ import org.springframework.util.StringUtils;
  */
 public class BeanDefinitionHolder implements BeanMetadataElement {
 	private final BeanDefinition beanDefinition;
-
 	private final String beanName;
-
 	@Nullable
 	private final String[] aliases;
 

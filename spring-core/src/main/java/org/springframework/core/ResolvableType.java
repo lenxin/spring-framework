@@ -81,19 +81,14 @@ public class ResolvableType implements Serializable {
 	 */
 	@Nullable
 	private final ResolvableType componentType;
-
 	@Nullable
 	private final Integer hash;
-
 	@Nullable
 	private Class<?> resolved;
-
 	@Nullable
 	private volatile ResolvableType superType;
-
 	@Nullable
 	private volatile ResolvableType[] interfaces;
-
 	@Nullable
 	private volatile ResolvableType[] generics;
 
