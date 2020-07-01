@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.annotation;
 
 import org.springframework.jms.config.JmsListenerEndpointRegistrar;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.scripting.config;
 
 import org.springframework.beans.factory.config.BeanDefinition;

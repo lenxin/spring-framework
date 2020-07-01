@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.result.condition;
 
 import java.net.URISyntaxException;

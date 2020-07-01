@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.testng;
 
 import org.springframework.beans.factory.annotation.Autowired;

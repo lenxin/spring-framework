@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.core;
 
 import org.junit.Test;

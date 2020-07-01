@@ -1,5 +1,3 @@
-
-
 package org.springframework.jndi.support;
 
 import java.util.Collections;

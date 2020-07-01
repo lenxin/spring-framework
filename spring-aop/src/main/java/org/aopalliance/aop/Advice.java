@@ -1,5 +1,3 @@
-
-
 package org.aopalliance.aop;
 
 /**

@@ -1,5 +1,3 @@
-
-
 package org.springframework.ui.context.support;
 
 import java.util.Map;

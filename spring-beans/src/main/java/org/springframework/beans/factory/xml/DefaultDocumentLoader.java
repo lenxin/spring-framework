@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.factory.xml;
 
 import javax.xml.parsers.DocumentBuilder;

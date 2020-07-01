@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.client.standard;
 
 import java.net.InetAddress;

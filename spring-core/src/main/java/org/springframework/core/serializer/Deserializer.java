@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.serializer;
 
 import java.io.IOException;

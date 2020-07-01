@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa.support;
 
 import javax.persistence.EntityManager;

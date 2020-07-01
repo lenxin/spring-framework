@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.task;
 
 import java.io.Serializable;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.factory.annotation
 
 import org.junit.Test

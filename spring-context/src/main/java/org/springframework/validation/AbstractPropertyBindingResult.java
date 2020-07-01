@@ -1,5 +1,3 @@
-
-
 package org.springframework.validation;
 
 import java.beans.PropertyEditor;

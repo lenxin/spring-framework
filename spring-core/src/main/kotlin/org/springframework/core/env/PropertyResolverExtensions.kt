@@ -1,8 +1,6 @@
 
 
-@file:Suppress("EXTENSION_SHADOWED_BY_MEMBER")
-
-package org.springframework.core.env
+@file:Suppress("EXTENSION_SHADOWED_BY_MEMBER")package org.springframework.core.env
 
 /**
  * Extension for [PropertyResolver.getProperty] providing Array like getter returning a

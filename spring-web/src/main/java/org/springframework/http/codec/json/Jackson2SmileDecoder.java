@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.codec.json;
 
 import java.nio.charset.StandardCharsets;

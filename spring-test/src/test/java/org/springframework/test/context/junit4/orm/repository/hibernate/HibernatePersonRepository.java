@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit4.orm.repository.hibernate;
 
 import org.hibernate.SessionFactory;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.validation;
 
 import org.springframework.beans.ConfigurablePropertyAccessor;

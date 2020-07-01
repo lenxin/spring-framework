@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms;
 
 import javax.jms.Connection;

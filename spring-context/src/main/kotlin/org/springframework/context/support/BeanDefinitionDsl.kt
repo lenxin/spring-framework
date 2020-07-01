@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.support
 
 import org.springframework.beans.factory.ObjectProvider

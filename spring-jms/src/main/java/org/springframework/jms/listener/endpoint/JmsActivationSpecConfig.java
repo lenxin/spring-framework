@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.listener.endpoint;
 
 import javax.jms.Session;

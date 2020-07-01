@@ -24,9 +24,7 @@
 // INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
 // CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
-// THE POSSIBILITY OF SUCH DAMAGE.
-
-package org.springframework.asm;
+// THE POSSIBILITY OF SUCH DAMAGE.package org.springframework.asm;
 
 /**
  * A reference to a type appearing in a class, field or method declaration, or on an instruction.

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.core.test;
 
 import java.math.BigDecimal;

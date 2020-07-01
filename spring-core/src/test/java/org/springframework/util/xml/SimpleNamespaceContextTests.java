@@ -1,5 +1,3 @@
-
-
 package org.springframework.util.xml;
 
 import java.util.HashSet;

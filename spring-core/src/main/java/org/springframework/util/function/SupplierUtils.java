@@ -1,5 +1,3 @@
-
-
 package org.springframework.util.function;
 
 import java.util.function.Supplier;

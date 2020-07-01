@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.task.support;
 
 import java.util.concurrent.Callable;

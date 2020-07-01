@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.support;
 
 import org.apache.commons.logging.Log;

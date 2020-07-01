@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.web.client;
 
 import org.springframework.util.Assert;

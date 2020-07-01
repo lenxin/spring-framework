@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.config;
 
 import org.w3c.dom.Element;

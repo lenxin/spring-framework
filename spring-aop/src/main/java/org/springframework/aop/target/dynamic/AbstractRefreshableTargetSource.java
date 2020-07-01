@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.target.dynamic;
 
 import org.apache.commons.logging.Log;

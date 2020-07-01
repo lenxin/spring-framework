@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.server.jetty;
 
 import java.io.IOException;

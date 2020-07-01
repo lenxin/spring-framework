@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling;
 
 import org.springframework.core.task.AsyncTaskExecutor;

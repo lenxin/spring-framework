@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.result.condition;
 
 import org.apache.commons.logging.Log;

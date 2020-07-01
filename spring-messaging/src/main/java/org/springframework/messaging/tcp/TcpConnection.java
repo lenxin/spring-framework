@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.tcp;
 
 import java.io.Closeable;

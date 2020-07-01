@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit4.spr4868;
 
 import javax.annotation.PostConstruct;

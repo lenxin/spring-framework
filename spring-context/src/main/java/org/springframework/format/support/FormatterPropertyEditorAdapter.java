@@ -1,5 +1,3 @@
-
-
 package org.springframework.format.support;
 
 import java.beans.PropertyEditor;

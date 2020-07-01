@@ -1,5 +1,3 @@
-
-
 package org.springframework.remoting.support;
 
 import org.apache.commons.logging.Log;

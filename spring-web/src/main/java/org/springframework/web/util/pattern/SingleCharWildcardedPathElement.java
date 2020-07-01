@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.util.pattern;
 
 import org.springframework.http.server.PathContainer.Element;

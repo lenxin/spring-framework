@@ -1,5 +1,3 @@
-
-
 package org.springframework.format.datetime.joda;
 
 import org.joda.time.format.DateTimeFormat;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.config;
 
 import org.w3c.dom.Element;

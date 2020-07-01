@@ -1,5 +1,3 @@
-
-
 package org.springframework.jndi;
 
 import java.util.Hashtable;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.jta;
 
 import javax.transaction.NotSupportedException;

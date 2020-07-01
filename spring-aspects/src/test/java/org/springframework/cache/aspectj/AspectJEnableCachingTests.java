@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.aspectj;
 
 import org.springframework.cache.CacheManager;

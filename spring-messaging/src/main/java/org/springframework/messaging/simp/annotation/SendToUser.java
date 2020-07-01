@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.simp.annotation;
 
 import java.lang.annotation.Documented;

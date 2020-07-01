@@ -1,5 +1,3 @@
-
-
 package org.springframework.tests.sample.beans.factory;
 
 import org.springframework.beans.BeansException;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.configuration.interfaces;
 
 import java.util.List;

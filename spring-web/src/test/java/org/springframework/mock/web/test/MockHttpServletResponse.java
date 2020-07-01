@@ -1,5 +1,3 @@
-
-
 package org.springframework.mock.web.test;
 
 import java.io.ByteArrayOutputStream;

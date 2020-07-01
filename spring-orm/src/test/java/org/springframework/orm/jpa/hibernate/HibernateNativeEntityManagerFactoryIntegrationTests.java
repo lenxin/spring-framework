@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa.hibernate;
 
 import java.util.List;

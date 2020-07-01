@@ -1,5 +1,3 @@
-
-
 package org.springframework.util.unit;
 
 import org.junit.Rule;

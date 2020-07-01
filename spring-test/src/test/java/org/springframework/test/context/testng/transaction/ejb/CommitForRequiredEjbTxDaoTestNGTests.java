@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.testng.transaction.ejb;
 
 import org.springframework.test.annotation.Commit;

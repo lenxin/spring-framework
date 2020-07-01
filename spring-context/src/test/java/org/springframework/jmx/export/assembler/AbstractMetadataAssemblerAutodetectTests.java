@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.export.assembler;
 
 import org.springframework.jmx.export.metadata.JmxAttributeSource;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.ui.freemarker;
 
 import java.io.IOException;

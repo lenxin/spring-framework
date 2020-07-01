@@ -1,5 +1,3 @@
-
-
 package org.springframework.oxm;
 
 import java.io.IOException;

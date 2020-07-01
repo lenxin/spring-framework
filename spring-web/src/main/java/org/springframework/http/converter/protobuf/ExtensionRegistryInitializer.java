@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter.protobuf;
 
 import com.google.protobuf.ExtensionRegistry;

@@ -1,6 +1,3 @@
-
-
-
 package org.springframework.oxm.jaxb;
 
 import javax.xml.bind.JAXBElement;

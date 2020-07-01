@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.annotation;
 
 import java.util.concurrent.atomic.AtomicInteger;

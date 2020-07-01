@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.jcache.config;
 
 import java.util.function.Supplier;

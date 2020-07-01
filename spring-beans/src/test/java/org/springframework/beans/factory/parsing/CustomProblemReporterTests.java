@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.factory.parsing;
 
 import java.util.ArrayList;

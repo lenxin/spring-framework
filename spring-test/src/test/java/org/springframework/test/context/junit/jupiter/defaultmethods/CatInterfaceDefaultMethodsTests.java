@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit.jupiter.defaultmethods;
 
 import org.springframework.test.context.junit.SpringJUnitJupiterTestSuite;

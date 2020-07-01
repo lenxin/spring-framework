@@ -1,5 +1,3 @@
-
-
 package org.springframework.scripting.config;
 
 import java.util.List;

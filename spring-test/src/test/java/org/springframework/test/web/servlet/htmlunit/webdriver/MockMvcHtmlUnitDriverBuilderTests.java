@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.web.servlet.htmlunit.webdriver;
 
 import java.io.IOException;

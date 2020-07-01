@@ -1,5 +1,3 @@
-
-
 package org.springframework.expression.spel.testresources;
 
 import java.util.ArrayList;

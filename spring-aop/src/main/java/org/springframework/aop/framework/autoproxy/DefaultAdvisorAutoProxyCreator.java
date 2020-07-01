@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.framework.autoproxy;
 
 import org.springframework.beans.factory.BeanNameAware;

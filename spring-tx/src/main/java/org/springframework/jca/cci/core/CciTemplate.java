@@ -1,5 +1,3 @@
-
-
 package org.springframework.jca.cci.core;
 
 import java.sql.SQLException;

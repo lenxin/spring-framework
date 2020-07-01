@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation.role;
 
 import org.springframework.beans.factory.config.BeanDefinition;

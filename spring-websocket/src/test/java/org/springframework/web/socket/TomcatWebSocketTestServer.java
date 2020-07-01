@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket;
 
 import java.io.File;

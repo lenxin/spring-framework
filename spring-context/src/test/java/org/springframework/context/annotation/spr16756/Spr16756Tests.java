@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation.spr16756;
 
 import org.junit.Test;

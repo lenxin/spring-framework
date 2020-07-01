@@ -1,5 +1,3 @@
-
-
 package example.scannable_scoped;
 
 import org.springframework.beans.factory.config.BeanDefinition;

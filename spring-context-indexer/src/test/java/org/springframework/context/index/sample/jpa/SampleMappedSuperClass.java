@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.index.sample.jpa;
 
 import javax.persistence.MappedSuperclass;

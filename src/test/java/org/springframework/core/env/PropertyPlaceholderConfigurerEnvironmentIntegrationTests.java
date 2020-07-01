@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.env;
 
 import static org.springframework.beans.factory.support.BeanDefinitionBuilder.rootBeanDefinition;

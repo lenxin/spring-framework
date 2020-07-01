@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.annotation;
 
 import org.springframework.util.Assert;

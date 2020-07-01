@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.jdbc;
 
 import org.apache.commons.logging.Log;

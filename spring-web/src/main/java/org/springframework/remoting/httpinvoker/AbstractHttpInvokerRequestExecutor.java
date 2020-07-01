@@ -1,5 +1,3 @@
-
-
 package org.springframework.remoting.httpinvoker;
 
 import java.io.ByteArrayOutputStream;

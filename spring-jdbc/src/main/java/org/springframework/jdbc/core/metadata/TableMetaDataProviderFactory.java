@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.core.metadata;
 
 import javax.sql.DataSource;

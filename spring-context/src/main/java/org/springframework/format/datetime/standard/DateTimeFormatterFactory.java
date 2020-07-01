@@ -1,5 +1,3 @@
-
-
 package org.springframework.format.datetime.standard;
 
 import java.time.format.DateTimeFormatter;

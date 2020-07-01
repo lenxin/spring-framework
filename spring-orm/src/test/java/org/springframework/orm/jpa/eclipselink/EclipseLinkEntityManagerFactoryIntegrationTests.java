@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa.eclipselink;
 
 import org.eclipse.persistence.jpa.JpaEntityManager;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.codec.support;
 
 import org.springframework.http.codec.ServerCodecConfigurer;

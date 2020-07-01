@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa.persistenceunit;
 
 import java.net.URL;

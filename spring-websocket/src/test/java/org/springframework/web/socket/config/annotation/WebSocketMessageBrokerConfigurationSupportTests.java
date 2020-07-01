@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.config.annotation;
 
 import java.util.ArrayList;

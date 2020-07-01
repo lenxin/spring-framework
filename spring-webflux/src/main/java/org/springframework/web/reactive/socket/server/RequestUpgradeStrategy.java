@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.socket.server;
 
 import java.util.function.Supplier;

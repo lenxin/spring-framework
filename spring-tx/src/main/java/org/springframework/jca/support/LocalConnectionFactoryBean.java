@@ -1,5 +1,3 @@
-
-
 package org.springframework.jca.support;
 
 import javax.resource.ResourceException;

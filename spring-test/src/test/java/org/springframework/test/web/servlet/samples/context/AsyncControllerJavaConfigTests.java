@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.web.servlet.samples.context;
 
 import java.util.Collections;

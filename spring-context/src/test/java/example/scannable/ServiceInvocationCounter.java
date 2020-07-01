@@ -1,5 +1,3 @@
-
-
 package example.scannable;
 
 import org.aspectj.lang.annotation.Aspect;

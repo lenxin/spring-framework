@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.framework.autoproxy;
 
 import java.io.Serializable;
@@ -247,9 +245,7 @@ public class AutoProxyCreatorTests {
 		sac.refresh();
 
 		TestAutoProxyCreator tapc = (TestAutoProxyCreator) sac.getBean("testAutoProxyCreator");
-		tapc.testInterceptor.nrOfInvocations = 0;
-
-		PackageVisibleMethod tb = (PackageVisibleMethod) sac.getBean("packageVisibleMethodToBeProxied");
+		tapc.testInterceptor.nrOfInvocations = 0;packageVisibleMethod tb = (PackageVisibleMethod) sac.getBean("packageVisibleMethodToBeProxied");
 		assertTrue(AopUtils.isCglibProxy(tb));
 		assertEquals(0, tapc.testInterceptor.nrOfInvocations);
 		tb.doSomething();

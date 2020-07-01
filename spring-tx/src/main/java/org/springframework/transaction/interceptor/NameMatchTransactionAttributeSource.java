@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.interceptor;
 
 import java.io.Serializable;

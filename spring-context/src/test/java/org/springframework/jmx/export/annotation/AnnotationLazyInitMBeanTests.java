@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.export.annotation;
 
 import javax.management.MBeanServer;

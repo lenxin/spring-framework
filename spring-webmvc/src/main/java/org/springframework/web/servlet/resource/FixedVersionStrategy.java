@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.resource;
 
 import org.springframework.core.io.Resource;

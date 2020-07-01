@@ -1,5 +1,3 @@
-
-
 package org.springframework.oxm.config;
 
 import java.util.List;

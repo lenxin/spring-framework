@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa;
 
 import java.util.HashMap;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.adapter.jetty;
 
 import java.nio.ByteBuffer;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.support.incrementer;
 
 import javax.sql.DataSource;

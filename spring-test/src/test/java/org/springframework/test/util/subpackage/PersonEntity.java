@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.util.subpackage;
 
 import org.springframework.core.style.ToStringCreator;

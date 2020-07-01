@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans;
 
 import java.beans.PropertyChangeEvent;

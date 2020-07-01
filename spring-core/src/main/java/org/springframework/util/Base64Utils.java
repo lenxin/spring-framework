@@ -1,5 +1,3 @@
-
-
 package org.springframework.util;
 
 import java.nio.charset.Charset;

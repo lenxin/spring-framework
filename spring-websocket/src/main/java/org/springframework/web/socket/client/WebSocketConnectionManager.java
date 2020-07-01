@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.client;
 
 import java.util.List;

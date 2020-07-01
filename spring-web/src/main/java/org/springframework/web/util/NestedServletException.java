@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.util;
 
 import javax.servlet.ServletException;

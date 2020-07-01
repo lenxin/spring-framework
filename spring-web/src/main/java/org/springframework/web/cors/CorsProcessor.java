@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.cors;
 
 import java.io.IOException;

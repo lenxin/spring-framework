@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.export.metadata;
 
 import org.springframework.lang.Nullable;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.cors.reactive;
 
 import org.junit.Test;

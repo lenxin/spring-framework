@@ -1,5 +1,3 @@
-
-
 package org.springframework.ejb.access;
 
 import java.lang.reflect.InvocationTargetException;

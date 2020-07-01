@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.socket.server.upgrade;
 
 import java.io.IOException;

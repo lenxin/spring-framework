@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.export.naming;
 
 import java.util.Properties;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jca.work;
 
 import javax.resource.spi.work.ExecutionContext;

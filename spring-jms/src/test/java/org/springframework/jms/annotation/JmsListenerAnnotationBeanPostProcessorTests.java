@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.annotation;
 
 import java.lang.annotation.ElementType;

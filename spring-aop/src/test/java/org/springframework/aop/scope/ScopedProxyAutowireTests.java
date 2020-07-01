@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.scope;
 
 import java.util.Arrays;

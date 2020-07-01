@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc;
 
 import org.springframework.dao.IncorrectUpdateSemanticsDataAccessException;

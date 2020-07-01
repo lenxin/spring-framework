@@ -1,5 +1,3 @@
-
-
 package org.springframework.tests.aop.interceptor;
 
 import org.aopalliance.intercept.MethodInterceptor;

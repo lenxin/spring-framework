@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation.configuration.a;
 
 import org.springframework.context.annotation.Bean;

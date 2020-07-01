@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.ehcache;
 
 import net.sf.ehcache.CacheManager;

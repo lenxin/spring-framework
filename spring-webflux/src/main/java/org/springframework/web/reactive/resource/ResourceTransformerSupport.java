@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.resource;
 
 import java.util.Collections;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.web.servlet.htmlunit;
 
 import org.springframework.stereotype.Controller;

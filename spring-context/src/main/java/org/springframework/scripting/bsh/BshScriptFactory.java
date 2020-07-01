@@ -1,5 +1,3 @@
-
-
 package org.springframework.scripting.bsh;
 
 import java.io.IOException;

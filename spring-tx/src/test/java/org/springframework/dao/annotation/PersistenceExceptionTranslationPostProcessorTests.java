@@ -1,5 +1,3 @@
-
-
 package org.springframework.dao.annotation;
 
 import javax.persistence.PersistenceException;

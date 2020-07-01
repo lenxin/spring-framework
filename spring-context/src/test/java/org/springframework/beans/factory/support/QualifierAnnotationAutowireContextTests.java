@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.factory.support;
 
 import java.lang.annotation.ElementType;

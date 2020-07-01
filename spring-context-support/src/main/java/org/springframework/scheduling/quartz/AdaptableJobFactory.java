@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.quartz;
 
 import org.quartz.Job;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.server.standard;
 
 import java.io.IOException;

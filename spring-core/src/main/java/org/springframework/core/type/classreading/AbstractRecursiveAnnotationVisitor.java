@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.type.classreading;
 
 import java.lang.reflect.Field;

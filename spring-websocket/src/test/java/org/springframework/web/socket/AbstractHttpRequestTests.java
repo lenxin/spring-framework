@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket;
 
 import org.junit.Before;

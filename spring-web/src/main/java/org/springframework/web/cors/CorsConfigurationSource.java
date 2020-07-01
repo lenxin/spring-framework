@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.cors;
 
 import javax.servlet.http.HttpServletRequest;

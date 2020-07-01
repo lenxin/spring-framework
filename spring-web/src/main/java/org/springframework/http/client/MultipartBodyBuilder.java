@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.client;
 
 import java.util.Arrays;

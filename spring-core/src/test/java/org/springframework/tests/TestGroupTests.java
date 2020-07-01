@@ -1,5 +1,3 @@
-
-
 package org.springframework.tests;
 
 import java.util.Collections;

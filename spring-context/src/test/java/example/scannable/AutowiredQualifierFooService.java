@@ -1,5 +1,3 @@
-
-
 package example.scannable;
 
 import java.util.concurrent.Future;

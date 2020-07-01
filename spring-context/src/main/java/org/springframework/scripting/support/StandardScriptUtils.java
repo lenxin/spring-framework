@@ -1,5 +1,3 @@
-
-
 package org.springframework.scripting.support;
 
 import java.util.LinkedHashSet;

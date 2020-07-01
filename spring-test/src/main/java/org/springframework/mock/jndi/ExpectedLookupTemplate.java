@@ -1,5 +1,3 @@
-
-
 package org.springframework.mock.jndi;
 
 import java.util.Map;

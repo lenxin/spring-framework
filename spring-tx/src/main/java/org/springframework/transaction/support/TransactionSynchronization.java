@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.support;
 
 import java.io.Flushable;

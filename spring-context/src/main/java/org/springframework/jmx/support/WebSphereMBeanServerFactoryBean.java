@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.support;
 
 import java.lang.reflect.InvocationTargetException;

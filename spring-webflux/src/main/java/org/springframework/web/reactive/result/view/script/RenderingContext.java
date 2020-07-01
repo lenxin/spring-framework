@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.result.view.script;
 
 import java.util.Locale;

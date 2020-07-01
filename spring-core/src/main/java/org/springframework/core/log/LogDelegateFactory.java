@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.log;
 
 import java.util.ArrayList;

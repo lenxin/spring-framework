@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.aspectj.generic;
 
 import java.util.ArrayList;

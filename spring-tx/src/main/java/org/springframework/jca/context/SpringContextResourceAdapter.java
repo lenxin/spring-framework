@@ -1,5 +1,3 @@
-
-
 package org.springframework.jca.context;
 
 import javax.resource.NotSupportedException;

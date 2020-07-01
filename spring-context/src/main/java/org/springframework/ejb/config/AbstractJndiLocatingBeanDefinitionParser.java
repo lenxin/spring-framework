@@ -1,5 +1,3 @@
-
-
 package org.springframework.ejb.config;
 
 import org.w3c.dom.Element;

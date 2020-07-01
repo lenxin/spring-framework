@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter.feed;
 
 import java.io.IOException;

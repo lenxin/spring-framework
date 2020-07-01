@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.handler;
 
 import org.apache.commons.logging.Log;

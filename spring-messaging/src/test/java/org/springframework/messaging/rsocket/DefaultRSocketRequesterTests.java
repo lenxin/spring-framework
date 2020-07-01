@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.rsocket;
 
 import java.nio.charset.StandardCharsets;

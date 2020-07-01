@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.sockjs.transport;
 
 import java.util.Map;

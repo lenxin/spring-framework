@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.config;
 
 import org.springframework.cache.interceptor.SimpleKeyGenerator;

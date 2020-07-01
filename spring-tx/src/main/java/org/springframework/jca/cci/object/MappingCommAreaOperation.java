@@ -1,5 +1,3 @@
-
-
 package org.springframework.jca.cci.object;
 
 import java.io.IOException;

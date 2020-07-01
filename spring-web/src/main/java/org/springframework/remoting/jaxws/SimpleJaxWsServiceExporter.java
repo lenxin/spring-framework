@@ -1,5 +1,3 @@
-
-
 package org.springframework.remoting.jaxws;
 
 import javax.jws.WebService;

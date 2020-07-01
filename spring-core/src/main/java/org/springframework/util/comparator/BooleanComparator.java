@@ -1,5 +1,3 @@
-
-
 package org.springframework.util.comparator;
 
 import java.io.Serializable;

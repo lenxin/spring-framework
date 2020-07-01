@@ -1,5 +1,3 @@
-
-
 package org.springframework.scripting.groovy;
 
 import org.codehaus.groovy.control.customizers.ImportCustomizer;

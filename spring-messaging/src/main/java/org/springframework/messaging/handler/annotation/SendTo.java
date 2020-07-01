@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.handler.annotation;
 
 import java.lang.annotation.Documented;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.type;
 
 import org.junit.Test;

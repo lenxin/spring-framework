@@ -1,5 +1,3 @@
-
-
 package org.springframework.mail.javamail;
 
 import java.io.IOException;

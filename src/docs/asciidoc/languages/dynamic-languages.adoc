@@ -338,9 +338,7 @@ feature works:
 [subs="verbatim,quotes"]
 ----
 	<lang:groovy id="messenger">
-		<lang:inline-script>
-
-	package org.springframework.scripting.groovy;
+		<lang:inline-script>package org.springframework.scripting.groovy;
 
 	import org.springframework.scripting.Messenger
 

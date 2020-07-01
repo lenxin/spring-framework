@@ -1,5 +1,3 @@
-
-
 package org.springframework.jca.cci.core.support;
 
 import javax.resource.cci.Connection;

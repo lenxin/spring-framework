@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.hibernate5.support;
 
 import org.hibernate.Session;

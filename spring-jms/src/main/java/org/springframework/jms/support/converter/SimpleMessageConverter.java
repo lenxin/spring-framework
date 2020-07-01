@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.support.converter;
 
 import java.io.Serializable;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.jsf;
 
 import javax.faces.application.NavigationHandler;

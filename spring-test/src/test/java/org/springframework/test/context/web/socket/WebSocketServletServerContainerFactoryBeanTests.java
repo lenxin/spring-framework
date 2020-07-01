@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.web.socket;
 
 import javax.websocket.server.ServerContainer;

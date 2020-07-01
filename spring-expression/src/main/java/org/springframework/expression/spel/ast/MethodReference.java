@@ -1,5 +1,3 @@
-
-
 package org.springframework.expression.spel.ast;
 
 import java.lang.reflect.InvocationTargetException;

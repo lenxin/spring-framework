@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.type;
 
 import java.lang.annotation.Inherited;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.interceptor;
 
 import org.junit.Test;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.config;
 
 import javax.jms.MessageListener;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.support.destination;
 
 import javax.jms.Destination;

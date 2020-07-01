@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.mvc.condition;
 
 import org.springframework.lang.Nullable;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jca.cci;
 
 import javax.resource.ResourceException;

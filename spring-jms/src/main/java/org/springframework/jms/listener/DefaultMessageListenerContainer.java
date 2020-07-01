@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.listener;
 
 import java.util.HashSet;

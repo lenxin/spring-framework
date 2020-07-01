@@ -1,5 +1,3 @@
-
-
 package org.springframework.expression.spel.standard;
 
 import java.net.URL;

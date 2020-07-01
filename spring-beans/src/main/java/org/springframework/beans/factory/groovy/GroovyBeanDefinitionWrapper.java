@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.factory.groovy;
 
 import java.util.ArrayList;

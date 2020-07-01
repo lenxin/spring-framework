@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.filter;
 
 import java.util.Enumeration;

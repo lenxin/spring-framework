@@ -1,5 +1,3 @@
-
-
 package org.springframework.oxm.config;
 
 import org.w3c.dom.Element;

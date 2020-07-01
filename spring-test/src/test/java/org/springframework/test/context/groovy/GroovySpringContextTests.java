@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.groovy;
 
 import javax.annotation.Resource;

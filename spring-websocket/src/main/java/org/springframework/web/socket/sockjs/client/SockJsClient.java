@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.sockjs.client;
 
 import java.net.URI;

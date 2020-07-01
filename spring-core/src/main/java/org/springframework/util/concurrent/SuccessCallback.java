@@ -1,5 +1,3 @@
-
-
 package org.springframework.util.concurrent;
 
 import org.springframework.lang.Nullable;

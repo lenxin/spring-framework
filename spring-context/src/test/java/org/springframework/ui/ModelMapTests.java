@@ -1,5 +1,3 @@
-
-
 package org.springframework.ui;
 
 import java.io.Serializable;

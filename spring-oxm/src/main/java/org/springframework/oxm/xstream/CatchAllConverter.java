@@ -1,5 +1,3 @@
-
-
 package org.springframework.oxm.xstream;
 
 import com.thoughtworks.xstream.converters.Converter;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter.xml;
 
 import javax.xml.transform.Result;

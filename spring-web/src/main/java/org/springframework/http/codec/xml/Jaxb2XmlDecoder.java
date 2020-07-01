@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.codec.xml;
 
 import java.util.ArrayList;

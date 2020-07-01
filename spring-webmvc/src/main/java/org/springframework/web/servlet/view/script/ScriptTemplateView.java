@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.view.script;
 
 import java.io.IOException;

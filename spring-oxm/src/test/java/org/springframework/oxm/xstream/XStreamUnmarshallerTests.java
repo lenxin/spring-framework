@@ -1,5 +1,3 @@
-
-
 package org.springframework.oxm.xstream;
 
 import java.io.ByteArrayInputStream;

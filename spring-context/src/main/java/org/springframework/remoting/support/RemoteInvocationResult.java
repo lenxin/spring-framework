@@ -1,5 +1,3 @@
-
-
 package org.springframework.remoting.support;
 
 import java.io.Serializable;

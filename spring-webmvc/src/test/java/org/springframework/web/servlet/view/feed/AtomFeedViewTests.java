@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.view.feed;
 
 import com.rometools.rome.feed.atom.Content;

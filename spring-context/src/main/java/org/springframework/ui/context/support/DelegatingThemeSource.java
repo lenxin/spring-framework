@@ -1,5 +1,3 @@
-
-
 package org.springframework.ui.context.support;
 
 import org.springframework.lang.Nullable;

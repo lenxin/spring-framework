@@ -24,9 +24,7 @@
 // INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
 // CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
-// THE POSSIBILITY OF SUCH DAMAGE.
-
-package org.springframework.asm;
+// THE POSSIBILITY OF SUCH DAMAGE.package org.springframework.asm;
 
 /**
  * The path to a type argument, wildcard bound, array element type, or static inner type within an

@@ -1,5 +1,3 @@
-
-
 package org.springframework.expression.spel;
 
 import java.lang.reflect.Method;

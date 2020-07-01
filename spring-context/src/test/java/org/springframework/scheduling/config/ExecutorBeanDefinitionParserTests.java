@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.config;
 
 import java.util.concurrent.Callable;

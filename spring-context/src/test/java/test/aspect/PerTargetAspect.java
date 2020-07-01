@@ -1,5 +1,3 @@
-
-
 package test.aspect;
 
 import org.aspectj.lang.annotation.Around;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.tests.aop.advice;
 
 import java.io.Serializable;

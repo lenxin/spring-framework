@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm;
 
 import org.springframework.dao.OptimisticLockingFailureException;

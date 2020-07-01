@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter.xml;
 
 import java.io.ByteArrayInputStream;

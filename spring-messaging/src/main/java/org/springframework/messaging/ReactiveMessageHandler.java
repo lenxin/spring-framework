@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging;
 
 import reactor.core.publisher.Mono;

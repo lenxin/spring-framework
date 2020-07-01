@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.simp.config;
 
 import org.springframework.lang.Nullable;

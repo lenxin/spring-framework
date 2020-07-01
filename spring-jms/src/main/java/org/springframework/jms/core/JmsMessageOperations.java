@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.core;
 
 import java.util.Map;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.support;
 
 import java.lang.reflect.Modifier;

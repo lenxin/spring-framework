@@ -1,5 +1,3 @@
-
-
 package org.springframework.oxm.jaxb;
 
 import java.awt.Image;

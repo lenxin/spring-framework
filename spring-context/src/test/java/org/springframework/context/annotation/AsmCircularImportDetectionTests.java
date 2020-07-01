@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation;
 
 import org.springframework.beans.factory.parsing.FailFastProblemReporter;

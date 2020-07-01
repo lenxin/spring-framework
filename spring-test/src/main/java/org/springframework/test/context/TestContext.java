@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context;
 
 import java.io.Serializable;

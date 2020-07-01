@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.support;
 
 import org.junit.Before;

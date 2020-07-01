@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.jcache;
 
 import java.util.ArrayList;

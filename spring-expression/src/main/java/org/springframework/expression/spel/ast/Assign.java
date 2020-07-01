@@ -1,5 +1,3 @@
-
-
 package org.springframework.expression.spel.ast;
 
 import org.springframework.expression.EvaluationException;

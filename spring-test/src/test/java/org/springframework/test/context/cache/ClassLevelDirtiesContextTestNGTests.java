@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.cache;
 
 import java.util.concurrent.atomic.AtomicInteger;

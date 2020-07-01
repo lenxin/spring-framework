@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.datasource.lookup;
 
 import org.springframework.core.Constants;

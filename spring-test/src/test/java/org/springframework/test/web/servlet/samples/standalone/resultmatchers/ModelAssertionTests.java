@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.web.servlet.samples.standalone.resultmatchers;
 
 import javax.validation.Valid;

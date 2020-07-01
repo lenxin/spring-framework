@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.sockjs.frame;
 
 import org.springframework.util.Assert;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.util.xml;
 
 import javax.xml.stream.XMLEventWriter;

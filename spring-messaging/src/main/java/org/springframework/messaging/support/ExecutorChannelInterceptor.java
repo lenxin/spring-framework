@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.support;
 
 import org.springframework.lang.Nullable;

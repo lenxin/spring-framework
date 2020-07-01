@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.hierarchies.standard;
 
 import org.junit.Test;

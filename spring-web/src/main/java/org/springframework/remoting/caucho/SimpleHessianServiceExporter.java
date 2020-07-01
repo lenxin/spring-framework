@@ -1,5 +1,3 @@
-
-
 package org.springframework.remoting.caucho;
 
 import java.io.ByteArrayOutputStream;

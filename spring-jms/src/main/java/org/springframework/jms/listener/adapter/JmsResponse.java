@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.listener.adapter;
 
 import javax.jms.Destination;

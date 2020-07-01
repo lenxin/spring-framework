@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.support;
 
 import org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader;

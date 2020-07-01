@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.support;
 
 import java.util.Collections;

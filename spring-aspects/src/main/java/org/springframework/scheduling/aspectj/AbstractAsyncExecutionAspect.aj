@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.aspectj;
 
 import java.util.concurrent.Callable;

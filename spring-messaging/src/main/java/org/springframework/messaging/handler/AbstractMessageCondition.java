@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.handler;
 
 import java.util.Collection;

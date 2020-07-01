@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation.componentscan.level1;
 
 import org.springframework.context.annotation.Bean;

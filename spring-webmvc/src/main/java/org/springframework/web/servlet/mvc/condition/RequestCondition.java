@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.mvc.condition;
 
 import javax.servlet.http.HttpServletRequest;

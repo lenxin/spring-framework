@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.config;
 
 import org.w3c.dom.Element;

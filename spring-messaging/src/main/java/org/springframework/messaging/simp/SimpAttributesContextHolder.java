@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.simp;
 
 import org.springframework.core.NamedThreadLocal;

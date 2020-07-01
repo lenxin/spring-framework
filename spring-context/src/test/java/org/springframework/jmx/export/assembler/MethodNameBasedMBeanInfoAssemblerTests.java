@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.export.assembler;
 
 import javax.management.MBeanOperationInfo;

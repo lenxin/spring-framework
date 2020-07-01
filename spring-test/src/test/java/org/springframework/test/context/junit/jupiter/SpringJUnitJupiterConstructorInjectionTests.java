@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit.jupiter;
 
 import org.junit.jupiter.api.Test;

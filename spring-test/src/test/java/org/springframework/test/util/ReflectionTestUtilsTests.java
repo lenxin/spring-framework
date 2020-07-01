@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.util;
 
 import org.junit.Before;

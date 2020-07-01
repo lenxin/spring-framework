@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.io;
 
 import org.springframework.lang.Nullable;

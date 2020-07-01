@@ -1,5 +1,3 @@
-
-
 package org.springframework.validation.beanvalidation2;
 
 import java.lang.annotation.ElementType;

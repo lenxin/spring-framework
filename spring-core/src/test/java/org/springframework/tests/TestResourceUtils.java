@@ -1,5 +1,3 @@
-
-
 package org.springframework.tests;
 
 import org.springframework.core.io.ClassPathResource;

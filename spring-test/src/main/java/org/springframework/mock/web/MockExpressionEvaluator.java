@@ -1,5 +1,3 @@
-
-
 package org.springframework.mock.web;
 
 import javax.servlet.jsp.JspException;

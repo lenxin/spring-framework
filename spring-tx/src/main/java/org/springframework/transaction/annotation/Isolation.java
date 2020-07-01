@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.annotation;
 
 import org.springframework.transaction.TransactionDefinition;

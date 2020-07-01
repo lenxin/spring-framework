@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.target;
 
 import org.junit.Before;

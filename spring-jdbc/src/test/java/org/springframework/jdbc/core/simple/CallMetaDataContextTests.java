@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.core.simple;
 
 import java.sql.Connection;

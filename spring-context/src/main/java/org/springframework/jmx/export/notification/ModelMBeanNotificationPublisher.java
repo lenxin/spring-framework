@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.export.notification;
 
 import javax.management.AttributeChangeNotification;

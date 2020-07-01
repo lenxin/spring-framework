@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.sockjs;
 
 import org.springframework.http.server.ServerHttpRequest;

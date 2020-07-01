@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.handler.annotation.support;
 
 import java.lang.annotation.ElementType;

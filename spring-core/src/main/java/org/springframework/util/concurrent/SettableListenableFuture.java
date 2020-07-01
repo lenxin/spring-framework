@@ -1,5 +1,3 @@
-
-
 package org.springframework.util.concurrent;
 
 import java.util.concurrent.Callable;

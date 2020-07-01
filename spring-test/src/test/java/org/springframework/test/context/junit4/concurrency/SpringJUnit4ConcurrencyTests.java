@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit4.concurrency;
 
 import java.lang.annotation.Annotation;

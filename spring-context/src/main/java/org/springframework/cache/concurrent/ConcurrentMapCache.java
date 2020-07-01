@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.concurrent;
 
 import java.io.ByteArrayInputStream;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.event;
 
 import java.io.IOException;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.support.incrementer;
 
 import java.sql.Connection;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.remoting.rmi;
 
 import java.lang.reflect.InvocationTargetException;

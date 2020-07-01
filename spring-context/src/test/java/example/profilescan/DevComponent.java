@@ -1,5 +1,3 @@
-
-
 package example.profilescan;
 
 import java.lang.annotation.ElementType;

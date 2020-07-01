@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.object;
 
 import java.sql.CallableStatement;

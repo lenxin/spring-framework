@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit4.spr9051;
 
 import java.util.Arrays;

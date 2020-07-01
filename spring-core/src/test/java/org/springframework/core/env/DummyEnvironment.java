@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.env;
 
 public class DummyEnvironment implements Environment {

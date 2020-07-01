@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.view.groovy;
 
 import java.util.Locale;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.instrument.classloading.weblogic;
 
 import java.lang.instrument.ClassFileTransformer;

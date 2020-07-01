@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter.feed;
 
 import static org.junit.Assert.*;

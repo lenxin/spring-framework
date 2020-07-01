@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.server;
 
 import java.util.Arrays;

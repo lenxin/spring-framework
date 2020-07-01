@@ -1,5 +1,3 @@
-
-
 package org.springframework.validation.beanvalidation;
 
 import javax.annotation.PostConstruct;

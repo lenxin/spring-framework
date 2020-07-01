@@ -1,5 +1,3 @@
-
-
 package org.springframework.mock.web.test.server;
 
 import java.time.Clock;

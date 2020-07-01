@@ -1,5 +1,3 @@
-
-
 package org.springframework.scripting.groovy;
 
 import groovy.lang.GroovyObject;

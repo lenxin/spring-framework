@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.view;
 
 import javax.servlet.http.HttpServletRequest;

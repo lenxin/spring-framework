@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.config.annotation;
 
 import java.security.Principal;

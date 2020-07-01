@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.support;
 
 import java.util.Date;

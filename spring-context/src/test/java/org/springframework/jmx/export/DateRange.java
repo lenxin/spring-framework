@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.export;
 
 import java.util.Date;

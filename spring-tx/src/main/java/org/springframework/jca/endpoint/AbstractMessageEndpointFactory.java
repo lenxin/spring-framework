@@ -1,5 +1,3 @@
-
-
 package org.springframework.jca.endpoint;
 
 import java.lang.reflect.Method;

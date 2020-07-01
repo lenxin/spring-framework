@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.event.test;
 
 import java.util.Collections;

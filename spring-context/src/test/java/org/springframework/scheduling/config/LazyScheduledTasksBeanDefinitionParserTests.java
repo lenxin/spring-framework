@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.config;
 
 import org.junit.Test;

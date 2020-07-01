@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.commonj;
 
 import java.util.LinkedList;

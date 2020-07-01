@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.core;
 
 import java.util.Map;

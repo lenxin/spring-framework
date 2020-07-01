@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.tags;
 
 import javax.servlet.ServletException;

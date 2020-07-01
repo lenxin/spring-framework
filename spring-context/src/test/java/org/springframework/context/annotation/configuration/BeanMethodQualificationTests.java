@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation.configuration;
 
 import java.lang.annotation.Retention;

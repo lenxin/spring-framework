@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.concurrent;
 
 import java.util.Date;

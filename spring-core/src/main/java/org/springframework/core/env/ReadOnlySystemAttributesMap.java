@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.env;
 
 import java.util.Collection;

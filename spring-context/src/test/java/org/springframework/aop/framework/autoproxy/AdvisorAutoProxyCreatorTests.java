@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.framework.autoproxy;
 
 import java.io.IOException;
@@ -84,9 +82,7 @@ public class AdvisorAutoProxyCreatorTests {
 		assertTrue(lockable1.locked());
 		assertFalse(lockable2.locked());
 		assertEquals(5, nop1.getCount());
-		assertEquals(0, nop2.getCount());
-
-		PackageVisibleMethod packageVisibleMethod = (PackageVisibleMethod) bf.getBean("packageVisibleMethod");
+		assertEquals(0, nop2.getCount());packageVisibleMethod packageVisibleMethod = (PackageVisibleMethod) bf.getBean("packageVisibleMethod");
 		assertEquals(5, nop1.getCount());
 		assertEquals(0, nop2.getCount());
 		packageVisibleMethod.doSomething();

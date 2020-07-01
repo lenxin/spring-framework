@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit4.rules;
 
 import java.lang.reflect.Method;

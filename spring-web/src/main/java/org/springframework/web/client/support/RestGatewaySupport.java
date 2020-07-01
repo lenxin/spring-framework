@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.client.support;
 
 import org.apache.commons.logging.Log;

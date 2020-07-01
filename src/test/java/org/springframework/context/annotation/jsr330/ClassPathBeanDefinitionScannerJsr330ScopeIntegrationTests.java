@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation.jsr330;
 
 import java.lang.annotation.ElementType;

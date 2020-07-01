@@ -1,5 +1,3 @@
-
-
 package org.springframework.http;
 
 import org.apache.commons.logging.Log;

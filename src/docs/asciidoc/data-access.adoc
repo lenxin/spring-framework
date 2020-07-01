@@ -540,9 +540,7 @@ transactions be created and then rolled back in response to the
 [source,java,indent=0]
 [subs="verbatim,quotes"]
 ----
-	// the service interface that we want to make transactional
-
-	package x.y.service;
+	// the service interface that we want to make transactionalpackage x.y.service;
 
 	public interface FooService {
 

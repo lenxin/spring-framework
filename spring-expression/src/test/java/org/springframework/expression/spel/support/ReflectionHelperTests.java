@@ -1,5 +1,3 @@
-
-
 package org.springframework.expression.spel.support;
 
 import java.io.ByteArrayOutputStream;

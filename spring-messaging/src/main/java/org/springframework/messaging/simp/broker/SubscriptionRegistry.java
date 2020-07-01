@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.simp.broker;
 
 import org.springframework.messaging.Message;

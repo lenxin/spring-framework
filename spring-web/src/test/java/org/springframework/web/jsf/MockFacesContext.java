@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.jsf;
 
 import java.util.Iterator;

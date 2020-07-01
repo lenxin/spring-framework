@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit4.hybrid;
 
 import org.springframework.beans.factory.support.BeanDefinitionReader;

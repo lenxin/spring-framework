@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter.json;
 
 import java.io.Reader;

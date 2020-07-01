@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.annotation;
 
 import org.springframework.context.annotation.AdviceMode;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.instrument.classloading.websphere;
 
 import java.lang.instrument.ClassFileTransformer;

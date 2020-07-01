@@ -1,5 +1,3 @@
-
-
 package org.springframework.oxm.jibx;
 
 import java.util.ArrayList;

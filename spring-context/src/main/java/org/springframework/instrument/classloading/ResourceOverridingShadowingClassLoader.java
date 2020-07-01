@@ -1,5 +1,3 @@
-
-
 package org.springframework.instrument.classloading;
 
 import java.io.IOException;

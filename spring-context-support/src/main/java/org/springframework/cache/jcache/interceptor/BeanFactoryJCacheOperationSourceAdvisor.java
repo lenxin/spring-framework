@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.jcache.interceptor;
 
 import org.springframework.aop.ClassFilter;

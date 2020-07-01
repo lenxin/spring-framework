@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.server.adapter;
 
 import java.net.URI;

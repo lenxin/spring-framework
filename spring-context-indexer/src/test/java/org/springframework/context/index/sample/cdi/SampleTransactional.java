@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.index.sample.cdi;
 
 import javax.transaction.Transactional;

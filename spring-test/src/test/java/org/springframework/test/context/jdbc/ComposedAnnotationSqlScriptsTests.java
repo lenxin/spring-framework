@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.jdbc;
 
 import java.lang.annotation.Retention;

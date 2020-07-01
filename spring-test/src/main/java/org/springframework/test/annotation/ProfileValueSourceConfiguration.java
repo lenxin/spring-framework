@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.annotation;
 
 import java.lang.annotation.Documented;

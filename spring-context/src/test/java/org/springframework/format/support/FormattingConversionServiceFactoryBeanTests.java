@@ -1,5 +1,3 @@
-
-
 package org.springframework.format.support;
 
 import java.lang.annotation.ElementType;

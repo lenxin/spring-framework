@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.config;
 
 import java.util.ArrayList;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.core;
 
 import java.lang.reflect.InvocationHandler;

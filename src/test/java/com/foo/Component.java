@@ -1,5 +1,3 @@
-
-
 package com.foo;
 
 import java.util.ArrayList;

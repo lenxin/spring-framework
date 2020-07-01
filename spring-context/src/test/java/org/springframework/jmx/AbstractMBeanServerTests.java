@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx;
 
 import javax.management.MBeanServer;

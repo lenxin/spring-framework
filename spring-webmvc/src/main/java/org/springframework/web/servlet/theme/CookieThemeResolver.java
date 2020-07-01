@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.theme;
 
 import javax.servlet.http.Cookie;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.format.datetime;
 
 import java.util.ArrayList;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.view.xml;
 
 import java.io.ByteArrayOutputStream;

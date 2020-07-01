@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.support.rowset;
 
 import java.io.Serializable;

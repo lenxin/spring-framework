@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.client;
 
 import static org.junit.Assert.assertEquals;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.core.metadata;
 
 import java.util.Arrays;

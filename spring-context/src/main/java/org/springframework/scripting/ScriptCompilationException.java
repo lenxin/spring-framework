@@ -1,5 +1,3 @@
-
-
 package org.springframework.scripting;
 
 import org.springframework.core.NestedRuntimeException;

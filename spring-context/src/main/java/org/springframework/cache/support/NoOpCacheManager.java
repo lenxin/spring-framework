@@ -1,5 +1,3 @@
-
-
 package org.springframework.cache.support;
 
 import java.util.Collection;

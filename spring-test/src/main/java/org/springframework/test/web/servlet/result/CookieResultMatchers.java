@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.web.servlet.result;
 
 import javax.servlet.http.Cookie;

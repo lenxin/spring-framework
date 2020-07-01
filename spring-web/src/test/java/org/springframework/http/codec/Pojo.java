@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.codec;
 
 import javax.xml.bind.annotation.XmlRootElement;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit.jupiter.generics;
 
 import org.junit.jupiter.api.Nested;

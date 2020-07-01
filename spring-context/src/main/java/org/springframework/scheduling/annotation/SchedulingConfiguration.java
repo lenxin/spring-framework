@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.annotation;
 
 import org.springframework.beans.factory.config.BeanDefinition;

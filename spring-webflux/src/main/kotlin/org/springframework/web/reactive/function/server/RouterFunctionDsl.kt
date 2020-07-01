@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.function.server
 
 import org.springframework.core.io.Resource

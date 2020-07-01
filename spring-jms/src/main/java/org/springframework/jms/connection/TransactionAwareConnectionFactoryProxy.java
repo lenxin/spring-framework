@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.connection;
 
 import java.lang.reflect.InvocationHandler;

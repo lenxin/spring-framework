@@ -1,5 +1,3 @@
-
-
 package org.springframework.format;
 
 import java.text.ParseException;

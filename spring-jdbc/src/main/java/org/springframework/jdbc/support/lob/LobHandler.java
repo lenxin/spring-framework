@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.support.lob;
 
 import java.io.InputStream;

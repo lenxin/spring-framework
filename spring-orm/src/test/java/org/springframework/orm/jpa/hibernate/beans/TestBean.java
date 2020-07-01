@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa.hibernate.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;

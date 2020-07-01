@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.converter;
 
 import java.util.Arrays;

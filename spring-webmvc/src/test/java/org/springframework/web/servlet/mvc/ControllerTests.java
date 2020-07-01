@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.servlet.mvc;
 
 import java.util.Properties;

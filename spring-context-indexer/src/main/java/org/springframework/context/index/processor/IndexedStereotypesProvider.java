@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.index.processor;
 
 import java.util.HashSet;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.codec.cbor;
 
 import java.util.Arrays;

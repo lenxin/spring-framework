@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.adapter.standard;
 
 import java.util.ArrayList;

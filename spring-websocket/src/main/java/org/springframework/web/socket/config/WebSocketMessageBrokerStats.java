@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.config;
 
 import java.util.concurrent.Executor;

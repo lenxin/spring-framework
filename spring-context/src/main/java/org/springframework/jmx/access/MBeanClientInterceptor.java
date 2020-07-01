@@ -1,5 +1,3 @@
-
-
 package org.springframework.jmx.access;
 
 import java.beans.PropertyDescriptor;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.remoting;
 
 import javax.jms.JMSException;

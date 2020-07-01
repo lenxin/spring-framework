@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter.json;
 
 import com.fasterxml.jackson.annotation.ObjectIdGenerator;

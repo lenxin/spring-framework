@@ -1,5 +1,3 @@
-
-
 package org.springframework.format.annotation;
 
 import java.lang.annotation.Documented;

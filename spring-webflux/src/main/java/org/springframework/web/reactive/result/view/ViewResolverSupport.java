@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.result.view;
 
 import java.nio.charset.Charset;

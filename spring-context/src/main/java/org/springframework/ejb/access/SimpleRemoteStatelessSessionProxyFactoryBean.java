@@ -1,5 +1,3 @@
-
-
 package org.springframework.ejb.access;
 
 import javax.naming.NamingException;

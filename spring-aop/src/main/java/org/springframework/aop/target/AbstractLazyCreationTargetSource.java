@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.target;
 
 import org.apache.commons.logging.Log;

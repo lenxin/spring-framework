@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation;
 
 import example.scannable.CustomComponent;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit4.aci.annotation;
 
 import org.springframework.context.annotation.Bean;

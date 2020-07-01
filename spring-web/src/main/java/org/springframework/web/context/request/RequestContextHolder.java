@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.context.request;
 
 import javax.faces.context.FacesContext;

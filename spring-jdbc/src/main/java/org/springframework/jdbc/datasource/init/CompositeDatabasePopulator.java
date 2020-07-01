@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.datasource.init;
 
 import java.sql.Connection;

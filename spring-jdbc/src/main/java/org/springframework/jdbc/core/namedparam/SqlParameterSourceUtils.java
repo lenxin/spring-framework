@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.core.namedparam;
 
 import java.util.Arrays;

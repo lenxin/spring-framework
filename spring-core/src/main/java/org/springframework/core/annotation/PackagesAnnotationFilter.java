@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.annotation;
 
 import java.util.Arrays;
@@ -19,10 +17,7 @@ final class PackagesAnnotationFilter implements AnnotationFilter {
 
 	private final String[] prefixes;
 
-	private final int hashCode;
-
-
-	PackagesAnnotationFilter(String... packages) {
+	private final int hashCode;packagesAnnotationFilter(String... packages) {
 		Assert.notNull(packages, "Packages array must not be null");
 		this.prefixes = new String[packages.length];
 		for (int i = 0; i < packages.length; i++) {

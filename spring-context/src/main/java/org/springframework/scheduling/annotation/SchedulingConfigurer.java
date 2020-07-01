@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling.annotation;
 
 import org.springframework.scheduling.config.ScheduledTaskRegistrar;

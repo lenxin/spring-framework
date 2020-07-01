@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.transaction.ejb;
 
 import javax.ejb.EJB;

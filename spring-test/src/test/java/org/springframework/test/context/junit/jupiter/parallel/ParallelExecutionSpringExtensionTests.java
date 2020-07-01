@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit.jupiter.parallel;
 
 import java.lang.reflect.Parameter;

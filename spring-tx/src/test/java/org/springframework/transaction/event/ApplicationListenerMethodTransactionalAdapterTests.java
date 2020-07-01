@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.event;
 
 import java.lang.reflect.Method;

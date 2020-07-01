@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.messaging;
 
 import java.lang.annotation.Retention;

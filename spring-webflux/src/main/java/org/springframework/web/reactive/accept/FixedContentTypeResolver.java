@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.accept;
 
 import java.util.Collections;

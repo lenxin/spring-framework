@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.index.sample;
 
 import java.lang.annotation.Documented;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.context.annotation;
 
 import java.lang.annotation.Documented;

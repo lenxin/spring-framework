@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.sockjs.transport.session;
 
 import java.io.IOException;

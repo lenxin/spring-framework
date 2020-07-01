@@ -1,5 +1,3 @@
-
-
 package org.springframework.messaging.simp.stomp;
 
 import java.io.ByteArrayOutputStream;

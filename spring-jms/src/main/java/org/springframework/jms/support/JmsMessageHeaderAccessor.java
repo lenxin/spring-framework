@@ -1,5 +1,3 @@
-
-
 package org.springframework.jms.support;
 
 import java.util.List;

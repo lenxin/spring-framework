@@ -1,5 +1,3 @@
-
-
 package org.springframework.util.unit;
 
 import java.util.Objects;

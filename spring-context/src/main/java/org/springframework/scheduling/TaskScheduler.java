@@ -1,5 +1,3 @@
-
-
 package org.springframework.scheduling;
 
 import java.time.Duration;

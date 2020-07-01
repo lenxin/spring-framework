@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.util.pattern;
 
 import java.util.Collections;

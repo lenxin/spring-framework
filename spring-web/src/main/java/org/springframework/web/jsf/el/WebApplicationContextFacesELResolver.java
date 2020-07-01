@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.jsf.el;
 
 import java.beans.FeatureDescriptor;

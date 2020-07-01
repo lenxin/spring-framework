@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.config.annotation;
 
 import org.springframework.web.socket.WebSocketHandler;

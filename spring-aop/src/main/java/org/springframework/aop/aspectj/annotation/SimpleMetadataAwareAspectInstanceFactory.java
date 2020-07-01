@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.aspectj.annotation;
 
 import org.springframework.aop.aspectj.SimpleAspectInstanceFactory;

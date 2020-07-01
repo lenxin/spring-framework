@@ -1,5 +1,3 @@
-
-
 package org.springframework.core.style;
 
 import java.util.ArrayList;

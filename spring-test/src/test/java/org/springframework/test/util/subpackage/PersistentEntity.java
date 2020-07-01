@@ -12,9 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
-
-package org.springframework.test.util.subpackage;
+ */package org.springframework.test.util.subpackage;
 
 /**
  * Abstract base class for <em>persistent entities</em>; intended for use in

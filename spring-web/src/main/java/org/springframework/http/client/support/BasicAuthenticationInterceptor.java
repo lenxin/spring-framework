@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.client.support;
 
 import java.io.IOException;

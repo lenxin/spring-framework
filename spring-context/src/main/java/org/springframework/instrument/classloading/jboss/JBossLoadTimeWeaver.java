@@ -1,5 +1,3 @@
-
-
 package org.springframework.instrument.classloading.jboss;
 
 import java.lang.instrument.ClassFileTransformer;

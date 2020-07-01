@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.event;
 
 import java.lang.reflect.Method;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.context.support;
 
 import org.springframework.context.ApplicationEvent;

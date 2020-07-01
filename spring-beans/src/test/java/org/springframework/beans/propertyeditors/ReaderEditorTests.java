@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.propertyeditors;
 
 import java.io.Reader;

@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.support.xml;
 
 import java.io.InputStream;

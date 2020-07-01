@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.client;
 
 import java.io.ByteArrayInputStream;

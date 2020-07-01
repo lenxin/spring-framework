@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.annotation.scope;
 
 import org.junit.After;

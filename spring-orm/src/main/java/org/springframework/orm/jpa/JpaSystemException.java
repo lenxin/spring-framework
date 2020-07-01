@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa;
 
 import org.springframework.dao.UncategorizedDataAccessException;

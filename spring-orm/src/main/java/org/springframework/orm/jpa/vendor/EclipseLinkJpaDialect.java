@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa.vendor;
 
 import java.sql.Connection;

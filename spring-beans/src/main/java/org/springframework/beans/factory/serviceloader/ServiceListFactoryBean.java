@@ -1,5 +1,3 @@
-
-
 package org.springframework.beans.factory.serviceloader;
 
 import java.util.LinkedList;

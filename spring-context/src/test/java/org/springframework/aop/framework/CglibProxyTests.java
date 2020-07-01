@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.framework;
 
 import java.io.Serializable;
@@ -100,9 +98,7 @@ public class CglibProxyTests extends AbstractAopProxyTests implements Serializab
 		AdvisedSupport as = new AdvisedSupport();
 		as.setTargetSource(mockTargetSource);
 		as.addAdvice(new NopInterceptor());
-		AopProxy aop = new CglibAopProxy(as);
-
-		PackageMethodTestBean proxy = (PackageMethodTestBean) aop.getProxy();
+		AopProxy aop = new CglibAopProxy(as);packageMethodTestBean proxy = (PackageMethodTestBean) aop.getProxy();
 		assertTrue(AopUtils.isCglibProxy(proxy));
 		assertEquals(proxy.getClass().getClassLoader(), bean.getClass().getClassLoader());
 		assertEquals("foo", proxy.getString());

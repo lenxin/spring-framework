@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop.config;
 
 import org.w3c.dom.Element;

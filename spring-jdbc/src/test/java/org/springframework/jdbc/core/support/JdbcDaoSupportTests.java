@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.core.support;
 
 import java.util.ArrayList;

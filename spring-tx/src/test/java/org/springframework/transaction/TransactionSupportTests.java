@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction;
 
 import org.junit.After;

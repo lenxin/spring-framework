@@ -1,5 +1,3 @@
-
-
 package org.springframework.mock.web;
 
 import java.io.Serializable;

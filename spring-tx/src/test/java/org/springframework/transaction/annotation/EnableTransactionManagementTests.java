@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.annotation;
 
 import java.util.Collection;

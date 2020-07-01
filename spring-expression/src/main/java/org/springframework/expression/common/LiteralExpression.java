@@ -1,5 +1,3 @@
-
-
 package org.springframework.expression.common;
 
 import org.springframework.core.convert.TypeDescriptor;

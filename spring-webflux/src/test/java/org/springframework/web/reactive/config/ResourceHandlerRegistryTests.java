@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.reactive.config;
 
 import java.nio.charset.StandardCharsets;

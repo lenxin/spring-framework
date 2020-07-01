@@ -12,9 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
-
-package org.springframework.web.bind.support;
+ */package org.springframework.web.bind.support;
 
 /**
  * Simple interface that can be injected into handler methods, allowing them to

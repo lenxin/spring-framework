@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter.smile;
 
 import java.io.IOException;

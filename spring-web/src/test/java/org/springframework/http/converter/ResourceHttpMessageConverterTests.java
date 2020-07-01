@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.converter;
 
 import java.io.FileNotFoundException;

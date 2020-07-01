@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.codec.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;

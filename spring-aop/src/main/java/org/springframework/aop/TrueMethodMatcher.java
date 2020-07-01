@@ -1,5 +1,3 @@
-
-
 package org.springframework.aop;
 
 import java.io.Serializable;

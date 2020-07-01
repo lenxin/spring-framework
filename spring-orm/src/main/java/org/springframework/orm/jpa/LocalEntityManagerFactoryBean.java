@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa;
 
 import javax.persistence.EntityManagerFactory;

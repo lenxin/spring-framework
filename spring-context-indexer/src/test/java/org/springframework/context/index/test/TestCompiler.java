@@ -1,5 +1,3 @@
-
-
 package org.springframework.context.index.test;
 
 import java.io.File;

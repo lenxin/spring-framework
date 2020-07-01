@@ -1,5 +1,3 @@
-
-
 package org.springframework.orm.jpa.domain;
 
 import javax.persistence.PostLoad;

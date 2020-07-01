@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.config;
 
 import java.util.function.Predicate;

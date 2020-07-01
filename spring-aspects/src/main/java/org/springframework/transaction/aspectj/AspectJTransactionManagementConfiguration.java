@@ -1,5 +1,3 @@
-
-
 package org.springframework.transaction.aspectj;
 
 import org.springframework.beans.factory.config.BeanDefinition;

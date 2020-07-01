@@ -1,5 +1,3 @@
-
-
 package org.springframework.test.context.junit;
 
 import org.junit.platform.runner.JUnitPlatform;

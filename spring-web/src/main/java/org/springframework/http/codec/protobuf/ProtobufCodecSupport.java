@@ -1,5 +1,3 @@
-
-
 package org.springframework.http.codec.protobuf;
 
 import java.util.Arrays;

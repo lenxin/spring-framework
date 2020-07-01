@@ -1,5 +1,3 @@
-
-
 package org.springframework.web.socket.sockjs.support;
 
 import java.io.IOException;

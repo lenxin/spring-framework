@@ -1,5 +1,3 @@
-
-
 package org.springframework.jdbc.datasource.embedded;
 
 import java.sql.Driver;
