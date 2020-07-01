@@ -6,14 +6,10 @@ import org.springframework.lang.Nullable;
 /**
  * Configuration object for the SpEL expression parser.
  *
- * @author Juergen Hoeller
- * @author Phillip Webb
- * @author Andy Clement
- * @since 3.0
  * @see org.springframework.expression.spel.standard.SpelExpressionParser#SpelExpressionParser(SpelParserConfiguration)
+ * @since 3.0
  */
 public class SpelParserConfiguration {
-
 	private static final SpelCompilerMode defaultCompilerMode;
 
 	static {
@@ -22,18 +18,12 @@ public class SpelParserConfiguration {
 				SpelCompilerMode.valueOf(compilerMode.toUpperCase()) : SpelCompilerMode.OFF);
 	}
 
-
 	private final SpelCompilerMode compilerMode;
-
 	@Nullable
 	private final ClassLoader compilerClassLoader;
-
 	private final boolean autoGrowNullReferences;
-
 	private final boolean autoGrowCollections;
-
 	private final int maximumAutoGrowSize;
-
 
 	/**
 	 * Create a new {@code SpelParserConfiguration} instance with default settings.
@@ -44,7 +34,8 @@ public class SpelParserConfiguration {
 
 	/**
 	 * Create a new {@code SpelParserConfiguration} instance.
-	 * @param compilerMode the compiler mode for the parser
+	 *
+	 * @param compilerMode        the compiler mode for the parser
 	 * @param compilerClassLoader the ClassLoader to use as the basis for expression compilation
 	 */
 	public SpelParserConfiguration(@Nullable SpelCompilerMode compilerMode, @Nullable ClassLoader compilerClassLoader) {
@@ -53,8 +44,9 @@ public class SpelParserConfiguration {
 
 	/**
 	 * Create a new {@code SpelParserConfiguration} instance.
+	 *
 	 * @param autoGrowNullReferences if null references should automatically grow
-	 * @param autoGrowCollections if collections should automatically grow
+	 * @param autoGrowCollections    if collections should automatically grow
 	 * @see #SpelParserConfiguration(boolean, boolean, int)
 	 */
 	public SpelParserConfiguration(boolean autoGrowNullReferences, boolean autoGrowCollections) {
@@ -63,9 +55,10 @@ public class SpelParserConfiguration {
 
 	/**
 	 * Create a new {@code SpelParserConfiguration} instance.
+	 *
 	 * @param autoGrowNullReferences if null references should automatically grow
-	 * @param autoGrowCollections if collections should automatically grow
-	 * @param maximumAutoGrowSize the maximum size that the collection can auto grow
+	 * @param autoGrowCollections    if collections should automatically grow
+	 * @param maximumAutoGrowSize    the maximum size that the collection can auto grow
 	 */
 	public SpelParserConfiguration(boolean autoGrowNullReferences, boolean autoGrowCollections, int maximumAutoGrowSize) {
 		this(null, null, autoGrowNullReferences, autoGrowCollections, maximumAutoGrowSize);
@@ -73,22 +66,21 @@ public class SpelParserConfiguration {
 
 	/**
 	 * Create a new {@code SpelParserConfiguration} instance.
-	 * @param compilerMode the compiler mode that parsers using this configuration object should use
-	 * @param compilerClassLoader the ClassLoader to use as the basis for expression compilation
+	 *
+	 * @param compilerMode           the compiler mode that parsers using this configuration object should use
+	 * @param compilerClassLoader    the ClassLoader to use as the basis for expression compilation
 	 * @param autoGrowNullReferences if null references should automatically grow
-	 * @param autoGrowCollections if collections should automatically grow
-	 * @param maximumAutoGrowSize the maximum size that the collection can auto grow
+	 * @param autoGrowCollections    if collections should automatically grow
+	 * @param maximumAutoGrowSize    the maximum size that the collection can auto grow
 	 */
 	public SpelParserConfiguration(@Nullable SpelCompilerMode compilerMode, @Nullable ClassLoader compilerClassLoader,
-			boolean autoGrowNullReferences, boolean autoGrowCollections, int maximumAutoGrowSize) {
-
+								   boolean autoGrowNullReferences, boolean autoGrowCollections, int maximumAutoGrowSize) {
 		this.compilerMode = (compilerMode != null ? compilerMode : defaultCompilerMode);
 		this.compilerClassLoader = compilerClassLoader;
 		this.autoGrowNullReferences = autoGrowNullReferences;
 		this.autoGrowCollections = autoGrowCollections;
 		this.maximumAutoGrowSize = maximumAutoGrowSize;
 	}
-
 
 	/**
 	 * Return the configuration mode for parsers using this configuration object.
@@ -125,5 +117,4 @@ public class SpelParserConfiguration {
 	public int getMaximumAutoGrowSize() {
 		return this.maximumAutoGrowSize;
 	}
-
 }

@@ -4,7 +4,6 @@ package org.springframework.expression.spel;
  * Captures the possible configuration settings for a compiler that can be
  * used when evaluating expressions.
  *
- * @author Andy Clement
  * @since 4.1
  */
 public enum SpelCompilerMode {
@@ -27,5 +26,4 @@ public enum SpelCompilerMode {
 	 * interpreted mode. It may subsequently compile it again later.
 	 */
 	MIXED
-
 }

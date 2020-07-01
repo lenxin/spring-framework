@@ -648,14 +648,15 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	protected void prepareBeanFactory(ConfigurableListableBeanFactory beanFactory) {
 		// Tell the internal bean factory to use the context's class loader etc.
 		beanFactory.setBeanClassLoader(getClassLoader());
+		// 增加对SPEL语言的支持
 		// 设置BeanFactory表达式语言处理器，Spring3增加了表达式语言的支持
 		// 默认可以使用#{bean.xxx}的形式来调用相关属性值
 		beanFactory.setBeanExpressionResolver(new StandardBeanExpressionResolver(beanFactory.getBeanClassLoader()));
-		// 为BeanFactory增加一个默认的propertyEditor，这个主要是对bean的属性等设置管理的一个工具
+		// 增加对属性编辑器的支持，为BeanFactory增加一个默认的propertyEditor，这个主要是对bean的属性等设置管理的一个工具
 		beanFactory.addPropertyEditorRegistrar(new ResourceEditorRegistrar(this, getEnvironment()));
 
 		// Configure the bean factory with context callbacks.
-		// 添加BeanPostProcessor
+		// 添加BeanPostProcessor，增加内置类的注入
 		beanFactory.addBeanPostProcessor(new ApplicationContextAwareProcessor(this));
 
 		// 设置忽略自动装配的接口
