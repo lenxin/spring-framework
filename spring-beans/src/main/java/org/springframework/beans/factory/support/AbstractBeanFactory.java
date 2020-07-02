@@ -1796,13 +1796,13 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * The bean definition will already have been merged with the parent definition
 	 * in case of a child definition.
 	 * <p>All bean retrieval methods delegate to this method for actual bean creation.
+	 * 为给定的已经合并了的bean的定义创建bean的实例
 	 *
 	 * @param beanName the name of the bean
 	 * @param mbd      the merged bean definition for the bean
 	 * @param args     explicit arguments to use for constructor or factory method invocation
 	 * @return a new instance of the bean
 	 * @throws BeanCreationException if the bean could not be created
-	 *                               为给定的已经合并了的bean的定义创建bean的实例
 	 */
 	protected abstract Object createBean(String beanName, RootBeanDefinition mbd, @Nullable Object[] args)
 			throws BeanCreationException;
