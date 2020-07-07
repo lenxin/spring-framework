@@ -42,6 +42,7 @@ public class RootBeanDefinition extends AbstractBeanDefinition {
 
 	/**
 	 * Package-visible field for caching the determined Class of a given bean definition.
+	 * 包可见字段，用于缓存给定bean定义的确定类。
 	 */
 	@Nullable
 	volatile Class<?> resolvedTargetType;
@@ -88,16 +89,19 @@ public class RootBeanDefinition extends AbstractBeanDefinition {
 
 	/**
 	 * Common lock for the two post-processing fields below.
+	 * 下面两个后处理字段的通用锁。
 	 */
 	final Object postProcessingLock = new Object();
 
 	/**
 	 * Package-visible field that indicates MergedBeanDefinitionPostProcessor having been applied.
+	 * 包可见的字段，指示已经应用了MergedBeanDefinitionPostProcessor。
 	 */
 	boolean postProcessed = false;
 
 	/**
 	 * Package-visible field that indicates a before-instantiation post-processor having kicked in.
+	 * 包可见字段，指示实例化前的后处理程序已经启动。
 	 */
 	@Nullable
 	volatile Boolean beforeInstantiationResolved;
