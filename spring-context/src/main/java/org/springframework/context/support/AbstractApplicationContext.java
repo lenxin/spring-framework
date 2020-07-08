@@ -501,20 +501,20 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	public void refresh() throws BeansException, IllegalStateException {
 		synchronized (this.startupShutdownMonitor) {
 			// Prepare this context for refreshing.
-			/*准备刷新新的context*/
+			// 准备刷新新的context
 			prepareRefresh();
 
 			// Tell the subclass to refresh the internal bean factory.
-			/*刷新所有BeanFactory子容器，在子类中启动refreshBeanFactory的入口，并进行XML文件读取*/
+			// 刷新所有BeanFactory子容器，在子类中启动refreshBeanFactory的入口，并进行XML文件读取
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			// Prepare the bean factory for use in this context.
-			/*配置BeanFactory的上下文特征，对BeanFactory进行各种功能填充*/
+			// 配置BeanFactory的上下文特征，对BeanFactory进行各种功能填充
 			prepareBeanFactory(beanFactory);
 
 			try {
 				// Allows post-processing of the bean factory in context subclasses.
-				/*注册实现了BeanPostProcessor接口的Bean，设置BeanFactory的后置处理，子类覆盖方法做额外的处理*/
+				// 注册实现了BeanPostProcessor接口的Bean，设置BeanFactory的后置处理，子类覆盖方法做额外的处理
 				postProcessBeanFactory(beanFactory);
 
 				// Invoke factory processors registered as beans in the context.
@@ -522,11 +522,11 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				invokeBeanFactoryPostProcessors(beanFactory);
 
 				// Register bean processors that intercept bean creation.
-				/*注册拦截Bean创建的Bean的后处理器，在Bean创建过程中(getBean方法)调用*/
+				// 注册拦截Bean创建的Bean的后处理器，在Bean创建过程中(getBean方法)调用
 				registerBeanPostProcessors(beanFactory);
 
 				// Initialize message source for this context.
-				/*初始化上下文的消息源MessageSource*/
+				// 初始化上下文的消息源MessageSource
 				initMessageSource();
 
 				// Initialize event multicaster for this context.
@@ -535,20 +535,20 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				initApplicationEventMulticaster();
 
 				// Initialize other special beans in specific context subclasses.
-				/*刷新由子类实现的方法，初始化其他的特殊Bean*/
+				// 刷新由子类实现的方法，初始化其他的特殊Bean
 				onRefresh();
 
 				// Check for listener beans and register them.
-				/*检查注册事件，检查监听Bean并且将这些Bean向容器注册*/
+				// 检查注册事件，检查监听Bean并且将这些Bean向容器注册
 				// 在所有注册的bean中查找Listener Bean，注册到消息广播器中
 				registerListeners();
 
 				// Instantiate all remaining (non-lazy-init) singletons.
-				/*初始化non-lazy-init单例bean*/
+				// 初始化non-lazy-init单例bean
 				finishBeanFactoryInitialization(beanFactory);
 
 				// Last step: publish corresponding event.
-				/*发布容器事件，结束refresh过程，执行LifecycleProcessor.onRefresh()和ContextRefreshedEvent事件*/
+				// 发布容器事件，结束refresh过程，执行LifecycleProcessor.onRefresh()和ContextRefreshedEvent事件
 				// 完成刷新过程，通知生命周期处理器LifecycleProcessor刷新过程，同时发出ContextRefreshedEvent通知别人
 				finishRefresh();
 			} catch (BeansException ex) {
@@ -558,11 +558,11 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				}
 
 				// Destroy already created singletons to avoid dangling resources.
-				/*为防止Bean资源占用，在异常处理中销毁已经在前面过程中生成的单例bean*/
+				// 为防止Bean资源占用，在异常处理中销毁已经在前面过程中生成的单例bean
 				destroyBeans();
 
 				// Reset 'active' flag.
-				/*重置'active'标志*/
+				// 重置'active'标志
 				cancelRefresh(ex);
 
 				// Propagate exception to caller.

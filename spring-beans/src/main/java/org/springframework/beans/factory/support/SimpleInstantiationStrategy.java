@@ -1,12 +1,5 @@
 package org.springframework.beans.factory.support;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-
 import org.springframework.beans.BeanInstantiationException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.BeanFactory;
@@ -15,20 +8,23 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.util.StringUtils;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.security.AccessController;
+import java.security.PrivilegedAction;
+import java.security.PrivilegedExceptionAction;
+
 /**
  * Simple object instantiation strategy for use in a BeanFactory.
  *
  * <p>Does not support Method Injection, although it provides hooks for subclasses
  * to override to add Method Injection support, for example by overriding methods.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @since 1.1
  */
 public class SimpleInstantiationStrategy implements InstantiationStrategy {
-
 	private static final ThreadLocal<Method> currentlyInvokedFactoryMethod = new ThreadLocal<>();
-
 
 	/**
 	 * Return the factory method currently being invoked or {@code null} if none.
@@ -39,7 +35,6 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
 	public static Method getCurrentlyInvokedFactoryMethod() {
 		return currentlyInvokedFactoryMethod.get();
 	}
-
 
 	@Override
 	public Object instantiate(RootBeanDefinition bd, @Nullable String beanName, BeanFactory owner) {
@@ -57,20 +52,17 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
 						if (System.getSecurityManager() != null) {
 							constructorToUse = AccessController.doPrivileged(
 									(PrivilegedExceptionAction<Constructor<?>>) clazz::getDeclaredConstructor);
-						}
-						else {
+						} else {
 							constructorToUse = clazz.getDeclaredConstructor();
 						}
 						bd.resolvedConstructorOrFactoryMethod = constructorToUse;
-					}
-					catch (Throwable ex) {
+					} catch (Throwable ex) {
 						throw new BeanInstantiationException(clazz, "No default constructor found", ex);
 					}
 				}
 			}
 			return BeanUtils.instantiateClass(constructorToUse);
-		}
-		else {
+		} else {
 			// Must generate CGLIB subclass.
 			return instantiateWithMethodInjection(bd, beanName, owner);
 		}
@@ -88,8 +80,7 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
 
 	@Override
 	public Object instantiate(RootBeanDefinition bd, @Nullable String beanName, BeanFactory owner,
-			final Constructor<?> ctor, Object... args) {
-
+							  final Constructor<?> ctor, Object... args) {
 		if (!bd.hasMethodOverrides()) {
 			if (System.getSecurityManager() != null) {
 				// use own privileged to change accessibility (when security is on)
@@ -99,8 +90,7 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
 				});
 			}
 			return BeanUtils.instantiateClass(ctor, args);
-		}
-		else {
+		} else {
 			return instantiateWithMethodInjection(bd, beanName, owner, ctor, args);
 		}
 	}
@@ -112,23 +102,20 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
 	 * Instantiation should use the given constructor and parameters.
 	 */
 	protected Object instantiateWithMethodInjection(RootBeanDefinition bd, @Nullable String beanName,
-			BeanFactory owner, @Nullable Constructor<?> ctor, Object... args) {
-
+													BeanFactory owner, @Nullable Constructor<?> ctor, Object... args) {
 		throw new UnsupportedOperationException("Method Injection not supported in SimpleInstantiationStrategy");
 	}
 
 	@Override
 	public Object instantiate(RootBeanDefinition bd, @Nullable String beanName, BeanFactory owner,
-			@Nullable Object factoryBean, final Method factoryMethod, Object... args) {
-
+							  @Nullable Object factoryBean, final Method factoryMethod, Object... args) {
 		try {
 			if (System.getSecurityManager() != null) {
 				AccessController.doPrivileged((PrivilegedAction<Object>) () -> {
 					ReflectionUtils.makeAccessible(factoryMethod);
 					return null;
 				});
-			}
-			else {
+			} else {
 				ReflectionUtils.makeAccessible(factoryMethod);
 			}
 
@@ -140,26 +127,21 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
 					result = new NullBean();
 				}
 				return result;
-			}
-			finally {
+			} finally {
 				if (priorInvokedFactoryMethod != null) {
 					currentlyInvokedFactoryMethod.set(priorInvokedFactoryMethod);
-				}
-				else {
+				} else {
 					currentlyInvokedFactoryMethod.remove();
 				}
 			}
-		}
-		catch (IllegalArgumentException ex) {
+		} catch (IllegalArgumentException ex) {
 			throw new BeanInstantiationException(factoryMethod,
 					"Illegal arguments to factory method '" + factoryMethod.getName() + "'; " +
-					"args: " + StringUtils.arrayToCommaDelimitedString(args), ex);
-		}
-		catch (IllegalAccessException ex) {
+							"args: " + StringUtils.arrayToCommaDelimitedString(args), ex);
+		} catch (IllegalAccessException ex) {
 			throw new BeanInstantiationException(factoryMethod,
 					"Cannot access factory method '" + factoryMethod.getName() + "'; is it public?", ex);
-		}
-		catch (InvocationTargetException ex) {
+		} catch (InvocationTargetException ex) {
 			String msg = "Factory method '" + factoryMethod.getName() + "' threw exception";
 			if (bd.getFactoryBeanName() != null && owner instanceof ConfigurableBeanFactory &&
 					((ConfigurableBeanFactory) owner).isCurrentlyInCreation(bd.getFactoryBeanName())) {
@@ -169,5 +151,4 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
 			throw new BeanInstantiationException(factoryMethod, msg, ex.getTargetException());
 		}
 	}
-
 }

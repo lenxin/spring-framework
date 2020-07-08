@@ -9,7 +9,8 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.cglib.core.ClassGenerator;
 import org.springframework.cglib.core.DefaultGeneratorStrategy;
 import org.springframework.cglib.core.SpringNamingPolicy;
-import org.springframework.cglib.proxy.*;
+import org.springframework.cglib.proxy.Enhancer;
+import org.springframework.cglib.proxy.MethodProxy;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
@@ -226,7 +227,6 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 	 * implementation that returns a bean looked up in the container.
 	 */
 	private static class LookupOverrideMethodInterceptor extends CglibIdentitySupport implements MethodInterceptor {
-
 		private final BeanFactory owner;
 
 		public LookupOverrideMethodInterceptor(RootBeanDefinition beanDefinition, BeanFactory owner) {
@@ -250,13 +250,11 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 		}
 	}
 
-
 	/**
 	 * CGLIB MethodInterceptor to override methods, replacing them with a call
 	 * to a generic MethodReplacer.
 	 */
 	private static class ReplaceOverrideMethodInterceptor extends CglibIdentitySupport implements MethodInterceptor {
-
 		private final BeanFactory owner;
 
 		public ReplaceOverrideMethodInterceptor(RootBeanDefinition beanDefinition, BeanFactory owner) {
@@ -273,5 +271,4 @@ public class CglibSubclassingInstantiationStrategy extends SimpleInstantiationSt
 			return mr.reimplement(obj, method, args);
 		}
 	}
-
 }
