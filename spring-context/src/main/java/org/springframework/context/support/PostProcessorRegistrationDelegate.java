@@ -78,6 +78,7 @@ final class PostProcessorRegistrationDelegate {
 			currentRegistryProcessors.clear();
 
 			// Finally, invoke all other BeanDefinitionRegistryPostProcessors until no further ones appear.
+			// TODO 为什么要重复的调用？也就是为什么会重复的出现，不能一次性的获取到？ 2020/07/12 22:54
 			boolean reiterate = true;
 			while (reiterate) {
 				reiterate = false;
@@ -146,6 +147,7 @@ final class PostProcessorRegistrationDelegate {
 
 		// Clear cached merged bean definitions since the post-processors might have
 		// modified the original metadata, e.g. replacing placeholders in values...
+		// 清除缓存的合并bean定义，因为后处理器可能修改了原始元数据，例如替换值中的占位符等
 		beanFactory.clearMetadataCache();
 	}
 

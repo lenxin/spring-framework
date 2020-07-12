@@ -1,0 +1,58 @@
+AbstractApplicationContext.refresh();
+    容器的刷新和初始化
+    1、prepareRefresh();
+    容器刷新前的预处理工作
+        1.1）、initPropertySources();初始化上下文环境中的属性源，默认未实现，由子类实现个性化的属性设置
+        1.2）、getEnvironment().validateRequiredProperties();验证通过setRequiredProperties设置的属性在环境中存在
+        1.3）、保存预刷新的应用程序监听器earlyApplicationListeners；初始化earlyApplicationEvents，保存容器的一些预刷新事件
+    2、obtainFreshBeanFactory();
+        获取并刷新BeanFactory
+        2.1）、refreshBeanFactory();
+            刷新BeanFactory，由子类实现。默认的子类实现有：
+            2.1.1）、AbstractRefreshableApplicationContext.refreshBeanFactory()
+                销毁原有的BeanFactory并重新创建新的BeanFactory，调用loadBeanDefinitions(DefaultListableBeanFactory beanFactory)加载BeanDefinition，
+                此方法由子类中实现：
+                AbstractXmlApplicationContext.loadBeanDefinitions(DefaultListableBeanFactory beanFactory)
+                XmlWebApplicationContext.loadBeanDefinitions(DefaultListableBeanFactory beanFactory)
+                AnnotationConfigWebApplicationContext.loadBeanDefinitions(DefaultListableBeanFactory beanFactory)
+                GroovyWebApplicationContext.loadBeanDefinitions(DefaultListableBeanFactory beanFactory)
+            2.1.2）、GenericApplicationContext.refreshBeanFactory()
+                在无参构造器中初始化BeanFactory
+                public GenericApplicationContext() {
+                    this.beanFactory = new DefaultListableBeanFactory();
+                }
+                并设置BeanFactory的序列化serializationId
+        2.2）、ConfigurableListableBeanFactory getBeanFactory();
+                返回刚才创建的BeanFactory对象，由子类实现
+                AbstractRefreshableApplicationContext.getBeanFactory();
+                GenericApplicationContext.getBeanFactory();
+    3、prepareBeanFactory(ConfigurableListableBeanFactory beanFactory);
+        BeanFactory的预准备工作
+        3.1）、设置BeanFactory的类加载器、表达式解析器、属性编辑器
+        3.2）、添加ApplicationContextAwareProcessor，在bean初始化之前调用postProcessBeforeInitialization(final Object bean, String beanName)
+            方法->invokeAwareInterfaces(Object bean)增加内置类(EnvironmentAware、EmbeddedValueResolverAware、ResourceLoaderAware、
+            ApplicationEventPublisherAware、MessageSourceAware、ApplicationContextAware)的注入工作
+        3.3）、设置忽略自动装配的接口(EnvironmentAware、EmbeddedValueResolverAware、ResourceLoaderAware、
+            ApplicationEventPublisherAware、MessageSourceAware、ApplicationContextAware)
+        3.4）、设置可以解析的自动装配，可在任何IOC组件中自动注入(BeanFactory、ResourceLoader、ApplicationEventPublisher、ApplicationContext)
+        3.5）、添加ApplicationListenerDetector的BeanPostProcessor
+        3.6）、增加对AspectJ的支持
+        3.7）、添加默认的系统环境(environment(ConfigurableEnvironment)、systemProperties(Map<String, Object>)、systemEnvironment(Map<String, Object>))
+    4、postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory);
+        BeanFactory的后置处理器，BeanDefinition信息加载完成之后，bean实例化之前调用，
+        默认未实现，由子类提供实现，系统提供的子类实现：
+        AbstractRefreshableWebApplicationContext、GenericWebApplicationContext、ResourceAdapterApplicationContext、StaticWebApplicationContext
+    5、invokeBeanFactoryPostProcessors(ConfigurableListableBeanFactory beanFactory);
+        BeanFactory的后置处理器，BeanDefinition信息加载完成之后，bean实例化之前调用，
+        BeanFactoryPostProcessor.postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory);
+        BeanDefinitionRegistryPostProcessor.postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry);
+        5.1）、先执行BeanDefinitionRegistryPostProcessor.postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry)方法；
+            5.1.1）、获取所有的BeanDefinitionRegistryPostProcessor；
+            5.1.2）、先执行实现了PriorityOrdered优先级接口的BeanDefinitionRegistryPostProcessor；
+            5.1.3）、再执行实现了Ordered顺序接口的BeanDefinitionRegistryPostProcessor；
+            5.1.4）、最后执行没有实现任何优先级和顺序接口的BeanDefinitionRegistryPostProcessor；
+        5.2）、再执行BeanFactoryPostProcessor.postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory)方法。
+            5.2.1）、获取所有的BeanFactoryPostProcessor；
+            5.2.2）、先执行实现了PriorityOrdered优先级接口的BeanFactoryPostProcessor；
+            5.2.3）、再执行实现了Ordered顺序接口的BeanFactoryPostProcessor；
+            5.2.4）、最后执行没有实现任何优先级和顺序接口的BeanFactoryPostProcessor；
