@@ -1,19 +1,15 @@
 package org.springframework.util.comparator;
 
-import java.util.Comparator;
-
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import static org.junit.Assert.*;
+import java.util.Comparator;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Tests for {@link ComparableComparator}.
- *
- * @author Keith Donald
- * @author Chris Beams
- * @author Phillip Webb
  */
 public class ComparableComparatorTests {
 
@@ -28,7 +24,7 @@ public class ComparableComparatorTests {
 		assertTrue(c.compare(s1, s2) < 0);
 	}
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@SuppressWarnings({"unchecked", "rawtypes"})
 	@Test
 	public void shouldNeedComparable() {
 		Comparator c = new ComparableComparator();

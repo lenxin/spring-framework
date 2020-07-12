@@ -4,8 +4,7 @@
  * factories for accessing JAX-WS services and ports.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.remoting.jaxws;
+@NonNullFieldspackage org.springframework.remoting.jaxws;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

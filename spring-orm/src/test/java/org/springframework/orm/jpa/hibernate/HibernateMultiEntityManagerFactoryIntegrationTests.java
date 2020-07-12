@@ -1,20 +1,17 @@
 package org.springframework.orm.jpa.hibernate;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-
 import org.junit.Test;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests;
 import org.springframework.orm.jpa.EntityManagerFactoryInfo;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 
 import static org.junit.Assert.*;
 
 /**
  * Hibernate-specific JPA tests with multiple EntityManagerFactory instances.
- *
- * @author Juergen Hoeller
  */
 public class HibernateMultiEntityManagerFactoryIntegrationTests extends AbstractContainerEntityManagerFactoryIntegrationTests {
 
@@ -24,7 +21,7 @@ public class HibernateMultiEntityManagerFactoryIntegrationTests extends Abstract
 
 	@Override
 	protected String[] getConfigLocations() {
-		return new String[] {"/org/springframework/orm/jpa/hibernate/hibernate-manager-multi.xml",
+		return new String[]{"/org/springframework/orm/jpa/hibernate/hibernate-manager-multi.xml",
 				"/org/springframework/orm/jpa/memdb.xml"};
 	}
 
@@ -44,11 +41,9 @@ public class HibernateMultiEntityManagerFactoryIntegrationTests extends Abstract
 		try {
 			em.createQuery("select tb from TestBean");
 			fail("Should have thrown IllegalArgumentException");
-		}
-		catch (IllegalArgumentException ex) {
+		} catch (IllegalArgumentException ex) {
 			// expected
-		}
-		finally {
+		} finally {
 			em.close();
 		}
 	}

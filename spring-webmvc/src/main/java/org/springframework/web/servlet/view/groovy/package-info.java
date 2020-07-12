@@ -5,8 +5,7 @@
  * Contains a View implementation for Groovy templates.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.servlet.view.groovy;
+@NonNullFieldspackage org.springframework.web.servlet.view.groovy;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

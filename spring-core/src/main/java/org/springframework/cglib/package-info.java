@@ -9,5 +9,4 @@
  *
  * <p>As this repackaging happens at the class file level, sources
  * and javadocs are not available here.
- */
-package org.springframework.cglib;
+ */package org.springframework.cglib;

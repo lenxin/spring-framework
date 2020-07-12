@@ -1,9 +1,5 @@
 package org.springframework.aop.aspectj.autoproxy;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.reflect.Method;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.aspectj.lang.JoinPoint;
@@ -13,7 +9,6 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.junit.Test;
-
 import org.springframework.aop.MethodBeforeAdvice;
 import org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator;
 import org.springframework.aop.aspectj.annotation.AspectMetadata;
@@ -43,16 +38,15 @@ import org.springframework.tests.sample.beans.NestedTestBean;
 import org.springframework.tests.sample.beans.TestBean;
 import org.springframework.util.StopWatch;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.Method;
+
 import static org.junit.Assert.*;
 
 /**
  * Integration tests for AspectJ auto-proxying. Includes mixing with Spring AOP Advisors
  * to demonstrate that existing autoproxying contract is honoured.
- *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Sam Brannen
  */
 public class AspectJAutoProxyCreatorTests {
 
@@ -568,13 +562,11 @@ class RetryAspect {
 				try {
 					o = jp.proceed();
 					this.commitCalls++;
-				}
-				catch (RetryableException re) {
+				} catch (RetryableException re) {
 					this.rollbackCalls++;
 					throw re;
 				}
-			}
-			catch (RetryableException re) {
+			} catch (RetryableException re) {
 				retry = true;
 			}
 		}

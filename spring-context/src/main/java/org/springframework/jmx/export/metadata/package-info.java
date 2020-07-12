@@ -3,8 +3,7 @@
  * JMX metadata in a provider-agnostic manner.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.jmx.export.metadata;
+@NonNullFieldspackage org.springframework.jmx.export.metadata;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

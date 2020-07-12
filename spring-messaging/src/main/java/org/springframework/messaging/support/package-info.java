@@ -5,8 +5,7 @@
  * implementations and channel interceptor support.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.messaging.support;
+@NonNullFieldspackage org.springframework.messaging.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

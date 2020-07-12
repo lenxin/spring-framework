@@ -18,8 +18,7 @@
 	</lang:std>
 
 	<lang:std id="inlineMessenger" engine="Groovy">
-		<lang:inline-script>
-			package org.springframework.scripting.groovy;
+		<lang:inline-script>package org.springframework.scripting.groovy;
 			import org.springframework.scripting.Messenger
 			class GroovyMessenger implements Messenger {
 				def String message;
@@ -29,8 +28,7 @@
 	</lang:std>
 
 	<lang:std id="inlineMessengerWithInterface" engine="Groovy" script-interfaces="org.springframework.scripting.Messenger">
-		<lang:inline-script>
-			package org.springframework.scripting.groovy;
+		<lang:inline-script>package org.springframework.scripting.groovy;
 			import org.springframework.scripting.Messenger
 			class GroovyMessenger implements Messenger {
 			def String message;

@@ -3,8 +3,7 @@
  * implementations and decorators.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.socket.handler;
+@NonNullFieldspackage org.springframework.web.socket.handler;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

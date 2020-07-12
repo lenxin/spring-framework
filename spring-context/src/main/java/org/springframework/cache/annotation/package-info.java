@@ -4,8 +4,7 @@
  * {@link org.springframework.cache.interceptor.CacheOperationSource}.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.cache.annotation;
+@NonNullFieldspackage org.springframework.cache.annotation;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

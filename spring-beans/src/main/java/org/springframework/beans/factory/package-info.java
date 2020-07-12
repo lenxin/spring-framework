@@ -10,8 +10,7 @@
  * by Rod Johnson (Wrox, 2002).
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.beans.factory;
+@NonNullFieldspackage org.springframework.beans.factory;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

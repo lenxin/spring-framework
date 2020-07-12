@@ -1,18 +1,16 @@
 package org.springframework.context.config;
 
-import org.w3c.dom.Element;
-
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.parsing.BeanComponentDefinition;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.beans.factory.xml.BeanDefinitionParser;
 import org.springframework.beans.factory.xml.ParserContext;
+import org.w3c.dom.Element;
 
 /**
  * {@link BeanDefinitionParser} responsible for parsing the
  * {@code <context:spring-configured/>} tag.
  *
- * @author Juergen Hoeller
  * @since 2.5
  */
 class SpringConfiguredBeanDefinitionParser implements BeanDefinitionParser {

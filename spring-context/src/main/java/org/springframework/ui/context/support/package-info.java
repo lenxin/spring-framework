@@ -3,8 +3,7 @@
  * Provides support classes for specialized UI contexts, e.g. for web UIs.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.ui.context.support;
+@NonNullFieldspackage org.springframework.ui.context.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

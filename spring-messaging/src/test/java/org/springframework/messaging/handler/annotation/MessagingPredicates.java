@@ -1,4 +1,3 @@
-
 package org.springframework.messaging.handler.annotation;
 
 import java.util.function.Predicate;

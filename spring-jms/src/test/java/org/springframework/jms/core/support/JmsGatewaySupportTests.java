@@ -1,4 +1,3 @@
-
 package org.springframework.jms.core.support;
 
 import java.util.ArrayList;

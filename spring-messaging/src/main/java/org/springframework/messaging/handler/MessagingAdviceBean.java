@@ -14,7 +14,6 @@ import org.springframework.lang.Nullable;
  * of such annotated components. A primary example of this is the need for "global"
  * annotated exception handler methods but the concept applies more generally.
  *
- * @author Rossen Stoyanchev
  * @since 4.2
  */
 public interface MessagingAdviceBean extends Ordered {
@@ -35,6 +34,7 @@ public interface MessagingAdviceBean extends Ordered {
 
 	/**
 	 * Whether this {@link MessagingAdviceBean} applies to the given bean type.
+	 *
 	 * @param beanType the type of the bean to check
 	 */
 	boolean isApplicableToBeanType(Class<?> beanType);

@@ -1,22 +1,14 @@
 package org.springframework.util.concurrent;
 
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-
 import org.junit.Test;
+
+import java.util.concurrent.*;
 
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
 
-/**
- * @author Mattias Severson
- * @author Juergen Hoeller
- */
 public class SettableListenableFutureTests {
 
 	private final SettableListenableFuture<String> settableListenableFuture = new SettableListenableFuture<>();
@@ -62,8 +54,7 @@ public class SettableListenableFutureTests {
 		try {
 			settableListenableFuture.get();
 			fail("Expected ExecutionException");
-		}
-		catch (ExecutionException ex) {
+		} catch (ExecutionException ex) {
 			assertThat(ex.getCause(), equalTo(exception));
 		}
 
@@ -80,8 +71,7 @@ public class SettableListenableFutureTests {
 		try {
 			completable.get();
 			fail("Expected ExecutionException");
-		}
-		catch (ExecutionException ex) {
+		} catch (ExecutionException ex) {
 			assertThat(ex.getCause(), equalTo(exception));
 		}
 
@@ -97,8 +87,7 @@ public class SettableListenableFutureTests {
 		try {
 			settableListenableFuture.get();
 			fail("Expected ExecutionException");
-		}
-		catch (ExecutionException ex) {
+		} catch (ExecutionException ex) {
 			assertThat(ex.getCause(), equalTo(exception));
 		}
 
@@ -115,8 +104,7 @@ public class SettableListenableFutureTests {
 		try {
 			completable.get();
 			fail("Expected ExecutionException");
-		}
-		catch (ExecutionException ex) {
+		} catch (ExecutionException ex) {
 			assertThat(ex.getCause(), equalTo(exception));
 		}
 
@@ -134,6 +122,7 @@ public class SettableListenableFutureTests {
 			public void onSuccess(String result) {
 				callbackHolder[0] = result;
 			}
+
 			@Override
 			public void onFailure(Throwable ex) {
 				fail("Expected onSuccess() to be called");
@@ -156,6 +145,7 @@ public class SettableListenableFutureTests {
 			public void onSuccess(String result) {
 				callbackHolder[0] = result;
 			}
+
 			@Override
 			public void onFailure(Throwable ex) {
 				fail("Expected onSuccess() to be called");
@@ -179,6 +169,7 @@ public class SettableListenableFutureTests {
 			public void onSuccess(String result) {
 				fail("Expected onFailure() to be called");
 			}
+
 			@Override
 			public void onFailure(Throwable ex) {
 				callbackHolder[0] = ex;
@@ -201,6 +192,7 @@ public class SettableListenableFutureTests {
 			public void onSuccess(String result) {
 				fail("Expected onFailure() to be called");
 			}
+
 			@Override
 			public void onFailure(Throwable ex) {
 				callbackHolder[0] = ex;
@@ -232,8 +224,7 @@ public class SettableListenableFutureTests {
 				try {
 					Thread.sleep(20L);
 					settableListenableFuture.set(string);
-				}
-				catch (InterruptedException ex) {
+				} catch (InterruptedException ex) {
 					throw new RuntimeException(ex);
 				}
 			}
@@ -250,8 +241,7 @@ public class SettableListenableFutureTests {
 		try {
 			settableListenableFuture.get(1L, TimeUnit.MILLISECONDS);
 			fail("Expected TimeoutException");
-		}
-		catch (TimeoutException ex) {
+		} catch (TimeoutException ex) {
 			// expected
 		}
 	}
@@ -266,8 +256,7 @@ public class SettableListenableFutureTests {
 				try {
 					Thread.sleep(20L);
 					settableListenableFuture.set(string);
-				}
-				catch (InterruptedException ex) {
+				} catch (InterruptedException ex) {
 					throw new RuntimeException(ex);
 				}
 			}
@@ -343,8 +332,7 @@ public class SettableListenableFutureTests {
 		try {
 			settableListenableFuture.get();
 			fail("Expected CancellationException");
-		}
-		catch (CancellationException ex) {
+		} catch (CancellationException ex) {
 			// expected
 		}
 
@@ -360,8 +348,7 @@ public class SettableListenableFutureTests {
 				try {
 					Thread.sleep(20L);
 					settableListenableFuture.cancel(true);
-				}
-				catch (InterruptedException ex) {
+				} catch (InterruptedException ex) {
 					throw new RuntimeException(ex);
 				}
 			}
@@ -370,8 +357,7 @@ public class SettableListenableFutureTests {
 		try {
 			settableListenableFuture.get(500L, TimeUnit.MILLISECONDS);
 			fail("Expected CancellationException");
-		}
-		catch (CancellationException ex) {
+		} catch (CancellationException ex) {
 			// expected
 		}
 

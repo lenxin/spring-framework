@@ -3,8 +3,7 @@
  * Contains a base class for RestTemplate usage.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.client.support;
+@NonNullFieldspackage org.springframework.web.client.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

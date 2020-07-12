@@ -3,8 +3,7 @@
  * reactive web applications.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.filter.reactive;
+@NonNullFieldspackage org.springframework.web.filter.reactive;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

@@ -7,8 +7,6 @@ import org.springframework.util.Assert;
 /**
  * A registration class for customizing the properties of {@link ThreadPoolTaskExecutor}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
  * @since 4.0
  */
 public class TaskExecutorRegistration {
@@ -41,6 +39,7 @@ public class TaskExecutorRegistration {
 	/**
 	 * Create a new {@code TaskExecutorRegistration} for a given
 	 * {@link ThreadPoolTaskExecutor}.
+	 *
 	 * @param taskExecutor the executor to use
 	 */
 	public TaskExecutorRegistration(ThreadPoolTaskExecutor taskExecutor) {

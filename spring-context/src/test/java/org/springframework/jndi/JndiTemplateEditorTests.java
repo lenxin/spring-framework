@@ -1,4 +1,3 @@
-
 package org.springframework.jndi;
 
 import org.junit.Test;

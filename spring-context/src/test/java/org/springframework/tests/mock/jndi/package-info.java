@@ -5,5 +5,4 @@
  * or standalone applications. If e.g. JDBC DataSources get bound to the
  * same JNDI names as within a Java EE container, both application code and
  * configuration can me reused without changes.
- */
-package org.springframework.tests.mock.jndi;
+ */package org.springframework.tests.mock.jndi;

@@ -1,10 +1,6 @@
 package org.springframework.messaging.handler.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * Annotation that indicates a method parameter should be bound to a template variable
@@ -13,12 +9,9 @@ import java.lang.annotation.Target;
  * <p>
  * A {@code @DestinationVariable} template variable is always required.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
- * @since 4.0
- *
  * @see org.springframework.messaging.handler.annotation.MessageMapping
  * @see org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler
+ * @since 4.0
  */
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)

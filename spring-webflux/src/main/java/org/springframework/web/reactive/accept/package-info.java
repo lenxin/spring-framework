@@ -4,8 +4,7 @@
  * given request.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.reactive.accept;
+@NonNullFieldspackage org.springframework.web.reactive.accept;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

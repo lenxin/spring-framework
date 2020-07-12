@@ -362,8 +362,7 @@ A couple of examples where property editing is used in Spring:
   `CommandController`.
 
 Spring has a number of built-in `PropertyEditor` implementations to make life easy.
-They are all located in the `org.springframework.beans.propertyeditors`
-package. Most, (but not all, as indicated in the following table) are, by default, registered by
+They are all located in the `org.springframework.beans.propertyeditors`package. Most, (but not all, as indicated in the following table) are, by default, registered by
 `BeanWrapperImpl`. Where the property editor is configurable in some fashion, you can
 still register your own variant to override the default one. The following table describes
 the various `PropertyEditor` implementations that Spring provides:
@@ -535,8 +534,7 @@ another class called `DependsOnExoticType`, which needs `ExoticType` set as a pr
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package example;
+----package example;
 
 	public class ExoticType {
 
@@ -574,8 +572,7 @@ The `PropertyEditor` implementation could look similar to the following:
 [source,java,indent=0]
 [subs="verbatim,quotes"]
 ----
-	// converts string representation to ExoticType object
-	package example;
+	// converts string representation to ExoticType objectpackage example;
 
 	public class ExoticTypeEditor extends PropertyEditorSupport {
 
@@ -622,8 +619,7 @@ The following example shows how to create your own `PropertyEditorRegistrar` imp
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo.editors.spring;
+----package com.foo.editors.spring;
 
 	public final class CustomPropertyEditorRegistrar implements PropertyEditorRegistrar {
 
@@ -713,8 +709,7 @@ interface definition shows:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.core.convert.converter;
+----package org.springframework.core.convert.converter;
 
 	public interface Converter<S, T> {
 
@@ -739,8 +734,7 @@ The following listing shows the `StringToInteger` class, which is a typical `Con
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.core.convert.support;
+----package org.springframework.core.convert.support;
 
 	final class StringToInteger implements Converter<String, Integer> {
 
@@ -761,8 +755,7 @@ When you need to centralize the conversion logic for an entire class hierarchy
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.core.convert.converter;
+----package org.springframework.core.convert.converter;
 
 	public interface ConverterFactory<S, R> {
 
@@ -778,8 +771,7 @@ Consider the `StringToEnumConverterFactory` as an example:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.core.convert.support;
+----package org.springframework.core.convert.support;
 
 	final class StringToEnumConverterFactory implements ConverterFactory<String, Enum> {
 
@@ -817,8 +809,7 @@ field signature. The following listing shows the interface definition of `Generi
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.core.convert.converter;
+----package org.springframework.core.convert.converter;
 
 	public interface GenericConverter {
 
@@ -883,8 +874,7 @@ runtime. Converters are often executed behind the following facade interface:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.core.convert;
+----package org.springframework.core.convert;
 
 	public interface ConversionService {
 
@@ -903,8 +893,7 @@ Most `ConversionService` implementations also implement `ConverterRegistry`, whi
 provides an SPI for registering converters. Internally, a `ConversionService`
 implementation delegates to its registered converters to carry out type conversion logic.
 
-A robust `ConversionService` implementation is provided in the `core.convert.support`
-package. `GenericConversionService` is the general-purpose implementation suitable for
+A robust `ConversionService` implementation is provided in the `core.convert.support`package. `GenericConversionService` is the general-purpose implementation suitable for
 use in most environments. `ConversionServiceFactory` provides a convenient factory for
 creating common `ConversionService` configurations.
 
@@ -1050,8 +1039,7 @@ following listing shows the `Formatter` interface definition:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.format;
+----package org.springframework.format;
 
 	public interface Formatter<T> extends Printer<T>, Parser<T> {
 	}
@@ -1099,8 +1087,7 @@ The following `DateFormatter` is an example `Formatter` implementation:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.format.datetime;
+----package org.springframework.format.datetime;
 
 	public final class DateFormatter implements Formatter<Date> {
 
@@ -1146,8 +1133,7 @@ listing shows the definition of the `AnnotationFormatterFactory` interface:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.format;
+----package org.springframework.format;
 
 	public interface AnnotationFormatterFactory<A extends Annotation> {
 
@@ -1225,8 +1211,7 @@ example shows:
 [[format-annotations-api]]
 ==== Format Annotation API
 
-A portable format annotation API exists in the `org.springframework.format.annotation`
-package. You can use `@NumberFormat` to format `Number` fields such as `Double` and
+A portable format annotation API exists in the `org.springframework.format.annotation`package. You can use `@NumberFormat` to format `Number` fields such as `Double` and
 `Long`, and `@DateTimeFormat` to format `java.util.Date`, `java.util.Calendar`, `Long`
 (for millisecond timestamps) as well as JSR-310 `java.time` and Joda-Time value types.
 
@@ -1259,8 +1244,7 @@ The following listing shows the `FormatterRegistry` SPI:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.format;
+----package org.springframework.format;
 
 	public interface FormatterRegistry extends ConverterRegistry {
 
@@ -1292,8 +1276,7 @@ FormatterRegistry. The following listing shows its interface definition:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.format;
+----package org.springframework.format;
 
 	public interface FormatterRegistrar {
 

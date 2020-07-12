@@ -1,7 +1,6 @@
 package org.springframework.aop.aspectj.autoproxy;
 
 /**
- * @author Adrian Colyer
  * @since 2.0
  */
 interface AnnotatedTestBean {

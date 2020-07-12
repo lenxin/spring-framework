@@ -133,8 +133,7 @@ The following example enumeration shows how easy injecting an enum value is:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package javax.persistence;
+----package javax.persistence;
 
 	public enum PersistenceContextType {
 
@@ -147,8 +146,7 @@ Now consider the following setter of type `PersistenceContextType` and the corre
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package example;
+----package example;
 
 	public class Client {
 
@@ -808,8 +806,7 @@ use the `NamespaceHandlerSupport` class:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.samples.xml;
+----package org.springframework.samples.xml;
 
 	import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 
@@ -845,8 +842,7 @@ the parser, we' have access to the XML element (and thus to its subelements, too
 we can parse our custom XML content, as you can see in the following example:
 
 [source,java,indent=0]
-----
-	package org.springframework.samples.xml;
+----package org.springframework.samples.xml;
 
 	import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 	import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;
@@ -1023,8 +1019,7 @@ The following listing shows the `Component` class:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	import java.util.ArrayList;
 	import java.util.List;
@@ -1059,8 +1054,7 @@ setter property for the `components` property. The following listing shows such 
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	import org.springframework.beans.factory.FactoryBean;
 
@@ -1133,8 +1127,7 @@ we then create a custom `NamespaceHandler`:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 
@@ -1152,8 +1145,7 @@ listing shows our custom `BeanDefinitionParser` implementation:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	import org.springframework.beans.factory.config.BeanDefinition;
 	import org.springframework.beans.factory.support.AbstractBeanDefinition;
@@ -1250,8 +1242,7 @@ JCache-initializing `BeanDefinition`. The following listing shows our `JCacheIni
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	public class JCacheInitializer {
 
@@ -1289,8 +1280,7 @@ Next, we need to create the associated `NamespaceHandler`, as follows:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 
@@ -1310,8 +1300,7 @@ The following listing shows our `BeanDefinitionDecorator` implementation:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	import org.springframework.beans.factory.config.BeanDefinitionHolder;
 	import org.springframework.beans.factory.support.AbstractBeanDefinition;

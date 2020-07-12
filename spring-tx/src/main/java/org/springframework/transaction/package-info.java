@@ -4,8 +4,7 @@
  * and transaction manager, definition, and status interfaces.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.transaction;
+@NonNullFieldspackage org.springframework.transaction;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

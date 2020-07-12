@@ -1,4 +1,3 @@
 /**
  * The core AOP Alliance advice marker.
- */
-package org.aopalliance.aop;
+ */package org.aopalliance.aop;

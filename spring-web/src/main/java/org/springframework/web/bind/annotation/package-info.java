@@ -3,8 +3,7 @@
  * as well as for binding request parameters to method arguments.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.bind.annotation;
+@NonNullFieldspackage org.springframework.web.bind.annotation;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

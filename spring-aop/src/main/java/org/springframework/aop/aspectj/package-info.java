@@ -9,8 +9,7 @@
  * functionality, with consistent semantics, with the proxy-based Spring AOP framework.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.aop.aspectj;
+@NonNullFieldspackage org.springframework.aop.aspectj;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

@@ -201,8 +201,7 @@ public class Jaxb2XmlDecoder extends AbstractDecoder<Object> {
 		if (JAXB_DEFAULT_ANNOTATION_VALUE.equals(localPart)) {
 			localPart = ClassUtils.getShortNameAsProperty(outputClass);
 		}
-		if (JAXB_DEFAULT_ANNOTATION_VALUE.equals(namespaceUri)) {
-			Package outputClassPackage = outputClass.getPackage();
+		if (JAXB_DEFAULT_ANNOTATION_VALUE.equals(namespaceUri)) {package outputClassPackage = outputClass.getPackage();
 			if (outputClassPackage != null && outputClassPackage.isAnnotationPresent(XmlSchema.class)) {
 				XmlSchema annotation = outputClassPackage.getAnnotation(XmlSchema.class);
 				namespaceUri = annotation.namespace();

@@ -3,8 +3,7 @@
  * with Spring's O/X Mapping support.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.oxm.jaxb;
+@NonNullFieldspackage org.springframework.oxm.jaxb;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

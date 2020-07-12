@@ -297,8 +297,7 @@ public class EnableMBeanExportConfigurationTests {
 		}
 
 		@Bean
-		public PackagePrivateTestBeanExtension testBean() {
-			PackagePrivateTestBeanExtension bean = new PackagePrivateTestBeanExtension();
+		public PackagePrivateTestBeanExtension testBean() {packagePrivateTestBeanExtension bean = new PackagePrivateTestBeanExtension();
 			bean.setName("TEST");
 			return bean;
 		}

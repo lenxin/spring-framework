@@ -1,19 +1,15 @@
 package org.springframework.util.xml;
 
+import org.junit.Test;
+
+import javax.xml.XMLConstants;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-import javax.xml.XMLConstants;
-
-import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
-/**
- * @author Arjen Poutsma
- * @author Leo Arnold
- */
 public class SimpleNamespaceContextTests {
 
 	private final String unboundPrefix = "unbound";

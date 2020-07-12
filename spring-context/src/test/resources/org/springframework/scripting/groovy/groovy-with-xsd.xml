@@ -25,8 +25,7 @@
 	</lang:groovy>
 
 	<lang:groovy id="calculator" depends-on="messenger" customizer-ref="groovyObjectCustomizer">
-		<lang:inline-script>
-			package org.springframework.scripting.groovy;
+		<lang:inline-script>package org.springframework.scripting.groovy;
 import org.springframework.scripting.Calculator
 class GroovyCalculator implements Calculator {
 	int add(int x, int y) {

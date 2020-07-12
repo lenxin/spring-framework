@@ -4,8 +4,7 @@
  * and a {@code HandlerMapping} that supports {@code RouterFunction}s.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.servlet.function.support;
+@NonNullFieldspackage org.springframework.web.servlet.function.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

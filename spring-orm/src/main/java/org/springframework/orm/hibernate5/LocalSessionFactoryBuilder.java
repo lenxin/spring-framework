@@ -339,8 +339,7 @@ public class LocalSessionFactoryBuilder extends Configuration {
 						else if (CONVERTER_TYPE_FILTER.match(reader, readerFactory)) {
 							converterClassNames.add(className);
 						}
-						else if (className.endsWith(PACKAGE_INFO_SUFFIX)) {
-							packageNames.add(className.substring(0, className.length() - PACKAGE_INFO_SUFFIX.length()));
+						else if (className.endsWith(PACKAGE_INFO_SUFFIX)) {packageNames.add(className.substring(0, className.length() - PACKAGE_INFO_SUFFIX.length()));
 						}
 					}
 				}

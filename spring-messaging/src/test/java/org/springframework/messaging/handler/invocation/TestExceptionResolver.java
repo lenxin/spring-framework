@@ -1,16 +1,14 @@
-
 package org.springframework.messaging.handler.invocation;
+
+import org.springframework.core.MethodIntrospector;
+import org.springframework.util.ReflectionUtils;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.core.MethodIntrospector;
-import org.springframework.util.ReflectionUtils;
-
 /**
  * Sub-class for {@link AbstractExceptionHandlerMethodResolver} for testing.
- * @author Rossen Stoyanchev
  */
 public class TestExceptionResolver extends AbstractExceptionHandlerMethodResolver {
 

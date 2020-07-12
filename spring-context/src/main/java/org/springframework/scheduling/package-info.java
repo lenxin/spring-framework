@@ -3,8 +3,7 @@
  * independent of any specific scheduling system.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.scheduling;
+@NonNullFieldspackage org.springframework.scheduling;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

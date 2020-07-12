@@ -90,8 +90,7 @@ public class CglibProxyTests extends AbstractAopProxyTests implements Serializab
 	}
 
 	@Test
-	public void testPackageMethodInvocation() {
-		PackageMethodTestBean bean = new PackageMethodTestBean();
+	public void testPackageMethodInvocation() {packageMethodTestBean bean = new PackageMethodTestBean();
 		bean.value = "foo";
 		mockTargetSource.setTarget(bean);
 

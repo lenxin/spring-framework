@@ -1,5 +1,4 @@
-
- package org.springframework.expression.spel.testresources;
+package org.springframework.expression.spel.testresources;
 
 /**
  * Hold the various kinds of primitive array for access through the test evaluation context.

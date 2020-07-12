@@ -1,12 +1,5 @@
 package org.springframework.messaging.rsocket;
 
-import java.nio.charset.StandardCharsets;
-import java.time.Duration;
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.function.Function;
-
 import io.reactivex.Completable;
 import io.reactivex.Observable;
 import io.reactivex.Single;
@@ -15,10 +8,6 @@ import io.rsocket.Payload;
 import org.junit.Before;
 import org.junit.Test;
 import org.reactivestreams.Publisher;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.test.StepVerifier;
-
 import org.springframework.core.codec.CharSequenceEncoder;
 import org.springframework.core.codec.StringDecoder;
 import org.springframework.core.io.buffer.DefaultDataBufferFactory;
@@ -26,14 +15,22 @@ import org.springframework.lang.Nullable;
 import org.springframework.messaging.rsocket.RSocketRequester.RequestSpec;
 import org.springframework.messaging.rsocket.RSocketRequester.ResponseSpec;
 import org.springframework.util.MimeTypeUtils;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
 
-import static java.util.concurrent.TimeUnit.*;
+import java.nio.charset.StandardCharsets;
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.Function;
+
+import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static org.junit.Assert.*;
 
 /**
  * Unit tests for {@link DefaultRSocketRequester}.
- *
- * @author Rossen Stoyanchev
  */
 public class DefaultRSocketRequesterTests {
 
@@ -84,7 +81,7 @@ public class DefaultRSocketRequesterTests {
 
 	@Test
 	public void multiPayload() {
-		String[] values = new String[] {"bodyA", "bodyB", "bodyC"};
+		String[] values = new String[]{"bodyA", "bodyB", "bodyC"};
 		Flux<String> stringFlux = Flux.fromArray(values).delayElements(MILLIS_10);
 
 		// data(Object)
@@ -106,13 +103,12 @@ public class DefaultRSocketRequesterTests {
 		List<Payload> payloads = this.rsocket.getSavedPayloadFlux().collectList().block(Duration.ofSeconds(5));
 		assertNotNull(payloads);
 
-		if (Arrays.equals(new String[] {""}, expectedValues)) {
+		if (Arrays.equals(new String[]{""}, expectedValues)) {
 			assertEquals(1, payloads.size());
 			assertEquals("toA", payloads.get(0).getMetadataUtf8());
 			assertEquals("", payloads.get(0).getDataUtf8());
-		}
-		else {
-			assertArrayEquals(new String[] {"toA", "", ""},
+		} else {
+			assertArrayEquals(new String[]{"toA", "", ""},
 					payloads.stream().map(Payload::getMetadataUtf8).toArray(String[]::new));
 			assertArrayEquals(expectedValues,
 					payloads.stream().map(Payload::getDataUtf8).toArray(String[]::new));
@@ -152,7 +148,7 @@ public class DefaultRSocketRequesterTests {
 
 	@Test
 	public void retrieveFlux() {
-		String[] values = new String[] {"bodyA", "bodyB", "bodyC"};
+		String[] values = new String[]{"bodyA", "bodyB", "bodyC"};
 		this.rsocket.setPayloadFluxToReturn(Flux.fromArray(values).delayElements(MILLIS_10).map(this::toPayload));
 		Flux<String> response = this.requester.route("").data("").retrieveFlux(String.class);
 
@@ -177,8 +173,7 @@ public class DefaultRSocketRequesterTests {
 		try {
 			this.requester.route("").data(Flux.just("a", "b")).retrieveMono(String.class);
 			fail();
-		}
-		catch (IllegalArgumentException ex) {
+		} catch (IllegalArgumentException ex) {
 			assertEquals("No RSocket interaction model for Flux request to Mono response.", ex.getMessage());
 		}
 	}
@@ -193,9 +188,12 @@ public class DefaultRSocketRequesterTests {
 		private Mono<Payload> payloadMonoToReturn = Mono.empty();
 		private Flux<Payload> payloadFluxToReturn = Flux.empty();
 
-		@Nullable private volatile String savedMethodName;
-		@Nullable private volatile Payload savedPayload;
-		@Nullable private volatile Flux<Payload> savedPayloadFlux;
+		@Nullable
+		private volatile String savedMethodName;
+		@Nullable
+		private volatile Payload savedPayload;
+		@Nullable
+		private volatile Flux<Payload> savedPayloadFlux;
 
 		void setPayloadMonoToReturn(Mono<Payload> payloadMonoToReturn) {
 			this.payloadMonoToReturn = payloadMonoToReturn;

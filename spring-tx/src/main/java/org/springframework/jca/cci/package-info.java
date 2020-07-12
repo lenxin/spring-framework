@@ -5,8 +5,7 @@
  * levels of data access abstraction.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.jca.cci;
+@NonNullFieldspackage org.springframework.jca.cci;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

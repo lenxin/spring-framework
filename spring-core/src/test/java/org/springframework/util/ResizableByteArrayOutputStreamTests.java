@@ -5,10 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * @author Brian Clozel
- * @author Juergen Hoeller
- */
 public class ResizableByteArrayOutputStreamTests {
 
 	private static final int INITIAL_CAPACITY = 256;

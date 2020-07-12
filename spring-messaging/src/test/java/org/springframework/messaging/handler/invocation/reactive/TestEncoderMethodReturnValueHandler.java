@@ -1,10 +1,4 @@
-
 package org.springframework.messaging.handler.invocation.reactive;
-
-import java.util.List;
-
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.core.ReactiveAdapterRegistry;
@@ -12,14 +6,16 @@ import org.springframework.core.codec.Encoder;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.core.io.buffer.support.DataBufferTestUtils;
 import org.springframework.messaging.Message;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
-import static java.nio.charset.StandardCharsets.*;
+import java.util.List;
+
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 /**
  * Implementation of {@link AbstractEncoderMethodReturnValueHandler} for tests.
  * "Handles" by storing encoded return values.
- *
- * @author Rossen Stoyanchev
  */
 public class TestEncoderMethodReturnValueHandler extends AbstractEncoderMethodReturnValueHandler {
 

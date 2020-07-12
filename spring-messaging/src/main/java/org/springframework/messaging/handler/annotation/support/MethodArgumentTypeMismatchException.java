@@ -7,7 +7,6 @@ import org.springframework.messaging.handler.invocation.MethodArgumentResolution
 /**
  * Exception that indicates that a method argument has not the expected type.
  *
- * @author Stephane Nicoll
  * @since 4.0.3
  */
 @SuppressWarnings("serial")

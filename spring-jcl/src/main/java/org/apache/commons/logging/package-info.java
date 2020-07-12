@@ -21,5 +21,4 @@
  * <p>Note that this Commons Logging bridge is only meant to be used for
  * framework logging purposes, both in the core framework and in extensions.
  * For applications, prefer direct use of Log4J/SLF4J or {@code java.util.logging}.
- */
-package org.apache.commons.logging;
+ */package org.apache.commons.logging;

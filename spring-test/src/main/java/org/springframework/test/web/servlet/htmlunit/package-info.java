@@ -4,8 +4,7 @@
  * @see org.springframework.test.web.servlet.MockMvc
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.test.web.servlet.htmlunit;
+@NonNullFieldspackage org.springframework.test.web.servlet.htmlunit;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

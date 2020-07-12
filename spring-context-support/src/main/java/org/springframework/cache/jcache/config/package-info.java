@@ -7,8 +7,7 @@
  * the exception cache resolver to use, see {@code JCacheConfigurer}.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.cache.jcache.config;
+@NonNullFieldspackage org.springframework.cache.jcache.config;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

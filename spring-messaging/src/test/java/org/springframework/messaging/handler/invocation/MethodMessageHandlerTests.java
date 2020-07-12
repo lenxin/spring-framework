@@ -1,19 +1,8 @@
 package org.springframework.messaging.handler.invocation;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
-
 import org.springframework.context.support.StaticApplicationContext;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.converter.SimpleMessageConverter;
@@ -25,14 +14,14 @@ import org.springframework.util.AntPathMatcher;
 import org.springframework.util.Assert;
 import org.springframework.util.PathMatcher;
 
+import java.lang.reflect.Method;
+import java.util.*;
+
 import static org.junit.Assert.*;
 
 /**
  * Test fixture for
  * {@link org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler}.
- *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
  */
 public class MethodMessageHandlerTests {
 
@@ -158,9 +147,11 @@ public class MethodMessageHandlerTests {
 	@SuppressWarnings("unused")
 	private static class DuplicateMappingsController {
 
-		public void handlerFoo() { }
+		public void handlerFoo() {
+		}
 
-		public void handlerFoo(String arg) { }
+		public void handlerFoo(String arg) {
+		}
 	}
 
 

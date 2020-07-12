@@ -1,9 +1,9 @@
 package org.springframework.messaging.handler;
 
+import org.springframework.lang.Nullable;
+
 import java.util.Collection;
 import java.util.StringJoiner;
-
-import org.springframework.lang.Nullable;
 
 /**
  * Base class for {@code MessageCondition's} that pre-declares abstract methods
@@ -11,9 +11,8 @@ import org.springframework.lang.Nullable;
  * implementations of {@link #equals(Object)}, {@link #hashCode()}, and
  * {@link #toString()}.
  *
- * @author Rossen Stoyanchev
- * @since 4.0
  * @param <T> the kind of condition that this condition can be combined with or compared to
+ * @since 4.0
  */
 public abstract class AbstractMessageCondition<T extends AbstractMessageCondition<T>> implements MessageCondition<T> {
 

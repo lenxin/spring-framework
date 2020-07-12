@@ -1,7 +1,6 @@
 /**
  *
- */
-package org.springframework.tests.aop.advice;
+ */package org.springframework.tests.aop.advice;
 
 import java.io.IOException;
 import java.lang.reflect.Method;

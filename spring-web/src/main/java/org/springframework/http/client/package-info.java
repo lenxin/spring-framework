@@ -4,8 +4,7 @@
  * as well as a basic implementation of these interfaces.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.http.client;
+@NonNullFieldspackage org.springframework.http.client;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

@@ -1,9 +1,5 @@
 package org.springframework.messaging.rsocket;
 
-import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import io.rsocket.AbstractRSocket;
 import io.rsocket.Payload;
 import io.rsocket.RSocket;
@@ -11,12 +7,14 @@ import io.rsocket.plugins.RSocketInterceptor;
 import io.rsocket.util.RSocketProxy;
 import reactor.core.publisher.Mono;
 
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Intercept received RSockets and count successfully completed requests seen
  * on the server side. This is useful for verifying fire-and-forget
  * interactions.
- *
- * @author Rossen Stoyanchev
  */
 class FireAndForgetCountingInterceptor extends AbstractRSocket implements RSocketInterceptor {
 

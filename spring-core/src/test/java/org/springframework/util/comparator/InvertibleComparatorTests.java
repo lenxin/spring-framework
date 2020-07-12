@@ -1,18 +1,14 @@
 package org.springframework.util.comparator;
 
-import java.util.Comparator;
-
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import java.util.Comparator;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 /**
  * Tests for {@link InvertibleComparator}.
- *
- * @author Keith Donald
- * @author Chris Beams
- * @author Phillip Webb
  */
 @Deprecated
 public class InvertibleComparatorTests {

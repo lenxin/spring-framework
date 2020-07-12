@@ -333,8 +333,7 @@ public class GenericCallMetaDataProvider implements CallMetaDataProvider {
 					String packageName = metaDataProcedureName.substring(0, metaDataProcedureName.indexOf('.'));
 					throw new InvalidDataAccessApiUsageException(
 							"Unable to determine the correct call signature for '" + metaDataProcedureName +
-							"' - package name should be specified separately using '.withCatalogName(\"" +
-							packageName + "\")'");
+							"' - package name should be specified separately using '.withCatalogName(\"" +packageName + "\")'");
 				}
 				else if ("Oracle".equals(databaseMetaData.getDatabaseProductName())) {
 					if (logger.isDebugEnabled()) {

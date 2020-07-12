@@ -1,16 +1,14 @@
 package org.springframework.util.comparator;
 
-import java.util.Comparator;
-
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import java.util.Comparator;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 /**
  * Tests for {@link InstanceComparator}.
- *
- * @author Phillip Webb
  */
 public class InstanceComparatorTests {
 

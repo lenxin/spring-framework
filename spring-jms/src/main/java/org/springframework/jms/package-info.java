@@ -3,8 +3,7 @@
  * allowing for Spring-style JMS access.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.jms;
+@NonNullFieldspackage org.springframework.jms;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

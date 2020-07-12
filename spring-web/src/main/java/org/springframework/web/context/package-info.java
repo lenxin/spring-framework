@@ -3,8 +3,7 @@
  * and the ContextLoaderListener that bootstraps a root web application context.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.context;
+@NonNullFieldspackage org.springframework.web.context;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

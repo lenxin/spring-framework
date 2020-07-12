@@ -1,4 +1,3 @@
-
 package org.springframework.web.socket.messaging;
 
 import static org.hamcrest.Matchers.*;

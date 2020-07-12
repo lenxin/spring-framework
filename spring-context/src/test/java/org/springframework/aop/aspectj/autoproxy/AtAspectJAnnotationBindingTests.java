@@ -5,18 +5,12 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.junit.Before;
 import org.junit.Test;
-
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.Resource;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-/**
- * @author Adrian Colyer
- * @author Juergen Hoeller
- * @author Chris Beams
- */
 public class AtAspectJAnnotationBindingTests {
 
 	private AnnotatedTestBean testBean;
@@ -55,7 +49,7 @@ class AtAspectJAnnotationBindingTestAspect {
 
 	@Around("execution(* *(..)) && @annotation(testAnn)")
 	public Object doWithAnnotation(ProceedingJoinPoint pjp, TestAnnotation testAnn)
-	throws Throwable {
+			throws Throwable {
 		String annValue = testAnn.value();
 		Object result = pjp.proceed();
 		return (result instanceof String ? annValue + " " + result : result);

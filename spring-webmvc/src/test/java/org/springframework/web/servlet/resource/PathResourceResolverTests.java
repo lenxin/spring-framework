@@ -1,4 +1,3 @@
-
 package org.springframework.web.servlet.resource;
 
 import java.io.IOException;

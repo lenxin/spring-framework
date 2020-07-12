@@ -3,8 +3,7 @@
  * of SockJS message frames.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.socket.sockjs.frame;
+@NonNullFieldspackage org.springframework.web.socket.sockjs.frame;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

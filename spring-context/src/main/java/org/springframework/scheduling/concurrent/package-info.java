@@ -6,8 +6,7 @@
  * interfaces as well as the Spring {@code TaskExecutor} mechanism.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.scheduling.concurrent;
+@NonNullFieldspackage org.springframework.scheduling.concurrent;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

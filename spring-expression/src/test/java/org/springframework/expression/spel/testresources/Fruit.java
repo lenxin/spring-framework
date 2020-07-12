@@ -1,7 +1,6 @@
 /**
  *
- */
-package org.springframework.expression.spel.testresources;
+ */package org.springframework.expression.spel.testresources;
 
 import java.awt.Color;
 

@@ -11,8 +11,7 @@
  * work with the returned classic template, or use a JdbcTemplate instance directly.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.jdbc.core.namedparam;
+@NonNullFieldspackage org.springframework.jdbc.core.namedparam;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

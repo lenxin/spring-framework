@@ -1,29 +1,25 @@
 package org.springframework.messaging.handler.invocation.reactive;
 
+import org.junit.Test;
+import org.springframework.core.MethodParameter;
+import org.springframework.lang.Nullable;
+import org.springframework.messaging.Message;
+import org.springframework.messaging.handler.invocation.MethodArgumentResolutionException;
+import org.springframework.messaging.handler.invocation.ResolvableMethod;
+import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
+
 import java.lang.reflect.Method;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.junit.Test;
-import reactor.core.publisher.Mono;
-import reactor.test.StepVerifier;
-
-import org.springframework.core.MethodParameter;
-import org.springframework.lang.Nullable;
-import org.springframework.messaging.Message;
-import org.springframework.messaging.handler.invocation.MethodArgumentResolutionException;
-import org.springframework.messaging.handler.invocation.ResolvableMethod;
-
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
  * Unit tests for {@link InvocableHandlerMethod}.
- *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
  */
 public class InvocableHandlerMethodTests {
 
@@ -64,8 +60,7 @@ public class InvocableHandlerMethodTests {
 			Method method = ResolvableMethod.on(Handler.class).mockCall(c -> c.handle(0, "")).method();
 			invokeAndBlock(new Handler(), method);
 			fail("Expected exception");
-		}
-		catch (MethodArgumentResolutionException ex) {
+		} catch (MethodArgumentResolutionException ex) {
 			assertNotNull(ex.getMessage());
 			assertTrue(ex.getMessage().contains("Could not resolve parameter [0]"));
 		}
@@ -98,8 +93,7 @@ public class InvocableHandlerMethodTests {
 			Method method = ResolvableMethod.on(Handler.class).mockCall(c -> c.handle(0, "")).method();
 			invokeAndBlock(new Handler(), method);
 			fail("Expected exception");
-		}
-		catch (IllegalArgumentException ex) {
+		} catch (IllegalArgumentException ex) {
 			// expected -  allow HandlerMethodArgumentResolver exceptions to propagate
 		}
 	}
@@ -112,8 +106,7 @@ public class InvocableHandlerMethodTests {
 			Method method = ResolvableMethod.on(Handler.class).mockCall(c -> c.handle(0, "")).method();
 			invokeAndBlock(new Handler(), method);
 			fail("Expected exception");
-		}
-		catch (IllegalStateException ex) {
+		} catch (IllegalStateException ex) {
 			assertNotNull("Exception not wrapped", ex.getCause());
 			assertTrue(ex.getCause() instanceof IllegalArgumentException);
 			assertTrue(ex.getMessage().contains("Endpoint ["));
@@ -171,7 +164,6 @@ public class InvocableHandlerMethodTests {
 	private StubArgumentResolver getStubResolver(int index) {
 		return (StubArgumentResolver) this.resolvers.get(index);
 	}
-
 
 
 	@SuppressWarnings({"unused", "UnusedReturnValue", "SameParameterValue"})

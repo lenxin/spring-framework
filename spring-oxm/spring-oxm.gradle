@@ -32,8 +32,7 @@ task genJaxb {
 			mkdir(dir: sourcesDir)
 			mkdir(dir: classesDir)
 
-			xjc(destdir: sourcesDir, schema: flightSchema,
-					package: "org.springframework.oxm.jaxb.test") {
+			xjc(destdir: sourcesDir, schema: flightSchema,package: "org.springframework.oxm.jaxb.test") {
 				produces(dir: sourcesDir, includes: "**/*.java")
 			}
 

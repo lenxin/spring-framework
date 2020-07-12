@@ -3,8 +3,7 @@
  * Contains abstract base classes for {@code BeanFactory} implementations.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.beans.factory.support;
+@NonNullFieldspackage org.springframework.beans.factory.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

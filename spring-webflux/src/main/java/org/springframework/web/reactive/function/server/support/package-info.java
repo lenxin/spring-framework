@@ -5,8 +5,7 @@
  * a {@code ServerRequest} wrapper to adapt a request.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.reactive.function.server.support;
+@NonNullFieldspackage org.springframework.web.reactive.function.server.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

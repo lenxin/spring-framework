@@ -7,8 +7,7 @@
  * used for matching purposes at request time.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.util.pattern;
+@NonNullFieldspackage org.springframework.web.util.pattern;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

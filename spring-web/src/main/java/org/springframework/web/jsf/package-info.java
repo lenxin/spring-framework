@@ -6,8 +6,7 @@
  * from JSF EL expressions, for example in property values of JSF-managed beans.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.jsf;
+@NonNullFieldspackage org.springframework.web.jsf;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

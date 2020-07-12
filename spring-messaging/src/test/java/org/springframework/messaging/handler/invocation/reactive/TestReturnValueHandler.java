@@ -1,4 +1,3 @@
-
 package org.springframework.messaging.handler.invocation.reactive;
 
 import org.reactivestreams.Publisher;
@@ -10,7 +9,6 @@ import org.springframework.messaging.Message;
 
 /**
  * Return value handler that simply stores the last return value.
- * @author Rossen Stoyanchev
  */
 public class TestReturnValueHandler implements HandlerMethodReturnValueHandler {
 

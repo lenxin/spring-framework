@@ -1,21 +1,8 @@
 package org.springframework.messaging.handler.invocation.reactive;
 
-import java.lang.reflect.Method;
-import java.time.Duration;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-
 import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.reactivestreams.Publisher;
-import reactor.core.publisher.Mono;
-import reactor.test.StepVerifier;
-
 import org.springframework.context.support.StaticApplicationContext;
 import org.springframework.lang.Nullable;
 import org.springframework.messaging.Message;
@@ -28,12 +15,19 @@ import org.springframework.util.AntPathMatcher;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.PathMatcher;
+import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
+
+import java.lang.reflect.Method;
+import java.time.Duration;
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 import static org.junit.Assert.*;
 
 /**
  * Unit tests for {@link AbstractMethodMessageHandler}.
- * @author Rossen Stoyanchev
  */
 public class MethodMessageHandlerTests {
 
@@ -112,7 +106,8 @@ public class MethodMessageHandlerTests {
 
 
 	private TestMethodMessageHandler initMethodMessageHandler(Class<?>... handlerTypes) {
-		return initMethodMessageHandler(handler -> {}, handlerTypes);
+		return initMethodMessageHandler(handler -> {
+		}, handlerTypes);
 	}
 
 	private TestMethodMessageHandler initMethodMessageHandler(
@@ -168,9 +163,11 @@ public class MethodMessageHandlerTests {
 	@SuppressWarnings("unused")
 	private static class DuplicateMappingsController {
 
-		void handleMessageFoo() { }
+		void handleMessageFoo() {
+		}
 
-		void handleMessageFoo(String foo) { }
+		void handleMessageFoo(String foo) {
+		}
 	}
 
 

@@ -11,8 +11,6 @@ import org.springframework.validation.ObjectError;
  * Exception to be thrown when a method argument fails validation perhaps as a
  * result of {@code @Valid} style validation, or perhaps because it is required.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
  * @since 4.0.1
  */
 @SuppressWarnings("serial")

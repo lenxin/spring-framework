@@ -12,8 +12,7 @@
  * even without JTA if an application uses only a single database.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.transaction.interceptor;
+@NonNullFieldspackage org.springframework.transaction.interceptor;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

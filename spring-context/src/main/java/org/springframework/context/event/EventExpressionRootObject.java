@@ -5,7 +5,6 @@ import org.springframework.context.ApplicationEvent;
 /**
  * Root object used during event listener expression evaluation.
  *
- * @author Stephane Nicoll
  * @since 4.2
  */
 class EventExpressionRootObject {

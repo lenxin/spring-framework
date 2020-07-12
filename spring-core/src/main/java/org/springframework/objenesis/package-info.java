@@ -11,5 +11,4 @@
  * and javadocs are not available here. See the original
  * <a href="http://objenesis.org/tutorial.html">Objenesis docs</a>
  * for details when working with these classes.
- */
-package org.springframework.objenesis;
+ */package org.springframework.objenesis;

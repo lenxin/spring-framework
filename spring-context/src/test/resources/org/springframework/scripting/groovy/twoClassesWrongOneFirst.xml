@@ -6,8 +6,7 @@
 
 	<bean id="messenger" class="org.springframework.scripting.groovy.GroovyScriptFactory">
 		<constructor-arg>
-			<value>inline:
-	package org.springframework.scripting.groovy;
+			<value>inline:package org.springframework.scripting.groovy;
 
 	import org.springframework.scripting.Messenger;
 			

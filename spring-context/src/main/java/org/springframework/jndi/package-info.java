@@ -8,8 +8,7 @@
  * by Rod Johnson (Wrox, 2002).
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.jndi;
+@NonNullFieldspackage org.springframework.jndi;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

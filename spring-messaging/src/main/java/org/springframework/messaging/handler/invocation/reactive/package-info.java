@@ -3,8 +3,7 @@
  * and reactive contracts.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.messaging.handler.invocation.reactive;
+@NonNullFieldspackage org.springframework.messaging.handler.invocation.reactive;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

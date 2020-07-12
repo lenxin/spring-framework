@@ -4,8 +4,7 @@
  * implementations from {@code org.springframework.http.codec.json} and co.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.http.codec.support;
+@NonNullFieldspackage org.springframework.http.codec.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

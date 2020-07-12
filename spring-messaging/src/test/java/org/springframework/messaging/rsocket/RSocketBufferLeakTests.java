@@ -1,11 +1,5 @@
 package org.springframework.messaging.rsocket;
 
-import java.time.Duration;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
-
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.buffer.PooledByteBufAllocator;
@@ -18,17 +12,8 @@ import io.rsocket.frame.decoder.PayloadDecoder;
 import io.rsocket.plugins.RSocketInterceptor;
 import io.rsocket.transport.netty.server.CloseableChannel;
 import io.rsocket.transport.netty.server.TcpServerTransport;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.reactivestreams.Publisher;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.core.publisher.ReplayProcessor;
-import reactor.test.StepVerifier;
-
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -44,13 +29,21 @@ import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ObjectUtils;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.ReplayProcessor;
+import reactor.test.StepVerifier;
+
+import java.time.Duration;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import static org.junit.Assert.*;
 
 /**
  * Tests for scenarios that could lead to Payload and/or DataBuffer leaks.
- *
- * @author Rossen Stoyanchev
  */
 public class RSocketBufferLeakTests {
 
@@ -184,7 +177,7 @@ public class RSocketBufferLeakTests {
 
 		@MessageMapping("request-stream")
 		Flux<String> stream(String payload) {
-			return Flux.range(1,100).delayElements(Duration.ofMillis(10)).map(idx -> payload + "-" + idx);
+			return Flux.range(1, 100).delayElements(Duration.ofMillis(10)).map(idx -> payload + "-" + idx);
 		}
 	}
 
@@ -239,8 +232,7 @@ public class RSocketBufferLeakTests {
 						}
 					});
 					break;
-				}
-				catch (AssertionError ex) {
+				} catch (AssertionError ex) {
 					if (Instant.now().isAfter(start.plus(duration))) {
 						throw ex;
 					}
@@ -334,16 +326,14 @@ public class RSocketBufferLeakTests {
 					int count = info.getReferenceCount();
 					assertTrue("Leaked payload (refCnt=" + count + "): " + info, count == 0);
 					break;
-				}
-				catch (AssertionError ex) {
+				} catch (AssertionError ex) {
 					if (Instant.now().isAfter(start.plus(Duration.ofSeconds(5)))) {
 						throw ex;
 					}
 				}
 				try {
 					Thread.sleep(50);
-				}
-				catch (InterruptedException ex) {
+				} catch (InterruptedException ex) {
 					// ignore
 				}
 			}

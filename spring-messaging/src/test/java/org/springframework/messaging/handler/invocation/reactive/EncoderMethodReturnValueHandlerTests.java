@@ -1,27 +1,23 @@
-
 package org.springframework.messaging.handler.invocation.reactive;
-
-import java.util.Collections;
 
 import io.reactivex.Completable;
 import org.junit.Test;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.test.StepVerifier;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.core.ReactiveAdapterRegistry;
 import org.springframework.core.codec.CharSequenceEncoder;
 import org.springframework.lang.Nullable;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.GenericMessage;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
 
-import static org.springframework.messaging.handler.invocation.ResolvableMethod.*;
+import java.util.Collections;
+
+import static org.springframework.messaging.handler.invocation.ResolvableMethod.on;
 
 /**
  * Unit tests for {@link AbstractEncoderMethodReturnValueHandler}.
- *
- * @author Rossen Stoyanchev
  */
 public class EncoderMethodReturnValueHandlerTests {
 
@@ -93,19 +89,32 @@ public class EncoderMethodReturnValueHandlerTests {
 	@SuppressWarnings({"unused", "ConstantConditions"})
 	private static class TestController {
 
-		String string() { return null; }
+		String string() {
+			return null;
+		}
 
-		Object object() { return null; }
+		Object object() {
+			return null;
+		}
 
-		Flux<String> fluxString() { return null; }
+		Flux<String> fluxString() {
+			return null;
+		}
 
-		Flux<Object> fluxObject() { return null; }
+		Flux<Object> fluxObject() {
+			return null;
+		}
 
-		void voidReturn() { }
+		void voidReturn() {
+		}
 
-		Mono<Void> monoVoid() { return null; }
+		Mono<Void> monoVoid() {
+			return null;
+		}
 
-		Completable completable() { return null; }
+		Completable completable() {
+			return null;
+		}
 	}
 
 }

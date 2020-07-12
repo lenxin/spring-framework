@@ -8,8 +8,7 @@
  * <a href="http://hessian.caucho.com">Hessian website</a>
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.remoting.caucho;
+@NonNullFieldspackage org.springframework.remoting.caucho;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

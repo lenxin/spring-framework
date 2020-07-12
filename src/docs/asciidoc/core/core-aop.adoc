@@ -287,8 +287,7 @@ which is annotated with the `org.aspectj.lang.annotation.Aspect` annotation;
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.xyz;
+----package org.xyz;
 	import org.aspectj.lang.annotation.Aspect;
 
 	@Aspect
@@ -488,8 +487,7 @@ this purpose. Such an aspect typically resembles the following example:
 
 [source,java,indent=0]
 [subs="verbatim"]
-----
-	package com.xyz.someapp;
+----package com.xyz.someapp;
 
 	import org.aspectj.lang.annotation.Aspect;
 	import org.aspectj.lang.annotation.Pointcut;
@@ -1967,8 +1965,7 @@ some around advice used in conjunction with a number of strongly typed parameter
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package x.y.service;
+----package x.y.service;
 
 	public interface PersonService {
 
@@ -1990,8 +1987,7 @@ proceed with the method call. The presence of this parameter is an indication th
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package x.y;
+----package x.y;
 
 	import org.aspectj.lang.ProceedingJoinPoint;
 	import org.springframework.util.StopWatch;
@@ -2686,8 +2682,7 @@ following example shows:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.xyz.myapp.domain;
+----package com.xyz.myapp.domain;
 
 	import org.springframework.beans.factory.annotation.Configurable;
 
@@ -2717,8 +2712,7 @@ can do so directly in the annotation, as the following example shows:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.xyz.myapp.domain;
+----package com.xyz.myapp.domain;
 
 	import org.springframework.beans.factory.annotation.Configurable;
 
@@ -3040,8 +3034,7 @@ It is a time-based profiler that uses the @AspectJ-style of aspect declaration:
 
 [source,java,indent=0]
 [subs="verbatim"]
-----
-	package foo;
+----package foo;
 
 	import org.aspectj.lang.ProceedingJoinPoint;
 	import org.aspectj.lang.annotation.Aspect;
@@ -3130,8 +3123,7 @@ driver class with a `main(..)` method to demonstrate the LTW in action:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package foo;
+----package foo;
 
 	import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -3191,8 +3183,7 @@ result:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package foo;
+----package foo;
 
 	import org.springframework.context.support.ClassPathXmlApplicationContext;
 

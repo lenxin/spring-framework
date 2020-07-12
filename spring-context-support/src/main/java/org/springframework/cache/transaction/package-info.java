@@ -3,8 +3,7 @@
  * Provides synchronization of put operations with Spring-managed transactions.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.cache.transaction;
+@NonNullFieldspackage org.springframework.cache.transaction;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

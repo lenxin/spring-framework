@@ -1,7 +1,6 @@
 package org.springframework.orm.jpa.persistenceunit;
 
 import org.junit.Test;
-
 import org.springframework.context.index.CandidateComponentsTestClassLoader;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.DefaultResourceLoader;
@@ -12,8 +11,6 @@ import static org.junit.Assert.*;
 
 /**
  * Tests for {@link DefaultPersistenceUnitManager}.
- *
- * @author Stephane Nicoll
  */
 public class DefaultPersistenceUnitManagerTests {
 

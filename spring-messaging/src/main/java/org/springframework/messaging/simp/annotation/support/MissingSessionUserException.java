@@ -6,7 +6,6 @@ import org.springframework.messaging.MessagingException;
 /**
  * {@link MessagingException} thrown when a session is missing.
  *
- * @author Rossen Stoyanchev
  * @since 4.0
  */
 @SuppressWarnings("serial")

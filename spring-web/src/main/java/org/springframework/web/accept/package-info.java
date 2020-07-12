@@ -13,8 +13,7 @@
  * ore more of the above strategies in a specific order.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.accept;
+@NonNullFieldspackage org.springframework.web.accept;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

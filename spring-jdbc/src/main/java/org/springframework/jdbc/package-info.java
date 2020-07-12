@@ -18,8 +18,7 @@
  * by Rod Johnson (Wrox, 2002).
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.jdbc;
+@NonNullFieldspackage org.springframework.jdbc;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

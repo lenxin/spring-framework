@@ -1,14 +1,5 @@
 package org.springframework.util.xml;
 
-import java.io.StringReader;
-import java.io.StringWriter;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.transform.Result;
-import javax.xml.transform.dom.DOMResult;
-import javax.xml.transform.stream.StreamResult;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.w3c.dom.Document;
@@ -17,13 +8,18 @@ import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 import org.xmlunit.util.Predicate;
 
-import static org.junit.Assert.*;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.transform.Result;
+import javax.xml.transform.dom.DOMResult;
+import javax.xml.transform.stream.StreamResult;
+import java.io.StringReader;
+import java.io.StringWriter;
+
+import static org.junit.Assert.assertThat;
 import static org.xmlunit.matchers.CompareMatcher.isSimilarTo;
 
-/**
- * @author Arjen Poutsma
- * @author Sam Brannen
- */
 public abstract class AbstractStaxHandlerTestCase {
 
 	private static final String COMPLEX_XML =
@@ -34,8 +30,8 @@ public abstract class AbstractStaxHandlerTestCase {
 					"</root>";
 
 	private static final String SIMPLE_XML = "<?xml version='1.0' encoding='UTF-8'?>" +
-					"<?pi content?><root xmlns='namespace'><prefix:child xmlns:prefix='namespace2' prefix:attr='value'>content</prefix:child>" +
-					"</root>";
+			"<?pi content?><root xmlns='namespace'><prefix:child xmlns:prefix='namespace2' prefix:attr='value'>content</prefix:child>" +
+			"</root>";
 
 	private static final Predicate<Node> nodeFilter = (n -> n.getNodeType() != Node.COMMENT_NODE &&
 			n.getNodeType() != Node.DOCUMENT_TYPE_NODE && n.getNodeType() != Node.PROCESSING_INSTRUCTION_NODE);

@@ -4,8 +4,7 @@
  * and various simple ConnectionFactory proxies/adapters.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.jca.cci.connection;
+@NonNullFieldspackage org.springframework.jca.cci.connection;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

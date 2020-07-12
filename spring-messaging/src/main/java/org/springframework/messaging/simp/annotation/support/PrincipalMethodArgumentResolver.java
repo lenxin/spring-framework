@@ -1,16 +1,15 @@
 package org.springframework.messaging.simp.annotation.support;
 
-import java.security.Principal;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolver;
 import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 
+import java.security.Principal;
+
 /**
  * {@link HandlerMethodArgumentResolver} to a {@link Principal}.
  *
- * @author Rossen Stoyanchev
  * @since 4.0
  */
 public class PrincipalMethodArgumentResolver implements HandlerMethodArgumentResolver {

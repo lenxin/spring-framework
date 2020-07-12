@@ -4,8 +4,7 @@
  * functionality packages, like "transaction" and "orm".
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.aop.interceptor;
+@NonNullFieldspackage org.springframework.aop.interceptor;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

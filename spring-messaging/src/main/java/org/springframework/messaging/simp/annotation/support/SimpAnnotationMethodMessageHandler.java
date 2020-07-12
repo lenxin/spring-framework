@@ -1,16 +1,6 @@
 package org.springframework.messaging.simp.annotation.support;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
-
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -31,37 +21,18 @@ import org.springframework.messaging.core.AbstractMessageSendingTemplate;
 import org.springframework.messaging.handler.DestinationPatternsMessageCondition;
 import org.springframework.messaging.handler.HandlerMethod;
 import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.support.AnnotationExceptionHandlerMethodResolver;
-import org.springframework.messaging.handler.annotation.support.DestinationVariableMethodArgumentResolver;
-import org.springframework.messaging.handler.annotation.support.HeaderMethodArgumentResolver;
-import org.springframework.messaging.handler.annotation.support.HeadersMethodArgumentResolver;
-import org.springframework.messaging.handler.annotation.support.MessageMethodArgumentResolver;
-import org.springframework.messaging.handler.annotation.support.PayloadArgumentResolver;
-import org.springframework.messaging.handler.invocation.AbstractExceptionHandlerMethodResolver;
-import org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler;
-import org.springframework.messaging.handler.invocation.CompletableFutureReturnValueHandler;
-import org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolver;
-import org.springframework.messaging.handler.invocation.HandlerMethodReturnValueHandler;
-import org.springframework.messaging.handler.invocation.HandlerMethodReturnValueHandlerComposite;
-import org.springframework.messaging.handler.invocation.ListenableFutureReturnValueHandler;
-import org.springframework.messaging.handler.invocation.ReactiveReturnValueHandler;
-import org.springframework.messaging.simp.SimpAttributesContextHolder;
-import org.springframework.messaging.simp.SimpLogging;
-import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
-import org.springframework.messaging.simp.SimpMessageMappingInfo;
-import org.springframework.messaging.simp.SimpMessageSendingOperations;
-import org.springframework.messaging.simp.SimpMessageTypeMessageCondition;
-import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.messaging.handler.annotation.support.*;
+import org.springframework.messaging.handler.invocation.*;
+import org.springframework.messaging.simp.*;
 import org.springframework.messaging.simp.annotation.SubscribeMapping;
 import org.springframework.messaging.support.MessageHeaderAccessor;
 import org.springframework.messaging.support.MessageHeaderInitializer;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.AntPathMatcher;
-import org.springframework.util.Assert;
-import org.springframework.util.CollectionUtils;
-import org.springframework.util.PathMatcher;
-import org.springframework.util.StringValueResolver;
+import org.springframework.util.*;
 import org.springframework.validation.Validator;
+
+import java.lang.reflect.Method;
+import java.util.*;
 
 /**
  * A handler for messages delegating to {@link MessageMapping @MessageMapping}
@@ -69,9 +40,6 @@ import org.springframework.validation.Validator;
  *
  * <p>Supports Ant-style path patterns with template variables.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Juergen Hoeller
  * @since 4.0
  */
 public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHandler<SimpMessageMappingInfo>
@@ -108,12 +76,13 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 	/**
 	 * Create an instance of SimpAnnotationMethodMessageHandler with the given
 	 * message channels and broker messaging template.
-	 * @param clientInboundChannel the channel for receiving messages from clients (e.g. WebSocket clients)
+	 *
+	 * @param clientInboundChannel  the channel for receiving messages from clients (e.g. WebSocket clients)
 	 * @param clientOutboundChannel the channel for messages to clients (e.g. WebSocket clients)
-	 * @param brokerTemplate a messaging template to send application messages to the broker
+	 * @param brokerTemplate        a messaging template to send application messages to the broker
 	 */
 	public SimpAnnotationMethodMessageHandler(SubscribableChannel clientInboundChannel,
-			MessageChannel clientOutboundChannel, SimpMessageSendingOperations brokerTemplate) {
+											  MessageChannel clientOutboundChannel, SimpMessageSendingOperations brokerTemplate) {
 
 		Assert.notNull(clientInboundChannel, "clientInboundChannel must not be null");
 		Assert.notNull(clientOutboundChannel, "clientOutboundChannel must not be null");
@@ -163,6 +132,7 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 	 * Configure a {@link MessageConverter} to use to convert the payload of a message from
 	 * its serialized form with a specific MIME type to an Object matching the target method
 	 * parameter. The converter is also used when sending a message to the message broker.
+	 *
 	 * @see CompositeMessageConverter
 	 */
 	public void setMessageConverter(MessageConverter converter) {
@@ -221,6 +191,7 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 
 	/**
 	 * Set the Validator instance used for validating {@code @Payload} arguments.
+	 *
 	 * @see org.springframework.validation.annotation.Validated
 	 * @see PayloadArgumentResolver
 	 */
@@ -403,6 +374,7 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 
 	/**
 	 * Resolve placeholder values in the given array of destinations.
+	 *
 	 * @return a new array with updated destinations
 	 * @since 4.2
 	 */
@@ -446,8 +418,7 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 			if (destination.startsWith(prefix)) {
 				if (this.slashPathSeparator) {
 					return destination.substring(prefix.length() - 1);
-				}
-				else {
+				} else {
 					return destination.substring(prefix.length());
 				}
 			}
@@ -469,7 +440,7 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 
 	@Override
 	protected void handleMatch(SimpMessageMappingInfo mapping, HandlerMethod handlerMethod,
-			String lookupDestination, Message<?> message) {
+							   String lookupDestination, Message<?> message) {
 
 		Set<String> patterns = mapping.getDestinationConditions().getPatterns();
 		if (!CollectionUtils.isEmpty(patterns)) {
@@ -485,8 +456,7 @@ public class SimpAnnotationMethodMessageHandler extends AbstractMethodMessageHan
 		try {
 			SimpAttributesContextHolder.setAttributesFromMessage(message);
 			super.handleMatch(mapping, handlerMethod, lookupDestination, message);
-		}
-		finally {
+		} finally {
 			SimpAttributesContextHolder.resetAttributes();
 		}
 	}

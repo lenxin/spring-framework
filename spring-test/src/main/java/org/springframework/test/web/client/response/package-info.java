@@ -5,8 +5,7 @@
  * to gain access to instances of those implementations.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.test.web.client.response;
+@NonNullFieldspackage org.springframework.test.web.client.response;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

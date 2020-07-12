@@ -694,8 +694,7 @@ The following interface is used on both the server and the client sides:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	public interface CheckingAccountService {
 
@@ -707,8 +706,7 @@ The following simple implementation of the preceding interface is used on the se
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	public class SimpleCheckingAccountService implements CheckingAccountService {
 
@@ -777,8 +775,7 @@ On the server, you need to expose the service object that uses the
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -821,8 +818,7 @@ The following example defines beans that you can inject into other client-side o
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.foo;
+----package com.foo;
 
 	import org.springframework.context.ApplicationContext;
 	import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -2046,8 +2042,7 @@ The following listing shows the definition of the `SessionAwareMessageListener` 
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.jms.listener;
+----package org.springframework.jms.listener;
 
 	public interface SessionAwareMessageListener {
 
@@ -3001,8 +2996,7 @@ For example, consider the following class:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.jmx;
+----package org.springframework.jmx;
 
 	public class JmxTestBean implements IJmxTestBean {
 
@@ -3335,8 +3329,7 @@ used in <<jmx-exporting-mbeanserver>>:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.jmx;
+----package org.springframework.jmx;
 
 	import org.springframework.jmx.export.annotation.ManagedResource;
 	import org.springframework.jmx.export.annotation.ManagedOperation;
@@ -4075,8 +4068,7 @@ example writes notifications to the console:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.example;
+----package com.example;
 
 	import javax.management.AttributeChangeNotification;
 	import javax.management.Notification;
@@ -4331,8 +4323,7 @@ In the following example, exported instances of the `JmxTestBean` publish a
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.jmx;
+----package org.springframework.jmx;
 
 	import org.springframework.jmx.export.notification.NotificationPublisherAware;
 	import org.springframework.jmx.export.notification.NotificationPublisher;
@@ -6590,8 +6581,7 @@ has it applied automatically:
 
 [source,java,indent=0]
 [subs="verbatim"]
-----
-	package example;
+----package example;
 
 	public class ExampleJob extends QuartzJobBean {
 

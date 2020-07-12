@@ -3,8 +3,7 @@
  * Provides a RestTemplate class and various callback interfaces.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.client;
+@NonNullFieldspackage org.springframework.web.client;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

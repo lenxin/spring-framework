@@ -559,8 +559,7 @@ The following example shows an implementation of the preceding interface:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package x.y.service;
+----package x.y.service;
 
 	public class DefaultFooService implements FooService {
 
@@ -1480,8 +1479,7 @@ The following code shows the simple profiling aspect discussed earlier:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package x.y;
+----package x.y;
 
 	import org.aspectj.lang.ProceedingJoinPoint;
 	import org.springframework.util.StopWatch;
@@ -6426,8 +6424,7 @@ generate a schema from annotated Java classes.
 
 Spring supports the JAXB 2.0 API as XML marshalling strategies, following the
 `Marshaller` and `Unmarshaller` interfaces described in <<oxm-marshaller-unmarshaller>>.
-The corresponding integration classes reside in the `org.springframework.oxm.jaxb`
-package.
+The corresponding integration classes reside in the `org.springframework.oxm.jaxb`package.
 
 
 [[oxm-jaxb2]]
@@ -6510,8 +6507,7 @@ enhances the class files and adds code to handle converting instances of the cla
 from or to XML.
 
 For more information on JiBX, see the http://jibx.sourceforge.net/[JiBX web
-site]. The Spring integration classes reside in the `org.springframework.oxm.jibx`
-package.
+site]. The Spring integration classes reside in the `org.springframework.oxm.jibx`package.
 
 
 [[oxm-jibx-marshaller]]

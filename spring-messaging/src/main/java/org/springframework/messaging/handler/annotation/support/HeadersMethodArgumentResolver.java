@@ -1,8 +1,5 @@
 package org.springframework.messaging.handler.annotation.support;
 
-import java.lang.reflect.Method;
-import java.util.Map;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.lang.Nullable;
 import org.springframework.messaging.Message;
@@ -12,6 +9,9 @@ import org.springframework.messaging.handler.invocation.HandlerMethodArgumentRes
 import org.springframework.messaging.support.MessageHeaderAccessor;
 import org.springframework.util.ReflectionUtils;
 
+import java.lang.reflect.Method;
+import java.util.Map;
+
 /**
  * Argument resolver for headers. Resolves the following method parameters:
  * <ul>
@@ -20,7 +20,6 @@ import org.springframework.util.ReflectionUtils;
  * <li>{@link MessageHeaderAccessor}
  * </ul>
  *
- * @author Rossen Stoyanchev
  * @since 4.0
  */
 public class HeadersMethodArgumentResolver implements HandlerMethodArgumentResolver {
@@ -38,17 +37,14 @@ public class HeadersMethodArgumentResolver implements HandlerMethodArgumentResol
 		Class<?> paramType = parameter.getParameterType();
 		if (Map.class.isAssignableFrom(paramType)) {
 			return message.getHeaders();
-		}
-		else if (MessageHeaderAccessor.class == paramType) {
+		} else if (MessageHeaderAccessor.class == paramType) {
 			MessageHeaderAccessor accessor = MessageHeaderAccessor.getAccessor(message, MessageHeaderAccessor.class);
 			return accessor != null ? accessor : new MessageHeaderAccessor(message);
-		}
-		else if (MessageHeaderAccessor.class.isAssignableFrom(paramType)) {
+		} else if (MessageHeaderAccessor.class.isAssignableFrom(paramType)) {
 			MessageHeaderAccessor accessor = MessageHeaderAccessor.getAccessor(message, MessageHeaderAccessor.class);
 			if (accessor != null && paramType.isAssignableFrom(accessor.getClass())) {
 				return accessor;
-			}
-			else {
+			} else {
 				Method method = ReflectionUtils.findMethod(paramType, "wrap", Message.class);
 				if (method == null) {
 					throw new IllegalStateException(
@@ -56,8 +52,7 @@ public class HeadersMethodArgumentResolver implements HandlerMethodArgumentResol
 				}
 				return ReflectionUtils.invokeMethod(method, null, message);
 			}
-		}
-		else {
+		} else {
 			throw new IllegalStateException("Unexpected parameter of type " + paramType +
 					" in method " + parameter.getMethod() + ". ");
 		}

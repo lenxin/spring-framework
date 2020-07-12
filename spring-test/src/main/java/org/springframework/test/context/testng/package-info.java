@@ -3,8 +3,7 @@
  * with TestNG.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.test.context.testng;
+@NonNullFieldspackage org.springframework.test.context.testng;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

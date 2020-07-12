@@ -5,9 +5,6 @@ import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.transform.Result;
 
-/**
- * @author Arjen Poutsma
- */
 public class StaxEventHandlerTests extends AbstractStaxHandlerTestCase {
 
 	@Override

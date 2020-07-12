@@ -4,8 +4,7 @@
  * between a reactive stream of bytes and Java objects.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.core.codec;
+@NonNullFieldspackage org.springframework.core.codec;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

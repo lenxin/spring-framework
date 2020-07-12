@@ -3,8 +3,7 @@
  * Provides abstract classes for cache managers and caches.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.cache.support;
+@NonNullFieldspackage org.springframework.cache.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

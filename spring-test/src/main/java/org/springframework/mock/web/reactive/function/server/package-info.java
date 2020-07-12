@@ -5,8 +5,7 @@
  *
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.mock.web.reactive.function.server;
+@NonNullFieldspackage org.springframework.mock.web.reactive.function.server;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

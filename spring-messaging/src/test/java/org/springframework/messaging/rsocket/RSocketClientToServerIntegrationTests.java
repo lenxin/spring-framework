@@ -1,7 +1,5 @@
 package org.springframework.messaging.rsocket;
 
-import java.time.Duration;
-
 import io.netty.buffer.PooledByteBufAllocator;
 import io.rsocket.RSocketFactory;
 import io.rsocket.frame.decoder.PayloadDecoder;
@@ -10,11 +8,6 @@ import io.rsocket.transport.netty.server.TcpServerTransport;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.core.publisher.ReplayProcessor;
-import reactor.test.StepVerifier;
-
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,13 +17,17 @@ import org.springframework.core.io.buffer.NettyDataBufferFactory;
 import org.springframework.messaging.handler.annotation.MessageExceptionHandler;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.stereotype.Controller;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.ReplayProcessor;
+import reactor.test.StepVerifier;
+
+import java.time.Duration;
 
 import static org.junit.Assert.*;
 
 /**
  * Server-side handling of RSocket requests.
- *
- * @author Rossen Stoyanchev
  */
 public class RSocketClientToServerIntegrationTests {
 

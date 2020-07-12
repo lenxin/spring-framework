@@ -865,8 +865,7 @@ being instantiated. Consider the following class:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package x.y;
+----package x.y;
 
 	public class ThingOne {
 
@@ -903,8 +902,7 @@ by type without help. Consider the following class:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package examples;
+----package examples;
 
 	public class ExampleBean {
 
@@ -980,8 +978,7 @@ then have to look as follows:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package examples;
+----package examples;
 
 	public class ExampleBean {
 
@@ -2134,8 +2131,7 @@ shows this approach:
 [source,java,indent=0]
 [subs="verbatim,quotes"]
 ----
-	// a class that uses a stateful Command-style class to perform some processing
-	package fiona.apple;
+	// a class that uses a stateful Command-style class to perform some processingpackage fiona.apple;
 
 	// Spring-API imports
 	import org.springframework.beans.BeansException;
@@ -2208,8 +2204,7 @@ the reworked example shows:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package fiona.apple;
+----package fiona.apple;
 
 	// no more Spring imports!
 
@@ -3853,8 +3848,7 @@ The following listing shows the custom `BeanPostProcessor` implementation class 
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package scripting;
+----package scripting;
 
 	import org.springframework.beans.factory.config.BeanPostProcessor;
 
@@ -5282,8 +5276,7 @@ For details about the effects of combining various lifecycle mechanisms, see
 [NOTE]
 ====
 Like `@Resource`, the `@PostConstruct` and `@PreDestroy` annotation types were a part
-of the standard Java libraries from JDK 6 to 8. However, the entire `javax.annotation`
-package got separated from the core Java modules in JDK 9 and eventually removed in
+of the standard Java libraries from JDK 6 to 8. However, the entire `javax.annotation`package got separated from the core Java modules in JDK 9 and eventually removed in
 JDK 11. If needed, the `javax.annotation-api` artifact needs to be obtained via Maven
 Central now, simply to be added to the application's classpath like any other library.
 ====
@@ -8202,8 +8195,7 @@ javadoc for more detail. For more on AspectJ load-time weaving, see <<aop-aj-ltw
 [[context-introduction]]
 == Additional Capabilities of the `ApplicationContext`
 
-As discussed in the <<beans, chapter introduction>>, the `org.springframework.beans.factory`
-package provides basic functionality for managing and manipulating beans, including in a
+As discussed in the <<beans, chapter introduction>>, the `org.springframework.beans.factory`package provides basic functionality for managing and manipulating beans, including in a
 programmatic way. The `org.springframework.context` package adds the
 {api-spring-framework}/context/ApplicationContext.html[`ApplicationContext`]
 interface, which extends the `BeanFactory` interface, in addition to extending other
@@ -8213,8 +8205,7 @@ declarative fashion, not even creating it programmatically, but instead relying 
 support classes such as `ContextLoader` to automatically instantiate an
 `ApplicationContext` as part of the normal startup process of a Java EE web application.
 
-To enhance `BeanFactory` functionality in a more framework-oriented style, the context
-package also provides the following functionality:
+To enhance `BeanFactory` functionality in a more framework-oriented style, the contextpackage also provides the following functionality:
 
 * Access to messages in i18n-style, through the `MessageSource` interface.
 * Access to resources, such as URLs and files, through the `ResourceLoader` interface.

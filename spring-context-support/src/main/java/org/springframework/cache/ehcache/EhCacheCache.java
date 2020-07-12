@@ -1,22 +1,18 @@
 package org.springframework.cache.ehcache;
 
-import java.util.concurrent.Callable;
-
 import net.sf.ehcache.Ehcache;
 import net.sf.ehcache.Element;
 import net.sf.ehcache.Status;
-
 import org.springframework.cache.Cache;
 import org.springframework.cache.support.SimpleValueWrapper;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 
+import java.util.concurrent.Callable;
+
 /**
  * {@link Cache} implementation on top of an {@link Ehcache} instance.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Stephane Nicoll
  * @since 3.1
  */
 public class EhCacheCache implements Cache {
@@ -26,6 +22,7 @@ public class EhCacheCache implements Cache {
 
 	/**
 	 * Create an {@link EhCacheCache} instance.
+	 *
 	 * @param ehcache the backing Ehcache instance
 	 */
 	public EhCacheCache(Ehcache ehcache) {
@@ -63,19 +60,16 @@ public class EhCacheCache implements Cache {
 		Element element = lookup(key);
 		if (element != null) {
 			return (T) element.getObjectValue();
-		}
-		else {
+		} else {
 			this.cache.acquireWriteLockOnKey(key);
 			try {
 				element = lookup(key);  // one more attempt with the write lock
 				if (element != null) {
 					return (T) element.getObjectValue();
-				}
-				else {
+				} else {
 					return loadValue(key, valueLoader);
 				}
-			}
-			finally {
+			} finally {
 				this.cache.releaseWriteLockOnKey(key);
 			}
 		}
@@ -86,8 +80,7 @@ public class EhCacheCache implements Cache {
 		T value;
 		try {
 			value = valueLoader.call();
-		}
-		catch (Throwable ex) {
+		} catch (Throwable ex) {
 			throw new ValueRetrievalException(key, valueLoader, ex);
 		}
 		put(key, value);

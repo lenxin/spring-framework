@@ -7,8 +7,7 @@
  * {@link org.springframework.web.socket.sockjs.transport.handler.DefaultSockJsService}.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.socket.sockjs.transport;
+@NonNullFieldspackage org.springframework.web.socket.sockjs.transport;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

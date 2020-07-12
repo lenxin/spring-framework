@@ -3,8 +3,7 @@
  * which is hosted in a Spring root WebApplicationContext.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.jsf.el;
+@NonNullFieldspackage org.springframework.web.jsf.el;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

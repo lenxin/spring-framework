@@ -1,7 +1,6 @@
 
 
-@file:JvmName("CoroutinesUtils")
-package org.springframework.core
+@file:JvmName("CoroutinesUtils")package org.springframework.core
 
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.Dispatchers

@@ -6,8 +6,7 @@
  * convenience classes for implementing Quartz Jobs.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.scheduling.quartz;
+@NonNullFieldspackage org.springframework.scheduling.quartz;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

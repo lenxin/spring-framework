@@ -3,10 +3,9 @@ package org.springframework.aop.aspectj.generic;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.junit.Test;
-
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Tests for AspectJ pointcut expression matching when working with bridge methods.
@@ -17,11 +16,8 @@ import static org.junit.Assert.*;
  *
  * <p>This class focuses on JDK proxy, while a subclass, GenericBridgeMethodMatchingClassProxyTests,
  * focuses on class proxying.
- *
+ * <p>
  * See SPR-3556 for more details.
- *
- * @author Ramnivas Laddad
- * @author Chris Beams
  */
 public class GenericBridgeMethodMatchingTests {
 

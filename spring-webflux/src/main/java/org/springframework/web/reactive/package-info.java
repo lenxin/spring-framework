@@ -10,8 +10,7 @@
  * {@code WebClient} as well as client and server, reactive WebSocket support.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.reactive;
+@NonNullFieldspackage org.springframework.web.reactive;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

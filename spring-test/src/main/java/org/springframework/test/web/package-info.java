@@ -1,4 +1,3 @@
 /**
  * Helper classes for unit tests based on Spring's web support.
- */
-package org.springframework.test.web;
+ */package org.springframework.test.web;

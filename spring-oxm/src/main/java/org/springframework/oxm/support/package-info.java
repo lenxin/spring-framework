@@ -5,8 +5,7 @@
  * MarshallingMessageConverter for use within Spring's JMS support.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.oxm.support;
+@NonNullFieldspackage org.springframework.oxm.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

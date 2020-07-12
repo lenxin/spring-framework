@@ -1,8 +1,5 @@
 package org.springframework.messaging.rsocket;
 
-import java.time.Duration;
-import java.util.Collections;
-
 import io.netty.buffer.PooledByteBufAllocator;
 import io.rsocket.Closeable;
 import io.rsocket.RSocket;
@@ -14,13 +11,6 @@ import io.rsocket.util.DefaultPayload;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.core.publisher.MonoProcessor;
-import reactor.core.publisher.ReplayProcessor;
-import reactor.core.scheduler.Schedulers;
-import reactor.test.StepVerifier;
-
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -29,11 +19,18 @@ import org.springframework.core.codec.StringDecoder;
 import org.springframework.core.io.buffer.NettyDataBufferFactory;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.stereotype.Controller;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.MonoProcessor;
+import reactor.core.publisher.ReplayProcessor;
+import reactor.core.scheduler.Schedulers;
+import reactor.test.StepVerifier;
+
+import java.time.Duration;
+import java.util.Collections;
 
 /**
  * Client-side handling of requests initiated from the server side.
- *
- *  @author Rossen Stoyanchev
  */
 public class RSocketServerToClientIntegrationTests {
 
@@ -99,8 +96,7 @@ public class RSocketServerToClientIntegrationTests {
 					.block();
 
 			serverController.await(Duration.ofSeconds(5));
-		}
-		finally {
+		} finally {
 			if (rsocket != null) {
 				rsocket.dispose();
 			}

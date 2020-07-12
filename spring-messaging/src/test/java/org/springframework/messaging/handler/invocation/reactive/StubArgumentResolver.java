@@ -1,18 +1,15 @@
 package org.springframework.messaging.handler.invocation.reactive;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import reactor.core.publisher.Mono;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.lang.Nullable;
 import org.springframework.messaging.Message;
+import reactor.core.publisher.Mono;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Stub resolver for a fixed value type and/or value.
- *
- * @author Rossen Stoyanchev
  */
 public class StubArgumentResolver implements HandlerMethodArgumentResolver {
 

@@ -4,8 +4,7 @@
  * definitions into scripted objects.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.scripting.support;
+@NonNullFieldspackage org.springframework.scripting.support;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

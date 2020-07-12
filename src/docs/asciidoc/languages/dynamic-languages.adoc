@@ -35,8 +35,7 @@ implementation is a Groovy script. The following listing shows the `Messenger` i
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.scripting;
+----package org.springframework.scripting;
 
 	public interface Messenger {
 
@@ -48,8 +47,7 @@ The following example defines a class that has a dependency on the `Messenger` i
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.scripting;
+----package org.springframework.scripting;
 
 	public class DefaultBookingService implements BookingService {
 
@@ -70,8 +68,7 @@ The following example implements the `Messenger` interface in Groovy:
 [source,java,indent=0]
 [subs="verbatim,quotes"]
 ----
-	// from the file 'Messenger.groovy'
-	package org.springframework.scripting.groovy;
+	// from the file 'Messenger.groovy'package org.springframework.scripting.groovy;
 
 	// import the Messenger interface (written in Java) that is to be implemented
 	import org.springframework.scripting.Messenger
@@ -285,8 +282,7 @@ execution of the program is paused:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.scripting
+----package org.springframework.scripting
 
 	class GroovyMessenger implements Messenger {
 
@@ -373,8 +369,7 @@ does not work:
 [source,java,indent=0]
 [subs="verbatim,quotes"]
 ----
-	// from the file 'Messenger.groovy'
-	package org.springframework.scripting.groovy;
+	// from the file 'Messenger.groovy'package org.springframework.scripting.groovy;
 
 	import org.springframework.scripting.Messenger
 
@@ -431,8 +426,7 @@ bean. Now consider another example (again using an example from the Spring test 
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.scripting;
+----package org.springframework.scripting;
 
 	public interface Calculator {
 
@@ -445,8 +439,7 @@ The following example implements the `Calculator` interface in Groovy:
 [source,groovy,indent=0]
 [subs="verbatim,quotes"]
 ----
-	// from the file 'calculator.groovy'
-	package org.springframework.scripting.groovy
+	// from the file 'calculator.groovy'package org.springframework.scripting.groovy
 
 	class GroovyCalculator implements Calculator {
 
@@ -471,8 +464,7 @@ Finally, the following small application exercises the preceding configuration:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.scripting;
+----package org.springframework.scripting;
 
 	import org.springframework.context.ApplicationContext;
 	import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -609,8 +601,7 @@ definition of the `Messenger` interface:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.springframework.scripting;
+----package org.springframework.scripting;
 
 	public interface Messenger {
 
@@ -693,8 +684,7 @@ by using the Groovy dynamic language:
 [source,java,indent=0]
 [subs="verbatim,quotes"]
 ----
-	// from the file '/WEB-INF/groovy/FortuneController.groovy'
-	package org.springframework.showcase.fortune.web
+	// from the file '/WEB-INF/groovy/FortuneController.groovy'package org.springframework.showcase.fortune.web
 
 	import org.springframework.showcase.fortune.service.FortuneService
 	import org.springframework.showcase.fortune.domain.Fortune

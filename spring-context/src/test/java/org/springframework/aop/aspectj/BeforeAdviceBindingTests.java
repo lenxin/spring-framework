@@ -2,7 +2,6 @@ package org.springframework.aop.aspectj;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import org.springframework.aop.aspectj.AdviceBindingTestAspect.AdviceBindingCollaborator;
 import org.springframework.aop.framework.Advised;
 import org.springframework.aop.support.AopUtils;
@@ -15,10 +14,6 @@ import static org.mockito.BDDMockito.*;
 
 /**
  * Tests for various parameter binding scenarios with before advice.
- *
- * @author Adrian Colyer
- * @author Rod Johnson
- * @author Chris Beams
  */
 public class BeforeAdviceBindingTests {
 
@@ -62,7 +57,7 @@ public class BeforeAdviceBindingTests {
 	@Test
 	public void testOneIntAndOneObjectArgs() {
 		testBeanProxy.setAge(5);
-		verify(mockCollaborator).oneIntAndOneObject(5,this.testBeanTarget);
+		verify(mockCollaborator).oneIntAndOneObject(5, this.testBeanTarget);
 	}
 
 	@Test

@@ -2,15 +2,10 @@ package org.springframework.aop.aspectj.autoproxy;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-/**
- * @author Adrian Colyer
- * @author Chris Beams
- */
 public class AnnotationBindingTests {
 
 	private AnnotatedTestBean testBean;

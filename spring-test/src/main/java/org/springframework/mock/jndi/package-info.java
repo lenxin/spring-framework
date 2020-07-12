@@ -11,8 +11,7 @@
  * configuration can be reused without changes.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.mock.jndi;
+@NonNullFieldspackage org.springframework.mock.jndi;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

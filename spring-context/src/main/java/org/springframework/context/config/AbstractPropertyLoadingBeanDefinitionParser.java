@@ -1,19 +1,15 @@
 package org.springframework.context.config;
 
-import org.w3c.dom.Element;
-
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;
 import org.springframework.beans.factory.xml.ParserContext;
 import org.springframework.util.StringUtils;
+import org.w3c.dom.Element;
 
 /**
  * Abstract parser for &lt;context:property-.../&gt; elements.
  *
- * @author Juergen Hoeller
- * @author Arjen Poutsma
- * @author Dave Syer
  * @since 2.5.2
  */
 abstract class AbstractPropertyLoadingBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {

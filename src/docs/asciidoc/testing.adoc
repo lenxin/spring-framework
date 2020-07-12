@@ -1527,8 +1527,7 @@ wiki page.
 [[testcontext-framework]]
 === Spring TestContext Framework
 
-The Spring TestContext Framework (located in the `org.springframework.test.context`
-package) provides generic, annotation-driven unit and integration testing support that is
+The Spring TestContext Framework (located in the `org.springframework.test.context`package) provides generic, annotation-driven unit and integration testing support that is
 agnostic of the testing framework in use. The TestContext framework also places a great
 deal of importance on convention over configuration, with reasonable defaults that you
 can override through annotation-based configuration.
@@ -1818,8 +1817,7 @@ particular event types listed above (see
 <<core.adoc#context-functionality-events-annotation, Annotation-based Event Listeners>>).
 Due to the popularity of this approach, Spring provides the following dedicated
 `@EventListener` annotations to simplify registration of test execution event listeners.
-These annotations reside in the `org.springframework.test.context.event.annotation`
-package.
+These annotations reside in the `org.springframework.test.context.event.annotation`package.
 
 * `@BeforeTestClass`
 * `@PrepareTestInstance`
@@ -1990,8 +1988,7 @@ example shows how to do so:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.example;
+----package com.example;
 
 	@RunWith(SpringRunner.class)
 	// ApplicationContext will be loaded from
@@ -2044,8 +2041,7 @@ the default:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.example;
+----package com.example;
 
 	@RunWith(SpringRunner.class)
 	// ApplicationContext will be loaded from
@@ -2416,8 +2412,7 @@ Consider two examples with XML configuration and `@Configuration` classes:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.bank.service;
+----package com.bank.service;
 
 	@RunWith(SpringRunner.class)
 	// ApplicationContext will be loaded from "classpath:/app-config.xml"
@@ -2535,8 +2530,7 @@ integration test with `@Configuration` classes instead of XML:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.bank.service;
+----package com.bank.service;
 
 	@RunWith(SpringRunner.class)
 	@ContextConfiguration(classes = {
@@ -2583,8 +2577,7 @@ has been moved to an abstract superclass, `AbstractIntegrationTest`:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.bank.service;
+----package com.bank.service;
 
 	@RunWith(SpringRunner.class)
 	@ContextConfiguration(classes = {
@@ -2599,8 +2592,7 @@ has been moved to an abstract superclass, `AbstractIntegrationTest`:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.bank.service;
+----package com.bank.service;
 
 	// "dev" profile inherited from superclass
 	public class TransferServiceTest extends AbstractIntegrationTest {
@@ -2620,8 +2612,7 @@ disable the inheritance of active profiles, as the following example shows:
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.bank.service;
+----package com.bank.service;
 
 	// "dev" profile overridden with "production"
 	@ActiveProfiles(profiles = "production", inheritProfiles = false)
@@ -2649,8 +2640,7 @@ The following example demonstrates how to implement and register a custom
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.bank.service;
+----package com.bank.service;
 
 	// "dev" profile overridden programmatically via a custom resolver
 	@ActiveProfiles(
@@ -2663,8 +2653,7 @@ The following example demonstrates how to implement and register a custom
 
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package com.bank.service.test;
+----package com.bank.service.test;
 
 	public class OperatingSystemActiveProfilesResolver implements ActiveProfilesResolver {
 
@@ -4637,8 +4626,7 @@ Jupiter-based example uses Spring MVC Test:
 ----
 
 The preceding test relies on the `WebApplicationContext` support of the TestContext
-framework to load Spring configuration from an XML configuration file located in the same
-package as the test class, but Java-based and Groovy-based configuration are also
+framework to load Spring configuration from an XML configuration file located in the samepackage as the test class, but Java-based and Groovy-based configuration are also
 supported. See these
 https://github.com/spring-projects/spring-framework/tree/master/spring-test/src/test/java/org/springframework/test/web/servlet/samples/context[sample tests].
 

@@ -18,8 +18,7 @@
  * integrated with the Spring IoC container.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.aop;
+@NonNullFieldspackage org.springframework.aop;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

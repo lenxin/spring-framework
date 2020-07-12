@@ -1,7 +1,6 @@
 package org.springframework.orm.jpa.support;
 
 import org.junit.Test;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.jpa.AbstractEntityManagerFactoryIntegrationTests;
 import org.springframework.orm.jpa.support.PersistenceInjectionTests.DefaultPublicPersistenceContextSetter;
@@ -9,11 +8,6 @@ import org.springframework.orm.jpa.support.PersistenceInjectionTests.DefaultPubl
 
 import static org.junit.Assert.*;
 
-/**
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Sam Brannen
- */
 public class PersistenceInjectionIntegrationTests extends AbstractEntityManagerFactoryIntegrationTests {
 
 	@Autowired

@@ -2,25 +2,22 @@ package org.springframework.aop.aspectj.autoproxy;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.junit.Test;
-
 import org.springframework.aop.framework.Advised;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.tests.sample.beans.ITestBean;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Test for ensuring the aspects aren't advised. See SPR-3893 for more details.
- *
- * @author Ramnivas Laddad
- * @author Chris Beams
  */
 public class AspectImplementingInterfaceTests {
 
 	@Test
 	public void testProxyCreation() {
 		ClassPathXmlApplicationContext ctx =
-			new ClassPathXmlApplicationContext(getClass().getSimpleName() + "-context.xml", getClass());
+				new ClassPathXmlApplicationContext(getClass().getSimpleName() + "-context.xml", getClass());
 
 		ITestBean testBean = (ITestBean) ctx.getBean("testBean");
 		AnInterface interfaceExtendingAspect = (AnInterface) ctx.getBean("interfaceExtendingAspect");

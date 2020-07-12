@@ -1753,8 +1753,7 @@ how to define a `SpringBeanPreparerFactory` property on a `TilesConfigurer` bean
 
 Both `AbstractAtomFeedView` and `AbstractRssFeedView` inherit from the
 `AbstractFeedView` base class and are used to provide Atom and RSS Feed views, respectively. They
-are based on java.net's https://rome.dev.java.net[ROME] project and are located in the
-package `org.springframework.web.servlet.view.feed`.
+are based on java.net's https://rome.dev.java.net[ROME] project and are located in thepackage `org.springframework.web.servlet.view.feed`.
 
 `AbstractAtomFeedView` requires you to implement the `buildFeedEntries()` method and
 optionally override the `buildFeedMetadata()` method (the default implementation is
@@ -1930,8 +1929,7 @@ you need to provide serializers and deserializers for specific types.
 [[mvc-view-xml-marshalling]]
 == XML Marshalling
 
-The `MarshallingView` uses an XML `Marshaller` (defined in the `org.springframework.oxm`
-package) to render the response content as XML. You can explicitly set the object to be
+The `MarshallingView` uses an XML `Marshaller` (defined in the `org.springframework.oxm`package) to render the response content as XML. You can explicitly set the object to be
 marshalled by using a `MarshallingView` instance's `modelKey` bean property. Alternatively,
 the view iterates over all model properties and marshals the first type that is supported
 by the `Marshaller`. For more information on the functionality in the

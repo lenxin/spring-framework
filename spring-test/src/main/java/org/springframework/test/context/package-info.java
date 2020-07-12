@@ -12,8 +12,7 @@
  * management with default rollback semantics.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.test.context;
+@NonNullFieldspackage org.springframework.test.context;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

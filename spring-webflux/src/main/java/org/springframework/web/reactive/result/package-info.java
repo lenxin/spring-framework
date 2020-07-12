@@ -5,8 +5,7 @@
  * resolution, and so on.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.web.reactive.result;
+@NonNullFieldspackage org.springframework.web.reactive.result;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;

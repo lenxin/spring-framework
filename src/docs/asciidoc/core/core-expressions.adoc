@@ -1371,8 +1371,7 @@ This section lists the classes used in the examples throughout this chapter.
 .Inventor.java
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.spring.samples.spel.inventor;
+----package org.spring.samples.spel.inventor;
 
 	import java.util.Date;
 	import java.util.GregorianCalendar;
@@ -1446,8 +1445,7 @@ This section lists the classes used in the examples throughout this chapter.
 .PlaceOfBirth.java
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.spring.samples.spel.inventor;
+----package org.spring.samples.spel.inventor;
 
 	public class PlaceOfBirth {
 
@@ -1485,8 +1483,7 @@ This section lists the classes used in the examples throughout this chapter.
 .Society.java
 [source,java,indent=0]
 [subs="verbatim,quotes"]
-----
-	package org.spring.samples.spel.inventor;
+----package org.spring.samples.spel.inventor;
 
 	import java.util.*;
 

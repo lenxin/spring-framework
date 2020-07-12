@@ -84,8 +84,7 @@ public class AdvisorAutoProxyCreatorTests {
 		assertEquals(5, nop1.getCount());
 		assertEquals(0, nop2.getCount());packageVisibleMethod packageVisibleMethod = (PackageVisibleMethod) bf.getBean("packageVisibleMethod");
 		assertEquals(5, nop1.getCount());
-		assertEquals(0, nop2.getCount());
-		packageVisibleMethod.doSomething();
+		assertEquals(0, nop2.getCount());packageVisibleMethod.doSomething();
 		assertEquals(6, nop1.getCount());
 		assertEquals(1, nop2.getCount());
 		assertTrue(packageVisibleMethod instanceof Lockable);

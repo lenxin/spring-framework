@@ -2,7 +2,6 @@ package org.springframework.orm.jpa.eclipselink;
 
 import org.eclipse.persistence.jpa.JpaEntityManager;
 import org.junit.Test;
-
 import org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests;
 import org.springframework.orm.jpa.EntityManagerFactoryInfo;
 
@@ -10,8 +9,6 @@ import static org.junit.Assert.*;
 
 /**
  * EclipseLink-specific JPA tests.
- *
- * @author Juergen Hoeller
  */
 public class EclipseLinkEntityManagerFactoryIntegrationTests extends AbstractContainerEntityManagerFactoryIntegrationTests {
 

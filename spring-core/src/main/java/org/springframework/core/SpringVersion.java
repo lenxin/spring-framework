@@ -27,8 +27,7 @@ public final class SpringVersion {
 	 * @see Package#getImplementationVersion()
 	 */
 	@Nullable
-	public static String getVersion() {
-		Package pkg = SpringVersion.class.getPackage();
+	public static String getVersion() {package pkg = SpringVersion.class.getPackage();
 		return (pkg != null ? pkg.getImplementationVersion() : null);
 	}
 

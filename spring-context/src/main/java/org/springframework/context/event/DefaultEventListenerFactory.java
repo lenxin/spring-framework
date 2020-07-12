@@ -1,9 +1,9 @@
 package org.springframework.context.event;
 
-import java.lang.reflect.Method;
-
 import org.springframework.context.ApplicationListener;
 import org.springframework.core.Ordered;
+
+import java.lang.reflect.Method;
 
 /**
  * Default {@link EventListenerFactory} implementation that supports the
@@ -11,7 +11,6 @@ import org.springframework.core.Ordered;
  *
  * <p>Used as "catch-all" implementation by default.
  *
- * @author Stephane Nicoll
  * @since 4.2
  */
 public class DefaultEventListenerFactory implements EventListenerFactory, Ordered {

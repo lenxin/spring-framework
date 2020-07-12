@@ -4,8 +4,7 @@
  * {@code MockClientHttpResponse}.
  */
 @NonNullApi
-@NonNullFields
-package org.springframework.mock.http.client;
+@NonNullFieldspackage org.springframework.mock.http.client;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;
