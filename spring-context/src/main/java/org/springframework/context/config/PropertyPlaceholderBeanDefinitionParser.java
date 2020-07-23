@@ -1,26 +1,19 @@
 package org.springframework.context.config;
 
-import org.w3c.dom.Element;
-
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.xml.ParserContext;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.util.StringUtils;
+import org.w3c.dom.Element;
 
 /**
  * Parser for the {@code <context:property-placeholder/>} element.
  *
- * @author Juergen Hoeller
- * @author Dave Syer
- * @author Chris Beams
  * @since 2.5
  */
 class PropertyPlaceholderBeanDefinitionParser extends AbstractPropertyLoadingBeanDefinitionParser {
-
 	private static final String SYSTEM_PROPERTIES_MODE_ATTRIBUTE = "system-properties-mode";
-
 	private static final String SYSTEM_PROPERTIES_MODE_DEFAULT = "ENVIRONMENT";
-
 
 	@Override
 	@SuppressWarnings("deprecation")
@@ -62,5 +55,4 @@ class PropertyPlaceholderBeanDefinitionParser extends AbstractPropertyLoadingBea
 			builder.addPropertyValue("nullValue", element.getAttribute("null-value"));
 		}
 	}
-
 }

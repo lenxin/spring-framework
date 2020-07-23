@@ -14,7 +14,6 @@ import org.springframework.util.Assert;
  */
 public class RuntimeBeanNameReference implements BeanReference {
 	private final String beanName;
-
 	@Nullable
 	private Object source;
 

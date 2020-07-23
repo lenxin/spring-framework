@@ -7,25 +7,20 @@ import org.springframework.util.Assert;
  * Immutable placeholder class used for a property value object when it's
  * a reference to another bean in the factory, to be resolved at runtime.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @see BeanDefinition#getPropertyValues()
  * @see org.springframework.beans.factory.BeanFactory#getBean
  */
 public class RuntimeBeanReference implements BeanReference {
-
 	private final String beanName;
-
 	private final boolean toParent;
-
 	@Nullable
 	private Object source;
-
 
 	/**
 	 * Create a new RuntimeBeanReference to the given bean name,
 	 * without explicitly marking it as reference to a bean in
 	 * the parent factory.
+	 *
 	 * @param beanName name of the target bean
 	 */
 	public RuntimeBeanReference(String beanName) {
@@ -36,16 +31,16 @@ public class RuntimeBeanReference implements BeanReference {
 	 * Create a new RuntimeBeanReference to the given bean name,
 	 * with the option to mark it as reference to a bean in
 	 * the parent factory.
+	 *
 	 * @param beanName name of the target bean
 	 * @param toParent whether this is an explicit reference to
-	 * a bean in the parent factory
+	 *                 a bean in the parent factory
 	 */
 	public RuntimeBeanReference(String beanName, boolean toParent) {
 		Assert.hasText(beanName, "'beanName' must not be empty");
 		this.beanName = beanName;
 		this.toParent = toParent;
 	}
-
 
 	@Override
 	public String getBeanName() {
@@ -74,7 +69,6 @@ public class RuntimeBeanReference implements BeanReference {
 		return this.source;
 	}
 
-
 	@Override
 	public boolean equals(Object other) {
 		if (this == other) {
@@ -98,5 +92,4 @@ public class RuntimeBeanReference implements BeanReference {
 	public String toString() {
 		return '<' + getBeanName() + '>';
 	}
-
 }

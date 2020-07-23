@@ -13,7 +13,6 @@ import org.w3c.dom.Element;
  * @since 2.5.2
  */
 abstract class AbstractPropertyLoadingBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
-
 	@Override
 	protected boolean shouldGenerateId() {
 		return true;
@@ -51,5 +50,4 @@ abstract class AbstractPropertyLoadingBeanDefinitionParser extends AbstractSingl
 
 		builder.setRole(BeanDefinition.ROLE_INFRASTRUCTURE);
 	}
-
 }

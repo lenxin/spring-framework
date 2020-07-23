@@ -141,7 +141,7 @@ public abstract class AbstractSingleBeanDefinitionParser extends AbstractBeanDef
 	 *
 	 * @param element the XML element being parsed
 	 * @param builder used to define the {@code BeanDefinition}
-	 * 模板方法，子类重写此方法解析元素Element填充BeanDefinitionBuilder
+	 *                模板方法，子类重写此方法解析元素Element填充BeanDefinitionBuilder
 	 */
 	protected void doParse(Element element, BeanDefinitionBuilder builder) {
 	}
