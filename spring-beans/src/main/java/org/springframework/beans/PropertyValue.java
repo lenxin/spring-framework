@@ -23,14 +23,10 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class PropertyValue extends BeanMetadataAttributeAccessor implements Serializable {
 	private final String name;
-
 	@Nullable
 	private final Object value;
-
 	private boolean optional = false;
-
 	private boolean converted = false;
-
 	@Nullable
 	private Object convertedValue;
 

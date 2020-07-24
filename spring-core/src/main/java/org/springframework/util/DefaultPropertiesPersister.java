@@ -1,10 +1,6 @@
 package org.springframework.util;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.Writer;
+import java.io.*;
 import java.util.Properties;
 
 /**
@@ -29,14 +25,12 @@ import java.util.Properties;
  * an encoding for a Reader/Writer (like ReloadableResourceBundleMessageSource's
  * "defaultEncoding" and "fileEncodings" properties).
  *
- * @author Juergen Hoeller
- * @since 10.03.2004
  * @see java.util.Properties
  * @see java.util.Properties#load
  * @see java.util.Properties#store
+ * @since 10.03.2004
  */
 public class DefaultPropertiesPersister implements PropertiesPersister {
-
 	@Override
 	public void load(Properties props, InputStream is) throws IOException {
 		props.load(is);
@@ -71,5 +65,4 @@ public class DefaultPropertiesPersister implements PropertiesPersister {
 	public void storeToXml(Properties props, OutputStream os, String header, String encoding) throws IOException {
 		props.storeToXML(os, header, encoding);
 	}
-
 }
