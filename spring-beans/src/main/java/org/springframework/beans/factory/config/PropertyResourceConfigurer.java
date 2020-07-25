@@ -76,6 +76,7 @@ public abstract class PropertyResourceConfigurer extends PropertiesLoaderSupport
 	 * if necessary. The result will then be processed.
 	 * <p>The default implementation will invoke {@link #convertPropertyValue}
 	 * for each property value, replacing the original with the converted value.
+	 * 将得到的配置转换为合适的类型
 	 *
 	 * @param props the Properties to convert
 	 * @see #processProperties
@@ -127,6 +128,7 @@ public abstract class PropertyResourceConfigurer extends PropertiesLoaderSupport
 
 	/**
 	 * Apply the given Properties to the given BeanFactory.
+	 * 将给定的配置应用到给定的BeanFactory中
 	 *
 	 * @param beanFactory the BeanFactory used by the application context
 	 * @param props       the Properties to apply

@@ -56,3 +56,35 @@ AbstractApplicationContext.refresh();
             5.2.2）、先执行实现了PriorityOrdered优先级接口的BeanFactoryPostProcessor；
             5.2.3）、再执行实现了Ordered顺序接口的BeanFactoryPostProcessor；
             5.2.4）、最后执行没有实现任何优先级和顺序接口的BeanFactoryPostProcessor；
+    6、registerBeanPostProcessors(ConfigurableListableBeanFactory beanFactory);
+        注册拦截Bean创建的Bean的后处理器(BeanPostProcessor)，此功能有代理类PostProcessorRegistrationDelegate实现
+        registerBeanPostProcessors(ConfigurableListableBeanFactory beanFactory, AbstractApplicationContext applicationContext)
+        BeanPostProcessor在系统中有5个实现接口，不同的接口在bean创建前后的执行时机是不一样的
+        BeanPostProcessor
+            -> DestructionAwareBeanPostProcessor
+            -> InstantiationAwareBeanPostProcessor
+                -> SmartInstantiationAwareBeanPostProcessor
+            -> MergedBeanDefinitionPostProcessor
+        6.1）、获取所有的BeanPostProcessor的beanName，后置处理器都默认可以通过实现PriorityOrdered、Ordered接口改变优先级
+        6.2）、注册BeanPostProcessorChecker后置处理器
+        6.3）、处理获取的BeanPostProcessor的beanName
+            6.3.1）、将实现接口PriorityOrdered的BeanPostProcessor添加到priorityOrderedPostProcessors集合中
+            6.3.2）、将实现接口PriorityOrdered的MergedBeanDefinitionPostProcessor添加到internalPostProcessors集合中
+            6.3.3）、将实现接口Ordered的beanName添加到orderedPostProcessorNames集合中
+            6.3.4）、将没有实现任何优先级接口的beanName添加到nonOrderedPostProcessorNames集合中
+        6.4）、对集合priorityOrderedPostProcessors按照优先级排序并将其注册到BeanFactory中
+        6.5）、循环处理集合orderedPostProcessorNames，将beanName对应的BeanPostProcessor添加到orderedPostProcessors集合中，
+            并将MergedBeanDefinitionPostProcessor类型的BeanPostProcessor添加到internalPostProcessors集合中
+        6.6）、对集合orderedPostProcessors按照优先级排序并将其注册到BeanFactory中
+        6.7）、循环处理集合nonOrderedPostProcessorNames，将beanName对应的BeanPostProcessor添加到nonOrderedPostProcessors集合中，
+            并将MergedBeanDefinitionPostProcessor类型的BeanPostProcessor添加到internalPostProcessors集合中
+        6.8）、将集合nonOrderedPostProcessors注册到BeanFactory中
+        6.9）、对集合internalPostProcessors按照优先级排序并将其注册到BeanFactory中
+        6.10）、注册ApplicationListenerDetector后置处理器，在bean创建完成后，若bean是ApplicationListener且是单例模式
+            则this.applicationContext.addApplicationListener((ApplicationListener<?>) bean);
+7、initMessageSource();初始化上下文的消息源MessageSource组件，用于国际化功能、消息绑定、消息解析
+    7.1）、获取BeanFactory容器中id为messageSource，类型为MessageSource的组件；
+        如果有赋值给messageSource，如果没有创建DelegatingMessageSource；
+        MessageSource：按照区域信息获取国际化配置文件中某个key的值
+    7.2）、把创建的DelegatingMessageSource注册到容器中，如果有父容器且有父消息源，设置消息源的父消息源
+8、initApplicationEventMulticaster();
