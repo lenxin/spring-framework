@@ -18,7 +18,6 @@ import org.springframework.lang.Nullable;
  * @since 4.2
  */
 public interface GenericApplicationListener extends ApplicationListener<ApplicationEvent>, Ordered {
-
 	/**
 	 * Determine whether this listener actually supports the given event type.
 	 *
@@ -44,5 +43,4 @@ public interface GenericApplicationListener extends ApplicationListener<Applicat
 	default int getOrder() {
 		return LOWEST_PRECEDENCE;
 	}
-
 }

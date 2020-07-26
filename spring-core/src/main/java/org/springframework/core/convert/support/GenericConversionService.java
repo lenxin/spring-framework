@@ -1,30 +1,9 @@
 package org.springframework.core.convert.support;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
-
 import org.springframework.core.DecoratingProxy;
 import org.springframework.core.ResolvableType;
-import org.springframework.core.convert.ConversionException;
-import org.springframework.core.convert.ConversionFailedException;
-import org.springframework.core.convert.ConversionService;
-import org.springframework.core.convert.ConverterNotFoundException;
-import org.springframework.core.convert.TypeDescriptor;
-import org.springframework.core.convert.converter.ConditionalConverter;
-import org.springframework.core.convert.converter.ConditionalGenericConverter;
-import org.springframework.core.convert.converter.Converter;
-import org.springframework.core.convert.converter.ConverterFactory;
-import org.springframework.core.convert.converter.ConverterRegistry;
-import org.springframework.core.convert.converter.GenericConverter;
+import org.springframework.core.convert.*;
+import org.springframework.core.convert.converter.*;
 import org.springframework.core.convert.converter.GenericConverter.ConvertiblePair;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
@@ -32,20 +11,17 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.ConcurrentReferenceHashMap;
 import org.springframework.util.StringUtils;
 
+import java.lang.reflect.Array;
+import java.util.*;
+
 /**
  * Base {@link ConversionService} implementation suitable for use in most environments.
  * Indirectly implements {@link ConverterRegistry} as registration API through the
  * {@link ConfigurableConversionService} interface.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Phillip Webb
- * @author David Haraburda
  * @since 3.0
  */
 public class GenericConversionService implements ConfigurableConversionService {
-
 	/**
 	 * General NO-OP converter used when conversion is not required.
 	 */
@@ -57,11 +33,8 @@ public class GenericConversionService implements ConfigurableConversionService {
 	 */
 	private static final GenericConverter NO_MATCH = new NoOpConverter("NO_MATCH");
 
-
 	private final Converters converters = new Converters();
-
 	private final Map<ConverterCacheKey, GenericConverter> converterCache = new ConcurrentReferenceHashMap<>(64);
-
 
 	// ConverterRegistry implementation
 
@@ -110,7 +83,6 @@ public class GenericConversionService implements ConfigurableConversionService {
 		invalidateCache();
 	}
 
-
 	// ConversionService implementation
 
 	@Override
@@ -134,8 +106,9 @@ public class GenericConversionService implements ConfigurableConversionService {
 	 * Return whether conversion between the source type and the target type can be bypassed.
 	 * <p>More precisely, this method will return true if objects of sourceType can be
 	 * converted to the target type by returning the source object unchanged.
+	 *
 	 * @param sourceType context about the source type to convert from
-	 * (may be {@code null} if source is {@code null})
+	 *                   (may be {@code null} if source is {@code null})
 	 * @param targetType context about the target type to convert to (required)
 	 * @return {@code true} if conversion can be bypassed; {@code false} otherwise
 	 * @throws IllegalArgumentException if targetType is {@code null}
@@ -184,12 +157,13 @@ public class GenericConversionService implements ConfigurableConversionService {
 	 * Simply delegates to {@link #convert(Object, TypeDescriptor, TypeDescriptor)} and
 	 * encapsulates the construction of the source type descriptor using
 	 * {@link TypeDescriptor#forObject(Object)}.
-	 * @param source the source object
+	 *
+	 * @param source     the source object
 	 * @param targetType the target type
 	 * @return the converted value
-	 * @throws ConversionException if a conversion exception occurred
+	 * @throws ConversionException      if a conversion exception occurred
 	 * @throws IllegalArgumentException if targetType is {@code null},
-	 * or sourceType is {@code null} but source is not {@code null}
+	 *                                  or sourceType is {@code null} but source is not {@code null}
 	 */
 	@Nullable
 	public Object convert(@Nullable Object source, TypeDescriptor targetType) {
@@ -201,7 +175,6 @@ public class GenericConversionService implements ConfigurableConversionService {
 		return this.converters.toString();
 	}
 
-
 	// Protected template methods
 
 	/**
@@ -210,6 +183,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 	 * {@link java.util.Optional#empty()} instance if the target type is
 	 * {@code java.util.Optional}. Subclasses may override this to return
 	 * custom {@code null} objects for specific target types.
+	 *
 	 * @param sourceType the source type to convert from
 	 * @param targetType the target type to convert to
 	 * @return the converted null object
@@ -227,6 +201,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 	 * First queries this ConversionService's converter cache.
 	 * On a cache miss, then performs an exhaustive search for a matching converter.
 	 * If no converter matches, returns the default converter.
+	 *
 	 * @param sourceType the source type to convert from
 	 * @param targetType the target type to convert to
 	 * @return the generic converter that will perform the conversion,
@@ -259,6 +234,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 	 * Return the default converter if no converter is found for the given sourceType/targetType pair.
 	 * <p>Returns a NO_OP Converter if the source type is assignable to the target type.
 	 * Returns {@code null} otherwise, indicating no suitable converter could be found.
+	 *
 	 * @param sourceType the source type to convert from
 	 * @param targetType the target type to convert to
 	 * @return the default generic converter that will perform the conversion
@@ -267,7 +243,6 @@ public class GenericConversionService implements ConfigurableConversionService {
 	protected GenericConverter getDefaultConverter(TypeDescriptor sourceType, TypeDescriptor targetType) {
 		return (sourceType.isAssignableTo(targetType) ? NO_OP_CONVERTER : null);
 	}
-
 
 	// Internal helpers
 
@@ -293,7 +268,6 @@ public class GenericConversionService implements ConfigurableConversionService {
 	@Nullable
 	private Object handleConverterNotFound(
 			@Nullable Object source, @Nullable TypeDescriptor sourceType, TypeDescriptor targetType) {
-
 		if (source == null) {
 			assertNotPrimitiveTargetType(sourceType, targetType);
 			return null;
@@ -320,17 +294,13 @@ public class GenericConversionService implements ConfigurableConversionService {
 		}
 	}
 
-
 	/**
 	 * Adapts a {@link Converter} to a {@link GenericConverter}.
 	 */
 	@SuppressWarnings("unchecked")
 	private final class ConverterAdapter implements ConditionalGenericConverter {
-
 		private final Converter<Object, Object> converter;
-
 		private final ConvertiblePair typeInfo;
-
 		private final ResolvableType targetType;
 
 		public ConverterAdapter(Converter<?, ?> converter, ResolvableType sourceType, ResolvableType targetType) {
@@ -375,15 +345,12 @@ public class GenericConversionService implements ConfigurableConversionService {
 		}
 	}
 
-
 	/**
 	 * Adapts a {@link ConverterFactory} to a {@link GenericConverter}.
 	 */
 	@SuppressWarnings("unchecked")
 	private final class ConverterFactoryAdapter implements ConditionalGenericConverter {
-
 		private final ConverterFactory<Object, Object> converterFactory;
-
 		private final ConvertiblePair typeInfo;
 
 		public ConverterFactoryAdapter(ConverterFactory<?, ?> converterFactory, ConvertiblePair typeInfo) {
@@ -426,14 +393,11 @@ public class GenericConversionService implements ConfigurableConversionService {
 		}
 	}
 
-
 	/**
 	 * Key for use with the converter cache.
 	 */
 	private static final class ConverterCacheKey implements Comparable<ConverterCacheKey> {
-
 		private final TypeDescriptor sourceType;
-
 		private final TypeDescriptor targetType;
 
 		public ConverterCacheKey(TypeDescriptor sourceType, TypeDescriptor targetType) {
@@ -477,14 +441,11 @@ public class GenericConversionService implements ConfigurableConversionService {
 		}
 	}
 
-
 	/**
 	 * Manages all converters registered with the service.
 	 */
 	private static class Converters {
-
 		private final Set<GenericConverter> globalConverters = new LinkedHashSet<>();
-
 		private final Map<ConvertiblePair, ConvertersForPair> converters = new LinkedHashMap<>(36);
 
 		public void add(GenericConverter converter) {
@@ -493,8 +454,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 				Assert.state(converter instanceof ConditionalConverter,
 						"Only conditional converters may return null convertible types");
 				this.globalConverters.add(converter);
-			}
-			else {
+			} else {
 				for (ConvertiblePair convertiblePair : convertibleTypes) {
 					ConvertersForPair convertersForPair = getMatchableConverters(convertiblePair);
 					convertersForPair.add(converter);
@@ -519,6 +479,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 		 * Find a {@link GenericConverter} given a source and target type.
 		 * <p>This method will attempt to match all possible converters by working
 		 * through the class and interface hierarchy of the types.
+		 *
 		 * @param sourceType the source type
 		 * @param targetType the target type
 		 * @return a matching {@link GenericConverter}, or {@code null} if none found
@@ -542,8 +503,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 
 		@Nullable
 		private GenericConverter getRegisteredConverter(TypeDescriptor sourceType,
-				TypeDescriptor targetType, ConvertiblePair convertiblePair) {
-
+														TypeDescriptor targetType, ConvertiblePair convertiblePair) {
 			// Check specifically registered converters
 			ConvertersForPair convertersForPair = this.converters.get(convertiblePair);
 			if (convertersForPair != null) {
@@ -563,6 +523,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 
 		/**
 		 * Returns an ordered class hierarchy for the given type.
+		 *
 		 * @param type the type
 		 * @return an ordered list of all classes that the given type extends or implements
 		 */
@@ -596,16 +557,14 @@ public class GenericConversionService implements ConfigurableConversionService {
 		}
 
 		private void addInterfacesToClassHierarchy(Class<?> type, boolean asArray,
-				List<Class<?>> hierarchy, Set<Class<?>> visited) {
-
+												   List<Class<?>> hierarchy, Set<Class<?>> visited) {
 			for (Class<?> implementedInterface : type.getInterfaces()) {
 				addToClassHierarchy(hierarchy.size(), implementedInterface, asArray, hierarchy, visited);
 			}
 		}
 
 		private void addToClassHierarchy(int index, Class<?> type, boolean asArray,
-				List<Class<?>> hierarchy, Set<Class<?>> visited) {
-
+										 List<Class<?>> hierarchy, Set<Class<?>> visited) {
 			if (asArray) {
 				type = Array.newInstance(type, 0).getClass();
 			}
@@ -634,12 +593,10 @@ public class GenericConversionService implements ConfigurableConversionService {
 		}
 	}
 
-
 	/**
 	 * Manages converters registered with a specific {@link ConvertiblePair}.
 	 */
 	private static class ConvertersForPair {
-
 		private final LinkedList<GenericConverter> converters = new LinkedList<>();
 
 		public void add(GenericConverter converter) {
@@ -663,12 +620,10 @@ public class GenericConversionService implements ConfigurableConversionService {
 		}
 	}
 
-
 	/**
 	 * Internal converter that performs no operation.
 	 */
 	private static class NoOpConverter implements GenericConverter {
-
 		private final String name;
 
 		public NoOpConverter(String name) {
@@ -691,5 +646,4 @@ public class GenericConversionService implements ConfigurableConversionService {
 			return this.name;
 		}
 	}
-
 }

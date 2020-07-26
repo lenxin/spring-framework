@@ -1,13 +1,12 @@
 package org.springframework.scheduling.support;
 
-import java.util.concurrent.Future;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.ErrorHandler;
 import org.springframework.util.ReflectionUtils;
+
+import java.util.concurrent.Future;
 
 /**
  * Utility methods for decorating tasks with error handling.
@@ -16,12 +15,9 @@ import org.springframework.util.ReflectionUtils;
  * implementations. It is only public so that it may be accessed from impl classes
  * within other packages. It is <i>not</i> intended for general use.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
  * @since 3.0
  */
 public abstract class TaskUtils {
-
 	/**
 	 * An ErrorHandler strategy that will log the Exception but perform
 	 * no further handling. This will suppress the error so that
@@ -36,7 +32,6 @@ public abstract class TaskUtils {
 	 */
 	public static final ErrorHandler LOG_AND_PROPAGATE_ERROR_HANDLER = new PropagatingErrorHandler();
 
-
 	/**
 	 * Decorate the task for error handling. If the provided {@link ErrorHandler}
 	 * is not {@code null}, it will be used. Otherwise, repeating tasks will have
@@ -46,7 +41,6 @@ public abstract class TaskUtils {
 	 */
 	public static DelegatingErrorHandlingRunnable decorateTaskWithErrorHandler(
 			Runnable task, @Nullable ErrorHandler errorHandler, boolean isRepeatingTask) {
-
 		if (task instanceof DelegatingErrorHandlingRunnable) {
 			return (DelegatingErrorHandlingRunnable) task;
 		}
@@ -64,14 +58,12 @@ public abstract class TaskUtils {
 		return (isRepeatingTask ? LOG_AND_SUPPRESS_ERROR_HANDLER : LOG_AND_PROPAGATE_ERROR_HANDLER);
 	}
 
-
 	/**
 	 * An {@link ErrorHandler} implementation that logs the Throwable at error
- 	 * level. It does not perform any additional error handling. This can be
- 	 * useful when suppression of errors is the intended behavior.
+	 * level. It does not perform any additional error handling. This can be
+	 * useful when suppression of errors is the intended behavior.
 	 */
 	private static class LoggingErrorHandler implements ErrorHandler {
-
 		private final Log logger = LogFactory.getLog(LoggingErrorHandler.class);
 
 		@Override
@@ -82,18 +74,15 @@ public abstract class TaskUtils {
 		}
 	}
 
-
 	/**
 	 * An {@link ErrorHandler} implementation that logs the Throwable at error
 	 * level and then propagates it.
 	 */
 	private static class PropagatingErrorHandler extends LoggingErrorHandler {
-
 		@Override
 		public void handleError(Throwable t) {
 			super.handleError(t);
 			ReflectionUtils.rethrowRuntimeException(t);
 		}
 	}
-
 }

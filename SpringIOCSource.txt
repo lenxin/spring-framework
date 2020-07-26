@@ -83,8 +83,18 @@ AbstractApplicationContext.refresh();
         6.10）、注册ApplicationListenerDetector后置处理器，在bean创建完成后，若bean是ApplicationListener且是单例模式
             则this.applicationContext.addApplicationListener((ApplicationListener<?>) bean);
 7、initMessageSource();初始化上下文的消息源MessageSource组件，用于国际化功能、消息绑定、消息解析
-    7.1）、获取BeanFactory容器中id为messageSource，类型为MessageSource的组件；
-        如果有赋值给messageSource，如果没有创建DelegatingMessageSource；
+    7.1）、如果配置文件中已经配置了messageSource，获取BeanFactory容器中id为messageSource，
+        类型为MessageSource的组件，赋值给this.messageSource；
+        如果用户并没有定义消息源，则创建DelegatingMessageSource赋值给this.messageSource，并将其作为单例注册到BeanFactory容器中；
         MessageSource：按照区域信息获取国际化配置文件中某个key的值
     7.2）、把创建的DelegatingMessageSource注册到容器中，如果有父容器且有父消息源，设置消息源的父消息源
 8、initApplicationEventMulticaster();
+    8.1）、如果用户自定义了事件广播器，则获取BeanFactory容器中id为applicationEventMulticaster，
+        类型为ApplicationEventMulticaster的组件，赋值给this.applicationEventMulticaster;
+    8.2）、如果用户没有自定义事件广播器，则创建SimpleApplicationEventMulticaster赋值给this.applicationEventMulticaster，
+        并将其作为单例注册到BeanFactory容器中。
+9、onRefresh();刷新由子类实现的方法，初始化其他的特殊Bean
+10、registerListeners();获取ApplicationListener类型的Bean并注册到消息广播器中
+    10.1）、将硬编码方式注册的监听器注册到消息广播器中；
+    10.2）、将自定义的监听器注册到消息广播器中；
+    10.3）、发布早期的监听器事件

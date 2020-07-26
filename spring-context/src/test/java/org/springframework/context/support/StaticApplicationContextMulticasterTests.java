@@ -1,18 +1,8 @@
 package org.springframework.context.support;
 
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-
 import org.junit.Test;
-
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.support.PropertiesBeanDefinitionReader;
-import org.springframework.context.ACATester;
-import org.springframework.context.AbstractApplicationContextTests;
-import org.springframework.context.ApplicationEvent;
-import org.springframework.context.BeanThatListens;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.event.SimpleApplicationEventMulticaster;
 import org.springframework.core.ResolvableType;
 import org.springframework.core.io.ClassPathResource;
@@ -21,15 +11,16 @@ import org.springframework.core.io.support.EncodedResource;
 import org.springframework.lang.Nullable;
 import org.springframework.tests.sample.beans.TestBean;
 
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+
 import static org.junit.Assert.*;
 
 /**
  * Tests for static application context with custom application event multicaster.
- *
- * @author Juergen Hoeller
  */
 public class StaticApplicationContextMulticasterTests extends AbstractApplicationContextTests {
-
 	protected StaticApplicationContext sac;
 
 	@Override
@@ -43,7 +34,7 @@ public class StaticApplicationContextMulticasterTests extends AbstractApplicatio
 		parent.registerSingleton(StaticApplicationContext.APPLICATION_EVENT_MULTICASTER_BEAN_NAME,
 				TestApplicationEventMulticaster.class, null);
 		parent.refresh();
-		parent.addApplicationListener(parentListener) ;
+		parent.addApplicationListener(parentListener);
 
 		parent.getStaticMessageSource().addMessage("code1", Locale.getDefault(), "message1");
 
@@ -76,9 +67,7 @@ public class StaticApplicationContextMulticasterTests extends AbstractApplicatio
 		assertEquals(1, TestApplicationEventMulticaster.counter);
 	}
 
-
 	public static class TestApplicationEventMulticaster extends SimpleApplicationEventMulticaster {
-
 		private static int counter = 0;
 
 		@Override
@@ -87,5 +76,4 @@ public class StaticApplicationContextMulticasterTests extends AbstractApplicatio
 			counter++;
 		}
 	}
-
 }

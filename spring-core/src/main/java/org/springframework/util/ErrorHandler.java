@@ -6,15 +6,12 @@ package org.springframework.util;
  * submitted to a TaskScheduler. In such cases, it may not be possible to
  * throw the error to the original caller.
  *
- * @author Mark Fisher
  * @since 3.0
  */
 @FunctionalInterface
 public interface ErrorHandler {
-
 	/**
 	 * Handle the given error, possibly rethrowing it as a fatal exception.
 	 */
 	void handleError(Throwable t);
-
 }

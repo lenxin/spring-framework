@@ -1,12 +1,12 @@
 package org.springframework.context.support;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+
 import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
 
 /**
  * Simple implementation of {@link org.springframework.context.MessageSource}
@@ -14,17 +14,13 @@ import org.springframework.util.Assert;
  * This MessageSource supports basic internationalization.
  *
  * <p>Intended for testing rather than for use in production systems.
- *
- * @author Rod Johnson
- * @author Juergen Hoeller
  */
 public class StaticMessageSource extends AbstractMessageSource {
-
-	/** Map from 'code + locale' keys to message Strings. */
+	/**
+	 * Map from 'code + locale' keys to message Strings.
+	 */
 	private final Map<String, String> messages = new HashMap<>();
-
 	private final Map<String, MessageFormat> cachedMessageFormats = new HashMap<>();
-
 
 	@Override
 	protected String resolveCodeWithoutArguments(String code, Locale locale) {
@@ -51,9 +47,10 @@ public class StaticMessageSource extends AbstractMessageSource {
 
 	/**
 	 * Associate the given message with the given code.
-	 * @param code the lookup code
+	 *
+	 * @param code   the lookup code
 	 * @param locale the locale that the message should be found within
-	 * @param msg the message associated with this lookup code
+	 * @param msg    the message associated with this lookup code
 	 */
 	public void addMessage(String code, Locale locale, String msg) {
 		Assert.notNull(code, "Code must not be null");
@@ -67,9 +64,10 @@ public class StaticMessageSource extends AbstractMessageSource {
 
 	/**
 	 * Associate the given message values with the given keys as codes.
+	 *
 	 * @param messages the messages to register, with messages codes
-	 * as keys and message texts as values
-	 * @param locale the locale that the messages should be found within
+	 *                 as keys and message texts as values
+	 * @param locale   the locale that the messages should be found within
 	 */
 	public void addMessages(Map<String, String> messages, Locale locale) {
 		Assert.notNull(messages, "Messages Map must not be null");
@@ -81,5 +79,4 @@ public class StaticMessageSource extends AbstractMessageSource {
 	public String toString() {
 		return getClass().getName() + ": " + this.messages;
 	}
-
 }

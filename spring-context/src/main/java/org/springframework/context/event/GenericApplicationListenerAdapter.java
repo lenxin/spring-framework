@@ -19,15 +19,10 @@ import java.util.Map;
  * @since 3.0
  */
 public class GenericApplicationListenerAdapter implements GenericApplicationListener, SmartApplicationListener {
-
 	private static final Map<Class<?>, ResolvableType> eventTypeCache = new ConcurrentReferenceHashMap<>();
-
-
 	private final ApplicationListener<ApplicationEvent> delegate;
-
 	@Nullable
 	private final ResolvableType declaredEventType;
-
 
 	/**
 	 * Create a new GenericApplicationListener for the given delegate.
@@ -40,7 +35,6 @@ public class GenericApplicationListenerAdapter implements GenericApplicationList
 		this.delegate = (ApplicationListener<ApplicationEvent>) delegate;
 		this.declaredEventType = resolveDeclaredEventType(this.delegate);
 	}
-
 
 	@Override
 	public void onApplicationEvent(ApplicationEvent event) {
@@ -74,7 +68,6 @@ public class GenericApplicationListenerAdapter implements GenericApplicationList
 		return (this.delegate instanceof Ordered ? ((Ordered) this.delegate).getOrder() : Ordered.LOWEST_PRECEDENCE);
 	}
 
-
 	@Nullable
 	private static ResolvableType resolveDeclaredEventType(ApplicationListener<ApplicationEvent> listener) {
 		ResolvableType declaredEventType = resolveDeclaredEventType(listener.getClass());
@@ -96,5 +89,4 @@ public class GenericApplicationListenerAdapter implements GenericApplicationList
 		}
 		return (eventType != ResolvableType.NONE ? eventType : null);
 	}
-
 }
