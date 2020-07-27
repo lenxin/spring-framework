@@ -1,32 +1,27 @@
 package org.springframework.core.convert.support;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Set;
-
 import org.springframework.core.CollectionFactory;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.converter.ConditionalGenericConverter;
 import org.springframework.lang.Nullable;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
+
 /**
  * Converts an Object to a single-element Collection containing the Object.
  * Will convert the Object to the target Collection's parameterized type if necessary.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
  * @since 3.0
  */
 final class ObjectToCollectionConverter implements ConditionalGenericConverter {
-
 	private final ConversionService conversionService;
-
 
 	public ObjectToCollectionConverter(ConversionService conversionService) {
 		this.conversionService = conversionService;
 	}
-
 
 	@Override
 	public Set<ConvertiblePair> getConvertibleTypes() {
@@ -51,12 +46,10 @@ final class ObjectToCollectionConverter implements ConditionalGenericConverter {
 
 		if (elementDesc == null || elementDesc.isCollection()) {
 			target.add(source);
-		}
-		else {
+		} else {
 			Object singleElement = this.conversionService.convert(source, sourceType, elementDesc);
 			target.add(singleElement);
 		}
 		return target;
 	}
-
 }

@@ -1,38 +1,28 @@
 package org.springframework.core.convert.support;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.converter.ConditionalGenericConverter;
 import org.springframework.lang.Nullable;
 
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 /**
  * Converts a {@link Stream} to and from a collection or array, converting the
  * element type if necessary.
  *
- * @author Stephane Nicoll
  * @since 4.2
  */
 class StreamConverter implements ConditionalGenericConverter {
-
 	private static final TypeDescriptor STREAM_TYPE = TypeDescriptor.valueOf(Stream.class);
-
 	private static final Set<ConvertiblePair> CONVERTIBLE_TYPES = createConvertibleTypes();
-
 	private final ConversionService conversionService;
-
 
 	public StreamConverter(ConversionService conversionService) {
 		this.conversionService = conversionService;
 	}
-
 
 	@Override
 	public Set<ConvertiblePair> getConvertibleTypes() {
@@ -53,8 +43,9 @@ class StreamConverter implements ConditionalGenericConverter {
 	/**
 	 * Validate that a {@link Collection} of the elements held within the stream can be
 	 * converted to the specified {@code targetType}.
+	 *
 	 * @param elementType the type of the stream elements
-	 * @param targetType the type to convert to
+	 * @param targetType  the type to convert to
 	 */
 	public boolean matchesFromStream(@Nullable TypeDescriptor elementType, TypeDescriptor targetType) {
 		TypeDescriptor collectionOfElement = TypeDescriptor.collection(Collection.class, elementType);
@@ -64,8 +55,9 @@ class StreamConverter implements ConditionalGenericConverter {
 	/**
 	 * Validate that the specified {@code sourceType} can be converted to a {@link Collection} of
 	 * the type of the stream elements.
+	 *
 	 * @param elementType the type of the stream elements
-	 * @param sourceType the type to convert from
+	 * @param sourceType  the type to convert from
 	 */
 	public boolean matchesToStream(@Nullable TypeDescriptor elementType, TypeDescriptor sourceType) {
 		TypeDescriptor collectionOfElement = TypeDescriptor.collection(Collection.class, elementType);
@@ -101,7 +93,6 @@ class StreamConverter implements ConditionalGenericConverter {
 		return target.stream();
 	}
 
-
 	private static Set<ConvertiblePair> createConvertibleTypes() {
 		Set<ConvertiblePair> convertiblePairs = new HashSet<>();
 		convertiblePairs.add(new ConvertiblePair(Stream.class, Collection.class));
@@ -110,5 +101,4 @@ class StreamConverter implements ConditionalGenericConverter {
 		convertiblePairs.add(new ConvertiblePair(Object[].class, Stream.class));
 		return convertiblePairs;
 	}
-
 }

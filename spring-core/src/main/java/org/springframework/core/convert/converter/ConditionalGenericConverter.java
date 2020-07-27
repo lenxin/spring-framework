@@ -8,12 +8,9 @@ import org.springframework.core.convert.TypeDescriptor;
  *
  * <p>See {@link ConditionalConverter} for details.
  *
- * @author Keith Donald
- * @author Phillip Webb
- * @since 3.0
  * @see GenericConverter
  * @see ConditionalConverter
+ * @since 3.0
  */
 public interface ConditionalGenericConverter extends GenericConverter, ConditionalConverter {
-
 }

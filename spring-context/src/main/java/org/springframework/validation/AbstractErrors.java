@@ -1,32 +1,22 @@
 package org.springframework.validation;
 
-import java.io.Serializable;
-import java.util.ArrayDeque;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.NoSuchElementException;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.io.Serializable;
+import java.util.*;
 
 /**
  * Abstract implementation of the {@link Errors} interface. Provides common
  * access to evaluated errors; however, does not define concrete management
  * of {@link ObjectError ObjectErrors} and {@link FieldError FieldErrors}.
  *
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
  * @since 2.5.3
  */
 @SuppressWarnings("serial")
 public abstract class AbstractErrors implements Errors, Serializable {
-
 	private String nestedPath = "";
-
 	private final Deque<String> nestedPathStack = new ArrayDeque<>();
-
 
 	@Override
 	public void setNestedPath(@Nullable String nestedPath) {
@@ -50,8 +40,7 @@ public abstract class AbstractErrors implements Errors, Serializable {
 		try {
 			String formerNestedPath = this.nestedPathStack.pop();
 			doSetNestedPath(formerNestedPath);
-		}
-		catch (NoSuchElementException ex) {
+		} catch (NoSuchElementException ex) {
 			throw new IllegalStateException("Cannot pop nested path: no nested path on stack");
 		}
 	}
@@ -78,8 +67,7 @@ public abstract class AbstractErrors implements Errors, Serializable {
 	protected String fixedField(@Nullable String field) {
 		if (StringUtils.hasLength(field)) {
 			return getNestedPath() + canonicalFieldName(field);
-		}
-		else {
+		} else {
 			String path = getNestedPath();
 			return (path.endsWith(Errors.NESTED_PATH_SEPARATOR) ?
 					path.substring(0, path.length() - NESTED_PATH_SEPARATOR.length()) : path);
@@ -89,13 +77,13 @@ public abstract class AbstractErrors implements Errors, Serializable {
 	/**
 	 * Determine the canonical field name for the given field.
 	 * <p>The default implementation simply returns the field name as-is.
+	 *
 	 * @param field the original field name
 	 * @return the canonical field name
 	 */
 	protected String canonicalFieldName(String field) {
 		return field;
 	}
-
 
 	@Override
 	public void reject(String errorCode) {
@@ -116,7 +104,6 @@ public abstract class AbstractErrors implements Errors, Serializable {
 	public void rejectValue(@Nullable String field, String errorCode, String defaultMessage) {
 		rejectValue(field, errorCode, null, defaultMessage);
 	}
-
 
 	@Override
 	public boolean hasErrors() {
@@ -209,7 +196,8 @@ public abstract class AbstractErrors implements Errors, Serializable {
 
 	/**
 	 * Check whether the given FieldError matches the given field.
-	 * @param field the field that we are looking up FieldErrors for
+	 *
+	 * @param field      the field that we are looking up FieldErrors for
 	 * @param fieldError the candidate FieldError
 	 * @return whether the FieldError matches the given field
 	 */
@@ -223,7 +211,6 @@ public abstract class AbstractErrors implements Errors, Serializable {
 				(endIndex == 0 || field.regionMatches(0, fieldError.getField(), 0, endIndex)));
 	}
 
-
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder(getClass().getName());
@@ -233,5 +220,4 @@ public abstract class AbstractErrors implements Errors, Serializable {
 		}
 		return sb.toString();
 	}
-
 }

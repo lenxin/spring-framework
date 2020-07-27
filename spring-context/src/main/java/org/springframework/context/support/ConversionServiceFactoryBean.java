@@ -1,7 +1,5 @@
 package org.springframework.context.support;
 
-import java.util.Set;
-
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.convert.ConversionService;
@@ -9,6 +7,8 @@ import org.springframework.core.convert.support.ConversionServiceFactory;
 import org.springframework.core.convert.support.DefaultConversionService;
 import org.springframework.core.convert.support.GenericConversionService;
 import org.springframework.lang.Nullable;
+
+import java.util.Set;
 
 /**
  * A factory providing convenient access to a ConversionService configured with
@@ -27,19 +27,13 @@ import org.springframework.lang.Nullable;
  * {@code ConversionService} object from a {@link
  * org.springframework.context.annotation.Bean @Bean} method.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Chris Beams
  * @since 3.0
  */
 public class ConversionServiceFactoryBean implements FactoryBean<ConversionService>, InitializingBean {
-
 	@Nullable
 	private Set<?> converters;
-
 	@Nullable
 	private GenericConversionService conversionService;
-
 
 	/**
 	 * Configure the set of custom converter objects that should be added:
@@ -67,7 +61,6 @@ public class ConversionServiceFactoryBean implements FactoryBean<ConversionServi
 		return new DefaultConversionService();
 	}
 
-
 	// implementing FactoryBean
 
 	@Override
@@ -85,5 +78,4 @@ public class ConversionServiceFactoryBean implements FactoryBean<ConversionServi
 	public boolean isSingleton() {
 		return true;
 	}
-
 }

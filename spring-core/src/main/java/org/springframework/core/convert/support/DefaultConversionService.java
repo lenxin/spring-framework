@@ -1,13 +1,13 @@
 package org.springframework.core.convert.support;
 
+import org.springframework.core.convert.ConversionService;
+import org.springframework.core.convert.converter.ConverterRegistry;
+import org.springframework.lang.Nullable;
+
 import java.nio.charset.Charset;
 import java.util.Currency;
 import java.util.Locale;
 import java.util.UUID;
-
-import org.springframework.core.convert.ConversionService;
-import org.springframework.core.convert.converter.ConverterRegistry;
-import org.springframework.lang.Nullable;
 
 /**
  * A specialization of {@link GenericConversionService} configured by default
@@ -17,16 +17,11 @@ import org.springframework.lang.Nullable;
  * {@link #addDefaultConverters(ConverterRegistry)} utility method for ad-hoc
  * use against any {@code ConverterRegistry} instance.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Stephane Nicoll
  * @since 3.1
  */
 public class DefaultConversionService extends GenericConversionService {
-
 	@Nullable
 	private static volatile DefaultConversionService sharedInstance;
-
 
 	/**
 	 * Create a new {@code DefaultConversionService} with the set of
@@ -36,7 +31,6 @@ public class DefaultConversionService extends GenericConversionService {
 		addDefaultConverters(this);
 	}
 
-
 	/**
 	 * Return a shared default {@code ConversionService} instance,
 	 * lazily building it once needed.
@@ -45,6 +39,7 @@ public class DefaultConversionService extends GenericConversionService {
 	 * This accessor is only meant as a fallback for code paths which
 	 * need simple type coercion but cannot access a longer-lived
 	 * {@code ConversionService} instance any other way.
+	 *
 	 * @return the shared {@code ConversionService} instance (never {@code null})
 	 * @since 4.3.5
 	 */
@@ -64,8 +59,9 @@ public class DefaultConversionService extends GenericConversionService {
 
 	/**
 	 * Add converters appropriate for most environments.
+	 *
 	 * @param converterRegistry the registry of converters to add to
-	 * (must also be castable to ConversionService, e.g. being a {@link ConfigurableConversionService})
+	 *                          (must also be castable to ConversionService, e.g. being a {@link ConfigurableConversionService})
 	 * @throws ClassCastException if the given ConverterRegistry could not be cast to a ConversionService
 	 */
 	public static void addDefaultConverters(ConverterRegistry converterRegistry) {
@@ -85,8 +81,9 @@ public class DefaultConversionService extends GenericConversionService {
 
 	/**
 	 * Add common collection converters.
+	 *
 	 * @param converterRegistry the registry of converters to add to
-	 * (must also be castable to ConversionService, e.g. being a {@link ConfigurableConversionService})
+	 *                          (must also be castable to ConversionService, e.g. being a {@link ConfigurableConversionService})
 	 * @throws ClassCastException if the given ConverterRegistry could not be cast to a ConversionService
 	 * @since 4.2.3
 	 */
@@ -151,5 +148,4 @@ public class DefaultConversionService extends GenericConversionService {
 		converterRegistry.addConverter(new StringToUUIDConverter());
 		converterRegistry.addConverter(UUID.class, String.class, new ObjectToStringConverter());
 	}
-
 }

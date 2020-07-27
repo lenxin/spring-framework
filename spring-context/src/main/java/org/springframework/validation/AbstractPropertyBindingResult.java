@@ -1,7 +1,5 @@
 package org.springframework.validation;
 
-import java.beans.PropertyEditor;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.ConfigurablePropertyAccessor;
 import org.springframework.beans.PropertyAccessorUtils;
@@ -12,34 +10,33 @@ import org.springframework.core.convert.support.ConvertingPropertyEditorAdapter;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 
+import java.beans.PropertyEditor;
+
 /**
  * Abstract base class for {@link BindingResult} implementations that work with
  * Spring's {@link org.springframework.beans.PropertyAccessor} mechanism.
  * Pre-implements field access through delegation to the corresponding
  * PropertyAccessor methods.
  *
- * @author Juergen Hoeller
- * @since 2.0
  * @see #getPropertyAccessor()
  * @see org.springframework.beans.PropertyAccessor
  * @see org.springframework.beans.ConfigurablePropertyAccessor
+ * @since 2.0
  */
 @SuppressWarnings("serial")
 public abstract class AbstractPropertyBindingResult extends AbstractBindingResult {
-
 	@Nullable
 	private transient ConversionService conversionService;
 
-
 	/**
 	 * Create a new AbstractPropertyBindingResult instance.
+	 *
 	 * @param objectName the name of the target object
 	 * @see DefaultMessageCodesResolver
 	 */
 	protected AbstractPropertyBindingResult(String objectName) {
 		super(objectName);
 	}
-
 
 	public void initConversion(ConversionService conversionService) {
 		Assert.notNull(conversionService, "ConversionService must not be null");
@@ -51,6 +48,7 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 
 	/**
 	 * Returns the underlying PropertyAccessor.
+	 *
 	 * @see #getPropertyAccessor()
 	 */
 	@Override
@@ -60,6 +58,7 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 
 	/**
 	 * Returns the canonical property name.
+	 *
 	 * @see org.springframework.beans.PropertyAccessorUtils#canonicalPropertyName
 	 */
 	@Override
@@ -69,6 +68,7 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 
 	/**
 	 * Determines the field type from the property type.
+	 *
 	 * @see #getPropertyAccessor()
 	 */
 	@Override
@@ -80,6 +80,7 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 
 	/**
 	 * Fetches the field value from the PropertyAccessor.
+	 *
 	 * @see #getPropertyAccessor()
 	 */
 	@Override
@@ -90,6 +91,7 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 
 	/**
 	 * Formats the field value based on registered PropertyEditors.
+	 *
 	 * @see #getCustomEditor
 	 */
 	@Override
@@ -119,6 +121,7 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 
 	/**
 	 * Retrieve the custom PropertyEditor for the given field, if any.
+	 *
 	 * @param fixedField the fully qualified field name
 	 * @return the custom PropertyEditor, or {@code null}
 	 */
@@ -162,7 +165,6 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 		return editor;
 	}
 
-
 	/**
 	 * Provide the PropertyAccessor to work with, according to the
 	 * concrete strategy of access.
@@ -170,8 +172,8 @@ public abstract class AbstractPropertyBindingResult extends AbstractBindingResul
 	 * always have its "extractOldValueForEditor" flag set to "true"
 	 * by default, since this is typically possible without side effects
 	 * for model objects that serve as data binding target.
+	 *
 	 * @see ConfigurablePropertyAccessor#setExtractOldValueForEditor
 	 */
 	public abstract ConfigurablePropertyAccessor getPropertyAccessor();
-
 }

@@ -1,32 +1,27 @@
 package org.springframework.core.convert.support;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Set;
-import java.util.StringJoiner;
-
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.converter.ConditionalGenericConverter;
 import org.springframework.lang.Nullable;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
+import java.util.StringJoiner;
+
 /**
  * Converts a Collection to a comma-delimited String.
  *
- * @author Keith Donald
  * @since 3.0
  */
 final class CollectionToStringConverter implements ConditionalGenericConverter {
-
 	private static final String DELIMITER = ",";
-
 	private final ConversionService conversionService;
-
 
 	public CollectionToStringConverter(ConversionService conversionService) {
 		this.conversionService = conversionService;
 	}
-
 
 	@Override
 	public Set<ConvertiblePair> getConvertibleTypes() {
@@ -57,5 +52,4 @@ final class CollectionToStringConverter implements ConditionalGenericConverter {
 		}
 		return sj.toString();
 	}
-
 }
