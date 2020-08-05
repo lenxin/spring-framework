@@ -1,8 +1,8 @@
 package org.apache.commons.logging.impl;
 
-import java.io.Serializable;
-
 import org.apache.commons.logging.Log;
+
+import java.io.Serializable;
 
 /**
  * Trivial implementation of {@link Log} that throws away all messages.
@@ -12,13 +12,11 @@ import org.apache.commons.logging.Log;
  */
 @SuppressWarnings("serial")
 public class NoOpLog implements Log, Serializable {
-
 	public NoOpLog() {
 	}
 
 	public NoOpLog(String name) {
 	}
-
 
 	@Override
 	public boolean isFatalEnabled() {
@@ -97,5 +95,4 @@ public class NoOpLog implements Log, Serializable {
 	@Override
 	public void trace(Object message, Throwable t) {
 	}
-
 }

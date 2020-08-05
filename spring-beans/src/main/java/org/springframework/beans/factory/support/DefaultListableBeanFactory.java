@@ -798,12 +798,21 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 
 		// Trigger initialization of all non-lazy singleton beans...
 		for (String beanName : beanNames) {
+			// Bean定义公共的抽象类是AbstractBeanDefinition，普通的Bean在Spring加载Bean定义的时候，
+			// 实例化出来的是GenericBeanDefinition。而Spring上下文包括实例化所有Bean用的AbstractBeanDefinition
+			// 是RootBeanDefinition，这时候就使用getMergedLocalBeanDefinition方法做了一次转化，
+			// 将非RootBeanDefinition转换为RootBeanDefinition以供后续操作。
+			// 注意如果当前BeanDefinition存在父BeanDefinition，会基于父BeanDefinition生成一个RootBeanDefinition，
+			// 然后再将调用OverrideFrom子BeanDefinition的相关属性覆写进去。
 			RootBeanDefinition bd = getMergedLocalBeanDefinition(beanName);
+			// bean不是抽象、是单例的、不是懒加载的
 			if (!bd.isAbstract() && bd.isSingleton() && !bd.isLazyInit()) {
+				// 判断bean是否实现了FactoryBean接口
 				if (isFactoryBean(beanName)) {
 					Object bean = getBean(FACTORY_BEAN_PREFIX + beanName);
 					if (bean instanceof FactoryBean) {
 						final FactoryBean<?> factory = (FactoryBean<?>) bean;
+						// 若bean实现SmartFactoryBean接口且isEagerInit()返回true，应立即初始化
 						boolean isEagerInit;
 						if (System.getSecurityManager() != null && factory instanceof SmartFactoryBean) {
 							isEagerInit = AccessController.doPrivileged((PrivilegedAction<Boolean>)
@@ -1034,7 +1043,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 		this.allBeanNamesByType.clear();
 		this.singletonBeanNamesByType.clear();
 	}
-
 
 	//---------------------------------------------------------------------
 	// Dependency resolution functionality

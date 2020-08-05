@@ -1,30 +1,25 @@
 package org.springframework.core.convert.support;
 
+import org.springframework.core.convert.ConversionService;
+import org.springframework.core.convert.TypeDescriptor;
+import org.springframework.core.convert.converter.ConditionalGenericConverter;
+import org.springframework.lang.Nullable;
+
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.springframework.core.convert.ConversionService;
-import org.springframework.core.convert.TypeDescriptor;
-import org.springframework.core.convert.converter.ConditionalGenericConverter;
-import org.springframework.lang.Nullable;
-
 /**
  * Converts a {@link ByteBuffer} directly to and from {@code byte[] ByteBuffer} directly to and from {@code byte[]s} and indirectly
  * to any type that the {@link ConversionService} support via {@code byte[]}.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
  * @since 4.0
  */
 final class ByteBufferConverter implements ConditionalGenericConverter {
-
 	private static final TypeDescriptor BYTE_BUFFER_TYPE = TypeDescriptor.valueOf(ByteBuffer.class);
-
 	private static final TypeDescriptor BYTE_ARRAY_TYPE = TypeDescriptor.valueOf(byte[].class);
-
 	private static final Set<ConvertiblePair> CONVERTIBLE_PAIRS;
 
 	static {
@@ -36,14 +31,11 @@ final class ByteBufferConverter implements ConditionalGenericConverter {
 		CONVERTIBLE_PAIRS = Collections.unmodifiableSet(convertiblePairs);
 	}
 
-
 	private final ConversionService conversionService;
-
 
 	public ByteBufferConverter(ConversionService conversionService) {
 		this.conversionService = conversionService;
 	}
-
 
 	@Override
 	public Set<ConvertiblePair> getConvertibleTypes() {
@@ -111,5 +103,4 @@ final class ByteBufferConverter implements ConditionalGenericConverter {
 		// which isn't available on JDK 8.
 		return ((Buffer) byteBuffer).rewind();
 	}
-
 }

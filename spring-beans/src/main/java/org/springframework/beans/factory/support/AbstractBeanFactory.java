@@ -207,18 +207,23 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	 * Return an instance, which may be shared or independent, of the specified bean.
 	 *
 	 * @param name          the name of the bean to retrieve，bean名称、别名、FactoryBean
-	 * @param requiredType  the required type of the bean to retrieve
+	 * @param requiredType  the required type of the bean to retrieve 将获取到的数据转换为requiredType类型
 	 * @param args          arguments to use when creating a bean instance using explicit arguments
 	 *                      (only applied when creating a new instance as opposed to retrieving an existing one)
+	 *                      获取prototype对象时传入，用来初始化原型对象
 	 * @param typeCheckOnly whether the instance is obtained for a type check,
 	 *                      not for actual use
+	 *                      如果为false，会将bean标志为已创建，记录在alreadyCreated变量中
 	 * @return an instance of the bean
 	 * @throws BeansException if the bean could not be created
 	 */
 	@SuppressWarnings("unchecked")
 	protected <T> T doGetBean(final String name, @Nullable final Class<T> requiredType,
 							  @Nullable final Object[] args, boolean typeCheckOnly) throws BeansException {
-		/*提取对应的beanName*/
+		/*
+		 * 提取对应的beanName，如果是FactoryBean,会去掉Bean开头的&符号
+		 * 可能存在传入别名且别名存在多重映射的情况，这里会返回最终的名字，如存在多层别名映射A->B->C->D，传入D,最终会返回A
+		 */
 		final String beanName = transformedBeanName(name);
 		Object bean;
 

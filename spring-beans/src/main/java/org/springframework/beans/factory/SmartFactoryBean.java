@@ -17,14 +17,12 @@ package org.springframework.beans.factory;
  * the plain {@link FactoryBean} interface. New methods might be added
  * to this extended interface even in point releases.
  *
- * @author Juergen Hoeller
- * @since 2.0.3
  * @param <T> the bean type
  * @see #isPrototype()
  * @see #isSingleton()
+ * @since 2.0.3
  */
 public interface SmartFactoryBean<T> extends FactoryBean<T> {
-
 	/**
 	 * Is the object managed by this factory a prototype? That is,
 	 * will {@link #getObject()} always return an independent instance?
@@ -36,6 +34,8 @@ public interface SmartFactoryBean<T> extends FactoryBean<T> {
 	 * kinds of non-singleton, non-independent objects. For this reason,
 	 * this is not simply the inverted form of {@link #isSingleton()}.
 	 * <p>The default implementation returns {@code false}.
+	 * 是否是原型模式
+	 *
 	 * @return whether the exposed object is a prototype
 	 * @see #getObject()
 	 * @see #isSingleton()
@@ -56,11 +56,12 @@ public interface SmartFactoryBean<T> extends FactoryBean<T> {
 	 * of a {@link #isSingleton() singleton} object, in particular if
 	 * post-processors expect to be applied on startup.
 	 * <p>The default implementation returns {@code false}.
+	 * 是否需要预先初始化
+	 *
 	 * @return whether eager initialization applies
 	 * @see org.springframework.beans.factory.config.ConfigurableListableBeanFactory#preInstantiateSingletons()
 	 */
 	default boolean isEagerInit() {
 		return false;
 	}
-
 }

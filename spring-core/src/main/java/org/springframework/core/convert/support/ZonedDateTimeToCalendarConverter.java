@@ -1,10 +1,10 @@
 package org.springframework.core.convert.support;
 
+import org.springframework.core.convert.converter.Converter;
+
 import java.time.ZonedDateTime;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-
-import org.springframework.core.convert.converter.Converter;
 
 /**
  * Simple converter from Java 8's {@link java.time.ZonedDateTime} to {@link java.util.Calendar}.
@@ -15,15 +15,12 @@ import org.springframework.core.convert.converter.Converter;
  * It covers {@link java.util.GregorianCalendar#toZonedDateTime()} as well, and also
  * {@link java.util.Date#from(java.time.Instant)} and {@link java.util.Date#toInstant()}.
  *
- * @author Juergen Hoeller
- * @since 4.0.1
  * @see java.util.GregorianCalendar#from(java.time.ZonedDateTime)
+ * @since 4.0.1
  */
 final class ZonedDateTimeToCalendarConverter implements Converter<ZonedDateTime, Calendar> {
-
 	@Override
 	public Calendar convert(ZonedDateTime source) {
 		return GregorianCalendar.from(source);
 	}
-
 }

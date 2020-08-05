@@ -1,12 +1,12 @@
 package org.springframework.core.convert.support;
 
-import java.io.StringWriter;
-import java.util.Collections;
-import java.util.Set;
-
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.converter.ConditionalGenericConverter;
 import org.springframework.lang.Nullable;
+
+import java.io.StringWriter;
+import java.util.Collections;
+import java.util.Set;
 
 /**
  * Simply calls {@link Object#toString()} to convert any supported object
@@ -19,14 +19,10 @@ import org.springframework.lang.Nullable;
  * <p>Used by the {@link DefaultConversionService} as a fallback if there
  * are no other explicit to-String converters registered.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @since 3.0
  * @see ObjectToObjectConverter
+ * @since 3.0
  */
 final class FallbackObjectToStringConverter implements ConditionalGenericConverter {
-
 	@Override
 	public Set<ConvertiblePair> getConvertibleTypes() {
 		return Collections.singleton(new ConvertiblePair(Object.class, String.class));
@@ -49,5 +45,4 @@ final class FallbackObjectToStringConverter implements ConditionalGenericConvert
 	public Object convert(@Nullable Object source, TypeDescriptor sourceType, TypeDescriptor targetType) {
 		return (source != null ? source.toString() : null);
 	}
-
 }
