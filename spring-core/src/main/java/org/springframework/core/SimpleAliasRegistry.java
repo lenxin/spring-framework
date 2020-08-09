@@ -203,6 +203,7 @@ public class SimpleAliasRegistry implements AliasRegistry {
 		String canonicalName = name;
 		// Handle aliasing...
 		String resolvedName;
+		// 循环从aliasMap中获取canonicalName对应的aliasName，直到没有对应的值，即为最终的beanName
 		do {
 			resolvedName = this.aliasMap.get(canonicalName);
 			if (resolvedName != null) {

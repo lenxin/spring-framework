@@ -30,6 +30,7 @@ public abstract class BeanFactoryUtils {
 
 	/**
 	 * Cache from name with factory bean prefix to stripped name without dereference.
+	 * 工厂引用与去除工厂引用的映射关系
 	 *
 	 * @see BeanFactory#FACTORY_BEAN_PREFIX
 	 * @since 5.1

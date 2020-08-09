@@ -1663,6 +1663,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			return beanInstance;
 		}
 
+		// 用户指定的name不是工厂引用且实例beanInstance是FactoryBean类型
 		// 加载FactoryBean
 		Object object = null;
 		if (mbd == null) {
