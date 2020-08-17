@@ -15,8 +15,9 @@ import java.util.concurrent.ConcurrentHashMap;
  * Support base class for singleton registries which need to handle
  * {@link org.springframework.beans.factory.FactoryBean} instances,
  * integrated with {@link DefaultSingletonBeanRegistry}'s singleton management.
- *
+ * 支持单例注册表的基类，它需要处理FactoryBean实例，与DefaultSingletonBeanRegistry的单例管理集成。
  * <p>Serves as base class for {@link AbstractBeanFactory}.
+ * 为基类AbstractBeanFactory服务
  *
  * @since 2.5.1
  */
@@ -66,6 +67,7 @@ public abstract class FactoryBeanRegistrySupport extends DefaultSingletonBeanReg
 
 	/**
 	 * Obtain an object to expose from the given FactoryBean.
+	 * 从给定的FactoryBean获取要公开的对象。
 	 *
 	 * @param factory           the FactoryBean instance
 	 * @param beanName          the name of the bean
@@ -83,6 +85,8 @@ public abstract class FactoryBeanRegistrySupport extends DefaultSingletonBeanReg
 					object = doGetObjectFromFactoryBean(factory, beanName);
 					// Only post-process and store if not put there already during getObject() call above
 					// (e.g. because of circular reference processing triggered by custom getBean calls)
+					// 如果在上面的getObject()调用期间还没有将其放入，则只进行后处理和存储
+					// 例如，由于自定义getBean调用触发的循环引用处理
 					Object alreadyThere = this.factoryBeanObjectCache.get(beanName);
 					if (alreadyThere != null) {
 						object = alreadyThere;
@@ -90,6 +94,7 @@ public abstract class FactoryBeanRegistrySupport extends DefaultSingletonBeanReg
 						if (shouldPostProcess) {
 							if (isSingletonCurrentlyInCreation(beanName)) {
 								// Temporarily return non-post-processed object, not storing it yet..
+								// 暂时返回未处理的对象，还没有存储它。
 								return object;
 							}
 							beforeSingletonCreation(beanName);
@@ -102,6 +107,7 @@ public abstract class FactoryBeanRegistrySupport extends DefaultSingletonBeanReg
 								afterSingletonCreation(beanName);
 							}
 						}
+						// 如果单例容器singletonObjects包含beanName
 						if (containsSingleton(beanName)) {
 							this.factoryBeanObjectCache.put(beanName, object);
 						}
@@ -124,6 +130,7 @@ public abstract class FactoryBeanRegistrySupport extends DefaultSingletonBeanReg
 
 	/**
 	 * Obtain an object to expose from the given FactoryBean.
+	 * 从给定的FactoryBean获取要公开的对象。如果为null，返回NullBean
 	 *
 	 * @param factory  the FactoryBean instance
 	 * @param beanName the name of the bean
