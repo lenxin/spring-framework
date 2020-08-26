@@ -125,12 +125,11 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * fields and methods as well as applying all standard bean initialization callbacks.
 	 * It does <i>not</i> imply traditional by-name or by-type autowiring of properties;
 	 * use {@link #createBean(Class, int, boolean)} for those purposes.
+	 * 完全创建给定类的一个新的实例，包括所有适用的BeanPostProcessor，填充注解的field和方法，并且会应用所有的初始化回调函数
 	 *
 	 * @param beanClass the class of the bean to create
 	 * @return the new bean instance
 	 * @throws BeansException if instantiation or wiring failed
-	 *                        完全创建给定类的一个新的实例，包括所有适用的BeanPostProcessor
-	 *                        填充注解的field和方法，并且会应用所有的初始化回调函数
 	 */
 	<T> T createBean(Class<T> beanClass) throws BeansException;
 
@@ -141,11 +140,11 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * methods, either for new instances or for deserialized instances. It does
 	 * <i>not</i> imply traditional by-name or by-type autowiring of properties;
 	 * use {@link #autowireBeanProperties} for those purposes.
+	 * 装配bean，通过应用初始化之后的回调函数和bean属性的后置处理来填充给定的bean的实例
+	 * 本质上是为了在创建新的实例或者反序列化实例时，填充（重新填充）实例中注解的field和方法
 	 *
 	 * @param existingBean the existing bean instance
 	 * @throws BeansException if wiring failed
-	 *                        装配bean，通过应用初始化之后的回调函数和bean属性的后置处理来填充给定的bean的实例
-	 *                        本质上是为了在创建新的实例或者反序列化实例时，填充（重新填充）实例中注解的field和方法
 	 */
 	void autowireBean(Object existingBean) throws BeansException;
 

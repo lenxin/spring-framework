@@ -1,13 +1,5 @@
 package org.springframework.test.web.servlet.setup;
 
-import java.io.IOException;
-import java.lang.annotation.Annotation;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import javax.servlet.ServletContext;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.TypeConverter;
@@ -18,12 +10,7 @@ import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.beans.factory.config.DependencyDescriptor;
 import org.springframework.beans.factory.config.NamedBeanHolder;
 import org.springframework.beans.factory.support.StaticListableBeanFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
-import org.springframework.context.ApplicationEvent;
-import org.springframework.context.MessageSource;
-import org.springframework.context.MessageSourceResolvable;
-import org.springframework.context.NoSuchMessageException;
+import org.springframework.context.*;
 import org.springframework.context.support.DelegatingMessageSource;
 import org.springframework.core.ResolvableType;
 import org.springframework.core.env.Environment;
@@ -36,6 +23,14 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.ServletContextResourcePatternResolver;
 
+import javax.servlet.ServletContext;
+import java.io.IOException;
+import java.lang.annotation.Annotation;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * A stub WebApplicationContext that accepts registrations of object instances.
  *
@@ -45,34 +40,22 @@ import org.springframework.web.context.support.ServletContextResourcePatternReso
  * managed by an {@link ApplicationContext}. Just a simple lookup into a
  * {@link StaticListableBeanFactory}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
  * @since 3.2
  */
 class StubWebApplicationContext implements WebApplicationContext {
-
 	private final ServletContext servletContext;
-
 	private final StubBeanFactory beanFactory = new StubBeanFactory();
-
 	private final String id = ObjectUtils.identityToString(this);
-
 	private final String displayName = ObjectUtils.identityToString(this);
-
 	private final long startupDate = System.currentTimeMillis();
-
 	private final Environment environment = new StandardEnvironment();
-
 	private final MessageSource messageSource = new DelegatingMessageSource();
-
 	private final ResourcePatternResolver resourcePatternResolver;
-
 
 	public StubWebApplicationContext(ServletContext servletContext) {
 		this.servletContext = servletContext;
 		this.resourcePatternResolver = new ServletContextResourcePatternResolver(servletContext);
 	}
-
 
 	/**
 	 * Returns an instance that can initialize {@link ApplicationContextAware} beans.
@@ -86,7 +69,6 @@ class StubWebApplicationContext implements WebApplicationContext {
 	public ServletContext getServletContext() {
 		return this.servletContext;
 	}
-
 
 	//---------------------------------------------------------------------
 	// Implementation of ApplicationContext interface
@@ -119,7 +101,7 @@ class StubWebApplicationContext implements WebApplicationContext {
 
 	@Override
 	public Environment getEnvironment() {
-		return this.environment ;
+		return this.environment;
 	}
 
 	public void addBean(String name, Object bean) {
@@ -134,7 +116,6 @@ class StubWebApplicationContext implements WebApplicationContext {
 			}
 		}
 	}
-
 
 	//---------------------------------------------------------------------
 	// Implementation of BeanFactory interface
@@ -210,7 +191,6 @@ class StubWebApplicationContext implements WebApplicationContext {
 		return this.beanFactory.getAliases(name);
 	}
 
-
 	//---------------------------------------------------------------------
 	// Implementation of ListableBeanFactory interface
 	//---------------------------------------------------------------------
@@ -253,7 +233,6 @@ class StubWebApplicationContext implements WebApplicationContext {
 	@Override
 	public <T> Map<String, T> getBeansOfType(@Nullable Class<T> type, boolean includeNonSingletons, boolean allowEagerInit)
 			throws BeansException {
-
 		return this.beanFactory.getBeansOfType(type, includeNonSingletons, allowEagerInit);
 	}
 
@@ -265,18 +244,16 @@ class StubWebApplicationContext implements WebApplicationContext {
 	@Override
 	public Map<String, Object> getBeansWithAnnotation(Class<? extends Annotation> annotationType)
 			throws BeansException {
-
 		return this.beanFactory.getBeansWithAnnotation(annotationType);
 	}
 
 	@Override
 	@Nullable
 	public <A extends Annotation> A findAnnotationOnBean(String beanName, Class<A> annotationType)
-			throws NoSuchBeanDefinitionException{
+			throws NoSuchBeanDefinitionException {
 
 		return this.beanFactory.findAnnotationOnBean(beanName, annotationType);
 	}
-
 
 	//---------------------------------------------------------------------
 	// Implementation of HierarchicalBeanFactory interface
@@ -291,7 +268,6 @@ class StubWebApplicationContext implements WebApplicationContext {
 	public boolean containsLocalBean(String name) {
 		return this.beanFactory.containsBean(name);
 	}
-
 
 	//---------------------------------------------------------------------
 	// Implementation of MessageSource interface
@@ -312,7 +288,6 @@ class StubWebApplicationContext implements WebApplicationContext {
 		return this.messageSource.getMessage(resolvable, locale);
 	}
 
-
 	//---------------------------------------------------------------------
 	// Implementation of ResourceLoader interface
 	//---------------------------------------------------------------------
@@ -327,7 +302,6 @@ class StubWebApplicationContext implements WebApplicationContext {
 	public Resource getResource(String location) {
 		return this.resourcePatternResolver.getResource(location);
 	}
-
 
 	//---------------------------------------------------------------------
 	// Other
@@ -346,14 +320,12 @@ class StubWebApplicationContext implements WebApplicationContext {
 		return this.resourcePatternResolver.getResources(locationPattern);
 	}
 
-
 	/**
 	 * An extension of StaticListableBeanFactory that implements
 	 * AutowireCapableBeanFactory in order to allow bean initialization of
 	 * {@link ApplicationContextAware} singletons.
 	 */
 	private class StubBeanFactory extends StaticListableBeanFactory implements AutowireCapableBeanFactory {
-
 		@Override
 		public Object initializeBean(Object existingBean, String beanName) throws BeansException {
 			if (existingBean instanceof ApplicationContextAware) {
@@ -409,7 +381,7 @@ class StubWebApplicationContext implements WebApplicationContext {
 		@Override
 		@Nullable
 		public Object resolveDependency(DependencyDescriptor descriptor, @Nullable String requestingBeanName,
-				@Nullable Set<String> autowiredBeanNames, @Nullable TypeConverter typeConverter) {
+										@Nullable Set<String> autowiredBeanNames, @Nullable TypeConverter typeConverter) {
 			throw new UnsupportedOperationException("Dependency resolution not supported");
 		}
 
@@ -431,5 +403,4 @@ class StubWebApplicationContext implements WebApplicationContext {
 		public void destroyBean(Object existingBean) {
 		}
 	}
-
 }
