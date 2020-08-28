@@ -56,6 +56,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	 * <p>Note that the parent cannot be changed: It should only be set outside
 	 * a constructor if it isn't available at the time of factory instantiation.
 	 * 设置父级bean工厂
+	 * 注意，父类不能更改:只有在工厂实例化时父类不可用时，才应该在构造函数外部设置。
 	 *
 	 * @param parentBeanFactory the parent BeanFactory
 	 * @throws IllegalStateException if this factory is already associated with
