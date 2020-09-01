@@ -9,25 +9,20 @@ import org.springframework.lang.Nullable;
  * cannot find a definition. This may point to a non-existing bean, a non-unique bean,
  * or a manually registered singleton instance without an associated bean definition.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Stephane Nicoll
  * @see BeanFactory#getBean(String)
  * @see BeanFactory#getBean(Class)
  * @see NoUniqueBeanDefinitionException
  */
 @SuppressWarnings("serial")
 public class NoSuchBeanDefinitionException extends BeansException {
-
 	@Nullable
 	private final String beanName;
-
 	@Nullable
 	private final ResolvableType resolvableType;
 
-
 	/**
 	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 *
 	 * @param name the name of the missing bean
 	 */
 	public NoSuchBeanDefinitionException(String name) {
@@ -38,7 +33,8 @@ public class NoSuchBeanDefinitionException extends BeansException {
 
 	/**
 	 * Create a new {@code NoSuchBeanDefinitionException}.
-	 * @param name the name of the missing bean
+	 *
+	 * @param name    the name of the missing bean
 	 * @param message detailed message describing the problem
 	 */
 	public NoSuchBeanDefinitionException(String name, String message) {
@@ -49,6 +45,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 
 	/**
 	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 *
 	 * @param type required type of the missing bean
 	 */
 	public NoSuchBeanDefinitionException(Class<?> type) {
@@ -57,7 +54,8 @@ public class NoSuchBeanDefinitionException extends BeansException {
 
 	/**
 	 * Create a new {@code NoSuchBeanDefinitionException}.
-	 * @param type required type of the missing bean
+	 *
+	 * @param type    required type of the missing bean
 	 * @param message detailed message describing the problem
 	 */
 	public NoSuchBeanDefinitionException(Class<?> type, String message) {
@@ -66,6 +64,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 
 	/**
 	 * Create a new {@code NoSuchBeanDefinitionException}.
+	 *
 	 * @param type full type declaration of the missing bean
 	 * @since 4.3.4
 	 */
@@ -77,7 +76,8 @@ public class NoSuchBeanDefinitionException extends BeansException {
 
 	/**
 	 * Create a new {@code NoSuchBeanDefinitionException}.
-	 * @param type full type declaration of the missing bean
+	 *
+	 * @param type    full type declaration of the missing bean
 	 * @param message detailed message describing the problem
 	 * @since 4.3.4
 	 */
@@ -86,7 +86,6 @@ public class NoSuchBeanDefinitionException extends BeansException {
 		this.beanName = null;
 		this.resolvableType = type;
 	}
-
 
 	/**
 	 * Return the name of the missing bean, if it was a lookup <em>by name</em> that failed.
@@ -108,6 +107,7 @@ public class NoSuchBeanDefinitionException extends BeansException {
 	/**
 	 * Return the required {@link ResolvableType} of the missing bean, if it was a lookup
 	 * <em>by type</em> that failed.
+	 *
 	 * @since 4.3.4
 	 */
 	@Nullable
@@ -118,10 +118,10 @@ public class NoSuchBeanDefinitionException extends BeansException {
 	/**
 	 * Return the number of beans found when only one matching bean was expected.
 	 * For a regular NoSuchBeanDefinitionException, this will always be 0.
+	 *
 	 * @see NoUniqueBeanDefinitionException
 	 */
 	public int getNumberOfBeansFound() {
 		return 0;
 	}
-
 }
