@@ -39,6 +39,9 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 	/**
 	 * Create a new AnnotationConfigApplicationContext that needs to be populated
 	 * through {@link #register} calls and then manually {@linkplain #refresh refreshed}.
+	 * 初始化基于注解的BeanDefinition读取器，
+	 * 初始化基于包路径的BeanDefinition扫描器，
+	 * 并调用父类的无参构造方法初始化BeanFactory
 	 */
 	public AnnotationConfigApplicationContext() {
 		this.reader = new AnnotatedBeanDefinitionReader(this);

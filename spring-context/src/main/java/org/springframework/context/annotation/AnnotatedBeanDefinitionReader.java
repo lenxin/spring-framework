@@ -104,6 +104,7 @@ public class AnnotatedBeanDefinitionReader {
 	 * Register one or more annotated classes to be processed.
 	 * <p>Calls to {@code register} are idempotent; adding the same
 	 * annotated class more than once has no additional effect.
+	 * 注册一个或多个要处理的注释类。对注册的调用是幂等的;多次添加相同的注释类不会产生额外的效果。
 	 *
 	 * @param annotatedClasses one or more annotated classes,
 	 *                         e.g. {@link Configuration @Configuration} classes

@@ -1,5 +1,10 @@
 package org.springframework.core.type;
 
+import org.springframework.core.annotation.AnnotatedElementUtils;
+import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.lang.Nullable;
+import org.springframework.util.MultiValueMap;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.Collections;
@@ -7,31 +12,19 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.springframework.core.annotation.AnnotatedElementUtils;
-import org.springframework.core.annotation.AnnotationUtils;
-import org.springframework.lang.Nullable;
-import org.springframework.util.MultiValueMap;
-
 /**
  * {@link AnnotationMetadata} implementation that uses standard reflection
  * to introspect a given {@link Class}.
  *
- * @author Juergen Hoeller
- * @author Mark Fisher
- * @author Chris Beams
- * @author Phillip Webb
- * @author Sam Brannen
  * @since 2.5
  */
 public class StandardAnnotationMetadata extends StandardClassMetadata implements AnnotationMetadata {
-
 	private final Annotation[] annotations;
-
 	private final boolean nestedAnnotationsAsMap;
-
 
 	/**
 	 * Create a new {@code StandardAnnotationMetadata} wrapper for the given Class.
+	 *
 	 * @param introspectedClass the Class to introspect
 	 * @see #StandardAnnotationMetadata(Class, boolean)
 	 */
@@ -44,10 +37,11 @@ public class StandardAnnotationMetadata extends StandardClassMetadata implements
 	 * providing the option to return any nested annotations or annotation arrays in the
 	 * form of {@link org.springframework.core.annotation.AnnotationAttributes} instead
 	 * of actual {@link Annotation} instances.
-	 * @param introspectedClass the Class to introspect
+	 *
+	 * @param introspectedClass      the Class to introspect
 	 * @param nestedAnnotationsAsMap return nested annotations and annotation arrays as
-	 * {@link org.springframework.core.annotation.AnnotationAttributes} for compatibility
-	 * with ASM-based {@link AnnotationMetadata} implementations
+	 *                               {@link org.springframework.core.annotation.AnnotationAttributes} for compatibility
+	 *                               with ASM-based {@link AnnotationMetadata} implementations
 	 * @since 3.1.1
 	 */
 	public StandardAnnotationMetadata(Class<?> introspectedClass, boolean nestedAnnotationsAsMap) {
@@ -55,7 +49,6 @@ public class StandardAnnotationMetadata extends StandardClassMetadata implements
 		this.annotations = introspectedClass.getDeclaredAnnotations();
 		this.nestedAnnotationsAsMap = nestedAnnotationsAsMap;
 	}
-
 
 	@Override
 	public Set<String> getAnnotationTypes() {
@@ -131,8 +124,7 @@ public class StandardAnnotationMetadata extends StandardClassMetadata implements
 						return true;
 					}
 				}
-			}
-			catch (Throwable ex) {
+			} catch (Throwable ex) {
 				throw new IllegalStateException("Failed to introspect annotated methods on " + getIntrospectedClass(), ex);
 			}
 		}
@@ -151,12 +143,10 @@ public class StandardAnnotationMetadata extends StandardClassMetadata implements
 						annotatedMethods.add(new StandardMethodMetadata(method, this.nestedAnnotationsAsMap));
 					}
 				}
-			}
-			catch (Throwable ex) {
+			} catch (Throwable ex) {
 				throw new IllegalStateException("Failed to introspect annotated methods on " + getIntrospectedClass(), ex);
 			}
 		}
 		return annotatedMethods;
 	}
-
 }

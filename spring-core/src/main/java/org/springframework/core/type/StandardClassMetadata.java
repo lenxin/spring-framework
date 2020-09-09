@@ -1,26 +1,24 @@
 package org.springframework.core.type;
 
-import java.lang.reflect.Modifier;
-import java.util.LinkedHashSet;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.lang.reflect.Modifier;
+import java.util.LinkedHashSet;
 
 /**
  * {@link ClassMetadata} implementation that uses standard reflection
  * to introspect a given {@code Class}.
  *
- * @author Juergen Hoeller
  * @since 2.5
  */
 public class StandardClassMetadata implements ClassMetadata {
-
 	private final Class<?> introspectedClass;
-
 
 	/**
 	 * Create a new StandardClassMetadata wrapper for the given Class.
+	 *
 	 * @param introspectedClass the Class to introspect
 	 */
 	public StandardClassMetadata(Class<?> introspectedClass) {
@@ -34,7 +32,6 @@ public class StandardClassMetadata implements ClassMetadata {
 	public final Class<?> getIntrospectedClass() {
 		return this.introspectedClass;
 	}
-
 
 	@Override
 	public String getClassName() {
@@ -115,5 +112,4 @@ public class StandardClassMetadata implements ClassMetadata {
 		}
 		return StringUtils.toStringArray(memberClassNames);
 	}
-
 }
