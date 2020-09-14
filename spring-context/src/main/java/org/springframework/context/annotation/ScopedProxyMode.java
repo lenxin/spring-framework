@@ -2,6 +2,7 @@ package org.springframework.context.annotation;
 
 /**
  * Enumerates the various scoped-proxy options.
+ * 作用域代理类的选项枚举
  *
  * <p>For a more complete discussion of exactly what a scoped proxy is, see the
  * section of the Spring reference documentation entitled '<em>Scoped beans as

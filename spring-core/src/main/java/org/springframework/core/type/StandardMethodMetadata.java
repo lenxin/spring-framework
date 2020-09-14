@@ -1,33 +1,27 @@
 package org.springframework.core.type;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.Map;
-
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.MultiValueMap;
 
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Map;
+
 /**
  * {@link MethodMetadata} implementation that uses standard reflection
  * to introspect a given {@code Method}.
  *
- * @author Juergen Hoeller
- * @author Mark Pollack
- * @author Chris Beams
- * @author Phillip Webb
  * @since 3.0
  */
 public class StandardMethodMetadata implements MethodMetadata {
-
 	private final Method introspectedMethod;
-
 	private final boolean nestedAnnotationsAsMap;
-
 
 	/**
 	 * Create a new StandardMethodMetadata wrapper for the given Method.
+	 *
 	 * @param introspectedMethod the Method to introspect
 	 */
 	public StandardMethodMetadata(Method introspectedMethod) {
@@ -39,10 +33,11 @@ public class StandardMethodMetadata implements MethodMetadata {
 	 * providing the option to return any nested annotations or annotation arrays in the
 	 * form of {@link org.springframework.core.annotation.AnnotationAttributes} instead
 	 * of actual {@link java.lang.annotation.Annotation} instances.
-	 * @param introspectedMethod the Method to introspect
+	 *
+	 * @param introspectedMethod     the Method to introspect
 	 * @param nestedAnnotationsAsMap return nested annotations and annotation arrays as
-	 * {@link org.springframework.core.annotation.AnnotationAttributes} for compatibility
-	 * with ASM-based {@link AnnotationMetadata} implementations
+	 *                               {@link org.springframework.core.annotation.AnnotationAttributes} for compatibility
+	 *                               with ASM-based {@link AnnotationMetadata} implementations
 	 * @since 3.1.1
 	 */
 	public StandardMethodMetadata(Method introspectedMethod, boolean nestedAnnotationsAsMap) {
@@ -50,7 +45,6 @@ public class StandardMethodMetadata implements MethodMetadata {
 		this.introspectedMethod = introspectedMethod;
 		this.nestedAnnotationsAsMap = nestedAnnotationsAsMap;
 	}
-
 
 	/**
 	 * Return the underlying Method.
@@ -124,5 +118,4 @@ public class StandardMethodMetadata implements MethodMetadata {
 		return AnnotatedElementUtils.getAllAnnotationAttributes(this.introspectedMethod,
 				annotationName, classValuesAsString, this.nestedAnnotationsAsMap);
 	}
-
 }

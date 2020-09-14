@@ -45,27 +45,20 @@ import java.util.regex.Pattern;
  * @since 16.07.2003
  */
 public class AntPathMatcher implements PathMatcher {
-	 /**
+	/**
 	 * Default path separator: "/".
 	 */
 	public static final String DEFAULT_PATH_SEPARATOR = "/";
 	private static final int CACHE_TURNOFF_THRESHOLD = 65536;
 	private static final Pattern VARIABLE_PATTERN = Pattern.compile("\\{[^/]+?\\}");
 	private static final char[] WILDCARD_CHARS = {'*', '?', '{'};
-
 	private String pathSeparator;
-
 	private PathSeparatorPatternCache pathSeparatorPatternCache;
-
 	private boolean caseSensitive = true;
-
 	private boolean trimTokens = false;
-
 	@Nullable
 	private volatile Boolean cachePatterns;
-
 	private final Map<String, String[]> tokenizedPatternCache = new ConcurrentHashMap<>(256);
-
 	final Map<String, AntPathStringMatcher> stringMatcherCache = new ConcurrentHashMap<>(256);
 
 	/**
@@ -595,11 +588,8 @@ public class AntPathMatcher implements PathMatcher {
 	 */
 	protected static class AntPathStringMatcher {
 		private static final Pattern GLOB_PATTERN = Pattern.compile("\\?|\\*|\\{((?:\\{[^/]+?\\}|[^/{}]|\\\\[{}])+?)\\}");
-
 		private static final String DEFAULT_VARIABLE_PATTERN = "(.*)";
-
 		private final Pattern pattern;
-
 		private final List<String> variableNames = new LinkedList<>();
 
 		public AntPathStringMatcher(String pattern) {
@@ -760,17 +750,11 @@ public class AntPathMatcher implements PathMatcher {
 		private static class PatternInfo {
 			@Nullable
 			private final String pattern;
-
 			private int uriVars;
-
 			private int singleWildcards;
-
 			private int doubleWildcards;
-
 			private boolean catchAllPattern;
-
 			private boolean prefixPattern;
-
 			@Nullable
 			private Integer length;
 
@@ -852,7 +836,6 @@ public class AntPathMatcher implements PathMatcher {
 	 */
 	private static class PathSeparatorPatternCache {
 		private final String endsOnWildCard;
-
 		private final String endsOnDoubleWildCard;
 
 		public PathSeparatorPatternCache(String pathSeparator) {

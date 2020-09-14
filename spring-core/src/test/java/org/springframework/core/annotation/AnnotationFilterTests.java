@@ -1,26 +1,21 @@
 package org.springframework.core.annotation;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import javax.annotation.Nonnull;
-
 import org.junit.Test;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.ObjectUtils;
 
-import static org.assertj.core.api.Assertions.*;
+import javax.annotation.Nonnull;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Tests for {@link AnnotationFilter}.
- *
- * @author Phillip Webb
  */
 public class AnnotationFilterTests {
-
 	private static final AnnotationFilter FILTER = annotationType ->
 			ObjectUtils.nullSafeEquals(annotationType, TestAnnotation.class.getName());
-
 
 	@Test
 	public void matchesAnnotationWhenMatchReturnsTrue() {
@@ -88,7 +83,6 @@ public class AnnotationFilterTests {
 		assertThat(AnnotationFilter.NONE.matches(TestAnnotation.class)).isFalse();
 	}
 
-
 	@Retention(RetentionPolicy.RUNTIME)
 	@interface TestAnnotation {
 	}
@@ -104,5 +98,4 @@ public class AnnotationFilterTests {
 	@OtherAnnotation
 	static class WithOtherAnnotation {
 	}
-
 }

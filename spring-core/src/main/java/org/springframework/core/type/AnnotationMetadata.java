@@ -15,6 +15,7 @@ public interface AnnotationMetadata extends ClassMetadata, AnnotatedTypeMetadata
 	/**
 	 * Get the fully qualified class names of all annotation types that
 	 * are <em>present</em> on the underlying class.
+	 * 获取底层类中存在的所有注释类型的完全限定类名。
 	 *
 	 * @return the annotation type names
 	 */
@@ -23,6 +24,7 @@ public interface AnnotationMetadata extends ClassMetadata, AnnotatedTypeMetadata
 	/**
 	 * Get the fully qualified class names of all meta-annotation types that
 	 * are <em>present</em> on the given annotation type on the underlying class.
+	 * 获取底层类上给定注释类型上存在的所有元注释类型的完全限定类名。
 	 *
 	 * @param annotationName the fully qualified class name of the meta-annotation
 	 *                       type to look for
@@ -33,6 +35,7 @@ public interface AnnotationMetadata extends ClassMetadata, AnnotatedTypeMetadata
 	/**
 	 * Determine whether an annotation of the given type is <em>present</em> on
 	 * the underlying class.
+	 * 确定底层类上是否存在给定类型的注解。
 	 *
 	 * @param annotationName the fully qualified class name of the annotation
 	 *                       type to look for
@@ -43,6 +46,7 @@ public interface AnnotationMetadata extends ClassMetadata, AnnotatedTypeMetadata
 	/**
 	 * Determine whether the underlying class has an annotation that is itself
 	 * annotated with the meta-annotation of the given type.
+	 * 确定基础类是否有自己用给定类型的元注解的注解。
 	 *
 	 * @param metaAnnotationName the fully qualified class name of the
 	 *                           meta-annotation type to look for

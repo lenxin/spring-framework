@@ -21,23 +21,20 @@ import org.springframework.util.Assert;
  * but distinguishes by type beans that have been <em>scanned</em> vs those that have
  * been otherwise registered or detected by other means.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
- * @since 2.5
  * @see #getMetadata()
  * @see #getBeanClassName()
  * @see org.springframework.core.type.classreading.MetadataReaderFactory
  * @see AnnotatedGenericBeanDefinition
+ * @since 2.5
  */
 @SuppressWarnings("serial")
 public class ScannedGenericBeanDefinition extends GenericBeanDefinition implements AnnotatedBeanDefinition {
-
 	private final AnnotationMetadata metadata;
-
 
 	/**
 	 * Create a new ScannedGenericBeanDefinition for the class that the
 	 * given MetadataReader describes.
+	 *
 	 * @param metadataReader the MetadataReader for the scanned target class
 	 */
 	public ScannedGenericBeanDefinition(MetadataReader metadataReader) {
@@ -45,7 +42,6 @@ public class ScannedGenericBeanDefinition extends GenericBeanDefinition implemen
 		this.metadata = metadataReader.getAnnotationMetadata();
 		setBeanClassName(this.metadata.getClassName());
 	}
-
 
 	@Override
 	public final AnnotationMetadata getMetadata() {
@@ -57,5 +53,4 @@ public class ScannedGenericBeanDefinition extends GenericBeanDefinition implemen
 	public MethodMetadata getFactoryMethodMetadata() {
 		return null;
 	}
-
 }

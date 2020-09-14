@@ -8,11 +8,9 @@ import org.springframework.core.type.ClassMetadata;
  * Simple facade for accessing class metadata,
  * as read by an ASM {@link org.springframework.asm.ClassReader}.
  *
- * @author Juergen Hoeller
  * @since 2.5
  */
 public interface MetadataReader {
-
 	/**
 	 * Return the resource reference for the class file.
 	 */
@@ -28,5 +26,4 @@ public interface MetadataReader {
 	 * including metadata for annotated methods.
 	 */
 	AnnotationMetadata getAnnotationMetadata();
-
 }

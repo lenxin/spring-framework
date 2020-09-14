@@ -1,23 +1,22 @@
 package org.springframework.core.annotation;
 
-import java.util.Arrays;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.util.Arrays;
 
 /**
  * {@link AnnotationFilter} implementation used for
  * {@link AnnotationFilter#packages(String...)}.
  *
- * @author Phillip Webb
  * @since 5.2
  */
 final class PackagesAnnotationFilter implements AnnotationFilter {
-
 	private final String[] prefixes;
+	private final int hashCode;
 
-	private final int hashCode;packagesAnnotationFilter(String... packages) {
+	protected PackagesAnnotationFilter(String... packages) {
 		Assert.notNull(packages, "Packages array must not be null");
 		this.prefixes = new String[packages.length];
 		for (int i = 0; i < packages.length; i++) {
@@ -29,7 +28,6 @@ final class PackagesAnnotationFilter implements AnnotationFilter {
 		this.hashCode = Arrays.hashCode(this.prefixes);
 	}
 
-
 	@Override
 	public boolean matches(String annotationType) {
 		for (String prefix : this.prefixes) {
@@ -39,7 +37,6 @@ final class PackagesAnnotationFilter implements AnnotationFilter {
 		}
 		return false;
 	}
-
 
 	@Override
 	public boolean equals(@Nullable Object other) {
@@ -62,5 +59,4 @@ final class PackagesAnnotationFilter implements AnnotationFilter {
 		return "Packages annotation filter: " +
 				StringUtils.arrayToCommaDelimitedString(this.prefixes);
 	}
-
 }

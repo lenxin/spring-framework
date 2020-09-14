@@ -5,12 +5,10 @@ import java.lang.annotation.Annotation;
 /**
  * Callback interface that can be used to filter specific annotation types.
  *
- * @author Phillip Webb
  * @since 5.2
  */
 @FunctionalInterface
 public interface AnnotationFilter {
-
 	/**
 	 * {@link AnnotationFilter} that matches annotations in the
 	 * {@code java.lang.*} and {@code org.springframework.lang.*} packages.
@@ -32,15 +30,16 @@ public interface AnnotationFilter {
 		public boolean matches(String typeName) {
 			return false;
 		}
+
 		@Override
 		public String toString() {
 			return "No annotation filtering";
 		}
 	};
 
-
 	/**
 	 * Test if the given annotation matches the filter.
+	 *
 	 * @param annotation the annotation to test
 	 * @return {@code true} if the annotation matches
 	 */
@@ -50,6 +49,7 @@ public interface AnnotationFilter {
 
 	/**
 	 * Test if the given type matches the filter.
+	 *
 	 * @param type the annotation type to test
 	 * @return {@code true} if the annotation matches
 	 */
@@ -59,20 +59,20 @@ public interface AnnotationFilter {
 
 	/**
 	 * Test if the given type name matches the filter.
+	 *
 	 * @param typeName the fully qualified class name of the annotation type to test
 	 * @return {@code true} if the annotation matches
 	 */
 	boolean matches(String typeName);
 
-
 	/**
 	 * Create a new {@link AnnotationFilter} that matches annotations in the
 	 * specified packages.
+	 *
 	 * @param packages the annotation packages that should match
 	 * @return a new {@link AnnotationFilter} instance
 	 */
 	static AnnotationFilter packages(String... packages) {
 		return new PackagesAnnotationFilter(packages);
 	}
-
 }

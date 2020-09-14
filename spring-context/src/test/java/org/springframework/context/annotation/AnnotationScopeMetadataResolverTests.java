@@ -1,11 +1,6 @@
 package org.springframework.context.annotation;
 
-import java.io.IOException;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 import org.junit.Test;
-
 import org.springframework.beans.factory.annotation.AnnotatedBeanDefinition;
 import org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -13,21 +8,19 @@ import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.core.type.classreading.MetadataReaderFactory;
 import org.springframework.core.type.classreading.SimpleMetadataReaderFactory;
 
-import static org.junit.Assert.*;
+import java.io.IOException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.springframework.context.annotation.ScopedProxyMode.*;
 
 /**
  * Unit tests for {@link AnnotationScopeMetadataResolver}.
- *
- * @author Rick Evans
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Sam Brannen
  */
 public class AnnotationScopeMetadataResolverTests {
-
 	private AnnotationScopeMetadataResolver scopeMetadataResolver = new AnnotationScopeMetadataResolver();
-
 
 	@Test
 	public void resolveScopeMetadataShouldNotApplyScopedProxyModeToSingleton() {
@@ -80,7 +73,7 @@ public class AnnotationScopeMetadataResolverTests {
 	@Test
 	public void customRequestScopeWithAttribute() {
 		AnnotatedBeanDefinition bd = new AnnotatedGenericBeanDefinition(
-			AnnotatedWithCustomRequestScopeWithAttributeOverride.class);
+				AnnotatedWithCustomRequestScopeWithAttributeOverride.class);
 		ScopeMetadata scopeMetadata = this.scopeMetadataResolver.resolveScopeMetadata(bd);
 		assertNotNull("resolveScopeMetadata(..) must *never* return null.", scopeMetadata);
 		assertEquals("request", scopeMetadata.getScopeName());
@@ -108,7 +101,6 @@ public class AnnotationScopeMetadataResolverTests {
 		scopeMetadataResolver.setScopeAnnotationType(null);
 	}
 
-
 	@Retention(RetentionPolicy.RUNTIME)
 	@Scope("request")
 	@interface CustomRequestScope {
@@ -117,7 +109,6 @@ public class AnnotationScopeMetadataResolverTests {
 	@Retention(RetentionPolicy.RUNTIME)
 	@Scope("request")
 	@interface CustomRequestScopeWithAttributeOverride {
-
 		ScopedProxyMode proxyMode();
 	}
 
@@ -140,5 +131,4 @@ public class AnnotationScopeMetadataResolverTests {
 	@CustomRequestScopeWithAttributeOverride(proxyMode = TARGET_CLASS)
 	private static class AnnotatedWithCustomRequestScopeWithAttributeOverride {
 	}
-
 }
