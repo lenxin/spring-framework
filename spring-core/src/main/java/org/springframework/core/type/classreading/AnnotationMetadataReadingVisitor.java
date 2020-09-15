@@ -1,13 +1,5 @@
 package org.springframework.core.type.classreading;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.springframework.asm.AnnotationVisitor;
 import org.springframework.asm.MethodVisitor;
 import org.springframework.asm.Opcodes;
@@ -20,41 +12,33 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
+import java.util.*;
+
 /**
  * ASM class visitor which looks for the class name and implemented types as
  * well as for the annotations defined on the class, exposing them through
  * the {@link org.springframework.core.type.AnnotationMetadata} interface.
  *
- * @author Juergen Hoeller
- * @author Mark Fisher
- * @author Costin Leau
- * @author Phillip Webb
- * @author Sam Brannen
  * @since 2.5
  */
 public class AnnotationMetadataReadingVisitor extends ClassMetadataReadingVisitor implements AnnotationMetadata {
-
 	@Nullable
 	protected final ClassLoader classLoader;
-
 	protected final Set<String> annotationSet = new LinkedHashSet<>(4);
-
 	protected final Map<String, Set<String>> metaAnnotationMap = new LinkedHashMap<>(4);
 
 	/**
 	 * Declared as a {@link LinkedMultiValueMap} instead of a {@link MultiValueMap}
 	 * to ensure that the hierarchical ordering of the entries is preserved.
+	 *
 	 * @see AnnotationReadingVisitorUtils#getMergedAnnotationAttributes
 	 */
 	protected final LinkedMultiValueMap<String, AnnotationAttributes> attributesMap = new LinkedMultiValueMap<>(4);
-
 	protected final Set<MethodMetadata> methodMetadataSet = new LinkedHashSet<>(4);
-
 
 	public AnnotationMetadataReadingVisitor(@Nullable ClassLoader classLoader) {
 		this.classLoader = classLoader;
 	}
-
 
 	@Override
 	public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
@@ -74,7 +58,6 @@ public class AnnotationMetadataReadingVisitor extends ClassMetadataReadingVisito
 		return new AnnotationAttributesReadingVisitor(
 				className, this.attributesMap, this.metaAnnotationMap, this.classLoader);
 	}
-
 
 	@Override
 	public Set<String> getAnnotationTypes() {
@@ -170,5 +153,4 @@ public class AnnotationMetadataReadingVisitor extends ClassMetadataReadingVisito
 		}
 		return annotatedMethods;
 	}
-
 }

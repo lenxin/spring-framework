@@ -9,6 +9,7 @@ import java.util.Map;
  * Defines access to the annotations of a specific type ({@link AnnotationMetadata class}
  * or {@link MethodMetadata method}), in a form that does not necessarily require the
  * class-loading.
+ * 定义对特定类型(AnnotationMetadata类或MethodMetadata方法)的注解的访问，其形式不一定需要类加载。
  *
  * @see AnnotationMetadata
  * @see MethodMetadata
@@ -20,6 +21,8 @@ public interface AnnotatedTypeMetadata {
 	 * of the given type defined.
 	 * <p>If this method returns {@code true}, then
 	 * {@link #getAnnotationAttributes} will return a non-null Map.
+	 * 确定基础元素是否有定义的给定类型的注解或元注解。
+	 * 如果有，那么getAnnotationAttributes将返回一个非空映射。
 	 *
 	 * @param annotationName the fully qualified class name of the annotation
 	 *                       type to look for

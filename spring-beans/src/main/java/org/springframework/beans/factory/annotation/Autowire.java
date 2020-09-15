@@ -10,14 +10,11 @@ import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
  * <p>Available for use in annotation-based configurations, such as for the
  * AspectJ AnnotationBeanConfigurer aspect.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @since 2.0
  * @see org.springframework.beans.factory.annotation.Configurable
  * @see org.springframework.beans.factory.config.AutowireCapableBeanFactory
+ * @since 2.0
  */
 public enum Autowire {
-
 	/**
 	 * Constant that indicates no autowiring at all.
 	 */
@@ -33,9 +30,7 @@ public enum Autowire {
 	 */
 	BY_TYPE(AutowireCapableBeanFactory.AUTOWIRE_BY_TYPE);
 
-
 	private final int value;
-
 
 	Autowire(int value) {
 		this.value = value;
@@ -47,6 +42,7 @@ public enum Autowire {
 
 	/**
 	 * Return whether this represents an actual autowiring value.
+	 *
 	 * @return whether actual autowiring was specified
 	 * (either BY_NAME or BY_TYPE)
 	 */

@@ -28,25 +28,16 @@ import java.util.Set;
 /**
  * Utilities for identifying {@link Configuration} classes.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
  * @since 3.1
  */
 abstract class ConfigurationClassUtils {
-
 	public static final String CONFIGURATION_CLASS_FULL = "full";
-
 	public static final String CONFIGURATION_CLASS_LITE = "lite";
-
 	public static final String CONFIGURATION_CLASS_ATTRIBUTE =
 			Conventions.getQualifiedAttributeName(ConfigurationClassPostProcessor.class, "configurationClass");
-
 	private static final String ORDER_ATTRIBUTE =
 			Conventions.getQualifiedAttributeName(ConfigurationClassPostProcessor.class, "order");
-
-
 	private static final Log logger = LogFactory.getLog(ConfigurationClassUtils.class);
-
 	private static final Set<String> candidateIndicators = new HashSet<>(8);
 
 	static {
@@ -55,7 +46,6 @@ abstract class ConfigurationClassUtils {
 		candidateIndicators.add(Import.class.getName());
 		candidateIndicators.add(ImportResource.class.getName());
 	}
-
 
 	/**
 	 * Check whether the given bean definition is a candidate for a configuration class
@@ -181,5 +171,4 @@ abstract class ConfigurationClassUtils {
 		Integer order = (Integer) beanDef.getAttribute(ORDER_ATTRIBUTE);
 		return (order != null ? order : Ordered.LOWEST_PRECEDENCE);
 	}
-
 }

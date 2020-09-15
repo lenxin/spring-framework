@@ -7,23 +7,19 @@ package org.springframework.context.annotation;
  * has already been registered might choose to only be evaluated during the
  * {@link ConfigurationPhase#REGISTER_BEAN REGISTER_BEAN} {@link ConfigurationPhase}.
  *
- * @author Phillip Webb
- * @since 4.0
  * @see Configuration
+ * @since 4.0
  */
 public interface ConfigurationCondition extends Condition {
-
 	/**
 	 * Return the {@link ConfigurationPhase} in which the condition should be evaluated.
 	 */
 	ConfigurationPhase getConfigurationPhase();
 
-
 	/**
 	 * The various configuration phases where the condition could be evaluated.
 	 */
 	enum ConfigurationPhase {
-
 		/**
 		 * The {@link Condition} should be evaluated as a {@code @Configuration}
 		 * class is being parsed.
@@ -41,5 +37,4 @@ public interface ConfigurationCondition extends Condition {
 		 */
 		REGISTER_BEAN
 	}
-
 }
