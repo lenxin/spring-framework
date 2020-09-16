@@ -88,7 +88,6 @@ public abstract class ClassUtils {
 	 */
 	private static final Set<Class<?>> javaLanguageInterfaces;
 
-
 	static {
 		primitiveWrapperTypeMap.put(Boolean.class, boolean.class);
 		primitiveWrapperTypeMap.put(Byte.class, byte.class);
@@ -128,7 +127,6 @@ public abstract class ClassUtils {
 		registerCommonClasses(javaLanguageInterfaceArray);
 		javaLanguageInterfaces = new HashSet<>(Arrays.asList(javaLanguageInterfaceArray));
 	}
-
 
 	/**
 	 * Register the given common classes with the ClassUtils cache.

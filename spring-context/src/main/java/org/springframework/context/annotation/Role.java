@@ -1,12 +1,8 @@
 package org.springframework.context.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import org.springframework.beans.factory.config.BeanDefinition;
+
+import java.lang.annotation.*;
 
 /**
  * Indicates the 'role' hint for a given bean.
@@ -23,24 +19,22 @@ import org.springframework.beans.factory.config.BeanDefinition;
  * does not cascade to all @{@code Bean} methods defined within. This behavior
  * is different than that of the @{@link Lazy} annotation, for example.
  *
- * @author Chris Beams
- * @since 3.1
  * @see BeanDefinition#ROLE_APPLICATION
  * @see BeanDefinition#ROLE_INFRASTRUCTURE
  * @see BeanDefinition#ROLE_SUPPORT
  * @see Bean
+ * @since 3.1
  */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface Role {
-
 	/**
 	 * Set the role hint for the associated bean.
+	 *
 	 * @see BeanDefinition#ROLE_APPLICATION
 	 * @see BeanDefinition#ROLE_INFRASTRUCTURE
 	 * @see BeanDefinition#ROLE_SUPPORT
 	 */
 	int value();
-
 }

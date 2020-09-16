@@ -69,6 +69,8 @@ public class AnnotationBeanNameGenerator implements BeanNameGenerator {
 
 	/**
 	 * Derive a bean name from one of the annotations on the class.
+	 * 获取@Component注解及其派生注解以及javax.annotation.ManagedBean、javax.inject.Named设置的bean名称
+	 * 并检查名称是否相同，若不同，抛出IllegalStateException异常
 	 *
 	 * @param annotatedDef the annotation-aware bean definition
 	 * @return the bean name, or {@code null} if none is found
@@ -100,6 +102,7 @@ public class AnnotationBeanNameGenerator implements BeanNameGenerator {
 	/**
 	 * Check whether the given annotation is a stereotype that is allowed
 	 * to suggest a component name through its annotation {@code value()}.
+	 * 检查给定的注释是否是允许通过其value()建议组件名称的原型。
 	 *
 	 * @param annotationType      the name of the annotation class to check
 	 * @param metaAnnotationTypes the names of meta-annotations on the given annotation
@@ -108,7 +111,7 @@ public class AnnotationBeanNameGenerator implements BeanNameGenerator {
 	 */
 	protected boolean isStereotypeWithNameValue(String annotationType,
 												Set<String> metaAnnotationTypes, @Nullable Map<String, Object> attributes) {
-
+		// 检查给定的注解是否是Component注解、其元注解是否包含Component、是否是javax.annotation.ManagedBean、是否是javax.inject.Named
 		boolean isStereotype = annotationType.equals(COMPONENT_ANNOTATION_CLASSNAME) ||
 				metaAnnotationTypes.contains(COMPONENT_ANNOTATION_CLASSNAME) ||
 				annotationType.equals("javax.annotation.ManagedBean") ||
@@ -136,7 +139,7 @@ public class AnnotationBeanNameGenerator implements BeanNameGenerator {
 	 * <p>Note that inner classes will thus have names of the form
 	 * "outerClassName.InnerClassName", which because of the period in the
 	 * name may be an issue if you are autowiring by name.
-	 *
+	 * 获取bean class名称并使首字母小写
 	 * @param definition the bean definition to build a bean name for
 	 * @return the default bean name (never {@code null})
 	 */

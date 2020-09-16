@@ -1,17 +1,12 @@
 package org.springframework.util;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.UndeclaredThrowableException;
+import org.springframework.lang.Nullable;
+
+import java.lang.reflect.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-
-import org.springframework.lang.Nullable;
 
 /**
  * Simple utility class for working with the reflection API and handling
@@ -19,19 +14,13 @@ import org.springframework.lang.Nullable;
  *
  * <p>Only intended for internal use.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Rod Johnson
- * @author Costin Leau
- * @author Sam Brannen
- * @author Chris Beams
  * @since 1.2.2
  */
 public abstract class ReflectionUtils {
-
 	/**
 	 * Pre-built MethodFilter that matches all non-bridge non-synthetic methods
 	 * which are not declared on {@code java.lang.Object}.
+	 *
 	 * @since 3.0.5
 	 */
 	public static final MethodFilter USER_DECLARED_METHODS =
@@ -43,21 +32,16 @@ public abstract class ReflectionUtils {
 	public static final FieldFilter COPYABLE_FIELDS =
 			(field -> !(Modifier.isStatic(field.getModifiers()) || Modifier.isFinal(field.getModifiers())));
 
-
 	/**
 	 * Naming prefix for CGLIB-renamed methods.
+	 *
 	 * @see #isCglibRenamedMethod
 	 */
 	private static final String CGLIB_RENAMED_METHOD_PREFIX = "CGLIB$";
-
 	private static final Class<?>[] EMPTY_CLASS_ARRAY = new Class<?>[0];
-
 	private static final Method[] EMPTY_METHOD_ARRAY = new Method[0];
-
 	private static final Field[] EMPTY_FIELD_ARRAY = new Field[0];
-
 	private static final Object[] EMPTY_OBJECT_ARRAY = new Object[0];
-
 
 	/**
 	 * Cache for {@link Class#getDeclaredMethods()} plus equivalent default methods
@@ -70,7 +54,6 @@ public abstract class ReflectionUtils {
 	 */
 	private static final Map<Class<?>, Field[]> declaredFieldsCache = new ConcurrentReferenceHashMap<>(256);
 
-
 	// Exception handling
 
 	/**
@@ -80,6 +63,7 @@ public abstract class ReflectionUtils {
 	 * InvocationTargetException with such a root cause. Throws an
 	 * IllegalStateException with an appropriate message or
 	 * UndeclaredThrowableException otherwise.
+	 *
 	 * @param ex the reflection exception to handle
 	 */
 	public static void handleReflectionException(Exception ex) {
@@ -103,6 +87,7 @@ public abstract class ReflectionUtils {
 	 * checked exception is expected to be thrown by the target method.
 	 * <p>Throws the underlying RuntimeException or Error in case of such a root
 	 * cause. Throws an UndeclaredThrowableException otherwise.
+	 *
 	 * @param ex the invocation target exception to handle
 	 */
 	public static void handleInvocationTargetException(InvocationTargetException ex) {
@@ -117,6 +102,7 @@ public abstract class ReflectionUtils {
 	 * <p>Rethrows the underlying exception cast to a {@link RuntimeException} or
 	 * {@link Error} if appropriate; otherwise, throws an
 	 * {@link UndeclaredThrowableException}.
+	 *
 	 * @param ex the exception to rethrow
 	 * @throws RuntimeException the rethrown exception
 	 */
@@ -138,6 +124,7 @@ public abstract class ReflectionUtils {
 	 * <p>Rethrows the underlying exception cast to an {@link Exception} or
 	 * {@link Error} if appropriate; otherwise, throws an
 	 * {@link UndeclaredThrowableException}.
+	 *
 	 * @param ex the exception to rethrow
 	 * @throws Exception the rethrown exception (in case of a checked exception)
 	 */
@@ -151,12 +138,12 @@ public abstract class ReflectionUtils {
 		throw new UndeclaredThrowableException(ex);
 	}
 
-
 	// Constructor handling
 
 	/**
 	 * Obtain an accessible constructor for the given class and parameters.
-	 * @param clazz the clazz to check
+	 *
+	 * @param clazz          the clazz to check
 	 * @param parameterTypes the parameter types of the desired constructor
 	 * @return the constructor reference
 	 * @throws NoSuchMethodException if no such constructor exists
@@ -164,7 +151,6 @@ public abstract class ReflectionUtils {
 	 */
 	public static <T> Constructor<T> accessibleConstructor(Class<T> clazz, Class<?>... parameterTypes)
 			throws NoSuchMethodException {
-
 		Constructor<T> ctor = clazz.getDeclaredConstructor(parameterTypes);
 		makeAccessible(ctor);
 		return ctor;
@@ -175,6 +161,7 @@ public abstract class ReflectionUtils {
 	 * if necessary. The {@code setAccessible(true)} method is only called
 	 * when actually necessary, to avoid unnecessary conflicts with a JVM
 	 * SecurityManager (if active).
+	 *
 	 * @param ctor the constructor to make accessible
 	 * @see java.lang.reflect.Constructor#setAccessible
 	 */
@@ -186,15 +173,15 @@ public abstract class ReflectionUtils {
 		}
 	}
 
-
 	// Method handling
 
 	/**
 	 * Attempt to find a {@link Method} on the supplied class with the supplied name
 	 * and no parameters. Searches all superclasses up to {@code Object}.
 	 * <p>Returns {@code null} if no {@link Method} can be found.
+	 *
 	 * @param clazz the class to introspect
-	 * @param name the name of the method
+	 * @param name  the name of the method
 	 * @return the Method object, or {@code null} if none found
 	 */
 	@Nullable
@@ -206,10 +193,11 @@ public abstract class ReflectionUtils {
 	 * Attempt to find a {@link Method} on the supplied class with the supplied name
 	 * and parameter types. Searches all superclasses up to {@code Object}.
 	 * <p>Returns {@code null} if no {@link Method} can be found.
-	 * @param clazz the class to introspect
-	 * @param name the name of the method
+	 *
+	 * @param clazz      the class to introspect
+	 * @param name       the name of the method
 	 * @param paramTypes the parameter types of the method
-	 * (may be {@code null} to indicate any signature)
+	 *                   (may be {@code null} to indicate any signature)
 	 * @return the Method object, or {@code null} if none found
 	 */
 	@Nullable
@@ -236,6 +224,7 @@ public abstract class ReflectionUtils {
 	 * Invoke the specified {@link Method} against the supplied target object with no arguments.
 	 * The target object can be {@code null} when invoking a static {@link Method}.
 	 * <p>Thrown exceptions are handled via a call to {@link #handleReflectionException}.
+	 *
 	 * @param method the method to invoke
 	 * @param target the target object to invoke the method on
 	 * @return the invocation result, if any
@@ -251,17 +240,17 @@ public abstract class ReflectionUtils {
 	 * supplied arguments. The target object can be {@code null} when invoking a
 	 * static {@link Method}.
 	 * <p>Thrown exceptions are handled via a call to {@link #handleReflectionException}.
+	 *
 	 * @param method the method to invoke
 	 * @param target the target object to invoke the method on
-	 * @param args the invocation arguments (may be {@code null})
+	 * @param args   the invocation arguments (may be {@code null})
 	 * @return the invocation result, if any
 	 */
 	@Nullable
 	public static Object invokeMethod(Method method, @Nullable Object target, @Nullable Object... args) {
 		try {
 			return method.invoke(target, args);
-		}
-		catch (Exception ex) {
+		} catch (Exception ex) {
 			handleReflectionException(ex);
 		}
 		throw new IllegalStateException("Should never get here");
@@ -271,7 +260,8 @@ public abstract class ReflectionUtils {
 	 * Determine whether the given method explicitly declares the given
 	 * exception or one of its superclasses, which means that an exception
 	 * of that type can be propagated as-is within a reflective invocation.
-	 * @param method the declaring method
+	 *
+	 * @param method        the declaring method
 	 * @param exceptionType the exception to throw
 	 * @return {@code true} if the exception can be thrown as-is;
 	 * {@code false} if it needs to be wrapped
@@ -291,19 +281,19 @@ public abstract class ReflectionUtils {
 	 * Perform the given callback operation on all matching methods of the given
 	 * class, as locally declared or equivalent thereof (such as default methods
 	 * on Java 8 based interfaces that the given class implements).
+	 *
 	 * @param clazz the class to introspect
-	 * @param mc the callback to invoke for each method
+	 * @param mc    the callback to invoke for each method
 	 * @throws IllegalStateException if introspection fails
-	 * @since 4.2
 	 * @see #doWithMethods
+	 * @since 4.2
 	 */
 	public static void doWithLocalMethods(Class<?> clazz, MethodCallback mc) {
 		Method[] methods = getDeclaredMethods(clazz, false);
 		for (Method method : methods) {
 			try {
 				mc.doWith(method);
-			}
-			catch (IllegalAccessException ex) {
+			} catch (IllegalAccessException ex) {
 				throw new IllegalStateException("Not allowed to access method '" + method.getName() + "': " + ex);
 			}
 		}
@@ -314,8 +304,9 @@ public abstract class ReflectionUtils {
 	 * class and superclasses.
 	 * <p>The same named method occurring on subclass and superclass will appear
 	 * twice, unless excluded by a {@link MethodFilter}.
+	 *
 	 * @param clazz the class to introspect
-	 * @param mc the callback to invoke for each method
+	 * @param mc    the callback to invoke for each method
 	 * @throws IllegalStateException if introspection fails
 	 * @see #doWithMethods(Class, MethodCallback, MethodFilter)
 	 */
@@ -328,9 +319,10 @@ public abstract class ReflectionUtils {
 	 * class and superclasses (or given interface and super-interfaces).
 	 * <p>The same named method occurring on subclass and superclass will appear
 	 * twice, unless excluded by the specified {@link MethodFilter}.
+	 *
 	 * @param clazz the class to introspect
-	 * @param mc the callback to invoke for each method
-	 * @param mf the filter that determines the methods to apply the callback to
+	 * @param mc    the callback to invoke for each method
+	 * @param mf    the filter that determines the methods to apply the callback to
 	 * @throws IllegalStateException if introspection fails
 	 */
 	public static void doWithMethods(Class<?> clazz, MethodCallback mc, @Nullable MethodFilter mf) {
@@ -342,15 +334,13 @@ public abstract class ReflectionUtils {
 			}
 			try {
 				mc.doWith(method);
-			}
-			catch (IllegalAccessException ex) {
+			} catch (IllegalAccessException ex) {
 				throw new IllegalStateException("Not allowed to access method '" + method.getName() + "': " + ex);
 			}
 		}
 		if (clazz.getSuperclass() != null && (mf != USER_DECLARED_METHODS || clazz.getSuperclass() != Object.class)) {
 			doWithMethods(clazz.getSuperclass(), mc, mf);
-		}
-		else if (clazz.isInterface()) {
+		} else if (clazz.isInterface()) {
 			for (Class<?> superIfc : clazz.getInterfaces()) {
 				doWithMethods(superIfc, mc, mf);
 			}
@@ -360,6 +350,7 @@ public abstract class ReflectionUtils {
 	/**
 	 * Get all declared methods on the leaf class and all superclasses.
 	 * Leaf class methods are included first.
+	 *
 	 * @param leafClass the class to introspect
 	 * @throws IllegalStateException if introspection fails
 	 */
@@ -373,6 +364,7 @@ public abstract class ReflectionUtils {
 	 * Get the unique set of declared methods on the leaf class and all superclasses.
 	 * Leaf class methods are included first and while traversing the superclass hierarchy
 	 * any methods found with signatures matching a method already included are filtered out.
+	 *
 	 * @param leafClass the class to introspect
 	 * @throws IllegalStateException if introspection fails
 	 */
@@ -384,8 +376,9 @@ public abstract class ReflectionUtils {
 	 * Get the unique set of declared methods on the leaf class and all superclasses.
 	 * Leaf class methods are included first and while traversing the superclass hierarchy
 	 * any methods found with signatures matching a method already included are filtered out.
+	 *
 	 * @param leafClass the class to introspect
-	 * @param mf the filter that determines the methods to take into account
+	 * @param mf        the filter that determines the methods to take into account
 	 * @throws IllegalStateException if introspection fails
 	 * @since 5.2
 	 */
@@ -401,8 +394,7 @@ public abstract class ReflectionUtils {
 					if (existingMethod.getReturnType() != method.getReturnType() &&
 							existingMethod.getReturnType().isAssignableFrom(method.getReturnType())) {
 						methodBeingOverriddenWithCovariantReturnType = existingMethod;
-					}
-					else {
+					} else {
 						knownSignature = true;
 					}
 					break;
@@ -424,11 +416,12 @@ public abstract class ReflectionUtils {
 	 * In addition, it also includes Java 8 default methods from locally
 	 * implemented interfaces, since those are effectively to be treated just
 	 * like declared methods.
+	 *
 	 * @param clazz the class to introspect
 	 * @return the cached array of methods
 	 * @throws IllegalStateException if introspection fails
-	 * @since 5.2
 	 * @see Class#getDeclaredMethods()
+	 * @since 5.2
 	 */
 	public static Method[] getDeclaredMethods(Class<?> clazz) {
 		return getDeclaredMethods(clazz, true);
@@ -449,13 +442,11 @@ public abstract class ReflectionUtils {
 						result[index] = defaultMethod;
 						index++;
 					}
-				}
-				else {
+				} else {
 					result = declaredMethods;
 				}
 				declaredMethodsCache.put(clazz, (result.length == 0 ? EMPTY_METHOD_ARRAY : result));
-			}
-			catch (Throwable ex) {
+			} catch (Throwable ex) {
 				throw new IllegalStateException("Failed to introspect Class [" + clazz.getName() +
 						"] from ClassLoader [" + clazz.getClassLoader() + "]", ex);
 			}
@@ -481,6 +472,7 @@ public abstract class ReflectionUtils {
 
 	/**
 	 * Determine whether the given method is an "equals" method.
+	 *
 	 * @see java.lang.Object#equals(Object)
 	 */
 	public static boolean isEqualsMethod(@Nullable Method method) {
@@ -493,6 +485,7 @@ public abstract class ReflectionUtils {
 
 	/**
 	 * Determine whether the given method is a "hashCode" method.
+	 *
 	 * @see java.lang.Object#hashCode()
 	 */
 	public static boolean isHashCodeMethod(@Nullable Method method) {
@@ -501,6 +494,7 @@ public abstract class ReflectionUtils {
 
 	/**
 	 * Determine whether the given method is a "toString" method.
+	 *
 	 * @see java.lang.Object#toString()
 	 */
 	public static boolean isToStringMethod(@Nullable Method method) {
@@ -518,6 +512,7 @@ public abstract class ReflectionUtils {
 	/**
 	 * Determine whether the given method is a CGLIB 'renamed' method,
 	 * following the pattern "CGLIB$methodName$0".
+	 *
 	 * @param renamedMethod the method to check
 	 */
 	public static boolean isCglibRenamedMethod(Method renamedMethod) {
@@ -537,6 +532,7 @@ public abstract class ReflectionUtils {
 	 * necessary. The {@code setAccessible(true)} method is only called
 	 * when actually necessary, to avoid unnecessary conflicts with a JVM
 	 * SecurityManager (if active).
+	 *
 	 * @param method the method to make accessible
 	 * @see java.lang.reflect.Method#setAccessible
 	 */
@@ -548,14 +544,14 @@ public abstract class ReflectionUtils {
 		}
 	}
 
-
 	// Field handling
 
 	/**
 	 * Attempt to find a {@link Field field} on the supplied {@link Class} with the
 	 * supplied {@code name}. Searches all superclasses up to {@link Object}.
+	 *
 	 * @param clazz the class to introspect
-	 * @param name the name of the field
+	 * @param name  the name of the field
 	 * @return the corresponding Field object, or {@code null} if not found
 	 */
 	@Nullable
@@ -567,9 +563,10 @@ public abstract class ReflectionUtils {
 	 * Attempt to find a {@link Field field} on the supplied {@link Class} with the
 	 * supplied {@code name} and/or {@link Class type}. Searches all superclasses
 	 * up to {@link Object}.
+	 *
 	 * @param clazz the class to introspect
-	 * @param name the name of the field (may be {@code null} if type is specified)
-	 * @param type the type of the field (may be {@code null} if name is specified)
+	 * @param name  the name of the field (may be {@code null} if type is specified)
+	 * @param type  the type of the field (may be {@code null} if name is specified)
 	 * @return the corresponding Field object, or {@code null} if not found
 	 */
 	@Nullable
@@ -596,15 +593,15 @@ public abstract class ReflectionUtils {
 	 * In accordance with {@link Field#set(Object, Object)} semantics, the new value
 	 * is automatically unwrapped if the underlying field has a primitive type.
 	 * <p>Thrown exceptions are handled via a call to {@link #handleReflectionException(Exception)}.
-	 * @param field the field to set
+	 *
+	 * @param field  the field to set
 	 * @param target the target object on which to set the field
-	 * @param value the value to set (may be {@code null})
+	 * @param value  the value to set (may be {@code null})
 	 */
 	public static void setField(Field field, @Nullable Object target, @Nullable Object value) {
 		try {
 			field.set(target, value);
-		}
-		catch (IllegalAccessException ex) {
+		} catch (IllegalAccessException ex) {
 			handleReflectionException(ex);
 			throw new IllegalStateException(
 					"Unexpected reflection exception - " + ex.getClass().getName() + ": " + ex.getMessage());
@@ -617,7 +614,8 @@ public abstract class ReflectionUtils {
 	 * semantics, the returned value is automatically wrapped if the underlying field
 	 * has a primitive type.
 	 * <p>Thrown exceptions are handled via a call to {@link #handleReflectionException(Exception)}.
-	 * @param field the field to get
+	 *
+	 * @param field  the field to get
 	 * @param target the target object from which to get the field
 	 * @return the field's current value
 	 */
@@ -625,8 +623,7 @@ public abstract class ReflectionUtils {
 	public static Object getField(Field field, @Nullable Object target) {
 		try {
 			return field.get(target);
-		}
-		catch (IllegalAccessException ex) {
+		} catch (IllegalAccessException ex) {
 			handleReflectionException(ex);
 			throw new IllegalStateException(
 					"Unexpected reflection exception - " + ex.getClass().getName() + ": " + ex.getMessage());
@@ -635,18 +632,18 @@ public abstract class ReflectionUtils {
 
 	/**
 	 * Invoke the given callback on all locally declared fields in the given class.
+	 *
 	 * @param clazz the target class to analyze
-	 * @param fc the callback to invoke for each field
+	 * @param fc    the callback to invoke for each field
 	 * @throws IllegalStateException if introspection fails
-	 * @since 4.2
 	 * @see #doWithFields
+	 * @since 4.2
 	 */
 	public static void doWithLocalFields(Class<?> clazz, FieldCallback fc) {
 		for (Field field : getDeclaredFields(clazz)) {
 			try {
 				fc.doWith(field);
-			}
-			catch (IllegalAccessException ex) {
+			} catch (IllegalAccessException ex) {
 				throw new IllegalStateException("Not allowed to access field '" + field.getName() + "': " + ex);
 			}
 		}
@@ -655,8 +652,9 @@ public abstract class ReflectionUtils {
 	/**
 	 * Invoke the given callback on all fields in the target class, going up the
 	 * class hierarchy to get all declared fields.
+	 *
 	 * @param clazz the target class to analyze
-	 * @param fc the callback to invoke for each field
+	 * @param fc    the callback to invoke for each field
 	 * @throws IllegalStateException if introspection fails
 	 */
 	public static void doWithFields(Class<?> clazz, FieldCallback fc) {
@@ -666,9 +664,10 @@ public abstract class ReflectionUtils {
 	/**
 	 * Invoke the given callback on all fields in the target class, going up the
 	 * class hierarchy to get all declared fields.
+	 *
 	 * @param clazz the target class to analyze
-	 * @param fc the callback to invoke for each field
-	 * @param ff the filter that determines the fields to apply the callback to
+	 * @param fc    the callback to invoke for each field
+	 * @param ff    the filter that determines the fields to apply the callback to
 	 * @throws IllegalStateException if introspection fails
 	 */
 	public static void doWithFields(Class<?> clazz, FieldCallback fc, @Nullable FieldFilter ff) {
@@ -682,8 +681,7 @@ public abstract class ReflectionUtils {
 				}
 				try {
 					fc.doWith(field);
-				}
-				catch (IllegalAccessException ex) {
+				} catch (IllegalAccessException ex) {
 					throw new IllegalStateException("Not allowed to access field '" + field.getName() + "': " + ex);
 				}
 			}
@@ -695,6 +693,7 @@ public abstract class ReflectionUtils {
 	/**
 	 * This variant retrieves {@link Class#getDeclaredFields()} from a local cache
 	 * in order to avoid the JVM's SecurityManager check and defensive array copying.
+	 *
 	 * @param clazz the class to introspect
 	 * @return the cached array of fields
 	 * @throws IllegalStateException if introspection fails
@@ -707,8 +706,7 @@ public abstract class ReflectionUtils {
 			try {
 				result = clazz.getDeclaredFields();
 				declaredFieldsCache.put(clazz, (result.length == 0 ? EMPTY_FIELD_ARRAY : result));
-			}
-			catch (Throwable ex) {
+			} catch (Throwable ex) {
 				throw new IllegalStateException("Failed to introspect Class [" + clazz.getName() +
 						"] from ClassLoader [" + clazz.getClassLoader() + "]", ex);
 			}
@@ -720,6 +718,7 @@ public abstract class ReflectionUtils {
 	 * Given the source object and the destination, which must be the same class
 	 * or a subclass, copy all fields, including inherited fields. Designed to
 	 * work on objects with public no-arg constructors.
+	 *
 	 * @throws IllegalStateException if introspection fails
 	 */
 	public static void shallowCopyFieldState(final Object src, final Object dest) {
@@ -738,6 +737,7 @@ public abstract class ReflectionUtils {
 
 	/**
 	 * Determine whether the given field is a "public static final" constant.
+	 *
 	 * @param field the field to check
 	 */
 	public static boolean isPublicStaticFinal(Field field) {
@@ -750,6 +750,7 @@ public abstract class ReflectionUtils {
 	 * necessary. The {@code setAccessible(true)} method is only called
 	 * when actually necessary, to avoid unnecessary conflicts with a JVM
 	 * SecurityManager (if active).
+	 *
 	 * @param field the field to make accessible
 	 * @see java.lang.reflect.Field#setAccessible
 	 */
@@ -762,11 +763,11 @@ public abstract class ReflectionUtils {
 		}
 	}
 
-
 	// Cache handling
 
 	/**
 	 * Clear the internal method/field cache.
+	 *
 	 * @since 4.2.4
 	 */
 	public static void clearCache() {
@@ -774,60 +775,55 @@ public abstract class ReflectionUtils {
 		declaredFieldsCache.clear();
 	}
 
-
 	/**
 	 * Action to take on each method.
 	 */
 	@FunctionalInterface
 	public interface MethodCallback {
-
 		/**
 		 * Perform an operation using the given method.
+		 *
 		 * @param method the method to operate on
 		 */
 		void doWith(Method method) throws IllegalArgumentException, IllegalAccessException;
 	}
-
 
 	/**
 	 * Callback optionally used to filter methods to be operated on by a method callback.
 	 */
 	@FunctionalInterface
 	public interface MethodFilter {
-
 		/**
 		 * Determine whether the given method matches.
+		 *
 		 * @param method the method to check
 		 */
 		boolean matches(Method method);
 	}
-
 
 	/**
 	 * Callback interface invoked on each field in the hierarchy.
 	 */
 	@FunctionalInterface
 	public interface FieldCallback {
-
 		/**
 		 * Perform an operation using the given field.
+		 *
 		 * @param field the field to operate on
 		 */
 		void doWith(Field field) throws IllegalArgumentException, IllegalAccessException;
 	}
-
 
 	/**
 	 * Callback optionally used to filter fields to be operated on by a field callback.
 	 */
 	@FunctionalInterface
 	public interface FieldFilter {
-
 		/**
 		 * Determine whether the given field matches.
+		 *
 		 * @param field the field to check
 		 */
 		boolean matches(Field field);
 	}
-
 }

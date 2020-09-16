@@ -1,10 +1,6 @@
 package org.springframework.context.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * Beans on which the current bean depends. Any beans specified are guaranteed to be
@@ -27,14 +23,11 @@ import java.lang.annotation.Target;
  * {@link DependsOn} annotation metadata is ignored, and
  * {@code <bean depends-on="..."/>} is respected instead.
  *
- * @author Juergen Hoeller
  * @since 3.0
  */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface DependsOn {
-
 	String[] value() default {};
-
 }
