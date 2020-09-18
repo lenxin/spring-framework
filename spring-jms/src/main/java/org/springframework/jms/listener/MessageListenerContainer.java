@@ -11,11 +11,9 @@ import org.springframework.lang.Nullable;
  * listener container. Not meant to be implemented externally with
  * support for both JMS and JCA style containers.
  *
- * @author Stephane Nicoll
  * @since 4.1
  */
 public interface MessageListenerContainer extends SmartLifecycle {
-
 	/**
 	 * Setup the message listener to use. Throws an {@link IllegalArgumentException}
 	 * if that message listener type is not supported.
@@ -53,9 +51,9 @@ public interface MessageListenerContainer extends SmartLifecycle {
 	/**
 	 * Return the {@link QosSettings} to use when sending a reply,
 	 * or {@code null} if the broker's defaults should be used.
+	 *
 	 * @since 5.0
 	 */
 	@Nullable
 	QosSettings getReplyQosSettings();
-
 }

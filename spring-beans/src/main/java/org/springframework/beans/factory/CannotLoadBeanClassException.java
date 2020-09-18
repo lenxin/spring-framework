@@ -7,32 +7,27 @@ import org.springframework.lang.Nullable;
  * Exception thrown when the BeanFactory cannot load the specified class
  * of a given bean.
  *
- * @author Juergen Hoeller
  * @since 2.0
  */
 @SuppressWarnings("serial")
 public class CannotLoadBeanClassException extends FatalBeanException {
-
 	@Nullable
 	private final String resourceDescription;
-
 	private final String beanName;
-
 	@Nullable
 	private final String beanClassName;
 
-
 	/**
 	 * Create a new CannotLoadBeanClassException.
+	 *
 	 * @param resourceDescription description of the resource
-	 * that the bean definition came from
-	 * @param beanName the name of the bean requested
-	 * @param beanClassName the name of the bean class
-	 * @param cause the root cause
+	 *                            that the bean definition came from
+	 * @param beanName            the name of the bean requested
+	 * @param beanClassName       the name of the bean class
+	 * @param cause               the root cause
 	 */
 	public CannotLoadBeanClassException(@Nullable String resourceDescription, String beanName,
-			@Nullable String beanClassName, ClassNotFoundException cause) {
-
+										@Nullable String beanClassName, ClassNotFoundException cause) {
 		super("Cannot find class [" + beanClassName + "] for bean with name '" + beanName + "'" +
 				(resourceDescription != null ? " defined in " + resourceDescription : ""), cause);
 		this.resourceDescription = resourceDescription;
@@ -42,15 +37,15 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 
 	/**
 	 * Create a new CannotLoadBeanClassException.
+	 *
 	 * @param resourceDescription description of the resource
-	 * that the bean definition came from
-	 * @param beanName the name of the bean requested
-	 * @param beanClassName the name of the bean class
-	 * @param cause the root cause
+	 *                            that the bean definition came from
+	 * @param beanName            the name of the bean requested
+	 * @param beanClassName       the name of the bean class
+	 * @param cause               the root cause
 	 */
 	public CannotLoadBeanClassException(@Nullable String resourceDescription, String beanName,
-			@Nullable String beanClassName, LinkageError cause) {
-
+										@Nullable String beanClassName, LinkageError cause) {
 		super("Error loading class [" + beanClassName + "] for bean with name '" + beanName + "'" +
 				(resourceDescription != null ? " defined in " + resourceDescription : "") +
 				": problem with class file or dependent class", cause);
@@ -58,7 +53,6 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 		this.beanName = beanName;
 		this.beanClassName = beanClassName;
 	}
-
 
 	/**
 	 * Return the description of the resource that the bean
@@ -83,5 +77,4 @@ public class CannotLoadBeanClassException extends FatalBeanException {
 	public String getBeanClassName() {
 		return this.beanClassName;
 	}
-
 }

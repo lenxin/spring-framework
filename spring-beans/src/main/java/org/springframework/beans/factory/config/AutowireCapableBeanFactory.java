@@ -104,11 +104,11 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * bean instance: to be appended to the fully-qualified bean class name,
 	 * e.g. "com.mypackage.MyClass.ORIGINAL", in order to enforce the given instance
 	 * to be returned, i.e. no proxies etc.
+	 * Spring5.1后增加，原始实例的后缀，例如"com.mypackage.MyClass.ORIGINAL"，强制返回给定的实例（没有代理）
 	 *
 	 * @see #initializeBean(Object, String)
 	 * @see #applyBeanPostProcessorsBeforeInitialization(Object, String)
 	 * @see #applyBeanPostProcessorsAfterInitialization(Object, String)
-	 * Spring5.1后增加，原始实例的后缀，例如"com.mypackage.MyClass.ORIGINAL"，强制返回给定的实例（没有代理）
 	 * @since 5.1
 	 */
 	String ORIGINAL_INSTANCE_SUFFIX = ".ORIGINAL";
@@ -156,6 +156,10 @@ public interface AutowireCapableBeanFactory extends BeanFactory {
 	 * <p>This is effectively a superset of what {@link #initializeBean} provides,
 	 * fully applying the configuration specified by the corresponding bean definition.
 	 * <b>Note: This method requires a bean definition for the given name!</b>
+	 * 配置给定的原始bean:自动装配bean属性、应用bean属性值、应用诸如setBeanName和setBeanFactory的工厂回调，
+	 * 以及应用所有bean后处理器(包括可能包装给定原始bean的处理器)。
+	 * 这实际上是initializeBean提供的超集，完全应用了相应bean定义指定的配置。
+	 * 注意:此方法需要一个给定名称的bean定义!
 	 *
 	 * @param existingBean the existing bean instance
 	 * @param beanName     the name of the bean, to be passed to it if necessary

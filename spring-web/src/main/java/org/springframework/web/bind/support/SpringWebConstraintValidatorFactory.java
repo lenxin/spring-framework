@@ -1,10 +1,10 @@
 package org.springframework.web.bind.support;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorFactory;
-
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.WebApplicationContext;
+
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorFactory;
 
 /**
  * JSR-303 {@link ConstraintValidatorFactory} implementation that delegates to
@@ -16,13 +16,11 @@ import org.springframework.web.context.WebApplicationContext;
  * this variant is meant for declarative use in a standard {@code validation.xml} file,
  * e.g. in combination with JAX-RS or JAX-WS.
  *
- * @author Juergen Hoeller
- * @since 4.2.1
  * @see ContextLoader#getCurrentWebApplicationContext()
  * @see org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+ * @since 4.2.1
  */
 public class SpringWebConstraintValidatorFactory implements ConstraintValidatorFactory {
-
 	@Override
 	public <T extends ConstraintValidator<?, ?>> T getInstance(Class<T> key) {
 		return getWebApplicationContext().getAutowireCapableBeanFactory().createBean(key);
@@ -33,11 +31,11 @@ public class SpringWebConstraintValidatorFactory implements ConstraintValidatorF
 		getWebApplicationContext().getAutowireCapableBeanFactory().destroyBean(instance);
 	}
 
-
 	/**
 	 * Retrieve the Spring {@link WebApplicationContext} to use.
 	 * The default implementation returns the current {@link WebApplicationContext}
 	 * as registered for the thread context class loader.
+	 *
 	 * @return the current WebApplicationContext (never {@code null})
 	 * @see ContextLoader#getCurrentWebApplicationContext()
 	 */
@@ -49,5 +47,4 @@ public class SpringWebConstraintValidatorFactory implements ConstraintValidatorF
 		}
 		return wac;
 	}
-
 }

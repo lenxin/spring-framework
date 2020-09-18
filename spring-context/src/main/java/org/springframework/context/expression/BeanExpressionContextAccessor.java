@@ -12,12 +12,9 @@ import org.springframework.util.Assert;
  * EL property accessor that knows how to traverse the beans and contextual objects
  * of a Spring {@link org.springframework.beans.factory.config.BeanExpressionContext}.
  *
- * @author Juergen Hoeller
- * @author Andy Clement
  * @since 3.0
  */
 public class BeanExpressionContextAccessor implements PropertyAccessor {
-
 	@Override
 	public boolean canRead(EvaluationContext context, @Nullable Object target, String name) throws AccessException {
 		return (target instanceof BeanExpressionContext && ((BeanExpressionContext) target).containsObject(name));
@@ -37,13 +34,11 @@ public class BeanExpressionContextAccessor implements PropertyAccessor {
 	@Override
 	public void write(EvaluationContext context, @Nullable Object target, String name, @Nullable Object newValue)
 			throws AccessException {
-
 		throw new AccessException("Beans in a BeanFactory are read-only");
 	}
 
 	@Override
 	public Class<?>[] getSpecificTargetClasses() {
-		return new Class<?>[] {BeanExpressionContext.class};
+		return new Class<?>[]{BeanExpressionContext.class};
 	}
-
 }

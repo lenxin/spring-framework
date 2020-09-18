@@ -12,15 +12,12 @@ import org.springframework.util.Assert;
  * EL property accessor that knows how to traverse the beans of a
  * Spring {@link org.springframework.beans.factory.BeanFactory}.
  *
- * @author Juergen Hoeller
- * @author Andy Clement
  * @since 3.0
  */
 public class BeanFactoryAccessor implements PropertyAccessor {
-
 	@Override
 	public Class<?>[] getSpecificTargetClasses() {
-		return new Class<?>[] {BeanFactory.class};
+		return new Class<?>[]{BeanFactory.class};
 	}
 
 	@Override
@@ -42,8 +39,6 @@ public class BeanFactoryAccessor implements PropertyAccessor {
 	@Override
 	public void write(EvaluationContext context, @Nullable Object target, String name, @Nullable Object newValue)
 			throws AccessException {
-
 		throw new AccessException("Beans in a BeanFactory are read-only");
 	}
-
 }

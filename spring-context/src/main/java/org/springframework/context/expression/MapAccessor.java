@@ -1,7 +1,5 @@
 package org.springframework.context.expression;
 
-import java.util.Map;
-
 import org.springframework.asm.MethodVisitor;
 import org.springframework.expression.AccessException;
 import org.springframework.expression.EvaluationContext;
@@ -11,19 +9,18 @@ import org.springframework.expression.spel.CompilablePropertyAccessor;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 
+import java.util.Map;
+
 /**
  * EL property accessor that knows how to traverse the keys
  * of a standard {@link java.util.Map}.
  *
- * @author Juergen Hoeller
- * @author Andy Clement
  * @since 3.0
  */
 public class MapAccessor implements CompilablePropertyAccessor {
-
 	@Override
 	public Class<?>[] getSpecificTargetClasses() {
-		return new Class<?>[] {Map.class};
+		return new Class<?>[]{Map.class};
 	}
 
 	@Override
@@ -51,7 +48,6 @@ public class MapAccessor implements CompilablePropertyAccessor {
 	@SuppressWarnings("unchecked")
 	public void write(EvaluationContext context, @Nullable Object target, String name, @Nullable Object newValue)
 			throws AccessException {
-
 		Assert.state(target instanceof Map, "Target must be a Map");
 		Map<Object, Object> map = (Map<Object, Object>) target;
 		map.put(name, newValue);
@@ -77,9 +73,8 @@ public class MapAccessor implements CompilablePropertyAccessor {
 			CodeFlow.insertCheckCast(mv, "Ljava/util/Map");
 		}
 		mv.visitLdcInsn(propertyName);
-		mv.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get","(Ljava/lang/Object;)Ljava/lang/Object;",true);
+		mv.visitMethodInsn(INVOKEINTERFACE, "java/util/Map", "get", "(Ljava/lang/Object;)Ljava/lang/Object;", true);
 	}
-
 
 	/**
 	 * Exception thrown from {@code read} in order to reset a cached
@@ -87,7 +82,6 @@ public class MapAccessor implements CompilablePropertyAccessor {
 	 */
 	@SuppressWarnings("serial")
 	private static class MapAccessException extends AccessException {
-
 		private final String key;
 
 		public MapAccessException(String key) {
@@ -100,5 +94,4 @@ public class MapAccessor implements CompilablePropertyAccessor {
 			return "Map does not contain a value for key '" + this.key + "'";
 		}
 	}
-
 }

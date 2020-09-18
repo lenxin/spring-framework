@@ -1,9 +1,5 @@
 package org.springframework.expression.spel.support;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-
 import org.springframework.expression.EvaluationException;
 import org.springframework.expression.TypeLocator;
 import org.springframework.expression.spel.SpelEvaluationException;
@@ -11,22 +7,21 @@ import org.springframework.expression.spel.SpelMessage;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * A simple implementation of {@link TypeLocator} that uses the context ClassLoader
  * (or any ClassLoader set upon it). It supports 'well-known' packages: So if a
  * type cannot be found, it will try the registered imports to locate it.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
  * @since 3.0
  */
 public class StandardTypeLocator implements TypeLocator {
-
 	@Nullable
 	private final ClassLoader classLoader;
-
 	private final List<String> knownPackagePrefixes = new LinkedList<>();
-
 
 	/**
 	 * Create a StandardTypeLocator for the default ClassLoader
@@ -38,6 +33,7 @@ public class StandardTypeLocator implements TypeLocator {
 
 	/**
 	 * Create a StandardTypeLocator for the given ClassLoader.
+	 *
 	 * @param classLoader the ClassLoader to delegate to
 	 */
 	public StandardTypeLocator(@Nullable ClassLoader classLoader) {
@@ -46,10 +42,10 @@ public class StandardTypeLocator implements TypeLocator {
 		registerImport("java.lang");
 	}
 
-
 	/**
 	 * Register a new import prefix that will be used when searching for unqualified types.
 	 * Expected format is something like "java.lang".
+	 *
 	 * @param prefix the prefix to register
 	 */
 	public void registerImport(String prefix) {
@@ -58,6 +54,7 @@ public class StandardTypeLocator implements TypeLocator {
 
 	/**
 	 * Remove that specified prefix from this locator's list of imports.
+	 *
 	 * @param prefix the prefix to remove
 	 */
 	public void removeImport(String prefix) {
@@ -66,16 +63,17 @@ public class StandardTypeLocator implements TypeLocator {
 
 	/**
 	 * Return a list of all the import prefixes registered with this StandardTypeLocator.
+	 *
 	 * @return a list of registered import prefixes
 	 */
 	public List<String> getImportPrefixes() {
 		return Collections.unmodifiableList(this.knownPackagePrefixes);
 	}
 
-
 	/**
 	 * Find a (possibly unqualified) type reference - first using the type name as-is,
 	 * then trying any registered prefixes if the type name cannot be found.
+	 *
 	 * @param typeName the type to locate
 	 * @return the class object for the type
 	 * @throws EvaluationException if the type cannot be found
@@ -85,20 +83,17 @@ public class StandardTypeLocator implements TypeLocator {
 		String nameToLookup = typeName;
 		try {
 			return ClassUtils.forName(nameToLookup, this.classLoader);
-		}
-		catch (ClassNotFoundException ey) {
+		} catch (ClassNotFoundException ey) {
 			// try any registered prefixes before giving up
 		}
 		for (String prefix : this.knownPackagePrefixes) {
 			try {
 				nameToLookup = prefix + '.' + typeName;
 				return ClassUtils.forName(nameToLookup, this.classLoader);
-			}
-			catch (ClassNotFoundException ex) {
+			} catch (ClassNotFoundException ex) {
 				// might be a different prefix
 			}
 		}
 		throw new SpelEvaluationException(SpelMessage.TYPE_NOT_FOUND, typeName);
 	}
-
 }

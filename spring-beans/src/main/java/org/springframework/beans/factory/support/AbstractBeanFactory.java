@@ -67,6 +67,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 
 	/**
 	 * ClassLoader to temporarily resolve bean class names with, if necessary.
+	 * 类加载器临时解析bean类名，如果需要的话。
 	 */
 	@Nullable
 	private ClassLoader tempClassLoader;
@@ -1374,6 +1375,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	protected Class<?> resolveBeanClass(final RootBeanDefinition mbd, String beanName, final Class<?>... typesToMatch)
 			throws CannotLoadBeanClassException {
 		try {
+			// 如果bean定义设置了bean的类名获取bean定义的类已经被解析出来了
 			if (mbd.hasBeanClass()) {
 				return mbd.getBeanClass();
 			}
@@ -1403,6 +1405,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		if (!ObjectUtils.isEmpty(typesToMatch)) {
 			// When just doing type checks (i.e. not creating an actual instance yet),
 			// use the specified temporary class loader (e.g. in a weaving scenario).
+			// 当只是做类型检查时(比如还没有创建一个实际的实例)，使用指定的临时类装入器(比如在编织场景中)。
 			ClassLoader tempClassLoader = getTempClassLoader();
 			if (tempClassLoader != null) {
 				dynamicLoader = tempClassLoader;
@@ -1453,6 +1456,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 	/**
 	 * Evaluate the given String as contained in a bean definition,
 	 * potentially resolving it as an expression.
+	 * 计算bean定义中包含的给定字符串，可能将其解析为表达式。
 	 *
 	 * @param value          the value to check
 	 * @param beanDefinition the bean definition that the value comes from

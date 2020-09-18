@@ -6,16 +6,12 @@ import org.springframework.lang.Nullable;
 /**
  * The base exception for any failures related to messaging.
  *
- * @author Mark Fisher
- * @author Gary Russell
  * @since 4.0
  */
 @SuppressWarnings("serial")
 public class MessagingException extends NestedRuntimeException {
-
 	@Nullable
 	private final Message<?> failedMessage;
-
 
 	public MessagingException(Message<?> message) {
 		super(null, null);
@@ -47,7 +43,6 @@ public class MessagingException extends NestedRuntimeException {
 		this.failedMessage = message;
 	}
 
-
 	@Nullable
 	public Message<?> getFailedMessage() {
 		return this.failedMessage;
@@ -58,5 +53,4 @@ public class MessagingException extends NestedRuntimeException {
 		return super.toString() + (this.failedMessage == null ? ""
 				: (", failedMessage=" + this.failedMessage));
 	}
-
 }
