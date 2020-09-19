@@ -1054,6 +1054,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 	/**
 	 * Apply before-instantiation post-processors, resolving whether there is a
 	 * before-instantiation shortcut for the specified bean.
+	 * 应用实例化前的后处理程序，解析指定bean是否有实例化前的快捷方式。
 	 *
 	 * @param beanName the name of the bean
 	 * @param mbd      the bean definition for the bean

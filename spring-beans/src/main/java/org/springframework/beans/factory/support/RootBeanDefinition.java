@@ -105,7 +105,6 @@ public class RootBeanDefinition extends AbstractBeanDefinition {
 	 */
 	@Nullable
 	volatile Boolean beforeInstantiationResolved;
-
 	@Nullable
 	private Set<Member> externallyManagedConfigMembers;
 	@Nullable
