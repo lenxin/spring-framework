@@ -1,28 +1,10 @@
 package org.springframework.test.web.servlet.htmlunit;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import java.util.StringTokenizer;
-import javax.servlet.ServletContext;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 import com.gargoylesoftware.htmlunit.CookieManager;
 import com.gargoylesoftware.htmlunit.FormEncodingType;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.WebRequest;
 import com.gargoylesoftware.htmlunit.util.NameValuePair;
-
 import org.springframework.beans.Mergeable;
 import org.springframework.http.MediaType;
 import org.springframework.lang.Nullable;
@@ -39,6 +21,17 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import javax.servlet.ServletContext;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
+import java.net.URLDecoder;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
+
 /**
  * Internal class used to transform a {@link WebRequest} into a
  * {@link MockHttpServletRequest} using Spring MVC Test's {@link RequestBuilder}.
@@ -46,39 +39,30 @@ import org.springframework.web.util.UriComponentsBuilder;
  * <p>By default the first path segment of the URL is used as the context path.
  * To override this default see {@link #setContextPath(String)}.
  *
- * @author Rob Winch
- * @author Sam Brannen
- * @since 4.2
  * @see MockMvcWebConnection
+ * @since 4.2
  */
 final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
-
 	private final Map<String, MockHttpSession> sessions;
-
 	private final WebClient webClient;
-
 	private final WebRequest webRequest;
-
 	@Nullable
 	private String contextPath;
-
 	@Nullable
 	private RequestBuilder parentBuilder;
-
 	@Nullable
 	private SmartRequestBuilder parentPostProcessor;
-
 	@Nullable
 	private RequestPostProcessor forwardPostProcessor;
 
-
 	/**
 	 * Construct a new {@code HtmlUnitRequestBuilder}.
-	 * @param sessions a {@link Map} from session {@linkplain HttpSession#getId() IDs}
-	 * to currently managed {@link HttpSession} objects; never {@code null}
-	 * @param webClient the WebClient for retrieving cookies
+	 *
+	 * @param sessions   a {@link Map} from session {@linkplain HttpSession#getId() IDs}
+	 *                   to currently managed {@link HttpSession} objects; never {@code null}
+	 * @param webClient  the WebClient for retrieving cookies
 	 * @param webRequest the {@link WebRequest} to transform into a
-	 * {@link MockHttpServletRequest}; never {@code null}
+	 *                   {@link MockHttpServletRequest}; never {@code null}
 	 */
 	public HtmlUnitRequestBuilder(Map<String, MockHttpSession> sessions, WebClient webClient, WebRequest webRequest) {
 		Assert.notNull(sessions, "Sessions Map must not be null");
@@ -88,7 +72,6 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 		this.webClient = webClient;
 		this.webRequest = webRequest;
 	}
-
 
 	public MockHttpServletRequest buildRequest(ServletContext servletContext) {
 		Charset charset = getCharset();
@@ -191,9 +174,10 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 	 * URL is turned into the contextPath. Otherwise it must conform to
 	 * {@link HttpServletRequest#getContextPath()} which states it can be
 	 * an empty string, or it must start with a "/" and not end with a "/".
+	 *
 	 * @param contextPath a valid contextPath
 	 * @throws IllegalArgumentException if the contextPath is not a valid
-	 * {@link HttpServletRequest#getContextPath()}
+	 *                                  {@link HttpServletRequest#getContextPath()}
 	 */
 	public void setContextPath(@Nullable String contextPath) {
 		MockMvcWebConnection.validateContextPath(contextPath);
@@ -236,12 +220,10 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 			List<String> pathSegments = uriComponents.getPathSegments();
 			if (pathSegments.isEmpty()) {
 				request.setContextPath("");
-			}
-			else {
+			} else {
 				request.setContextPath("/" + pathSegments.get(0));
 			}
-		}
-		else {
+		} else {
 			String path = uriComponents.getPath();
 			Assert.isTrue(path != null && path.startsWith(this.contextPath),
 					() -> "\"" + uriComponents.getPath() +
@@ -311,8 +293,7 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 					this.sessions.put(sessionid, session);
 				}
 				addSessionCookie(request, sessionid);
-			}
-			else {
+			} else {
 				session.setNew(false);
 			}
 		}
@@ -355,8 +336,7 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 	private String urlDecode(String value) {
 		try {
 			return URLDecoder.decode(value, "UTF-8");
-		}
-		catch (UnsupportedEncodingException ex) {
+		} catch (UnsupportedEncodingException ex) {
 			throw new IllegalStateException(ex);
 		}
 	}
@@ -381,8 +361,7 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 			int portConnection = this.webRequest.getUrl().getDefaultPort();
 			request.setLocalPort(serverPort);
 			request.setRemotePort(portConnection);
-		}
-		else {
+		} else {
 			request.setRemotePort(serverPort);
 		}
 	}
@@ -404,8 +383,7 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 				MockHttpServletRequestBuilder copiedParent = MockMvcRequestBuilders.get("/");
 				copiedParent.merge(parent);
 				this.parentBuilder = copiedParent;
-			}
-			else {
+			} else {
 				this.parentBuilder = (RequestBuilder) parent;
 			}
 			if (parent instanceof SmartRequestBuilder) {
@@ -419,13 +397,11 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 		return this.webClient.getCookieManager();
 	}
 
-
 	/**
 	 * An extension to {@link MockHttpServletRequest} that ensures that when a
 	 * new {@link HttpSession} is created, it is added to the managed sessions.
 	 */
 	private final class HtmlUnitMockHttpServletRequest extends MockHttpServletRequest {
-
 		public HtmlUnitMockHttpServletRequest(ServletContext servletContext, String method, String requestURI) {
 			super(servletContext, method, requestURI);
 		}
@@ -448,14 +424,12 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 		}
 	}
 
-
 	/**
 	 * An extension to {@link MockHttpSession} that ensures when
 	 * {@link #invalidate()} is called that the {@link HttpSession}
 	 * is removed from the managed sessions.
 	 */
 	private final class HtmlUnitMockHttpSession extends MockHttpSession {
-
 		private final MockHttpServletRequest request;
 
 		public HtmlUnitMockHttpSession(MockHttpServletRequest request) {
@@ -477,5 +451,4 @@ final class HtmlUnitRequestBuilder implements RequestBuilder, Mergeable {
 			removeSessionCookie(this.request, getId());
 		}
 	}
-
 }

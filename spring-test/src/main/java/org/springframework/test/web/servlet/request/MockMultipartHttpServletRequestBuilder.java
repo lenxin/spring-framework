@@ -1,12 +1,5 @@
 package org.springframework.test.web.servlet.request;
 
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import javax.servlet.ServletContext;
-import javax.servlet.http.Part;
-
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.lang.Nullable;
@@ -18,19 +11,21 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.multipart.support.StandardMultipartHttpServletRequest;
 
+import javax.servlet.ServletContext;
+import javax.servlet.http.Part;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 /**
  * Default builder for {@link MockMultipartHttpServletRequest}.
  *
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
  * @since 3.2
  */
 public class MockMultipartHttpServletRequestBuilder extends MockHttpServletRequestBuilder {
-
 	private final List<MockMultipartFile> files = new ArrayList<>();
-
 	private final MultiValueMap<String, Part> parts = new LinkedMultiValueMap<>();
-
 
 	/**
 	 * Package-private constructor. Use static factory methods in
@@ -38,7 +33,8 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 	 * <p>For other ways to initialize a {@code MockMultipartHttpServletRequest},
 	 * see {@link #with(RequestPostProcessor)} and the
 	 * {@link RequestPostProcessor} extension point.
-	 * @param urlTemplate a URL template; the resulting URL will be encoded
+	 *
+	 * @param urlTemplate  a URL template; the resulting URL will be encoded
 	 * @param uriVariables zero or more URI variables
 	 */
 	MockMultipartHttpServletRequestBuilder(String urlTemplate, Object... uriVariables) {
@@ -52,6 +48,7 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 	 * <p>For other ways to initialize a {@code MockMultipartHttpServletRequest},
 	 * see {@link #with(RequestPostProcessor)} and the
 	 * {@link RequestPostProcessor} extension point.
+	 *
 	 * @param uri the URL
 	 * @since 4.0.3
 	 */
@@ -60,10 +57,10 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 		super.contentType(MediaType.MULTIPART_FORM_DATA);
 	}
 
-
 	/**
 	 * Create a new MockMultipartFile with the given content.
-	 * @param name the name of the file
+	 *
+	 * @param name    the name of the file
 	 * @param content the content of the file
 	 */
 	public MockMultipartHttpServletRequestBuilder file(String name, byte[] content) {
@@ -73,6 +70,7 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 
 	/**
 	 * Add the given MockMultipartFile.
+	 *
 	 * @param file the multipart file
 	 */
 	public MockMultipartHttpServletRequestBuilder file(MockMultipartFile file) {
@@ -82,6 +80,7 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 
 	/**
 	 * Add {@link Part} components to the request.
+	 *
 	 * @param parts one or more parts to add
 	 * @since 5.0
 	 */
@@ -107,8 +106,7 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 						this.parts.putIfAbsent(name, parentBuilder.parts.get(name)));
 			}
 
-		}
-		else {
+		} else {
 			throw new IllegalArgumentException("Cannot merge with [" + parent.getClass().getName() + "]");
 		}
 		return this;
@@ -121,7 +119,6 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 	 */
 	@Override
 	protected final MockHttpServletRequest createServletRequest(ServletContext servletContext) {
-
 		MockMultipartHttpServletRequest request = new MockMultipartHttpServletRequest(servletContext);
 		this.files.stream().forEach(request::addFile);
 		this.parts.values().stream().flatMap(Collection::stream).forEach(request::addPart);
@@ -134,5 +131,4 @@ public class MockMultipartHttpServletRequestBuilder extends MockHttpServletReque
 
 		return request;
 	}
-
 }

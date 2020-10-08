@@ -1,26 +1,23 @@
 package org.springframework.core.env;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 import java.util.function.Predicate;
 
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.StringUtils;
-
 /**
  * Internal parser used by {@link Profiles#of}.
  *
- * @author Phillip Webb
  * @since 5.1
  */
 final class ProfilesParser {
-
 	private ProfilesParser() {
 	}
-
 
 	static Profiles parse(String... expressions) {
 		Assert.notEmpty(expressions, "Must specify at least one profile");
@@ -40,6 +37,7 @@ final class ProfilesParser {
 	private static Profiles parseTokens(String expression, StringTokenizer tokens) {
 		return parseTokens(expression, tokens, Context.NONE);
 	}
+
 	private static Profiles parseTokens(String expression, StringTokenizer tokens, Context context) {
 		List<Profiles> elements = new ArrayList<>();
 		Operator operator = null;
@@ -120,17 +118,12 @@ final class ProfilesParser {
 		return profiles -> profiles.matches(activeProfile);
 	}
 
-
 	private enum Operator {AND, OR}
-
 
 	private enum Context {NONE, INVERT, BRACKET}
 
-
 	private static class ParsedProfiles implements Profiles {
-
 		private final String[] expressions;
-
 		private final Profiles[] parsed;
 
 		ParsedProfiles(String[] expressions, Profiles[] parsed) {
@@ -153,5 +146,4 @@ final class ProfilesParser {
 			return StringUtils.arrayToDelimitedString(this.expressions, " or ");
 		}
 	}
-
 }

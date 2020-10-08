@@ -7,17 +7,12 @@ import org.springframework.expression.EvaluationException;
  * string indicating the problem, it records a message key and the inserts for the
  * message. See {@link SpelMessage} for the list of all possible messages that can occur.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
  * @since 3.0
  */
 @SuppressWarnings("serial")
 public class SpelEvaluationException extends EvaluationException {
-
 	private final SpelMessage message;
-
 	private final Object[] inserts;
-
 
 	public SpelEvaluationException(SpelMessage message, Object... inserts) {
 		super(message.formatMessage(inserts));
@@ -43,7 +38,6 @@ public class SpelEvaluationException extends EvaluationException {
 		this.inserts = inserts;
 	}
 
-
 	/**
 	 * Set the position in the related expression which gave rise to this exception.
 	 */
@@ -64,5 +58,4 @@ public class SpelEvaluationException extends EvaluationException {
 	public Object[] getInserts() {
 		return this.inserts;
 	}
-
 }

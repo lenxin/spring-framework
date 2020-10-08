@@ -1,12 +1,11 @@
 package org.springframework.aop.config;
 
-import org.w3c.dom.Element;
-
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.parsing.BeanComponentDefinition;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.beans.factory.xml.BeanDefinitionParser;
 import org.springframework.beans.factory.xml.ParserContext;
+import org.w3c.dom.Element;
 
 /**
  * {@link BeanDefinitionParser} responsible for parsing the
@@ -18,12 +17,9 @@ import org.springframework.beans.factory.xml.ParserContext;
  * Spring 2.0's {@code <aop:spring-configured/>} tag (avoiding a direct dependency on the
  * context package).
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
  * @since 2.0
  */
 class SpringConfiguredBeanDefinitionParser implements BeanDefinitionParser {
-
 	/**
 	 * The bean name of the internally managed bean configurer aspect.
 	 */
@@ -32,7 +28,6 @@ class SpringConfiguredBeanDefinitionParser implements BeanDefinitionParser {
 
 	private static final String BEAN_CONFIGURER_ASPECT_CLASS_NAME =
 			"org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect";
-
 
 	@Override
 	public BeanDefinition parse(Element element, ParserContext parserContext) {
@@ -46,5 +41,4 @@ class SpringConfiguredBeanDefinitionParser implements BeanDefinitionParser {
 		}
 		return null;
 	}
-
 }

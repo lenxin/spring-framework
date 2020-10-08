@@ -6,15 +6,11 @@ import org.springframework.expression.ParserContext;
  * Configurable {@link ParserContext} implementation for template parsing. Expects the
  * expression prefix and suffix as constructor arguments.
  *
- * @author Juergen Hoeller
  * @since 3.0
  */
 public class TemplateParserContext implements ParserContext {
-
 	private final String expressionPrefix;
-
 	private final String expressionSuffix;
-
 
 	/**
 	 * Create a new TemplateParserContext with the default "#{" prefix and "}" suffix.
@@ -25,6 +21,7 @@ public class TemplateParserContext implements ParserContext {
 
 	/**
 	 * Create a new TemplateParserContext for the given prefix and suffix.
+	 *
 	 * @param expressionPrefix the expression prefix to use
 	 * @param expressionSuffix the expression suffix to use
 	 */
@@ -32,7 +29,6 @@ public class TemplateParserContext implements ParserContext {
 		this.expressionPrefix = expressionPrefix;
 		this.expressionSuffix = expressionSuffix;
 	}
-
 
 	@Override
 	public final boolean isTemplate() {
@@ -48,5 +44,4 @@ public class TemplateParserContext implements ParserContext {
 	public final String getExpressionSuffix() {
 		return this.expressionSuffix;
 	}
-
 }

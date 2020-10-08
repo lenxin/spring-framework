@@ -1,28 +1,25 @@
 package org.springframework.web.servlet.handler;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.lang.Nullable;
 import org.springframework.web.servlet.AsyncHandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Abstract adapter class for the {@link AsyncHandlerInterceptor} interface,
  * for simplified implementation of pre-only/post-only interceptors.
  *
- * @author Juergen Hoeller
  * @since 05.12.2003
  */
 public abstract class HandlerInterceptorAdapter implements AsyncHandlerInterceptor {
-
 	/**
 	 * This implementation always returns {@code true}.
 	 */
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-
 		return true;
 	}
 
@@ -31,7 +28,7 @@ public abstract class HandlerInterceptorAdapter implements AsyncHandlerIntercept
 	 */
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
-			@Nullable ModelAndView modelAndView) throws Exception {
+						   @Nullable ModelAndView modelAndView) throws Exception {
 	}
 
 	/**
@@ -39,7 +36,7 @@ public abstract class HandlerInterceptorAdapter implements AsyncHandlerIntercept
 	 */
 	@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler,
-			@Nullable Exception ex) throws Exception {
+								@Nullable Exception ex) throws Exception {
 	}
 
 	/**
@@ -47,7 +44,6 @@ public abstract class HandlerInterceptorAdapter implements AsyncHandlerIntercept
 	 */
 	@Override
 	public void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response,
-			Object handler) throws Exception {
+											   Object handler) throws Exception {
 	}
-
 }

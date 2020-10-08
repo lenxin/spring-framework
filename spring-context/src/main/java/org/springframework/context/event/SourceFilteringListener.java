@@ -17,12 +17,9 @@ import org.springframework.lang.Nullable;
  * @since 2.0.5
  */
 public class SourceFilteringListener implements GenericApplicationListener, SmartApplicationListener {
-
 	private final Object source;
-
 	@Nullable
 	private GenericApplicationListener delegate;
-
 
 	/**
 	 * Create a SourceFilteringListener for the given event source.
@@ -49,7 +46,6 @@ public class SourceFilteringListener implements GenericApplicationListener, Smar
 	protected SourceFilteringListener(Object source) {
 		this.source = source;
 	}
-
 
 	@Override
 	public void onApplicationEvent(ApplicationEvent event) {
@@ -78,7 +74,6 @@ public class SourceFilteringListener implements GenericApplicationListener, Smar
 		return (this.delegate != null ? this.delegate.getOrder() : Ordered.LOWEST_PRECEDENCE);
 	}
 
-
 	/**
 	 * Actually process the event, after having filtered according to the
 	 * desired event source already.
@@ -93,5 +88,4 @@ public class SourceFilteringListener implements GenericApplicationListener, Smar
 		}
 		this.delegate.onApplicationEvent(event);
 	}
-
 }

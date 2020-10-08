@@ -19,11 +19,8 @@ import jdk.internal.org.objectweb.asm.TypeReference;
  * been visited, and the {@code visitLocalVariable}, {@code visitLocalVariableAnnotation} and {@code
  * visitLineNumber} methods must be called <i>after</i> the labels passed as arguments have been
  * visited.
- *
- * @author Eric Bruneton
  */
 public abstract class MethodVisitor {
-
 	private static final String REQUIRES_ASM5 = "This feature requires ASM5";
 
 	/**

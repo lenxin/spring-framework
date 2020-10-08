@@ -124,13 +124,18 @@ public abstract class HttpServletBean extends HttpServlet implements Environment
 	@Override
 	public final void init() throws ServletException {
 		// Set bean properties from init parameters.
+		// 解析init-param并封装在PropertyValues中并验证requiredProperties属性值是否设置
 		PropertyValues pvs = new ServletConfigPropertyValues(getServletConfig(), this.requiredProperties);
 		if (!pvs.isEmpty()) {
 			try {
+				// 将当前Servlet类转化为BeanWrapper，从而能够以Spring方式对init-param的值进行注入
 				BeanWrapper bw = PropertyAccessorFactory.forBeanPropertyAccess(this);
 				ResourceLoader resourceLoader = new ServletContextResourceLoader(getServletContext());
+				// 注册自定义属性编辑器，一旦遇到Resource类型的属性将会使用ResourceEditor进行解析
 				bw.registerCustomEditor(Resource.class, new ResourceEditor(resourceLoader, getEnvironment()));
+				// 空实现，留给子类覆盖
 				initBeanWrapper(bw);
+				// 属性注入
 				bw.setPropertyValues(pvs, true);
 			} catch (BeansException ex) {
 				if (logger.isErrorEnabled()) {
@@ -141,6 +146,7 @@ public abstract class HttpServletBean extends HttpServlet implements Environment
 		}
 
 		// Let subclasses do whatever initialization they like.
+		// 留给子类扩展
 		initServletBean();
 	}
 
@@ -185,6 +191,7 @@ public abstract class HttpServletBean extends HttpServlet implements Environment
 	private static class ServletConfigPropertyValues extends MutablePropertyValues {
 		/**
 		 * Create new ServletConfigPropertyValues.
+		 * 封装init-param配置中的属性值，requiredProperties是属性值中必须设置的属性值
 		 *
 		 * @param config             the ServletConfig we'll use to take PropertyValues from
 		 * @param requiredProperties set of property names we need, where

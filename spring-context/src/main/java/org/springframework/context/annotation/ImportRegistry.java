@@ -5,15 +5,10 @@ import org.springframework.lang.Nullable;
 
 /**
  * Registry of imported class {@link AnnotationMetadata}.
- *
- * @author Juergen Hoeller
- * @author Phillip Webb
  */
 interface ImportRegistry {
-
 	@Nullable
 	AnnotationMetadata getImportingClassFor(String importedClass);
 
 	void removeImportingClass(String importingClass);
-
 }

@@ -9,14 +9,11 @@ import org.springframework.core.type.AnnotationMetadata;
  * class that imported it. Useful in conjunction with annotations that
  * use @{@link Import} as a meta-annotation.
  *
- * @author Chris Beams
  * @since 3.1
  */
 public interface ImportAware extends Aware {
-
 	/**
 	 * Set the annotation metadata of the importing @{@code Configuration} class.
 	 */
 	void setImportMetadata(AnnotationMetadata importMetadata);
-
 }

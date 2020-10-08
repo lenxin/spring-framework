@@ -1,56 +1,37 @@
 package org.springframework.core.type.classreading;
 
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import org.springframework.asm.AnnotationVisitor;
-import org.springframework.asm.MethodVisitor;
-import org.springframework.asm.Opcodes;
-import org.springframework.asm.SpringAsmInfo;
-import org.springframework.asm.Type;
+import org.springframework.asm.*;
 import org.springframework.core.annotation.AnnotationAttributes;
 import org.springframework.core.type.MethodMetadata;
 import org.springframework.lang.Nullable;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * ASM method visitor which looks for the annotations defined on a method,
  * exposing them through the {@link org.springframework.core.type.MethodMetadata}
  * interface.
  *
- * @author Juergen Hoeller
- * @author Mark Pollack
- * @author Costin Leau
- * @author Chris Beams
- * @author Phillip Webb
  * @since 3.0
  */
 public class MethodMetadataReadingVisitor extends MethodVisitor implements MethodMetadata {
-
 	protected final String methodName;
-
 	protected final int access;
-
 	protected final String declaringClassName;
-
 	protected final String returnTypeName;
-
 	@Nullable
 	protected final ClassLoader classLoader;
-
 	protected final Set<MethodMetadata> methodMetadataSet;
-
 	protected final Map<String, Set<String>> metaAnnotationMap = new LinkedHashMap<>(4);
-
 	protected final LinkedMultiValueMap<String, AnnotationAttributes> attributesMap = new LinkedMultiValueMap<>(4);
 
-
 	public MethodMetadataReadingVisitor(String methodName, int access, String declaringClassName,
-			String returnTypeName, @Nullable ClassLoader classLoader, Set<MethodMetadata> methodMetadataSet) {
-
+										String returnTypeName, @Nullable ClassLoader classLoader, Set<MethodMetadata> methodMetadataSet) {
 		super(SpringAsmInfo.ASM_VERSION);
 		this.methodName = methodName;
 		this.access = access;
@@ -60,7 +41,6 @@ public class MethodMetadataReadingVisitor extends MethodVisitor implements Metho
 		this.methodMetadataSet = methodMetadataSet;
 	}
 
-
 	@Override
 	public AnnotationVisitor visitAnnotation(final String desc, boolean visible) {
 		this.methodMetadataSet.add(this);
@@ -68,7 +48,6 @@ public class MethodMetadataReadingVisitor extends MethodVisitor implements Metho
 		return new AnnotationAttributesReadingVisitor(
 				className, this.attributesMap, this.metaAnnotationMap, this.classLoader);
 	}
-
 
 	@Override
 	public String getMethodName() {
@@ -151,5 +130,4 @@ public class MethodMetadataReadingVisitor extends MethodVisitor implements Metho
 	public String getReturnTypeName() {
 		return this.returnTypeName;
 	}
-
 }

@@ -15,20 +15,18 @@ package org.springframework.context;
  * implemented or if the @{@link org.springframework.core.annotation.Order Order}
  * annotation is present and to sort instances accordingly if so prior to invocation.
  *
- * @author Chris Beams
- * @since 3.1
  * @param <C> the application context type
  * @see org.springframework.web.context.ContextLoader#customizeContext
  * @see org.springframework.web.context.ContextLoader#CONTEXT_INITIALIZER_CLASSES_PARAM
  * @see org.springframework.web.servlet.FrameworkServlet#setContextInitializerClasses
  * @see org.springframework.web.servlet.FrameworkServlet#applyInitializers
+ * @since 3.1
  */
 public interface ApplicationContextInitializer<C extends ConfigurableApplicationContext> {
-
 	/**
 	 * Initialize the given application context.
+	 *
 	 * @param applicationContext the application to configure
 	 */
 	void initialize(C applicationContext);
-
 }

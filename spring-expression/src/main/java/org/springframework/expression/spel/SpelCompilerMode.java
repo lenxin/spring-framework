@@ -7,7 +7,6 @@ package org.springframework.expression.spel;
  * @since 4.1
  */
 public enum SpelCompilerMode {
-
 	/**
 	 * The compiler is switched off; this is the default.
 	 */

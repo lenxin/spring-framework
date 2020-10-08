@@ -1,25 +1,12 @@
 package org.springframework.expression.spel;
 
-import java.util.ArrayDeque;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
-
 import org.springframework.core.convert.TypeDescriptor;
-import org.springframework.expression.EvaluationContext;
-import org.springframework.expression.EvaluationException;
-import org.springframework.expression.Operation;
-import org.springframework.expression.OperatorOverloader;
-import org.springframework.expression.PropertyAccessor;
-import org.springframework.expression.TypeComparator;
-import org.springframework.expression.TypeConverter;
-import org.springframework.expression.TypedValue;
+import org.springframework.expression.*;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
+
+import java.util.*;
 
 /**
  * An ExpressionState is for maintaining per-expression-evaluation state, any changes to
@@ -32,21 +19,14 @@ import org.springframework.util.CollectionUtils;
  * <p>It also acts as a place for to define common utility routines that the various AST
  * nodes might need.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
  * @since 3.0
  */
 public class ExpressionState {
-
 	private final EvaluationContext relatedContext;
-
 	private final TypedValue rootObject;
-
 	private final SpelParserConfiguration configuration;
-
 	@Nullable
 	private Deque<TypedValue> contextObjects;
-
 	@Nullable
 	private Deque<VariableScope> variableScopes;
 
@@ -59,7 +39,6 @@ public class ExpressionState {
 	// element from list1
 	@Nullable
 	private ArrayDeque<TypedValue> scopeRootObjects;
-
 
 	public ExpressionState(EvaluationContext context) {
 		this(context, context.getRootObject(), new SpelParserConfiguration(false, false));
@@ -80,7 +59,6 @@ public class ExpressionState {
 		this.rootObject = rootObject;
 		this.configuration = configuration;
 	}
-
 
 	/**
 	 * The active context object is what unqualified references to properties/etc are resolved against.
@@ -105,8 +83,7 @@ public class ExpressionState {
 		}
 		try {
 			this.contextObjects.pop();
-		}
-		catch (NoSuchElementException ex) {
+		} catch (NoSuchElementException ex) {
 			throw new IllegalStateException("Cannot pop active context object: stack is empty");
 		}
 	}
@@ -217,10 +194,9 @@ public class ExpressionState {
 		if (overloader.overridesOperation(op, left, right)) {
 			Object returnValue = overloader.operate(op, left, right);
 			return new TypedValue(returnValue);
-		}
-		else {
+		} else {
 			String leftType = (left == null ? "null" : left.getClass().getName());
-			String rightType = (right == null? "null" : right.getClass().getName());
+			String rightType = (right == null ? "null" : right.getClass().getName());
 			throw new SpelEvaluationException(SpelMessage.OPERATOR_NOT_SUPPORTED_BETWEEN_TYPES, op, leftType, rightType);
 		}
 	}
@@ -237,7 +213,6 @@ public class ExpressionState {
 		return this.configuration;
 	}
 
-
 	/**
 	 * A new scope is entered when a function is called and it is used to hold the
 	 * parameters to the function call. If the names of the parameters clash with
@@ -246,7 +221,6 @@ public class ExpressionState {
 	 * the scope is exited.
 	 */
 	private static class VariableScope {
-
 		private final Map<String, Object> vars = new HashMap<>();
 
 		public VariableScope() {
@@ -259,7 +233,7 @@ public class ExpressionState {
 		}
 
 		public VariableScope(String name, Object value) {
-			this.vars.put(name,value);
+			this.vars.put(name, value);
 		}
 
 		public Object lookupVariable(String name) {
@@ -267,12 +241,11 @@ public class ExpressionState {
 		}
 
 		public void setVariable(String name, Object value) {
-			this.vars.put(name,value);
+			this.vars.put(name, value);
 		}
 
 		public boolean definesVariable(String name) {
 			return this.vars.containsKey(name);
 		}
 	}
-
 }

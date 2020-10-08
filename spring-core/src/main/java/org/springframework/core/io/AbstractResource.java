@@ -1,5 +1,9 @@
 package org.springframework.core.io;
 
+import org.springframework.core.NestedIOException;
+import org.springframework.lang.Nullable;
+import org.springframework.util.ResourceUtils;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,10 +14,6 @@ import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 
-import org.springframework.core.NestedIOException;
-import org.springframework.lang.Nullable;
-import org.springframework.util.ResourceUtils;
-
 /**
  * Convenience base class for {@link Resource} implementations,
  * pre-implementing typical behavior.
@@ -22,11 +22,9 @@ import org.springframework.util.ResourceUtils;
  * be opened; "isOpen" will always return false; "getURL" and "getFile"
  * throw an exception; and "toString" will return the description.
  *
- * @author Juergen Hoeller
  * @since 28.12.2003
  */
 public abstract class AbstractResource implements Resource {
-
 	/**
 	 * This implementation checks whether a File can be opened,
 	 * falling back to whether an InputStream can be opened.
@@ -37,14 +35,12 @@ public abstract class AbstractResource implements Resource {
 		// Try file existence: can we find the file in the file system?
 		try {
 			return getFile().exists();
-		}
-		catch (IOException ex) {
+		} catch (IOException ex) {
 			// Fall back to stream existence: can we open the stream?
 			try {
 				getInputStream().close();
 				return true;
-			}
-			catch (Throwable isEx) {
+			} catch (Throwable isEx) {
 				return false;
 			}
 		}
@@ -93,8 +89,7 @@ public abstract class AbstractResource implements Resource {
 		URL url = getURL();
 		try {
 			return ResourceUtils.toURI(url);
-		}
-		catch (URISyntaxException ex) {
+		} catch (URISyntaxException ex) {
 			throw new NestedIOException("Invalid URI [" + url + "]", ex);
 		}
 	}
@@ -123,6 +118,7 @@ public abstract class AbstractResource implements Resource {
 	 * This implementation reads the entire InputStream to calculate the
 	 * content length. Subclasses will almost always be able to provide
 	 * a more optimal version of this, e.g. checking a File length.
+	 *
 	 * @see #getInputStream()
 	 */
 	@Override
@@ -136,12 +132,10 @@ public abstract class AbstractResource implements Resource {
 				size += read;
 			}
 			return size;
-		}
-		finally {
+		} finally {
 			try {
 				is.close();
-			}
-			catch (IOException ex) {
+			} catch (IOException ex) {
 			}
 		}
 	}
@@ -149,6 +143,7 @@ public abstract class AbstractResource implements Resource {
 	/**
 	 * This implementation checks the timestamp of the underlying File,
 	 * if available.
+	 *
 	 * @see #getFileForLastModifiedCheck()
 	 */
 	@Override
@@ -165,10 +160,11 @@ public abstract class AbstractResource implements Resource {
 	/**
 	 * Determine the File to use for timestamp checking.
 	 * <p>The default implementation delegates to {@link #getFile()}.
+	 *
 	 * @return the File to use for timestamp checking (never {@code null})
 	 * @throws FileNotFoundException if the resource cannot be resolved as
-	 * an absolute file path, i.e. is not available in a file system
-	 * @throws IOException in case of general resolution/reading failures
+	 *                               an absolute file path, i.e. is not available in a file system
+	 * @throws IOException           in case of general resolution/reading failures
 	 */
 	protected File getFileForLastModifiedCheck() throws IOException {
 		return getFile();
@@ -193,9 +189,9 @@ public abstract class AbstractResource implements Resource {
 		return null;
 	}
 
-
 	/**
 	 * This implementation compares description strings.
+	 *
 	 * @see #getDescription()
 	 */
 	@Override
@@ -206,6 +202,7 @@ public abstract class AbstractResource implements Resource {
 
 	/**
 	 * This implementation returns the description's hash code.
+	 *
 	 * @see #getDescription()
 	 */
 	@Override
@@ -215,11 +212,11 @@ public abstract class AbstractResource implements Resource {
 
 	/**
 	 * This implementation returns the description of this resource.
+	 *
 	 * @see #getDescription()
 	 */
 	@Override
 	public String toString() {
 		return getDescription();
 	}
-
 }

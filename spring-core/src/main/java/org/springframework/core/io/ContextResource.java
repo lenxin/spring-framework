@@ -7,17 +7,14 @@ package org.springframework.core.io;
  * without an explicit prefix, hence applying relative to the local
  * {@link ResourceLoader}'s context).
  *
- * @author Juergen Hoeller
- * @since 2.5
  * @see org.springframework.web.context.support.ServletContextResource
+ * @since 2.5
  */
 public interface ContextResource extends Resource {
-
 	/**
 	 * Return the path within the enclosing 'context'.
 	 * <p>This is typically path relative to a context-specific root directory,
 	 * e.g. a ServletContext root or a PortletContext root.
 	 */
 	String getPathWithinContext();
-
 }

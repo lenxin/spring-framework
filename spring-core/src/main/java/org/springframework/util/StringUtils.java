@@ -22,13 +22,9 @@ import java.util.*;
  */
 public abstract class StringUtils {
 	private static final String FOLDER_SEPARATOR = "/";
-
 	private static final String WINDOWS_FOLDER_SEPARATOR = "\\";
-
 	private static final String TOP_PATH = "..";
-
 	private static final String CURRENT_PATH = ".";
-
 	private static final char EXTENSION_SEPARATOR = '.';
 
 	//---------------------------------------------------------------------
@@ -1079,7 +1075,6 @@ public abstract class StringUtils {
 	@Nullable
 	public static Properties splitArrayElementsIntoProperties(
 			String[] array, String delimiter, @Nullable String charsToDelete) {
-
 		if (ObjectUtils.isEmpty(array)) {
 			return null;
 		}
@@ -1141,7 +1136,6 @@ public abstract class StringUtils {
 	 */
 	public static String[] tokenizeToStringArray(
 			@Nullable String str, String delimiters, boolean trimTokens, boolean ignoreEmptyTokens) {
-
 		if (str == null) {
 			return new String[0];
 		}
@@ -1196,7 +1190,6 @@ public abstract class StringUtils {
 	 */
 	public static String[] delimitedListToStringArray(
 			@Nullable String str, @Nullable String delimiter, @Nullable String charsToDelete) {
-
 		if (str == null) {
 			return new String[0];
 		}
@@ -1261,7 +1254,6 @@ public abstract class StringUtils {
 	 */
 	public static String collectionToDelimitedString(
 			@Nullable Collection<?> coll, String delim, String prefix, String suffix) {
-
 		if (CollectionUtils.isEmpty(coll)) {
 			return "";
 		}

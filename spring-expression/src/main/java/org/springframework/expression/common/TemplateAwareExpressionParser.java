@@ -1,27 +1,23 @@
 package org.springframework.expression.common;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
-
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.ParseException;
 import org.springframework.expression.ParserContext;
 import org.springframework.lang.Nullable;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.List;
+
 /**
  * An expression parser that understands templates. It can be subclassed by expression
  * parsers that do not offer first class support for templating.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Andy Clement
  * @since 3.0
  */
 public abstract class TemplateAwareExpressionParser implements ExpressionParser {
-
 	@Override
 	public Expression parseExpression(String expressionString) throws ParseException {
 		return parseExpression(expressionString, null);
@@ -31,12 +27,10 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 	public Expression parseExpression(String expressionString, @Nullable ParserContext context) throws ParseException {
 		if (context != null && context.isTemplate()) {
 			return parseTemplate(expressionString, context);
-		}
-		else {
+		} else {
 			return doParseExpression(expressionString, context);
 		}
 	}
-
 
 	private Expression parseTemplate(String expressionString, ParserContext context) throws ParseException {
 		if (expressionString.isEmpty()) {
@@ -46,8 +40,7 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 		Expression[] expressions = parseExpressions(expressionString, context);
 		if (expressions.length == 1) {
 			return expressions[0];
-		}
-		else {
+		} else {
 			return new CompositeStringExpression(expressionString, expressions);
 		}
 	}
@@ -66,6 +59,7 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 	 * brackets '[' and curly brackets '}' must be in pairs within the expression unless
 	 * they are within a string literal and a string literal starts and terminates with a
 	 * single quote '.
+	 *
 	 * @param expressionString the expression string
 	 * @return the parsed expressions
 	 * @throws ParseException when the expressions cannot be parsed
@@ -88,24 +82,23 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 				if (suffixIndex == -1) {
 					throw new ParseException(expressionString, prefixIndex,
 							"No ending suffix '" + suffix + "' for expression starting at character " +
-							prefixIndex + ": " + expressionString.substring(prefixIndex));
+									prefixIndex + ": " + expressionString.substring(prefixIndex));
 				}
 				if (suffixIndex == afterPrefixIndex) {
 					throw new ParseException(expressionString, prefixIndex,
 							"No expression defined within delimiter '" + prefix + suffix +
-							"' at character " + prefixIndex);
+									"' at character " + prefixIndex);
 				}
 				String expr = expressionString.substring(prefixIndex + prefix.length(), suffixIndex);
 				expr = expr.trim();
 				if (expr.isEmpty()) {
 					throw new ParseException(expressionString, prefixIndex,
 							"No expression defined within delimiter '" + prefix + suffix +
-							"' at character " + prefixIndex);
+									"' at character " + prefixIndex);
 				}
 				expressions.add(doParseExpression(expr, context));
 				startIdx = suffixIndex + suffix.length();
-			}
-			else {
+			} else {
 				// no more ${expressions} found in string, add rest as static text
 				expressions.add(new LiteralExpression(expressionString.substring(startIdx)));
 				startIdx = expressionString.length();
@@ -118,9 +111,10 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 	/**
 	 * Return true if the specified suffix can be found at the supplied position in the
 	 * supplied expression string.
+	 *
 	 * @param expressionString the expression string which may contain the suffix
-	 * @param pos the start position at which to check for the suffix
-	 * @param suffix the suffix string
+	 * @param pos              the start position at which to check for the suffix
+	 * @param suffix           the suffix string
 	 */
 	private boolean isSuffixHere(String expressionString, int pos, String suffix) {
 		int suffixPosition = 0;
@@ -139,15 +133,15 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 	/**
 	 * Copes with nesting, for example '${...${...}}' where the correct end for the first
 	 * ${ is the final }.
-	 * @param suffix the suffix
+	 *
+	 * @param suffix           the suffix
 	 * @param expressionString the expression string
 	 * @param afterPrefixIndex the most recently found prefix location for which the
-	 * matching end suffix is being sought
+	 *                         matching end suffix is being sought
 	 * @return the position of the correct matching nextSuffix or -1 if none can be found
 	 */
 	private int skipToCorrectEndSuffix(String suffix, String expressionString, int afterPrefixIndex)
 			throws ParseException {
-
 		// Chew on the expression text - relying on the rules:
 		// brackets must be in pairs: () [] {}
 		// string literals are "..." or '...' and these may contain unmatched brackets
@@ -208,17 +202,16 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 		return pos;
 	}
 
-
 	/**
 	 * Actually parse the expression string and return an Expression object.
+	 *
 	 * @param expressionString the raw expression string to parse
-	 * @param context a context for influencing this expression parsing routine (optional)
+	 * @param context          a context for influencing this expression parsing routine (optional)
 	 * @return an evaluator for the parsed expression
 	 * @throws ParseException an exception occurred during parsing
 	 */
 	protected abstract Expression doParseExpression(String expressionString, @Nullable ParserContext context)
 			throws ParseException;
-
 
 	/**
 	 * This captures a type of bracket and the position in which it occurs in the
@@ -227,9 +220,7 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 	 * square brackets [] round brackets () and curly brackets {}
 	 */
 	private static class Bracket {
-
 		char bracket;
-
 		int pos;
 
 		Bracket(char bracket, int pos) {
@@ -240,8 +231,7 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 		boolean compatibleWithCloseBracket(char closeBracket) {
 			if (this.bracket == '{') {
 				return closeBracket == '}';
-			}
-			else if (this.bracket == '[') {
+			} else if (this.bracket == '[') {
 				return closeBracket == ']';
 			}
 			return closeBracket == ')';
@@ -250,8 +240,7 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 		static char theOpenBracketFor(char closeBracket) {
 			if (closeBracket == '}') {
 				return '{';
-			}
-			else if (closeBracket == ']') {
+			} else if (closeBracket == ']') {
 				return '[';
 			}
 			return '(';
@@ -260,12 +249,10 @@ public abstract class TemplateAwareExpressionParser implements ExpressionParser 
 		static char theCloseBracketFor(char openBracket) {
 			if (openBracket == '{') {
 				return '}';
-			}
-			else if (openBracket == '[') {
+			} else if (openBracket == '[') {
 				return ']';
 			}
 			return ')';
 		}
 	}
-
 }

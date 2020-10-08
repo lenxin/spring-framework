@@ -7,11 +7,9 @@ import org.springframework.mock.web.MockHttpServletRequest;
  * {@link org.springframework.test.web.servlet.request.RequestPostProcessor org.springframework.test.web.servlet.request.RequestPostProcessors}
  * as a separate step from the {@link #buildRequest} method.
  *
- * @author Rossen Stoyanchev
  * @since 4.1
  */
 public interface SmartRequestBuilder extends RequestBuilder {
-
 	/**
 	 * Apply request post processing. Typically that means invoking one or more
 	 * {@link org.springframework.test.web.servlet.request.RequestPostProcessor org.springframework.test.web.servlet.request.RequestPostProcessors}.
@@ -20,5 +18,4 @@ public interface SmartRequestBuilder extends RequestBuilder {
 	 * @return the request to use, either the one passed in or a wrapped one
 	 */
 	MockHttpServletRequest postProcessRequest(MockHttpServletRequest request);
-
 }

@@ -12,14 +12,11 @@ import javax.servlet.ServletContextListener;
  * constructor, allowing for programmatic configuration in Servlet 3.0+ environments.
  * See {@link org.springframework.web.WebApplicationInitializer} for usage examples.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
- * @since 17.02.2003
  * @see #setContextInitializers
  * @see org.springframework.web.WebApplicationInitializer
+ * @since 17.02.2003
  */
 public class ContextLoaderListener extends ContextLoader implements ServletContextListener {
-
 	/**
 	 * Create a new {@code ContextLoaderListener} that will create a web application
 	 * context based on the "contextClass" and "contextConfigLocation" servlet
@@ -32,6 +29,7 @@ public class ContextLoaderListener extends ContextLoader implements ServletConte
 	 * the attribute name {@link WebApplicationContext#ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE}
 	 * and the Spring application context will be closed when the {@link #contextDestroyed}
 	 * lifecycle method is invoked on this listener.
+	 *
 	 * @see ContextLoader
 	 * @see #ContextLoaderListener(WebApplicationContext)
 	 * @see #contextInitialized(ServletContextEvent)
@@ -70,6 +68,7 @@ public class ContextLoaderListener extends ContextLoader implements ServletConte
 	 * WebApplicationContext#ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE} and the Spring
 	 * application context will be closed when the {@link #contextDestroyed} lifecycle
 	 * method is invoked on this listener.
+	 *
 	 * @param context the application context to manage
 	 * @see #contextInitialized(ServletContextEvent)
 	 * @see #contextDestroyed(ServletContextEvent)
@@ -77,7 +76,6 @@ public class ContextLoaderListener extends ContextLoader implements ServletConte
 	public ContextLoaderListener(WebApplicationContext context) {
 		super(context);
 	}
-
 
 	/**
 	 * Initialize the root web application context.
@@ -87,7 +85,6 @@ public class ContextLoaderListener extends ContextLoader implements ServletConte
 		initWebApplicationContext(event.getServletContext());
 	}
 
-
 	/**
 	 * Close the root web application context.
 	 */
@@ -96,5 +93,4 @@ public class ContextLoaderListener extends ContextLoader implements ServletConte
 		closeWebApplicationContext(event.getServletContext());
 		ContextCleanupListener.cleanupAttributes(event.getServletContext());
 	}
-
 }

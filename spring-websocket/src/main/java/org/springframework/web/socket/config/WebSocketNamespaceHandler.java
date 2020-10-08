@@ -7,14 +7,11 @@ import org.springframework.util.ClassUtils;
  * {@link org.springframework.beans.factory.xml.NamespaceHandler} for Spring WebSocket
  * configuration namespace.
  *
- * @author Brian Clozel
  * @since 4.0
  */
 public class WebSocketNamespaceHandler extends NamespaceHandlerSupport {
-
 	private static boolean isSpringMessagingPresent = ClassUtils.isPresent(
 			"org.springframework.messaging.Message", WebSocketNamespaceHandler.class.getClassLoader());
-
 
 	@Override
 	public void init() {
@@ -23,5 +20,4 @@ public class WebSocketNamespaceHandler extends NamespaceHandlerSupport {
 			registerBeanDefinitionParser("message-broker", new MessageBrokerBeanDefinitionParser());
 		}
 	}
-
 }

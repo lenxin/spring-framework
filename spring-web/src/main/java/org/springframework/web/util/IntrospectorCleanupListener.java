@@ -1,10 +1,10 @@
 package org.springframework.web.util;
 
-import java.beans.Introspector;
+import org.springframework.beans.CachedIntrospectionResults;
+
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-
-import org.springframework.beans.CachedIntrospectionResults;
+import java.beans.Introspector;
 
 /**
  * Listener that flushes the JDK's {@link java.beans.Introspector JavaBeans Introspector}
@@ -46,14 +46,12 @@ import org.springframework.beans.CachedIntrospectionResults;
  * before any application listeners such as Spring's ContextLoaderListener.</b>
  * This allows the listener to take full effect at the right time of the lifecycle.
  *
- * @author Juergen Hoeller
- * @since 1.1
  * @see java.beans.Introspector#flushCaches()
  * @see org.springframework.beans.CachedIntrospectionResults#acceptClassLoader
  * @see org.springframework.beans.CachedIntrospectionResults#clearClassLoader
+ * @since 1.1
  */
 public class IntrospectorCleanupListener implements ServletContextListener {
-
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
 		CachedIntrospectionResults.acceptClassLoader(Thread.currentThread().getContextClassLoader());
@@ -64,5 +62,4 @@ public class IntrospectorCleanupListener implements ServletContextListener {
 		CachedIntrospectionResults.clearClassLoader(Thread.currentThread().getContextClassLoader());
 		Introspector.flushCaches();
 	}
-
 }

@@ -1,9 +1,9 @@
 package org.springframework.web.servlet;
 
+import org.springframework.web.method.HandlerMethod;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.web.method.HandlerMethod;
 
 /**
  * Extends {@code HandlerInterceptor} with a callback method invoked after the
@@ -35,14 +35,12 @@ import org.springframework.web.method.HandlerMethod;
  * WebAsyncManager}. This can be done proactively on every request from
  * {@code preHandle} regardless of whether async request processing will start.
  *
- * @author Rossen Stoyanchev
- * @since 3.2
  * @see org.springframework.web.context.request.async.WebAsyncManager
  * @see org.springframework.web.context.request.async.CallableProcessingInterceptor
  * @see org.springframework.web.context.request.async.DeferredResultProcessingInterceptor
+ * @since 3.2
  */
 public interface AsyncHandlerInterceptor extends HandlerInterceptor {
-
 	/**
 	 * Called instead of {@code postHandle} and {@code afterCompletion}
 	 * when the handler is being executed concurrently.
@@ -50,14 +48,14 @@ public interface AsyncHandlerInterceptor extends HandlerInterceptor {
 	 * avoid modifying them in ways that would conflict with the concurrent
 	 * execution of the handler. A typical use of this method would be to
 	 * clean up thread-local variables.
-	 * @param request the current request
+	 *
+	 * @param request  the current request
 	 * @param response the current response
-	 * @param handler the handler (or {@link HandlerMethod}) that started async
-	 * execution, for type and/or instance examination
+	 * @param handler  the handler (or {@link HandlerMethod}) that started async
+	 *                 execution, for type and/or instance examination
 	 * @throws Exception in case of errors
 	 */
 	default void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response,
-			Object handler) throws Exception {
+												Object handler) throws Exception {
 	}
-
 }

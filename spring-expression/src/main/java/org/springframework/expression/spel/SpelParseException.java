@@ -8,17 +8,12 @@ import org.springframework.lang.Nullable;
  * string indicating the problem, it records a message key and the inserts for the
  * message. See {@link SpelMessage} for the list of all possible messages that can occur.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
  * @since 3.0
  */
 @SuppressWarnings("serial")
 public class SpelParseException extends ParseException {
-
 	private final SpelMessage message;
-
 	private final Object[] inserts;
-
 
 	public SpelParseException(@Nullable String expressionString, int position, SpelMessage message, Object... inserts) {
 		super(expressionString, position, message.formatMessage(inserts));
@@ -38,7 +33,6 @@ public class SpelParseException extends ParseException {
 		this.inserts = inserts;
 	}
 
-
 	/**
 	 * Return the message code.
 	 */
@@ -52,5 +46,4 @@ public class SpelParseException extends ParseException {
 	public Object[] getInserts() {
 		return this.inserts;
 	}
-
 }

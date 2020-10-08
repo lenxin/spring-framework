@@ -1,10 +1,10 @@
 package org.springframework.web.servlet.mvc;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.lang.Nullable;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Base Controller interface, representing a component that receives
@@ -79,8 +79,6 @@ import org.springframework.web.servlet.ModelAndView;
  *
  * <p>Controllers can optionally implement the {@link LastModified} interface.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
  * @see LastModified
  * @see SimpleControllerHandlerAdapter
  * @see AbstractController
@@ -93,18 +91,17 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @FunctionalInterface
 public interface Controller {
-
 	/**
 	 * Process the request and return a ModelAndView object which the DispatcherServlet
 	 * will render. A {@code null} return value is not an error: it indicates that
 	 * this object completed request processing itself and that there is therefore no
 	 * ModelAndView to render.
-	 * @param request current HTTP request
+	 *
+	 * @param request  current HTTP request
 	 * @param response current HTTP response
 	 * @return a ModelAndView to render, or {@code null} if handled directly
 	 * @throws Exception in case of errors
 	 */
 	@Nullable
 	ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception;
-
 }

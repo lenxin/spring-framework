@@ -1,9 +1,5 @@
 package org.springframework.web.servlet.config;
 
-import java.util.Map;
-
-import org.w3c.dom.Element;
-
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.RuntimeBeanReference;
 import org.springframework.beans.factory.parsing.BeanComponentDefinition;
@@ -16,6 +12,9 @@ import org.springframework.lang.Nullable;
 import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
 import org.springframework.web.servlet.mvc.ParameterizableViewController;
 import org.springframework.web.servlet.view.RedirectView;
+import org.w3c.dom.Element;
+
+import java.util.Map;
 
 /**
  * {@link org.springframework.beans.factory.xml.BeanDefinitionParser} that
@@ -32,16 +31,11 @@ import org.springframework.web.servlet.view.RedirectView;
  * {@link org.springframework.web.servlet.handler.SimpleUrlHandlerMapping
  * SimpleUrlHandlerMapping}.
  *
- * @author Keith Donald
- * @author Christian Dupuis
- * @author Rossen Stoyanchev
  * @since 3.0
  */
 class ViewControllerBeanDefinitionParser implements BeanDefinitionParser {
-
 	private static final String HANDLER_MAPPING_BEAN_NAME =
 			"org.springframework.web.servlet.config.viewControllerHandlerMapping";
-
 
 	@Override
 	@SuppressWarnings("unchecked")
@@ -72,15 +66,12 @@ class ViewControllerBeanDefinitionParser implements BeanDefinitionParser {
 			if (statusCode != null) {
 				controller.getPropertyValues().add("statusCode", statusCode);
 			}
-		}
-		else if (name.equals("redirect-view-controller")) {
+		} else if (name.equals("redirect-view-controller")) {
 			controller.getPropertyValues().add("view", getRedirectView(element, statusCode, source));
-		}
-		else if (name.equals("status-controller")) {
+		} else if (name.equals("status-controller")) {
 			controller.getPropertyValues().add("statusCode", statusCode);
 			controller.getPropertyValues().add("statusOnly", true);
-		}
-		else {
+		} else {
 			// Should never happen...
 			throw new IllegalStateException("Unexpected tag name: " + name);
 		}
@@ -125,8 +116,7 @@ class ViewControllerBeanDefinitionParser implements BeanDefinitionParser {
 
 		if (element.hasAttribute("context-relative")) {
 			redirectView.getPropertyValues().add("contextRelative", element.getAttribute("context-relative"));
-		}
-		else {
+		} else {
 			redirectView.getPropertyValues().add("contextRelative", true);
 		}
 
@@ -136,5 +126,4 @@ class ViewControllerBeanDefinitionParser implements BeanDefinitionParser {
 
 		return redirectView;
 	}
-
 }

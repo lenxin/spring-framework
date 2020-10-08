@@ -1,13 +1,13 @@
 package org.springframework.beans;
 
-import java.lang.reflect.Field;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.springframework.core.ResolvableType;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ReflectionUtils;
+
+import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * {@link ConfigurablePropertyAccessor} implementation that directly accesses
@@ -21,21 +21,18 @@ import org.springframework.util.ReflectionUtils;
  * <p>A DirectFieldAccessor's default for the "extractOldValueForEditor" setting
  * is "true", since a field can always be read without side effects.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
- * @since 2.0
  * @see #setExtractOldValueForEditor
  * @see BeanWrapper
  * @see org.springframework.validation.DirectFieldBindingResult
  * @see org.springframework.validation.DataBinder#initDirectFieldAccess()
+ * @since 2.0
  */
 public class DirectFieldAccessor extends AbstractNestablePropertyAccessor {
-
 	private final Map<String, FieldPropertyHandler> fieldMap = new HashMap<>();
-
 
 	/**
 	 * Create a new DirectFieldAccessor for the given object.
+	 *
 	 * @param object object wrapped by this DirectFieldAccessor
 	 */
 	public DirectFieldAccessor(Object object) {
@@ -45,14 +42,14 @@ public class DirectFieldAccessor extends AbstractNestablePropertyAccessor {
 	/**
 	 * Create a new DirectFieldAccessor for the given object,
 	 * registering a nested path that the object is in.
-	 * @param object object wrapped by this DirectFieldAccessor
+	 *
+	 * @param object     object wrapped by this DirectFieldAccessor
 	 * @param nestedPath the nested path of the object
-	 * @param parent the containing DirectFieldAccessor (must not be {@code null})
+	 * @param parent     the containing DirectFieldAccessor (must not be {@code null})
 	 */
 	protected DirectFieldAccessor(Object object, String nestedPath, DirectFieldAccessor parent) {
 		super(object, nestedPath, parent);
 	}
-
 
 	@Override
 	@Nullable
@@ -81,9 +78,7 @@ public class DirectFieldAccessor extends AbstractNestablePropertyAccessor {
 				matches.buildErrorMessage(), matches.getPossibleMatches());
 	}
 
-
 	private class FieldPropertyHandler extends PropertyHandler {
-
 		private final Field field;
 
 		public FieldPropertyHandler(Field field) {
@@ -113,9 +108,7 @@ public class DirectFieldAccessor extends AbstractNestablePropertyAccessor {
 			try {
 				ReflectionUtils.makeAccessible(this.field);
 				return this.field.get(getWrappedInstance());
-			}
-
-			catch (IllegalAccessException ex) {
+			} catch (IllegalAccessException ex) {
 				throw new InvalidPropertyException(getWrappedClass(),
 						this.field.getName(), "Field is not accessible", ex);
 			}
@@ -126,12 +119,10 @@ public class DirectFieldAccessor extends AbstractNestablePropertyAccessor {
 			try {
 				ReflectionUtils.makeAccessible(this.field);
 				this.field.set(getWrappedInstance(), value);
-			}
-			catch (IllegalAccessException ex) {
+			} catch (IllegalAccessException ex) {
 				throw new InvalidPropertyException(getWrappedClass(), this.field.getName(),
 						"Field is not accessible", ex);
 			}
 		}
 	}
-
 }

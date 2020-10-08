@@ -13,20 +13,17 @@ import org.springframework.lang.Nullable;
  * expression which is made up of pieces - some being real expressions to be handled by
  * an EL implementation like SpEL, and some being just textual elements.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
  * @since 3.0
  */
 public class LiteralExpression implements Expression {
-
-	/** Fixed literal value of this expression. */
+	/**
+	 * Fixed literal value of this expression.
+	 */
 	private final String literalValue;
-
 
 	public LiteralExpression(String literalValue) {
 		this.literalValue = literalValue;
 	}
-
 
 	@Override
 	public final String getExpressionString() {
@@ -71,7 +68,6 @@ public class LiteralExpression implements Expression {
 	@Nullable
 	public <T> T getValue(EvaluationContext context, @Nullable Class<T> expectedResultType)
 			throws EvaluationException {
-
 		Object value = getValue(context);
 		return ExpressionUtils.convertTypedValue(context, new TypedValue(value), expectedResultType);
 	}
@@ -85,7 +81,6 @@ public class LiteralExpression implements Expression {
 	@Nullable
 	public <T> T getValue(EvaluationContext context, Object rootObject, @Nullable Class<T> desiredResultType)
 			throws EvaluationException {
-
 		Object value = getValue(context, rootObject);
 		return ExpressionUtils.convertTypedValue(context, new TypedValue(value), desiredResultType);
 	}
@@ -154,5 +149,4 @@ public class LiteralExpression implements Expression {
 	public void setValue(EvaluationContext context, Object rootObject, @Nullable Object value) throws EvaluationException {
 		throw new EvaluationException(this.literalValue, "Cannot call setValue() on a LiteralExpression");
 	}
-
 }

@@ -1,7 +1,5 @@
 package org.springframework.transaction.config;
 
-import org.w3c.dom.Element;
-
 import org.springframework.aop.config.AopNamespaceUtils;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.RuntimeBeanReference;
@@ -15,6 +13,7 @@ import org.springframework.transaction.event.TransactionalEventListenerFactory;
 import org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor;
 import org.springframework.transaction.interceptor.TransactionInterceptor;
 import org.springframework.util.ClassUtils;
+import org.w3c.dom.Element;
 
 /**
  * {@link org.springframework.beans.factory.xml.BeanDefinitionParser
@@ -28,14 +27,9 @@ import org.springframework.util.ClassUtils;
  * '{@code proxy-target-class}' attribute to '{@code true}', which
  * will result in class-based proxies being created.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Chris Beams
- * @author Stephane Nicoll
  * @since 2.0
  */
 class AnnotationDrivenBeanDefinitionParser implements BeanDefinitionParser {
-
 	/**
 	 * Parses the {@code <tx:annotation-driven/>} tag. Will
 	 * {@link AopNamespaceUtils#registerAutoProxyCreatorIfNecessary register an AutoProxyCreator}
@@ -52,8 +46,7 @@ class AnnotationDrivenBeanDefinitionParser implements BeanDefinitionParser {
 			if (ClassUtils.isPresent("javax.transaction.Transactional", getClass().getClassLoader())) {
 				registerJtaTransactionAspect(element, parserContext);
 			}
-		}
-		else {
+		} else {
 			// mode="proxy"
 			AopAutoProxyConfigurer.configureAutoProxyCreator(element, parserContext);
 		}
@@ -96,12 +89,10 @@ class AnnotationDrivenBeanDefinitionParser implements BeanDefinitionParser {
 				TransactionManagementConfigUtils.TRANSACTIONAL_EVENT_LISTENER_FACTORY_BEAN_NAME));
 	}
 
-
 	/**
 	 * Inner class to just introduce an AOP framework dependency when actually in proxy mode.
 	 */
 	private static class AopAutoProxyConfigurer {
-
 		public static void configureAutoProxyCreator(Element element, ParserContext parserContext) {
 			AopNamespaceUtils.registerAutoProxyCreatorIfNecessary(parserContext, element);
 
@@ -143,5 +134,5 @@ class AnnotationDrivenBeanDefinitionParser implements BeanDefinitionParser {
 			}
 		}
 	}
-
 }
+
