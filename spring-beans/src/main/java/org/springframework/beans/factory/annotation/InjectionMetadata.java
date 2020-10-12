@@ -128,6 +128,7 @@ public class InjectionMetadata {
 
 	/**
 	 * Check whether the given injection metadata needs to be refreshed.
+	 * 检查给定的注入元数据是否需要刷新。
 	 *
 	 * @param metadata the existing metadata instance
 	 * @param clazz    the current target class
