@@ -21,6 +21,7 @@ import java.util.Set;
 /**
  * Internal class for managing injection metadata.
  * Not intended for direct use in applications.
+ * 用于管理注入元数据的内部类，用于Spring框架，不在应用程序中直接使用。
  *
  * <p>Used by {@link AutowiredAnnotationBeanPostProcessor},
  * {@link org.springframework.context.annotation.CommonAnnotationBeanPostProcessor} and
@@ -68,6 +69,15 @@ public class InjectionMetadata {
 		this.injectedElements = elements;
 	}
 
+	/**
+	 * 检查指定bean定义的配置成员
+	 * 将注入元数据的注入元素injectedElements去重添加到bean定义的外部管理配置成员和当前注入元数据的checkedElements中
+	 *
+	 * @param beanDefinition
+	 * @return
+	 * @author yangxin
+	 * @date 2020/10/13 0:08
+	 */
 	public void checkConfigMembers(RootBeanDefinition beanDefinition) {
 		Set<InjectedElement> checkedElements = new LinkedHashSet<>(this.injectedElements.size());
 		for (InjectedElement element : this.injectedElements) {
@@ -99,6 +109,7 @@ public class InjectionMetadata {
 
 	/**
 	 * Clear property skipping for the contained elements.
+	 * 清除所包含元素的属性跳过。
 	 *
 	 * @since 3.2.13
 	 */
@@ -135,6 +146,7 @@ public class InjectionMetadata {
 	 * @return {@code true} indicating a refresh, {@code false} otherwise
 	 */
 	public static boolean needsRefresh(@Nullable InjectionMetadata metadata, Class<?> clazz) {
+		// 注入元数据为空或者注入元数据的目标类不等于指定的当前类
 		return (metadata == null || metadata.targetClass != clazz);
 	}
 

@@ -359,6 +359,20 @@ public class AutowiredAnnotationBeanPostProcessor extends InstantiationAwareBean
 		}
 	}
 
+	/**
+	 * 查找并构建自动装配元数据
+	 * 先使用ConcurrentHashMap的最小粒度锁从缓存injectionMetadataCache中获取入元数据
+	 * 如果注入元数据为空或者注入元数据的目标类不等于指定的当前类型，
+	 * 则以缓存injectionMetadataCache作为锁对象，在synchronized代码块中构建自动装配元数据
+	 * 并将构建好的元数据添加到缓存injectionMetadataCache中
+	 *
+	 * @param beanName bean名称
+	 * @param clazz    bean的Class类型
+	 * @param pvs
+	 * @return {@link InjectionMetadata}
+	 * @author yangxin
+	 * @date 2020/10/12 22:32
+	 */
 	private InjectionMetadata findAutowiringMetadata(String beanName, Class<?> clazz, @Nullable PropertyValues pvs) {
 		// Fall back to class name as cache key, for backwards compatibility with custom callers.
 		// 返回到类名作为缓存键，以便向后兼容自定义调用者。
@@ -380,6 +394,14 @@ public class AutowiredAnnotationBeanPostProcessor extends InstantiationAwareBean
 		return metadata;
 	}
 
+	/**
+	 * 构建自动装配元数据
+	 *
+	 * @param clazz bean的Class类型
+	 * @return {@link InjectionMetadata}
+	 * @author yangxin
+	 * @date 2020/10/12 22:35
+	 */
 	private InjectionMetadata buildAutowiringMetadata(final Class<?> clazz) {
 		if (!AnnotationUtils.isCandidateClass(clazz, this.autowiredAnnotationTypes)) {
 			return InjectionMetadata.EMPTY;

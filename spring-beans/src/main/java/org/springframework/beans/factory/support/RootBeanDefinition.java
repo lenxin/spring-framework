@@ -105,6 +105,7 @@ public class RootBeanDefinition extends AbstractBeanDefinition {
 	 */
 	@Nullable
 	volatile Boolean beforeInstantiationResolved;
+	// 外部管理的配置成员
 	@Nullable
 	private Set<Member> externallyManagedConfigMembers;
 	@Nullable
@@ -410,6 +411,14 @@ public class RootBeanDefinition extends AbstractBeanDefinition {
 		return this.factoryMethodToIntrospect;
 	}
 
+	/**
+	 * 将指定的配置成员configMember添加到外部管理配置成员externallyManagedConfigMembers中
+	 *
+	 * @param configMember
+	 * @return
+	 * @author yangxin
+	 * @date 2020/10/13 0:15
+	 */
 	public void registerExternallyManagedConfigMember(Member configMember) {
 		synchronized (this.postProcessingLock) {
 			if (this.externallyManagedConfigMembers == null) {
@@ -419,6 +428,14 @@ public class RootBeanDefinition extends AbstractBeanDefinition {
 		}
 	}
 
+	/**
+	 * 外部管理配置成员externallyManagedConfigMembers是否包含指定的配置成员configMember
+	 *
+	 * @param configMember
+	 * @return {@link boolean}
+	 * @author yangxin
+	 * @date 2020/10/13 0:12
+	 */
 	public boolean isExternallyManagedConfigMember(Member configMember) {
 		synchronized (this.postProcessingLock) {
 			return (this.externallyManagedConfigMembers != null &&
