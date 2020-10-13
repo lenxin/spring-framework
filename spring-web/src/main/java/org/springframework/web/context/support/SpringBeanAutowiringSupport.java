@@ -1,15 +1,14 @@
 package org.springframework.web.context.support;
 
-import javax.servlet.ServletContext;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.WebApplicationContext;
+
+import javax.servlet.ServletContext;
 
 /**
  * Convenient base class for self-autowiring classes that gets constructed
@@ -33,30 +32,28 @@ import org.springframework.web.context.WebApplicationContext;
  * class allows for easy access to the Spring root web application context
  * based on the ServletContext.
  *
- * @author Juergen Hoeller
- * @since 2.5.1
  * @see WebApplicationObjectSupport
+ * @since 2.5.1
  */
 public abstract class SpringBeanAutowiringSupport {
-
 	private static final Log logger = LogFactory.getLog(SpringBeanAutowiringSupport.class);
-
 
 	/**
 	 * This constructor performs injection on this instance,
 	 * based on the current web application context.
 	 * <p>Intended for use as a base class.
+	 *
 	 * @see #processInjectionBasedOnCurrentContext
 	 */
 	public SpringBeanAutowiringSupport() {
 		processInjectionBasedOnCurrentContext(this);
 	}
 
-
 	/**
 	 * Process {@code @Autowired} injection for the given target object,
 	 * based on the current web application context.
 	 * <p>Intended for use as a delegate.
+	 *
 	 * @param target the target object to process
 	 * @see org.springframework.web.context.ContextLoader#getCurrentWebApplicationContext()
 	 */
@@ -67,8 +64,7 @@ public abstract class SpringBeanAutowiringSupport {
 			AutowiredAnnotationBeanPostProcessor bpp = new AutowiredAnnotationBeanPostProcessor();
 			bpp.setBeanFactory(cc.getAutowireCapableBeanFactory());
 			bpp.processInjection(target);
-		}
-		else {
+		} else {
 			if (logger.isDebugEnabled()) {
 				logger.debug("Current WebApplicationContext is not available for processing of " +
 						ClassUtils.getShortName(target.getClass()) + ": " +
@@ -77,12 +73,12 @@ public abstract class SpringBeanAutowiringSupport {
 		}
 	}
 
-
 	/**
 	 * Process {@code @Autowired} injection for the given target object,
 	 * based on the current root web application context as stored in the ServletContext.
 	 * <p>Intended for use as a delegate.
-	 * @param target the target object to process
+	 *
+	 * @param target         the target object to process
 	 * @param servletContext the ServletContext to find the Spring web application context in
 	 * @see WebApplicationContextUtils#getWebApplicationContext(javax.servlet.ServletContext)
 	 */
@@ -93,5 +89,4 @@ public abstract class SpringBeanAutowiringSupport {
 		bpp.setBeanFactory(cc.getAutowireCapableBeanFactory());
 		bpp.processInjection(target);
 	}
-
 }

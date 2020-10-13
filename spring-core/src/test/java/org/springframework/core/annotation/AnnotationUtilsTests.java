@@ -1,59 +1,39 @@
 package org.springframework.core.annotation;
 
-import java.lang.annotation.Annotation;
-import java.lang.annotation.Documented;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Repeatable;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import javax.annotation.Nonnull;
-import javax.annotation.ParametersAreNonnullByDefault;
-
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.subpackage.NonPublicAnnotatedClass;
 import org.springframework.lang.NonNullApi;
 import org.springframework.stereotype.Component;
 
-import static java.util.Arrays.*;
-import static java.util.stream.Collectors.*;
+import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
+import java.lang.annotation.*;
+import java.lang.reflect.Method;
+import java.util.*;
+
+import static java.util.Arrays.asList;
+import static java.util.Arrays.stream;
+import static java.util.stream.Collectors.toList;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 import static org.springframework.core.annotation.AnnotationUtils.*;
 
 /**
  * Unit tests for {@link AnnotationUtils}.
- *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Chris Beams
- * @author Phillip Webb
- * @author Oleg Zhurakousky
  */
 @SuppressWarnings("deprecation")
 public class AnnotationUtilsTests {
-
 	@Rule
 	public final ExpectedException exception = ExpectedException.none();
-
 
 	@Before
 	public void clearCacheBeforeTests() {
 		AnnotationUtils.clearCache();
 	}
-
 
 	@Test
 	public void findMethodAnnotationOnLeaf() throws Exception {
@@ -854,7 +834,7 @@ public class AnnotationUtilsTests {
 		assertNotNull(annotationWithDefaults);
 		assertEquals("text: ", "enigma", annotationWithDefaults.text());
 		assertTrue("predicate: ", annotationWithDefaults.predicate());
-		assertArrayEquals("characters: ", new char[] { 'a', 'b', 'c' }, annotationWithDefaults.characters());
+		assertArrayEquals("characters: ", new char[]{'a', 'b', 'c'}, annotationWithDefaults.characters());
 	}
 
 	@Test
@@ -928,7 +908,7 @@ public class AnnotationUtilsTests {
 		exception.expectMessage(either(allOf(startsWith("Attributes map"),
 				containsString("returned null for required attribute 'text'"),
 				containsString("defined by annotation type [" + AnnotationWithoutDefaults.class.getName() + "]"))).or(
-								containsString("No value found for attribute named 'text' in merged annotation")));
+				containsString("No value found for attribute named 'text' in merged annotation")));
 		synthesizeAnnotation(attributes, AnnotationWithoutDefaults.class, null);
 	}
 
@@ -938,7 +918,7 @@ public class AnnotationUtilsTests {
 		exception.expect(IllegalArgumentException.class);
 		exception.expectMessage(containsString(
 				"Attribute 'value' in annotation org.springframework.stereotype.Component " +
-				"should be compatible with java.lang.String but a java.lang.Long value was returned"));
+						"should be compatible with java.lang.String but a java.lang.Long value was returned"));
 		synthesizeAnnotation(map, Component.class, null);
 	}
 
@@ -1348,7 +1328,7 @@ public class AnnotationUtilsTests {
 		public void handleMappedWithValueAttribute() {
 		}
 
-		@WebMapping(path = "/test", name = "bar", method = { RequestMethod.GET, RequestMethod.POST })
+		@WebMapping(path = "/test", name = "bar", method = {RequestMethod.GET, RequestMethod.POST})
 		public void handleMappedWithPathAttribute() {
 		}
 
@@ -1367,7 +1347,7 @@ public class AnnotationUtilsTests {
 		/**
 		 * mapping is logically "equal" to handleMappedWithPathAttribute().
 		 */
-		@WebMapping(value = "/test", path = "/test", name = "bar", method = { RequestMethod.GET, RequestMethod.POST })
+		@WebMapping(value = "/test", path = "/test", name = "bar", method = {RequestMethod.GET, RequestMethod.POST})
 		public void handleMappedWithSamePathAndValueAttributes() {
 		}
 
@@ -1437,7 +1417,7 @@ public class AnnotationUtilsTests {
 		char[] chars() default {};
 	}
 
-	@CharsContainer(chars = { 'x', 'y', 'z' })
+	@CharsContainer(chars = {'x', 'y', 'z'})
 	static class GroupOfCharsClass {
 	}
 
@@ -1786,7 +1766,9 @@ public class AnnotationUtilsTests {
 	@Retention(RetentionPolicy.RUNTIME)
 	@interface AnnotationWithDefaults {
 		String text() default "enigma";
+
 		boolean predicate() default true;
+
 		char[] characters() default {'a', 'b', 'c'};
 	}
 

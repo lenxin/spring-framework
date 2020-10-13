@@ -47,7 +47,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * Furthermore, it also supports the {@link javax.annotation.Resource} annotation
  * for annotation-driven injection of named beans.
  *
- * @author Juergen Hoeller
  * @see #setInitAnnotationType
  * @see #setDestroyAnnotationType
  * @since 2.5
@@ -77,15 +76,11 @@ public class InitDestroyAnnotationBeanPostProcessor
 			};
 
 	protected transient Log logger = LogFactory.getLog(getClass());
-
 	@Nullable
 	private Class<? extends Annotation> initAnnotationType;
-
 	@Nullable
 	private Class<? extends Annotation> destroyAnnotationType;
-
 	private int order = Ordered.LOWEST_PRECEDENCE;
-
 	@Nullable
 	private final transient Map<Class<?>, LifecycleMetadata> lifecycleMetadataCache = new ConcurrentHashMap<>(256);
 
@@ -166,7 +161,6 @@ public class InitDestroyAnnotationBeanPostProcessor
 		return findLifecycleMetadata(bean.getClass()).hasDestroyMethods();
 	}
 
-
 	private LifecycleMetadata findLifecycleMetadata(Class<?> clazz) {
 		if (this.lifecycleMetadataCache == null) {
 			// Happens after deserialization, during destruction...
@@ -242,22 +236,16 @@ public class InitDestroyAnnotationBeanPostProcessor
 	 * Class representing information about annotated init and destroy methods.
 	 */
 	private class LifecycleMetadata {
-
 		private final Class<?> targetClass;
-
 		private final Collection<LifecycleElement> initMethods;
-
 		private final Collection<LifecycleElement> destroyMethods;
-
 		@Nullable
 		private volatile Set<LifecycleElement> checkedInitMethods;
-
 		@Nullable
 		private volatile Set<LifecycleElement> checkedDestroyMethods;
 
 		public LifecycleMetadata(Class<?> targetClass, Collection<LifecycleElement> initMethods,
 								 Collection<LifecycleElement> destroyMethods) {
-
 			this.targetClass = targetClass;
 			this.initMethods = initMethods;
 			this.destroyMethods = destroyMethods;
@@ -330,9 +318,7 @@ public class InitDestroyAnnotationBeanPostProcessor
 	 * Class representing injection information about an annotated method.
 	 */
 	private static class LifecycleElement {
-
 		private final Method method;
-
 		private final String identifier;
 
 		public LifecycleElement(Method method) {

@@ -106,6 +106,7 @@ public abstract class AnnotationUtils {
 	/**
 	 * Determine whether the given class is a candidate for carrying the specified annotation
 	 * (at type, method or field level).
+	 * 确定给定的类是否携带指定注释的候选类(在类型、方法或字段级别)。
 	 *
 	 * @param clazz          the class to introspect
 	 * @param annotationType the searchable annotation type
@@ -122,6 +123,8 @@ public abstract class AnnotationUtils {
 	/**
 	 * Determine whether the given class is a candidate for carrying the specified annotation
 	 * (at type, method or field level).
+	 * 确定给定的类是否携带指定注释的候选类(在类型、方法或字段级别)。
+	 * 类型clazz不是以java.开头(既Java自带的类)且不是Ordered类型
 	 *
 	 * @param clazz          the class to introspect
 	 * @param annotationName the fully-qualified name of the searchable annotation type
@@ -1260,12 +1263,10 @@ public abstract class AnnotationUtils {
 		AnnotationsScanner.clearCache();
 	}
 
-
 	/**
 	 * Internal holder used to wrap default values.
 	 */
 	private static class DefaultValueHolder {
-
 		final Object defaultValue;
 
 		public DefaultValueHolder(Object defaultValue) {
@@ -1277,5 +1278,4 @@ public abstract class AnnotationUtils {
 			return "*" + this.defaultValue;
 		}
 	}
-
 }

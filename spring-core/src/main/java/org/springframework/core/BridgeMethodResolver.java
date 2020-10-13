@@ -1,17 +1,17 @@
 package org.springframework.core;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.ClassUtils;
+import org.springframework.util.ConcurrentReferenceHashMap;
+import org.springframework.util.ReflectionUtils;
+import org.springframework.util.ReflectionUtils.MethodFilter;
+
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.ClassUtils;
-import org.springframework.util.ConcurrentReferenceHashMap;
-import org.springframework.util.ReflectionUtils;
-import org.springframework.util.ReflectionUtils.MethodFilter;
 
 /**
  * Helper for resolving synthetic {@link Method#isBridge bridge Methods} to the
@@ -27,24 +27,24 @@ import org.springframework.util.ReflectionUtils.MethodFilter;
  * <p>See <a href="https://java.sun.com/docs/books/jls/third_edition/html/expressions.html#15.12.4.5">
  * The Java Language Specification</a> for more details on the use of bridge methods.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Phillip Webb
  * @since 2.0
  */
 public final class BridgeMethodResolver {
-
 	private static final Map<Method, Method> cache = new ConcurrentReferenceHashMap<>();
 
 	private BridgeMethodResolver() {
 	}
-
 
 	/**
 	 * Find the original method for the supplied {@link Method bridge Method}.
 	 * <p>It is safe to call this method passing in a non-bridge {@link Method} instance.
 	 * In such a case, the supplied {@link Method} instance is returned directly to the caller.
 	 * Callers are <strong>not</strong> required to check for bridging before calling this method.
+	 * 找到所提供的桥接方法的原始方法。
+	 * 调用传递非桥接方法实例的方法是安全的。
+	 * 在这种情况下，提供的方法实例直接返回给调用者。
+	 * 调用方在调用此方法之前不需要检查桥接。
+	 *
 	 * @param bridgeMethod the method to introspect
 	 * @return the original method (either the bridged method or the passed-in method
 	 * if no more specific one could be found)
@@ -89,8 +89,9 @@ public final class BridgeMethodResolver {
 
 	/**
 	 * Searches for the bridged method in the given candidates.
+	 *
 	 * @param candidateMethods the List of candidate Methods
-	 * @param bridgeMethod the bridge method
+	 * @param bridgeMethod     the bridge method
 	 * @return the bridged method, or {@code null} if none found
 	 */
 	@Nullable
@@ -103,8 +104,7 @@ public final class BridgeMethodResolver {
 		for (Method candidateMethod : candidateMethods) {
 			if (isBridgeMethodFor(bridgeMethod, candidateMethod, bridgeMethod.getDeclaringClass())) {
 				return candidateMethod;
-			}
-			else if (previousMethod != null) {
+			} else if (previousMethod != null) {
 				sameSig = sameSig &&
 						Arrays.equals(candidateMethod.getGenericParameterTypes(), previousMethod.getGenericParameterTypes());
 			}
@@ -157,6 +157,7 @@ public final class BridgeMethodResolver {
 	/**
 	 * Searches for the generic {@link Method} declaration whose erased signature
 	 * matches that of the supplied bridge method.
+	 *
 	 * @throws IllegalStateException if the generic declaration cannot be found
 	 */
 	@Nullable
@@ -181,8 +182,7 @@ public final class BridgeMethodResolver {
 			Method method = searchForMatch(ifc, bridgeMethod);
 			if (method != null && !method.isBridge()) {
 				return method;
-			}
-			else {
+			} else {
 				method = searchInterfaces(ifc.getInterfaces(), bridgeMethod);
 				if (method != null) {
 					return method;
@@ -201,8 +201,7 @@ public final class BridgeMethodResolver {
 	private static Method searchForMatch(Class<?> type, Method bridgeMethod) {
 		try {
 			return type.getDeclaredMethod(bridgeMethod.getName(), bridgeMethod.getParameterTypes());
-		}
-		catch (NoSuchMethodException ex) {
+		} catch (NoSuchMethodException ex) {
 			return null;
 		}
 	}
@@ -212,6 +211,7 @@ public final class BridgeMethodResolver {
 	 * the parameter and return types are the same, it is a 'visibility' bridge method
 	 * introduced in Java 6 to fix https://bugs.java.com/view_bug.do?bug_id=6342411.
 	 * See also https://stas-blogspot.blogspot.com/2010/03/java-bridge-methods-explained.html
+	 *
 	 * @return whether signatures match as described
 	 */
 	public static boolean isVisibilityBridgeMethodPair(Method bridgeMethod, Method bridgedMethod) {
@@ -221,5 +221,4 @@ public final class BridgeMethodResolver {
 		return (bridgeMethod.getReturnType().equals(bridgedMethod.getReturnType()) &&
 				Arrays.equals(bridgeMethod.getParameterTypes(), bridgedMethod.getParameterTypes()));
 	}
-
 }

@@ -11,7 +11,6 @@ import java.lang.reflect.Method;
  * @since 4.2
  */
 public interface EventListenerFactory {
-
 	/**
 	 * Specify if this factory supports the specified {@link Method}.
 	 *
@@ -29,5 +28,4 @@ public interface EventListenerFactory {
 	 * @return an application listener, suitable to invoke the specified method
 	 */
 	ApplicationListener<?> createApplicationListener(String beanName, Class<?> type, Method method);
-
 }

@@ -93,6 +93,15 @@ public class InjectionMetadata {
 		this.checkedElements = checkedElements;
 	}
 
+	/**
+	 * 将字段值注入到bean实例中
+	 *
+	 * @param target   bean实例
+	 * @param beanName bean名称
+	 * @param pvs      bean定义中设置的字段值
+	 * @author yangxin
+	 * @date 2020/10/13 18:38
+	 */
 	public void inject(Object target, @Nullable String beanName, @Nullable PropertyValues pvs) throws Throwable {
 		Collection<InjectedElement> checkedElements = this.checkedElements;
 		Collection<InjectedElement> elementsToIterate =

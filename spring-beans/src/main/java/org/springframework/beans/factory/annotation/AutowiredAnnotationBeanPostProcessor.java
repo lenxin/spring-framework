@@ -396,6 +396,7 @@ public class AutowiredAnnotationBeanPostProcessor extends InstantiationAwareBean
 
 	/**
 	 * 构建自动装配元数据
+	 * 循环遍历指定clazz和其父类的字段和方法，如果有自动装配注解，则将其添加到注入元数据的注入元素中
 	 *
 	 * @param clazz bean的Class类型
 	 * @return {@link InjectionMetadata}

@@ -218,7 +218,6 @@ final class ConfigurationClass {
 	 * Configuration classes must be non-final to accommodate CGLIB subclassing.
 	 */
 	private class FinalConfigurationProblem extends Problem {
-
 		public FinalConfigurationProblem() {
 			super(String.format("@Configuration class '%s' may not be final. Remove the final modifier to continue.",
 					getSimpleName()), new Location(getResource(), getMetadata()));
