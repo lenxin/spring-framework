@@ -31,13 +31,9 @@ import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
  *     pointcut-ref=&quot;getNameCalls&quot;
  *     advice-ref=&quot;getNameCounter&quot;/&gt;</pre>
  *
- * @author Rob Harrop
- * @author Adrian Colyer
- * @author Juergen Hoeller
  * @since 2.0
  */
 public class AopNamespaceHandler extends NamespaceHandlerSupport {
-
 	/**
 	 * Register the {@link BeanDefinitionParser BeanDefinitionParsers} for the
 	 * '{@code config}', '{@code spring-configured}', '{@code aspectj-autoproxy}'
@@ -53,5 +49,4 @@ public class AopNamespaceHandler extends NamespaceHandlerSupport {
 		// Only in 2.0 XSD: moved to context namespace as of 2.1
 		registerBeanDefinitionParser("spring-configured", new SpringConfiguredBeanDefinitionParser());
 	}
-
 }

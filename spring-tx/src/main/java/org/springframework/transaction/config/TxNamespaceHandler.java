@@ -1,8 +1,7 @@
 package org.springframework.transaction.config;
 
-import org.w3c.dom.Element;
-
 import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
+import org.w3c.dom.Element;
 
 /**
  * {@code NamespaceHandler} allowing for the configuration of
@@ -17,22 +16,16 @@ import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
  * in combination with the {@code <tx:annotation-driven>} element.
  * Both approached are detailed to great extent in the Spring reference manual.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
  * @since 2.0
  */
 public class TxNamespaceHandler extends NamespaceHandlerSupport {
-
 	static final String TRANSACTION_MANAGER_ATTRIBUTE = "transaction-manager";
-
 	static final String DEFAULT_TRANSACTION_MANAGER_BEAN_NAME = "transactionManager";
-
 
 	static String getTransactionManagerName(Element element) {
 		return (element.hasAttribute(TRANSACTION_MANAGER_ATTRIBUTE) ?
 				element.getAttribute(TRANSACTION_MANAGER_ATTRIBUTE) : DEFAULT_TRANSACTION_MANAGER_BEAN_NAME);
 	}
-
 
 	@Override
 	public void init() {
@@ -40,5 +33,4 @@ public class TxNamespaceHandler extends NamespaceHandlerSupport {
 		registerBeanDefinitionParser("annotation-driven", new AnnotationDrivenBeanDefinitionParser());
 		registerBeanDefinitionParser("jta-transaction-manager", new JtaTransactionManagerBeanDefinitionParser());
 	}
-
 }
