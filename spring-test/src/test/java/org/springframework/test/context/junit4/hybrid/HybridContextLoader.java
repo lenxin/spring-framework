@@ -10,7 +10,7 @@ import org.springframework.test.context.SmartContextLoader;
 import org.springframework.test.context.support.AbstractGenericContextLoader;
 import org.springframework.util.Assert;
 
-import static org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.*;
+import static org.springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses;
 
 /**
  * Hybrid {@link SmartContextLoader} that supports path-based and class-based
@@ -19,11 +19,9 @@ import static org.springframework.test.context.support.AnnotationConfigContextLo
  * <p>Detects defaults for XML configuration and annotated classes.
  * <p>Beans from XML configuration always override those from annotated classes.
  *
- * @author Sam Brannen
  * @since 4.0.4
  */
 public class HybridContextLoader extends AbstractGenericContextLoader {
-
 	@Override
 	protected void validateMergedContextConfiguration(MergedContextConfiguration mergedConfig) {
 		Assert.isTrue(mergedConfig.hasClasses() || mergedConfig.hasLocations(), getClass().getSimpleName()
@@ -57,5 +55,4 @@ public class HybridContextLoader extends AbstractGenericContextLoader {
 	protected String getResourceSuffix() {
 		return "-context.xml";
 	}
-
 }

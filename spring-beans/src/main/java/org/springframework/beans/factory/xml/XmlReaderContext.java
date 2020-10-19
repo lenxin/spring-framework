@@ -26,7 +26,6 @@ import java.io.StringReader;
  */
 public class XmlReaderContext extends ReaderContext {
 	private final XmlBeanDefinitionReader reader;
-
 	private final NamespaceHandlerResolver namespaceHandlerResolver;
 
 	/**

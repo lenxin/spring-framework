@@ -1,18 +1,7 @@
 package org.springframework.beans.factory.xml.support;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.junit.Before;
 import org.junit.Test;
-import org.w3c.dom.Attr;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.xml.sax.InputSource;
-
 import org.springframework.aop.Advisor;
 import org.springframework.aop.config.AbstractInterceptorDrivenBeanDefinitionDecorator;
 import org.springframework.aop.framework.Advised;
@@ -26,15 +15,7 @@ import org.springframework.beans.factory.config.BeanDefinitionHolder;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.RootBeanDefinition;
-import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;
-import org.springframework.beans.factory.xml.BeanDefinitionDecorator;
-import org.springframework.beans.factory.xml.BeanDefinitionParser;
-import org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver;
-import org.springframework.beans.factory.xml.NamespaceHandlerResolver;
-import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
-import org.springframework.beans.factory.xml.ParserContext;
-import org.springframework.beans.factory.xml.PluggableSchemaResolver;
-import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+import org.springframework.beans.factory.xml.*;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.core.io.ClassPathResource;
@@ -42,30 +23,31 @@ import org.springframework.core.io.Resource;
 import org.springframework.tests.aop.interceptor.NopInterceptor;
 import org.springframework.tests.sample.beans.ITestBean;
 import org.springframework.tests.sample.beans.TestBean;
+import org.w3c.dom.Attr;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.xml.sax.InputSource;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import static java.lang.String.format;
 import static org.junit.Assert.*;
 
 /**
  * Unit tests for custom XML namespace handler implementations.
- *
- * @author Rob Harrop
- * @author Rick Evans
- * @author Chris Beams
- * @author Juergen Hoeller
  */
 public class CustomNamespaceHandlerTests {
-
 	private static final Class<?> CLASS = CustomNamespaceHandlerTests.class;
 	private static final String CLASSNAME = CLASS.getSimpleName();
 	private static final String FQ_PATH = "org/springframework/beans/factory/xml/support";
-
 	private static final String NS_PROPS = format("%s/%s.properties", FQ_PATH, CLASSNAME);
 	private static final String NS_XML = format("%s/%s-context.xml", FQ_PATH, CLASSNAME);
 	private static final String TEST_XSD = format("%s/%s.xsd", FQ_PATH, CLASSNAME);
-
 	private GenericApplicationContext beanFactory;
-
 
 	@Before
 	public void setUp() throws Exception {
@@ -78,7 +60,6 @@ public class CustomNamespaceHandlerTests {
 		reader.loadBeanDefinitions(getResource());
 		this.beanFactory.refresh();
 	}
-
 
 	@Test
 	public void testSimpleParser() throws Exception {
@@ -110,8 +91,7 @@ public class CustomNamespaceHandlerTests {
 		try {
 			this.beanFactory.getBean("debuggingTestBeanNoInstance");
 			fail("Should have thrown BeanCreationException");
-		}
-		catch (BeanCreationException ex) {
+		} catch (BeanCreationException ex) {
 			assertTrue(ex.getRootCause() instanceof BeanInstantiationException);
 		}
 	}
@@ -154,7 +134,6 @@ public class CustomNamespaceHandlerTests {
 		assertEquals(2, things.size());
 	}
 
-
 	private void assertTestBean(ITestBean bean) {
 		assertEquals("Invalid name", "Rob Harrop", bean.getName());
 		assertEquals("Invalid age", 23, bean.getAge());
@@ -164,9 +143,7 @@ public class CustomNamespaceHandlerTests {
 		return new ClassPathResource(NS_XML);
 	}
 
-
 	private final class DummySchemaResolver extends PluggableSchemaResolver {
-
 		public DummySchemaResolver() {
 			super(CLASS.getClassLoader());
 		}
@@ -183,17 +160,12 @@ public class CustomNamespaceHandlerTests {
 			return source;
 		}
 	}
-
 }
-
 
 /**
  * Custom namespace handler implementation.
- *
- * @author Rob Harrop
  */
 final class TestNamespaceHandler extends NamespaceHandlerSupport {
-
 	@Override
 	public void init() {
 		registerBeanDefinitionParser("testBean", new TestBeanDefinitionParser());
@@ -205,9 +177,7 @@ final class TestNamespaceHandler extends NamespaceHandlerSupport {
 		registerBeanDefinitionDecoratorForAttribute("object-name", new ObjectNameBeanDefinitionDecorator());
 	}
 
-
 	private static class TestBeanDefinitionParser implements BeanDefinitionParser {
-
 		@Override
 		public BeanDefinition parse(Element element, ParserContext parserContext) {
 			RootBeanDefinition definition = new RootBeanDefinition();
@@ -223,9 +193,7 @@ final class TestNamespaceHandler extends NamespaceHandlerSupport {
 		}
 	}
 
-
 	private static final class PersonDefinitionParser extends AbstractSingleBeanDefinitionParser {
-
 		@Override
 		protected Class<?> getBeanClass(Element element) {
 			return TestBean.class;
@@ -238,9 +206,7 @@ final class TestNamespaceHandler extends NamespaceHandlerSupport {
 		}
 	}
 
-
 	private static class PropertyModifyingBeanDefinitionDecorator implements BeanDefinitionDecorator {
-
 		@Override
 		public BeanDefinitionHolder decorate(Node node, BeanDefinitionHolder definition, ParserContext parserContext) {
 			Element element = (Element) node;
@@ -255,27 +221,21 @@ final class TestNamespaceHandler extends NamespaceHandlerSupport {
 		}
 	}
 
-
 	private static class DebugBeanDefinitionDecorator extends AbstractInterceptorDrivenBeanDefinitionDecorator {
-
 		@Override
 		protected BeanDefinition createInterceptorDefinition(Node node) {
 			return new RootBeanDefinition(DebugInterceptor.class);
 		}
 	}
 
-
 	private static class NopInterceptorBeanDefinitionDecorator extends AbstractInterceptorDrivenBeanDefinitionDecorator {
-
 		@Override
 		protected BeanDefinition createInterceptorDefinition(Node node) {
 			return new RootBeanDefinition(NopInterceptor.class);
 		}
 	}
 
-
 	private static class ObjectNameBeanDefinitionDecorator implements BeanDefinitionDecorator {
-
 		@Override
 		public BeanDefinitionHolder decorate(Node node, BeanDefinitionHolder definition, ParserContext parserContext) {
 			Attr objectNameAttribute = (Attr) node;
@@ -283,5 +243,4 @@ final class TestNamespaceHandler extends NamespaceHandlerSupport {
 			return definition;
 		}
 	}
-
 }

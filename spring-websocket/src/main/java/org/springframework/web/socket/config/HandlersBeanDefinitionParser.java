@@ -31,11 +31,8 @@ import java.util.List;
  * @since 4.0
  */
 class HandlersBeanDefinitionParser implements BeanDefinitionParser {
-
 	private static final String SOCK_JS_SCHEDULER_NAME = "SockJsScheduler";
-
 	private static final int DEFAULT_MAPPING_ORDER = 1;
-
 
 	@Override
 	@Nullable
@@ -81,17 +78,12 @@ class HandlersBeanDefinitionParser implements BeanDefinitionParser {
 		return null;
 	}
 
-
 	private interface HandlerMappingStrategy {
-
 		void addMapping(Element mappingElement, ManagedMap<String, Object> map, ParserContext context);
 	}
 
-
 	private static class WebSocketHandlerMappingStrategy implements HandlerMappingStrategy {
-
 		private final RuntimeBeanReference handshakeHandlerReference;
-
 		private final ManagedList<?> interceptorsList;
 
 		public WebSocketHandlerMappingStrategy(RuntimeBeanReference handshakeHandler, ManagedList<?> interceptors) {
@@ -121,9 +113,7 @@ class HandlersBeanDefinitionParser implements BeanDefinitionParser {
 		}
 	}
 
-
 	private static class SockJsHandlerMappingStrategy implements HandlerMappingStrategy {
-
 		private final RuntimeBeanReference sockJsService;
 
 		public SockJsHandlerMappingStrategy(RuntimeBeanReference sockJsService) {
@@ -152,5 +142,4 @@ class HandlersBeanDefinitionParser implements BeanDefinitionParser {
 			}
 		}
 	}
-
 }

@@ -12,11 +12,8 @@ import org.springframework.lang.Nullable;
  */
 public class ReaderContext {
 	private final Resource resource;
-
 	private final ProblemReporter problemReporter;
-
 	private final ReaderEventListener eventListener;
-
 	private final SourceExtractor sourceExtractor;
 
 	/**

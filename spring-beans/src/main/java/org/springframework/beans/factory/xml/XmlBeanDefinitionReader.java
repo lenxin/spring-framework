@@ -71,32 +71,20 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 	 * Constants instance for this class.
 	 */
 	private static final Constants constants = new Constants(XmlBeanDefinitionReader.class);
-
 	private int validationMode = VALIDATION_AUTO;
-
 	private boolean namespaceAware = false;
-
 	private Class<? extends BeanDefinitionDocumentReader> documentReaderClass =
 			DefaultBeanDefinitionDocumentReader.class;
-
 	private ProblemReporter problemReporter = new FailFastProblemReporter();
-
 	private ReaderEventListener eventListener = new EmptyReaderEventListener();
-
 	private SourceExtractor sourceExtractor = new NullSourceExtractor();
-
 	@Nullable
 	private NamespaceHandlerResolver namespaceHandlerResolver;
-
 	private DocumentLoader documentLoader = new DefaultDocumentLoader();
-
 	@Nullable
 	private EntityResolver entityResolver;
-
 	private ErrorHandler errorHandler = new SimpleSaxErrorHandler(logger);
-
 	private final XmlValidationModeDetector validationModeDetector = new XmlValidationModeDetector();
-
 	private final ThreadLocal<Set<EncodedResource>> resourcesCurrentlyBeingLoaded =
 			new NamedThreadLocal<>("XML bean definition resources currently being loaded");
 

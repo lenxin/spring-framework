@@ -31,27 +31,19 @@ import java.util.concurrent.ConcurrentHashMap;
 public class DefaultNamespaceHandlerResolver implements NamespaceHandlerResolver {
 	/**
 	 * The location to look for the mapping files. Can be present in multiple JAR files.
+	 * 查找映射文件的位置。可以出现在多个JAR文件中。
 	 */
 	public static final String DEFAULT_HANDLER_MAPPINGS_LOCATION = "META-INF/spring.handlers";
-
-	/**
-	 * Logger available to subclasses.
-	 */
 	protected final Log logger = LogFactory.getLog(getClass());
-
-	/**
-	 * ClassLoader to use for NamespaceHandler classes.
-	 */
 	@Nullable
 	private final ClassLoader classLoader;
-
-	/**
-	 * Resource location to search for.
-	 */
+	// Resource location to search for.
+	// 要搜索的资源位置
 	private final String handlerMappingsLocation;
 
 	/**
 	 * Stores the mappings from namespace URI to NamespaceHandler class name / instance.
+	 * 存储从名称空间URI到NamespaceHandler类名/实例的映射
 	 */
 	@Nullable
 	private volatile Map<String, Object> handlerMappings;
@@ -97,6 +89,7 @@ public class DefaultNamespaceHandlerResolver implements NamespaceHandlerResolver
 	/**
 	 * Locate the {@link NamespaceHandler} for the supplied namespace URI
 	 * from the configured mappings.
+	 * 从配置的映射中找到提供的名称空间URI的NamespaceHandler
 	 *
 	 * @param namespaceUri the relevant namespace URI
 	 * @return the located {@link NamespaceHandler}, or {@code null} if none found

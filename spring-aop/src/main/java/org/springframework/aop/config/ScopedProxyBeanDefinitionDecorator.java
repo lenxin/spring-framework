@@ -1,27 +1,21 @@
 package org.springframework.aop.config;
 
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-
 import org.springframework.aop.scope.ScopedProxyUtils;
 import org.springframework.beans.factory.config.BeanDefinitionHolder;
 import org.springframework.beans.factory.parsing.BeanComponentDefinition;
 import org.springframework.beans.factory.xml.BeanDefinitionDecorator;
 import org.springframework.beans.factory.xml.ParserContext;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 
 /**
  * {@link BeanDefinitionDecorator} responsible for parsing the
  * {@code <aop:scoped-proxy/>} tag.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Mark Fisher
  * @since 2.0
  */
 class ScopedProxyBeanDefinitionDecorator implements BeanDefinitionDecorator {
-
 	private static final String PROXY_TARGET_CLASS = "proxy-target-class";
-
 
 	@Override
 	public BeanDefinitionHolder decorate(Node node, BeanDefinitionHolder definition, ParserContext parserContext) {
@@ -42,5 +36,4 @@ class ScopedProxyBeanDefinitionDecorator implements BeanDefinitionDecorator {
 				new BeanComponentDefinition(definition.getBeanDefinition(), targetBeanName));
 		return holder;
 	}
-
 }

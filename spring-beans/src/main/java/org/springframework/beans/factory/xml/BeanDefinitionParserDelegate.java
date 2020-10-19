@@ -31,7 +31,6 @@ import java.util.*;
 public class BeanDefinitionParserDelegate {
 	/*Spring默认命名空间*/
 	public static final String BEANS_NAMESPACE_URI = "http://www.springframework.org/schema/beans";
-
 	public static final String MULTI_VALUE_ATTRIBUTE_DELIMITERS = ",; ";
 
 	/**
@@ -104,13 +103,9 @@ public class BeanDefinitionParserDelegate {
 	public static final String DEFAULT_AUTOWIRE_CANDIDATES_ATTRIBUTE = "default-autowire-candidates";
 	public static final String DEFAULT_INIT_METHOD_ATTRIBUTE = "default-init-method";
 	public static final String DEFAULT_DESTROY_METHOD_ATTRIBUTE = "default-destroy-method";
-
 	protected final Log logger = LogFactory.getLog(getClass());
-
 	private final XmlReaderContext readerContext;
-
 	private final DocumentDefaultsDefinition defaults = new DocumentDefaultsDefinition();
-
 	private final ParseState parseState = new ParseState();
 
 	/**

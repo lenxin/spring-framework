@@ -16,10 +16,8 @@ import java.util.List;
  */
 public class CompositeComponentDefinition extends AbstractComponentDefinition {
 	private final String name;
-
 	@Nullable
 	private final Object source;
-
 	private final List<ComponentDefinition> nestedComponents = new ArrayList<>();
 
 	/**
