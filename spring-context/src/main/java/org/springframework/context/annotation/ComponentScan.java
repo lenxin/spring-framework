@@ -1,15 +1,10 @@
 package org.springframework.context.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Repeatable;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import org.springframework.beans.factory.support.BeanNameGenerator;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.core.type.filter.TypeFilter;
+
+import java.lang.annotation.*;
 
 /**
  * Configures component scanning directives for use with @{@link Configuration} classes.
@@ -30,18 +25,14 @@ import org.springframework.core.type.filter.TypeFilter;
  *
  * <p>See {@link Configuration @Configuration}'s Javadoc for usage examples.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @since 3.1
  * @see Configuration
+ * @since 3.1
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
 @Repeatable(ComponentScans.class)
 public @interface ComponentScan {
-
 	/**
 	 * Alias for {@link #basePackages}.
 	 * <p>Allows for more concise annotation declarations if no other attributes
@@ -77,6 +68,7 @@ public @interface ComponentScan {
 	 * use its inherited bean name generator, e.g. the default
 	 * {@link AnnotationBeanNameGenerator} or any custom instance supplied to the
 	 * application context at bootstrap time.
+	 *
 	 * @see AnnotationConfigApplicationContext#setBeanNameGenerator(BeanNameGenerator)
 	 */
 	Class<? extends BeanNameGenerator> nameGenerator() default BeanNameGenerator.class;
@@ -92,6 +84,7 @@ public @interface ComponentScan {
 	 * <p>The default is defer to the default behavior of the component scanner used to
 	 * execute the actual scan.
 	 * <p>Note that setting this attribute overrides any value set for {@link #scopeResolver}.
+	 *
 	 * @see ClassPathBeanDefinitionScanner#setScopedProxyMode(ScopedProxyMode)
 	 */
 	ScopedProxyMode scopedProxy() default ScopedProxyMode.DEFAULT;
@@ -116,6 +109,7 @@ public @interface ComponentScan {
 	 * <p>Note that these filters will be applied in addition to the default filters, if specified.
 	 * Any type under the specified base packages which matches a given filter will be included,
 	 * even if it does not match the default filters (i.e. is not annotated with {@code @Component}).
+	 *
 	 * @see #resourcePattern()
 	 * @see #useDefaultFilters()
 	 */
@@ -123,6 +117,7 @@ public @interface ComponentScan {
 
 	/**
 	 * Specifies which types are not eligible for component scanning.
+	 *
 	 * @see #resourcePattern
 	 */
 	Filter[] excludeFilters() default {};
@@ -130,10 +125,10 @@ public @interface ComponentScan {
 	/**
 	 * Specify whether scanned beans should be registered for lazy initialization.
 	 * <p>Default is {@code false}; switch this to {@code true} when desired.
+	 *
 	 * @since 4.1
 	 */
 	boolean lazyInit() default false;
-
 
 	/**
 	 * Declares the type filter to be used as an {@linkplain ComponentScan#includeFilters
@@ -142,10 +137,10 @@ public @interface ComponentScan {
 	@Retention(RetentionPolicy.RUNTIME)
 	@Target({})
 	@interface Filter {
-
 		/**
 		 * The type of filter to use.
 		 * <p>Default is {@link FilterType#ANNOTATION}.
+		 *
 		 * @see #classes
 		 * @see #pattern
 		 */
@@ -153,6 +148,7 @@ public @interface ComponentScan {
 
 		/**
 		 * Alias for {@link #classes}.
+		 *
 		 * @see #classes
 		 */
 		@AliasFor("classes")
@@ -184,9 +180,10 @@ public @interface ComponentScan {
 		 * </ul>
 		 * <p>Specifying zero classes is permitted but will have no effect on component
 		 * scanning.
-		 * @since 4.2
+		 *
 		 * @see #value
 		 * @see #type
+		 * @since 4.2
 		 */
 		@AliasFor("value")
 		Class<?>[] classes() default {};
@@ -198,11 +195,10 @@ public @interface ComponentScan {
 		 * this is an AspectJ type pattern expression. If {@link #type} is
 		 * set to {@link FilterType#REGEX REGEX}, this is a regex pattern
 		 * for the fully-qualified class names to match.
+		 *
 		 * @see #type
 		 * @see #classes
 		 */
 		String[] pattern() default {};
-
 	}
-
 }
