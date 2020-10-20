@@ -628,6 +628,7 @@ public abstract class AnnotationUtils {
 	 * <p>Meta-annotations will <em>not</em> be searched.
 	 * <p>Note: This method does <strong>not</strong> determine if the annotation
 	 * is {@linkplain java.lang.annotation.Inherited inherited}.
+	 * 确定指定注释类型的注释是否在本地声明，直接呈现在所提供的clazz上。
 	 *
 	 * @param annotationType the annotation type to look for
 	 * @param clazz          the class to check for the annotation on

@@ -18,7 +18,6 @@ import java.util.List;
  */
 public class BeanComponentDefinition extends BeanDefinitionHolder implements ComponentDefinition {
 	private BeanDefinition[] innerBeanDefinitions;
-
 	private BeanReference[] beanReferences;
 
 	/**

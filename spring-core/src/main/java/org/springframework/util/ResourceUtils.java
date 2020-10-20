@@ -17,7 +17,6 @@ import java.net.*;
  * object, which in turn allows one to obtain a {@code java.io.File} in the
  * file system through its {@code getFile()} method.
  *
- * @author Juergen Hoeller
  * @see org.springframework.core.io.Resource
  * @see org.springframework.core.io.ClassPathResource
  * @see org.springframework.core.io.FileSystemResource
@@ -26,7 +25,6 @@ import java.net.*;
  * @since 1.1.5
  */
 public abstract class ResourceUtils {
-
 	/**
 	 * Pseudo URL prefix for loading from the class path: "classpath:".
 	 */

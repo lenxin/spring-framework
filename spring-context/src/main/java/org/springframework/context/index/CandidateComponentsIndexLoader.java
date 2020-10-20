@@ -22,7 +22,6 @@ import java.util.concurrent.ConcurrentMap;
  * @since 5.0
  */
 public final class CandidateComponentsIndexLoader {
-
 	/**
 	 * The location to look for components.
 	 * <p>Can be present in multiple JAR files.
@@ -39,19 +38,13 @@ public final class CandidateComponentsIndexLoader {
 	 * classpath arrangement (i.e. as no index was present at all).
 	 */
 	public static final String IGNORE_INDEX = "spring.index.ignore";
-
-
 	private static final boolean shouldIgnoreIndex = SpringProperties.getFlag(IGNORE_INDEX);
-
 	private static final Log logger = LogFactory.getLog(CandidateComponentsIndexLoader.class);
-
 	private static final ConcurrentMap<ClassLoader, CandidateComponentsIndex> cache =
 			new ConcurrentReferenceHashMap<>();
 
-
 	private CandidateComponentsIndexLoader() {
 	}
-
 
 	/**
 	 * Load and instantiate the {@link CandidateComponentsIndex} from
@@ -99,5 +92,4 @@ public final class CandidateComponentsIndexLoader {
 					COMPONENTS_RESOURCE_LOCATION + "]", ex);
 		}
 	}
-
 }

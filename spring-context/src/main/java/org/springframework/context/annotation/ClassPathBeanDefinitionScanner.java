@@ -213,6 +213,7 @@ public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateCo
 	 * Specify whether to register annotation config post-processors.
 	 * <p>The default is to register the post-processors. Turn this off
 	 * to be able to ignore the annotations or to process them differently.
+	 * 指定是否注册注解配置后处理器。
 	 */
 	public void setIncludeAnnotationConfig(boolean includeAnnotationConfig) {
 		this.includeAnnotationConfig = includeAnnotationConfig;
@@ -230,7 +231,7 @@ public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateCo
 		doScan(basePackages);
 
 		// Register annotation config processors, if necessary.
-		// 注册注释配置处理器
+		// 注册注解配置处理器
 		if (this.includeAnnotationConfig) {
 			AnnotationConfigUtils.registerAnnotationConfigProcessors(this.registry);
 		}
