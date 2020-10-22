@@ -21,6 +21,8 @@ import java.util.function.Supplier;
  * Convenient adapter for programmatic registration of annotated bean classes.
  * This is an alternative to {@link ClassPathBeanDefinitionScanner}, applying
  * the same resolution of annotations but for explicitly registered classes only.
+ * 方便的适配器，用于对带注解的bean类进行编程注册。
+ * 这是ClassPathBeanDefinitionScanner的另一种选择，它应用注解的相同解析，但仅用于显式注册的类。
  *
  * @see AnnotationConfigApplicationContext#register
  * @since 3.0
