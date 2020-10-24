@@ -30,6 +30,7 @@ public class AnnotationAttributes extends LinkedHashMap<String, Object> {
 	@Nullable
 	private final Class<? extends Annotation> annotationType;
 	final String displayName;
+	/*如果认为属性已经验证*/
 	boolean validated = false;
 
 	/**

@@ -13,12 +13,9 @@ import java.util.Properties;
  * accessing only {@code String}-based keys and values, in the same fashion as
  * {@link Properties#getProperty} and {@link Properties#setProperty}.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
  * @since 3.1
  */
 public class PropertiesPropertySource extends MapPropertySource {
-
 	@SuppressWarnings({"unchecked", "rawtypes"})
 	public PropertiesPropertySource(String name, Properties source) {
 		super(name, (Map) source);
@@ -27,5 +24,4 @@ public class PropertiesPropertySource extends MapPropertySource {
 	protected PropertiesPropertySource(String name, Map<String, Object> source) {
 		super(name, source);
 	}
-
 }

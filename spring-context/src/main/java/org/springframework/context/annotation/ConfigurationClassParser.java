@@ -51,14 +51,18 @@ import java.util.*;
  * {@link ConfigurationClass} objects (parsing a single Configuration class may result in
  * any number of ConfigurationClass objects because one Configuration class may import
  * another using the {@link Import} annotation).
+ * 解析一个配置类定义，填充一个ConfigurationClass对象集合
+ * (解析一个配置类可能导致任意数量的ConfigurationClass对象，因为一个配置类可以使用import注释导入另一个配置类)。
  *
  * <p>This class helps separate the concern of parsing the structure of a Configuration
  * class from the concern of registering BeanDefinition objects based on the content of
  * that model (with the exception of {@code @ComponentScan} annotations which need to be
  * registered immediately).
+ * 这个类有助于将解析配置类结构的关注点与基于模型内容注册BeanDefinition对象的关注点分离开来(需要立即注册的@ComponentScan注释除外)。
  *
  * <p>This ASM-based implementation avoids reflection and eager class loading in order to
  * interoperate effectively with lazy class loading in a Spring ApplicationContext.
+ * 这个基于asm的实现避免了反射和急于加载类，以便与Spring ApplicationContext中的延迟类加载有效地交互操作。
  *
  * @see ConfigurationClassBeanDefinitionReader
  * @since 3.0

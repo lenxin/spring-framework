@@ -1,11 +1,8 @@
 package org.springframework.context.annotation.configuration;
 
-import java.util.Collections;
-
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.junit.Test;
-
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,15 +15,13 @@ import org.springframework.core.env.MapPropertySource;
 import org.springframework.core.env.PropertySource;
 import org.springframework.tests.sample.beans.TestBean;
 
-import static org.hamcrest.CoreMatchers.*;
+import java.util.Collections;
+
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.*;
 
 /**
  * Integration tests for {@link ImportResource} support.
- *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Sam Brannen
  */
 public class ImportResourceTests {
 
@@ -77,7 +72,7 @@ public class ImportResourceTests {
 	public void importWithPlaceholder() throws Exception {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 		PropertySource<?> propertySource = new MapPropertySource("test",
-				Collections.<String, Object> singletonMap("test", "springframework"));
+				Collections.<String, Object>singletonMap("test", "springframework"));
 		ctx.getEnvironment().getPropertySources().addFirst(propertySource);
 		ctx.register(ImportXmlConfig.class);
 		ctx.refresh();
@@ -106,7 +101,9 @@ public class ImportResourceTests {
 	static class ImportXmlConfig {
 		@Value("${name}")
 		private String name;
-		public @Bean TestBean javaDeclaredBean() {
+
+		public @Bean
+		TestBean javaDeclaredBean() {
 			return new TestBean(this.name);
 		}
 	}
@@ -133,7 +130,8 @@ public class ImportResourceTests {
 	@Aspect
 	static class AnAspect {
 		@Before("execution(* org.springframework.tests.sample.beans.TestBean.*(..))")
-		public void advice() { }
+		public void advice() {
+		}
 	}
 
 	@Configuration
@@ -144,9 +142,11 @@ public class ImportResourceTests {
 	@Configuration
 	@ImportResource("classpath:org/springframework/context/annotation/configuration/ImportXmlConfig-context.xml")
 	static class ImportXmlAutowiredConfig {
-		@Autowired TestBean xmlDeclaredBean;
+		@Autowired
+		TestBean xmlDeclaredBean;
 
-		public @Bean String xmlBeanName() {
+		public @Bean
+		String xmlBeanName() {
 			return xmlDeclaredBean.getName();
 		}
 	}

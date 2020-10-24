@@ -1,15 +1,10 @@
 package org.springframework.test.context;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.annotation.AliasFor;
+
+import java.lang.annotation.*;
 
 /**
  * {@code @ContextConfiguration} defines class-level metadata that is used to determine
@@ -52,8 +47,6 @@ import org.springframework.core.annotation.AliasFor;
  * <p>As of Spring Framework 4.0, this annotation may be used as a <em>meta-annotation</em>
  * to create custom <em>composed annotations</em>.
  *
- * @author Sam Brannen
- * @since 2.5
  * @see org.springframework.test.context.junit.jupiter.SpringJUnitConfig @SpringJUnitConfig
  * @see org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig @SpringJUnitWebConfig
  * @see ContextHierarchy @ContextHierarchy
@@ -63,19 +56,20 @@ import org.springframework.core.annotation.AliasFor;
  * @see ContextConfigurationAttributes
  * @see MergedContextConfiguration
  * @see org.springframework.context.ApplicationContext ApplicationContext
+ * @since 2.5
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
 public @interface ContextConfiguration {
-
 	/**
 	 * Alias for {@link #locations}.
 	 * <p>This attribute may <strong>not</strong> be used in conjunction with
 	 * {@link #locations}, but it may be used instead of {@link #locations}.
-	 * @since 3.0
+	 *
 	 * @see #inheritLocations
+	 * @since 3.0
 	 */
 	@AliasFor("locations")
 	String[] value() default {};
@@ -101,8 +95,9 @@ public @interface ContextConfiguration {
 	 * for further details regarding default loaders.
 	 * <p>This attribute may <strong>not</strong> be used in conjunction with
 	 * {@link #value}, but it may be used instead of {@link #value}.
-	 * @since 2.5
+	 *
 	 * @see #inheritLocations
+	 * @since 2.5
 	 */
 	@AliasFor("value")
 	String[] locations() default {};
@@ -116,10 +111,11 @@ public @interface ContextConfiguration {
 	 * on how default configuration classes will be detected if no
 	 * <em>annotated classes</em> are specified. See the documentation for
 	 * {@link #loader} for further details regarding default loaders.
-	 * @since 3.1
+	 *
 	 * @see org.springframework.context.annotation.Configuration
 	 * @see org.springframework.test.context.support.AnnotationConfigContextLoader
 	 * @see #inheritLocations
+	 * @since 3.1
 	 */
 	Class<?>[] classes() default {};
 
@@ -133,11 +129,12 @@ public @interface ContextConfiguration {
 	 * Spring's {@link org.springframework.core.Ordered Ordered} interface has been
 	 * implemented or if the @{@link org.springframework.core.annotation.Order Order}
 	 * annotation is present and sort instances accordingly prior to invoking them.
-	 * @since 3.2
+	 *
 	 * @see org.springframework.context.ApplicationContextInitializer
 	 * @see org.springframework.context.ConfigurableApplicationContext
 	 * @see #inheritInitializers
 	 * @see #loader
+	 * @since 3.2
 	 */
 	Class<? extends ApplicationContextInitializer<?>>[] initializers() default {};
 
@@ -192,6 +189,7 @@ public @interface ContextConfiguration {
 	 *     // ...
 	 * }
 	 * </pre>
+	 *
 	 * @since 2.5
 	 */
 	boolean inheritLocations() default true;
@@ -227,6 +225,7 @@ public @interface ContextConfiguration {
 	 *     // ...
 	 * }
 	 * </pre>
+	 *
 	 * @since 3.2
 	 */
 	boolean inheritInitializers() default true;
@@ -254,6 +253,7 @@ public @interface ContextConfiguration {
 	 * {@link org.springframework.test.context.web.GenericXmlWebContextLoader GenericXmlWebContextLoader},
 	 * {@link org.springframework.test.context.web.GenericGroovyXmlWebContextLoader GenericGroovyXmlWebContextLoader}, and
 	 * {@link org.springframework.test.context.web.AnnotationConfigWebContextLoader AnnotationConfigWebContextLoader}.
+	 *
 	 * @since 2.5
 	 */
 	Class<? extends ContextLoader> loader() default ContextLoader.class;
@@ -267,8 +267,8 @@ public @interface ContextConfiguration {
 	 * can be used for <em>merging</em> or <em>overriding</em> this configuration
 	 * with configuration of the same name in hierarchy levels defined in superclasses.
 	 * See the Javadoc for {@link ContextHierarchy @ContextHierarchy} for details.
+	 *
 	 * @since 3.2.2
 	 */
 	String name() default "";
-
 }

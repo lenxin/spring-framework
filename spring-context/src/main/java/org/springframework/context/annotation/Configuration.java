@@ -1,15 +1,11 @@
 package org.springframework.context.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;
+
+import java.lang.annotation.*;
 
 /**
  * Indicates that a class declares one or more {@link Bean @Bean} methods and
@@ -385,10 +381,6 @@ import org.springframework.stereotype.Component;
  * annotations remaining undetected).
  * </ul>
  *
- * @author Rod Johnson
- * @author Chris Beams
- * @author Juergen Hoeller
- * @since 3.0
  * @see Bean
  * @see Profile
  * @see Import
@@ -400,13 +392,13 @@ import org.springframework.stereotype.Component;
  * @see ConfigurationClassPostProcessor
  * @see org.springframework.core.env.Environment
  * @see org.springframework.test.context.ContextConfiguration
+ * @since 3.0
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Component
 public @interface Configuration {
-
 	/**
 	 * Explicitly specify the name of the Spring bean definition associated with the
 	 * {@code @Configuration} class. If left unspecified (the common case), a bean
@@ -416,6 +408,7 @@ public @interface Configuration {
 	 * {@link AnnotationConfigApplicationContext}. If the {@code @Configuration} class
 	 * is registered as a traditional XML bean definition, the name/id of the bean
 	 * element will take precedence.
+	 *
 	 * @return the explicit component name, if any (or empty String otherwise)
 	 * @see AnnotationBeanNameGenerator
 	 */
@@ -439,8 +432,8 @@ public @interface Configuration {
 	 * methods individually like when declared on non-{@code @Configuration} classes,
 	 * a.k.a. "@Bean Lite Mode" (see {@link Bean @Bean's javadoc}). It is therefore
 	 * behaviorally equivalent to removing the {@code @Configuration} stereotype.
+	 *
 	 * @since 5.2
 	 */
 	boolean proxyBeanMethods() default true;
-
 }

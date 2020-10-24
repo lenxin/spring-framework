@@ -19,6 +19,7 @@ import java.util.Set;
  * A bean definition scanner that detects bean candidates on the classpath,
  * registering corresponding bean definitions with a given registry ({@code BeanFactory}
  * or {@code ApplicationContext}).
+ * 一个bean定义扫描器，它检测类路径上的bean候选对象，并将相应的bean定义注册到给定的注册中心(BeanFactory或ApplicationContext)。s
  *
  * <p>Candidate classes are detected through configurable type filters. The
  * default filters include classes that are annotated with Spring's
