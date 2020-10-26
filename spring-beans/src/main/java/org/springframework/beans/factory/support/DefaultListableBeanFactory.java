@@ -1061,7 +1061,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	@Nullable
 	private <T> NamedBeanHolder<T> resolveNamedBean(
 			ResolvableType requiredType, @Nullable Object[] args, boolean nonUniqueAsNull) throws BeansException {
-
 		Assert.notNull(requiredType, "Required type must not be null");
 		String[] candidateNames = getBeanNamesForType(requiredType);
 
@@ -1691,7 +1690,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * Resolved to the actual factory instance on deserialization.
 	 */
 	private static class SerializedBeanFactoryReference implements Serializable {
-
 		private final String id;
 
 		public SerializedBeanFactoryReference(String id) {
@@ -1717,7 +1715,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * A dependency descriptor marker for nested elements.
 	 */
 	private static class NestedDependencyDescriptor extends DependencyDescriptor {
-
 		public NestedDependencyDescriptor(DependencyDescriptor original) {
 			super(original);
 			increaseNestingLevel();
@@ -1728,7 +1725,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * A dependency descriptor for a multi-element declaration with nested elements.
 	 */
 	private static class MultiElementDescriptor extends NestedDependencyDescriptor {
-
 		public MultiElementDescriptor(DependencyDescriptor original) {
 			super(original);
 		}
@@ -1738,7 +1734,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * A dependency descriptor marker for stream access to multiple elements.
 	 */
 	private static class StreamDependencyDescriptor extends DependencyDescriptor {
-
 		private final boolean ordered;
 
 		public StreamDependencyDescriptor(DependencyDescriptor original, boolean ordered) {
@@ -1758,11 +1753,8 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * Serializable ObjectFactory/ObjectProvider for lazy resolution of a dependency.
 	 */
 	private class DependencyObjectProvider implements BeanObjectProvider<Object> {
-
 		private final DependencyDescriptor descriptor;
-
 		private final boolean optional;
-
 		@Nullable
 		private final String beanName;
 
@@ -1875,7 +1867,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * invisible for Graal's introspection of DefaultListableBeanFactory's nested classes.
 	 */
 	private class Jsr330Factory implements Serializable {
-
 		public Object createDependencyProvider(DependencyDescriptor descriptor, @Nullable String beanName) {
 			return new Jsr330Provider(descriptor, beanName);
 		}
@@ -1902,7 +1893,6 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 	 * value defined on it. This essentially allows for the following construct:
 	 */
 	private class FactoryAwareOrderSourceProvider implements OrderComparator.OrderSourceProvider {
-
 		private final Map<Object, String> instancesToBeanNames;
 
 		public FactoryAwareOrderSourceProvider(Map<Object, String> instancesToBeanNames) {
