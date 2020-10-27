@@ -280,6 +280,7 @@ public class ClassPathScanningCandidateComponentProvider implements EnvironmentC
 
 	/**
 	 * Determine if the index can be used by this instance.
+	 * 确定此实例是否可以使用该索引。
 	 *
 	 * @return {@code true} if the index is available and the configuration of this
 	 * instance is supported by it, {@code false} otherwise
@@ -296,6 +297,7 @@ public class ClassPathScanningCandidateComponentProvider implements EnvironmentC
 
 	/**
 	 * Determine if the specified include {@link TypeFilter} is supported by the index.
+	 * 确定索引是否支持指定的包含类型筛选器。
 	 *
 	 * @param filter the filter to check
 	 * @return whether the index supports this include filter

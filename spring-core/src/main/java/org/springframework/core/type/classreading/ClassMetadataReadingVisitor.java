@@ -1,66 +1,42 @@
 package org.springframework.core.type.classreading;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
-
-import org.springframework.asm.AnnotationVisitor;
-import org.springframework.asm.Attribute;
-import org.springframework.asm.ClassVisitor;
-import org.springframework.asm.FieldVisitor;
-import org.springframework.asm.MethodVisitor;
-import org.springframework.asm.Opcodes;
-import org.springframework.asm.SpringAsmInfo;
+import org.springframework.asm.*;
 import org.springframework.core.type.ClassMetadata;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * ASM class visitor which looks only for the class name and implemented types,
  * exposing them through the {@link org.springframework.core.type.ClassMetadata}
  * interface.
  *
- * @author Rod Johnson
- * @author Costin Leau
- * @author Mark Fisher
- * @author Ramnivas Laddad
- * @author Chris Beams
  * @since 2.5
  */
 class ClassMetadataReadingVisitor extends ClassVisitor implements ClassMetadata {
-
 	private String className = "";
-
 	private boolean isInterface;
-
 	private boolean isAnnotation;
-
 	private boolean isAbstract;
-
 	private boolean isFinal;
-
 	@Nullable
 	private String enclosingClassName;
-
 	private boolean independentInnerClass;
-
 	@Nullable
 	private String superClassName;
-
 	private String[] interfaces = new String[0];
-
 	private Set<String> memberClassNames = new LinkedHashSet<>(4);
-
 
 	public ClassMetadataReadingVisitor() {
 		super(SpringAsmInfo.ASM_VERSION);
 	}
 
-
 	@Override
 	public void visit(
 			int version, int access, String name, String signature, @Nullable String supername, String[] interfaces) {
-
 		this.className = ClassUtils.convertResourcePathToClassName(name);
 		this.isInterface = ((access & Opcodes.ACC_INTERFACE) != 0);
 		this.isAnnotation = ((access & Opcodes.ACC_ANNOTATION) != 0);
@@ -88,8 +64,7 @@ class ClassMetadataReadingVisitor extends ClassVisitor implements ClassMetadata 
 			if (this.className.equals(fqName)) {
 				this.enclosingClassName = fqOuterName;
 				this.independentInnerClass = ((access & Opcodes.ACC_STATIC) != 0);
-			}
-			else if (this.className.equals(fqOuterName)) {
+			} else if (this.className.equals(fqOuterName)) {
 				this.memberClassNames.add(fqName);
 			}
 		}
@@ -127,7 +102,6 @@ class ClassMetadataReadingVisitor extends ClassVisitor implements ClassMetadata 
 	public void visitEnd() {
 		// no-op
 	}
-
 
 	@Override
 	public String getClassName() {
@@ -196,9 +170,7 @@ class ClassMetadataReadingVisitor extends ClassVisitor implements ClassMetadata 
 		return StringUtils.toStringArray(this.memberClassNames);
 	}
 
-
 	private static class EmptyAnnotationVisitor extends AnnotationVisitor {
-
 		public EmptyAnnotationVisitor() {
 			super(SpringAsmInfo.ASM_VERSION);
 		}
@@ -214,20 +186,15 @@ class ClassMetadataReadingVisitor extends ClassVisitor implements ClassMetadata 
 		}
 	}
 
-
 	private static class EmptyMethodVisitor extends MethodVisitor {
-
 		public EmptyMethodVisitor() {
 			super(SpringAsmInfo.ASM_VERSION);
 		}
 	}
 
-
 	private static class EmptyFieldVisitor extends FieldVisitor {
-
 		public EmptyFieldVisitor() {
 			super(SpringAsmInfo.ASM_VERSION);
 		}
 	}
-
 }

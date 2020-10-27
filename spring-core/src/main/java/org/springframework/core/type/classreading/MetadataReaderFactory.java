@@ -15,6 +15,7 @@ import java.io.IOException;
 public interface MetadataReaderFactory {
 	/**
 	 * Obtain a MetadataReader for the given class name.
+	 * 获取给定类名的元数据读取器
 	 *
 	 * @param className the class name (to be resolved to a ".class" file)
 	 * @return a holder for the ClassReader instance (never {@code null})
@@ -24,6 +25,7 @@ public interface MetadataReaderFactory {
 
 	/**
 	 * Obtain a MetadataReader for the given resource.
+	 * 获取给定资源的元数据读取器
 	 *
 	 * @param resource the resource (pointing to a ".class" file)
 	 * @return a holder for the ClassReader instance (never {@code null})

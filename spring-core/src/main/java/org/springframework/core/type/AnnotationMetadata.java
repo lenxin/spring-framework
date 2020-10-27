@@ -5,7 +5,7 @@ import java.util.Set;
 /**
  * Interface that defines abstract access to the annotations of a specific
  * class, in a form that does not require that class to be loaded yet.
- * 接口，定义对特定类的注释的抽象访问，其形式还不需要加载该类。
+ * 接口，定义对特定类的注解的抽象访问，其形式还不需要加载该类。
  *
  * @see StandardAnnotationMetadata
  * @see org.springframework.core.type.classreading.MetadataReader#getAnnotationMetadata()
