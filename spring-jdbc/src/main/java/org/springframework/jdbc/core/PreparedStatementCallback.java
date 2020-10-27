@@ -1,10 +1,10 @@
 package org.springframework.jdbc.core;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
 import org.springframework.dao.DataAccessException;
 import org.springframework.lang.Nullable;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * Generic callback interface for code that operates on a PreparedStatement.
@@ -20,15 +20,13 @@ import org.springframework.lang.Nullable;
  * always set parameter values themselves, so that PreparedStatementCreator
  * capability is not needed either.
  *
- * @author Juergen Hoeller
- * @since 16.03.2004
  * @param <T> the result type
  * @see JdbcTemplate#execute(String, PreparedStatementCallback)
  * @see JdbcTemplate#execute(PreparedStatementCreator, PreparedStatementCallback)
+ * @since 16.03.2004
  */
 @FunctionalInterface
 public interface PreparedStatementCallback<T> {
-
 	/**
 	 * Gets called by {@code JdbcTemplate.execute} with an active JDBC
 	 * PreparedStatement. Does not need to care about closing the Statement
@@ -50,15 +48,15 @@ public interface PreparedStatementCallback<T> {
 	 * special support for single step actions: see JdbcTemplate.queryForObject etc.
 	 * A thrown RuntimeException is treated as application exception, it gets
 	 * propagated to the caller of the template.
+	 *
 	 * @param ps active JDBC PreparedStatement
 	 * @return a result object, or {@code null} if none
-	 * @throws SQLException if thrown by a JDBC method, to be auto-converted
-	 * to a DataAccessException by a SQLExceptionTranslator
+	 * @throws SQLException        if thrown by a JDBC method, to be auto-converted
+	 *                             to a DataAccessException by a SQLExceptionTranslator
 	 * @throws DataAccessException in case of custom exceptions
 	 * @see JdbcTemplate#queryForObject(String, Object[], Class)
 	 * @see JdbcTemplate#queryForList(String, Object[])
 	 */
 	@Nullable
 	T doInPreparedStatement(PreparedStatement ps) throws SQLException, DataAccessException;
-
 }

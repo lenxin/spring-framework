@@ -8,9 +8,7 @@ package org.springframework.jdbc.object;
  * must use one of the generic {@link StoredProcedure#execute(java.util.Map)} or
  * {@link StoredProcedure#execute(org.springframework.jdbc.core.ParameterMapper)} methods.
  *
- * @author Thomas Risberg
  * @see org.springframework.jdbc.object.StoredProcedure
  */
 public class GenericStoredProcedure extends StoredProcedure {
-
 }

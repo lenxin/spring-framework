@@ -1,12 +1,12 @@
 package org.springframework.jdbc.object;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import javax.sql.DataSource;
-
 import org.springframework.dao.TypeMismatchDataAccessException;
 import org.springframework.jdbc.core.SingleColumnRowMapper;
 import org.springframework.lang.Nullable;
+
+import javax.sql.DataSource;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  * SQL "function" wrapper for a query that returns a single row of results.
@@ -27,21 +27,17 @@ import org.springframework.lang.Nullable;
  *
  * <p>Like all RdbmsOperation objects, SqlFunction objects are thread-safe.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Jean-Pierre Pawlak
  * @param <T> the result type
  * @see StoredProcedure
  */
 public class SqlFunction<T> extends MappingSqlQuery<T> {
-
 	private final SingleColumnRowMapper<T> rowMapper = new SingleColumnRowMapper<>();
-
 
 	/**
 	 * Constructor to allow use as a JavaBean.
 	 * A DataSource, SQL and any parameters must be supplied before
 	 * invoking the {@code compile} method and using this object.
+	 *
 	 * @see #setDataSource
 	 * @see #setSql
 	 * @see #compile
@@ -53,7 +49,8 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 	/**
 	 * Create a new SqlFunction object with SQL, but without parameters.
 	 * Must add parameters or settle with none.
-	 * @param ds the DataSource to obtain connections from
+	 *
+	 * @param ds  the DataSource to obtain connections from
 	 * @param sql the SQL to execute
 	 */
 	public SqlFunction(DataSource ds, String sql) {
@@ -64,10 +61,11 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 
 	/**
 	 * Create a new SqlFunction object with SQL and parameters.
-	 * @param ds the DataSource to obtain connections from
-	 * @param sql the SQL to execute
+	 *
+	 * @param ds    the DataSource to obtain connections from
+	 * @param sql   the SQL to execute
 	 * @param types the SQL types of the parameters, as defined in the
-	 * {@code java.sql.Types} class
+	 *              {@code java.sql.Types} class
 	 * @see java.sql.Types
 	 */
 	public SqlFunction(DataSource ds, String sql, int[] types) {
@@ -79,10 +77,11 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 
 	/**
 	 * Create a new SqlFunction object with SQL, parameters and a result type.
-	 * @param ds the DataSource to obtain connections from
-	 * @param sql the SQL to execute
-	 * @param types the SQL types of the parameters, as defined in the
-	 * {@code java.sql.Types} class
+	 *
+	 * @param ds         the DataSource to obtain connections from
+	 * @param sql        the SQL to execute
+	 * @param types      the SQL types of the parameters, as defined in the
+	 *                   {@code java.sql.Types} class
 	 * @param resultType the type that the result object is required to match
 	 * @see #setResultType(Class)
 	 * @see java.sql.Types
@@ -95,7 +94,6 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 		setResultType(resultType);
 	}
 
-
 	/**
 	 * Specify the type that the result object is required to match.
 	 * <p>If not specified, the result value will be exposed as
@@ -104,7 +102,6 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 	public void setResultType(Class<T> resultType) {
 		this.rowMapper.setRequiredType(resultType);
 	}
-
 
 	/**
 	 * This implementation of this method extracts a single value from the
@@ -117,9 +114,9 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 		return this.rowMapper.mapRow(rs, rowNum);
 	}
 
-
 	/**
 	 * Convenient method to run the function without arguments.
+	 *
 	 * @return the value of the function
 	 */
 	public int run() {
@@ -128,18 +125,20 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 
 	/**
 	 * Convenient method to run the function with a single int argument.
+	 *
 	 * @param parameter single int parameter
 	 * @return the value of the function
 	 */
 	public int run(int parameter) {
-		return run(new Object[] {parameter});
+		return run(new Object[]{parameter});
 	}
 
 	/**
 	 * Analogous to the SqlQuery.execute([]) method. This is a
 	 * generic method to execute a query, taken a number of arguments.
+	 *
 	 * @param parameters array of parameters. These will be objects or
-	 * object wrapper types for primitives.
+	 *                   object wrapper types for primitives.
 	 * @return the value of the function
 	 */
 	public int run(Object... parameters) {
@@ -153,6 +152,7 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 	/**
 	 * Convenient method to run the function without arguments,
 	 * returning the value as an object.
+	 *
 	 * @return the value of the function
 	 */
 	@Nullable
@@ -162,6 +162,7 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 
 	/**
 	 * Convenient method to run the function with a single int argument.
+	 *
 	 * @param parameter single int parameter
 	 * @return the value of the function as an Object
 	 */
@@ -173,8 +174,9 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 	/**
 	 * Analogous to the {@code SqlQuery.findObject(Object[])} method.
 	 * This is a generic method to execute a query, taken a number of arguments.
+	 *
 	 * @param parameters array of parameters. These will be objects or
-	 * object wrapper types for primitives.
+	 *                   object wrapper types for primitives.
 	 * @return the value of the function, as an Object
 	 * @see #execute(Object[])
 	 */
@@ -182,5 +184,4 @@ public class SqlFunction<T> extends MappingSqlQuery<T> {
 	public Object runGeneric(Object[] parameters) {
 		return findObject(parameters);
 	}
-
 }

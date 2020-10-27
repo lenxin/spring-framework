@@ -12,12 +12,9 @@ import javax.sql.DataSource;
  * {@code DataSource} properties before calling {@link #getDataSource()} to
  * actually get the configured {@code DataSource} instance.
  *
- * @author Keith Donald
- * @author Sam Brannen
  * @since 3.0
  */
 public interface DataSourceFactory {
-
 	/**
 	 * Get the {@linkplain ConnectionProperties connection properties} of the
 	 * {@link #getDataSource DataSource} to be configured.
@@ -29,5 +26,4 @@ public interface DataSourceFactory {
 	 * connection properties} applied.
 	 */
 	DataSource getDataSource();
-
 }

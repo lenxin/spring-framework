@@ -5,13 +5,11 @@ package org.springframework.transaction.support;
  * Allows Spring's transaction infrastructure to introspect
  * and reset the holder when necessary.
  *
- * @author Juergen Hoeller
- * @since 2.5.5
  * @see ResourceHolderSupport
  * @see ResourceHolderSynchronization
+ * @since 2.5.5
  */
 public interface ResourceHolder {
-
 	/**
 	 * Reset the transactional state of this holder.
 	 */
@@ -27,5 +25,4 @@ public interface ResourceHolder {
 	 * i.e. as a leftover from a previous thread.
 	 */
 	boolean isVoid();
-
 }

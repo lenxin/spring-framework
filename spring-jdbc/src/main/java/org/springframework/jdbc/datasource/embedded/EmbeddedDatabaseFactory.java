@@ -1,20 +1,19 @@
 package org.springframework.jdbc.datasource.embedded;
 
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.UUID;
-import java.util.logging.Logger;
-import javax.sql.DataSource;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 import org.springframework.jdbc.datasource.init.DatabasePopulator;
 import org.springframework.jdbc.datasource.init.DatabasePopulatorUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import javax.sql.DataSource;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.UUID;
+import java.util.logging.Logger;
 
 /**
  * Factory for creating an {@link EmbeddedDatabase} instance.
@@ -40,43 +39,32 @@ import org.springframework.util.Assert;
  * <p>After configuring the factory, call {@link #getDatabase()} to obtain
  * a reference to the {@link EmbeddedDatabase} instance.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Sam Brannen
  * @since 3.0
  */
 public class EmbeddedDatabaseFactory {
-
 	/**
 	 * Default name for an embedded database: {@value}.
 	 */
 	public static final String DEFAULT_DATABASE_NAME = "testdb";
-
 	private static final Log logger = LogFactory.getLog(EmbeddedDatabaseFactory.class);
-
 	private boolean generateUniqueDatabaseName = false;
-
 	private String databaseName = DEFAULT_DATABASE_NAME;
-
 	private DataSourceFactory dataSourceFactory = new SimpleDriverDataSourceFactory();
-
 	@Nullable
 	private EmbeddedDatabaseConfigurer databaseConfigurer;
-
 	@Nullable
 	private DatabasePopulator databasePopulator;
-
 	@Nullable
 	private DataSource dataSource;
-
 
 	/**
 	 * Set the {@code generateUniqueDatabaseName} flag to enable or disable
 	 * generation of a pseudo-random unique ID to be used as the database name.
 	 * <p>Setting this flag to {@code true} overrides any explicit name set
 	 * via {@link #setDatabaseName}.
-	 * @since 4.2
+	 *
 	 * @see #setDatabaseName
+	 * @since 4.2
 	 */
 	public void setGenerateUniqueDatabaseName(boolean generateUniqueDatabaseName) {
 		this.generateUniqueDatabaseName = generateUniqueDatabaseName;
@@ -87,6 +75,7 @@ public class EmbeddedDatabaseFactory {
 	 * <p>Defaults to {@value #DEFAULT_DATABASE_NAME}.
 	 * <p>Will be overridden if the {@code generateUniqueDatabaseName} flag
 	 * has been set to {@code true}.
+	 *
 	 * @param databaseName name of the embedded database
 	 * @see #setGenerateUniqueDatabaseName
 	 */
@@ -109,6 +98,7 @@ public class EmbeddedDatabaseFactory {
 	 * Set the type of embedded database to use.
 	 * <p>Call this when you wish to configure one of the pre-supported types.
 	 * <p>Defaults to HSQL.
+	 *
 	 * @param type the database type
 	 */
 	public void setDatabaseType(EmbeddedDatabaseType type) {
@@ -143,7 +133,6 @@ public class EmbeddedDatabaseFactory {
 		return new EmbeddedDataSourceProxy(this.dataSource);
 	}
 
-
 	/**
 	 * Hook to initialize the embedded database.
 	 * <p>If the {@code generateUniqueDatabaseName} flag has been set to {@code true},
@@ -172,8 +161,7 @@ public class EmbeddedDatabaseFactory {
 				SimpleDriverDataSource simpleDriverDataSource = (SimpleDriverDataSource) this.dataSource;
 				logger.info(String.format("Starting embedded database: url='%s', username='%s'",
 						simpleDriverDataSource.getUrl(), simpleDriverDataSource.getUsername()));
-			}
-			else {
+			} else {
 				logger.info(String.format("Starting embedded database '%s'", this.databaseName));
 			}
 		}
@@ -182,8 +170,7 @@ public class EmbeddedDatabaseFactory {
 		if (this.databasePopulator != null) {
 			try {
 				DatabasePopulatorUtils.execute(this.databasePopulator, this.dataSource);
-			}
-			catch (RuntimeException ex) {
+			} catch (RuntimeException ex) {
 				// failed to populate, so leave it as not initialized
 				shutdownDatabase();
 				throw ex;
@@ -202,9 +189,8 @@ public class EmbeddedDatabaseFactory {
 			if (logger.isInfoEnabled()) {
 				if (this.dataSource instanceof SimpleDriverDataSource) {
 					logger.info(String.format("Shutting down embedded database: url='%s'",
-						((SimpleDriverDataSource) this.dataSource).getUrl()));
-				}
-				else {
+							((SimpleDriverDataSource) this.dataSource).getUrl()));
+				} else {
 					logger.info(String.format("Shutting down embedded database '%s'", this.databaseName));
 				}
 			}
@@ -227,9 +213,7 @@ public class EmbeddedDatabaseFactory {
 		return this.dataSource;
 	}
 
-
 	private class EmbeddedDataSourceProxy implements EmbeddedDatabase {
-
 		private final DataSource dataSource;
 
 		public EmbeddedDataSourceProxy(DataSource dataSource) {
@@ -287,5 +271,4 @@ public class EmbeddedDatabaseFactory {
 			shutdownDatabase();
 		}
 	}
-
 }

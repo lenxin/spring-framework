@@ -1,19 +1,16 @@
 package org.springframework.jdbc.datasource.embedded;
 
-import java.sql.Driver;
-import javax.sql.DataSource;
-
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
+
+import javax.sql.DataSource;
+import java.sql.Driver;
 
 /**
  * Creates a {@link SimpleDriverDataSource}.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
  * @since 3.0
  */
 final class SimpleDriverDataSourceFactory implements DataSourceFactory {
-
 	private final SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
 
 	@Override
@@ -45,5 +42,4 @@ final class SimpleDriverDataSourceFactory implements DataSourceFactory {
 	public DataSource getDataSource() {
 		return this.dataSource;
 	}
-
 }

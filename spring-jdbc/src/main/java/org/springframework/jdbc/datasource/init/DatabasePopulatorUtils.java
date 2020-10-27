@@ -1,25 +1,22 @@
 package org.springframework.jdbc.datasource.init;
 
-import java.sql.Connection;
-import javax.sql.DataSource;
-
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 import org.springframework.util.Assert;
 
+import javax.sql.DataSource;
+import java.sql.Connection;
+
 /**
  * Utility methods for executing a {@link DatabasePopulator}.
  *
- * @author Juergen Hoeller
- * @author Oliver Gierke
- * @author Sam Brannen
  * @since 3.1
  */
 public abstract class DatabasePopulatorUtils {
-
 	/**
 	 * Execute the given {@link DatabasePopulator} against the given {@link DataSource}.
-	 * @param populator the {@code DatabasePopulator} to execute
+	 *
+	 * @param populator  the {@code DatabasePopulator} to execute
 	 * @param dataSource the {@code DataSource} to execute against
 	 * @throws DataAccessException if an error occurs, specifically a {@link ScriptException}
 	 */
@@ -30,17 +27,14 @@ public abstract class DatabasePopulatorUtils {
 			Connection connection = DataSourceUtils.getConnection(dataSource);
 			try {
 				populator.populate(connection);
-			}
-			finally {
+			} finally {
 				DataSourceUtils.releaseConnection(connection, dataSource);
 			}
-		}
-		catch (Throwable ex) {
+		} catch (Throwable ex) {
 			if (ex instanceof ScriptException) {
 				throw (ScriptException) ex;
 			}
 			throw new UncategorizedScriptException("Failed to execute database script", ex);
 		}
 	}
-
 }

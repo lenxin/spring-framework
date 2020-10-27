@@ -1,13 +1,13 @@
 package org.springframework.jdbc.datasource.embedded;
 
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.jdbc.datasource.init.DatabasePopulator;
 import org.springframework.jdbc.datasource.init.DatabasePopulatorUtils;
 import org.springframework.lang.Nullable;
+
+import javax.sql.DataSource;
 
 /**
  * A subclass of {@link EmbeddedDatabaseFactory} that implements {@link FactoryBean}
@@ -21,20 +21,17 @@ import org.springframework.lang.Nullable;
  * <p>Implements {@link DisposableBean} to shutdown the embedded database when the
  * managing Spring container is being closed.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
  * @since 3.0
  */
 public class EmbeddedDatabaseFactoryBean extends EmbeddedDatabaseFactory
 		implements FactoryBean<DataSource>, InitializingBean, DisposableBean {
-
 	@Nullable
 	private DatabasePopulator databaseCleaner;
-
 
 	/**
 	 * Set a script execution to be run in the bean destruction callback,
 	 * cleaning up the database and leaving it in a known state for others.
+	 *
 	 * @param databaseCleaner the database script executor to run on destroy
 	 * @see #setDatabasePopulator
 	 * @see org.springframework.jdbc.datasource.init.DataSourceInitializer#setDatabaseCleaner
@@ -47,7 +44,6 @@ public class EmbeddedDatabaseFactoryBean extends EmbeddedDatabaseFactory
 	public void afterPropertiesSet() {
 		initDatabase();
 	}
-
 
 	@Override
 	@Nullable
@@ -65,7 +61,6 @@ public class EmbeddedDatabaseFactoryBean extends EmbeddedDatabaseFactory
 		return true;
 	}
 
-
 	@Override
 	public void destroy() {
 		if (this.databaseCleaner != null && getDataSource() != null) {
@@ -73,5 +68,4 @@ public class EmbeddedDatabaseFactoryBean extends EmbeddedDatabaseFactory
 		}
 		shutdownDatabase();
 	}
-
 }

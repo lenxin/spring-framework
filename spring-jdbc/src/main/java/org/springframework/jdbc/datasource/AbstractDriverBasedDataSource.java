@@ -1,43 +1,36 @@
 package org.springframework.jdbc.datasource;
 
+import org.springframework.lang.Nullable;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Properties;
-
-import org.springframework.lang.Nullable;
 
 /**
  * Abstract base class for JDBC {@link javax.sql.DataSource} implementations
  * that operate on a JDBC {@link java.sql.Driver}.
  *
- * @author Juergen Hoeller
- * @since 2.5.5
  * @see SimpleDriverDataSource
  * @see DriverManagerDataSource
+ * @since 2.5.5
  */
 public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
-
 	@Nullable
 	private String url;
-
 	@Nullable
 	private String username;
-
 	@Nullable
 	private String password;
-
 	@Nullable
 	private String catalog;
-
 	@Nullable
 	private String schema;
-
 	@Nullable
 	private Properties connectionProperties;
 
-
 	/**
 	 * Set the JDBC URL to use for connecting through the Driver.
+	 *
 	 * @see java.sql.Driver#connect(String, java.util.Properties)
 	 */
 	public void setUrl(@Nullable String url) {
@@ -54,6 +47,7 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 
 	/**
 	 * Set the JDBC username to use for connecting through the Driver.
+	 *
 	 * @see java.sql.Driver#connect(String, java.util.Properties)
 	 */
 	public void setUsername(@Nullable String username) {
@@ -70,6 +64,7 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 
 	/**
 	 * Set the JDBC password to use for connecting through the Driver.
+	 *
 	 * @see java.sql.Driver#connect(String, java.util.Properties)
 	 */
 	public void setPassword(@Nullable String password) {
@@ -86,8 +81,9 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 
 	/**
 	 * Specify a database catalog to be applied to each Connection.
-	 * @since 4.3.2
+	 *
 	 * @see Connection#setCatalog
+	 * @since 4.3.2
 	 */
 	public void setCatalog(@Nullable String catalog) {
 		this.catalog = catalog;
@@ -95,6 +91,7 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 
 	/**
 	 * Return the database catalog to be applied to each Connection, if any.
+	 *
 	 * @since 4.3.2
 	 */
 	@Nullable
@@ -104,8 +101,9 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 
 	/**
 	 * Specify a database schema to be applied to each Connection.
-	 * @since 4.3.2
+	 *
 	 * @see Connection#setSchema
+	 * @since 4.3.2
 	 */
 	public void setSchema(@Nullable String schema) {
 		this.schema = schema;
@@ -113,6 +111,7 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 
 	/**
 	 * Return the database schema to be applied to each Connection, if any.
+	 *
 	 * @since 4.3.2
 	 */
 	@Nullable
@@ -126,6 +125,7 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 	 * <p>Can also contain "user" and "password" properties. However,
 	 * any "username" and "password" bean properties specified on this
 	 * DataSource will override the corresponding connection properties.
+	 *
 	 * @see java.sql.Driver#connect(String, java.util.Properties)
 	 */
 	public void setConnectionProperties(@Nullable Properties connectionProperties) {
@@ -140,10 +140,10 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 		return this.connectionProperties;
 	}
 
-
 	/**
 	 * This implementation delegates to {@code getConnectionFromDriver},
 	 * using the default username and password of this DataSource.
+	 *
 	 * @see #getConnectionFromDriver(String, String)
 	 * @see #setUsername
 	 * @see #setPassword
@@ -156,6 +156,7 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 	/**
 	 * This implementation delegates to {@code getConnectionFromDriver},
 	 * using the given username and password.
+	 *
 	 * @see #getConnectionFromDriver(String, String)
 	 */
 	@Override
@@ -163,10 +164,10 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 		return getConnectionFromDriver(username, password);
 	}
 
-
 	/**
 	 * Build properties for the Driver, including the given username and password (if any),
 	 * and obtain a corresponding Connection.
+	 *
 	 * @param username the name of the user
 	 * @param password the password to use
 	 * @return the obtained Connection
@@ -199,10 +200,10 @@ public abstract class AbstractDriverBasedDataSource extends AbstractDataSource {
 	/**
 	 * Obtain a Connection using the given properties.
 	 * <p>Template method to be implemented by subclasses.
+	 *
 	 * @param props the merged connection properties
 	 * @return the obtained Connection
 	 * @throws SQLException in case of failure
 	 */
 	protected abstract Connection getConnectionFromDriver(Properties props) throws SQLException;
-
 }

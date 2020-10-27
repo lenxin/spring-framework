@@ -8,23 +8,20 @@ package org.springframework.jdbc.core;
  * {@code PreparedStatementSetters} that support {@link DisposableSqlTypeValue}
  * objects (e.g. {@code SqlLobValue}) as parameters.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
- * @since 1.1
  * @see PreparedStatementCreator
  * @see PreparedStatementSetter
  * @see DisposableSqlTypeValue
  * @see org.springframework.jdbc.core.support.SqlLobValue
+ * @since 1.1
  */
 public interface ParameterDisposer {
-
 	/**
 	 * Close the resources allocated by parameters that the implementing
 	 * object holds, for example in case of a DisposableSqlTypeValue
 	 * (like a SqlLobValue).
+	 *
 	 * @see DisposableSqlTypeValue#cleanup()
 	 * @see org.springframework.jdbc.core.support.SqlLobValue#cleanup()
 	 */
 	void cleanupParameters();
-
 }
