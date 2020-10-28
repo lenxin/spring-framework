@@ -39,8 +39,8 @@ import org.springframework.lang.Nullable;
  *     new int[] {Types.VARCHAR, Types.BLOB, Types.CLOB});
  * </pre>
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 1.1
  * @see org.springframework.jdbc.support.lob.LobHandler
  * @see org.springframework.jdbc.support.lob.LobCreator

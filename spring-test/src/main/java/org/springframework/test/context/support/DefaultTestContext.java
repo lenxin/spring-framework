@@ -18,9 +18,9 @@ import org.springframework.util.StringUtils;
 /**
  * Default implementation of the {@link TestContext} interface.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
+
  * @since 4.0
  */
 public class DefaultTestContext implements TestContext {

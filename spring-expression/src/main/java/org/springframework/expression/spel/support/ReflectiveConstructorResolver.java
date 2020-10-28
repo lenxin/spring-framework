@@ -18,8 +18,8 @@ import org.springframework.lang.Nullable;
 /**
  * A constructor resolver that uses reflection to locate the constructor that should be invoked.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class ReflectiveConstructorResolver implements ConstructorResolver {

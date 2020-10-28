@@ -31,7 +31,7 @@ import org.springframework.util.Assert;
  * {@link org.springframework.messaging.handler.annotation.SendTo @SendTo}
  * is the recommended declarative approach.
  *
- * @author Stephane Nicoll
+
  * @since 4.2
  * @param <T> the type of the response
  * @see org.springframework.jms.annotation.JmsListener

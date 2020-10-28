@@ -8,8 +8,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Ramnivas Laddad
- * @author Chris Beams
+
+
  */
 public class DeclareParentsDelegateRefTests {
 

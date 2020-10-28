@@ -37,7 +37,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Default {@link ServerResponse.BodyBuilder} implementation.
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 class DefaultServerResponseBuilder implements ServerResponse.BodyBuilder {

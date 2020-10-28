@@ -20,8 +20,8 @@ import org.springframework.util.CollectionUtils;
  * Internal wrapper for a Spring BeanDefinition, allowing for Groovy-style
  * property access within a {@link GroovyBeanDefinitionReader} closure.
  *
- * @author Jeff Brown
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 class GroovyBeanDefinitionWrapper extends GroovyObjectSupport {

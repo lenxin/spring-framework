@@ -3,8 +3,8 @@ package org.springframework.transaction.config;
 /**
  * Configuration constants for internal sharing across subpackages.
  *
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
  * @since 3.1
  */
 public abstract class TransactionManagementConfigUtils {

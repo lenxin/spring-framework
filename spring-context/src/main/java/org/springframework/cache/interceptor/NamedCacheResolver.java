@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * A {@link CacheResolver} that forces the resolution to a configurable
  * collection of name(s) against a given {@link CacheManager}.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class NamedCacheResolver extends AbstractCacheResolver {

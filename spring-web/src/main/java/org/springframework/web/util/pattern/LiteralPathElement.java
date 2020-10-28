@@ -9,7 +9,7 @@ import org.springframework.web.util.pattern.PathPattern.MatchingContext;
  * A literal path element. In the pattern '/foo/bar/goo' there are three
  * literal path elements 'foo', 'bar' and 'goo'.
  *
- * @author Andy Clement
+
  */
 class LiteralPathElement extends PathElement {
 

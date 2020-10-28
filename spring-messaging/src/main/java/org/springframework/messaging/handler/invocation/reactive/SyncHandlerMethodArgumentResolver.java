@@ -10,7 +10,7 @@ import org.springframework.messaging.Message;
  * An extension of {@link HandlerMethodArgumentResolver} for implementations
  * that are synchronous in nature and do not block to resolve values.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public interface SyncHandlerMethodArgumentResolver extends HandlerMethodArgumentResolver {

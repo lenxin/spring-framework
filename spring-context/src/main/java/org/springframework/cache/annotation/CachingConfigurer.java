@@ -17,8 +17,8 @@ import org.springframework.lang.Nullable;
  * {@link #cacheManager()}, {@link #cacheResolver()} and {@link #keyGenerator()}
  * for detailed instructions.
  *
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
  * @since 3.1
  * @see EnableCaching
  * @see CachingConfigurerSupport

@@ -7,8 +7,8 @@ import org.xml.sax.InputSource;
 /**
  * Unit tests for the {@link DelegatingEntityResolver} class.
  *
- * @author Rick Evans
- * @author Chris Beams
+
+
  */
 public class DelegatingEntityResolverTests {
 

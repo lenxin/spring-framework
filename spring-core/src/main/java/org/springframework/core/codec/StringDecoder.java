@@ -32,10 +32,10 @@ import org.springframework.util.MimeTypeUtils;
  *
  * <p>Partially inspired by Netty's {@code DelimiterBasedFrameDecoder}.
  *
- * @author Sebastien Deleuze
- * @author Brian Clozel
- * @author Arjen Poutsma
- * @author Mark Paluch
+
+
+
+
  * @since 5.0
  * @see CharSequenceEncoder
  */

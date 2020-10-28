@@ -9,8 +9,8 @@ import org.springframework.lang.Nullable;
 /**
  * Spring AOP advice that wraps an AspectJ before method.
  *
- * @author Rod Johnson
- * @author Adrian Colyer
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

@@ -33,8 +33,8 @@ import org.springframework.web.servlet.support.BindStatus;
  * executed twice, once against the direct {@code String} instances, and then against the {@code String}
  * representations if the first comparison results in {@code false}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 abstract class SelectedValueComparator {

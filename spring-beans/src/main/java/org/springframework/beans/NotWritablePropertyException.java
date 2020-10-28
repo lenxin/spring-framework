@@ -6,9 +6,9 @@ import org.springframework.lang.Nullable;
  * Exception thrown on an attempt to set the value of a property that
  * is not writable (typically because there is no setter method).
  *
- * @author Rod Johnson
- * @author Alef Arendsen
- * @author Arjen Poutsma
+
+
+
  */
 @SuppressWarnings("serial")
 public class NotWritablePropertyException extends InvalidPropertyException {

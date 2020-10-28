@@ -38,10 +38,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * to obtain a {@code HandlerMethod} instance with a bean instance resolved
  * through the associated {@link BeanFactory}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
+
  * @since 3.1
  */
 public class HandlerMethod {

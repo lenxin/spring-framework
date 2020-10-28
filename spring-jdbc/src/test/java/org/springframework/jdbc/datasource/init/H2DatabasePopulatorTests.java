@@ -7,7 +7,7 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 public class H2DatabasePopulatorTests extends AbstractDatabasePopulatorTests {

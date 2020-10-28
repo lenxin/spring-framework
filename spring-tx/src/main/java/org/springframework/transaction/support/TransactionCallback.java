@@ -12,7 +12,7 @@ import org.springframework.transaction.TransactionStatus;
  * alternative, consider the use of declarative transaction demarcation (e.g. through
  * Spring's {@link org.springframework.transaction.annotation.Transactional} annotation).
  *
- * @author Juergen Hoeller
+
  * @since 17.03.2003
  * @see TransactionTemplate
  * @see CallbackPreferringPlatformTransactionManager

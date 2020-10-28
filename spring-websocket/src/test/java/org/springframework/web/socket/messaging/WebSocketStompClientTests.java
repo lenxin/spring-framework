@@ -36,7 +36,7 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link WebSocketStompClient}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class WebSocketStompClientTests {
 

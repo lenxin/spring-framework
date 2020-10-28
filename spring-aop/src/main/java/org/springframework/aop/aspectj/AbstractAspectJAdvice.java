@@ -37,10 +37,10 @@ import org.springframework.util.StringUtils;
  * Base class for AOP Alliance {@link org.aopalliance.aop.Advice} classes
  * wrapping an AspectJ aspect or an AspectJ-annotated advice method.
  *
- * @author Rod Johnson
- * @author Adrian Colyer
- * @author Juergen Hoeller
- * @author Ramnivas Laddad
+
+
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

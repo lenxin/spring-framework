@@ -10,7 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 3.2
  */
 @ContextConfiguration

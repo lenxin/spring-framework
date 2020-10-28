@@ -3,7 +3,7 @@ package org.springframework.oxm;
 /**
  * Exception that indicates that the cause cannot be distinguished further.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

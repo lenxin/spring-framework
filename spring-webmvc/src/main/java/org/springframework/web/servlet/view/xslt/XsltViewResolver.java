@@ -13,8 +13,8 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
  * resolves instances of {@link XsltView} by translating the supplied view name
  * into the URL of the XSLT stylesheet.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class XsltViewResolver extends UrlBasedViewResolver {

@@ -31,8 +31,8 @@ import org.springframework.util.Assert;
  * for {@link ValueInstantiator}, {@link ObjectIdGenerator}, {@link ObjectIdResolver},
  * {@link PropertyNamingStrategy}, {@link Converter}, {@link VirtualBeanPropertyWriter}.
  *
- * @author Sebastien Deleuze
- * @author Juergen Hoeller
+
+
  * @since 4.1.3
  * @see Jackson2ObjectMapperBuilder#handlerInstantiator(HandlerInstantiator)
  * @see ApplicationContext#getAutowireCapableBeanFactory()

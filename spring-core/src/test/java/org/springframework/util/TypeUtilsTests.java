@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link TypeUtils}.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  */
 public class TypeUtilsTests {
 

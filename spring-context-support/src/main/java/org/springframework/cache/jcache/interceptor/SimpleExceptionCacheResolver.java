@@ -14,7 +14,7 @@ import org.springframework.cache.interceptor.CacheResolver;
  * based on a configurable {@link CacheManager} and the name of the
  * cache: {@link CacheResultOperation#getExceptionCacheName()}.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see CacheResultOperation#getExceptionCacheName()
  */

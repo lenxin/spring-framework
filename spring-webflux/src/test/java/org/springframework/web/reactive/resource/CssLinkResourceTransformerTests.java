@@ -22,8 +22,8 @@ import static org.springframework.mock.http.server.reactive.test.MockServerHttpR
 /**
  * Unit tests for {@link CssLinkResourceTransformer}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  */
 public class CssLinkResourceTransformerTests {
 

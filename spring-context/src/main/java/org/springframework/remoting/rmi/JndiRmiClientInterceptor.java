@@ -45,7 +45,7 @@ import org.springframework.util.Assert;
  *	 &lt;/props&gt;
  * &lt;/property&gt;</pre>
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see #setJndiTemplate
  * @see #setJndiEnvironment

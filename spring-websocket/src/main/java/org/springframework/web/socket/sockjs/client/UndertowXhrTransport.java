@@ -66,8 +66,8 @@ import org.springframework.web.socket.sockjs.frame.SockJsFrame;
  * UndertowXhrTransport transport = new UndertowXhrTransport(optionMap);
  * </pre>
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  * @since 4.1.2
  * @see org.xnio.Options
  */

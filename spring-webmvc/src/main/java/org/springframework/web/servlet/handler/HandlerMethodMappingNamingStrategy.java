@@ -18,7 +18,7 @@ import org.springframework.web.method.HandlerMethod;
  * MvcUriComponentsBuilder#fromMappingName} or in JSPs through the "mvcUrl"
  * function registered by the Spring tag library.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.1
  * @param <T> the mapping type
  */

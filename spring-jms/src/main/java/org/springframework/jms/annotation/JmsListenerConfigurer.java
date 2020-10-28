@@ -12,7 +12,7 @@ import org.springframework.jms.config.JmsListenerEndpointRegistrar;
  *
  * <p>See @{@link EnableJms} for detailed usage examples.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see EnableJms
  * @see JmsListenerEndpointRegistrar

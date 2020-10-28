@@ -18,8 +18,8 @@ import static org.testng.AssertJUnit.*;
  * Abstract base class for all TestNG-based tests involving EJB transaction
  * support in the TestContext framework.
  *
- * @author Sam Brannen
- * @author Xavier Detant
+
+
  * @since 4.0.1
  */
 @DirtiesContext(classMode = ClassMode.AFTER_CLASS)

@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
  * Test fixture for
  * {@link DefaultSimpUserRegistry}
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public class DefaultSimpUserRegistryTests {

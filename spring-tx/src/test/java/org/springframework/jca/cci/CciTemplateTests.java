@@ -28,9 +28,9 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Thierry Templier
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class CciTemplateTests {
 

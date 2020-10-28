@@ -20,8 +20,8 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  */
 public class EnableAspectJAutoProxyTests {
 

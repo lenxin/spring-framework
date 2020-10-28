@@ -8,7 +8,7 @@ import org.springframework.web.util.pattern.PathPattern.MatchingContext;
 /**
  * Common supertype for the Ast nodes created to represent a path pattern.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 abstract class PathElement {

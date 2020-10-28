@@ -9,7 +9,7 @@ import org.springframework.web.servlet.LocaleResolver;
  * Abstract base class for {@link LocaleResolver} implementations.
  * Provides support for a default locale.
  *
- * @author Juergen Hoeller
+
  * @since 1.2.9
  * @see #setDefaultLocale
  */

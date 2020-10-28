@@ -7,7 +7,7 @@ import org.springframework.test.context.TestContext;
  * {@link org.springframework.test.context.TestExecutionListener#prepareTestInstance(TestContext)}
  * is invoked.
  *
- * @author Frank Scheffler
+
  * @since 5.2
  * @see org.springframework.test.context.event.annotation.PrepareTestInstance @PrepareTestInstance
  */

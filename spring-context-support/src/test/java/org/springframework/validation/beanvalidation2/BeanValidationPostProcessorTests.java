@@ -16,7 +16,7 @@ import org.springframework.validation.beanvalidation.BeanValidationPostProcessor
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class BeanValidationPostProcessorTests {
 

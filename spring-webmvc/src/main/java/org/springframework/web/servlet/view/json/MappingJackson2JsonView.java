@@ -29,11 +29,11 @@ import org.springframework.web.servlet.View;
  *
  * <p>Compatible with Jackson 2.6 and higher, as of Spring 4.3.
  *
- * @author Jeremy Grelle
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
+
+
  * @since 3.1.2
  */
 public class MappingJackson2JsonView extends AbstractJackson2View {

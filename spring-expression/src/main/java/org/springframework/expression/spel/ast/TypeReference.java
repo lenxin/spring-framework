@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  * Represents a reference to a type, for example
  * {@code "T(String)" or "T(com.somewhere.Foo)"}.
  *
- * @author Andy Clement
+
  */
 public class TypeReference extends SpelNodeImpl {
 

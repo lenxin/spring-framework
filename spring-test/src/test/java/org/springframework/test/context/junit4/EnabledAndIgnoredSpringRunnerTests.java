@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
  * explicitly configured with an empty list, thus disabling all default
  * listeners.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see HardCodedProfileValueSourceSpringRunnerTests
  */

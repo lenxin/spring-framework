@@ -26,9 +26,9 @@ import org.springframework.util.StringUtils;
  * either illegal, or have any reserved meaning, anywhere within a URI.
  * </ul>
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
+
  * @since 3.0
  * @see <a href="https://www.ietf.org/rfc/rfc3986.txt">RFC 3986</a>
  */

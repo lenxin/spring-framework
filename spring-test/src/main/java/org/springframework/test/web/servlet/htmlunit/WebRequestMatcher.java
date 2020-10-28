@@ -5,7 +5,7 @@ import com.gargoylesoftware.htmlunit.WebRequest;
 /**
  * Strategy for matching on a {@link WebRequest}.
  *
- * @author Rob Winch
+
  * @since 4.2
  * @see org.springframework.test.web.servlet.htmlunit.HostRequestMatcher
  * @see org.springframework.test.web.servlet.htmlunit.UrlRegexRequestMatcher

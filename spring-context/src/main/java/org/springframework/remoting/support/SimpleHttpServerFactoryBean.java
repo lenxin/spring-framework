@@ -29,8 +29,8 @@ import org.springframework.beans.factory.InitializingBean;
  * register such context-specific handlers programmatically on the
  * {@link com.sun.net.httpserver.HttpServer} itself.
  *
- * @author Juergen Hoeller
- * @author Arjen Poutsma
+
+
  * @since 2.5.1
  * @see #setPort
  * @see #setContexts

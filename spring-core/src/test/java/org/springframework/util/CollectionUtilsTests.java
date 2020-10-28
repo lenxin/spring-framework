@@ -17,9 +17,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
+
  */
 public class CollectionUtilsTests {
 

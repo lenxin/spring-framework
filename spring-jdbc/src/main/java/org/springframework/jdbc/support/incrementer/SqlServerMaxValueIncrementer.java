@@ -32,8 +32,8 @@ import javax.sql.DataSource;
  *
  * <p>Thanks to Preben Nilsson for the suggestion!
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.5.5
  */
 public class SqlServerMaxValueIncrementer extends AbstractIdentityColumnMaxValueIncrementer {

@@ -15,7 +15,7 @@ import static org.springframework.context.index.processor.Metadata.*;
 /**
  * Tests for {@link PropertiesMarshaller}.
  *
- * @author Stephane Nicoll
+
  */
 public class PropertiesMarshallerTests {
 

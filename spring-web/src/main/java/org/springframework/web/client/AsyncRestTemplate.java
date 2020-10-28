@@ -45,7 +45,7 @@ import org.springframework.web.util.UriTemplateHandler;
  *
  * <p>For more information, please refer to the {@link RestTemplate} API documentation.
  *
- * @author Arjen Poutsma
+
  * @since 4.0
  * @see RestTemplate
  * @deprecated as of Spring 5.0, in favor of {@link org.springframework.web.reactive.function.client.WebClient}

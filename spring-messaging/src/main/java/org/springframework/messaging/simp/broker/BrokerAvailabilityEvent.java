@@ -5,7 +5,7 @@ import org.springframework.context.ApplicationEvent;
 /**
  * Event raised when a broker's availability changes.
  *
- * @author Andy Wilkinson
+
  */
 public class BrokerAvailabilityEvent extends ApplicationEvent {
 

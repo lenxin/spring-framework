@@ -47,7 +47,7 @@ import org.springframework.web.context.ContextLoader;
  * <p>Converters to convert between the {@link #getType() type} and {@code String} or
  * {@code ByteBuffer} should be registered.
  *
- * @author Phillip Webb
+
  * @since 4.0
  * @param <T> the type being converted to (for Encoder) or from (for Decoder)
  * @param <M> the WebSocket message type ({@link String} or {@link ByteBuffer})

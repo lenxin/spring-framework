@@ -40,7 +40,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
  * "persistenceUnitName" init-param allows for retrieval by logical unit name
  * (as specified in {@code persistence.xml}).
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see OpenEntityManagerInViewInterceptor
  * @see org.springframework.orm.jpa.JpaTransactionManager

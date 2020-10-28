@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * <p>Typically {@link XhrTransport} implementations are also implementations
  * of this contract.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.1
  * @see AbstractXhrTransport
  */

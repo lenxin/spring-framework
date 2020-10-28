@@ -14,8 +14,8 @@ import org.springframework.lang.Nullable;
  * class is unavoidable, as Java forces these two classes to have different
  * superclasses (ah, the inflexibility of concrete inheritance!).
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #getMessage
  * @see #printStackTrace
  * @see NestedRuntimeException

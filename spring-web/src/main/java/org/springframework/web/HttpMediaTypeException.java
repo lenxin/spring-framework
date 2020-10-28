@@ -9,7 +9,7 @@ import org.springframework.http.MediaType;
 /**
  * Abstract base for exceptions related to media types. Adds a list of supported {@link MediaType MediaTypes}.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

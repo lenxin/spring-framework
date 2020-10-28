@@ -18,9 +18,9 @@ import org.springframework.core.annotation.AliasFor;
  * <i>not</i> specify an object name value since this would lead to naming
  * collisions in case of multiple subclasses getting registered.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @since 1.2
  * @see org.springframework.jmx.export.metadata.ManagedResource
  */

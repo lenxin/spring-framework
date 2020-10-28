@@ -18,8 +18,8 @@ import static org.springframework.test.util.AssertionErrors.assertTrue;
  * <p>An instance of this class is typically accessed via
  * {@link MockMvcResultMatchers#cookie}.
  *
- * @author Rossen Stoyanchev
- * @author Thomas Bruyelle
+
+
  * @since 3.2
  */
 public class CookieResultMatchers {

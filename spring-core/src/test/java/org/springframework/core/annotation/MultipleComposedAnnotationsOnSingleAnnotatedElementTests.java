@@ -22,7 +22,7 @@ import static org.springframework.core.annotation.AnnotatedElementUtils.*;
  *
  * <p>See <a href="https://jira.spring.io/browse/SPR-13486">SPR-13486</a>.
  *
- * @author Sam Brannen
+
  * @since 4.3
  * @see AnnotatedElementUtils
  * @see AnnotatedElementUtilsTests

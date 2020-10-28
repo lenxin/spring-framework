@@ -7,7 +7,7 @@ import org.springframework.test.web.servlet.ResultMatcher
  * Extension for [StatusResultMatchers.is] providing an `isEqualTo` alias since `is` is
  * a reserved keyword in Kotlin.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0.7
  */
 fun StatusResultMatchers.isEqualTo(matcher: Matcher<Int>): ResultMatcher = `is`(matcher)
@@ -16,7 +16,7 @@ fun StatusResultMatchers.isEqualTo(matcher: Matcher<Int>): ResultMatcher = `is`(
  * Extension for [StatusResultMatchers.is] providing an `isEqualTo` alias since `is` is
  * a reserved keyword in Kotlin.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0.7
  */
 fun StatusResultMatchers.isEqualTo(status: Int): ResultMatcher = `is`(status)

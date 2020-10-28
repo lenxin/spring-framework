@@ -61,8 +61,8 @@ import org.springframework.util.StringValueResolver;
  * factory or for fine-grained control over endpoints registration. See the
  * {@link EnableJms} javadocs for complete usage details.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see JmsListener
  * @see EnableJms

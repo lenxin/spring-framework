@@ -5,7 +5,7 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class ResourceConverter implements Converter<String, Resource> {
 

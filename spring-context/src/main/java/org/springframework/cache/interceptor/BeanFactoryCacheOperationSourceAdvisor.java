@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
  * Advisor driven by a {@link CacheOperationSource}, used to include a
  * cache advice bean for methods that are cacheable.
  *
- * @author Costin Leau
+
  * @since 3.1
  */
 @SuppressWarnings("serial")

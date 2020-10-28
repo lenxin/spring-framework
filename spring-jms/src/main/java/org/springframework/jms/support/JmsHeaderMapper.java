@@ -9,9 +9,9 @@ import org.springframework.messaging.support.HeaderMapper;
  * headers to an outbound JMS {@link javax.jms.Message} (e.g. to configure JMS
  * properties) or extracting messaging header values from an inbound JMS Message.
  *
- * @author Mark Fisher
- * @author Oleg Zhurakousky
- * @author Gary Russell
+
+
+
  * @since 4.1
  */
 public interface JmsHeaderMapper extends HeaderMapper<Message> {

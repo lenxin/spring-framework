@@ -59,8 +59,8 @@ import org.springframework.util.ReflectionUtils;
  * by a {@link TestContextBootstrapper}, which is configured via
  * {@link BootstrapWith @BootstrapWith}.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see BootstrapWith
  * @see BootstrapContext

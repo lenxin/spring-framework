@@ -13,10 +13,10 @@ import org.springframework.transaction.TransactionDefinition;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rick Evans
- * @author Chris Beams
+
+
+
+
  * @since 09.04.2003
  */
 public class RuleBasedTransactionAttributeTests {

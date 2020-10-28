@@ -11,7 +11,7 @@ import org.springframework.util.NumberUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
+
  * @since 3.0
  */
 public class PeriodicTriggerTests {

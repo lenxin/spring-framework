@@ -10,7 +10,7 @@ import java.io.IOException;
  * <p>Used internally by the {@link AsyncRestTemplate}, but also useful for
  * application code.
  *
- * @author Arjen Poutsma
+
  * @see org.springframework.web.client.AsyncRestTemplate#execute
  * @since 4.0
  * @deprecated as of Spring 5.0, in favor of

@@ -11,8 +11,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link MockHttpSession}.
  *
- * @author Sam Brannen
- * @author Vedran Pavic
+
+
  * @since 3.2
  */
 public class MockHttpSessionTests {

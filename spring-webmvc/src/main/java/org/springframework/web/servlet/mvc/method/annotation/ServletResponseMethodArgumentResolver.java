@@ -21,9 +21,9 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * <li>{@link Writer}
  * </ul>
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 3.1
  */
 public class ServletResponseMethodArgumentResolver implements HandlerMethodArgumentResolver {

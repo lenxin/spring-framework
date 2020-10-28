@@ -36,8 +36,8 @@ import static org.junit.Assert.*;
  * Unit tests for building a {@link MockHttpServletRequest} with
  * {@link MockHttpServletRequestBuilder}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  */
 public class MockHttpServletRequestBuilderTests {
 

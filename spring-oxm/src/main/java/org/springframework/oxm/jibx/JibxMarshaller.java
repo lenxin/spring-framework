@@ -61,7 +61,7 @@ import org.springframework.util.xml.StaxUtils;
  * <p>The typical usage will be to set the {@code targetClass} and optionally the
  * {@code bindingName} property on this bean.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see org.jibx.runtime.IMarshallingContext
  * @see org.jibx.runtime.IUnmarshallingContext

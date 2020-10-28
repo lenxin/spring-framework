@@ -3,7 +3,7 @@ package org.springframework.context.event.test;
 import java.util.UUID;
 
 /**
- * @author Stephane Nicoll
+
  */
 public abstract class AbstractIdentifiable implements Identifiable {
 

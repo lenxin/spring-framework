@@ -11,7 +11,7 @@ import static org.mockito.Mockito.*;
 /**
  * Tests for {@link DeferredImportSelector}.
  *
- * @author Stephane Nicoll
+
  */
 public class DeferredImportSelectorTests {
 

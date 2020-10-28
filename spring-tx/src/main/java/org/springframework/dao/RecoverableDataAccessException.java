@@ -7,7 +7,7 @@ package org.springframework.dao;
  * At a minimum, the recovery operation must include closing the current connection
  * and getting a new connection.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  * @see java.sql.SQLRecoverableException
  */

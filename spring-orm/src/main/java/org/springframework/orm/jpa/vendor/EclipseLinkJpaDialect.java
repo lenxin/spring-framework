@@ -26,7 +26,7 @@ import org.springframework.transaction.TransactionException;
  * As of Spring 4.1.2, this will reliably avoid early JDBC Connection retrieval
  * and therefore keep EclipseLink in shared cache mode.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.2
  * @see #setLazyDatabaseTransaction
  * @see org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy

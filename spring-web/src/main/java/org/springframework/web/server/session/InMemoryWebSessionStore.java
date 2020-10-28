@@ -22,8 +22,8 @@ import org.springframework.web.server.WebSession;
 /**
  * Simple Map-based storage for {@link WebSession} instances.
  *
- * @author Rossen Stoyanchev
- * @author Rob Winch
+
+
  * @since 5.0
  */
 public class InMemoryWebSessionStore implements WebSessionStore {

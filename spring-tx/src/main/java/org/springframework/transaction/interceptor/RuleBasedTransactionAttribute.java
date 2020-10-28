@@ -18,8 +18,8 @@ import org.springframework.lang.Nullable;
  *
  * <p>{@link TransactionAttributeEditor} creates objects of this class.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 09.04.2003
  * @see TransactionAttributeEditor
  */

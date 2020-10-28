@@ -7,8 +7,8 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 /**
  * Assist with configuring a {@link org.springframework.web.servlet.view.UrlBasedViewResolver}.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
  */
 public class UrlBasedViewResolverRegistration {

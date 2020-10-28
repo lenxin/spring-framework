@@ -26,7 +26,7 @@ import static org.junit.Assert.*;
  * Test fixture for {@link ServletModelAttributeMethodProcessor} specific tests.
  * Also see org.springframework.web.method.annotation.support.ModelAttributeMethodProcessorTests
  *
- * @author Rossen Stoyanchev
+
  */
 public class ServletModelAttributeMethodProcessorTests {
 

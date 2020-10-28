@@ -16,8 +16,8 @@ import org.springframework.util.Assert;
  * faster than just letting the TransactionInterceptor run and find out
  * itself that it has no work to do.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #setTransactionInterceptor
  * @see TransactionProxyFactoryBean
  */

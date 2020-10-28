@@ -20,8 +20,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  */
 public class MarshallingViewTests {
 

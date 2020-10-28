@@ -27,7 +27,7 @@ import static org.springframework.http.MediaType.APPLICATION_XML;
 /**
  * Unit tests for {@link Jackson2SmileEncoder}.
  *
- * @author Sebastien Deleuze
+
  */
 public class Jackson2SmileEncoderTests extends AbstractEncoderTestCase<Jackson2SmileEncoder> {
 

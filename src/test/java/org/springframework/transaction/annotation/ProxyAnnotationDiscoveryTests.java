@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Configuration;
  * and whether interface or subclass proxies are used, the @Transactional annotation must
  * be discovered in a consistent fashion.
  *
- * @author Chris Beams
+
  */
 @SuppressWarnings("resource")
 public class ProxyAnnotationDiscoveryTests {

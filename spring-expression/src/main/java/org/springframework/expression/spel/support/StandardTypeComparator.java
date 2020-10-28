@@ -13,9 +13,9 @@ import org.springframework.util.NumberUtils;
  * A simple basic {@link TypeComparator} implementation.
  * It supports comparison of Numbers and types implementing Comparable.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Giovanni Dall'Oglio Risso
+
+
+
  * @since 3.0
  */
 public class StandardTypeComparator implements TypeComparator {

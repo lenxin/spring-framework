@@ -27,8 +27,8 @@ import org.springframework.util.Assert;
  *
  * <p>An instance of this class is serializable if the delegate is.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 16.11.2003
  * @see #suppressInterface
  * @see DelegatePerTargetObjectIntroductionInterceptor

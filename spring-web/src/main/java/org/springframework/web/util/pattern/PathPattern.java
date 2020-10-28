@@ -48,8 +48,8 @@ import org.springframework.util.StringUtils;
  * and assign the value {@code "spring"} to the {@code filename} variable</li>
  * </ul>
  *
- * @author Andy Clement
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @see PathContainer
  */

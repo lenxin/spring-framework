@@ -20,8 +20,8 @@ import org.springframework.dao.DataAccessException;
  * instance, but no output Records should be passed into CciTemplate's
  * {@code execute} methods.
  *
- * @author Thierry Templier
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see CciTemplate#execute(javax.resource.cci.InteractionSpec, RecordCreator)
  * @see CciTemplate#execute(javax.resource.cci.InteractionSpec, RecordCreator, RecordExtractor)

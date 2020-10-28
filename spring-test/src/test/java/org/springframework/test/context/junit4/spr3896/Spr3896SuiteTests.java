@@ -9,7 +9,7 @@ import org.junit.runners.Suite.SuiteClasses;
  * href="https://opensource.atlassian.com/projects/spring/browse/SPR-3896"
  * target="_blank">SPR-3896</a>.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 @RunWith(Suite.class)

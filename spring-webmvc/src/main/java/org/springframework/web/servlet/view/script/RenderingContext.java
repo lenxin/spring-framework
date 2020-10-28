@@ -10,7 +10,7 @@ import org.springframework.context.ApplicationContext;
  * the application context, the locale, the template loader and the url available on
  * scripting side.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 public class RenderingContext {

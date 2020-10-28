@@ -14,8 +14,8 @@ import org.springframework.util.Assert;
  * Implementation of the {@code DataBufferFactory} interface based on a
  * Netty {@link ByteBufAllocator}.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 5.0
  * @see io.netty.buffer.PooledByteBufAllocator
  * @see io.netty.buffer.UnpooledByteBufAllocator

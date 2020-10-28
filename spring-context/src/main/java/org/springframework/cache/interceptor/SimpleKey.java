@@ -9,7 +9,7 @@ import org.springframework.util.StringUtils;
 /**
  * A simple key as returned from the {@link SimpleKeyGenerator}.
  *
- * @author Phillip Webb
+
  * @since 4.0
  * @see SimpleKeyGenerator
  */

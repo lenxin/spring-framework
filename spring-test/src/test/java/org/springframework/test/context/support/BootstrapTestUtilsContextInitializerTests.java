@@ -16,7 +16,7 @@ import org.springframework.web.context.support.GenericWebApplicationContext;
 /**
  * Unit tests for {@link BootstrapTestUtils} involving {@link ApplicationContextInitializer}s.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 @SuppressWarnings("unchecked")

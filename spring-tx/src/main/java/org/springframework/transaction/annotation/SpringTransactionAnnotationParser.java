@@ -17,7 +17,7 @@ import org.springframework.transaction.interceptor.TransactionAttribute;
 /**
  * Strategy implementation for parsing Spring's {@link Transactional} annotation.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  */
 @SuppressWarnings("serial")

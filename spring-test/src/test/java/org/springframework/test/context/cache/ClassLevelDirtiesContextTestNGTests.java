@@ -34,7 +34,7 @@ import static org.springframework.test.context.cache.ContextCacheTestUtils.*;
  * <p>This class is a direct copy of {@link ClassLevelDirtiesContextTests},
  * modified to verify behavior in conjunction with TestNG.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 @RunWith(JUnit4.class)

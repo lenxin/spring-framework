@@ -18,8 +18,8 @@ import org.springframework.orm.jpa.persistenceunit.SmartPersistenceUnitInfo;
  * from the {@code org.hibernate.jpa} package, adding support for
  * {@link SmartPersistenceUnitInfo#getManagedPackages()}.
  *
- * @author Juergen Hoeller
- * @author Joris Kuipers
+
+
  * @since 4.1
  * @see Configuration#addPackage
  */

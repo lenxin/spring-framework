@@ -22,7 +22,7 @@ import static org.springframework.test.util.MetaAnnotationUtils.*;
 /**
  * Unit tests for {@link MetaAnnotationUtils}.
  *
- * @author Sam Brannen
+
  * @since 4.0
  * @see OverriddenMetaAnnotationAttributesTests
  */

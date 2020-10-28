@@ -11,7 +11,7 @@ import org.springframework.dao.InvalidDataAccessResourceUsageException;
  * <p>This typically happens when an invalid ResultSet column index or name
  * has been specified.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see javax.resource.cci.ResultSet
  */

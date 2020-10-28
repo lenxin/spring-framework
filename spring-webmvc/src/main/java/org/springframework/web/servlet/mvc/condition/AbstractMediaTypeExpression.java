@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Supports media type expressions as described in:
  * {@link RequestMapping#consumes()} and {@link RequestMapping#produces()}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 abstract class AbstractMediaTypeExpression implements MediaTypeExpression, Comparable<AbstractMediaTypeExpression> {

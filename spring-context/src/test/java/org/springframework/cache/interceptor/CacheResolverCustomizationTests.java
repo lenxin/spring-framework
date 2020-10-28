@@ -29,7 +29,7 @@ import static org.springframework.cache.CacheTestUtils.*;
 /**
  * Provides various {@link CacheResolver} customisations scenario
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class CacheResolverCustomizationTests {

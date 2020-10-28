@@ -14,7 +14,7 @@ import org.springframework.web.util.pattern.PathPattern.MatchingContext;
  * are {@link RegexPathElement} path elements. Derived from the general
  * {@link org.springframework.util.AntPathMatcher} approach.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 class RegexPathElement extends PathElement {

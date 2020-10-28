@@ -31,9 +31,9 @@ import org.springframework.util.StringUtils;
  * Class to manage context meta-data used for the configuration
  * and execution of a stored procedure call.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
- * @author Kiril Nugmanov
+
+
+
  * @since 2.5
  */
 public class CallMetaDataContext {

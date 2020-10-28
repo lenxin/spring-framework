@@ -12,9 +12,9 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class SimpleAsyncTaskExecutorTests {
 

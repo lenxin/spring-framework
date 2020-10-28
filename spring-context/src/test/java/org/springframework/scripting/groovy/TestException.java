@@ -1,7 +1,7 @@
 package org.springframework.scripting.groovy;
 
 /**
- * @author Dave Syer
+
  *
  */
 @SuppressWarnings("serial")

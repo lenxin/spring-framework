@@ -6,7 +6,7 @@ import org.springframework.context.annotation.spr10546.scanpackage.AEnclosingCon
 
 /**
  *
- * @author Rob Winch
+
  */
 @Configuration
 @ComponentScan(basePackageClasses=AEnclosingConfig.class)

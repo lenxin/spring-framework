@@ -39,8 +39,8 @@ import org.springframework.web.util.NestedServletException;
  * (see {@link ServletWebRequest#checkNotModified(long)}), or
  * a method argument that provides access to the response stream.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 public class ServletInvocableHandlerMethod extends InvocableHandlerMethod {

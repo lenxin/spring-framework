@@ -16,8 +16,8 @@ import org.springframework.util.StringUtils;
  * Utility methods for working with resources within the <em>Spring TestContext
  * Framework</em>. Mainly for internal use within the framework.
  *
- * @author Sam Brannen
- * @author Tadaya Tsuyukubo
+
+
  * @since 4.1
  * @see org.springframework.util.ResourceUtils
  * @see org.springframework.core.io.Resource

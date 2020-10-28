@@ -16,7 +16,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for {@link AttributeMethods}.
  *
- * @author Phillip Webb
+
  */
 public class AttributeMethodsTests {
 

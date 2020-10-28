@@ -16,8 +16,8 @@ import org.springframework.util.StringUtils;
  * more sophisticated messages, for example messages with attachments, special
  * character encodings, or personal names that accompany mail addresses.
  *
- * @author Dmitriy Kopylenko
- * @author Juergen Hoeller
+
+
  * @since 10.09.2003
  * @see MailSender
  * @see org.springframework.mail.javamail.JavaMailSender

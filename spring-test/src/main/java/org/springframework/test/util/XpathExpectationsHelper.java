@@ -28,7 +28,7 @@ import org.springframework.util.xml.SimpleNamespaceContext;
 /**
  * A helper class for applying assertions via XPath expressions.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.2
  */
 public class XpathExpectationsHelper {

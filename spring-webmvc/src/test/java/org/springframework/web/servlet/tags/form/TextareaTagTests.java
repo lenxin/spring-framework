@@ -10,10 +10,10 @@ import org.springframework.validation.BeanPropertyBindingResult;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Jeremy Grelle
+
+
+
+
  */
 public class TextareaTagTests extends AbstractFormTagTests {
 

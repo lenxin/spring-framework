@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 /**
  * Test usage of inline lists.
  *
- * @author Andy Clement
- * @author Giovanni Dall'Oglio Risso
+
+
  * @since 3.0.4
  */
 public class ListTests extends AbstractExpressionTests {

@@ -78,8 +78,8 @@ import java.lang.annotation.Target;
  * <p>You may combine the {@code ExceptionHandler} annotation with
  * {@link ResponseStatus @ResponseStatus} for a specific HTTP error status.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see org.springframework.web.context.request.WebRequest
  */

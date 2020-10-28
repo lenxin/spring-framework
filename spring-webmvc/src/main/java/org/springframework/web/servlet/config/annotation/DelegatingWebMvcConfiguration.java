@@ -20,7 +20,7 @@ import org.springframework.web.servlet.HandlerExceptionResolver;
  * configuration provided by {@code WebMvcConfigurationSupport}. This is the
  * class actually imported by {@link EnableWebMvc @EnableWebMvc}.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  */
 @Configuration

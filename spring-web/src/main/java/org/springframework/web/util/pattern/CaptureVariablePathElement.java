@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * '/foo/{bar}/goo' the {bar} is represented as a {@link CaptureVariablePathElement}. There
  * must be at least one character to bind to the variable.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 class CaptureVariablePathElement extends PathElement {

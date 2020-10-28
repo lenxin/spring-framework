@@ -32,7 +32,7 @@ import org.springframework.web.util.UrlPathHelper;
  * locations from which to serve static content from (e.g. {{@code "/"},
  * {@code "classpath:/META-INF/public-web-resources/"}}) or to specify a cache period for served resources.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  * @see DefaultServletHandlerConfigurer
  */

@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class HeadersWrapperTests {
 

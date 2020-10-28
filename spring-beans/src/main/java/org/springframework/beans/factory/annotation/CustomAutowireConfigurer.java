@@ -26,8 +26,8 @@ import java.util.Set;
  *   &lt;/property&gt;
  * &lt;/bean&gt;</pre>
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  * @see org.springframework.beans.factory.annotation.Qualifier
  * @since 2.5
  */

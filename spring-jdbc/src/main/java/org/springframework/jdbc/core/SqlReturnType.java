@@ -15,7 +15,7 @@ import org.springframework.lang.Nullable;
  * access to the underlying Connection via the given CallableStatement object, if that
  * should be needed to create any database-specific objects.
  *
- * @author Thomas Risberg
+
  * @since 1.1
  * @see java.sql.Types
  * @see java.sql.CallableStatement#getObject

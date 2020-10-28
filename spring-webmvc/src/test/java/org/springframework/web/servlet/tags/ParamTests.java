@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link Param}.
  *
- * @author Scott Andrews
+
  */
 public class ParamTests {
 

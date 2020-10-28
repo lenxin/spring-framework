@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
  * SQL Server specific implementation for the {@link CallMetaDataProvider} interface.
  * This class is intended for internal use by the Simple JDBC classes.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  */
 public class SqlServerCallMetaDataProvider extends GenericCallMetaDataProvider {

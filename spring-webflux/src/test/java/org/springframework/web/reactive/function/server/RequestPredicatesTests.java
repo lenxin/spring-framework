@@ -13,7 +13,7 @@ import org.springframework.web.util.pattern.PathPatternParser;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class RequestPredicatesTests {
 

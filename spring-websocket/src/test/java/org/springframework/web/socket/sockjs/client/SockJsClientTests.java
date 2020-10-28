@@ -32,7 +32,7 @@ import static org.mockito.BDDMockito.when;
 /**
  * Unit tests for {@link org.springframework.web.socket.sockjs.client.SockJsClient}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class SockJsClientTests {
 

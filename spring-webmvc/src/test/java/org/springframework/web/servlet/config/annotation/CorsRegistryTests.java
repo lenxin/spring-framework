@@ -13,7 +13,7 @@ import org.springframework.web.cors.CorsConfiguration;
 /**
  * Test fixture with a {@link CorsRegistry}.
  *
- * @author Sebastien Deleuze
+
  */
 public class CorsRegistryTests {
 

@@ -6,8 +6,8 @@ import org.springframework.util.ObjectUtils;
 /**
  * Exception to be thrown when an actual type conversion attempt fails.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

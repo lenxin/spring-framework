@@ -23,7 +23,7 @@ import org.springframework.util.Assert;
  *
  * <p>The aggregated information is maintained in a {@link MultiServerUserRegistry}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.2
  */
 public class UserRegistryMessageHandler implements MessageHandler, ApplicationListener<BrokerAvailabilityEvent> {

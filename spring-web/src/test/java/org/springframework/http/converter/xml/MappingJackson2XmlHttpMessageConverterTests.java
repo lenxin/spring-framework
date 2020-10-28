@@ -22,8 +22,8 @@ import static org.junit.Assert.*;
 /**
  * Jackson 2.x XML converter tests.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  */
 public class MappingJackson2XmlHttpMessageConverterTests {
 

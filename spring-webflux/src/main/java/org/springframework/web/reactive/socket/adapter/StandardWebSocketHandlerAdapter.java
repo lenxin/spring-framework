@@ -22,8 +22,8 @@ import org.springframework.web.reactive.socket.WebSocketSession;
  * Adapter for Java WebSocket API (JSR-356) that delegates events to a reactive
  * {@link WebSocketHandler} and its session.
  *
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class StandardWebSocketHandlerAdapter extends Endpoint {

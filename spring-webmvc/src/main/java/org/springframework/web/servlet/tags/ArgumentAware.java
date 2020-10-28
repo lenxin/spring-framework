@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
 /**
  * Allows implementing tag to utilize nested {@code spring:argument} tags.
  *
- * @author Nicholas Williams
+
  * @since 4.0
  * @see ArgumentTag
  */

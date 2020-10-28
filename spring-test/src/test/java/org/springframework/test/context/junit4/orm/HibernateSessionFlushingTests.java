@@ -23,9 +23,9 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * Transactional integration tests regarding <i>manual</i> session flushing with
  * Hibernate.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
- * @author Vlad Mihalcea
+
+
+
  * @since 3.0
  */
 @ContextConfiguration

@@ -42,7 +42,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 /**
  * {@code ServerRequest} implementation based on a {@link ServerWebExchange}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 class DefaultServerRequest implements ServerRequest {

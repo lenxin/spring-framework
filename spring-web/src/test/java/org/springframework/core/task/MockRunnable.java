@@ -1,7 +1,7 @@
 package org.springframework.core.task;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class MockRunnable implements Runnable {
 

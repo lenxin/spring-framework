@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
  * exposing the content as {@code InputStream} and also overriding
  * {@link #contentLength()} as well as {@link #getFilename()}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.1
  */
 class MultipartFileResource extends AbstractResource {

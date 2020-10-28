@@ -14,7 +14,7 @@ import org.springframework.lang.Nullable;
  * <p>Alternatively, the standard CCI infrastructure can be mocked.
  * However, mocking this interface constitutes significantly less work.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see CciTemplate
  */

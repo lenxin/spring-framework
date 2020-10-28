@@ -16,8 +16,8 @@ import org.springframework.util.StreamUtils;
  * writes with a {@code Content-Type} of {@code application/octet-stream}. This can be
  * overridden by setting the {@link #setSupportedMediaTypes supportedMediaTypes} property.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class ByteArrayHttpMessageConverter extends AbstractHttpMessageConverter<byte[]> {

@@ -30,9 +30,9 @@ import static java.util.Collections.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class XsltViewTests {
 

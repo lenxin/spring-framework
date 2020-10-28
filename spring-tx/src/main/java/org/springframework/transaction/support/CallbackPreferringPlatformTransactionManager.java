@@ -19,7 +19,7 @@ import org.springframework.transaction.TransactionException;
  * {@link org.springframework.transaction.interceptor.TransactionInterceptor}
  * detect and use this PlatformTransactionManager variant automatically.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see TransactionTemplate
  * @see org.springframework.transaction.interceptor.TransactionInterceptor

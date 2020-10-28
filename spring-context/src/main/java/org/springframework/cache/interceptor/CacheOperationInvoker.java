@@ -8,7 +8,7 @@ package org.springframework.cache.interceptor;
  * exception that was thrown by the underlying invocation.
  * Callers are expected to handle this issue type specifically.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 @FunctionalInterface

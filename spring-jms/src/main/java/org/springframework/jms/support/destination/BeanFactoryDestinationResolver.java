@@ -16,7 +16,7 @@ import org.springframework.util.Assert;
  * <p>Will lookup Spring managed beans identified by bean name,
  * expecting them to be of type {@code javax.jms.Destination}.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see org.springframework.beans.factory.BeanFactory
  */

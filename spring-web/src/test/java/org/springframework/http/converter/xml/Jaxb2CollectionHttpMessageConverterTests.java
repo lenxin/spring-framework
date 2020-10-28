@@ -40,8 +40,8 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link Jaxb2CollectionHttpMessageConverter}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 public class Jaxb2CollectionHttpMessageConverterTests {
 

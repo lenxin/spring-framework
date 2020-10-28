@@ -12,7 +12,7 @@ import com.ibm.wsspi.uow.UOWException;
 import com.ibm.wsspi.uow.UOWManager;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class MockUOWManager implements UOWManager {
 

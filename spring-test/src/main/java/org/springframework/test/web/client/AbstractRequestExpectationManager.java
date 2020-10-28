@@ -26,8 +26,8 @@ import org.springframework.util.Assert;
  * <p>Subclasses are responsible for validating each request by matching it to
  * to expectations following the order of declaration or not.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.3
  */
 public abstract class AbstractRequestExpectationManager implements RequestExpectationManager {

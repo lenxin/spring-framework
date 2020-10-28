@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link StandardMultipartHttpServletRequest}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class StandardMultipartHttpServletRequestTests {
 

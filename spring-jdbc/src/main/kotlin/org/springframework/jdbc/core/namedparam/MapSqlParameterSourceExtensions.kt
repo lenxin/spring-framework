@@ -6,7 +6,7 @@ package org.springframework.jdbc.core.namedparam
  * ```kotlin
  * source["age"] = 3
  * ```
- * @author Mario Arias
+
  * @since 5.0
  *
  */
@@ -20,7 +20,7 @@ operator fun MapSqlParameterSource.set(paramName: String, value: Any) {
  * ```kotlin
  * source["age", JDBCType.INTEGER.vendorTypeNumber] = 3
  * ```
- * @author Mario Arias
+
  * @since 5.0
  *
  */
@@ -34,7 +34,7 @@ operator fun MapSqlParameterSource.set(paramName: String, sqlType: Int, value: A
  * ```kotlin
  * source["age", JDBCType.INTEGER.vendorTypeNumber, "INT"] = 3
  * ```
- * @author Mario Arias
+
  * @since 5.0
  *
  */

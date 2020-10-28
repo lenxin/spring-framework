@@ -23,7 +23,7 @@ import static org.springframework.core.ResolvableType.forClass;
 /**
  * Unit tests for {@link ProtobufEncoder}.
  *
- * @author Sebastien Deleuze
+
  */
 public class ProtobufEncoderTests extends AbstractEncoderTestCase<ProtobufEncoder> {
 

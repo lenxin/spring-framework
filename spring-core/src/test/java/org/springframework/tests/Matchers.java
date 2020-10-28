@@ -9,7 +9,7 @@ import org.junit.rules.ExpectedException;
 /**
  * Additional hamcrest matchers.
  *
- * @author Phillip Webb
+
  */
 public class Matchers {
 

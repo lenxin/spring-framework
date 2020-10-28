@@ -12,9 +12,9 @@ import java.security.NoSuchAlgorithmException;
  * <a href="https://commons.apache.org/codec/">Apache Commons Codec</a>
  * for a more comprehensive suite of digest utilities.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Craig Andrews
+
+
+
  * @since 3.0
  */
 public abstract class DigestUtils {

@@ -15,7 +15,7 @@ import org.springframework.tests.transaction.CallCountingTransactionManager;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class SimpleTransactionScopeTests {
 

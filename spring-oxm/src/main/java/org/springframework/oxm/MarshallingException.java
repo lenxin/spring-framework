@@ -3,8 +3,8 @@ package org.springframework.oxm;
 /**
  * Base class for exception thrown when a marshalling or unmarshalling error occurs.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see MarshallingFailureException
  * @see UnmarshallingFailureException

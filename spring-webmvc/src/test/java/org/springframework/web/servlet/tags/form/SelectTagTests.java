@@ -36,10 +36,10 @@ import org.springframework.web.servlet.tags.TransformTag;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Jeremy Grelle
- * @author Dave Syer
+
+
+
+
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class SelectTagTests extends AbstractFormTagTests {

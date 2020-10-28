@@ -21,8 +21,8 @@ import org.springframework.util.PatternMatchUtils;
  * Simple {@link TransactionAttributeSource} implementation that
  * allows attributes to be stored per method in a {@link Map}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 24.04.2003
  * @see #isMatch
  * @see NameMatchTransactionAttributeSource

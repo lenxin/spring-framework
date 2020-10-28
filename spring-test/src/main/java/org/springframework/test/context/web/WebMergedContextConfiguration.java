@@ -27,7 +27,7 @@ import org.springframework.util.StringUtils;
  * org.springframework.web.context.WebApplicationContext WebApplicationContext}
  * that was loaded using properties of this {@code WebMergedContextConfiguration}.
  *
- * @author Sam Brannen
+
  * @since 3.2
  * @see WebAppConfiguration
  * @see MergedContextConfiguration

@@ -27,9 +27,9 @@ import static org.junit.Assert.*;
 import static org.springframework.tests.TestResourceUtils.*;
 
 /**
- * @author Guillaume Poirier
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  * @since 10.03.2004
  */
 public class ConcurrentBeanFactoryTests {

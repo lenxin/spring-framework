@@ -6,7 +6,7 @@ import org.springframework.lang.Nullable;
 /**
  * Thrown by {@link ScriptUtils} if an SQL script cannot be properly parsed.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 @SuppressWarnings("serial")

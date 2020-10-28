@@ -13,7 +13,7 @@ import org.springframework.jmx.support.MetricType;
  * JMX attribute, with added descriptor properties to indicate that it is a metric.
  * Only valid when used on a JavaBean getter.
  *
- * @author Jennifer Hickey
+
  * @since 3.0
  * @see org.springframework.jmx.export.metadata.ManagedMetric
  */

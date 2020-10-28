@@ -43,7 +43,7 @@ import static org.springframework.web.method.MvcAnnotationPredicates.*;
 
 /**
  * Unit tests for {@link RequestPartMethodArgumentResolver}.
- * @author Rossen Stoyanchev
+
  */
 public class RequestPartMethodArgumentResolverTests {
 

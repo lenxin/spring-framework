@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * <p>This is intended for internal use by Spring's
  * {@link org.springframework.jdbc.core.simple.SimpleJdbcCall}.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  */
 public interface CallMetaDataProvider {

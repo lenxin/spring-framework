@@ -25,8 +25,8 @@ import org.springframework.util.StringUtils;
  * Does not support explicit registration of certain overloaded methods.
  * Supports "xxx*" mappings, e.g. "notify*" for "notify" and "notifyAll".
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 26.04.2003
  * @see TransactionAttributeEditor
  */

@@ -22,7 +22,7 @@ import static org.springframework.test.context.support.ContextLoaderUtils.*;
 /**
  * Unit tests for {@link ContextLoaderUtils} involving context hierarchies.
  *
- * @author Sam Brannen
+
  * @since 3.2.2
  */
 public class ContextLoaderUtilsContextHierarchyTests extends AbstractContextConfigurationUtilsTests {

@@ -13,8 +13,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
- * @author Dave Syer
+
+
  */
 @SuppressWarnings("resource")
 public class ScriptingDefaultsTests {

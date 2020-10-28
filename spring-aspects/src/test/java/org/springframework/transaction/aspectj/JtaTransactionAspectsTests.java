@@ -17,7 +17,7 @@ import org.springframework.tests.transaction.CallCountingTransactionManager;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = JtaTransactionAspectsTests.Config.class)

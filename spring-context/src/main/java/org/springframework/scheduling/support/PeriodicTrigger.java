@@ -25,7 +25,7 @@ import org.springframework.util.Assert;
  * be convenient to allow periodic triggers, cron-based triggers, and even
  * custom Trigger implementations to be used interchangeably.
  *
- * @author Mark Fisher
+
  * @since 3.0
  */
 public class PeriodicTrigger implements Trigger {

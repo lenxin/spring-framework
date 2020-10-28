@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  * target="_blank">SPR-4008</a>: <em>Supply an opportunity to customize context
  * before calling refresh in ContextLoaders</em>.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 public class CustomizedGenericXmlContextLoaderTests {

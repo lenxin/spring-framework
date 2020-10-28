@@ -36,9 +36,9 @@ import org.springframework.web.multipart.MultipartResolver;
  * {@link RequestPart} is likely to be used with parts containing more complex content
  * e.g. JSON, XML).
  *
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
+
  * @since 3.1
  * @see RequestParam
  * @see org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter

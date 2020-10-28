@@ -22,8 +22,8 @@ import org.springframework.aop.support.ComposablePointcut;
  * <p>Uses AspectJ 5 AJType reflection API, enabling us to work with different
  * AspectJ instantiation models such as "singleton", "pertarget" and "perthis".
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see org.springframework.aop.aspectj.AspectJExpressionPointcut
  */

@@ -29,8 +29,8 @@ import static org.junit.Assert.assertTrue;
 /**
  * Tests using {@link HeaderWebSessionIdResolver}.
  *
- * @author Greg Turnquist
- * @author Rob Winch
+
+
  */
 public class HeaderWebSessionIdResolverTests {
 	private HeaderWebSessionIdResolver idResolver;

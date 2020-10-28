@@ -27,7 +27,7 @@ import org.junit.runner.RunWith;
  * -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager
  * </pre>
  *
- * @author Sam Brannen
+
  * @since 5.0
  */
 @RunWith(JUnitPlatform.class)

@@ -14,7 +14,7 @@ import org.springframework.util.ObjectUtils;
  * Inner class that implements a Pointcut that matches if the underlying
  * {@link TransactionAttributeSource} has an attribute for a given method.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.5
  */
 @SuppressWarnings("serial")

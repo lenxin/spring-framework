@@ -13,7 +13,7 @@ import org.springframework.util.concurrent.ListenableFuture;
  * <p>A {@code AsyncHttpRequest} can be {@linkplain #executeAsync() executed},
  * getting a future {@link ClientHttpResponse} which can be read from.
  *
- * @author Arjen Poutsma
+
  * @since 4.0
  * @see AsyncClientHttpRequestFactory#createAsyncRequest
  * @deprecated as of Spring 5.0, in favor of {@link org.springframework.web.reactive.function.client.ClientRequest}

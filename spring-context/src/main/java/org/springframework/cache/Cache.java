@@ -11,9 +11,9 @@ import java.util.concurrent.Callable;
  * implementations allow storage of <tt>null</tt> values (for example to
  * cache methods that return {@code null}).
  *
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 3.1
  */
 public interface Cache {

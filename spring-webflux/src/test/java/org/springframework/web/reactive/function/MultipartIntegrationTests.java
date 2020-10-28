@@ -26,7 +26,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RouterFunctions.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class MultipartIntegrationTests extends AbstractRouterFunctionIntegrationTests {
 

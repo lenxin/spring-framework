@@ -15,9 +15,9 @@ import org.springframework.util.SocketUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class MBeanServerConnectionFactoryBeanTests extends AbstractMBeanServerTests {
 

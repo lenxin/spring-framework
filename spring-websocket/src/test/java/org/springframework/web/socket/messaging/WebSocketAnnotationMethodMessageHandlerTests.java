@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
 
 /**
  * Unit tests for {@link WebSocketAnnotationMethodMessageHandler}.
- * @author Rossen Stoyanchev
+
  */
 public class WebSocketAnnotationMethodMessageHandlerTests {
 

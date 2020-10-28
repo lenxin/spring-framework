@@ -25,9 +25,9 @@ import org.springframework.util.Assert;
  * them with a predefined internal object. This behavior can be changed through the
  * {@link #ConcurrentMapCache(String, ConcurrentMap, boolean)} constructor.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 3.1
  */
 public class ConcurrentMapCache extends AbstractValueAdaptingCache {

@@ -29,8 +29,8 @@ import java.lang.annotation.Target;
  * When no annotation attributes are specified, the default format applied is style-based
  * with a style code of 'SS' (short date, short time).
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see java.time.format.DateTimeFormatter
  * @see org.joda.time.format.DateTimeFormat

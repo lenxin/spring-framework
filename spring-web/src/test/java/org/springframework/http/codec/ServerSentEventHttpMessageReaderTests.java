@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link ServerSentEventHttpMessageReader}.
  *
- * @author Sebastien Deleuze
+
  */
 public class ServerSentEventHttpMessageReaderTests extends AbstractLeakCheckingTestCase {
 

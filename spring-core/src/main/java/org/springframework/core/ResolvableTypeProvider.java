@@ -12,7 +12,7 @@ import org.springframework.lang.Nullable;
  * when the generic type signature of the class changes in sub-classes. It is always
  * possible to return {@code null} to fallback on a default behavior.
  *
- * @author Stephane Nicoll
+
  * @since 4.2
  */
 public interface ResolvableTypeProvider {

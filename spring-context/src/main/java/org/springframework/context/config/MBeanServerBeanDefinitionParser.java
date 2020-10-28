@@ -21,8 +21,8 @@ import org.springframework.util.StringUtils;
  * {@link org.springframework.jmx.export.annotation.AnnotationMBeanExporter}
  * within the context.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see org.springframework.jmx.export.annotation.AnnotationMBeanExporter
  */

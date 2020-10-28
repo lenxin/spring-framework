@@ -25,7 +25,7 @@ import static org.springframework.core.io.buffer.DataBufferUtils.release;
  * {@link #canEncode()} and {@link #encode()}, possibly using the wide
  *  * variety of helper methods like {@link #testEncodeAll}.
  *
- * @author Arjen Poutsma
+
  * @since 5.1.3
  */
 @SuppressWarnings("ProtectedField")

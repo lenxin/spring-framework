@@ -13,7 +13,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  * Utility class for CORS request handling based on the
  * <a href="https://www.w3.org/TR/cors/">CORS W3C recommendation</a>.
  *
- * @author Sebastien Deleuze
+
  * @since 4.2
  */
 public abstract class CorsUtils {

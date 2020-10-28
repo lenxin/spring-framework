@@ -58,10 +58,10 @@ import static org.springframework.http.MediaType.TEXT_PLAIN;
  * format if the Protobuf 2 based {@code protobuf-java-format} isn't present; however, for more
  * explicit JSON setup on Protobuf 3, consider {@link ProtobufJsonFormatHttpMessageConverter}.
  *
- * @author Alex Antonov
- * @author Brian Clozel
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
+
  * @since 4.1
  * @see FormatFactory
  * @see JsonFormat

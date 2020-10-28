@@ -18,7 +18,7 @@ import org.springframework.lang.Nullable;
  * {@link DynamicDestinationResolver} class. Consider using the
  * {@link JndiDestinationResolver} for more advanced scenarios.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see org.springframework.jms.core.JmsTemplate#setDestinationResolver
  * @see org.springframework.jms.support.destination.DynamicDestinationResolver

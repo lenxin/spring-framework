@@ -43,9 +43,9 @@ import org.springframework.stereotype.Component;
  * are performed at runtime and so adding many selectors may negatively impact
  * performance and add complexity.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Sam Brannen
+
+
+
  * @since 3.2
  * @see org.springframework.stereotype.Controller
  * @see RestControllerAdvice

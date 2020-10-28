@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AnnotationAttributes}.
  *
- * @author Chris Beams
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
+
  * @since 3.1.1
  */
 public class AnnotationAttributesTests {

@@ -8,7 +8,7 @@ package org.springframework.asm;
  * handler.
  *
  * @see Label
- * @author Eric Bruneton
+
  */
 final class Edge {
 

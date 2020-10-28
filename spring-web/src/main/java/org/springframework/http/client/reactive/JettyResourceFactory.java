@@ -25,7 +25,7 @@ import org.springframework.util.Assert;
  * <p>This factory implements {@link InitializingBean} and {@link DisposableBean}
  * and is expected typically to be declared as a Spring-managed bean.
  *
- * @author Sebastien Deleuze
+
  * @since 5.1
  */
 public class JettyResourceFactory implements InitializingBean, DisposableBean {

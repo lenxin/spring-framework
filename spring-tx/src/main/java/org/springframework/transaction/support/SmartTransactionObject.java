@@ -11,7 +11,7 @@ import java.io.Flushable;
  * current rollbackOnly flag even if not resulting from the current
  * TransactionStatus.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see DefaultTransactionStatus#isRollbackOnly
  */

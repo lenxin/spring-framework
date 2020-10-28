@@ -12,7 +12,7 @@ import java.io.OutputStream;
  * Utilities for testing serializability of objects.
  * Exposes static methods for use in other test cases.
  *
- * @author Rod Johnson
+
  */
 public class SerializationTestUtils {
 

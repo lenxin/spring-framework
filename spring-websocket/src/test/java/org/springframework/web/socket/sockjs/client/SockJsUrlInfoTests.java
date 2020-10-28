@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 
 /**
  * Unit tests for {@code SockJsUrlInfo}.
- * @author Rossen Stoyanchev
+
  */
 public class SockJsUrlInfoTests {
 

@@ -12,7 +12,7 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 @RunWith(SpringRunner.class)

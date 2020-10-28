@@ -26,8 +26,8 @@ import static org.junit.Assert.*;
  * Base class for tests that read or write data buffers with a rule to check
  * that allocated buffers have been released.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 @RunWith(Parameterized.class)
 public abstract class AbstractDataBufferAllocatingTestCase {

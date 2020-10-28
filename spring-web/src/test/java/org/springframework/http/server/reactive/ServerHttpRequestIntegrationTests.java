@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import static org.junit.Assert.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class ServerHttpRequestIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

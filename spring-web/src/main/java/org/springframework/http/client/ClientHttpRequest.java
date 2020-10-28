@@ -13,7 +13,7 @@ import org.springframework.http.HttpRequest;
  * <p>A {@code ClientHttpRequest} can be {@linkplain #execute() executed},
  * receiving a {@link ClientHttpResponse} which can be read from.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see ClientHttpRequestFactory#createRequest(java.net.URI, HttpMethod)
  */

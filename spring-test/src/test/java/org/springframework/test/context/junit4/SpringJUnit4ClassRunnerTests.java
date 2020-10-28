@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link SpringJUnit4ClassRunner}.
  *
- * @author Sam Brannen
- * @author Rick Evans
+
+
  * @since 2.5
  */
 public class SpringJUnit4ClassRunnerTests {

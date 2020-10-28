@@ -26,8 +26,8 @@ import org.springframework.web.servlet.mvc.condition.HeadersRequestCondition.Hea
  * {@link RequestMapping#headers()} where the header name is 'Accept'.
  * Regardless of which syntax is used, the semantics are the same.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 public final class ProducesRequestCondition extends AbstractRequestCondition<ProducesRequestCondition> {

@@ -32,7 +32,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * This class is a copy of the JUnit-based {@link ProgrammaticTxMgmtTests} class
  * that has been modified to run with TestNG.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @ContextConfiguration

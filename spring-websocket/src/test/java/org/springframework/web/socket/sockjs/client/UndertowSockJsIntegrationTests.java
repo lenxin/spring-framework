@@ -25,7 +25,7 @@ import org.springframework.web.socket.server.RequestUpgradeStrategy;
 import org.springframework.web.socket.server.standard.UndertowRequestUpgradeStrategy;
 
 /**
- * @author Brian Clozel
+
  */
 public class UndertowSockJsIntegrationTests extends AbstractSockJsIntegrationTests {
 

@@ -22,7 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class DefaultRenderingResponseTests {
 

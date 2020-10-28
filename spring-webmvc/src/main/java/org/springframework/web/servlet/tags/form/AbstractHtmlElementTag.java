@@ -20,9 +20,9 @@ import org.springframework.util.StringUtils;
  * needed via the {@link AbstractHtmlElementTag#getDynamicAttributes() dynamicAttributes}
  * map.
  *
- * @author Rob Harrop
- * @author Jeremy Grelle
- * @author Rossen Stoyanchev
+
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

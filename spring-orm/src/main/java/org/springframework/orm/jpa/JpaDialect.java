@@ -21,8 +21,8 @@ import org.springframework.transaction.TransactionException;
  * (present and future) from DefaultJpaDialect, only overriding specific hooks to
  * plug in concrete vendor-specific behavior.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 2.0
  * @see DefaultJpaDialect
  * @see JpaTransactionManager#setJpaDialect

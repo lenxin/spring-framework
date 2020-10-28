@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link YamlProcessor}.
  *
- * @author Dave Syer
- * @author Juergen Hoeller
+
+
  */
 public class YamlProcessorTests {
 

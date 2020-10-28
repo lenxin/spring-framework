@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * can use to represent an original resource preserving all other information
  * except the content.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class TransformedResource extends ByteArrayResource {

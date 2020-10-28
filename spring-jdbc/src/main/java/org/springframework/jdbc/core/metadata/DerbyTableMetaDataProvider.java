@@ -7,7 +7,7 @@ import java.sql.SQLException;
  * The Derby specific implementation of {@link TableMetaDataProvider}.
  * Overrides the Derby meta-data info regarding retrieving generated keys.
  *
- * @author Thomas Risberg
+
  * @since 3.0
  */
 public class DerbyTableMetaDataProvider extends GenericTableMetaDataProvider {

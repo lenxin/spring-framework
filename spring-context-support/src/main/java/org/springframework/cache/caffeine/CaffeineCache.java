@@ -15,9 +15,9 @@ import org.springframework.util.Assert;
  *
  * <p>Requires Caffeine 2.1 or higher.
  *
- * @author Ben Manes
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 4.3
  */
 public class CaffeineCache extends AbstractValueAdaptingCache {

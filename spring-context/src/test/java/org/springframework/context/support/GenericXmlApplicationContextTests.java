@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  *
  * See SPR-7530.
  *
- * @author Chris Beams
+
  */
 public class GenericXmlApplicationContextTests {
 

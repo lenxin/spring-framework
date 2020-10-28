@@ -28,9 +28,9 @@ import org.springframework.util.Assert;
 /**
  * Adapt {@link ServerHttpResponse} to the Undertow {@link HttpServerExchange}.
  *
- * @author Marek Hawrylczak
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
+
+
+
  * @since 5.0
  */
 class UndertowServerHttpResponse extends AbstractListenerServerHttpResponse implements ZeroCopyHttpOutputMessage {

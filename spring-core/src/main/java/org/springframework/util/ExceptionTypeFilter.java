@@ -6,7 +6,7 @@ import java.util.Collection;
  * An {@link InstanceFilter} implementation that handles exception types. A type
  * will match against a given candidate if it is assignable to that candidate.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class ExceptionTypeFilter extends InstanceFilter<Class<? extends Throwable>> {

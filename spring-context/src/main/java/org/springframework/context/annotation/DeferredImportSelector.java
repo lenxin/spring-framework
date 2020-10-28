@@ -17,8 +17,8 @@ import org.springframework.lang.Nullable;
  * <p>Implementations may also provide an {@link #getImportGroup() import group} which
  * can provide additional sorting and filtering logic across different selectors.
  *
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
  * @since 4.0
  */
 public interface DeferredImportSelector extends ImportSelector {

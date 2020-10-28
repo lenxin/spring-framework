@@ -18,9 +18,9 @@ import org.springframework.scheduling.TriggerContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Dave Syer
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
+
  */
 @RunWith(Parameterized.class)
 public class CronTriggerTests {

@@ -19,7 +19,7 @@ import static org.testng.Assert.*;
  * <p>Configuration will be loaded from
  * {@link AnnotationConfigTestNGSpringContextTests.Config}.
  *
- * @author Sam Brannen
+
  * @since 5.1
  */
 @ContextConfiguration

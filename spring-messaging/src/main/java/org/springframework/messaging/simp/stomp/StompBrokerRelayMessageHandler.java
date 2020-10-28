@@ -59,8 +59,8 @@ import org.springframework.util.concurrent.ListenableFutureTask;
  * <li>{@link #setSystemHeartbeatReceiveInterval}</li>
  * </ul>
  *
- * @author Rossen Stoyanchev
- * @author Andy Wilkinson
+
+
  * @since 4.0
  */
 public class StompBrokerRelayMessageHandler extends AbstractBrokerMessageHandler {

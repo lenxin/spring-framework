@@ -15,7 +15,7 @@ import org.springframework.lang.Nullable;
  * and/or default FileTypeMap. Autodetected by {@link MimeMessageHelper}, which
  * will use the carried encoding and FileTypeMap unless explicitly overridden.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see JavaMailSenderImpl#createMimeMessage()
  * @see MimeMessageHelper#getDefaultEncoding(javax.mail.internet.MimeMessage)

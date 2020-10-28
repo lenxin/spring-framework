@@ -5,7 +5,7 @@ import java.sql.ResultSet
 /**
  * Extension for [JdbcOperations.queryForObject] providing a `queryForObject<Foo>("...")` variant.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 inline fun <reified T> JdbcOperations.queryForObject(sql: String): T =
@@ -15,7 +15,7 @@ inline fun <reified T> JdbcOperations.queryForObject(sql: String): T =
  * Extensions for [JdbcOperations.queryForObject] providing a RowMapper-like function
  * variant: `queryForObject("...", arg1, argN){ rs, i -> }`.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 inline fun <reified T> JdbcOperations.queryForObject(sql: String, vararg args: Any, crossinline function: (ResultSet, Int) -> T): T =
@@ -25,7 +25,7 @@ inline fun <reified T> JdbcOperations.queryForObject(sql: String, vararg args: A
  * Extension for [JdbcOperations.queryForObject] providing a
  * `queryForObject<Foo>("...", arrayOf(arg1, argN), intArray(type1, typeN))` variant.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 inline fun <reified T> JdbcOperations.queryForObject(sql: String, args: Array<out Any>, argTypes: IntArray): T? =
@@ -35,7 +35,7 @@ inline fun <reified T> JdbcOperations.queryForObject(sql: String, args: Array<ou
  * Extension for [JdbcOperations.queryForObject] providing a
  * `queryForObject<Foo>("...", arrayOf(arg1, argN))` variant.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 inline fun <reified T> JdbcOperations.queryForObject(sql: String, args: Array<out Any>): T? =
@@ -44,7 +44,7 @@ inline fun <reified T> JdbcOperations.queryForObject(sql: String, args: Array<ou
 /**
  * Extension for [JdbcOperations.queryForList] providing a `queryForList<Foo>("...")` variant.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 @Suppress("EXTENSION_SHADOWED_BY_MEMBER")
@@ -55,7 +55,7 @@ inline fun <reified T> JdbcOperations.queryForList(sql: String): List<T> =
  * Extension for [JdbcOperations.queryForList] providing a
  * `queryForList<Foo>("...", arrayOf(arg1, argN), intArray(type1, typeN))` variant.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 @Suppress("EXTENSION_SHADOWED_BY_MEMBER")
@@ -67,7 +67,7 @@ inline fun <reified T> JdbcOperations.queryForList(sql: String, args: Array<out 
  * Extension for [JdbcOperations.queryForList] providing a
  * `queryForList<Foo>("...", arrayOf(arg1, argN))` variant.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 inline fun <reified T> JdbcOperations.queryForList(sql: String, args: Array<out Any>): List<T> =
@@ -77,7 +77,7 @@ inline fun <reified T> JdbcOperations.queryForList(sql: String, args: Array<out 
  * Extension for [JdbcOperations.query] providing a ResultSetExtractor-like function
  * variant: `query<Foo>("...", arg1, argN){ rs -> }`.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 inline fun <reified T> JdbcOperations.query(sql: String, vararg args: Any,
@@ -88,7 +88,7 @@ inline fun <reified T> JdbcOperations.query(sql: String, vararg args: Any,
  * Extension for [JdbcOperations.query] providing a RowCallbackHandler-like function
  * variant: `query("...", arg1, argN){ rs -> }`.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 fun JdbcOperations.query(sql: String, vararg args: Any, function: (ResultSet) -> Unit): Unit =
@@ -98,7 +98,7 @@ fun JdbcOperations.query(sql: String, vararg args: Any, function: (ResultSet) ->
  * Extensions for [JdbcOperations.query] providing a RowMapper-like function variant:
  * `query("...", arg1, argN){ rs, i -> }`.
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 fun <T> JdbcOperations.query(sql: String, vararg args: Any, function: (ResultSet, Int) -> T): List<T> =

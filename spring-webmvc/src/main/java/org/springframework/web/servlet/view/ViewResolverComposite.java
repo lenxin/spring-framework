@@ -20,8 +20,8 @@ import org.springframework.web.servlet.ViewResolver;
 /**
  * A {@link org.springframework.web.servlet.ViewResolver} that delegates to others.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
  */
 public class ViewResolverComposite implements ViewResolver, Ordered, InitializingBean,

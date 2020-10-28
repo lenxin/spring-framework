@@ -18,7 +18,7 @@ import org.springframework.util.ClassUtils;
  * <p>To be configured with a {@link javax.jms.QueueConnectionFactory} and a
  * target queue (either as {@link javax.jms.Queue} reference or as queue name).
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see #setConnectionFactory
  * @see #setQueueName

@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rod Johnson
- * @author Chris Beams
+
+
  * @since 13.05.2003
  */
 public class DelegatingIntroductionInterceptorTests {

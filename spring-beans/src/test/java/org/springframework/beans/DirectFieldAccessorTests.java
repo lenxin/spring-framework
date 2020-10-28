@@ -9,9 +9,9 @@ import static org.junit.Assert.*;
 /**
  * Specific {@link DirectFieldAccessor} tests.
  *
- * @author Jose Luis Martin
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
+
  */
 public class DirectFieldAccessorTests extends AbstractPropertyAccessorTests {
 

@@ -25,7 +25,7 @@ import org.springframework.lang.Nullable;
  *
  * <p>Created via the {@link HttpComponentsClientHttpRequestFactory}.
  *
- * @author Arjen Poutsma
+
  * @since 4.0
  * @see HttpComponentsClientHttpRequestFactory#createRequest(java.net.URI, org.springframework.http.HttpMethod)
  */

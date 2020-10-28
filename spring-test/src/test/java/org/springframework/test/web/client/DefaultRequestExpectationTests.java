@@ -18,7 +18,7 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 
 /**
  * Unit tests for {@link DefaultRequestExpectation}.
- * @author Rossen Stoyanchev
+
  */
 public class DefaultRequestExpectationTests {
 

@@ -8,7 +8,7 @@ import org.springframework.util.Assert;
 /**
  * Default implementation of the {@link BootstrapContext} interface.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 public class DefaultBootstrapContext implements BootstrapContext {

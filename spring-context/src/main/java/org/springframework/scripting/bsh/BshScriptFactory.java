@@ -21,8 +21,8 @@ import org.springframework.util.ReflectionUtils;
  * {@link org.springframework.scripting.support.ScriptFactoryPostProcessor};
  * see the latter's javadoc for a configuration example.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
  * @since 2.0
  * @see BshScriptUtils
  * @see org.springframework.scripting.support.ScriptFactoryPostProcessor

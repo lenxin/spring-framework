@@ -12,7 +12,7 @@ import org.springframework.cache.interceptor.SimpleKey;
  * account. To be used with a multi parameters key to validate it has been
  * used properly.
  *
- * @author Stephane Nicoll
+
  */
 public class TestableCacheKeyGenerator implements CacheKeyGenerator {
 

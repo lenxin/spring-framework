@@ -8,7 +8,7 @@ import org.springframework.util.MethodInvoker;
  * Propagated to the Quartz scheduler from a Job that reflectively invokes
  * an arbitrary target method.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.3
  * @see MethodInvokingJobDetailFactoryBean
  */

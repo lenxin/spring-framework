@@ -11,7 +11,7 @@ import org.springframework.test.context.transaction.ejb.dao.RequiresNewEjbTxTest
  * for the {@link TransactionalTestExecutionListener} to {@code false} (i.e.,
  * <em>commit</em>).
  *
- * @author Sam Brannen
+
  * @since 4.0.1
  */
 @ContextConfiguration("requires-new-tx-config.xml")

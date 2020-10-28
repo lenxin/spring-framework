@@ -12,7 +12,7 @@ import org.springframework.util.Assert;
 /**
  * Holder for {@link JAXBContext} instances.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 final class JaxbContextContainer {

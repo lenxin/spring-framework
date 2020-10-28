@@ -81,9 +81,9 @@ import static org.junit.Assert.*;
  * Test fixture for {@link MessageBrokerBeanDefinitionParser}.
  * Also see test configuration files websocket-config-broker-*.xml.
  *
- * @author Brian Clozel
- * @author Artem Bilan
- * @author Rossen Stoyanchev
+
+
+
  */
 public class MessageBrokerBeanDefinitionParserTests {
 

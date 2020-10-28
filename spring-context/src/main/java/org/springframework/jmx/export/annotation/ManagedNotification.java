@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
  *
  * <p>As of Spring Framework 4.2.4, this annotation is declared as repeatable.
  *
- * @author Rob Harrop
+
  * @since 2.0
  * @see org.springframework.jmx.export.metadata.ManagedNotification
  */

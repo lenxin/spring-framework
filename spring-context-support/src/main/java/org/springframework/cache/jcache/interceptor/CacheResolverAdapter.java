@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  * JSR-107 {@link javax.cache.annotation.CacheResolver}.
  * <p>Used internally to invoke user-based JSR-107 cache resolvers.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 class CacheResolverAdapter implements CacheResolver {

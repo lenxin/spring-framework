@@ -1,7 +1,7 @@
 package example.scannable;
 
 /**
- * @author Mark Fisher
+
  */
 @CustomComponent
 @CustomAnnotations.SpecialAnnotation

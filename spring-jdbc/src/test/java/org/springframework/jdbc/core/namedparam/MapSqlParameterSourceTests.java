@@ -10,9 +10,9 @@ import org.springframework.jdbc.support.JdbcUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Rick Evans
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
+
  */
 public class MapSqlParameterSourceTests {
 

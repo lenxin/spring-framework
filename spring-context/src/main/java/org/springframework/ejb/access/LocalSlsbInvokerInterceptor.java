@@ -28,8 +28,8 @@ import org.springframework.lang.Nullable;
  * property to false, in which case the home will be fetched on first access to the EJB.
  * (This flag is only true by default for backwards compatibility reasons).
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see AbstractSlsbInvokerInterceptor#setLookupHomeOnStartup
  * @see AbstractSlsbInvokerInterceptor#setCacheHome
  */

@@ -20,7 +20,7 @@ import org.springframework.transaction.PlatformTransactionManager;
  * This is even generally preferred since it doesn't lead to early initialization
  * of the {@code PlatformTransactionManager} bean.
  *
- * @author Chris Beams
+
  * @since 3.1
  * @see EnableTransactionManagement
  * @see org.springframework.context.annotation.Primary

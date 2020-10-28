@@ -28,9 +28,9 @@ import org.springframework.util.xml.DomUtils;
  * {@link org.springframework.beans.factory.xml.BeanDefinitionParser
  * BeanDefinitionParser} for the {@code <tx:advice/>} tag.
  *
- * @author Costin Leau
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
+
  */
 class CacheAdviceParser extends AbstractSingleBeanDefinitionParser {
 

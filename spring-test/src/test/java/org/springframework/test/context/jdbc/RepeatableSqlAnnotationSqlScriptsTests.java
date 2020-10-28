@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * This is a copy of {@link TransactionalSqlScriptsTests} that verifies proper
  * handling of {@link Sql @Sql} as a {@link Repeatable} annotation.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

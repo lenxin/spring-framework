@@ -22,9 +22,9 @@ import org.springframework.util.Assert;
  * events configured via the
  * {@link #setApplicationEventClass "applicationEventClass"} property.
  *
- * @author Dmitriy Kopylenko
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
+
  * @see #setApplicationEventClass
  * @see org.springframework.context.ApplicationEvent
  * @see org.springframework.context.ApplicationListener

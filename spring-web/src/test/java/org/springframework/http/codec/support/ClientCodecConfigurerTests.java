@@ -49,7 +49,7 @@ import static org.springframework.core.ResolvableType.*;
 /**
  * Unit tests for {@link ClientCodecConfigurer}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ClientCodecConfigurerTests {
 

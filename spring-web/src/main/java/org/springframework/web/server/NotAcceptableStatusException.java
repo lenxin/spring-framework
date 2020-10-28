@@ -9,7 +9,7 @@ import org.springframework.http.MediaType;
 /**
  * Exception for errors that fit response status 406 (not acceptable).
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 @SuppressWarnings("serial")

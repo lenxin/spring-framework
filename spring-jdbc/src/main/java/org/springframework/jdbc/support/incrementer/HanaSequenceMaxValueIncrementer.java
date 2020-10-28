@@ -6,8 +6,8 @@ import javax.sql.DataSource;
  * {@link DataFieldMaxValueIncrementer} that retrieves the next value
  * of a given SAP HANA sequence.
  *
- * @author Jonathan Bregler
- * @author Juergen Hoeller
+
+
  * @since 4.3.15
  */
 public class HanaSequenceMaxValueIncrementer extends AbstractSequenceMaxValueIncrementer {

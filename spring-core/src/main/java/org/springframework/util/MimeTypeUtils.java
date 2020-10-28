@@ -24,10 +24,10 @@ import org.springframework.lang.Nullable;
 /**
  * Miscellaneous {@link MimeType} utility methods.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Dimitrios Liapis
- * @author Brian Clozel
+
+
+
+
  * @since 4.0
  */
 public abstract class MimeTypeUtils {

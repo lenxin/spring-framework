@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
  * where {@link PropertySource} can simply be declared several times on the same
  * {@linkplain ElementType#TYPE type}, implicitly generating this container annotation.
  *
- * @author Phillip Webb
+
  * @since 4.0
  * @see PropertySource
  */

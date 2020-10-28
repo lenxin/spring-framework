@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link DelegatingSmartContextLoader}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 public class DelegatingSmartContextLoaderTests {

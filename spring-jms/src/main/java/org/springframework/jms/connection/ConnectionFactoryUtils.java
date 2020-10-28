@@ -27,7 +27,7 @@ import org.springframework.util.Assert;
  * {@link org.springframework.jms.core.JmsTemplate} as well as
  * {@link org.springframework.jms.listener.DefaultMessageListenerContainer}.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see SmartConnectionFactory
  */

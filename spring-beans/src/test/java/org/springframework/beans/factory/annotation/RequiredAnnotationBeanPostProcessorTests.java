@@ -19,8 +19,8 @@ import org.springframework.beans.factory.support.RootBeanDefinition;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Chris Beams
+
+
  * @since 2.0
  */
 @Deprecated

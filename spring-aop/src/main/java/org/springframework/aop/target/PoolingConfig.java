@@ -3,8 +3,8 @@ package org.springframework.aop.target;
 /**
  * Config interface for a pooling target source.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public interface PoolingConfig {
 

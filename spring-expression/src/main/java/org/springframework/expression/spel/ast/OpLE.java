@@ -13,9 +13,9 @@ import org.springframework.util.NumberUtils;
 /**
  * Implements the less-than-or-equal operator.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Giovanni Dall'Oglio Risso
+
+
+
  * @since 3.0
  */
 public class OpLE extends Operator {

@@ -13,7 +13,7 @@ import org.springframework.scripting.support.StaticScriptSource;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class BshScriptEvaluatorTests {
 

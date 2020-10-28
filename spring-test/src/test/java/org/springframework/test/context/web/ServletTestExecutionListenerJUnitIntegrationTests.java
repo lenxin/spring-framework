@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 /**
  * JUnit-based integration tests for {@link ServletTestExecutionListener}.
  *
- * @author Sam Brannen
+
  * @since 3.2.9
  * @see org.springframework.test.context.testng.web.ServletTestExecutionListenerTestNGIntegrationTests
  */

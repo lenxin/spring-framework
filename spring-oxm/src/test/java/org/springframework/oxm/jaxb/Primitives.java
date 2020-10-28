@@ -6,7 +6,7 @@ import javax.xml.namespace.QName;
 /**
  * Used by {@link org.springframework.oxm.jaxb.Jaxb2MarshallerTests}.
  *
- * @author Arjen Poutsma
+
  */
 public class Primitives {
 

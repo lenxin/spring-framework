@@ -18,7 +18,7 @@ import org.springframework.web.server.WebFilterChain;
  *
  * <p>The convenience method {@link #get(Context)} looks up the exchange.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public class ServerWebExchangeContextFilter implements WebFilter {

@@ -43,8 +43,8 @@ import org.springframework.util.ObjectUtils;
  * }
  * </pre>
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
+
+
  * @since 4.1
  * @param <T> the body type
  * @see #getMethod()

@@ -9,7 +9,7 @@ import org.springframework.http.HttpMethod;
  * Factory for {@link AsyncClientHttpRequest} objects.
  * Requests are created by the {@link #createAsyncRequest(URI, HttpMethod)} method.
  *
- * @author Arjen Poutsma
+
  * @since 4.0
  * @deprecated as of Spring 5.0, in favor of {@link org.springframework.http.client.reactive.ClientHttpConnector}
  */

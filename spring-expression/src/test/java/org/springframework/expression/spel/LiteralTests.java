@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Tests the evaluation of basic literals: boolean, integer, hex integer, long, real, null, date
  *
- * @author Andy Clement
+
  */
 public class LiteralTests extends AbstractExpressionTests {
 

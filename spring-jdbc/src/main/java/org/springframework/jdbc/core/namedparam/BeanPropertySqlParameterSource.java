@@ -20,8 +20,8 @@ import org.springframework.util.StringUtils;
  *
  * <p>Uses a Spring BeanWrapper for bean property access underneath.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see NamedParameterJdbcTemplate
  * @see org.springframework.beans.BeanWrapper

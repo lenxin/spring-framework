@@ -13,7 +13,7 @@ import org.springframework.mock.web.test.server.MockServerWebExchange;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class RequestPredicateAttributesTests {
 

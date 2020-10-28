@@ -18,8 +18,8 @@ import org.springframework.util.SerializationTestUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  */
 public class AnnotationDrivenTests {
 

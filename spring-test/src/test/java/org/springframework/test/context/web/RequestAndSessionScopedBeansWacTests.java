@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * Integration tests that verify support for request and session scoped beans
  * in conjunction with the TestContext Framework.
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

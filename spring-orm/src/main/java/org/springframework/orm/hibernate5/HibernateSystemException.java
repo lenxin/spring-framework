@@ -10,7 +10,7 @@ import org.springframework.lang.Nullable;
  * for Hibernate system errors that do not match any concrete
  * {@code org.springframework.dao} exceptions.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see SessionFactoryUtils#convertHibernateAccessException
  */

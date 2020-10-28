@@ -6,8 +6,8 @@ import org.springframework.util.Assert;
  * Implementation of {@link ProfileValueSource} which uses system properties as
  * the underlying source.
  *
- * @author Rod Johnson
- * @author Sam Brannen
+
+
  * @since 2.0
  */
 public final class SystemProfileValueSource implements ProfileValueSource {

@@ -12,9 +12,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Marcel Overdijk
- * @author Kazuki Shimizu
+
+
+
  */
 public class ResponseEntityTests {
 

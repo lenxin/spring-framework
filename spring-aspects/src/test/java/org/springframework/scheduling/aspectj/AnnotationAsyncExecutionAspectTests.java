@@ -29,8 +29,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AnnotationAsyncExecutionAspect}.
  *
- * @author Ramnivas Laddad
- * @author Stephane Nicoll
+
+
  */
 public class AnnotationAsyncExecutionAspectTests {
 

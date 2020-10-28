@@ -5,7 +5,7 @@ import org.springframework.core.NestedRuntimeException;
 /**
  * Abstract base class for exception published by {@link WebClient} in case of errors.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public abstract class WebClientException extends NestedRuntimeException {

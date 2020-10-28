@@ -3,7 +3,7 @@ package org.springframework.jms;
 /**
  * Runtime exception mirroring the JMS TransactionInProgressException.
  *
- * @author Mark Pollack
+
  * @since 1.1
  * @see javax.jms.TransactionInProgressException
  */

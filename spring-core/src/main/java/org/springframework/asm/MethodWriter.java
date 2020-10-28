@@ -6,8 +6,8 @@ package org.springframework.asm;
  *
  * @see <a href="https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-4.html#jvms-4.6">JVMS
  *     4.6</a>
- * @author Eric Bruneton
- * @author Eugene Kuleshov
+
+
  */
 final class MethodWriter extends MethodVisitor {
 

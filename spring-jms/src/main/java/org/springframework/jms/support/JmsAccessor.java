@@ -24,7 +24,7 @@ import org.springframework.util.Assert;
  * <p>Not intended to be used directly.
  * See {@link org.springframework.jms.core.JmsTemplate}.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see org.springframework.jms.support.destination.JmsDestinationAccessor
  * @see org.springframework.jms.core.JmsTemplate

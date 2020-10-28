@@ -11,7 +11,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 /**
  * Empty database configuration class for SQL script integration tests.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @Configuration

@@ -46,7 +46,7 @@ import org.springframework.util.ClassUtils;
  * configuration: Simply replace the definition of this FactoryBean with a
  * {@link org.springframework.jdbc.datasource.DriverManagerDataSource} definition!
  *
- * @author Juergen Hoeller
+
  * @since 22.05.2003
  * @see #setProxyInterface
  * @see #setLookupOnStartup

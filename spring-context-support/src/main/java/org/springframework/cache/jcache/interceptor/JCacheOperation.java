@@ -13,7 +13,7 @@ import org.springframework.cache.interceptor.CacheResolver;
  * <p>A cache operation can be statically cached as it does not contain any
  * runtime operation of a specific cache invocation.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @param <A> the type of the JSR-107 annotation
  */

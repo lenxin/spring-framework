@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 /**
  * Test providing operator support
  *
- * @author Andy Clement
+
  */
 public class OperatorOverloaderTests extends AbstractExpressionTests {
 

@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  *
  * <p>Example: "java.lang.String" as in the expression "new java.lang.String('hello')"
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class QualifiedIdentifier extends SpelNodeImpl {

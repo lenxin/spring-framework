@@ -11,7 +11,7 @@ import org.springframework.mock.web.test.MockHttpServletRequest;
 /**
  * Test case for {@link CorsUtils}.
  *
- * @author Sebastien Deleuze
+
  */
 public class CorsUtilsTests {
 

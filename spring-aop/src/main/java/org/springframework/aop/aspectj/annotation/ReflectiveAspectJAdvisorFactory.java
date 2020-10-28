@@ -43,11 +43,11 @@ import org.springframework.util.comparator.InstanceComparator;
  * classes honoring the AspectJ 5 annotation syntax, using reflection to
  * invoke the corresponding advice methods.
  *
- * @author Rod Johnson
- * @author Adrian Colyer
- * @author Juergen Hoeller
- * @author Ramnivas Laddad
- * @author Phillip Webb
+
+
+
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

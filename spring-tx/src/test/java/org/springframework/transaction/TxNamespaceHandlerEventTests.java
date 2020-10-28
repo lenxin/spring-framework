@@ -14,8 +14,8 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Torsten Juergeleit
- * @author Juergen Hoeller
+
+
  */
 public class TxNamespaceHandlerEventTests {
 

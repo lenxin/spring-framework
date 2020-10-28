@@ -10,7 +10,7 @@ import org.springframework.web.servlet.HandlerMapping;
  * a request matching API aligned with its internal request matching
  * configuration and implementation.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.3.1
  * @see HandlerMappingIntrospector
  */

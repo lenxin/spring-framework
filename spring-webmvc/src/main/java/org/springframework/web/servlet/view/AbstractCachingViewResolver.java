@@ -21,8 +21,8 @@ import org.springframework.web.servlet.ViewResolver;
  * <p>Subclasses need to implement the {@link #loadView} template method,
  * building the View object for a specific view name and locale.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #loadView
  */
 public abstract class AbstractCachingViewResolver extends WebApplicationObjectSupport implements ViewResolver {

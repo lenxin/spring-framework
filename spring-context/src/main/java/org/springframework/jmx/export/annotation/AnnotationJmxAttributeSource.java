@@ -34,10 +34,10 @@ import org.springframework.util.StringValueResolver;
  * Implementation of the {@code JmxAttributeSource} interface that
  * reads annotations and exposes the corresponding attributes.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Jennifer Hickey
- * @author Stephane Nicoll
+
+
+
+
  * @since 1.2
  * @see ManagedResource
  * @see ManagedAttribute

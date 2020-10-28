@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
  *
  * <p>See also {@link TigerAspectJAdviceParameterNameDiscovererTests} for tests relating to annotations.
  *
- * @author Adrian Colyer
- * @author Chris Beams
+
+
  */
 public class AspectJAdviceParameterNameDiscovererTests {
 

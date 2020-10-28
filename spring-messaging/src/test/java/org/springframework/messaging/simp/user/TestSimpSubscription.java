@@ -3,7 +3,7 @@ package org.springframework.messaging.simp.user;
 import org.springframework.util.ObjectUtils;
 
 /**
- * @author Rossen Stoyanchev
+
  */
 public class TestSimpSubscription implements SimpSubscription {
 

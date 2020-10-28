@@ -21,8 +21,8 @@ import org.springframework.util.Assert;
  * to specifying JMX object names. Note that only beans exported by the
  * same {@link MBeanExporter} are supported for such bean names.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see MBeanExporter#setNotificationListeners
  */

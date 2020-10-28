@@ -4,7 +4,7 @@ import org.springframework.http.server.reactive.AbstractHttpHandlerIntegrationTe
 import org.springframework.http.server.reactive.HttpHandler;
 
 /**
- * @author Arjen Poutsma
+
  */
 public abstract class AbstractRouterFunctionIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

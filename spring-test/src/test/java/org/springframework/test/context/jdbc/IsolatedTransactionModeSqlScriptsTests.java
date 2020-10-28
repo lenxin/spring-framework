@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  * Transactional integration tests that verify commit semantics for
  * {@link SqlConfig#transactionMode} and {@link TransactionMode#ISOLATED}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @ContextConfiguration(classes = PopulatedSchemaDatabaseConfig.class)

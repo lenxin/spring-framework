@@ -14,8 +14,8 @@ import org.springframework.web.server.WebSession;
  * {@link WebSessionIdResolver} for session id resolution and to a
  * {@link WebSessionStore}.
  *
- * @author Rossen Stoyanchev
- * @author Rob Winch
+
+
  * @since 5.0
  */
 public class DefaultWebSessionManager implements WebSessionManager {

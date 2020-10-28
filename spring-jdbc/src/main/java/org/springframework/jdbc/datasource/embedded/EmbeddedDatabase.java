@@ -9,8 +9,8 @@ import javax.sql.DataSource;
  * {@link #shutdown} operation so that the embedded database instance can be
  * shut down gracefully.
  *
- * @author Keith Donald
- * @author Sam Brannen
+
+
  * @since 3.0
  */
 public interface EmbeddedDatabase extends DataSource {

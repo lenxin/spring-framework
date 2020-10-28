@@ -8,7 +8,7 @@ import org.springframework.util.Assert;
 /**
  * Expression language AST node that represents an integer literal.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class IntLiteral extends Literal {

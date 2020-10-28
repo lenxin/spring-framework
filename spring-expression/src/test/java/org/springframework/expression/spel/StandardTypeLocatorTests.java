@@ -26,7 +26,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for type comparison
  *
- * @author Andy Clement
+
  */
 public class StandardTypeLocatorTests {
 

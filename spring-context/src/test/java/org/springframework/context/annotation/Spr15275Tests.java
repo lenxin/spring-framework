@@ -9,7 +9,7 @@ import org.springframework.context.ApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class Spr15275Tests {
 

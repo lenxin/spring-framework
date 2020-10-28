@@ -23,9 +23,9 @@ import static org.junit.Assert.*;
  * Integration tests for scoped proxy use in conjunction with aop: namespace.
  * Deemed an integration test because .web mocks and application contexts are required.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  * @see org.springframework.aop.config.AopNamespaceHandlerTests
  */
 public class AopNamespaceHandlerScopeIntegrationTests {

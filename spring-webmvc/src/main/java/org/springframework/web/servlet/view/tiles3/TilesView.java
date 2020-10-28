@@ -31,10 +31,10 @@ import org.springframework.web.servlet.view.AbstractUrlBasedView;
  * through the Tiles Request API. The "url" property is interpreted as name of a
  * Tiles definition.
  *
- * @author Nicolas Le Bas
- * @author mick semb wever
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
+
+
  * @since 3.2
  */
 public class TilesView extends AbstractUrlBasedView {

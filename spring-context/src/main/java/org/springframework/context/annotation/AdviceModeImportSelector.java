@@ -13,7 +13,7 @@ import org.springframework.util.Assert;
  * based on an {@link AdviceMode} value from an annotation (such as the {@code @Enable*}
  * annotations).
  *
- * @author Chris Beams
+
  * @since 3.1
  * @param <A> annotation containing {@linkplain #getAdviceModeAttributeName() AdviceMode attribute}
  */

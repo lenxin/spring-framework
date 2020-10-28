@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
 /**
  * Exception thrown to indicate that a {@code Content-Type} is not supported.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 @SuppressWarnings("serial")

@@ -27,8 +27,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link AbstractSockJsService}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  */
 public class SockJsServiceTests extends AbstractHttpRequestTests {
 

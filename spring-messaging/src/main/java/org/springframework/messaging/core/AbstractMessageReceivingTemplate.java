@@ -9,9 +9,9 @@ import org.springframework.messaging.converter.MessageConverter;
  * An extension of {@link AbstractMessageSendingTemplate} that adds support for
  * receive style operations as defined by {@link MessageReceivingOperations}.
  *
- * @author Mark Fisher
- * @author Rossen Stoyanchev
- * @author Stephane Nicoll
+
+
+
  * @since 4.1
  * @param <D> the destination type
  */

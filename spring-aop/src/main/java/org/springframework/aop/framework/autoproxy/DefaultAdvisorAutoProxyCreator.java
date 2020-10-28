@@ -16,8 +16,8 @@ import org.springframework.lang.Nullable;
  * from the bean name by setting the {@code advisorBeanNamePrefix} property.
  * The separator (.) will also be used in this case.
  *
- * @author Rod Johnson
- * @author Rob Harrop
+
+
  */
 @SuppressWarnings("serial")
 public class DefaultAdvisorAutoProxyCreator extends AbstractAdvisorAutoProxyCreator implements BeanNameAware {

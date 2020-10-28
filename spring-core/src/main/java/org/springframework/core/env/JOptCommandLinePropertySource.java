@@ -34,9 +34,9 @@ import org.springframework.util.StringUtils;
  *
  * <p>Requires JOpt Simple version 4.3 or higher. Tested against JOpt up until 5.0.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Dave Syer
+
+
+
  * @since 3.1
  * @see CommandLinePropertySource
  * @see joptsimple.OptionParser

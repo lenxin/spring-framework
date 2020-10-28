@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Phillip Webb
+
  */
 public class Spr10744Tests {
 

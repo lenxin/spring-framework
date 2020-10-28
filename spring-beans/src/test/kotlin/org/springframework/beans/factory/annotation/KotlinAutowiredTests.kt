@@ -13,8 +13,8 @@ import org.springframework.tests.sample.beans.Colour
 /**
  * Tests for Kotlin support with [Autowired].
  *
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
  */
 class KotlinAutowiredTests {
 

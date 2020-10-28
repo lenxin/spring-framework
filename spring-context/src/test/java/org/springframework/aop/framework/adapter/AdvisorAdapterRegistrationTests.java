@@ -20,8 +20,8 @@ import static org.junit.Assert.*;
 /**
  * TestCase for AdvisorAdapterRegistrationManager mechanism.
  *
- * @author Dmitriy Kopylenko
- * @author Chris Beams
+
+
  */
 public class AdvisorAdapterRegistrationTests {
 

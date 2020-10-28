@@ -51,9 +51,9 @@ import org.springframework.util.ObjectUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class ConfigurationClassPostProcessorTests {
 

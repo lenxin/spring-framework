@@ -22,7 +22,7 @@ import static org.junit.Assert.*;
  * Class#isAssignableFrom. The former takes into account primitives and their object
  * wrapper types, whereas the latter does not.
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 public class PrimitiveBeanLookupAndAutowiringTests {

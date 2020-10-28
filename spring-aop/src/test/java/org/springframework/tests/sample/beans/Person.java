@@ -2,7 +2,7 @@ package org.springframework.tests.sample.beans;
 
 /**
  *
- * @author Rod Johnson
+
  */
 public interface Person {
 

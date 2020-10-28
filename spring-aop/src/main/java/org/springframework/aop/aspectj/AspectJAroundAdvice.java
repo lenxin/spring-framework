@@ -14,8 +14,8 @@ import org.springframework.aop.ProxyMethodInvocation;
  * Spring AOP around advice (MethodInterceptor) that wraps
  * an AspectJ advice method. Exposes ProceedingJoinPoint.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

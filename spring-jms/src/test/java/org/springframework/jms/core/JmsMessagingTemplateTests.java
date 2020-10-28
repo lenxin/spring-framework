@@ -41,7 +41,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for {@link JmsMessagingTemplate}.
  *
- * @author Stephane Nicoll
+
  */
 public class JmsMessagingTemplateTests {
 

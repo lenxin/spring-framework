@@ -18,8 +18,8 @@ import java.sql.SQLException;
  * if it is able to provide the SQL it uses for PreparedStatement creation.
  * This allows for better contextual information in case of exceptions.
  *
- * @author Rod Johnson
- * @author Thomas Risberg
+
+
  * @see JdbcTemplate#execute(CallableStatementCreator, CallableStatementCallback)
  * @see JdbcTemplate#call
  * @see SqlProvider

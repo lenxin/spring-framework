@@ -25,8 +25,8 @@ import org.springframework.util.Assert;
  * Spring's CCI operation objects and the {@link CciLocalTransactionManager}.
  * Can also be used directly in application code.
  *
- * @author Thierry Templier
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #getConnection
  * @see #releaseConnection

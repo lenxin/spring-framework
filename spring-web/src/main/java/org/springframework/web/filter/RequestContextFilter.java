@@ -22,9 +22,9 @@ import org.springframework.web.context.request.ServletRequestAttributes;
  * <p>This filter is mainly for use with third-party servlets, e.g. the JSF FacesServlet.
  * Within Spring's own web support, DispatcherServlet's processing is perfectly sufficient.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
- * @author Rossen Stoyanchev
+
+
+
  * @since 2.0
  * @see org.springframework.context.i18n.LocaleContextHolder
  * @see org.springframework.web.context.request.RequestContextHolder

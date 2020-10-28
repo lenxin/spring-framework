@@ -34,9 +34,9 @@ import org.springframework.util.ClassUtils;
  * In the latter case, RemoteExceptions thrown by the EJB stub will automatically get
  * converted to Spring's unchecked RemoteAccessException.
  *
- * @author Rod Johnson
- * @author Colin Sampaleanu
- * @author Juergen Hoeller
+
+
+
  * @since 09.05.2003
  * @see org.springframework.remoting.RemoteAccessException
  * @see AbstractSlsbInvokerInterceptor#setLookupHomeOnStartup

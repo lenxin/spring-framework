@@ -19,7 +19,7 @@ import org.springframework.test.context.ContextConfiguration;
  * {@link ContextConfiguration @ContextConfiguration} from the <em>Spring TestContext
  * Framework</em>.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see ExtendWith
  * @see SpringExtension

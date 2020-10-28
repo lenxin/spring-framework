@@ -18,7 +18,7 @@ import org.springframework.util.ClassUtils;
  * Utility methods for {@link SmartContextLoader SmartContextLoaders} that deal
  * with annotated classes (e.g., {@link Configuration @Configuration} classes).
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 public abstract class AnnotationConfigContextLoaderUtils {

@@ -24,8 +24,8 @@ import org.springframework.lang.Nullable;
  * and
  * <a href="https://www.ibm.com/support/knowledgecenter/SSEQTJ_9.0.0/com.ibm.websphere.javadoc.doc/web/apidocs/com/ibm/websphere/management/MBeanFactory.html">{@code MBeanFactory}</a>.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
  * @since 2.0.3
  * @see javax.management.MBeanServer
  * @see MBeanServerFactoryBean

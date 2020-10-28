@@ -9,7 +9,7 @@ import org.springframework.util.Assert;
  * Describes the semantics of a reactive type including boolean checks for
  * {@link #isMultiValue()}, {@link #supportsEmpty()}, and {@link #isNoValue()}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public final class ReactiveTypeDescriptor {

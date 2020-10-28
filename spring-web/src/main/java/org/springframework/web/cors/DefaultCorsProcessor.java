@@ -29,8 +29,8 @@ import org.springframework.util.CollectionUtils;
  * avoid adding CORS headers to the response. CORS processing is also skipped
  * if the response already contains CORS headers.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 4.2
  */
 public class DefaultCorsProcessor implements CorsProcessor {

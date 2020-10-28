@@ -11,8 +11,8 @@ import org.springframework.context.support.StaticApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  */
 public class LifecycleEventTests {
 

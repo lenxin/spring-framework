@@ -33,7 +33,7 @@ import static org.mockito.Mockito.*;
 /**
  * Unit and integration tests for {@link DelegatingWebConnection}.
  *
- * @author Rob Winch
+
  * @since 4.2
  */
 @RunWith(MockitoJUnitRunner.class)

@@ -12,8 +12,8 @@ import org.springframework.tests.sample.beans.GenericBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  */
 public class BeanWrapperEnumTests {
 

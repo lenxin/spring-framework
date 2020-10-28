@@ -26,7 +26,7 @@ import org.springframework.util.Assert;
  * EntityManagerFactory. Note that Spring's {@link org.springframework.orm.jpa.JpaTransactionManager}
  * always needs an EntityManagerFactory in order to create new transactional EntityManager instances.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see #setEntityManagerFactory
  * @see #setEntityManagerInterface

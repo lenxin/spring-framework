@@ -8,7 +8,7 @@ import java.util.function.Supplier
  * Extension for [GenericApplicationContext.registerBean] providing a
  * `registerBean<Foo>()` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> GenericApplicationContext.registerBean(vararg customizers: BeanDefinitionCustomizer) {
@@ -19,7 +19,7 @@ inline fun <reified T : Any> GenericApplicationContext.registerBean(vararg custo
  * Extension for [GenericApplicationContext.registerBean] providing a
  * `registerBean<Foo>("foo")` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> GenericApplicationContext.registerBean(beanName: String,
@@ -30,7 +30,7 @@ inline fun <reified T : Any> GenericApplicationContext.registerBean(beanName: St
 /**
  * Extension for [GenericApplicationContext.registerBean] providing a `registerBean { Foo() }` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> GenericApplicationContext.registerBean(
@@ -42,7 +42,7 @@ inline fun <reified T : Any> GenericApplicationContext.registerBean(
  * Extension for [GenericApplicationContext.registerBean] providing a
  * `registerBean("foo") { Foo() }` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> GenericApplicationContext.registerBean(name: String,
@@ -54,7 +54,7 @@ inline fun <reified T : Any> GenericApplicationContext.registerBean(name: String
  * Extension for [GenericApplicationContext] allowing `GenericApplicationContext { ... }`
  * style initialization.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 @Deprecated("Use regular apply method instead.", replaceWith = ReplaceWith("GenericApplicationContext().apply(configure)"))

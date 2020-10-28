@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 @SuppressWarnings("unchecked")

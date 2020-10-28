@@ -10,7 +10,7 @@ import org.springframework.util.NumberUtils;
  * <p>Support Number classes including Byte, Short, Integer, Float, Double, Long, BigInteger, BigDecimal. This class
  * delegates to {@link NumberUtils#parseNumber(String, Class)} to perform the conversion.
  *
- * @author Keith Donald
+
  * @since 3.0
  * @see java.lang.Byte
  * @see java.lang.Short

@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.condition.ConsumesRequestCondition.Co
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class ConsumesRequestConditionTests {
 

@@ -12,7 +12,7 @@ import org.springframework.http.HttpMethod;
  * to the origin server and provide all necessary infrastructure to send a
  * {@link ClientHttpRequest} and receive a {@link ClientHttpResponse}.
  *
- * @author Brian Clozel
+
  * @since 5.0
  */
 public interface ClientHttpConnector {

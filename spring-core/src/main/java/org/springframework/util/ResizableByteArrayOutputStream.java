@@ -16,8 +16,8 @@ import java.io.ByteArrayOutputStream;
  * is needed (since {@link FastByteArrayOutputStream} is more efficient with buffer
  * resize management but doesn't extend the standard {@link ByteArrayOutputStream}).
  *
- * @author Brian Clozel
- * @author Juergen Hoeller
+
+
  * @since 4.0.3
  * @see #resize
  * @see FastByteArrayOutputStream

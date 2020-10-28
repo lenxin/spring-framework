@@ -15,7 +15,7 @@ import org.springframework.test.context.ContextHierarchy;
 /**
  * Custom context hierarchy configuration annotation.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 @ContextHierarchy(@ContextConfiguration(classes = { DevConfig.class, ProductionConfig.class }))

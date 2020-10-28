@@ -64,8 +64,8 @@ import org.springframework.web.server.WebHandler;
  * avoiding unnecessary overhead for resources that are already cached by the
  * client.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 public class ResourceWebHandler implements WebHandler, InitializingBean {

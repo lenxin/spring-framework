@@ -15,7 +15,7 @@ import org.xml.sax.ext.LexicalHandler;
  * SAX {@link org.xml.sax.ContentHandler} and {@link LexicalHandler}
  * that writes to an {@link XMLStreamWriter}.
  *
- * @author Arjen Poutsma
+
  * @since 4.0.3
  */
 class StaxStreamHandler extends AbstractStaxHandler {

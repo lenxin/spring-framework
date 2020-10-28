@@ -15,7 +15,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link org.springframework.web.socket.adapter.jetty.JettyWebSocketHandlerAdapter}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class JettyWebSocketHandlerAdapterTests {
 

@@ -16,7 +16,7 @@ import org.springframework.lang.Nullable;
  * application code. There is one available factory method, see
  * {@link RestTemplate#responseEntityExtractor(Type)}.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @param <T> the data type
  * @see RestTemplate#execute

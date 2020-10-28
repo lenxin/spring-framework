@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
  * <p>Mainly intended for internal use within the framework.
  *
  * @param <T> the payload type of the event
- * @author Stephane Nicoll
+
  * @since 4.2
  */
 @SuppressWarnings("serial")

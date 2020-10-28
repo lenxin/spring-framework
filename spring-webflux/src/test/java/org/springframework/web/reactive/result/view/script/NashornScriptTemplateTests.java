@@ -24,7 +24,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Unit tests for pure JavaScript templates running on Nashorn engine.
  *
- * @author Sebastien Deleuze
+
  */
 public class NashornScriptTemplateTests {
 

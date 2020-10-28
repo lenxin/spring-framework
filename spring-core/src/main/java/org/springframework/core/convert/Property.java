@@ -24,8 +24,8 @@ import org.springframework.util.StringUtils;
  * <p>Used to build a {@link TypeDescriptor} from a property location. The built
  * {@code TypeDescriptor} can then be used to convert from/to the property type.
  *
- * @author Keith Donald
- * @author Phillip Webb
+
+
  * @since 3.1
  * @see TypeDescriptor#TypeDescriptor(Property)
  * @see TypeDescriptor#nested(Property, int)

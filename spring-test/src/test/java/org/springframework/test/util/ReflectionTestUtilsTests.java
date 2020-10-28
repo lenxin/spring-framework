@@ -21,8 +21,8 @@ import static org.springframework.test.util.ReflectionTestUtils.*;
 /**
  * Unit tests for {@link ReflectionTestUtils}.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  */
 public class ReflectionTestUtilsTests {
 

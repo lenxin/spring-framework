@@ -42,9 +42,9 @@ import org.springframework.lang.Nullable;
  * of the class path (e.g. in the "/WEB-INF/classes" directory), as long as the
  * Spring JDBC package is loaded from the same ClassLoader.
  *
- * @author Rod Johnson
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
+
  * @see SQLErrorCodesFactory
  * @see SQLStateSQLExceptionTranslator
  */

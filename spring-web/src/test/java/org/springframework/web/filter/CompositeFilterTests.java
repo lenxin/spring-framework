@@ -20,7 +20,7 @@ import org.springframework.mock.web.test.MockServletContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Dave Syer
+
  */
 public class CompositeFilterTests {
 

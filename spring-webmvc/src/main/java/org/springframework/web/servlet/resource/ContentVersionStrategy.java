@@ -11,8 +11,8 @@ import org.springframework.util.FileCopyUtils;
  * of the resource and appends it to the file name, e.g.
  * {@code "styles/main-e36d2e05253c6c7085a91522ce43a0b4.css"}.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
  * @see VersionResourceResolver
  */

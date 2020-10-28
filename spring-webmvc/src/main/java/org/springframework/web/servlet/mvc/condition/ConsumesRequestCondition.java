@@ -25,8 +25,8 @@ import org.springframework.web.servlet.mvc.condition.HeadersRequestCondition.Hea
  * where the header name is 'Content-Type'. Regardless of which syntax is
  * used, the semantics are the same.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 public final class ConsumesRequestCondition extends AbstractRequestCondition<ConsumesRequestCondition> {

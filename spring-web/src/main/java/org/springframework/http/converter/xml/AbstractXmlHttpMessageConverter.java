@@ -25,8 +25,8 @@ import org.springframework.http.converter.HttpMessageNotWritableException;
  * application/*-xml}. This can be overridden by setting the {@link #setSupportedMediaTypes(java.util.List)
  * supportedMediaTypes} property.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @param <T> the converted object type
  */

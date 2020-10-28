@@ -7,7 +7,7 @@ import groovy.text.markup.MarkupTemplateEngine;
  * {@link MarkupTemplateEngine} for automatic lookup in a web environment.
  * Detected and used by {@link GroovyMarkupView}.
  *
- * @author Brian Clozel
+
  * @since 4.1
  * @see GroovyMarkupConfigurer
  */

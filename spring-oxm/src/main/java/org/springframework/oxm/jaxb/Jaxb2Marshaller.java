@@ -91,9 +91,9 @@ import org.springframework.util.xml.StaxUtils;
  * property on this bean, possibly customize the marshaller and unmarshaller by setting
  * properties, schemas, adapters, and listeners, and to refer to it.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
+
  * @since 3.0
  * @see #setContextPath
  * @see #setClassesToBeBound

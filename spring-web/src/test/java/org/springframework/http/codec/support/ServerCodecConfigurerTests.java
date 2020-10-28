@@ -50,7 +50,7 @@ import static org.springframework.core.ResolvableType.*;
 /**
  * Unit tests for {@link ServerCodecConfigurer}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ServerCodecConfigurerTests {
 

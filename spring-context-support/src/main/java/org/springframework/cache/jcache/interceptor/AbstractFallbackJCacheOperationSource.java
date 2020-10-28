@@ -19,8 +19,8 @@ import org.springframework.lang.Nullable;
  *
  * <p>This implementation caches attributes by method after they are first used.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see org.springframework.cache.interceptor.AbstractFallbackCacheOperationSource
  */

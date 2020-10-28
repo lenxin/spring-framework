@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class EchoHandlerIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

@@ -18,8 +18,8 @@ import static org.mockito.Mockito.*;
 /**
  * Tests for {@link BasicAuthorizationInterceptor}.
  *
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
  */
 public class BasicAuthorizationInterceptorTests {
 

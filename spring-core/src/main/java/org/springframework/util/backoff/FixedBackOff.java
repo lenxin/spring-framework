@@ -4,7 +4,7 @@ package org.springframework.util.backoff;
  * A simple {@link BackOff} implementation that provides a fixed interval
  * between two attempts and a maximum number of retries.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class FixedBackOff implements BackOff {

@@ -15,7 +15,7 @@ import static java.util.Collections.emptyList;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class RouterFunctionBuilderTests {
 

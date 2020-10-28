@@ -12,7 +12,7 @@ import javax.resource.spi.ResourceAdapter;
  * for plugging in any JCA-based JMS provider, creating corresponding
  * ActivationSpec objects based on common JMS configuration settings.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see JmsActivationSpecConfig
  * @see JmsMessageEndpointManager#setActivationSpecFactory

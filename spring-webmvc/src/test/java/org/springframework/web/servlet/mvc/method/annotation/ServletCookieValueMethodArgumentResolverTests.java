@@ -18,8 +18,8 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with {@link ServletCookieValueMethodArgumentResolver}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 public class ServletCookieValueMethodArgumentResolverTests {
 

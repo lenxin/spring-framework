@@ -31,8 +31,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link PrintingResultHandler}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @see org.springframework.test.web.servlet.samples.standalone.resulthandlers.PrintingResultHandlerSmokeTests
  */
 public class PrintingResultHandlerTests {

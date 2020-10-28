@@ -18,8 +18,8 @@ import org.springframework.lang.Nullable;
  * target collection. Will perform an element conversion from the source collection's
  * parameterized type to the target collection's parameterized type if necessary.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 final class CollectionToCollectionConverter implements ConditionalGenericConverter {

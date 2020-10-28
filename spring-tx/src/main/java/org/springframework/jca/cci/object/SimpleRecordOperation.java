@@ -12,7 +12,7 @@ import org.springframework.util.Assert;
  * EIS operation object that accepts a passed-in CCI input Record
  * and returns a corresponding CCI output Record.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  */
 public class SimpleRecordOperation extends EisOperation {

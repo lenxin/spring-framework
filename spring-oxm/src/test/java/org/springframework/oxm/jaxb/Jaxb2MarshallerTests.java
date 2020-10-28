@@ -58,9 +58,9 @@ import static org.xmlunit.diff.DifferenceEvaluators.downgradeDifferencesToEqual;
 import static org.xmlunit.matchers.CompareMatcher.isSimilarTo;
 
 /**
- * @author Arjen Poutsma
- * @author Biju Kunjummen
- * @author Sam Brannen
+
+
+
  */
 public class Jaxb2MarshallerTests extends AbstractMarshallerTests<Jaxb2Marshaller> {
 

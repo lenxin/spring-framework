@@ -9,7 +9,7 @@ import org.springframework.jms.support.QosSettings;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class JmsMessageEndpointManagerTests {
 

@@ -54,8 +54,8 @@ import static org.springframework.web.reactive.result.method.RequestMappingInfo.
 /**
  * Unit tests for {@link RequestMappingInfoHandlerMapping}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  */
 public class RequestMappingInfoHandlerMappingTests {
 

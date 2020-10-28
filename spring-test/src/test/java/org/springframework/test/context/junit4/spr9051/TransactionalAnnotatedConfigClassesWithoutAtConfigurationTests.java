@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
  * rather a <em>lite mode</em> configuration class (see the Javadoc for {@link Bean @Bean}
  * for details).
  *
- * @author Sam Brannen
+
  * @since 3.2
  * @see Bean
  * @see TransactionalAnnotatedConfigClassWithAtConfigurationTests

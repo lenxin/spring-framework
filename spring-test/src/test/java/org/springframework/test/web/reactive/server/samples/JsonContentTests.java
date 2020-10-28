@@ -20,8 +20,8 @@ import static org.hamcrest.Matchers.*;
 /**
  * Samples of tests using {@link WebTestClient} with serialized JSON content.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @since 5.0
  */
 public class JsonContentTests {

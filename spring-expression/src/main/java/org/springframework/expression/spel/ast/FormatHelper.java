@@ -10,7 +10,7 @@ import org.springframework.util.ClassUtils;
 /**
  * Utility methods (formatters etc) used during parsing and evaluation.
  *
- * @author Andy Clement
+
  */
 abstract class FormatHelper {
 

@@ -31,7 +31,7 @@ import static org.springframework.test.annotation.DirtiesContext.MethodMode.BEFO
  * otherwise, this listener must be manually configured to execute before the
  * {@code DependencyInjectionTestExecutionListener}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see DirtiesContext
  * @see DirtiesContextTestExecutionListener

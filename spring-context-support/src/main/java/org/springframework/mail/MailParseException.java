@@ -3,8 +3,8 @@ package org.springframework.mail;
 /**
  * Exception thrown if illegal message properties are encountered.
  *
- * @author Dmitriy Kopylenko
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public class MailParseException extends MailException {

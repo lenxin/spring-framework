@@ -26,7 +26,7 @@ import static org.junit.Assert.*;
  * Exact copy of {@link MultipleDataSourcesAndTransactionManagersSqlScriptsTests},
  * except that the test methods are transactional.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

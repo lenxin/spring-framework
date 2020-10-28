@@ -20,10 +20,10 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 /**
  * Tests for {@link DefaultMockMvcBuilder}.
  *
- * @author Rob Winch
- * @author Sebastien Deleuze
- * @author Sam Brannen
- * @author Stephane Nicoll
+
+
+
+
  */
 public class DefaultMockMvcBuilderTests {
 

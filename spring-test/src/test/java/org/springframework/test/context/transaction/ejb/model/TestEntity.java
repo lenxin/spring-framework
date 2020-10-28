@@ -8,8 +8,8 @@ import javax.persistence.Table;
 /**
  * Test entity for EJB transaction support in the TestContext framework.
  *
- * @author Xavier Detant
- * @author Sam Brannen
+
+
  * @since 4.0.1
  */
 @Entity

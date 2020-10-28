@@ -20,7 +20,7 @@ import org.springframework.web.reactive.function.BodyInserters;
 /**
  * Resource-based implementation of {@link HandlerFunction}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 class ResourceHandlerFunction implements HandlerFunction<ServerResponse> {

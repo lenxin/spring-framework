@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
  * properties files via inlined properties configured with
  * {@link TestPropertySource @TestPropertySource}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @TestPropertySource(properties = { "explicit = inlined", "extended = inlined1", "extended = inlined2" })

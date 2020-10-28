@@ -5,7 +5,7 @@ package org.springframework.jms.support.converter;
  * {@link javax.jms.TextMessage}, a {@link javax.jms.BytesMessage},
  * a {@link javax.jms.MapMessage} or an {@link javax.jms.ObjectMessage}.
  *
- * @author Juergen Hoeller
+
  * @since 3.0
  * @see MarshallingMessageConverter#setTargetType
  */

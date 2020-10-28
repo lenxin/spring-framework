@@ -13,7 +13,7 @@ import java.net.URI
 /**
  * Tests for [RouterFunctionDsl].
  *
- * @author Sebastien Deleuze
+
  */
 class RouterFunctionDslTests {
 

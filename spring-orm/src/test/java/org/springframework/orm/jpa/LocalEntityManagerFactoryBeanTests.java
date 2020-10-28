@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rod Johnson
- * @author Phillip Webb
+
+
  */
 @SuppressWarnings("rawtypes")
 public class LocalEntityManagerFactoryBeanTests extends AbstractEntityManagerFactoryBeanTests {

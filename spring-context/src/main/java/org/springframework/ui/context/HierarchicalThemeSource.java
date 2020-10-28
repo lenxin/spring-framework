@@ -6,8 +6,8 @@ import org.springframework.lang.Nullable;
  * Sub-interface of ThemeSource to be implemented by objects that
  * can resolve theme messages hierarchically.
  *
- * @author Jean-Pierre Pawlak
- * @author Juergen Hoeller
+
+
  */
 public interface HierarchicalThemeSource extends ThemeSource {
 

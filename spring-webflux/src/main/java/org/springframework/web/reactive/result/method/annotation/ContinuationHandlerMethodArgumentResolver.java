@@ -10,7 +10,7 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * No-op resolver for method arguments of type {@link kotlin.coroutines.Continuation}.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 public class ContinuationHandlerMethodArgumentResolver implements HandlerMethodArgumentResolver {

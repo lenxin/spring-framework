@@ -12,7 +12,7 @@ import org.springframework.util.Assert;
  * name as the bean name of a {@link MessageChannel} and looks up the bean in
  * the configured {@link BeanFactory}.
  *
- * @author Mark Fisher
+
  * @since 4.0
  */
 public class BeanFactoryMessageChannelDestinationResolver

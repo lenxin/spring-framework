@@ -16,8 +16,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link SpringFailOnTimeout}.
  *
- * @author Igor Suhorukov
- * @author Sam Brannen
+
+
  * @since 4.3.17
  */
 public class SpringFailOnTimeoutTests {

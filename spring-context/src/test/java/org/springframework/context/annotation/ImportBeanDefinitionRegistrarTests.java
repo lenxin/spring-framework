@@ -25,8 +25,8 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for {@link ImportBeanDefinitionRegistrar}.
  *
- * @author Oliver Gierke
- * @author Chris Beams
+
+
  */
 public class ImportBeanDefinitionRegistrarTests {
 

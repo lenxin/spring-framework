@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
  * JUnit-based integration tests that verify support for loading a
  * {@link WebApplicationContext} when extending {@link AbstractJUnit4SpringContextTests}.
  *
- * @author Sam Brannen
+
  * @since 3.2.7
  */
 @ContextConfiguration

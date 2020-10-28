@@ -28,7 +28,7 @@ import static org.junit.Assert.assertSame;
 /**
  * Test fixture with {@link InitBinderDataBinderFactory}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class InitBinderDataBinderFactoryTests {
 

@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
  * Adapter that exposes a {@link java.beans.PropertyEditor} for any given
  * {@link org.springframework.core.convert.ConversionService} and specific target type.
  *
- * @author Juergen Hoeller
+
  * @since 3.0
  */
 public class ConvertingPropertyEditorAdapter extends PropertyEditorSupport {

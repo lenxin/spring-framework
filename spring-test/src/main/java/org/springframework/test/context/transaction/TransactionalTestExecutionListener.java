@@ -102,8 +102,8 @@ import org.springframework.util.StringUtils;
  * for details on the algorithm used to look up a transaction manager in
  * the test's {@code ApplicationContext}.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see org.springframework.transaction.annotation.TransactionManagementConfigurer
  * @see org.springframework.transaction.annotation.Transactional

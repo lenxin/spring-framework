@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
  * Expression evaluation where the TypeConverter plugged in is the
  * {@link org.springframework.core.convert.support.GenericConversionService}.
  *
- * @author Andy Clement
- * @author Dave Syer
+
+
  */
 public class ExpressionWithConversionTests extends AbstractExpressionTests {
 

@@ -64,10 +64,10 @@ import org.springframework.web.util.UriTemplateHandler;
  * added going forward. See the WebClient section of the Spring Framework reference
  * documentation for more details and example code.
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
- * @author Roy Clarkson
- * @author Juergen Hoeller
+
+
+
+
  * @since 3.0
  * @see HttpMessageConverter
  * @see RequestCallback

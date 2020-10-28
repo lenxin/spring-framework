@@ -17,8 +17,8 @@ import static org.springframework.core.GenericTypeResolver.*;
 import static org.springframework.util.ReflectionUtils.*;
 
 /**
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  */
 @SuppressWarnings({"unchecked", "rawtypes"})
 public class GenericTypeResolverTests {

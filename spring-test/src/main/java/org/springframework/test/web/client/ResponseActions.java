@@ -4,7 +4,7 @@ package org.springframework.test.web.client;
  * A contract for setting up request expectations and defining a response.
  * Implementations can be obtained through {@link MockRestServiceServer#expect(RequestMatcher)}.
  *
- * @author Craig Walls
+
  * @since 3.2
  */
 public interface ResponseActions {

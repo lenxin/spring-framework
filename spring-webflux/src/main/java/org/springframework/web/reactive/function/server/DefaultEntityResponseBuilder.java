@@ -33,8 +33,8 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Default {@link EntityResponse.Builder} implementation.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 5.0
  * @param <T> a self reference to the builder type
  */

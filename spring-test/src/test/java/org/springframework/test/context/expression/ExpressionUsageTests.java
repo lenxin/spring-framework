@@ -13,8 +13,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import static org.junit.Assert.*;
 
 /**
- * @author Andy Clement
- * @author Dave Syer
+
+
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration

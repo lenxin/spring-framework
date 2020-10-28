@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AnnotationConfigContextLoader}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 public class AnnotationConfigContextLoaderTests {

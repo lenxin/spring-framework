@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
 /**
  * Test case for {@link CompositeIterator}.
  *
- * @author Erwin Vervaet
- * @author Juergen Hoeller
+
+
  */
 public class CompositeIteratorTests {
 

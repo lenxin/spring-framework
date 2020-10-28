@@ -41,7 +41,7 @@ import org.springframework.lang.Nullable;
  * <p>If you need a timing-based {@link java.util.concurrent.ScheduledExecutorService}
  * instead, consider {@link ScheduledExecutorFactoryBean}.
 
- * @author Juergen Hoeller
+
  * @since 3.0
  * @see java.util.concurrent.ExecutorService
  * @see java.util.concurrent.Executors

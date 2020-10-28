@@ -21,7 +21,7 @@ import static org.junit.Assert.assertThat;
 import static org.xmlunit.matchers.CompareMatcher.isSimilarTo;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class RssFeedViewTests {
 

@@ -42,9 +42,9 @@ import org.springframework.util.Assert;
  * during registration if necessary. This is useful in situations where you can't guarantee
  * the state of your {@link MBeanServer}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  * @since 2.0
  * @see #setServer
  * @see #setRegistrationPolicy

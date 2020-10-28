@@ -24,7 +24,7 @@ import org.springframework.web.servlet.view.json.AbstractJackson2View;
  *
  * <p>Compatible with Jackson 2.6 and higher, as of Spring 4.3.
  *
- * @author Sebastien Deleuze
+
  * @since 4.1
  * @see org.springframework.web.servlet.view.json.MappingJackson2JsonView
  */

@@ -36,7 +36,7 @@ import org.springframework.core.annotation.AliasFor;
  * <p>This annotation may be used as a <em>meta-annotation</em> to create custom
  * <em>composed annotations</em> with attribute overrides.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see SqlConfig
  * @see SqlGroup

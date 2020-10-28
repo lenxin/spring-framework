@@ -10,8 +10,8 @@ import org.springframework.web.context.request.WebRequest;
 /**
  * Utility methods related to processing asynchronous web requests.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.2
  */
 public abstract class WebAsyncUtils {

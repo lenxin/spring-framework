@@ -5,7 +5,7 @@ package org.springframework.asm;
  * API.
  *
  * @see <a href="https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-6.html">JVMS 6</a>
- * @author Eric Bruneton
+
  */
 final class Constants implements Opcodes {
 

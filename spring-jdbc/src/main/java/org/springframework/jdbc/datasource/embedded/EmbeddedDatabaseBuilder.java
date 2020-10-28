@@ -27,10 +27,10 @@ import org.springframework.util.Assert;
  * db.shutdown();
  * </pre>
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Dave Syer
- * @author Sam Brannen
+
+
+
+
  * @since 3.0
  * @see org.springframework.jdbc.datasource.init.ScriptUtils
  * @see org.springframework.jdbc.datasource.init.ResourceDatabasePopulator

@@ -13,7 +13,7 @@ import org.springframework.transaction.support.TransactionSynchronizationUtils;
  * objects callbacks after the outer JTA transaction has completed.
  * Applied when participating in an existing (non-Spring) JTA transaction.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see TransactionSynchronization#afterCommit
  * @see TransactionSynchronization#afterCompletion

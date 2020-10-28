@@ -10,7 +10,7 @@ import org.springframework.web.reactive.function.server.router
 /**
  * Mock object based tests for [WebTestClient] Kotlin extensions
  *
- * @author Sebastien Deleuze
+
  */
 class WebTestClientExtensionsTests {
 

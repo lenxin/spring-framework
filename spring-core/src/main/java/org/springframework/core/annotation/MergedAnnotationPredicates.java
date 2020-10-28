@@ -15,7 +15,7 @@ import org.springframework.util.ObjectUtils;
  * Predicate implementations that provide various test operations for
  * {@link MergedAnnotation MergedAnnotations}.
  *
- * @author Phillip Webb
+
  * @since 5.2
  */
 public abstract class MergedAnnotationPredicates {

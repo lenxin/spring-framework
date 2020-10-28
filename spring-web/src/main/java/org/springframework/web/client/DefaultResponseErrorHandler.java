@@ -19,9 +19,9 @@ import org.springframework.util.FileCopyUtils;
  * an error; this behavior can be changed by overriding the {@link #hasError(HttpStatus)}
  * method. Unknown status codes will be ignored by {@link #hasError(ClientHttpResponse)}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 3.0
  * @see RestTemplate#setErrorHandler
  */

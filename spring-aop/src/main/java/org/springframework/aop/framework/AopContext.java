@@ -19,8 +19,8 @@ import org.springframework.lang.Nullable;
  * a reasonable alternative, as it makes application code dependent on usage under AOP and
  * the Spring AOP framework in particular.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 13.03.2003
  */
 public final class AopContext {

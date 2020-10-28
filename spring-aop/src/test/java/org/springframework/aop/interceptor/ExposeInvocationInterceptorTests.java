@@ -14,8 +14,8 @@ import static org.springframework.tests.TestResourceUtils.*;
 /**
  * Non-XML tests are in AbstractAopProxyTests
  *
- * @author Rod Johnson
- * @author Chris Beams
+
+
  */
 public class ExposeInvocationInterceptorTests {
 

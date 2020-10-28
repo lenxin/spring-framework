@@ -4,7 +4,7 @@ package org.springframework.mail;
  * Exception to be thrown by user code if a mail cannot be prepared properly,
  * for example when a FreeMarker template cannot be rendered for the mail text.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see org.springframework.ui.freemarker.FreeMarkerTemplateUtils#processTemplateIntoString
  */

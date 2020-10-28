@@ -42,7 +42,7 @@ import org.springframework.util.StringUtils;
  * {@code contentNegotiationConfigurer.mediaType("appcache", MediaType.valueOf("text/manifest")}
  * in a {@code WebMvcConfigurer}.
  *
- * @author Brian Clozel
+
  * @since 4.1
  * @see <a href="https://html.spec.whatwg.org/multipage/browsers.html#offline">HTML5 offline applications spec</a>
  */

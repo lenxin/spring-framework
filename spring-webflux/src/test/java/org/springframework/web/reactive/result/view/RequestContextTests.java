@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Unit tests for {@link RequestContext}.
- * @author Rossen Stoyanchev
+
  */
 public class RequestContextTests {
 

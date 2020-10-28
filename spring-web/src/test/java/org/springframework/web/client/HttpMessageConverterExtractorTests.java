@@ -27,8 +27,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link HttpMessageConverter}.
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
+
+
  */
 public class HttpMessageConverterExtractorTests {
 

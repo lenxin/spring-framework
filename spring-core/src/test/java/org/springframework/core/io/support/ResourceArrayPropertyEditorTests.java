@@ -10,8 +10,8 @@ import org.springframework.core.io.Resource;
 import static org.junit.Assert.*;
 
 /**
- * @author Dave Syer
- * @author Juergen Hoeller
+
+
  */
 public class ResourceArrayPropertyEditorTests {
 

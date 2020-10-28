@@ -12,8 +12,8 @@ import org.springframework.util.Assert;
  * {@link org.springframework.core.serializer.Serializer}
  * to convert an object to a byte array.
  *
- * @author Gary Russell
- * @author Mark Fisher
+
+
  * @since 3.0.5
  */
 public class SerializingConverter implements Converter<Object, byte[]> {

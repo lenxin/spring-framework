@@ -42,7 +42,7 @@ import static org.springframework.web.method.MvcAnnotationPredicates.matrixAttri
 
 /**
  * Unit tests for {@link MatrixVariableMapMethodArgumentResolver}.
- * @author Rossen Stoyanchev
+
  */
 public class MatrixVariablesMapMethodArgumentResolverTests {
 

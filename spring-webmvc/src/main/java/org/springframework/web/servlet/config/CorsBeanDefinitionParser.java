@@ -21,7 +21,7 @@ import org.springframework.web.cors.CorsConfiguration;
  * {AbstractHandlerMapping} beans created by {@link AnnotationDrivenBeanDefinitionParser},
  * {@link ResourcesBeanDefinitionParser} and {@link ViewControllerBeanDefinitionParser}.
  *
- * @author Sebastien Deleuze
+
  * @since 4.2
  */
 public class CorsBeanDefinitionParser implements BeanDefinitionParser {

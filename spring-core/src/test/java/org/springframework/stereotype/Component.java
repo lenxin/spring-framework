@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  * Such classes are considered as candidates for auto-detection
  * when using annotation-based configuration and classpath scanning.
  *
- * @author Mark Fisher
+
  * @since 2.5
  */
 @Target(ElementType.TYPE)

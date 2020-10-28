@@ -28,8 +28,8 @@ import org.springframework.util.Assert;
  * {@link #setTargetType targetType} is set to {@link MessageType#TEXT}.
  * Unmarshals from a {@link TextMessage} or {@link BytesMessage} to an object.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see org.springframework.jms.core.JmsTemplate#convertAndSend
  * @see org.springframework.jms.core.JmsTemplate#receiveAndConvert

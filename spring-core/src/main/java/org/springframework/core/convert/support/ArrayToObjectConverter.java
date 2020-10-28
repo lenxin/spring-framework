@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * Converts an array to an Object by returning the first array element
  * after converting it to the desired target type.
  *
- * @author Keith Donald
+
  * @since 3.0
  */
 final class ArrayToObjectConverter implements ConditionalGenericConverter {

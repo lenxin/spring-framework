@@ -29,8 +29,8 @@ import java.util.Map;
  *
  * <p>Thanks to Eugene Kuleshov for submitting the original prototype for a thread scope!
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @see org.springframework.web.context.request.RequestScope
  * @since 3.0
  */

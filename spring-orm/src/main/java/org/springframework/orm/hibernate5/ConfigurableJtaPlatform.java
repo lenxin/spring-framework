@@ -19,7 +19,7 @@ import org.springframework.util.Assert;
  * Implementation of Hibernate 5's JtaPlatform SPI, exposing passed-in {@link TransactionManager},
  * {@link UserTransaction} and {@link TransactionSynchronizationRegistry} references.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  */
 @SuppressWarnings("serial")

@@ -38,8 +38,8 @@ import static org.springframework.web.method.ResolvableMethod.on;
  *  <li>{@code ContentNegotiatingResultHandlerSupportTests}
  * </ul>
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  */
 public class ResponseBodyResultHandlerTests {
 

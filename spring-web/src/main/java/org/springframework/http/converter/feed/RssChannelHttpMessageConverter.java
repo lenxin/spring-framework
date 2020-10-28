@@ -15,7 +15,7 @@ import org.springframework.http.MediaType;
  * <p>By default, this converter reads and writes the media type ({@code application/rss+xml}).
  * This can be overridden through the {@link #setSupportedMediaTypes supportedMediaTypes} property.
  *
- * @author Arjen Poutsma
+
  * @since 3.0.2
  * @see Channel
  */

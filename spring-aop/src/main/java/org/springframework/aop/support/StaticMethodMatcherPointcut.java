@@ -11,8 +11,8 @@ import org.springframework.aop.Pointcut;
  * <p>The {@link #setClassFilter "classFilter"} property can be set to customize
  * {@link ClassFilter} behavior. The default is {@link ClassFilter#TRUE}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public abstract class StaticMethodMatcherPointcut extends StaticMethodMatcher implements Pointcut {
 

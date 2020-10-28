@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
  *
  * <p>Format is: {@code FQN.Method=tx attribute representation}
  *
- * @author Rod Johnson
- * @author Sam Brannen
+
+
  * @since 26.04.2003
  */
 public class TransactionAttributeSourceEditorTests {

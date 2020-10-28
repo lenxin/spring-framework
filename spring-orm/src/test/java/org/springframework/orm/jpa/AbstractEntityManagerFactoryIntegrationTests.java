@@ -25,8 +25,8 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public abstract class AbstractEntityManagerFactoryIntegrationTests {
 

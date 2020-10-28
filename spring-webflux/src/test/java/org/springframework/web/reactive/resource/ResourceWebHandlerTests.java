@@ -47,7 +47,7 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link ResourceWebHandler}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ResourceWebHandlerTests {
 

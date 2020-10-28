@@ -21,9 +21,9 @@ import org.springframework.lang.Nullable;
  * <p>To limit the creation of objects, an ugly constructor is used
  * (rather then a dedicated 'closure'-like class for deferred execution).
  *
- * @author Costin Leau
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
+
  * @since 3.1
  */
 class CacheEvaluationContext extends MethodBasedEvaluationContext {

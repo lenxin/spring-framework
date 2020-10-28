@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * <p>Implementations of this interface should consider extending
  * {@link StompSessionHandlerAdapter}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.2
  * @see StompSessionHandlerAdapter
  */

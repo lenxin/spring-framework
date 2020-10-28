@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException
 /**
  * Tests for {@link PackagesAnnotationFilter}.
  *
- * @author Phillip Webb
+
  */
 public class PackagesAnnotationFilterTests {
 

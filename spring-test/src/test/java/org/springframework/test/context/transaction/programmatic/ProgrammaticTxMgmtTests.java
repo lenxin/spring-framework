@@ -39,7 +39,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * JUnit-based integration tests that verify support for programmatic transaction
  * management within the <em>Spring TestContext Framework</em>.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

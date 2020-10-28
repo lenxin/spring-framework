@@ -7,8 +7,8 @@ import org.springframework.lang.Nullable;
  * This enables parameterization and internationalization of messages
  * for a given 'theme'.
  *
- * @author Jean-Pierre Pawlak
- * @author Juergen Hoeller
+
+
  * @see Theme
  */
 public interface ThemeSource {

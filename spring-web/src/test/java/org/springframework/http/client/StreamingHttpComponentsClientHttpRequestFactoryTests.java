@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.springframework.http.HttpMethod;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class StreamingHttpComponentsClientHttpRequestFactoryTests extends AbstractHttpRequestFactoryTestCase {
 

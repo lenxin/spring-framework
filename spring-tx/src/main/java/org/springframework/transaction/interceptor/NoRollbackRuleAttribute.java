@@ -4,7 +4,7 @@ package org.springframework.transaction.interceptor;
  * Tag subclass of {@link RollbackRuleAttribute} that has the opposite behavior
  * to the {@code RollbackRuleAttribute} superclass.
  *
- * @author Rod Johnson
+
  * @since 09.04.2003
  */
 @SuppressWarnings("serial")

@@ -15,7 +15,7 @@ import org.springframework.lang.Nullable;
  * This strategy interface allows for more sophisticated implementations
  * that adapt to vendor-specific JTA extensions.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see javax.transaction.TransactionManager#getTransaction()
  * @see SimpleTransactionFactory

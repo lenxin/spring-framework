@@ -12,7 +12,7 @@ import org.springframework.transaction.interceptor.TransactionAttribute;
  * {@link Transactional}, JTA 1.2's {@link javax.transaction.Transactional}
  * or EJB3's {@link javax.ejb.TransactionAttribute}.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see AnnotationTransactionAttributeSource
  * @see SpringTransactionAnnotationParser

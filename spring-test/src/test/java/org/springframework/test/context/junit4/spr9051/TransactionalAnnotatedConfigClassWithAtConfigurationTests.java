@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
  * Concrete implementation of {@link AbstractTransactionalAnnotatedConfigClassTests}
  * that uses a true {@link Configuration @Configuration class}.
  *
- * @author Sam Brannen
+
  * @since 3.2
  * @see TransactionalAnnotatedConfigClassesWithoutAtConfigurationTests
  */

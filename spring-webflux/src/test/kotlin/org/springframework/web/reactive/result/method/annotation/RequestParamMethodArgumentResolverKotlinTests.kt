@@ -18,7 +18,7 @@ import reactor.test.StepVerifier
 /**
  * Kotlin test fixture for [RequestParamMethodArgumentResolver].
  *
- * @author Sebastien Deleuze
+
  */
 class RequestParamMethodArgumentResolverKotlinTests {
 

@@ -17,8 +17,8 @@ import org.springframework.util.StringUtils;
  * {@code ContextConfigurationAttributes} encapsulates the context configuration
  * attributes declared via {@link ContextConfiguration @ContextConfiguration}.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 3.1
  * @see ContextConfiguration
  * @see SmartContextLoader#processContextConfiguration(ContextConfigurationAttributes)

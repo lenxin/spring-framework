@@ -14,8 +14,8 @@ import org.springframework.util.Assert;
  * Converts an Object to a single-element array containing the Object.
  * Will convert the Object to the target array's component type if necessary.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 final class ObjectToArrayConverter implements ConditionalGenericConverter {

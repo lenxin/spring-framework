@@ -18,9 +18,9 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link DefaultResponseErrorHandler}.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Denys Ivano
+
+
+
  */
 public class DefaultResponseErrorHandlerTests {
 

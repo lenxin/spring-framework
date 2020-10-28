@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.tests.sample.beans.Pet;
 
 /**
- * @author Sam Brannen
+
  * @since 3.1
  */
 @Configuration

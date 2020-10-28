@@ -12,7 +12,7 @@ import javax.lang.model.element.ElementKind;
  * flagged by the {@value INDEXED_ANNOTATION} annotation. This implementation
  * honors stereotypes defined this way on meta-annotations.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 class IndexedStereotypesProvider implements StereotypesProvider {

@@ -1,7 +1,7 @@
 package org.springframework.jmx.export.naming;
 
 /**
- * @author Rob Harrop
+
  */
 public class KeyNamingStrategyTests extends AbstractNamingStrategyTests {
 

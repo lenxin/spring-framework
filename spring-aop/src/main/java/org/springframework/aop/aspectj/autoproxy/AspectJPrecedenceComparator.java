@@ -26,8 +26,8 @@ import org.springframework.util.Assert;
  * we don't care about the ordering, not that the two elements must be sorted
  * identically. Used with AspectJ PartialOrder class.
  *
- * @author Adrian Colyer
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 class AspectJPrecedenceComparator implements Comparator<Advisor> {

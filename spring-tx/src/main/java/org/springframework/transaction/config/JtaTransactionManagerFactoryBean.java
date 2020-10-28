@@ -13,7 +13,7 @@ import org.springframework.util.ClassUtils;
  * autodetecting WebLogic and WebSphere servers and exposing the corresponding
  * {@link org.springframework.transaction.jta.JtaTransactionManager} subclass.
  *
- * @author Juergen Hoeller
+
  * @since 4.1.1
  * @see org.springframework.transaction.jta.WebLogicJtaTransactionManager
  * @see org.springframework.transaction.jta.WebSphereUowTransactionManager

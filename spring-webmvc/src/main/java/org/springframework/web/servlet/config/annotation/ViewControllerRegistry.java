@@ -14,8 +14,8 @@ import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
  * Assists with the registration of simple automated controllers pre-configured
  * with status code and/or a view.
  *
- * @author Rossen Stoyanchev
- * @author Keith Donald
+
+
  * @since 3.1
  */
 public class ViewControllerRegistry {

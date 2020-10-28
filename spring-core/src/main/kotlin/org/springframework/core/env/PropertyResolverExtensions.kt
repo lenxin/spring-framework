@@ -10,7 +10,7 @@
  * val name = env["name"] ?: "Seb"
  * ```
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 operator fun PropertyResolver.get(key: String) : String? = getProperty(key)
@@ -20,7 +20,7 @@ operator fun PropertyResolver.get(key: String) : String? = getProperty(key)
  * Extension for [PropertyResolver.getProperty] providing a `getProperty<Foo>(...)`
  * variant returning a nullable [String].
  *
- * @author Sebastien Deleuze
+
  * @since 5.1
  */
 inline fun <reified T> PropertyResolver.getProperty(key: String) : T? =
@@ -30,7 +30,7 @@ inline fun <reified T> PropertyResolver.getProperty(key: String) : T? =
  * Extension for [PropertyResolver.getRequiredProperty] providing a
  * `getRequiredProperty<Foo>(...)` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.1
  */
 inline fun <reified T: Any> PropertyResolver.getRequiredProperty(key: String) : T =

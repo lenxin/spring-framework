@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for SpEL's plus operator.
  *
- * @author Ivo Smid
- * @author Chris Beams
+
+
  * @since 3.2
  * @see OpPlus
  */

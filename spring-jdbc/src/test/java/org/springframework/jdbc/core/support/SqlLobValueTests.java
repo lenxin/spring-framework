@@ -50,7 +50,7 @@ import static org.mockito.BDDMockito.*;
  *   6. Reader: setClobAsCharacterStream (Reader)
  *   7. else: IllegalArgumentException
  *
- * @author Alef Arendsen
+
  */
 public class SqlLobValueTests  {
 

@@ -44,7 +44,7 @@ import org.springframework.web.context.request.async.WebAsyncUtils;
  * occur at the very beginning of request processing, to avoid clashes with already
  * loaded instances of the same objects.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see OpenSessionInViewFilter
  * @see OpenSessionInterceptor

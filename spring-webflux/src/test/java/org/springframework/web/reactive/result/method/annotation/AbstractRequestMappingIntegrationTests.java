@@ -21,7 +21,7 @@ import static org.springframework.http.RequestEntity.*;
 /**
  * Base class for integration tests with {@code @RequestMapping methods}.
  *
- * @author Rossen Stoyanchev
+
  */
 public abstract class AbstractRequestMappingIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

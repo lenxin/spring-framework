@@ -12,7 +12,7 @@ import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import static org.junit.Assert.*;
 
 /**
- * @author Keith Donald
+
  */
 public class EmbeddedDatabaseFactoryBeanTests {
 

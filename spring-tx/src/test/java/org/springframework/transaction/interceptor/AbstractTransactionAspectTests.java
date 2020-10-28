@@ -30,7 +30,7 @@ import static org.mockito.BDDMockito.*;
  * This is a superclass to allow testing both the AOP Alliance MethodInterceptor
  * and the AspectJ aspect.
  *
- * @author Rod Johnson
+
  * @since 16.03.2003
  */
 public abstract class AbstractTransactionAspectTests {

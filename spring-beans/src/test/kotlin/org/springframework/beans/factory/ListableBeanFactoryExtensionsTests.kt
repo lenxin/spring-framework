@@ -7,7 +7,7 @@ import org.junit.Test
 /**
  * Mock object based tests for ListableBeanFactory Kotlin extensions
  *
- * @author Sebastien Deleuze
+
  */
 class ListableBeanFactoryExtensionsTests {
 

@@ -44,8 +44,8 @@ import org.springframework.web.socket.server.RequestUpgradeStrategy;
  * the response as necessary and initialize the WebSocket. Currently supported servers are
  * Jetty 9.0-9.3, Tomcat 7.0.47+ and 8.x, Undertow 1.0-1.3, GlassFish 4.1+, WebLogic 12.1.3+.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.2
  * @see org.springframework.web.socket.server.jetty.JettyRequestUpgradeStrategy
  * @see org.springframework.web.socket.server.standard.TomcatRequestUpgradeStrategy

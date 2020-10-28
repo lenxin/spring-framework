@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
 /**
  * Custom SQLException translation for testing.
  *
- * @author Thomas Risberg
+
  */
 public class CustomSqlExceptionTranslator implements SQLExceptionTranslator {
 

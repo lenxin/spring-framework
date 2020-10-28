@@ -25,7 +25,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * {@link BeforeTransaction @BeforeTransaction} and
  * {@link AfterTransaction @AfterTransaction} behavior.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 @Transactional

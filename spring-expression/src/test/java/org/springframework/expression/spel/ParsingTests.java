@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  * Parse some expressions and check we get the AST we expect. Rather than inspecting each node in the AST, we ask it to
  * write itself to a string form and check that is as expected.
  *
- * @author Andy Clement
+
  */
 public class ParsingTests {
 

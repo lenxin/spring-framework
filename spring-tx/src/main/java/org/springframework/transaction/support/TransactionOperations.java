@@ -9,7 +9,7 @@ import org.springframework.transaction.TransactionException;
  * but a useful option to enhance testability, as it can easily be
  * mocked or stubbed.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.4
  */
 public interface TransactionOperations {

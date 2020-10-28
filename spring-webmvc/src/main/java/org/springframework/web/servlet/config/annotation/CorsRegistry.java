@@ -11,8 +11,8 @@ import org.springframework.web.cors.CorsConfiguration;
  * Assists with the registration of global, URL pattern based
  * {@link CorsConfiguration} mappings.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 4.2
  * @see CorsRegistration
  */

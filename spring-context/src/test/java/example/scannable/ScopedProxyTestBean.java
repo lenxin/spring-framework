@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.scheduling.annotation.AsyncResult;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  */
 @Scope("myScope")
 public class ScopedProxyTestBean implements FooService {

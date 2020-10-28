@@ -14,7 +14,7 @@ import org.springframework.transaction.TransactionDefinition;
  * <p>Base class for both {@link TransactionTemplate} and
  * {@link org.springframework.transaction.interceptor.DefaultTransactionAttribute}.
  *
- * @author Juergen Hoeller
+
  * @since 08.05.2003
  */
 @SuppressWarnings("serial")

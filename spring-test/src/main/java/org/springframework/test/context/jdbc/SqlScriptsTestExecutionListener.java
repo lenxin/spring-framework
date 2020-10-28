@@ -64,7 +64,7 @@ import org.springframework.util.StringUtils;
  * on permissible configuration constellations and on the algorithms used to
  * locate these beans.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see Sql
  * @see SqlConfig

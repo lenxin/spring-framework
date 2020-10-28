@@ -35,8 +35,8 @@ import org.springframework.lang.Nullable;
  * <p>Subclasses can extend this class and override the {@link #postProcessTargetObject(Object)} to
  * perform some additional processing with the target object when it is first loaded.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
  * @since 1.1.4
  * @see org.springframework.beans.factory.BeanFactory#getBean
  * @see #postProcessTargetObject

@@ -24,7 +24,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * Integration tests for {@link Sql @Sql} support with only a {@link DataSource}
  * present in the context (i.e., no transaction manager).
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

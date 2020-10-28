@@ -37,7 +37,7 @@ import org.springframework.util.concurrent.SettableListenableFuture;
 /**
  * Default implementation of {@link ConnectionHandlingStompSession}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.2
  */
 public class DefaultStompSession implements ConnectionHandlingStompSession {

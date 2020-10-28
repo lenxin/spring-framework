@@ -15,9 +15,9 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class JndiObjectFactoryBeanTests {
 

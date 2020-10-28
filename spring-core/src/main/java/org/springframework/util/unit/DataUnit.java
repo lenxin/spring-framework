@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * A standard set of data size units.
  *
- * @author Stephane Nicoll
+
  * @since 5.1
  */
 public enum DataUnit {

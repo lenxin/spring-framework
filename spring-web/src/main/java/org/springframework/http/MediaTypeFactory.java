@@ -20,8 +20,8 @@ import org.springframework.util.StringUtils;
  * A factory delegate for resolving {@link MediaType} objects
  * from {@link Resource} handles or filenames.
  *
- * @author Juergen Hoeller
- * @author Arjen Poutsma
+
+
  * @since 5.0
  */
 public final class MediaTypeFactory {

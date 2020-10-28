@@ -19,9 +19,9 @@ import org.springframework.util.StringUtils;
  * of plain {@link PropertySource}, exposing {@link #getPropertyNames()} based on the
  * accumulated property names from all contained sources (as far as possible).
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  * @since 3.1.1
  */
 public class CompositePropertySource extends EnumerablePropertySource<Object> {

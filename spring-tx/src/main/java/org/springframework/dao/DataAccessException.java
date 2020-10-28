@@ -18,7 +18,7 @@ import org.springframework.lang.Nullable;
  * to catch it or subclasses if any error is to be considered fatal
  * (the usual case).
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public abstract class DataAccessException extends NestedRuntimeException {

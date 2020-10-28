@@ -17,8 +17,8 @@ import org.springframework.util.MimeType;
 /**
  * XPath assertions for the {@link WebTestClient}.
  *
- * @author Eric Deandrea
- * @author Rossen Stoyanchev
+
+
  * @since 5.1
  */
 public class XpathAssertions {

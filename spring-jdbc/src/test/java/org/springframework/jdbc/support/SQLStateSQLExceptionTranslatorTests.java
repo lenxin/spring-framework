@@ -15,9 +15,9 @@ import org.springframework.jdbc.UncategorizedSQLException;
 import static org.junit.Assert.*;
 
 /**
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class SQLStateSQLExceptionTranslatorTests {
 

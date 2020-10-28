@@ -121,12 +121,12 @@ import org.springframework.lang.Nullable;
  *
  * <p>Compatible with Jackson 2.6 and higher, as of Spring 4.3.
  *
- * @author <a href="mailto:dmitry.katsubo@gmail.com">Dmitry Katsubo</a>
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Juergen Hoeller
- * @author Tadaya Tsuyukubo
- * @author Sebastien Deleuze
+
+
+
+
+
+
  * @since 3.2
  */
 public class Jackson2ObjectMapperFactoryBean implements FactoryBean<ObjectMapper>, BeanClassLoaderAware,

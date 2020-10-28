@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * Integration tests for {@link TestPropertySource @TestPropertySource}
  * support with an explicitly named properties file.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

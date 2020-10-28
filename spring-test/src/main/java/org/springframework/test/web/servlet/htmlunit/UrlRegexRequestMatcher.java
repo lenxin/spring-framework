@@ -15,8 +15,8 @@ import com.gargoylesoftware.htmlunit.WebRequest;
  * WebRequestMatcher cdnMatcher = new UrlRegexRequestMatcher(".*?//code.jquery.com/.*");
  * </pre>
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  * @see org.springframework.test.web.servlet.htmlunit.DelegatingWebConnection
  */

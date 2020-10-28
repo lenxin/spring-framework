@@ -34,9 +34,9 @@ import org.springframework.web.server.ServerWebExchange;
  * by a {@linkplain HandlerFunction handler function} or
  * {@linkplain HandlerFilterFunction filter function}.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
  * @since 5.0
  */
 public interface ServerResponse {

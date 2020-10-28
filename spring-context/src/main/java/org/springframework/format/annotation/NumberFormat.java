@@ -23,8 +23,8 @@ import java.lang.annotation.Target;
  * the default format applied is style-based for either number of currency,
  * depending on the annotated field or method parameter type.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see java.text.NumberFormat
  */

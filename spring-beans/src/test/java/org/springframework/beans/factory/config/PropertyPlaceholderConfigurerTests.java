@@ -20,7 +20,7 @@ import static org.springframework.beans.factory.support.BeanDefinitionReaderUtil
 /**
  * Unit tests for {@link PropertyPlaceholderConfigurer}.
  *
- * @author Chris Beams
+
  */
 @SuppressWarnings("deprecation")
 public class PropertyPlaceholderConfigurerTests {

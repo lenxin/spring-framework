@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
  * Advisor driven by a {@link TransactionAttributeSource}, used to include
  * a transaction advice bean for methods that are transactional.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.5
  * @see #setAdviceBeanName
  * @see TransactionInterceptor

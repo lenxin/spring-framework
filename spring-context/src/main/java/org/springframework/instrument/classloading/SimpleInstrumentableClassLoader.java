@@ -10,8 +10,8 @@ import org.springframework.lang.Nullable;
  *
  * <p>Usable in tests and standalone environments.
  *
- * @author Rod Johnson
- * @author Costin Leau
+
+
  * @since 2.0
  */
 public class SimpleInstrumentableClassLoader extends OverridingClassLoader {

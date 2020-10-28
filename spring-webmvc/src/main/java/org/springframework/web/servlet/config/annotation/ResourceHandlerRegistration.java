@@ -14,9 +14,9 @@ import org.springframework.web.servlet.resource.ResourceHttpRequestHandler;
 /**
  * Encapsulates information required to create a resource handler.
  *
- * @author Rossen Stoyanchev
- * @author Keith Donald
- * @author Brian Clozel
+
+
+
  * @since 3.1
  */
 public class ResourceHandlerRegistration {

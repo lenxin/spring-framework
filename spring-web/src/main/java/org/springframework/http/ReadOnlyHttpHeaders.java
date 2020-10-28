@@ -14,7 +14,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * {@code HttpHeaders} object that can only be read, not written to.
  *
- * @author Brian Clozel
+
  * @since 5.1.1
  */
 class ReadOnlyHttpHeaders extends HttpHeaders {

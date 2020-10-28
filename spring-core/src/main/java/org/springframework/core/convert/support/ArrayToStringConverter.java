@@ -15,7 +15,7 @@ import org.springframework.util.ObjectUtils;
  * to a List, then delegates to {@link CollectionToStringConverter} to perform
  * the target String conversion.
  *
- * @author Keith Donald
+
  * @since 3.0
  */
 final class ArrayToStringConverter implements ConditionalGenericConverter {

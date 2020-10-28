@@ -27,8 +27,8 @@ import org.springframework.util.PathMatcher;
  * {@link SimpMessageType}, keeps track of subscriptions with the help of a
  * {@link SubscriptionRegistry} and sends messages to subscribers.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 public class SimpleBrokerMessageHandler extends AbstractBrokerMessageHandler {

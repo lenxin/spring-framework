@@ -12,9 +12,9 @@ import org.springframework.scheduling.config.TaskManagementConfigUtils;
  * {@code @Configuration} class that registers the Spring infrastructure beans necessary
  * to enable AspectJ-based asynchronous method execution.
  *
- * @author Chris Beams
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
+
  * @since 3.1
  * @see EnableAsync
  * @see org.springframework.scheduling.annotation.AsyncConfigurationSelector

@@ -37,9 +37,9 @@ import org.springframework.web.util.WebUtils;
  * resource (for example: "myView" -> "/WEB-INF/jsp/myView.jsp"), using
  * this view class by default.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
+
  * @see javax.servlet.RequestDispatcher#forward
  * @see javax.servlet.RequestDispatcher#include
  * @see javax.servlet.ServletResponse#flushBuffer

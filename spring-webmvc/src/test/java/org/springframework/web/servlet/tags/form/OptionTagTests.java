@@ -22,10 +22,10 @@ import org.springframework.web.servlet.support.BindStatus;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Rick Evans
- * @author Jeremy Grelle
+
+
+
+
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class OptionTagTests extends AbstractHtmlElementTagTests {

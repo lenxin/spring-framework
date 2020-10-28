@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
  * test-managed transaction. For example, such work may in fact be committed
  * outside the scope of the test-managed transaction.
  *
- * @author Sam Brannen
+
  * @since 4.0.1
  */
 @Test(suiteName = "Rollback for REQUIRES_NEW")

@@ -12,7 +12,7 @@ import org.springframework.lang.Nullable;
  * Artificial class used for accessing the {@link VfsUtils} methods
  * without exposing them to the entire world.
  *
- * @author Costin Leau
+
  * @since 3.0.3
  */
 abstract class VfsPatternUtils extends VfsUtils {

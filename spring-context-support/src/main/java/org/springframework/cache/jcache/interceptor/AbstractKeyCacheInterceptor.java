@@ -10,7 +10,7 @@ import org.springframework.cache.interceptor.KeyGenerator;
 /**
  * A base interceptor for JSR-107 key-based cache annotations.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @param <O> the operation type
  * @param <A> the annotation type

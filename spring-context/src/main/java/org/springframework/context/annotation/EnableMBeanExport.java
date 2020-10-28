@@ -20,7 +20,7 @@ import org.springframework.jmx.support.RegistrationPolicy;
  * <p>This annotation is modeled after and functionally equivalent to Spring XML's
  * {@code <context:mbean-export/>} element.
  *
- * @author Phillip Webb
+
  * @since 3.2
  * @see MBeanExportConfiguration
  */

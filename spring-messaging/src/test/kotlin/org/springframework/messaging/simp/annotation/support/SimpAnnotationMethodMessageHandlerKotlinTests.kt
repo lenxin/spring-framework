@@ -27,7 +27,7 @@ import org.springframework.messaging.handler.annotation.MessageExceptionHandler
 /**
  * Kotlin test fixture for [SimpAnnotationMethodMessageHandler].
  *
- * @author Sebastien Deleuze
+
  */
 class SimpAnnotationMethodMessageHandlerKotlinTests {
 

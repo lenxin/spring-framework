@@ -25,8 +25,8 @@ import org.springframework.stereotype.Repository;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public class PersistenceExceptionTranslationPostProcessorTests {
 

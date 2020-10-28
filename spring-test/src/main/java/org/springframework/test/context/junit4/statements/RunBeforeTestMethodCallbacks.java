@@ -12,7 +12,7 @@ import org.springframework.test.context.TestContextManager;
  * by calling {@link TestContextManager#beforeTestMethod(Object, Method)
  * beforeTestMethod()} on the supplied {@link TestContextManager}.
  *
- * @author Sam Brannen
+
  * @since 3.0
  * @see #evaluate()
  * @see RunAfterTestMethodCallbacks

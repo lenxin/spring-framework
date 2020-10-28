@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * Unit tests for
  * {@link org.springframework.web.servlet.support.ServletUriComponentsBuilder}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ServletUriComponentsBuilderTests {
 

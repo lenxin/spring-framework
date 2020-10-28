@@ -10,7 +10,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class CachePutOperationTests extends AbstractCacheOperationTests<CachePutOperation> {
 

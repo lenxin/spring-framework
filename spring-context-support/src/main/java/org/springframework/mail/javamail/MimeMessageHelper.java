@@ -73,7 +73,7 @@ import org.springframework.util.Assert;
  * Consider choosing a specific multipart mode for your needs: The javadoc
  * on the MULTIPART_MODE constants contains more detailed information.
  *
- * @author Juergen Hoeller
+
  * @since 19.01.2004
  * @see #setText(String, boolean)
  * @see #setText(String, String)

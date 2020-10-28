@@ -14,7 +14,7 @@ import org.springframework.util.ExceptionTypeFilter;
 /**
  * The {@link JCacheOperation} implementation for a {@link CachePut} operation.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see CachePut
  */

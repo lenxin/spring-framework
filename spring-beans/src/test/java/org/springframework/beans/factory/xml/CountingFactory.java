@@ -4,7 +4,7 @@ import org.springframework.beans.factory.FactoryBean;
 import org.springframework.tests.sample.beans.TestBean;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class CountingFactory implements FactoryBean {
 

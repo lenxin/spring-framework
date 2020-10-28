@@ -24,8 +24,8 @@ import static org.mockito.BDDMockito.*;
 
 /**
  * Unit tests for {@link VersionResourceResolver}.
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  */
 public class VersionResourceResolverTests {
 

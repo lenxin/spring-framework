@@ -13,7 +13,7 @@ import org.springframework.tests.sample.beans.Employee;
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 @RunWith(SpringRunner.class)

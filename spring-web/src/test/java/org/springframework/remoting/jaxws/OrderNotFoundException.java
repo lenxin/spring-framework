@@ -3,7 +3,7 @@ package org.springframework.remoting.jaxws;
 import javax.xml.ws.WebFault;
 
 /**
- * @author Juergen Hoeller
+
  */
 @WebFault
 @SuppressWarnings("serial")

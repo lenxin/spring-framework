@@ -57,12 +57,12 @@ import org.springframework.util.StringUtils;
  * <p>Naturally, as this is to be processed by Spring AOP's proxy-based model,
  * only method execution pointcuts are supported.
  *
- * @author Rob Harrop
- * @author Adrian Colyer
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Ramnivas Laddad
- * @author Dave Syer
+
+
+
+
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

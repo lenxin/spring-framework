@@ -17,8 +17,8 @@ import org.springframework.web.util.HtmlUtils;
  * {@link PropertyEditor} to render any non-String value before applying the
  * default rules of plain formatting.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 abstract class ValueFormatter {

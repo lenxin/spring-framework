@@ -6,7 +6,7 @@ import javax.xml.transform.Result;
  * Interface defining handling involved with providing {@code Result}
  * data for XML input.
  *
- * @author Thomas Risberg
+
  * @since 2.5.5
  * @see javax.xml.transform.Result
  */

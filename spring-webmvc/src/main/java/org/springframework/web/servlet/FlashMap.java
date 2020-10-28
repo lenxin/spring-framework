@@ -26,7 +26,7 @@ import org.springframework.util.StringUtils;
  * See {@code org.springframework.web.servlet.mvc.support.RedirectAttributes}
  * for an overview of using flash attributes in annotated controllers.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  * @see FlashMapManager
  */

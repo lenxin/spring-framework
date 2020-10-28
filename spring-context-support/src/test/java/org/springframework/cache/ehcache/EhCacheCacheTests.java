@@ -16,9 +16,9 @@ import org.springframework.tests.TestGroup;
 import static org.junit.Assert.*;
 
 /**
- * @author Costin Leau
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
+
  */
 public class EhCacheCacheTests extends AbstractCacheTests<EhCacheCache> {
 

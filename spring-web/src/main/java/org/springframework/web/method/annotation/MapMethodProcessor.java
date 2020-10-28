@@ -19,7 +19,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * {@code @ResponseBody}. As of 5.2 this resolver returns false if the
  * parameter is annotated.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  */
 public class MapMethodProcessor implements HandlerMethodArgumentResolver, HandlerMethodReturnValueHandler {

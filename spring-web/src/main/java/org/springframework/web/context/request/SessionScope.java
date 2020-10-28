@@ -12,9 +12,9 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.web.filter.RequestContextFilter} or
  * {@link org.springframework.web.servlet.DispatcherServlet}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
+
  * @since 2.0
  * @see RequestContextHolder#currentRequestAttributes()
  * @see RequestAttributes#SCOPE_SESSION

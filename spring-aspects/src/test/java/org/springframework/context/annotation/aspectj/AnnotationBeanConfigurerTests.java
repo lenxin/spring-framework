@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * {@link org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect},
  * just as does {@code <context:spring-configured>}.
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 public class AnnotationBeanConfigurerTests {

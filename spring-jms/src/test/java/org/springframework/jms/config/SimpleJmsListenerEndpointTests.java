@@ -10,7 +10,7 @@ import org.springframework.jms.listener.adapter.MessageListenerAdapter;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class SimpleJmsListenerEndpointTests {
 

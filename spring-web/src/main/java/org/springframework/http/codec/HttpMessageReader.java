@@ -18,9 +18,9 @@ import org.springframework.lang.Nullable;
  * Strategy for reading from a {@link ReactiveHttpInputMessage} and decoding
  * the stream of bytes to Objects of type {@code <T>}.
  *
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
+
+
+
  * @since 5.0
  * @param <T> the type of objects in the decoded output stream
  */

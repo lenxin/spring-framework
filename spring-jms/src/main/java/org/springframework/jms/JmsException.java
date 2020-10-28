@@ -9,8 +9,8 @@ import org.springframework.lang.Nullable;
  * Base class for exception thrown by the framework whenever it
  * encounters a problem related to JMS.
  *
- * @author Mark Pollack
- * @author Juergen Hoeller
+
+
  * @since 1.1
  */
 @SuppressWarnings("serial")

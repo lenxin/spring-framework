@@ -20,7 +20,7 @@ import static org.mockito.Mockito.*;
 /**
  * Test fixture for {@link AbstractHttpSendingTransportHandler} and sub-classes.
  *
- * @author Rossen Stoyanchev
+
  */
 public class HttpSendingTransportHandlerTests  extends AbstractHttpRequestTests {
 

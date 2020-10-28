@@ -18,7 +18,7 @@ import org.springframework.util.Assert;
  * <p>Delegates to the given WorkManager and XATerminator, if any. Creates simple
  * local instances of {@code java.util.Timer}.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.3
  * @see javax.resource.spi.ResourceAdapter#start(javax.resource.spi.BootstrapContext)
  * @see ResourceAdapterFactoryBean

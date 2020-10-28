@@ -67,7 +67,7 @@ import org.springframework.util.Assert;
  * JDBC {@link org.springframework.jdbc.datasource.DataSourceTransactionManager},
  * which has stronger needs for synchronization.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see ConnectionFactoryUtils#getTransactionalSession
  * @see TransactionAwareConnectionFactoryProxy

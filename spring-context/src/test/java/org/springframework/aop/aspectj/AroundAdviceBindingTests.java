@@ -18,8 +18,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for various parameter binding scenarios with before advice.
  *
- * @author Adrian Colyer
- * @author Chris Beams
+
+
  */
 public class AroundAdviceBindingTests {
 

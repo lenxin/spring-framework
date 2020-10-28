@@ -62,8 +62,8 @@ import static org.springframework.core.env.EnvironmentSystemIntegrationTests.Con
  * conditionally based on environment metadata
  * </ul>
  *
- * @author Chris Beams
- * @author Sam Brannen
+
+
  * @see org.springframework.context.support.EnvironmentIntegrationTests
  */
 @SuppressWarnings("resource")

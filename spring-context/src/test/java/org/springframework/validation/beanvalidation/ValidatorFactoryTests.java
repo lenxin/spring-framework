@@ -39,7 +39,7 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class ValidatorFactoryTests {
 

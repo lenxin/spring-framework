@@ -31,7 +31,7 @@ import org.springframework.util.Assert;
  * to automatically register a trigger for the corresponding JobDetail,
  * instead of registering the JobDetail separately.
  *
- * @author Juergen Hoeller
+
  * @since 3.1
  * @see #setName
  * @see #setGroup

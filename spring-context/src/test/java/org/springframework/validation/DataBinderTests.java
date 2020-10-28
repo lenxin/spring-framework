@@ -56,10 +56,10 @@ import org.springframework.util.StringUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Kazuki Shimizu
+
+
+
+
  */
 public class DataBinderTests {
 

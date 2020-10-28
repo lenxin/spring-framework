@@ -17,7 +17,7 @@ import org.springframework.web.cors.CorsConfiguration;
 
 /**
  * Unit tests for {@link CorsFilter}.
- * @author Sebastien Deleuze
+
  */
 public class CorsFilterTests {
 

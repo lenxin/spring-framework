@@ -6,7 +6,7 @@ import org.springframework.test.context.configuration.interfaces.ContextConfigur
 import org.springframework.tests.sample.beans.Employee;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 @ContextConfiguration(classes = Config.class)

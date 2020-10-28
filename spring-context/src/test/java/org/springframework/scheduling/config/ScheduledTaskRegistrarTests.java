@@ -11,8 +11,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link ScheduledTaskRegistrar}.
  *
- * @author Tobias Montagna-Hay
- * @author Juergen Hoeller
+
+
  * @since 4.2
  */
 public class ScheduledTaskRegistrarTests {

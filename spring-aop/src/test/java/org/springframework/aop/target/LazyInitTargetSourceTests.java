@@ -13,9 +13,9 @@ import static org.junit.Assert.*;
 import static org.springframework.tests.TestResourceUtils.*;
 
 /**
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Chris Beams
+
+
+
  * @since 07.01.2005
  */
 public class LazyInitTargetSourceTests {

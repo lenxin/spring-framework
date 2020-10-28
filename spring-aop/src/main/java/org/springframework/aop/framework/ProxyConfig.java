@@ -8,8 +8,8 @@ import org.springframework.util.Assert;
  * Convenience superclass for configuration used in creating proxies,
  * to ensure that all proxy creators have consistent properties.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see AdvisedSupport
  */
 public class ProxyConfig implements Serializable {

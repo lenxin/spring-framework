@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
  * Exception thrown when a client POSTs, PUTs, or PATCHes content of a type
  * not supported by request handler.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

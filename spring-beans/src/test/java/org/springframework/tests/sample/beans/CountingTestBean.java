@@ -16,7 +16,7 @@
 
 
 /**
- * @author Juergen Hoeller
+
  * @since 15.03.2005
  */
 public class CountingTestBean extends TestBean {

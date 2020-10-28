@@ -123,7 +123,7 @@ import org.springframework.util.Assert;
  *   &lt;/property&gt;
  * &lt;/bean&gt;</pre>
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see javax.resource.spi.ResourceAdapter#endpointActivation
  * @see javax.resource.spi.ResourceAdapter#endpointDeactivation

@@ -57,7 +57,7 @@ import org.springframework.transaction.UnexpectedRollbackException;
  * that case, and potentially a private {@code readObject()} method (according
  * to Java serialization rules) if they need to restore any transient state.
  *
- * @author Juergen Hoeller
+
  * @since 28.03.2003
  * @see #setTransactionSynchronization
  * @see TransactionSynchronizationManager

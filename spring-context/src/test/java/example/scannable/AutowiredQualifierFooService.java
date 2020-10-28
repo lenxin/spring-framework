@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.AsyncResult;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  */
 @Lazy
 public class AutowiredQualifierFooService implements FooService {

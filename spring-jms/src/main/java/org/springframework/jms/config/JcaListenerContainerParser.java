@@ -12,8 +12,8 @@ import org.springframework.util.StringUtils;
 /**
  * Parser for the JMS {@code <jca-listener-container>} element.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 2.5
  */
 class JcaListenerContainerParser extends AbstractListenerContainerParser {

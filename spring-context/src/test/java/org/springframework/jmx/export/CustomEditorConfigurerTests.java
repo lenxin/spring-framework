@@ -12,7 +12,7 @@ import org.springframework.jmx.AbstractJmxTests;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
+
  */
 public class CustomEditorConfigurerTests extends AbstractJmxTests {
 

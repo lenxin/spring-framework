@@ -22,9 +22,9 @@ import org.springframework.transaction.event.TransactionalEventListenerFactory;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class AnnotationTransactionNamespaceHandlerTests {
 

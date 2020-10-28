@@ -21,8 +21,8 @@ import static org.mockito.Mockito.*;
  * can safely be used as the cache key for
  * {@link org.springframework.test.context.cache.ContextCache ContextCache}.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 3.1
  */
 public class MergedContextConfigurationTests {

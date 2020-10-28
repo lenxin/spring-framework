@@ -6,7 +6,7 @@ package org.springframework.transaction;
  * rollback status) and there is no existing transaction.
  * This represents an illegal usage of the transaction API.
  *
- * @author Rod Johnson
+
  * @since 17.03.2003
  */
 @SuppressWarnings("serial")

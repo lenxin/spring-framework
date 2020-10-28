@@ -21,8 +21,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link WebConnectionHtmlUnitDriver}.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 @RunWith(MockitoJUnitRunner.class)

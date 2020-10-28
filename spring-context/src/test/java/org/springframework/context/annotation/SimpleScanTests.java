@@ -9,9 +9,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class SimpleScanTests {
 

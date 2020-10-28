@@ -36,8 +36,8 @@ import org.springframework.web.reactive.function.BodyExtractor;
  * expected. However keep in mind that if the response does have content, the
  * connection will be closed and will not be placed back in the pool.
  *
- * @author Brian Clozel
- * @author Arjen Poutsma
+
+
  * @since 5.0
  */
 public interface ClientResponse {

@@ -14,8 +14,8 @@ import org.springframework.web.servlet.HandlerMapping;
 import static org.junit.Assert.*;
 
 /**
- * @author Alef Arendsen
- * @author Juergen Hoeller
+
+
  */
 public class PathMatchingUrlHandlerMappingTests {
 

@@ -28,8 +28,8 @@ import static org.springframework.tests.Matchers.*;
 /**
  * Tests for {@link SimpleJdbcCall}.
  *
- * @author Thomas Risberg
- * @author Kiril Nugmanov
+
+
  */
 public class SimpleJdbcCallTests {
 

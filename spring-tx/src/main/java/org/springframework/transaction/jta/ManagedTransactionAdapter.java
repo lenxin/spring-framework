@@ -16,7 +16,7 @@ import org.springframework.util.Assert;
  * {@link javax.transaction.TransactionManager} reference and creating
  * a JTA {@link javax.transaction.Transaction} handle for it.
  *
- * @author Juergen Hoeller
+
  * @since 3.0.2
  */
 public class ManagedTransactionAdapter implements Transaction {

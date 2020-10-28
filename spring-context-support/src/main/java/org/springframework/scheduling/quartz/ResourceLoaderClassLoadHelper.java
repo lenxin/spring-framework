@@ -20,7 +20,7 @@ import org.springframework.util.ClassUtils;
  * onto Spring's {@link ResourceLoader} interface. Used by default when
  * the SchedulerFactoryBean runs in a Spring ApplicationContext.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.5
  * @see SchedulerFactoryBean#setApplicationContext
  */

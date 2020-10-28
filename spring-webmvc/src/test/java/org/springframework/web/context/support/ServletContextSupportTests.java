@@ -20,8 +20,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for various ServletContext-related support classes.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  * @since 22.12.2004
  */
 public class ServletContextSupportTests {

@@ -15,7 +15,7 @@ import org.springframework.jms.config.JmsListenerEndpointRegistry;
  * <p>This configuration class is automatically imported when using the @{@link EnableJms}
  * annotation. See the {@link EnableJms} javadocs for complete usage details.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see JmsListenerAnnotationBeanPostProcessor
  * @see JmsListenerEndpointRegistry

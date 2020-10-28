@@ -32,8 +32,8 @@ import org.springframework.util.Assert;
  * constructor argument} or set via a system property or Spring property named
  * {@code spring.test.context.cache.maxSize}.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see ContextCacheUtils#retrieveMaxCacheSize()
  */

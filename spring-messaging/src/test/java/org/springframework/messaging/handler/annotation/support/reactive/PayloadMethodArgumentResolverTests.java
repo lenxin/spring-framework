@@ -38,7 +38,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link PayloadMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class PayloadMethodArgumentResolverTests {
 

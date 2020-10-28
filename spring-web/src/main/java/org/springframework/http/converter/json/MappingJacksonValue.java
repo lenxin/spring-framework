@@ -16,7 +16,7 @@ import org.springframework.lang.Nullable;
  * <p>On the client side, simply wrap the POJO and pass it in to the
  * {@code RestTemplate}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.1
  */
 public class MappingJacksonValue {

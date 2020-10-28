@@ -29,8 +29,8 @@ import org.springframework.lang.Nullable;
  * interface in order to force subclasses to implement a {@link #destroy()}
  * method, closing down their object pool.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #getTarget
  * @see #releaseTarget
  * @see #destroy

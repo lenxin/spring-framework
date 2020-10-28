@@ -21,9 +21,9 @@ import org.springframework.lang.Nullable;
  * <p>Views should be beans. They are likely to be instantiated as beans by a ViewResolver.
  * As this interface is stateless, view implementations should be thread-safe.
  *
- * @author Rod Johnson
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
+
  * @see org.springframework.web.servlet.view.AbstractView
  * @see org.springframework.web.servlet.view.InternalResourceView
  */

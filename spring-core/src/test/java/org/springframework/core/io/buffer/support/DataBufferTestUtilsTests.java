@@ -11,7 +11,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class DataBufferTestUtilsTests extends AbstractDataBufferAllocatingTestCase {
 

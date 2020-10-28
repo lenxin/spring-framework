@@ -30,10 +30,10 @@ import org.springframework.web.socket.adapter.AbstractWebSocketSession;
 /**
  * A {@link WebSocketSession} for use with the Jetty 9.4 WebSocket API.
  *
- * @author Phillip Webb
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Juergen Hoeller
+
+
+
+
  * @since 4.0
  */
 public class JettyWebSocketSession extends AbstractWebSocketSession<Session> {

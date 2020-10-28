@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
  * should prefer the use of the {@link javax.persistence.EntityManager#getDelegate()}
  * method to access native functionality of the underlying resource.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  */
 public interface EntityManagerProxy extends EntityManager {

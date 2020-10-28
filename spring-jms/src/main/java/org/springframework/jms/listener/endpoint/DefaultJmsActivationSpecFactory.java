@@ -31,7 +31,7 @@ import org.springframework.beans.BeanWrapper;
  * <p>Thanks to Agim Emruli and Laurie Chan for pointing out WebSphere MQ
  * settings and contributing corresponding tests!
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see #setActivationSpecClass
  */

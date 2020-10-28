@@ -20,8 +20,8 @@ import java.util.*;
  * recognize the same names as the constants themselves, and freeing them
  * from maintaining their own mapping.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 16.03.2003
  */
 public class Constants {

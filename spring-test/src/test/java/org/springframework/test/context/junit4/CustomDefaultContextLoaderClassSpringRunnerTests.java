@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
  * can specify a custom <em>default ContextLoader class</em> that overrides the standard
  * default class name.
  *
- * @author Sam Brannen
+
  * @since 3.0
  */
 @RunWith(SpringRunner.class)

@@ -11,7 +11,7 @@ import org.springframework.format.Parser;
 /**
  * Parses Joda {@link DateTime} instances using a {@link DateTimeFormatter}.
  *
- * @author Keith Donald
+
  * @since 3.0
  */
 public final class DateTimeParser implements Parser<DateTime> {

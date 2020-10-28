@@ -13,7 +13,7 @@ import java.net.URI
 /**
  * Coroutines variant of [RSocketRequester.Builder.connect].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun RSocketRequester.Builder.connectAndAwait(transport: ClientTransport): RSocketRequester =
@@ -22,7 +22,7 @@ suspend fun RSocketRequester.Builder.connectAndAwait(transport: ClientTransport)
 /**
  * Coroutines variant of [RSocketRequester.Builder.connectTcp].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun RSocketRequester.Builder.connectTcpAndAwait(host: String, port: Int): RSocketRequester =
@@ -31,7 +31,7 @@ suspend fun RSocketRequester.Builder.connectTcpAndAwait(host: String, port: Int)
 /**
  * Coroutines variant of [RSocketRequester.Builder.connectWebSocket].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun RSocketRequester.Builder.connectWebSocketAndAwait(uri: URI): RSocketRequester =
@@ -41,7 +41,7 @@ suspend fun RSocketRequester.Builder.connectWebSocketAndAwait(uri: URI): RSocket
 /**
  * Kotlin [Flow] variant of [RSocketRequester.RequestSpec.data].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 @FlowPreview
@@ -51,7 +51,7 @@ fun <T : Any> RSocketRequester.RequestSpec.dataFlow(data: Flow<T>): RSocketReque
 /**
  * Coroutines variant of [RSocketRequester.ResponseSpec.send].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun RSocketRequester.ResponseSpec.sendAndAwait() {
@@ -61,7 +61,7 @@ suspend fun RSocketRequester.ResponseSpec.sendAndAwait() {
 /**
  * Coroutines variant of [RSocketRequester.ResponseSpec.retrieveMono].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun <T : Any> RSocketRequester.ResponseSpec.retrieveAndAwait(): T =
@@ -70,7 +70,7 @@ suspend fun <T : Any> RSocketRequester.ResponseSpec.retrieveAndAwait(): T =
 /**
  * Coroutines variant of [RSocketRequester.ResponseSpec.retrieveFlux].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 @FlowPreview

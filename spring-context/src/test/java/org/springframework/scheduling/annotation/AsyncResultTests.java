@@ -13,7 +13,7 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class AsyncResultTests {
 

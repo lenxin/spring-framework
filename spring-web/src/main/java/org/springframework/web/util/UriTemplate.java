@@ -23,9 +23,9 @@ import org.springframework.util.Assert;
  * <p>This class is designed to be thread-safe and reusable, allowing for any number
  * of expand or match calls.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

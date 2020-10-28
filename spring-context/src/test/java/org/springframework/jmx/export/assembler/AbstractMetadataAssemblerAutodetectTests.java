@@ -3,7 +3,7 @@ package org.springframework.jmx.export.assembler;
 import org.springframework.jmx.export.metadata.JmxAttributeSource;
 
 /**
- * @author Rob Harrop
+
  */
 public abstract class AbstractMetadataAssemblerAutodetectTests extends AbstractAutodetectTests {
 

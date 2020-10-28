@@ -27,8 +27,8 @@ import org.springframework.util.CollectionUtils;
  * If no mapping is found for a given key, the key itself is used to
  * build an {@code ObjectName}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #setMappings
  * @see #setMappingLocation

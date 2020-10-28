@@ -15,7 +15,7 @@
  */package org.springframework.tests.sample.beans;
 
 /**
- * @author Rob Harrop
+
  * @since 2.0
  */
 public class Pet {

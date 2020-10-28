@@ -5,8 +5,8 @@ import javax.jms.Session;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 06.01.2005
  */
 public class JmsTemplateTransactedTests extends JmsTemplateTests {

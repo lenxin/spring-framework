@@ -8,7 +8,7 @@ import org.springframework.context.annotation.spr10546.ParentConfig;
  * the enclosing configuration prior to {@link ChildConfig} to demonstrate this can happen
  * with classpath scanning.
  *
- * @author Rob Winch
+
  */
 @Configuration
 public class AEnclosingConfig {

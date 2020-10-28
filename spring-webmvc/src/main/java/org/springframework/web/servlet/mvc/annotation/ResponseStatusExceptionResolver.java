@@ -30,9 +30,9 @@ import org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver;
  *
  * <p>As of 5.0 this resolver also supports {@link ResponseStatusException}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
  * @since 3.0
  * @see ResponseStatus
  * @see ResponseStatusException

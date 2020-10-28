@@ -9,10 +9,10 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Dmitriy Kopylenko
- * @author Juergen Hoeller
- * @author Rick Evans
- * @author Chris Beams
+
+
+
+
  * @since 10.09.2003
  */
 public class SimpleMailMessageTests {

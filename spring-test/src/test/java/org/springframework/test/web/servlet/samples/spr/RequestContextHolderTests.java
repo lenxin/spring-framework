@@ -49,8 +49,8 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
  * <li>SPR-13260: No reuse of mock requests</li>
  * </ul>
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @see CustomRequestAttributesRequestContextHolderTests
  */
 @RunWith(SpringRunner.class)

@@ -15,7 +15,7 @@ import org.springframework.lang.Nullable;
  * JMS MessageConsumer decorator that adapts all calls
  * to a shared MessageConsumer instance underneath.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.6
  */
 class CachedMessageConsumer implements MessageConsumer, QueueReceiver, TopicSubscriber {

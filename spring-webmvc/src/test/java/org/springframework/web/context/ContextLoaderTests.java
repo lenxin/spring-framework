@@ -35,9 +35,9 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link ContextLoader} and {@link ContextLoaderListener}.
  *
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Chris Beams
+
+
+
  * @since 12.08.2003
  * @see org.springframework.web.context.support.Spr8510Tests
  */

@@ -8,8 +8,8 @@ import org.springframework.tests.TestGroup;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Chris Beams
+
+
  */
 public class RefreshableTargetSourceTests {
 

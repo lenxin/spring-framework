@@ -5,7 +5,7 @@ import reactor.core.publisher.Mono;
 /**
  * Represents a function that handles a {@linkplain ServerRequest request}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  * @param <T> the type of the response of the function
  * @see RouterFunction

@@ -139,9 +139,9 @@ import static org.assertj.core.api.Assertions.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class ServletAnnotationControllerHandlerMethodTests extends AbstractServletHandlerMethodTests {
 

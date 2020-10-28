@@ -44,7 +44,7 @@ import static org.junit.Assert.*;
 /**
  * Test class for {@link SpringHandlerInstantiatorTests}.
  *
- * @author Sebastien Deleuze
+
  */
 public class SpringHandlerInstantiatorTests {
 

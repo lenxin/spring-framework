@@ -16,9 +16,9 @@ import static org.mockito.BDDMockito.*;
  * Superclass for unit tests for EntityManagerFactory-creating beans.
  * Note: Subclasses must set expectations on the mock EntityManagerFactory.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  */
 public abstract class AbstractEntityManagerFactoryBeanTests {
 

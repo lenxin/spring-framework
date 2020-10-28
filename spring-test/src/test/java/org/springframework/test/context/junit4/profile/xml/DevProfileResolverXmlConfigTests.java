@@ -4,7 +4,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ActiveProfilesResolver;
 
 /**
- * @author Michail Nikolaev
+
  * @since 4.0
  */
 @ActiveProfiles(resolver = DevProfileResolverXmlConfigTests.class, inheritProfiles = false)

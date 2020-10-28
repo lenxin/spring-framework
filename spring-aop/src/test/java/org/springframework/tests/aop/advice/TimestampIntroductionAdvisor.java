@@ -6,7 +6,7 @@ import org.springframework.tests.aop.interceptor.TimestampIntroductionIntercepto
 
 /**
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public class TimestampIntroductionAdvisor extends DefaultIntroductionAdvisor {

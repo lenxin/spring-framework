@@ -25,10 +25,10 @@ import org.springframework.util.ObjectUtils;
  * <p>Basically a subset of the input data is returned based on the
  * evaluation of the expression supplied as selection criteria.
  *
- * @author Andy Clement
- * @author Mark Fisher
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
+
+
  * @since 3.0
  */
 public class Selection extends SpelNodeImpl {

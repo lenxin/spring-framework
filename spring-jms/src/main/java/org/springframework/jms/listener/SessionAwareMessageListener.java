@@ -17,7 +17,7 @@ import javax.jms.Session;
  * Typically <i>not</i> supported by JCA-based listener containers:
  * For maximum compatibility, implement a standard JMS MessageListener instead.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @param <M> the message type
  * @see AbstractMessageListenerContainer#setMessageListener

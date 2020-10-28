@@ -84,7 +84,7 @@ import org.springframework.util.StringUtils;
  * and drop the resulting RAR file into your application server's
  * deployment directory!
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see #setContextConfigLocation
  * @see #loadBeanDefinitions

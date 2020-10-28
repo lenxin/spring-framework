@@ -28,7 +28,7 @@ import org.springframework.util.MimeType;
  * be used. These can be injected by the {@linkplain #MarshallingMessageConverter(Marshaller)
  * constructor} or {@linkplain #setMarshaller(Marshaller) bean properties}.
  *
- * @author Arjen Poutsma
+
  * @since 4.2
  */
 public class MarshallingMessageConverter extends AbstractMessageConverter {

@@ -57,8 +57,8 @@ import org.springframework.util.MultiValueMap;
  * the target element type, we can inspect the values in the actual map and
  * decide whether to write plain form data (String values only) or otherwise.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @see FormHttpMessageWriter
  */

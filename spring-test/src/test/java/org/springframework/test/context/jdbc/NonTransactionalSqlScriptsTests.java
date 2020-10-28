@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
  * Integration tests which verify that scripts executed via {@link Sql @Sql}
  * will persist between non-transactional test methods.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

@@ -45,8 +45,8 @@ import org.springframework.util.CollectionUtils;
  *
  * <p>Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
  *
- * @author Darren Davison
- * @author Juergen Hoeller
+
+
  * @since 03.03.2004
  * @see #setConfigLocation
  * @see #setFreemarkerSettings

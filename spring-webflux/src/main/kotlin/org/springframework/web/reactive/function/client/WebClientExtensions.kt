@@ -20,7 +20,7 @@ import reactor.core.publisher.Mono
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 @Suppress("EXTENSION_SHADOWED_BY_MEMBER")
@@ -32,7 +32,7 @@ inline fun <reified T : Any, S : Publisher<T>> RequestBodySpec.body(publisher: S
  * body(Flow<T>)` variant leveraging Kotlin reified type parameters. This extension is
  * not subject to type erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 @FlowPreview
@@ -44,7 +44,7 @@ inline fun <reified T : Any, S : Flow<T>> RequestBodySpec.body(flow: S): Request
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> WebClient.ResponseSpec.bodyToMono(): Mono<T> =
@@ -56,7 +56,7 @@ inline fun <reified T : Any> WebClient.ResponseSpec.bodyToMono(): Mono<T> =
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> WebClient.ResponseSpec.bodyToFlux(): Flux<T> =
@@ -68,7 +68,7 @@ inline fun <reified T : Any> WebClient.ResponseSpec.bodyToFlux(): Flux<T> =
  * Backpressure is controlled by [batchSize] parameter that controls the size of in-flight elements
  * and [org.reactivestreams.Subscription.request] size.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 @FlowPreview
@@ -79,7 +79,7 @@ inline fun <reified T : Any> WebClient.ResponseSpec.bodyToFlow(batchSize: Int = 
 /**
  * Coroutines variant of [WebClient.RequestHeadersSpec.exchange].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun WebClient.RequestHeadersSpec<out WebClient.RequestHeadersSpec<*>>.awaitExchange(): ClientResponse =
@@ -88,7 +88,7 @@ suspend fun WebClient.RequestHeadersSpec<out WebClient.RequestHeadersSpec<*>>.aw
 /**
  * Coroutines variant of [WebClient.RequestBodySpec.body].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 inline fun <reified T: Any> WebClient.RequestBodySpec.body(crossinline supplier: suspend () -> T)
@@ -97,7 +97,7 @@ inline fun <reified T: Any> WebClient.RequestBodySpec.body(crossinline supplier:
 /**
  * Coroutines variant of [WebClient.ResponseSpec.bodyToMono].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend inline fun <reified T : Any> WebClient.ResponseSpec.awaitBody() : T =

@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 /**
  * Abstract base class for integration tests involving database initialization.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 public abstract class AbstractDatabaseInitializationTests {

@@ -27,10 +27,10 @@ import org.springframework.lang.Nullable;
  * Also has functionality to parse MIME Type values from a {@code String} using
  * {@link #valueOf(String)}. For more parsing options see {@link MimeTypeUtils}.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
+
  * @since 4.0
  * @see MimeTypeUtils
  */

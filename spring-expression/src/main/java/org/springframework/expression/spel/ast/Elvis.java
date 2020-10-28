@@ -14,8 +14,8 @@ import org.springframework.util.StringUtils;
  * Represents the elvis operator ?:. For an expression "a?:b" if a is not null, the value
  * of the expression is "a", if a is null then the value of the expression is "b".
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class Elvis extends SpelNodeImpl {

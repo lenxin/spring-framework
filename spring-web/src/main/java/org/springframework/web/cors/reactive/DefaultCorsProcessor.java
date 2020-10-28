@@ -26,8 +26,8 @@ import org.springframework.web.server.ServerWebExchange;
  * avoid adding CORS headers to the response. CORS processing is also skipped
  * if the response already contains CORS headers.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class DefaultCorsProcessor implements CorsProcessor {

@@ -27,7 +27,7 @@ import static org.springframework.transaction.annotation.Propagation.*;
 /**
  * Unit tests for {@link TransactionalTestExecutionListener}.
  *
- * @author Sam Brannen
+
  * @since 4.0
  */
 public class TransactionalTestExecutionListenerTests {

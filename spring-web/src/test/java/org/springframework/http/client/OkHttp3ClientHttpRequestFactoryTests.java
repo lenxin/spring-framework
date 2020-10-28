@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.springframework.http.HttpMethod;
 
 /**
- * @author Roy Clarkson
+
  */
 public class OkHttp3ClientHttpRequestFactoryTests extends AbstractHttpRequestFactoryTestCase {
 

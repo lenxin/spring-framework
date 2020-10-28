@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
- * @author Thomas Risberg
+
  */
 public class SpacePerson {
 

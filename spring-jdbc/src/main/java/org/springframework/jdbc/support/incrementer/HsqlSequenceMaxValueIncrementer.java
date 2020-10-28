@@ -11,7 +11,7 @@ import javax.sql.DataSource;
  * <p><b>NOTE:</b> This is an alternative to using a regular table to support
  * generating unique keys that was necessary in previous versions of HSQL.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  * @see HsqlMaxValueIncrementer
  */

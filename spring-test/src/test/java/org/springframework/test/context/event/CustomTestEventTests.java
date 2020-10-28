@@ -24,7 +24,7 @@ import static org.springframework.test.context.TestExecutionListeners.MergeMode.
  * Integration tests for custom event publication via
  * {@link TestContext#publishEvent(java.util.function.Function)}.
  *
- * @author Sam Brannen
+
  * @since 5.2
  */
 @RunWith(SpringRunner.class)

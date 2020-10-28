@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
  * Abstract base for {@link ClientHttpRequest} that makes sure that headers
  * and body are not written multiple times.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public abstract class AbstractClientHttpRequest implements ClientHttpRequest {

@@ -27,9 +27,9 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link StandaloneMockMvcBuilder}
  *
- * @author Rossen Stoyanchev
- * @author Rob Winch
- * @author Sebastien Deleuze
+
+
+
  */
 public class StandaloneMockMvcBuilderTests {
 

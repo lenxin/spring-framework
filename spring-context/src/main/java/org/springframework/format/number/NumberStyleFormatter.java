@@ -14,8 +14,8 @@ import org.springframework.lang.Nullable;
  * Allows configuration over the decimal number pattern.
  * The {@link #parse(String, Locale)} routine always returns a BigDecimal.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 4.2
  * @see #setPattern
  * @see #setLenient

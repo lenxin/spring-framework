@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  * {@link javax.resource.spi.BootstrapContext}, passing it on to
  * Spring-managed beans that implement {@link BootstrapContextAware}.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see SpringContextResourceAdapter
  * @see BootstrapContextAware

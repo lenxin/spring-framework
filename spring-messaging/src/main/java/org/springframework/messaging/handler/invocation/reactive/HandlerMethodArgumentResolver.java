@@ -9,7 +9,7 @@ import org.springframework.messaging.Message;
  * Strategy interface for resolving method parameters into argument values
  * in the context of a given {@link Message}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public interface HandlerMethodArgumentResolver {

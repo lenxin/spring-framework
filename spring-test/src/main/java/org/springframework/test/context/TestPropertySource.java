@@ -59,7 +59,7 @@ import org.springframework.core.annotation.AliasFor;
  * process.</li>
  * </ul>
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see ContextConfiguration
  * @see org.springframework.core.env.Environment

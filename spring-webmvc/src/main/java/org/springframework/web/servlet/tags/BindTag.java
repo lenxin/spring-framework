@@ -63,8 +63,8 @@ import org.springframework.web.servlet.support.BindStatus;
  * </tbody>
  * </table>
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #setPath
  */
 @SuppressWarnings("serial")

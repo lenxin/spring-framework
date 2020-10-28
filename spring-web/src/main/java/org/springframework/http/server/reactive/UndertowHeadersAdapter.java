@@ -19,7 +19,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * {@code MultiValueMap} implementation for wrapping Undertow HTTP headers.
  *
- * @author Brian Clozel
+
  * @since 5.1.1
  */
 class UndertowHeadersAdapter implements MultiValueMap<String, String> {

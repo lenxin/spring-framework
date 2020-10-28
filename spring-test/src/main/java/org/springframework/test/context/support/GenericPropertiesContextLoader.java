@@ -12,7 +12,7 @@ import org.springframework.util.ObjectUtils;
  * Concrete implementation of {@link AbstractGenericContextLoader} that reads
  * bean definitions from Java {@link Properties} resources.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 public class GenericPropertiesContextLoader extends AbstractGenericContextLoader {

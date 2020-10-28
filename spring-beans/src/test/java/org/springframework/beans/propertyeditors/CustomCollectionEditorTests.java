@@ -11,8 +11,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the {@link CustomCollectionEditor} class.
  *
- * @author Rick Evans
- * @author Chris Beams
+
+
  */
 public class CustomCollectionEditorTests {
 

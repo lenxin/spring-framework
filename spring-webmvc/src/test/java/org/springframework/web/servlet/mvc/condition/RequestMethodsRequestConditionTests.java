@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 /**
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 public class RequestMethodsRequestConditionTests {
 

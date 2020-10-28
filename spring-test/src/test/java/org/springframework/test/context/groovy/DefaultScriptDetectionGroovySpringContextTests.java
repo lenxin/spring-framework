@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  * Integration test class that verifies proper detection of a default
  * Groovy script (as opposed to a default XML config file).
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see DefaultScriptDetectionGroovySpringContextTestsContext
  */

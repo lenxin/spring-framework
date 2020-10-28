@@ -5,7 +5,7 @@ import org.springframework.test.context.junit4.orm.domain.Person;
 /**
  * Person Service API.
  *
- * @author Sam Brannen
+
  * @since 3.0
  */
 public interface PersonService {

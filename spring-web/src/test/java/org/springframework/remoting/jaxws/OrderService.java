@@ -4,7 +4,7 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 
 /**
- * @author Juergen Hoeller
+
  */
 @WebService
 @SOAPBinding(style = SOAPBinding.Style.RPC)

@@ -44,7 +44,7 @@ import java.util.function.Supplier
  * }
  * ```
  *
- * @author Sebastien Deleuze
+
  * @see BeanDefinitionDsl
  * @since 5.0
  */
@@ -56,7 +56,7 @@ fun beans(init: BeanDefinitionDsl.() -> Unit) = BeanDefinitionDsl(init)
  * @constructor Create a new bean definition DSL.
  * @param condition the predicate to fulfill in order to take in account the inner
  * bean definition block
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 open class BeanDefinitionDsl(private val init: BeanDefinitionDsl.() -> Unit,

@@ -22,7 +22,7 @@ import kotlin.reflect.jvm.kotlinFunction
 /**
  * Convert a [Deferred] instance to a [Mono] one.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 internal fun <T: Any> deferredToMono(source: Deferred<T>) =
@@ -31,7 +31,7 @@ internal fun <T: Any> deferredToMono(source: Deferred<T>) =
 /**
  * Convert a [Mono] instance to a [Deferred] one.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 internal fun <T: Any> monoToDeferred(source: Mono<T>) =
@@ -41,7 +41,7 @@ internal fun <T: Any> monoToDeferred(source: Mono<T>) =
  * Invoke an handler method converting suspending method to [Mono] or
  * [reactor.core.publisher.Flux] if necessary.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 @Suppress("UNCHECKED_CAST")

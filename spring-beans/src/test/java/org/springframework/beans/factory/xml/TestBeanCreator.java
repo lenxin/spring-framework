@@ -6,7 +6,7 @@ import org.springframework.tests.sample.beans.TestBean;
  * Test class for Spring's ability to create
  * objects using static factory methods, rather
  * than constructors.
- * @author Rod Johnson
+
  */
 public class TestBeanCreator {
 

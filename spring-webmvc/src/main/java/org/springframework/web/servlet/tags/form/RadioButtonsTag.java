@@ -208,8 +208,8 @@ package org.springframework.web.servlet.tags.form;
  * </tbody>
  * </table>
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.5
  */
 @SuppressWarnings("serial")

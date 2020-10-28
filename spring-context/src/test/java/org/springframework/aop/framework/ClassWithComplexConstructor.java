@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
 /**
- * @author Oliver Gierke
+
  */
 @Component
 public class ClassWithComplexConstructor {

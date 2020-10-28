@@ -23,7 +23,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * <p>Also tests configuration of the transaction manager qualifier configured
  * via {@link Transactional @Transactional}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see Rollback
  * @see Transactional#transactionManager

@@ -18,7 +18,7 @@ import org.springframework.web.server.ServerWebExchange;
  * <p>View technologies that support this contract can obtain an instance to
  * delegate to via {@link RequestContext#getRequestDataValueProcessor()}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public interface RequestDataValueProcessor {

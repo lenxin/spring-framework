@@ -11,7 +11,7 @@ import org.springframework.beans.DirectFieldAccessor;
  * Unit tests for
  * {@link org.springframework.web.servlet.view.groovy.GroovyMarkupViewResolver}.
  *
- * @author Brian Clozel
+
  */
 public class GroovyMarkupViewResolverTests {
 

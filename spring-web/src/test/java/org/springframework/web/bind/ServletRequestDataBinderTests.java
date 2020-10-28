@@ -16,10 +16,10 @@ import org.springframework.tests.sample.beans.TestBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Scott Andrews
+
+
+
+
  */
 public class ServletRequestDataBinderTests {
 

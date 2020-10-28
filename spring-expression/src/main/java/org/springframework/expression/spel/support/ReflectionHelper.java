@@ -20,8 +20,8 @@ import org.springframework.util.MethodInvoker;
  * Utility methods used by the reflection resolver code to discover the appropriate
  * methods/constructors and fields that should be used in expressions.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public abstract class ReflectionHelper {

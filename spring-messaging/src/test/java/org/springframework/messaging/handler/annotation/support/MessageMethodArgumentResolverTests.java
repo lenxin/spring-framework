@@ -23,8 +23,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link MessageMethodArgumentResolver}.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  */
 public class MessageMethodArgumentResolverTests {
 

@@ -13,8 +13,8 @@ import org.springframework.util.Assert;
  * These methods are particularly useful for composing pointcuts
  * using the union and intersection methods.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public abstract class Pointcuts {
 

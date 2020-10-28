@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
 /**
  * A {@link SubProtocolErrorHandler} for use with STOMP.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.2
  */
 public class StompSubProtocolErrorHandler implements SubProtocolErrorHandler<byte[]> {

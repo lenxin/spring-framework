@@ -5,7 +5,7 @@ package org.springframework.core.annotation;
  *
  * <p>Used to detect whether an annotation has already been synthesized.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 public interface SynthesizedAnnotation {

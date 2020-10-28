@@ -15,8 +15,8 @@ import org.springframework.util.MultiValueMap;
 /**
  * Rendering-specific subtype of {@link ServerResponse} that exposes model and template data.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 5.0
  */
 public interface RenderingResponse extends ServerResponse {

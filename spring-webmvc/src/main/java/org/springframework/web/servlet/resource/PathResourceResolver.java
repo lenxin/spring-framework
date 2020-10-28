@@ -29,9 +29,9 @@ import org.springframework.web.util.UrlPathHelper;
  * <p>This resolver does not delegate to the {@code ResourceResolverChain} and is
  * expected to be configured at the end in a chain of resolvers.
  *
- * @author Jeremy Grelle
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
  * @since 4.1
  */
 public class PathResourceResolver extends AbstractResourceResolver {

@@ -34,8 +34,8 @@ import org.springframework.core.annotation.AliasFor;
  * public {@literal @}interface DisabledOnMac {}
  * </pre>
  *
- * @author Sam Brannen
- * @author Tadaya Tsuyukubo
+
+
  * @since 5.0
  * @see SpringExtension
  * @see EnabledIf

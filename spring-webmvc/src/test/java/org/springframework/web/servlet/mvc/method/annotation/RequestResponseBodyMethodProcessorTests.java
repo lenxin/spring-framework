@@ -61,8 +61,8 @@ import static org.junit.Assert.*;
  * actual delegation to {@link HttpMessageConverter} instances. Also see
  * {@link RequestResponseBodyMethodProcessorMockTests}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  */
 @SuppressWarnings("unused")
 public class RequestResponseBodyMethodProcessorTests {

@@ -21,7 +21,7 @@ import org.junit.Test
 /**
  * Tests for [ModelMap] Kotlin extensions.
  *
- * @author Sebastien Deleuze
+
  */
 class ModelMapExtensionsTests {
 

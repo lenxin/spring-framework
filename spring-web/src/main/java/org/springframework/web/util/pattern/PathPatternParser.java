@@ -11,7 +11,7 @@ package org.springframework.web.util.pattern;
  *
  * <p>For details of the path pattern syntax see {@link PathPattern}.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 public class PathPatternParser {

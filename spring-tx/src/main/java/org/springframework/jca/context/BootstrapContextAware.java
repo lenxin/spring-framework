@@ -9,8 +9,8 @@ import org.springframework.beans.factory.Aware;
  * notified of the BootstrapContext (typically determined by the
  * {@link ResourceAdapterApplicationContext}) that it runs in.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  * @since 2.5
  * @see javax.resource.spi.BootstrapContext
  */

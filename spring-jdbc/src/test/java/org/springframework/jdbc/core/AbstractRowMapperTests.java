@@ -22,7 +22,7 @@ import static org.mockito.BDDMockito.*;
  * Mock object based abstract class for RowMapper tests.
  * Initializes mock objects and verifies results.
  *
- * @author Thomas Risberg
+
  */
 public abstract class AbstractRowMapperTests {
 

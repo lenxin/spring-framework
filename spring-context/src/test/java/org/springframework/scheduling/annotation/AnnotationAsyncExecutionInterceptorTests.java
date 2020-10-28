@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AnnotationAsyncExecutionInterceptor}.
  *
- * @author Chris Beams
+
  * @since 3.1.2
  */
 public class AnnotationAsyncExecutionInterceptorTests {

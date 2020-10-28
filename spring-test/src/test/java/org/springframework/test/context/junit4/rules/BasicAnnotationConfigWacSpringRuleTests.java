@@ -12,7 +12,7 @@ import org.springframework.test.context.web.BasicAnnotationConfigWacTests;
  * that has been modified to use {@link SpringClassRule} and
  * {@link SpringMethodRule}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 @RunWith(JUnit4.class)

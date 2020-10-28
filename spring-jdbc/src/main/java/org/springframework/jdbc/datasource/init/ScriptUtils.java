@@ -23,15 +23,15 @@ import org.springframework.util.StringUtils;
  *
  * <p>Mainly for internal use within the framework.
  *
- * @author Thomas Risberg
- * @author Sam Brannen
- * @author Juergen Hoeller
- * @author Keith Donald
- * @author Dave Syer
- * @author Chris Beams
- * @author Oliver Gierke
- * @author Chris Baldwin
- * @author Nicolas Debeissat
+
+
+
+
+
+
+
+
+
  * @since 4.0.3
  */
 public abstract class ScriptUtils {

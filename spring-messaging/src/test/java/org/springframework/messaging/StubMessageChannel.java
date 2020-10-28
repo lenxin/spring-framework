@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * A stub MessageChannel that saves all sent messages.
  *
- * @author Rossen Stoyanchev
+
  */
 public class StubMessageChannel implements SubscribableChannel {
 

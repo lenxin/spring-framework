@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
  * <p>This annotation may be used as a <em>meta-annotation</em> to create custom
  * <em>composed annotations</em>.
  *
- * @author Stephane Nicoll
+
  * @since 4.2
  * @see JmsListener
  */

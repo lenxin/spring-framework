@@ -13,7 +13,7 @@ import javax.persistence.spi.PersistenceUnitInfo;
  * A PersistenceUnitInfo instance is not available for further calls
  * anymore once it has been obtained.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see DefaultPersistenceUnitManager
  * @see org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean#setPersistenceUnitManager

@@ -5,7 +5,7 @@ import java.text.MessageFormat;
 /**
  * Exception that is thrown when there is a problem with the pattern being parsed.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 @SuppressWarnings("serial")

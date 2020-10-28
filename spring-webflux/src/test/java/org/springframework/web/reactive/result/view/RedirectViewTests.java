@@ -22,7 +22,7 @@ import static org.junit.Assert.assertTrue;
  * Tests for redirect view, and query string construction.
  * Doesn't test URL encoding, although it does check that it's called.
  *
- * @author Sebastien Deleuze
+
  */
 public class RedirectViewTests {
 

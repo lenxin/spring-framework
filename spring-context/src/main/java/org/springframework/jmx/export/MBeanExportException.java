@@ -5,7 +5,7 @@ import org.springframework.jmx.JmxException;
 /**
  * Exception thrown in case of failure when exporting an MBean.
  *
- * @author Rob Harrop
+
  * @since 2.0
  * @see MBeanExportOperations
  */

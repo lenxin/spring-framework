@@ -21,10 +21,10 @@ import org.springframework.lang.Nullable;
  * <p>Performs internal caching for performance reasons
  * using {@link AnnotatedElementKey}.
  *
- * @author Costin Leau
- * @author Phillip Webb
- * @author Sam Brannen
- * @author Stephane Nicoll
+
+
+
+
  * @since 3.1
  */
 class CacheOperationExpressionEvaluator extends CachedExpressionEvaluator {

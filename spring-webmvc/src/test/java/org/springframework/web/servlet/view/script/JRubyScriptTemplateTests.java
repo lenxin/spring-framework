@@ -22,7 +22,7 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for ERB templates running on JRuby.
  *
- * @author Sebastien Deleuze
+
  */
 @Ignore("JRuby not compatible with JDK 9 yet")
 public class JRubyScriptTemplateTests {

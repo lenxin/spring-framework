@@ -32,8 +32,8 @@ import org.springframework.web.reactive.socket.adapter.UndertowWebSocketSession;
 /**
  * Undertow based implementation of {@link WebSocketClient}.
  *
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class UndertowWebSocketClient implements WebSocketClient {

@@ -16,7 +16,7 @@ import org.springframework.util.StringUtils;
 /**
  * Parser for the 'annotation-driven' element of the 'jms' namespace.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 class AnnotationDrivenJmsBeanDefinitionParser implements BeanDefinitionParser {

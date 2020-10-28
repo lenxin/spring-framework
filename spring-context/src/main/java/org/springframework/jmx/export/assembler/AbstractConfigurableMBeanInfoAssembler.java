@@ -16,8 +16,8 @@ import org.springframework.util.StringUtils;
  * Base class for MBeanInfoAssemblers that support configurable
  * JMX notification behavior.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public abstract class AbstractConfigurableMBeanInfoAssembler extends AbstractReflectiveMBeanInfoAssembler {

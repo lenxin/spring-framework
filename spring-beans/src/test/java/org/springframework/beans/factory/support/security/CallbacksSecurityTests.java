@@ -47,7 +47,7 @@ import static org.junit.Assert.*;
  * calling user code while the second half that the caller code permission get
  * through and Spring doesn't override the permission stack.
  *
- * @author Costin Leau
+
  */
 public class CallbacksSecurityTests {
 

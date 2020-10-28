@@ -14,7 +14,7 @@ import org.springframework.lang.Nullable;
  * <p>{@link ResourceAdapterApplicationContext} automatically registers
  * this processor with its underlying bean factory.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see BootstrapContextAware
  */

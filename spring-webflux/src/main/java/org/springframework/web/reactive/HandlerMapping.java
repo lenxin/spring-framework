@@ -8,8 +8,8 @@ import org.springframework.web.server.ServerWebExchange;
  * Interface to be implemented by objects that define a mapping between
  * requests and handler objects.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 public interface HandlerMapping {

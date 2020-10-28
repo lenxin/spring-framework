@@ -9,8 +9,8 @@ import org.springframework.aop.Pointcut;
  * Convenient class for name-match method pointcuts that hold an Advice,
  * making them an Advisor.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
  * @see NameMatchMethodPointcut
  */
 @SuppressWarnings("serial")

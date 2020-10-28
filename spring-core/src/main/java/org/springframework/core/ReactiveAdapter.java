@@ -13,7 +13,7 @@ import org.springframework.util.Assert;
  *
  * <p>An adapter is typically obtained via {@link ReactiveAdapterRegistry}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class ReactiveAdapter {

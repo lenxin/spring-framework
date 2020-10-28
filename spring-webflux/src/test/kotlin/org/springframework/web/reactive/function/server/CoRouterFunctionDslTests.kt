@@ -12,7 +12,7 @@ import java.net.URI
 /**
  * Tests for [CoRouterFunctionDsl].
  *
- * @author Sebastien Deleuze
+
  */
 class CoRouterFunctionDslTests {
 

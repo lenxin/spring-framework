@@ -45,7 +45,7 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * Implementations of {@link RequestPredicate} that implement various useful
  * request matching operations, such as matching based on path, HTTP method, etc.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 public abstract class RequestPredicates {

@@ -20,7 +20,7 @@ import org.springframework.util.MultiValueMap;
  * Response that subscribes to the writes source but never posts demand and also
  * offers method to then cancel the subscription, and check of leaks in the end.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ZeroDemandResponse implements ServerHttpResponse {
 

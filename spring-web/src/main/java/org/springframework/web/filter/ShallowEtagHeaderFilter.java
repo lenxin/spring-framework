@@ -29,10 +29,10 @@ import org.springframework.web.util.WebUtils;
  * <p><b>NOTE:</b> As of Spring Framework 5.0, this filter uses request/response
  * decorators built on the Servlet 3.1 API.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Juergen Hoeller
+
+
+
+
  * @since 3.0
  */
 public class ShallowEtagHeaderFilter extends OncePerRequestFilter {

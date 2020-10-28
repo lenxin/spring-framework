@@ -37,7 +37,7 @@ import org.springframework.web.socket.client.AbstractWebSocketClient;
 /**
  * A WebSocketClient based on standard Java WebSocket API.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public class StandardWebSocketClient extends AbstractWebSocketClient {

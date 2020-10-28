@@ -13,8 +13,8 @@ import org.springframework.web.util.WebUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Alef Arendsen
+
+
  */
 @SuppressWarnings("serial")
 public class HtmlEscapeTagTests extends AbstractTagTests {

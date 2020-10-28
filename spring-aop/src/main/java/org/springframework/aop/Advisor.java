@@ -14,8 +14,8 @@ import org.aopalliance.aop.Advice;
  * such as <b>before</b> and <b>after</b> advice, which need not be
  * implemented using interception.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public interface Advisor {
 

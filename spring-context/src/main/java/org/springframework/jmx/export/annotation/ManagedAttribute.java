@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  * JMX attribute, corresponding to the {@code ManagedAttribute} attribute.
  * Only valid when used on a JavaBean getter or setter.
  *
- * @author Rob Harrop
+
  * @since 1.2
  * @see org.springframework.jmx.export.metadata.ManagedAttribute
  */

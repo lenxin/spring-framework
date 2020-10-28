@@ -3,7 +3,7 @@ package org.springframework.test.util.subpackage;
 /**
  * Simple class with static fields; intended for use in unit tests.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 public class StaticFields {

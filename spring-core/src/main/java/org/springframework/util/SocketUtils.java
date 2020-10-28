@@ -15,11 +15,11 @@ import javax.net.ServerSocketFactory;
  * <p>Within this class, a TCP port refers to a port for a {@link ServerSocket};
  * whereas, a UDP port refers to a port for a {@link DatagramSocket}.
  *
- * @author Sam Brannen
- * @author Ben Hale
- * @author Arjen Poutsma
- * @author Gunnar Hillert
- * @author Gary Russell
+
+
+
+
+
  * @since 4.0
  */
 public class SocketUtils {

@@ -12,7 +12,7 @@ import org.springframework.util.StringUtils;
 /**
  * {@link FactoryBean} implementation that locates a {@link Method} on a specified bean.
  *
- * @author Rob Harrop
+
  * @since 2.0
  */
 public class MethodLocatingFactoryBean implements FactoryBean<Method>, BeanFactoryAware {

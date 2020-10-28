@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
  * present</em> on the current test class) will override any meta-present
  * declarations of {@code @BootstrapWith}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see BootstrapContext
  * @see TestContextBootstrapper

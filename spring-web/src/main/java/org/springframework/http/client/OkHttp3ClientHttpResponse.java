@@ -14,9 +14,9 @@ import org.springframework.util.StreamUtils;
 /**
  * {@link ClientHttpResponse} implementation based on OkHttp 3.x.
  *
- * @author Luciano Leggieri
- * @author Arjen Poutsma
- * @author Roy Clarkson
+
+
+
  * @since 4.3
  */
 class OkHttp3ClientHttpResponse extends AbstractClientHttpResponse {

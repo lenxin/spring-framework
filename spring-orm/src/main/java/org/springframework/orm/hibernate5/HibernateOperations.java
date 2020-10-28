@@ -46,7 +46,7 @@ import org.springframework.lang.Nullable;
  * <b>Please be aware that deprecated operations are known to work with Hibernate
  * ORM 5.0-5.2 but may not work with Hibernate ORM 5.3 and higher anymore.</b>
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see HibernateTemplate
  * @see org.hibernate.Session

@@ -35,8 +35,8 @@ import static org.mockito.Mockito.when;
 /**
  * Integration tests for {@link MockMvcWebConnectionBuilderSupport}.
  *
- * @author Rob Winch
- * @author Rossen Stoyanchev
+
+
  * @since 4.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

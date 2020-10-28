@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * transactional methods that participate in the test-managed transaction will
  * be rolled back automatically.
  *
- * @author Sam Brannen
+
  * @since 4.0.1
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

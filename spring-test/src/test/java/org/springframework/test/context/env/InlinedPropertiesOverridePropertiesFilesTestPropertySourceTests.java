@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * Integration tests for {@link TestPropertySource @TestPropertySource} support with
  * inlined properties that overrides properties files.
  *
- * @author Sam Brannen
+
  * @since 4.3
  */
 @RunWith(SpringJUnit4ClassRunner.class)

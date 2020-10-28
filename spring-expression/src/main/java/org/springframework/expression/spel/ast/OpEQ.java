@@ -10,7 +10,7 @@ import org.springframework.expression.spel.support.BooleanTypedValue;
 /**
  * Implements the equality operator.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class OpEQ extends Operator {

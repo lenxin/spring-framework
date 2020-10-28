@@ -11,8 +11,8 @@ import org.springframework.lang.Nullable;
  * A holder for a thread-local {@link JodaTimeContext}
  * with user-specific Joda-Time settings.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see org.springframework.context.i18n.LocaleContextHolder
  */

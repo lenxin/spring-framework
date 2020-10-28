@@ -14,7 +14,7 @@ import static org.springframework.mock.http.server.reactive.test.MockServerHttpR
 /**
  * Unit tests for {@link ProducesRequestCondition}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ProducesRequestConditionTests {
 

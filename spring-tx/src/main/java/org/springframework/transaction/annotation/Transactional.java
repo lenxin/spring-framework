@@ -32,9 +32,9 @@ import org.springframework.transaction.TransactionDefinition;
  * consult the {@link org.springframework.transaction.TransactionDefinition} and
  * {@link org.springframework.transaction.interceptor.TransactionAttribute} javadocs.
  *
- * @author Colin Sampaleanu
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @since 1.2
  * @see org.springframework.transaction.interceptor.TransactionAttribute
  * @see org.springframework.transaction.interceptor.DefaultTransactionAttribute

@@ -46,7 +46,7 @@ import org.springframework.util.StringUtils;
  *
  * <p>Mainly intended for internal use within the framework.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  */
 public abstract class EntityManagerFactoryUtils {

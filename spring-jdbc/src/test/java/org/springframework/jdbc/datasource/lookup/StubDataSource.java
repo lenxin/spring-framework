@@ -10,7 +10,7 @@ import org.springframework.jdbc.datasource.AbstractDataSource;
  *
  * <p>All methods throw {@link UnsupportedOperationException}.
  *
- * @author Rick Evans
+
  */
 class StubDataSource extends AbstractDataSource {
 

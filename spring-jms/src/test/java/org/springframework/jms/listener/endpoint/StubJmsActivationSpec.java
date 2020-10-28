@@ -10,7 +10,7 @@ import org.springframework.jca.StubActivationSpec;
  * can be a string but also an {@link Destination} object, which is configured
  * as an administrated object.
  *
- * @author Agim Emruli
+
  */
 public class StubJmsActivationSpec extends StubActivationSpec {
 

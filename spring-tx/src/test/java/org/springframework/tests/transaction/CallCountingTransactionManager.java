@@ -5,8 +5,8 @@ import org.springframework.transaction.support.AbstractPlatformTransactionManage
 import org.springframework.transaction.support.DefaultTransactionStatus;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public class CallCountingTransactionManager extends AbstractPlatformTransactionManager {

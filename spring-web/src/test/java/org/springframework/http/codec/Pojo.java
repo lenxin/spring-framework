@@ -3,7 +3,7 @@ package org.springframework.http.codec;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * @author Sebastien Deleuze
+
  */
 @XmlRootElement
 public class Pojo {

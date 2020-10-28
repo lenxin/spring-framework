@@ -14,7 +14,7 @@ import org.springframework.util.Assert;
  *
  * <p>Does not support transaction names; simply ignores any specified name.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see javax.transaction.TransactionManager#setTransactionTimeout(int)
  * @see javax.transaction.TransactionManager#begin()

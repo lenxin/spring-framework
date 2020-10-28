@@ -40,7 +40,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 /**
  * Tests for SPR-11441 (MockMvc accepts an already encoded URI).
  *
- * @author Sebastien Deleuze
+
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

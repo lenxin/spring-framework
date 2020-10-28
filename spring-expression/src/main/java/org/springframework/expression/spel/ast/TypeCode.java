@@ -4,7 +4,7 @@ package org.springframework.expression.spel.ast;
  * Captures primitive types and their corresponding class objects, plus one special entry
  * that represents all reference (non-primitive) types.
  *
- * @author Andy Clement
+
  */
 public enum TypeCode {
 

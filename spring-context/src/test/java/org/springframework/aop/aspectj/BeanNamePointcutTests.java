@@ -18,9 +18,9 @@ import static org.junit.Assert.*;
 /**
  * Test for correct application of the bean() PCD for XML-based AspectJ aspects.
  *
- * @author Ramnivas Laddad
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class BeanNamePointcutTests {
 

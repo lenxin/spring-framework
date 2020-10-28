@@ -10,7 +10,7 @@ import javax.cache.annotation.CacheValue;
 import org.springframework.beans.factory.annotation.Value;
 
 /**
- * @author Stephane Nicoll
+
  */
 class SampleObject {
 

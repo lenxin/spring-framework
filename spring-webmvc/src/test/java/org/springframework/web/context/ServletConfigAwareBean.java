@@ -3,7 +3,7 @@ package org.springframework.web.context;
 import javax.servlet.ServletConfig;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class ServletConfigAwareBean implements ServletConfigAware {
 

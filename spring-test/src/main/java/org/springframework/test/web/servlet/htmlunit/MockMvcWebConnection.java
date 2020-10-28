@@ -36,8 +36,8 @@ import org.springframework.util.Assert;
  * // Use webClient as normal ...
  * </pre>
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  * @see org.springframework.test.web.servlet.htmlunit.webdriver.WebConnectionHtmlUnitDriver
  */

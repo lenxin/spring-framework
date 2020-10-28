@@ -6,7 +6,7 @@ package org.springframework.test.util.subpackage;
  * <p>The introduction of an interface is necessary in order to test support for
  * JDK dynamic proxies.
  *
- * @author Sam Brannen
+
  * @since 4.3
  */
 public interface Person {

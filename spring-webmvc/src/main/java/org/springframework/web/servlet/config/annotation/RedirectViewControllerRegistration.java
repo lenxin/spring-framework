@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.RedirectView;
 /**
  * Assist with the registration of a single redirect view controller.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.1
  */
 public class RedirectViewControllerRegistration {

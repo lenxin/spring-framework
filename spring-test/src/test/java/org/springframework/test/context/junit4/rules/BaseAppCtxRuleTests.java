@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * configuration can be inherited without requiring {@link SpringClassRule}
  * or {@link SpringMethodRule} to be redeclared on subclasses.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see Subclass1AppCtxRuleTests
  * @see Subclass2AppCtxRuleTests

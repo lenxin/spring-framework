@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * the extended method if a converter implements this interface, instead
  * of calling the regular {@code toMessage} variant.
  *
- * @author Stephane Nicoll
+
  * @since 4.3
  */
 public interface SmartMessageConverter extends MessageConverter {

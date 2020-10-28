@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
  * {@link #canDecode()}, {@link #decode()} and {@link #decodeToMono()}, possibly using the wide
  * variety of helper methods like {@link #testDecodeAll} or {@link #testDecodeToMonoAll}.
  *
- * @author Arjen Poutsma
+
  * @since 5.1.3
  */
 @SuppressWarnings("ProtectedField")

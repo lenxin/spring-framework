@@ -6,8 +6,8 @@ import org.aspectj.lang.JoinPoint;
  * Aspect used as part of before advice binding tests and
  * serves as base class for a number of more specialized test aspects.
  *
- * @author Adrian Colyer
- * @author Chris Beams
+
+
  */
 class AdviceBindingTestAspect {
 

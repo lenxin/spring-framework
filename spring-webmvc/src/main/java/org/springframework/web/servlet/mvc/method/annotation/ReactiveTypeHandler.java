@@ -50,7 +50,7 @@ import org.springframework.web.servlet.HandlerMapping;
  * <p>For all other cases {@code Publisher} output is collected and bridged to
  * {@link DeferredResult} for standard async request processing.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 class ReactiveTypeHandler {

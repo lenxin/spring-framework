@@ -19,7 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 import static org.junit.Assert.*;
 
 /**
- * @author Rossen Stoyanchev
+
  */
 public class RequestPartServletServerHttpRequestTests {
 

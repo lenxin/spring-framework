@@ -19,9 +19,9 @@ import org.springframework.util.ObjectUtils;
  * <p>Inspired by Netty's {@code ByteBuf}. Introduced so that non-Netty runtimes
  * (i.e. Servlet) do not require Netty on the classpath.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Brian Clozel
+
+
+
  * @since 5.0
  * @see DefaultDataBufferFactory
  */

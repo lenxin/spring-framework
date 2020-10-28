@@ -6,9 +6,9 @@ import org.springframework.util.Assert;
  * Maps well-known {@linkplain EmbeddedDatabaseType embedded database types}
  * to {@link EmbeddedDatabaseConfigurer} strategies.
  *
- * @author Keith Donald
- * @author Oliver Gierke
- * @author Sam Brannen
+
+
+
  * @since 3.0
  */
 final class EmbeddedDatabaseConfigurerFactory {

@@ -17,8 +17,8 @@ import org.springframework.lang.Nullable;
  * {@link #values()} always return empty even though {@link #get(Object)} may in fact
  * return non-null if the current security manager allows access to individual keys.
  *
- * @author Arjen Poutsma
- * @author Chris Beams
+
+
  * @since 3.0
  */
 abstract class ReadOnlySystemAttributesMap implements Map<String, String> {

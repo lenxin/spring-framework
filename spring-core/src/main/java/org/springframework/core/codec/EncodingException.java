@@ -22,7 +22,7 @@ import org.springframework.lang.Nullable;
  * or a {@link CodecException} such as a configuration issue that an
  * {@link Encoder} may also choose to raise.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  * @see Encoder
  */

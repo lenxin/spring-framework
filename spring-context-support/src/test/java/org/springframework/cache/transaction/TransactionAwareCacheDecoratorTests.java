@@ -15,7 +15,7 @@ import org.springframework.transaction.interceptor.DefaultTransactionAttribute;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class TransactionAwareCacheDecoratorTests {
 

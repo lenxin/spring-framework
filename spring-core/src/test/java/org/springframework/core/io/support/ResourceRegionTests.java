@@ -9,7 +9,7 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for the {@link ResourceRegion} class.
  *
- * @author Brian Clozel
+
  */
 public class ResourceRegionTests {
 

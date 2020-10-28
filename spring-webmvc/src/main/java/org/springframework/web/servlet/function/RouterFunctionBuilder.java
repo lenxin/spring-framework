@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
 /**
  * Default implementation of {@link RouterFunctions.Builder}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 class RouterFunctionBuilder implements RouterFunctions.Builder {

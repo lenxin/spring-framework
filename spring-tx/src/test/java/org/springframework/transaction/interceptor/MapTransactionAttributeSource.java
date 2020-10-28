@@ -7,8 +7,8 @@ import java.util.Map;
 /**
  * Inherits fallback behavior from AbstractFallbackTransactionAttributeSource.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public class MapTransactionAttributeSource extends AbstractFallbackTransactionAttributeSource {
 

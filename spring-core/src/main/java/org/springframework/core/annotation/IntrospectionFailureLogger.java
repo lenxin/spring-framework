@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * assuming that when Class attribute values are not resolvable the annotation
  * should effectively disappear.
  *
- * @author Phillip Webb
+
  * @since 5.2
  */
 enum IntrospectionFailureLogger {

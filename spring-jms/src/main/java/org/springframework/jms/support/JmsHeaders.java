@@ -4,8 +4,8 @@ package org.springframework.jms.support;
  * Pre-defined names and prefixes to be used for setting and/or retrieving
  * JMS attributes from/to generic message headers.
  *
- * @author Mark Fisher
- * @author Stephane Nicoll
+
+
  * @since 4.1
  */
 public interface JmsHeaders {

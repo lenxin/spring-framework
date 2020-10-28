@@ -30,7 +30,7 @@ package org.springframework.core.env;
  * prefix will be considered as "non-option arguments" and made available through the
  * {@link CommandLineArgs#getNonOptionArgs()} method.
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 class SimpleCommandLineArgsParser {

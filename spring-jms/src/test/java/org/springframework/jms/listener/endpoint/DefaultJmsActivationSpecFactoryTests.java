@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Agim Emruli
- * @author Juergen Hoeller
+
+
  */
 public class DefaultJmsActivationSpecFactoryTests {
 

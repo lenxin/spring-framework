@@ -11,7 +11,7 @@ import org.springframework.mock.web.test.MockHttpServletResponse;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class SessionLocaleResolverTests {
 

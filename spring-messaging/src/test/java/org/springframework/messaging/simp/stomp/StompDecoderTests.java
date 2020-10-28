@@ -16,8 +16,8 @@ import static org.junit.Assert.assertNull;
 /**
  * Test fixture for {@link StompDecoder}.
  *
- * @author Andy Wilkinson
- * @author Stephane Maldini
+
+
  */
 public class StompDecoderTests {
 

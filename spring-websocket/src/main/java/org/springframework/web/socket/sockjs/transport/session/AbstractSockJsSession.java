@@ -31,8 +31,8 @@ import org.springframework.web.socket.sockjs.transport.SockJsSession;
 /**
  * An abstract base class for SockJS sessions implementing {@link SockJsSession}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @since 4.0
  */
 public abstract class AbstractSockJsSession implements SockJsSession {

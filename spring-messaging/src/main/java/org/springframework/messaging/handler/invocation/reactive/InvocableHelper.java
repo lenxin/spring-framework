@@ -25,7 +25,7 @@ import org.springframework.util.Assert;
  * apply return value handling and exception handling. Holds all necessary
  * configuration necessary to do so.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 class InvocableHelper {

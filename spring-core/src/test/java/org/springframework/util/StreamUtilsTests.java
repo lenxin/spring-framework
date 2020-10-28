@@ -20,7 +20,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for {@link StreamUtils}.
  *
- * @author Phillip Webb
+
  */
 public class StreamUtilsTests {
 

@@ -15,7 +15,7 @@ import org.springframework.util.ReflectionUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public abstract class AbstractCacheOperationTests<O extends JCacheOperation<?>> extends AbstractJCacheTests {
 

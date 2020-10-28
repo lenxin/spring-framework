@@ -32,8 +32,8 @@ import org.springframework.http.HttpStatus;
  * {@code @ResponseStatus} and is then inherited by all {@code @RequestMapping}
  * methods.
  *
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
  * @since 3.0
  * @see org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver
  * @see javax.servlet.http.HttpServletResponse#sendError(int, String)

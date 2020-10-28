@@ -15,7 +15,7 @@ import org.springframework.util.StreamUtils;
  * {@link ClientHttpRequest} implementation that uses standard JDK facilities to
  * execute streaming requests. Created via the {@link SimpleClientHttpRequestFactory}.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see SimpleClientHttpRequestFactory#createRequest(java.net.URI, HttpMethod)
  * @see org.springframework.http.client.support.HttpAccessor

@@ -24,8 +24,8 @@ import org.springframework.util.ReflectionUtils;
  * (if appropriate). If the RuntimeException in question is declared on the
  * target method, it is always propagated as-is (with no translation applied).
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see PersistenceExceptionTranslator
  */

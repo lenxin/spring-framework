@@ -15,7 +15,7 @@ import org.springframework.util.StreamUtils;
 /**
  * Wrapper for a {@link ClientHttpRequest} that has support for {@link ClientHttpRequestInterceptor ClientHttpRequest} that has support for {@link ClientHttpRequestInterceptors}.
  *
- * @author Arjen Poutsma
+
  * @since 3.1
  */
 class InterceptingClientHttpRequest extends AbstractBufferingClientHttpRequest {

@@ -20,7 +20,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link SqlScriptsTestExecutionListener}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 public class SqlScriptsTestExecutionListenerTests {

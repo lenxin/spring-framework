@@ -20,9 +20,9 @@ import org.springframework.validation.BindingResult;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Jeremy Grelle
+
+
+
  */
 public class RadioButtonTagTests extends AbstractFormTagTests {
 

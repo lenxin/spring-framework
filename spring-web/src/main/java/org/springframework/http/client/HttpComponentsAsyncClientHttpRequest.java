@@ -28,8 +28,8 @@ import org.springframework.util.concurrent.SuccessCallback;
  *
  * <p>Created via the {@link HttpComponentsClientHttpRequestFactory}.
  *
- * @author Oleg Kalnichevski
- * @author Arjen Poutsma
+
+
  * @since 4.0
  * @see HttpComponentsClientHttpRequestFactory#createRequest
  * @deprecated as of Spring 5.0, with no direct replacement

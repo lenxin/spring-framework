@@ -16,8 +16,8 @@ import org.springframework.web.server.handler.ResponseStatusExceptionHandler;
  * <p>If the response is already committed, the error remains unresolved
  * and is propagated.
  *
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
  * @since 5.0.5
  */
 public class WebFluxResponseStatusExceptionHandler extends ResponseStatusExceptionHandler {

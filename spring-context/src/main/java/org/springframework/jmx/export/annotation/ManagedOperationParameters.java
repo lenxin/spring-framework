@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  * Method-level annotation used to provide metadata about operation parameters,
  * corresponding to an array of {@code ManagedOperationParameter} attributes.
  *
- * @author Rob Harrop
+
  * @since 1.2
  * @see org.springframework.jmx.export.metadata.ManagedOperationParameter
  */

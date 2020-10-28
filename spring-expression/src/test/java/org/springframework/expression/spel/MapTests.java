@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 /**
  * Test usage of inline maps.
  *
- * @author Andy Clement
+
  * @since 4.1
  */
 public class MapTests extends AbstractExpressionTests {

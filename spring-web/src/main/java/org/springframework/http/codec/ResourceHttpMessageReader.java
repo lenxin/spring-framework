@@ -15,7 +15,7 @@ import org.springframework.util.StringUtils;
  * that extracts the filename from the {@code "Content-Disposition"} header, if
  * available, and passes it as the {@link ResourceDecoder#FILENAME_HINT}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public class ResourceHttpMessageReader extends DecoderHttpMessageReader<Resource> {

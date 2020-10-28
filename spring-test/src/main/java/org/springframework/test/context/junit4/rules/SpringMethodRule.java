@@ -68,8 +68,8 @@ import org.springframework.test.context.junit4.statements.SpringRepeat;
  * {@link org.springframework.test.context.TestExecutionListener TestExecutionListener}
  * API.
  *
- * @author Sam Brannen
- * @author Philippe Marschall
+
+
  * @since 4.2
  * @see #apply(Statement, FrameworkMethod, Object)
  * @see SpringClassRule

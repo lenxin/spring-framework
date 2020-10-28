@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * <p>Users of JSR-107 annotations may extend from this class rather than
  * implementing from {@link JCacheConfigurer} directly.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see JCacheConfigurer
  * @see CachingConfigurerSupport

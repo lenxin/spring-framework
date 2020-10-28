@@ -29,8 +29,8 @@ import org.springframework.util.Assert;
  * {@link #setFallbackToDynamicDestination "fallbackToDynamicDestination"}
  * flag on to enable this functionality.
  *
- * @author Mark Pollack
- * @author Juergen Hoeller
+
+
  * @since 1.1
  * @see #setJndiTemplate
  * @see #setJndiEnvironment

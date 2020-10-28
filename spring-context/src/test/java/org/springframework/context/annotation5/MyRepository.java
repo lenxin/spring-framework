@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author Juergen Hoeller
+
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

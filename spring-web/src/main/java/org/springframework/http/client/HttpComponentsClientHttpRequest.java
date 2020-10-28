@@ -22,9 +22,9 @@ import org.springframework.util.StringUtils;
  *
  * <p>Created via the {@link HttpComponentsClientHttpRequestFactory}.
  *
- * @author Oleg Kalnichevski
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
+
  * @since 3.1
  * @see HttpComponentsClientHttpRequestFactory#createRequest(URI, HttpMethod)
  */

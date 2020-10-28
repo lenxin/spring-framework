@@ -23,7 +23,7 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 /**
  * Examples of defining expectations on request headers.
  *
- * @author Rossen Stoyanchev
+
  */
 public class HeaderRequestMatchersIntegrationTests {
 

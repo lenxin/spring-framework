@@ -20,8 +20,8 @@ import org.springframework.util.Assert;
  * <p><strong>Note:</strong> While relative redirects are recommended in the
  * RFC, under some configurations with reverse proxies they may not work.
  *
- * @author Rob Winch
- * @author Rossen Stoyanchev
+
+
  * @since 4.3.10
  */
 public class RelativeRedirectFilter extends OncePerRequestFilter {

@@ -21,8 +21,8 @@ import org.springframework.lang.Nullable;
  * A generic implementation of the {@link TableMetaDataProvider} interface
  * which should provide enough features for all supported databases.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.5
  */
 public class GenericTableMetaDataProvider implements TableMetaDataProvider {

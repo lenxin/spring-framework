@@ -10,8 +10,8 @@ import org.springframework.core.io.ClassPathResource;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  */
 public class BeanNameGenerationTests {
 

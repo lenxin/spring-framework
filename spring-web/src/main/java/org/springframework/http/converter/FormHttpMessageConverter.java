@@ -69,9 +69,9 @@ import org.springframework.util.StringUtils;
  * <p>Some methods in this class were inspired by
  * {@code org.apache.commons.httpclient.methods.multipart.MultipartRequestEntity}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 3.0
  * @see org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter
  * @see org.springframework.util.MultiValueMap

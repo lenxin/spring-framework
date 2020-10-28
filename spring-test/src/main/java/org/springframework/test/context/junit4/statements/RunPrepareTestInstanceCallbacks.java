@@ -10,7 +10,7 @@ import org.springframework.test.context.TestContextManager;
  * execution chain by calling {@link TestContextManager#prepareTestInstance(Object)
  * prepareTestInstance()} on the supplied {@link TestContextManager}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see #evaluate()
  */

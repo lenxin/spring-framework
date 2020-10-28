@@ -14,7 +14,7 @@ import org.springframework.scheduling.config.TaskManagementConfigUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class AnnotationDrivenBeanDefinitionParserTests {
 

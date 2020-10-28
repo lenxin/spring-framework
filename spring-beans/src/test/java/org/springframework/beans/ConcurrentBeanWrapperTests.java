@@ -15,9 +15,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Guillaume Poirier
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  * @since 08.03.2004
  */
 public class ConcurrentBeanWrapperTests {

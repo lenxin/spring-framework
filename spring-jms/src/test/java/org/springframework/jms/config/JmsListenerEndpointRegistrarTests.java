@@ -10,7 +10,7 @@ import org.springframework.beans.factory.support.StaticListableBeanFactory;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class JmsListenerEndpointRegistrarTests {
 

@@ -32,7 +32,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class DefaultHandlerExceptionResolverTests {
 

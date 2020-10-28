@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
  * or by custom DAO implementations. Optimistic locking failure
  * is typically <i>not</i> detected by the database itself.
  *
- * @author Rod Johnson
+
  * @see PessimisticLockingFailureException
  */
 @SuppressWarnings("serial")

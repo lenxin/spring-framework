@@ -6,7 +6,7 @@ import org.springframework.util.StringUtils;
 /**
  * Metadata that indicates a JMX notification emitted by a bean.
  *
- * @author Rob Harrop
+
  * @since 2.0
  */
 public class ManagedNotification {

@@ -13,8 +13,8 @@ import org.springframework.util.ReflectionUtils;
  * A simple ConstructorExecutor implementation that runs a constructor using reflective
  * invocation.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class ReflectiveConstructorExecutor implements ConstructorExecutor {

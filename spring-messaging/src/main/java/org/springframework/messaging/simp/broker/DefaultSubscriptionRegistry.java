@@ -39,9 +39,9 @@ import org.springframework.util.StringUtils;
  * header on subscription messages with Spring EL expressions evaluated against
  * the headers to filter out messages in addition to destination matching.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
- * @author Juergen Hoeller
+
+
+
  * @since 4.0
  */
 public class DefaultSubscriptionRegistry extends AbstractSubscriptionRegistry {

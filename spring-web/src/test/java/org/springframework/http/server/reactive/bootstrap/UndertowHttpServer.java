@@ -7,7 +7,7 @@ import io.undertow.Undertow;
 import org.springframework.http.server.reactive.UndertowHttpHandlerAdapter;
 
 /**
- * @author Marek Hawrylczak
+
  */
 public class UndertowHttpServer extends AbstractHttpServer {
 

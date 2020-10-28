@@ -11,8 +11,8 @@ import org.springframework.test.context.transaction.ejb.model.TestEntity;
  * declare transaction semantics for {@link #incrementCount(String)} via
  * {@link TransactionAttribute}.
  *
- * @author Sam Brannen
- * @author Xavier Detant
+
+
  * @since 4.0.1
  * @see RequiredEjbTxTestEntityDao
  * @see RequiresNewEjbTxTestEntityDao

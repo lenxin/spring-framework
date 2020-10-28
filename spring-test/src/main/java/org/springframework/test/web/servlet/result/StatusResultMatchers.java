@@ -15,10 +15,10 @@ import static org.springframework.test.util.AssertionErrors.assertEquals;
  * <p>An instance of this class is typically accessed via
  * {@link MockMvcResultMatchers#status}.
  *
- * @author Keesun Baik
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
- * @author Brian Clozel
+
+
+
+
  * @since 3.2
  */
 public class StatusResultMatchers {

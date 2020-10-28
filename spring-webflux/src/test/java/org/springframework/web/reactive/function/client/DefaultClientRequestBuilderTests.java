@@ -26,7 +26,7 @@ import static org.mockito.Mockito.*;
 import static org.springframework.http.HttpMethod.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class DefaultClientRequestBuilderTests {
 

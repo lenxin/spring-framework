@@ -17,8 +17,8 @@ import org.springframework.lang.Nullable;
  * Abstract JSR-107 specific {@code @Configuration} class providing common
  * structure for enabling JSR-107 annotation-driven cache management capability.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see JCacheConfigurer
  */

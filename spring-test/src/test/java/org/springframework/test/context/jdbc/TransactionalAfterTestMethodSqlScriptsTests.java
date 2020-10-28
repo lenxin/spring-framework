@@ -20,7 +20,7 @@ import static org.springframework.test.context.jdbc.Sql.ExecutionPhase.*;
  * Transactional integration tests for {@link Sql @Sql} that verify proper
  * support for {@link ExecutionPhase#AFTER_TEST_METHOD}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

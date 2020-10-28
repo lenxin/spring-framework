@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Mark Pollack
+
  * @since 24.9.2004
  */
 public class JmsGatewaySupportTests {

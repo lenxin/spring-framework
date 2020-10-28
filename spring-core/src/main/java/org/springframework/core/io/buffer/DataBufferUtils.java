@@ -33,8 +33,8 @@ import org.springframework.util.Assert;
 /**
  * Utility class for working with {@link DataBuffer DataBuffers}.
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 public abstract class DataBufferUtils {

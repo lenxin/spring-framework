@@ -25,9 +25,9 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Arjen Poutsma
- * @author Dave Syer
- * @author Stephane Nicoll
+
+
+
  */
 public class MappingJackson2MessageConverterTests {
 

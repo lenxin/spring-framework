@@ -24,8 +24,8 @@ import org.springframework.web.context.request.NativeWebRequest;
  * <p>A {@link WebDataBinder} is invoked to apply type conversion to resolved
  * request header values that don't yet match the method parameter type.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 public class RequestHeaderMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver {

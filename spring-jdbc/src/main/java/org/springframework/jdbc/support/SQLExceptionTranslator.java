@@ -14,8 +14,8 @@ import org.springframework.lang.Nullable;
  * {@link java.sql.SQLException#getSQLState() SQLState} codes for JDBC) or wholly
  * proprietary (for example, using Oracle error codes) for greater precision.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.springframework.dao.DataAccessException
  */
 @FunctionalInterface

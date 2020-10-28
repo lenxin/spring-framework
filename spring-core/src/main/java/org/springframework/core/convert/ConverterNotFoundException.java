@@ -6,8 +6,8 @@ import org.springframework.lang.Nullable;
  * Exception to be thrown when a suitable converter could not be found
  * in a given conversion service.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

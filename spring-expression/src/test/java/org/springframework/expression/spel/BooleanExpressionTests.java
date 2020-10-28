@@ -9,8 +9,8 @@ import org.springframework.expression.spel.support.StandardTypeConverter;
 /**
  * Tests the evaluation of real boolean expressions, these use AND, OR, NOT, TRUE, FALSE
  *
- * @author Andy Clement
- * @author Oliver Becker
+
+
  */
 public class BooleanExpressionTests extends AbstractExpressionTests {
 

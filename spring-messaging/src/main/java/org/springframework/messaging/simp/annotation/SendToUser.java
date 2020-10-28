@@ -21,8 +21,8 @@ import org.springframework.core.annotation.AliasFor;
  * by methods of the class. At the same time, method-level {@code @SendTo} or
  * {@code @SendToUser} annotations override any such at the class level.
 
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @since 4.0
  * @see org.springframework.messaging.simp.annotation.support.SendToMethodReturnValueHandler
  * @see org.springframework.messaging.simp.user.UserDestinationMessageHandler

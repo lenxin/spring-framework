@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Rob Winch
+
  */
 public class Spr10546Tests {
 	private ConfigurableApplicationContext context;

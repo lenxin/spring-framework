@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 05.08.2005
  */
 public class JndiJtaTransactionManagerTests {

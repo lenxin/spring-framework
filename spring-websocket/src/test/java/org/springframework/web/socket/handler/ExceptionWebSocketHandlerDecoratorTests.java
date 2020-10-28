@@ -13,7 +13,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link ExceptionWebSocketHandlerDecorator}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ExceptionWebSocketHandlerDecoratorTests {
 

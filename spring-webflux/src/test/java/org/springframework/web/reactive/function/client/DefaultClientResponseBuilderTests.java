@@ -17,7 +17,7 @@ import org.springframework.http.ResponseCookie;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class DefaultClientResponseBuilderTests {
 

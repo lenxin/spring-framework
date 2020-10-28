@@ -15,7 +15,7 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class JmsResponseTests {
 

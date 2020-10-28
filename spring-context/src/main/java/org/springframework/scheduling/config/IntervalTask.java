@@ -5,7 +5,7 @@ package org.springframework.scheduling.config;
  * millisecond interval which may be treated as fixed-rate or fixed-delay depending on
  * context.
  *
- * @author Chris Beams
+
  * @since 3.2
  * @see ScheduledTaskRegistrar#addFixedRateTask(IntervalTask)
  * @see ScheduledTaskRegistrar#addFixedDelayTask(IntervalTask)

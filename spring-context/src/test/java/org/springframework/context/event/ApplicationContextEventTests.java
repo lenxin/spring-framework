@@ -38,10 +38,10 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit and integration tests for the ApplicationContext event support.
  *
- * @author Alef Arendsen
- * @author Rick Evans
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
+
+
  */
 public class ApplicationContextEventTests extends AbstractApplicationEventListenerTests {
 

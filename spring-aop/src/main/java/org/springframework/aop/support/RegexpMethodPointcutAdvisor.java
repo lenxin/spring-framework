@@ -20,8 +20,8 @@ import org.springframework.util.ObjectUtils;
  * By default, {@link JdkRegexpMethodPointcut} will be used. To choose
  * a specific one, override the {@link #createPointcut} method.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #setPattern
  * @see #setPatterns
  * @see JdkRegexpMethodPointcut

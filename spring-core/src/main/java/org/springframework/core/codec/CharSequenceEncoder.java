@@ -22,9 +22,9 @@ import org.springframework.util.MimeTypeUtils;
 /**
  * Encode from a {@code CharSequence} stream to a bytes stream.
  *
- * @author Sebastien Deleuze
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
+
  * @since 5.0
  * @see StringDecoder
  */

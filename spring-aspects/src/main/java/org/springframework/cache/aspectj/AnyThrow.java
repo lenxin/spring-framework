@@ -4,7 +4,7 @@ package org.springframework.cache.aspectj;
  * Utility to trick the compiler to throw a valid checked
  * exceptions within the interceptor.
  *
- * @author Stephane Nicoll
+
  */
 final class AnyThrow {
 

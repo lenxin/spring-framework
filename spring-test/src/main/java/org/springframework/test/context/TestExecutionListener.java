@@ -44,8 +44,8 @@ package org.springframework.test.context;
  * EventPublishingTestExecutionListener}</li>
  * </ul>
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see TestExecutionListeners @TestExecutionListeners
  * @see TestContextManager

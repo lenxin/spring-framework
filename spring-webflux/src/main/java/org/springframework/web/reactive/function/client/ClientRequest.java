@@ -23,8 +23,8 @@ import org.springframework.web.reactive.function.BodyInserter;
  * <p>Note that applications are more likely to perform requests through
  * {@link WebClient} rather than using this directly.
  *
- * @author Brian Clozel
- * @author Arjen Poutsma
+
+
  * @since 5.0
  */
 public interface ClientRequest {

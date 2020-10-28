@@ -25,8 +25,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for the {@link SimpleMessageConverter} class.
  *
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
  * @since 18.09.2004
  */
 public class SimpleMessageConverterTests {

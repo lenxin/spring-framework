@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Costin Leau
- * @author Phillip Webb
+
+
  */
 public class DefaultJpaDialectTests {
 

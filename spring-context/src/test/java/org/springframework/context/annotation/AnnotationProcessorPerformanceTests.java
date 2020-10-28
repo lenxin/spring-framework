@@ -22,8 +22,8 @@ import org.springframework.util.StopWatch;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  * @since 2.5
  */
 public class AnnotationProcessorPerformanceTests {

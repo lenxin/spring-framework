@@ -10,7 +10,7 @@ import org.springframework.lang.Nullable;
  * Interface specifying the API to be implemented by a class providing table meta-data.
  * This is intended for internal use by the Simple JDBC classes.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  */
 public interface TableMetaDataProvider {

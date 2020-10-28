@@ -34,9 +34,9 @@ import org.springframework.core.annotation.AliasFor;
  * and a parameter name is not specified, then the map parameter is populated
  * with all request parameter names and values.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @since 2.5
  * @see RequestMapping
  * @see RequestHeader

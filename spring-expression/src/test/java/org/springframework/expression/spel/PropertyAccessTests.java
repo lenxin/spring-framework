@@ -25,8 +25,8 @@ import static org.junit.Assert.*;
 /**
  * Tests accessing of properties.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  */
 public class PropertyAccessTests extends AbstractExpressionTests {
 

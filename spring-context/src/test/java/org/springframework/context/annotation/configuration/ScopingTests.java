@@ -30,8 +30,8 @@ import static org.junit.Assert.*;
  * Tests that scopes are properly supported by using a custom Scope implementations
  * and scoped proxy {@link Bean} declarations.
  *
- * @author Costin Leau
- * @author Chris Beams
+
+
  */
 public class ScopingTests {
 

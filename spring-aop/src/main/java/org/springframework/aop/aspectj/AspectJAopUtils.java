@@ -10,8 +10,8 @@ import org.springframework.lang.Nullable;
 /**
  * Utility methods for dealing with AspectJ advisors.
  *
- * @author Adrian Colyer
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public abstract class AspectJAopUtils {

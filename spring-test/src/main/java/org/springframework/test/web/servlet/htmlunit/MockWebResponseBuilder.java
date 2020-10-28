@@ -18,9 +18,9 @@ import org.springframework.util.StringUtils;
 /**
  * Builder used internally to create {@link WebResponse WebResponses}.
  *
- * @author Rob Winch
- * @author Sam Brannen
- * @author Rossen Stoyanchev
+
+
+
  * @since 4.2
  */
 final class MockWebResponseBuilder {

@@ -28,9 +28,9 @@ import org.springframework.web.servlet.view.AbstractView;
  * <p>Note: Internet Explorer requires a ".pdf" extension, as it doesn't
  * always respect the declared content type.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Jean-Pierre Pawlak
+
+
+
  * @see AbstractPdfStamperView
  */
 public abstract class AbstractPdfView extends AbstractView {

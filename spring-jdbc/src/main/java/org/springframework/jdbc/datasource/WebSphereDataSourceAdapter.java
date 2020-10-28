@@ -43,9 +43,9 @@ import org.springframework.util.StringUtils;
  * Thanks to Ricardo Olivieri for submitting the original implementation
  * of this approach!
  *
- * @author Juergen Hoeller
- * @author <a href="mailto:lari.hotari@sagire.fi">Lari Hotari</a>
- * @author <a href="mailto:roliv@us.ibm.com">Ricardo N. Olivieri</a>
+
+
+
  * @since 2.0.3
  * @see com.ibm.websphere.rsadapter.JDBCConnectionSpec
  * @see com.ibm.websphere.rsadapter.WSDataSource#getConnection(com.ibm.websphere.rsadapter.JDBCConnectionSpec)

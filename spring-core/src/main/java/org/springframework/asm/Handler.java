@@ -8,7 +8,7 @@ package org.springframework.asm;
  *
  * @see <a href="https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-4.html#jvms-4.7.3">JVMS
  *     4.7.3</a>
- * @author Eric Bruneton
+
  */
 final class Handler {
 

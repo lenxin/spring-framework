@@ -22,8 +22,8 @@ import static org.springframework.test.context.support.ActiveProfilesUtils.*;
  * Unit tests for {@link ActiveProfilesUtils} involving resolution of active bean
  * definition profiles.
  *
- * @author Sam Brannen
- * @author Michail Nikolaev
+
+
  * @since 3.1
  */
 public class ActiveProfilesUtilsTests extends AbstractContextConfigurationUtilsTests {

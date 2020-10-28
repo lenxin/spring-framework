@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * AspectMetadata uses Java-5-only {@link org.aspectj.lang.reflect.AjType},
  * we need to split out this subinterface.
  *
- * @author Rod Johnson
+
  * @since 2.0
  * @see AspectMetadata
  * @see org.aspectj.lang.reflect.AjType

@@ -50,9 +50,9 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for the JmsTemplate implemented using JMS 1.1.
  *
- * @author Andre Biryukov
- * @author Mark Pollack
- * @author Stephane Nicoll
+
+
+
  */
 public class JmsTemplateTests {
 

@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
 /**
  * Exceptions that contain actual HTTP response data.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class WebClientResponseException extends WebClientException {

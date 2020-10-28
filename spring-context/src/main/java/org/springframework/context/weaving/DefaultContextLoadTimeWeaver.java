@@ -34,9 +34,9 @@ import org.springframework.util.Assert;
  * {@link InstrumentationSavingAgent Spring's VM agent}, and any {@link ClassLoader}
  * supported by Spring's {@link ReflectiveLoadTimeWeaver} (such as Liberty's).
  *
- * @author Juergen Hoeller
- * @author Ramnivas Laddad
- * @author Costin Leau
+
+
+
  * @since 2.5
  * @see org.springframework.context.ConfigurableApplicationContext#LOAD_TIME_WEAVER_BEAN_NAME
  */

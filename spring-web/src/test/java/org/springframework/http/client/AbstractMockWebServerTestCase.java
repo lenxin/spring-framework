@@ -16,7 +16,7 @@ import org.springframework.util.StringUtils;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
- * @author Brian Clozel
+
  */
 public class AbstractMockWebServerTestCase {
 

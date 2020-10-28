@@ -6,7 +6,7 @@ import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 
 /**
- * @author Andy Wilkinson
+
  */
 public class ImportVersusDirectRegistrationTests {
 

@@ -42,7 +42,7 @@ import org.springframework.lang.Nullable;
  * in order to handle close calls properly. Therefore, the returned Connections cannot
  * be cast to a native CCI Connection type or to a connection pool implementation type.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see javax.resource.cci.ConnectionFactory#getConnection
  * @see javax.resource.cci.Connection#close

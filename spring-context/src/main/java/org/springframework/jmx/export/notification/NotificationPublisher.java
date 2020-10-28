@@ -21,7 +21,7 @@ import javax.management.Notification;
  * <p>Any existing, user-defined MBeans should use standard JMX APIs for notification
  * publication; this interface is intended for use only by Spring-created MBeans.
  *
- * @author Rob Harrop
+
  * @since 2.0
  * @see NotificationPublisherAware
  * @see org.springframework.jmx.export.MBeanExporter

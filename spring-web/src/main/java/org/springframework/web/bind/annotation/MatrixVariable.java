@@ -22,8 +22,8 @@ import org.springframework.core.annotation.AliasFor;
  * and a variable name is not specified, then the map is populated with all
  * matrix variable names and values.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @since 3.2
  */
 @Target(ElementType.PARAMETER)

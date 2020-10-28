@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
 /**
  * Exception for errors that fit response status 415 (unsupported media type).
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 @SuppressWarnings("serial")

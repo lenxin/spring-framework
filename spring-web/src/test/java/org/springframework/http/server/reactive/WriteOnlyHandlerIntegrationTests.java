@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 import static org.junit.Assert.*;
 
 /**
- * @author Violeta Georgieva
+
  * @since 5.0
  */
 public class WriteOnlyHandlerIntegrationTests extends AbstractHttpHandlerIntegrationTests {

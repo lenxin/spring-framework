@@ -27,9 +27,9 @@ import org.springframework.web.util.WebUtils;
 /**
  * {@link WebRequest} adapter for an {@link javax.servlet.http.HttpServletRequest}.
  *
- * @author Juergen Hoeller
- * @author Brian Clozel
- * @author Markus Malkusch
+
+
+
  * @since 2.0
  */
 public class ServletWebRequest extends ServletRequestAttributes implements NativeWebRequest {

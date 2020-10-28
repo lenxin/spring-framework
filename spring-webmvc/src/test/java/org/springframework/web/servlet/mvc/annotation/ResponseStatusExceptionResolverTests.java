@@ -24,9 +24,9 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for {@link ResponseStatusExceptionResolver}.
  *
- * @author Arjen Poutsma
- * @author Sam Brannen
- * @author Rossen Stoyanchev
+
+
+
  */
 public class ResponseStatusExceptionResolverTests {
 

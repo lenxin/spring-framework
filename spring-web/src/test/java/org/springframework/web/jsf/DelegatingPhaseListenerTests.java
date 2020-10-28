@@ -13,8 +13,8 @@ import org.springframework.beans.factory.support.StaticListableBeanFactory;
 import static org.junit.Assert.*;
 
 /**
- * @author Colin Sampaleanu
- * @author Juergen Hoeller
+
+
  */
 public class DelegatingPhaseListenerTests {
 

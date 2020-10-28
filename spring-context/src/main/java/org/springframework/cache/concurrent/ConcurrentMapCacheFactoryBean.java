@@ -17,8 +17,8 @@ import org.springframework.util.StringUtils;
  * with {@link org.springframework.cache.support.SimpleCacheManager} or
  * dynamically through {@link ConcurrentMapCacheManager}.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 public class ConcurrentMapCacheFactoryBean

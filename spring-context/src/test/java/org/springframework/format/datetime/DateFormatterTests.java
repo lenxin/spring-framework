@@ -22,8 +22,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link DateFormatter}.
  *
- * @author Keith Donald
- * @author Phillip Webb
+
+
  */
 public class DateFormatterTests {
 

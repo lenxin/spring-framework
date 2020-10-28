@@ -33,7 +33,7 @@ import static org.springframework.web.method.MvcAnnotationPredicates.requestPara
 /**
  * Unit tests for {@link RequestParamMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class RequestParamMethodArgumentResolverTests {
 

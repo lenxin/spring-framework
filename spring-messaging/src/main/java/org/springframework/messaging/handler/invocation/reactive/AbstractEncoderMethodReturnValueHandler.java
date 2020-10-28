@@ -35,7 +35,7 @@ import org.springframework.util.MimeType;
  * <p>This handler should be ordered last since its {@link #supportsReturnType}
  * returns {@code true} for any method parameter type.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public abstract class AbstractEncoderMethodReturnValueHandler implements HandlerMethodReturnValueHandler {

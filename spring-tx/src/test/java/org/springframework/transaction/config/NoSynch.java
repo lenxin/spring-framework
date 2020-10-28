@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 /**
- * @author Juergen Hoeller
+
  */
 @Qualifier("noSynch")
 @Retention(RetentionPolicy.RUNTIME)

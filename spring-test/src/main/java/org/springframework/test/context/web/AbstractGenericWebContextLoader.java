@@ -36,8 +36,8 @@ import org.springframework.web.context.support.GenericWebApplicationContext;
  * <p>Concrete subclasses must provide an appropriate implementation of
  * {@link #loadBeanDefinitions}.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 3.2
  * @see #loadContext(MergedContextConfiguration)
  * @see #loadContext(String...)

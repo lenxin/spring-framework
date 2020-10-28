@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
 /**
  * Testing variations on map access.
  *
- * @author Andy Clement
+
  */
 public class MapAccessTests extends AbstractExpressionTests {
 

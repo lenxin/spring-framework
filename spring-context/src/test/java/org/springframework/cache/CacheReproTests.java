@@ -33,9 +33,9 @@ import static org.mockito.Mockito.*;
 /**
  * Tests to reproduce raised caching issues.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  */
 public class CacheReproTests {
 

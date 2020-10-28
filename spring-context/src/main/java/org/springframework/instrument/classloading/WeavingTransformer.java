@@ -17,9 +17,9 @@ import org.springframework.util.StringUtils;
  * <p>Note: This class is deliberately implemented for minimal external dependencies,
  * since it is included in weaver jars (to be deployed into application servers).
  *
- * @author Rod Johnson
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
+
  * @since 2.0
  */
 public class WeavingTransformer {

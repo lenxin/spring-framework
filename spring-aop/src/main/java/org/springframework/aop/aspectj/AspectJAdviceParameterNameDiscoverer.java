@@ -97,8 +97,8 @@ import org.springframework.util.StringUtils;
  * property to {@code true}, descriptive exceptions will be thrown instead of
  * returning {@code null} in the case that the parameter names cannot be discovered.
  *
- * @author Adrian Colyer
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class AspectJAdviceParameterNameDiscoverer implements ParameterNameDiscoverer {

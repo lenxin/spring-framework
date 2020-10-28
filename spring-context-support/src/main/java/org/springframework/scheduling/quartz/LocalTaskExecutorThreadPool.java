@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  * Quartz {@link ThreadPool} adapter that delegates to a Spring-managed
  * {@link Executor} instance, specified on {@link SchedulerFactoryBean}.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see SchedulerFactoryBean#setTaskExecutor
  */

@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link InterceptingHttpAccessor}.
  *
- * @author Brian Clozel
+
  */
 public class InterceptingHttpAccessorTests {
 

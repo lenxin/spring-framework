@@ -13,8 +13,8 @@ import org.springframework.tests.sample.beans.TestBean;
  * Class used to test the functionality of factory method bean definitions
  * declared inside a Spring component class.
  *
- * @author Mark Pollack
- * @author Juergen Hoeller
+
+
  */
 @Component
 public class FactoryMethodComponent {

@@ -19,8 +19,8 @@ import reactor.core.publisher.Mono;
  * Multiple applications at unique context paths can be plugged in with the
  * help of the {@link ContextPathCompositeHandler}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @see ContextPathCompositeHandler
  */

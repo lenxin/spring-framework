@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * <p>Used by the {@code MBeanExporter} to obtain {@code ObjectName}s
  * when registering beans.
  *
- * @author Rob Harrop
+
  * @since 1.2
  * @see org.springframework.jmx.export.MBeanExporter
  * @see javax.management.ObjectName

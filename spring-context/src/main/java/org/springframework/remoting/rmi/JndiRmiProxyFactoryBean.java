@@ -33,7 +33,7 @@ import org.springframework.util.ClassUtils;
  *	 &lt;/props&gt;
  * &lt;/property&gt;</pre>
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see #setServiceInterface
  * @see #setJndiName

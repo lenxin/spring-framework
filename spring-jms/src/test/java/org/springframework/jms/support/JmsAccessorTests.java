@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the {@link JmsAccessor} class.
  *
- * @author Rick Evans
- * @author Chris Beams
+
+
  */
 public class JmsAccessorTests {
 

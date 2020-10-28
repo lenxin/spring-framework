@@ -18,8 +18,8 @@ import org.springframework.beans.factory.Aware;
  * consider implementing the {@link javax.management.modelmbean.ModelMBeanNotificationBroadcaster}
  * interface (or implementing a full {@link javax.management.modelmbean.ModelMBean}).
  *
- * @author Rob Harrop
- * @author Chris Beams
+
+
  * @since 2.0
  * @see NotificationPublisher
  */

@@ -26,11 +26,11 @@ import org.springframework.web.servlet.view.AbstractView;
  *
  * <p>Compatible with Jackson 2.6 and higher, as of Spring 4.3.
  *
- * @author Jeremy Grelle
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
+
+
  * @since 4.1
  */
 public abstract class AbstractJackson2View extends AbstractView {

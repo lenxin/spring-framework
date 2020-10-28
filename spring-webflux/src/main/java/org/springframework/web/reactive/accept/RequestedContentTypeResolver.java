@@ -13,7 +13,7 @@ import org.springframework.web.server.ServerWebExchange;
  * <p>See {@link RequestedContentTypeResolverBuilder} to create a sequence of
  * strategies.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public interface RequestedContentTypeResolver {

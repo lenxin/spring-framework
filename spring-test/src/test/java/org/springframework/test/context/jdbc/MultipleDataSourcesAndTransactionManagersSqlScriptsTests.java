@@ -26,7 +26,7 @@ import static org.junit.Assert.*;
  * {@link DataSource}s and {@link PlatformTransactionManager}s.
  * <p>Simultaneously tests for method-level overrides via {@code @SqlConfig}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see MultipleDataSourcesAndTransactionManagersTransactionalSqlScriptsTests
  */

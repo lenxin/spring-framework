@@ -7,8 +7,8 @@ import org.springframework.expression.spel.CodeFlow;
 /**
  * Expression language AST node that represents a float literal.
  *
- * @author Satyapal Reddy
- * @author Andy Clement
+
+
  * @since 3.2
  */
 public class FloatLiteral extends Literal {

@@ -12,7 +12,7 @@ package org.springframework.transaction.support;
  * code (either as part of a mock {@code PlatformTransactionManager} or
  * as argument passed into a {@link TransactionCallback} to be tested).
  *
- * @author Juergen Hoeller
+
  * @since 1.2.3
  * @see TransactionCallback#doInTransaction
  */

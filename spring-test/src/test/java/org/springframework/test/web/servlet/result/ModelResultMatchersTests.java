@@ -17,7 +17,7 @@ import static org.hamcrest.Matchers.*;
  * Unit tests for
  * {@link org.springframework.test.web.servlet.result.ModelResultMatchers}.
  *
- * @author Craig Walls
+
  */
 public class ModelResultMatchersTests {
 

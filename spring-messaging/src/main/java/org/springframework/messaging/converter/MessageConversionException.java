@@ -7,7 +7,7 @@ import org.springframework.messaging.MessagingException;
 /**
  * An exception raised by {@link MessageConverter} implementations.
  *
- * @author Mark Fisher
+
  * @since 4.0
  */
 @SuppressWarnings("serial")

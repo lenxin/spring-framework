@@ -11,9 +11,9 @@ import static org.junit.Assert.*;
 import static org.springframework.tests.TestResourceUtils.*;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class ScopedProxyAutowireTests {
 

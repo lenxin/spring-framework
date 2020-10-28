@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 import static org.springframework.http.MediaType.TEXT_XML_VALUE;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class RequestPredicatesTests {
 

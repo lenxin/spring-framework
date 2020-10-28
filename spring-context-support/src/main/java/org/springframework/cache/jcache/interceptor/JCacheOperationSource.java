@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
  * Interface used by {@link JCacheInterceptor}. Implementations know how to source
  * cache operation attributes from standard JSR-107 annotations.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see org.springframework.cache.interceptor.CacheOperationSource
  */

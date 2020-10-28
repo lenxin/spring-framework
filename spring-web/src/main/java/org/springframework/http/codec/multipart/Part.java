@@ -14,8 +14,8 @@ import org.springframework.http.HttpHeaders;
  * <p>Multipart requests may also be used outside of a browser for data of any
  * content type (e.g. JSON, PDF, etc).
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @see <a href="https://tools.ietf.org/html/rfc7578">RFC 7578 (multipart/form-data)</a>
  * @see <a href="https://tools.ietf.org/html/rfc2183">RFC 2183 (Content-Disposition)</a>

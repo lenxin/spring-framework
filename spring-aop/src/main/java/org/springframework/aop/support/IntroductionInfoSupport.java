@@ -21,8 +21,8 @@ import org.springframework.util.ClassUtils;
  * and to suppress interfaces that should not be added. Also allows for querying
  * all introduced interfaces.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public class IntroductionInfoSupport implements IntroductionInfo, Serializable {

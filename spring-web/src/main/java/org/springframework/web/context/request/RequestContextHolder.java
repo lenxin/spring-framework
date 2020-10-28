@@ -19,8 +19,8 @@ import org.springframework.util.ClassUtils;
  * {@link org.springframework.web.servlet.DispatcherServlet}
  * already exposes the current request by default.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 2.0
  * @see RequestContextListener
  * @see org.springframework.web.filter.RequestContextFilter

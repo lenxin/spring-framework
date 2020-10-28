@@ -27,7 +27,7 @@ import static org.junit.Assert.fail;
 /**
  * Unit tests for {@link RequestHeaderMapMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class RequestHeaderMapMethodArgumentResolverTests {
 

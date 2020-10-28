@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * or @Component 'value' attributes are indeed respected, and that customization of bean
  * naming through a BeanNameGenerator strategy works as expected.
  *
- * @author Chris Beams
+
  * @since 3.1.1
  */
 public class ConfigurationBeanNameTests {

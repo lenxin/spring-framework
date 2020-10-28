@@ -27,7 +27,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link DelegatingWebFluxConfiguration} tests.
  *
- * @author Brian Clozel
+
  */
 public class DelegatingWebFluxConfigurationTests {
 

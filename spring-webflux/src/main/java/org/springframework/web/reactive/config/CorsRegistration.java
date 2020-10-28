@@ -9,8 +9,8 @@ import org.springframework.web.cors.CorsConfiguration;
  * Assists with the creation of a {@link CorsConfiguration} instance for a given
  * URL path pattern.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @see CorsRegistry
  */

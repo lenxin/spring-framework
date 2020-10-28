@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for custom SQLException translation.
  *
- * @author Thomas Risberg
- * @author Sam Brannen
+
+
  */
 public class SQLExceptionCustomTranslatorTests {
 

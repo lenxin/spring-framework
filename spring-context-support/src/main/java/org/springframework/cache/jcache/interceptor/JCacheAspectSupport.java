@@ -27,7 +27,7 @@ import org.springframework.util.Assert;
  *
  * <p>A cache aspect is serializable if its {@code JCacheOperationSource} is serializable.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see org.springframework.cache.interceptor.CacheAspectSupport
  * @see KeyGeneratorAdapter

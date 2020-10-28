@@ -38,8 +38,8 @@ import org.springframework.web.servlet.support.RequestContext;
  * <p>Extends {@link WebApplicationObjectSupport}, which will be helpful to
  * some views. Subclasses just need to implement the actual rendering.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #setAttributes
  * @see #setAttributesMap
  * @see #renderMergedOutputModel

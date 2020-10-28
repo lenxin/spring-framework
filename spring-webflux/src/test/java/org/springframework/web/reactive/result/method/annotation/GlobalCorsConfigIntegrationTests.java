@@ -31,8 +31,8 @@ import static org.junit.Assert.fail;
  * Integration tests with {@code @RequestMapping} handler methods and global
  * CORS configuration.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  */
 public class GlobalCorsConfigIntegrationTests extends AbstractRequestMappingIntegrationTests {
 

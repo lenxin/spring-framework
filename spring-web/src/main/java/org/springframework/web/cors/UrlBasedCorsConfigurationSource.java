@@ -18,7 +18,7 @@ import org.springframework.web.util.UrlPathHelper;
  * <p>Exact path mapping URIs (such as {@code "/admin"}) are supported
  * as well as Ant-style path patterns (such as {@code "/admin/**"}).
  *
- * @author Sebastien Deleuze
+
  * @since 4.2
  */
 public class UrlBasedCorsConfigurationSource implements CorsConfigurationSource {

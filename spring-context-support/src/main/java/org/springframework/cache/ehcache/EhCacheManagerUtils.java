@@ -21,7 +21,7 @@ import org.springframework.core.io.Resource;
  * customizing the configuration object, and then calling the
  * {@link CacheManager#CacheManager(Configuration)} constructor.
  *
- * @author Juergen Hoeller
+
  * @since 4.1
  */
 public abstract class EhCacheManagerUtils {

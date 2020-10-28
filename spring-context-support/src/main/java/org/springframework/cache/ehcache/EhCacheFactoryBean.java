@@ -37,8 +37,8 @@ import org.springframework.lang.Nullable;
  *
  * <p>Note: As of Spring 5.0, Spring's EhCache support requires EhCache 2.10 or higher.
  *
- * @author Juergen Hoeller
- * @author Dmitriy Kopylenko
+
+
  * @since 1.1.1
  * @see #setCacheManager
  * @see EhCacheManagerFactoryBean

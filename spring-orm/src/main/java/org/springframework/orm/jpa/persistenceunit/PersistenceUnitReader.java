@@ -32,8 +32,8 @@ import org.springframework.util.xml.SimpleSaxErrorHandler;
 /**
  * Internal helper class for reading JPA-compliant {@code persistence.xml} files.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 final class PersistenceUnitReader {

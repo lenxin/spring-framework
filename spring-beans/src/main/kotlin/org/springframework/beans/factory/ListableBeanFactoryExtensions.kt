@@ -4,7 +4,7 @@ package org.springframework.beans.factory
  * Extension for [ListableBeanFactory.getBeanNamesForType] providing a
  * `getBeanNamesForType<Foo>()` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ListableBeanFactory.getBeanNamesForType(includeNonSingletons: Boolean = true,
@@ -14,7 +14,7 @@ inline fun <reified T : Any> ListableBeanFactory.getBeanNamesForType(includeNonS
 /**
  * Extension for [ListableBeanFactory.getBeansOfType] providing a `getBeansOfType<Foo>()` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ListableBeanFactory.getBeansOfType(includeNonSingletons: Boolean = true,
@@ -25,7 +25,7 @@ inline fun <reified T : Any> ListableBeanFactory.getBeansOfType(includeNonSingle
  * Extension for [ListableBeanFactory.getBeanNamesForAnnotation] providing a
  * `getBeansOfType<Foo>()` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Annotation> ListableBeanFactory.getBeanNamesForAnnotation(): Array<out String> =
@@ -35,7 +35,7 @@ inline fun <reified T : Annotation> ListableBeanFactory.getBeanNamesForAnnotatio
  * Extension for [ListableBeanFactory.getBeansWithAnnotation] providing a
  * `getBeansWithAnnotation<Foo>()` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Annotation> ListableBeanFactory.getBeansWithAnnotation(): Map<String, Any> =
@@ -45,7 +45,7 @@ inline fun <reified T : Annotation> ListableBeanFactory.getBeansWithAnnotation()
  * Extension for [ListableBeanFactory.findAnnotationOnBean] providing a
  * `findAnnotationOnBean<Foo>("foo")` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Annotation> ListableBeanFactory.findAnnotationOnBean(beanName:String): Annotation? =

@@ -29,8 +29,8 @@ import static org.junit.Assert.*;
  * <p>Before adding tests here consider if they are a better fit for any of the
  * other {@code RequestMapping*IntegrationTests}.
  *
- * @author Rossen Stoyanchev
- * @author Stephane Maldini
+
+
  * @since 5.0
  */
 public class RequestMappingIntegrationTests extends AbstractRequestMappingIntegrationTests {

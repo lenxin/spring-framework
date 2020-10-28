@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * Unit tests for {@link ParamsRequestCondition}.
- * @author Arjen Poutsma
+
  */
 public class ParamsRequestConditionTests {
 

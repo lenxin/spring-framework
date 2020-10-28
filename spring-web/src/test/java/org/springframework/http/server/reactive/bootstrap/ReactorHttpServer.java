@@ -7,7 +7,7 @@ import reactor.netty.DisposableServer;
 import org.springframework.http.server.reactive.ReactorHttpHandlerAdapter;
 
 /**
- * @author Stephane Maldini
+
  */
 public class ReactorHttpServer extends AbstractHttpServer {
 

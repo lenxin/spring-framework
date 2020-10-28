@@ -7,8 +7,8 @@ package org.springframework.beans;
  * <p>For example, navigating "spouse.age" could fail because the
  * spouse property of the target object has a null value.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public class NullValueInNestedPathException extends InvalidPropertyException {

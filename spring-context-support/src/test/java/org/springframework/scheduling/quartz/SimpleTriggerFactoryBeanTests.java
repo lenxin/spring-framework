@@ -8,7 +8,7 @@ import org.quartz.SimpleTrigger;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class SimpleTriggerFactoryBeanTests {
 

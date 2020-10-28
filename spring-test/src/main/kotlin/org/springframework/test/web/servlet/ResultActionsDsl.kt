@@ -3,7 +3,7 @@ package org.springframework.test.web.servlet
 /**
  * Provide a [ResultActions] Kotlin DSL in order to be able to write idiomatic Kotlin code.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 class ResultActionsDsl(private val actions: ResultActions) {

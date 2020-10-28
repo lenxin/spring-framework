@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 /**
  * Test candidate for an embedded {@link Component}.
  *
- * @author Stephane Nicoll
+
  */
 public class SampleEmbedded {
 

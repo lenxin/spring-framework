@@ -22,7 +22,7 @@ import org.springframework.cache.annotation.Caching;
  * annotated (regardless of visibility). Annotating non-public methods directly is the
  * only way to get caching demarcation for the execution of such operations.
  *
- * @author Costin Leau
+
  * @since 3.1
  */
 public aspect AnnotationCacheAspect extends AbstractCacheAspect {

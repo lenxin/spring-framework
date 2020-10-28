@@ -16,12 +16,12 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link MockHttpServletResponse}.
  *
- * @author Juergen Hoeller
- * @author Rick Evans
- * @author Rossen Stoyanchev
- * @author Rob Winch
- * @author Sam Brannen
- * @author Brian Clozel
+
+
+
+
+
+
  * @since 19.02.2006
  */
 public class MockHttpServletResponseTests {

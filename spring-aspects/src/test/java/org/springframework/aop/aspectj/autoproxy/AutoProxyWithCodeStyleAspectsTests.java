@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @author Adrian Colyer
+
  */
 public class AutoProxyWithCodeStyleAspectsTests {
 

@@ -8,8 +8,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link CachingDestinationResolverProxy}.
  *
- * @author Agim Emruli
- * @author Juergen Hoeller
+
+
  */
 public class CachingDestinationResolverTests {
 

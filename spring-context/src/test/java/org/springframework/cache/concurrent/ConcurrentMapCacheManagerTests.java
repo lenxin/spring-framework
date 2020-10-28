@@ -8,8 +8,8 @@ import org.springframework.cache.CacheManager;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  */
 public class ConcurrentMapCacheManagerTests {
 

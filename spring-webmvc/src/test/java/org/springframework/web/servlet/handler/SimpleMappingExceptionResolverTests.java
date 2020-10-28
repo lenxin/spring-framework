@@ -15,9 +15,9 @@ import org.springframework.web.util.WebUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Seth Ladd
- * @author Juergen Hoeller
- * @author Arjen Poutsma
+
+
+
  */
 public class SimpleMappingExceptionResolverTests {
 

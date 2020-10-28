@@ -11,7 +11,7 @@ import org.springframework.util.ClassUtils;
  * {@link GenericXmlWebContextLoader} (or a {@link GenericGroovyXmlWebContextLoader} if
  * Groovy is present on the classpath) and an {@link AnnotationConfigWebContextLoader}.
  *
- * @author Sam Brannen
+
  * @since 3.2
  * @see SmartContextLoader
  * @see AbstractDelegatingSmartContextLoader

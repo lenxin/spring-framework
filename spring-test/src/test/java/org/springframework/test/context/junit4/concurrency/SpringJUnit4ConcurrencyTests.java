@@ -52,7 +52,7 @@ import static org.springframework.test.context.junit4.JUnitTestingUtils.*;
  * <p><strong>NOTE</strong>: these tests only run if the {@link TestGroup#LONG_RUNNING
  * LONG_RUNNING} test group is enabled.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see org.springframework.test.context.TestContextConcurrencyTests
  */

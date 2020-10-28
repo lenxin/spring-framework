@@ -31,7 +31,7 @@ import org.springframework.lang.Nullable;
  * </tbody>
  * </table>
  *
- * @author Nicholas Williams
+
  * @since 4.0
  * @see MessageTag
  * @see ThemeTag

@@ -24,10 +24,10 @@ import org.springframework.tests.sample.objects.TestObject;
 import static org.junit.Assert.*;
 
 /**
- * @author Colin Sampaleanu
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Rick Evans
+
+
+
+
  */
 public class ClassUtilsTests {
 

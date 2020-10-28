@@ -31,10 +31,10 @@ import org.springframework.web.servlet.tags.RequestContextAwareTag;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Scott Andrews
- * @author Jeremy Grelle
+
+
+
+
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class OptionsTagTests extends AbstractHtmlElementTagTests {

@@ -31,7 +31,7 @@ import static org.springframework.test.annotation.DirtiesContext.MethodMode.AFTE
  * otherwise, this listener must be manually configured to execute after the
  * {@code DependencyInjectionTestExecutionListener}.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see DirtiesContext
  * @see DirtiesContextBeforeModesTestExecutionListener

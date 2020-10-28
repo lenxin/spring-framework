@@ -18,7 +18,7 @@ import org.springframework.util.StringUtils;
  * base URI, alternative encoding mode strategies, among others.
  *
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  * @see UriComponentsBuilder
  */

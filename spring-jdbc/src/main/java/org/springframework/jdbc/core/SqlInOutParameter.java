@@ -9,8 +9,8 @@ import java.sql.ResultSet;
  *
  * <p>Output parameters - like all stored procedure parameters - must have names.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class SqlInOutParameter extends SqlOutParameter {

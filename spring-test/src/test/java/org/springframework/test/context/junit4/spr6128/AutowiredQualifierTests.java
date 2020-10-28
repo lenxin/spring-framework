@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
  * href="https://jira.springframework.org/browse/SPR-6128"
  * target="_blank">SPR-6128</a>.
  *
- * @author Sam Brannen
- * @author Chris Beams
+
+
  * @since 3.0
  */
 @ContextConfiguration

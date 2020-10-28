@@ -4,7 +4,7 @@ package org.springframework.test.context;
  * {@code BootstrapContext} encapsulates the context in which the <em>Spring
  * TestContext Framework</em> is bootstrapped.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see BootstrapWith
  * @see TestContextBootstrapper

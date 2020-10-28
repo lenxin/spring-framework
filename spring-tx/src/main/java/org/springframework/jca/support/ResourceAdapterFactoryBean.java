@@ -24,7 +24,7 @@ import org.springframework.lang.Nullable;
  * JCA ResourceAdapter, allowing the BootstrapContext or its elements
  * (such as the JCA WorkManager) to be specified through bean properties.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.3
  * @see #setResourceAdapter
  * @see #setBootstrapContext

@@ -28,11 +28,11 @@ import static org.junit.Assert.*;
  * <li><a href="https://issuetracker.springsource.com/browse/EBR-349">EBR-349</a></li>
  * </ul>
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
+
+
+
  */
 public abstract class AbstractMBeanServerTests {
 

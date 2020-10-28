@@ -35,7 +35,7 @@ import org.springframework.web.server.adapter.WebHttpHandlerBuilder;
 
 /**
  * Samples tests that demonstrate applying ServerWebExchange initialization.
- * @author Rossen Stoyanchev
+
  */
 public class ExchangeMutatorTests {
 

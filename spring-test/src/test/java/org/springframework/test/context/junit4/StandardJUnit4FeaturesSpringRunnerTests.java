@@ -15,7 +15,7 @@ import org.springframework.test.context.TestExecutionListeners;
  * listeners.
  * </p>
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see StandardJUnit4FeaturesTests
  */

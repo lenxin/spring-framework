@@ -16,8 +16,8 @@ import org.springframework.util.Assert;
  * a {@code SqlParameterSource} implementing {@link #getParameterNames()}.
  * Concrete subclasses must implement {@link #hasValue} and {@link #getValue}.
  *
- * @author Juergen Hoeller
- * @author Jens Schauder
+
+
  * @since 2.0
  * @see #hasValue(String)
  * @see #getValue(String)

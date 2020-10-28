@@ -14,8 +14,8 @@ import org.springframework.web.servlet.handler.MappedInterceptor;
 /**
  * Assists with the creation of a {@link MappedInterceptor}.
  *
- * @author Rossen Stoyanchev
- * @author Keith Donald
+
+
  * @since 3.1
  */
 public class InterceptorRegistration {

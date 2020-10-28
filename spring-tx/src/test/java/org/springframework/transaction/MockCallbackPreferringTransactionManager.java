@@ -6,7 +6,7 @@ import org.springframework.transaction.support.SimpleTransactionStatus;
 import org.springframework.transaction.support.TransactionCallback;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class MockCallbackPreferringTransactionManager implements CallbackPreferringPlatformTransactionManager {
 

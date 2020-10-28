@@ -19,9 +19,9 @@ import org.springframework.util.concurrent.SettableListenableFuture;
  *
  * <p>Created via the {@link OkHttp3ClientHttpRequestFactory}.
  *
- * @author Luciano Leggieri
- * @author Arjen Poutsma
- * @author Roy Clarkson
+
+
+
  * @since 4.3
  * @deprecated as of Spring 5.0, with no direct replacement
  */

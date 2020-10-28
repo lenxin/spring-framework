@@ -26,8 +26,8 @@ import org.springframework.util.function.SupplierUtils;
  * default operations to configurable services with sensible defaults
  * when not present.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  */
 public class DefaultJCacheOperationSource extends AnnotationJCacheOperationSource

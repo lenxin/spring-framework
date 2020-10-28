@@ -26,8 +26,8 @@ import org.springframework.web.reactive.function.BodyInserters;
 /**
  * Entity-specific subtype of {@link ServerResponse} that exposes entity data.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 5.0
  * @param <T> the entity type
  */

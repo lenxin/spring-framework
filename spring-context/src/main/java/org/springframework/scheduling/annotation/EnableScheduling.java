@@ -176,8 +176,8 @@ import org.springframework.scheduling.config.ScheduledTaskRegistrar;
  * application context and any separate {@code DispatcherServlet} application contexts,
  * if you need to apply its behavior at multiple levels.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  * @since 3.1
  * @see Scheduled
  * @see SchedulingConfiguration

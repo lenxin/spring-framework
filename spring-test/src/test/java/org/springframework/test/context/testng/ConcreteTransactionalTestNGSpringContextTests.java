@@ -26,7 +26,7 @@ import static org.testng.Assert.*;
  * Combined integration test for {@link AbstractTestNGSpringContextTests} and
  * {@link AbstractTransactionalTestNGSpringContextTests}.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 @ContextConfiguration

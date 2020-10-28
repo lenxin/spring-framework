@@ -22,7 +22,7 @@ import static org.junit.Assert.*;
  * rather on a thread local that informs the enhanced bean method implementation whether
  * the factory is the caller or not.
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 public class ConfigurationClassPostConstructAndAutowiringTests {

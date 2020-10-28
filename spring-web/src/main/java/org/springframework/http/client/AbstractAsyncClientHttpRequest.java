@@ -11,7 +11,7 @@ import org.springframework.util.concurrent.ListenableFuture;
  * Abstract base for {@link AsyncClientHttpRequest} that makes sure that headers and body
  * are not written multiple times.
  *
- * @author Arjen Poutsma
+
  * @since 4.0
  * @deprecated as of Spring 5.0, in favor of {@link org.springframework.http.client.reactive.AbstractClientHttpRequest}
  */

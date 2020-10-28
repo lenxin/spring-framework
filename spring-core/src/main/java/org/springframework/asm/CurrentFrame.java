@@ -2,7 +2,7 @@
  * Information about the input stack map frame at the "current" instruction of a method. This is
  * implemented as a Frame subclass for a "basic block" containing only one instruction.
  *
- * @author Eric Bruneton
+
  */
 final class CurrentFrame extends Frame {
 

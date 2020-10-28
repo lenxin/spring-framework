@@ -32,8 +32,8 @@ import com.gargoylesoftware.htmlunit.WebRequest;
  * However, it would not match {@code "https://code.jquery.com/jquery.js"}
  * which has a default port of {@code 443}.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  * @see UrlRegexRequestMatcher
  * @see org.springframework.test.web.servlet.htmlunit.DelegatingWebConnection

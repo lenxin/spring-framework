@@ -17,7 +17,7 @@ import javax.management.modelmbean.RequiredModelMBean;
  * {@link Thread#getContextClassLoader() thread context ClassLoader} is switched
  * for the managed resource's {@link ClassLoader} before any invocations occur.
  *
- * @author Rob Harrop
+
  * @since 2.0
  * @see RequiredModelMBean
  */

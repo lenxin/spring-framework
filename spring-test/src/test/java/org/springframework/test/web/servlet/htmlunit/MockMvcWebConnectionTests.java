@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for {@link MockMvcWebConnection}.
  *
- * @author Rob Winch
+
  * @since 4.2
  */
 public class MockMvcWebConnectionTests {

@@ -10,7 +10,7 @@ import org.apache.commons.logging.LogFactory;
  * {@code CharSequence} based log methods but also {@code Supplier}
  * based variants for use with Java 8 lambda expressions.
  *
- * @author Juergen Hoeller
+
  * @since 5.2
  */
 public class LogAccessor {

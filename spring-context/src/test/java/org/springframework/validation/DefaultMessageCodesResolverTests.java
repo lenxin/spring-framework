@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link DefaultMessageCodesResolver}.
  *
- * @author Phillip Webb
+
  */
 public class DefaultMessageCodesResolverTests {
 

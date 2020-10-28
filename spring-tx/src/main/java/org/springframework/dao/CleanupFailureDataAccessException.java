@@ -11,7 +11,7 @@ package org.springframework.dao;
  * finally block and therefore log cleanup failure rather than rethrow it,
  * to keep the original data access exception, if any.
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public class CleanupFailureDataAccessException extends NonTransientDataAccessException {

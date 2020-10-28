@@ -8,7 +8,7 @@ package org.springframework.jmx.export.assembler;
  * <p>The exact mechanism for deciding which beans to include is left to
  * implementing classes.
  *
- * @author Rob Harrop
+
  * @since 1.2
  * @see org.springframework.jmx.export.MBeanExporter
  */

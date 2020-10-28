@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link ArgumentTag}
  *
- * @author Nicholas Williams
+
  */
 public class ArgumentTagTests extends AbstractTagTests {
 

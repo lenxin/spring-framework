@@ -26,11 +26,11 @@ import org.springframework.web.servlet.FrameworkServlet;
  * <p>Most applications should consider extending the Spring Java config subclass
  * {@link AbstractAnnotationConfigDispatcherServletInitializer}.
  *
- * @author Arjen Poutsma
- * @author Chris Beams
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
+
+
  * @since 3.2
  */
 public abstract class AbstractDispatcherServletInitializer extends AbstractContextLoaderInitializer {

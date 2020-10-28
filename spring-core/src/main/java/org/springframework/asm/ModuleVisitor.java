@@ -5,8 +5,8 @@ package org.springframework.asm;
  * order: ( {@code visitMainClass} | ( {@code visitPackage} | {@code visitRequire} | {@code
  * visitExport} | {@code visitOpen} | {@code visitUse} | {@code visitProvide} )* ) {@code visitEnd}.
  *
- * @author Remi Forax
- * @author Eric Bruneton
+
+
  */
 public abstract class ModuleVisitor {
   /**

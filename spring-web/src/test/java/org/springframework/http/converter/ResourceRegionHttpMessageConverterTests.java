@@ -30,7 +30,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Test cases for {@link ResourceRegionHttpMessageConverter} class.
  *
- * @author Brian Clozel
+
  */
 public class ResourceRegionHttpMessageConverterTests {
 

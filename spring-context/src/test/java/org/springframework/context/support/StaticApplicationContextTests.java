@@ -18,7 +18,7 @@ import org.springframework.tests.sample.beans.TestBean;
 /**
  * Tests for static application context.
  *
- * @author Rod Johnson
+
  */
 public class StaticApplicationContextTests extends AbstractApplicationContextTests {
 

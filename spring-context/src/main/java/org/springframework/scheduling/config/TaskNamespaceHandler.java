@@ -5,7 +5,7 @@ import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 /**
  * {@code NamespaceHandler} for the 'task' namespace.
  *
- * @author Mark Fisher
+
  * @since 3.0
  */
 public class TaskNamespaceHandler extends NamespaceHandlerSupport {

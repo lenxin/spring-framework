@@ -18,7 +18,7 @@ import org.springframework.lang.Nullable;
  *
  * <p>Note: This class has been updated for JCache 1.0, as of Spring 4.0.
  *
- * @author Juergen Hoeller
+
  * @since 3.2
  * @see javax.cache.Caching#getCachingProvider()
  * @see javax.cache.spi.CachingProvider#getCacheManager()

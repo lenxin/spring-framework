@@ -22,7 +22,7 @@
  * model["firstName"] = "Mario"
  * ```
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 operator fun ModelMap.set(attributeName: String, attributeValue: Any) {

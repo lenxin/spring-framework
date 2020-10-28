@@ -17,7 +17,7 @@ import static org.springframework.beans.factory.support.BeanDefinitionBuilder.*;
  * SpEL for all {@link AbstractApplicationContext} implementations via
  * {@link StandardBeanExpressionResolver}.
  *
- * @author Chris Beams
+
  */
 public class EnvironmentAccessorIntegrationTests {
 

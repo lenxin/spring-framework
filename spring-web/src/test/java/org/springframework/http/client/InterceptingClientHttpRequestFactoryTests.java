@@ -21,8 +21,8 @@ import org.springframework.http.client.support.HttpRequestWrapper;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  */
 public class InterceptingClientHttpRequestFactoryTests {
 

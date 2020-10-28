@@ -37,7 +37,7 @@ import static org.springframework.http.codec.json.JacksonViewBean.MyJacksonView1
 import static org.springframework.http.codec.json.JacksonViewBean.MyJacksonView3;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class Jackson2JsonEncoderTests extends AbstractEncoderTestCase<Jackson2JsonEncoder> {
 

@@ -21,8 +21,8 @@ import org.springframework.util.Assert;
  * JDBC-based bean definition reader. It does not aim to offer
  * comprehensive functionality.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #loadBeanDefinitions
  * @see org.springframework.beans.factory.support.PropertiesBeanDefinitionReader
  */

@@ -18,7 +18,7 @@ import org.springframework.test.context.junit4.aci.xml.MultipleInitializersXmlCo
  * {@link ApplicationContextInitializer ApplicationContextInitializers} (ACIs)
  * in the TestContext framework.
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 @RunWith(Suite.class)

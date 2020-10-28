@@ -30,10 +30,10 @@ import org.springframework.util.Assert;
  * from the extra information available on the server side such as the request
  * or controller method annotations.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
+
+
  * @since 5.0
  * @param <T> the type of objects in the input stream
  */

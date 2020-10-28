@@ -16,7 +16,7 @@ import org.springframework.messaging.core.MessageSendingOperations;
  * and {@link MessageRequestReplyOperations} for JMS related operations that allow to specify
  * a destination name rather than the actual {@link javax.jms.Destination}.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see org.springframework.jms.core.JmsTemplate
  * @see org.springframework.messaging.core.MessageSendingOperations

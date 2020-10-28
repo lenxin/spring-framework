@@ -3,7 +3,7 @@ package org.springframework.web.servlet.tags.form;
 import org.springframework.tests.sample.beans.TestBean;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class TestBeanWithRealCountry extends TestBean {
 

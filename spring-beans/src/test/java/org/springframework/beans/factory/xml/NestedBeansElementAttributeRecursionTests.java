@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for propagating enclosing beans element defaults to nested beans elements.
  *
- * @author Chris Beams
+
  */
 public class NestedBeansElementAttributeRecursionTests {
 

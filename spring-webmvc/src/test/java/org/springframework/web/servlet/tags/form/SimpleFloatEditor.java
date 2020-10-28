@@ -3,7 +3,7 @@ package org.springframework.web.servlet.tags.form;
 import java.beans.PropertyEditorSupport;
 
 /**
- * @author Rob Harrop
+
  * @since 2.0
  */
 class SimpleFloatEditor extends PropertyEditorSupport {

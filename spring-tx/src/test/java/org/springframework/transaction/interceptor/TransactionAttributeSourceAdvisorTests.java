@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.springframework.util.SerializationTestUtils;
 
 /**
- * @author Rod Johnson
+
  */
 public class TransactionAttributeSourceAdvisorTests {
 

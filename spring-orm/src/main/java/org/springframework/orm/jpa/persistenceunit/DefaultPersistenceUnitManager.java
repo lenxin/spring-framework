@@ -62,8 +62,8 @@ import org.springframework.util.ResourceUtils;
  *
  * <p><b>NOTE: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 2.0
  * @see #setPersistenceXmlLocations
  * @see #setDataSourceLookup

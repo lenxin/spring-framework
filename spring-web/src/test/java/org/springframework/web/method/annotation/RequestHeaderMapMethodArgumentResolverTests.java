@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
 /**
  * Text fixture with {@link RequestHeaderMapMethodArgumentResolver}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 public class RequestHeaderMapMethodArgumentResolverTests {
 

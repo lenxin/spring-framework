@@ -22,8 +22,8 @@ import org.springframework.util.ObjectUtils;
  * The common supertype of all AST nodes in a parsed Spring Expression Language
  * format expression.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public abstract class SpelNodeImpl implements SpelNode, Opcodes {

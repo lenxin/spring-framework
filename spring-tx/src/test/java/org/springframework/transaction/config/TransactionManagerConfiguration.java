@@ -7,7 +7,7 @@ import org.springframework.tests.transaction.CallCountingTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
 /**
- * @author Juergen Hoeller
+
  */
 @Configuration
 public class TransactionManagerConfiguration {

@@ -25,7 +25,7 @@ import static org.junit.Assert.*;
  * <p>Note that correct method execution order is essential, thus the use of
  * {@link FixMethodOrder}.
  *
- * @author Sam Brannen
+
  * @since 3.2.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

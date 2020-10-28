@@ -12,8 +12,8 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Rick Evans
- * @author Brian Clozel
+
+
  */
 public class WebContentInterceptorTests {
 

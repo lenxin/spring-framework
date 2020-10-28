@@ -32,9 +32,9 @@ import org.springframework.web.server.ServerWebExchange;
  * argument values resolved from the current HTTP request through a list of
  * {@link HandlerMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
  * @since 5.0
  */
 public class InvocableHandlerMethod extends HandlerMethod {

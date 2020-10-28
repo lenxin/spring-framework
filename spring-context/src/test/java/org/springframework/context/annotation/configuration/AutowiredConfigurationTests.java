@@ -35,9 +35,9 @@ import static org.junit.Assert.*;
  * System tests covering use of {@link Autowired} and {@link Value} within
  * {@link Configuration} classes.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class AutowiredConfigurationTests {
 

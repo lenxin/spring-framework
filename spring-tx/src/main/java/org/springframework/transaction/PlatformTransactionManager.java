@@ -20,8 +20,8 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.jdbc.datasource.DataSourceTransactionManager},
  * which can serve as an implementation guide for other transaction strategies.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 16.05.2003
  * @see org.springframework.transaction.support.TransactionTemplate
  * @see org.springframework.transaction.interceptor.TransactionInterceptor

@@ -6,7 +6,7 @@ package org.springframework.dao;
  * Note that this is not necessarily a purely relational concept;
  * unique primary keys are required by most database types.
  *
- * @author Thomas Risberg
+
  */
 @SuppressWarnings("serial")
 public class DuplicateKeyException extends DataIntegrityViolationException {

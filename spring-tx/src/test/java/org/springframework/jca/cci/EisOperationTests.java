@@ -18,8 +18,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Thierry Templier
- * @author Chris Beams
+
+
  */
 public class EisOperationTests {
 

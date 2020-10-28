@@ -13,7 +13,7 @@ import org.springframework.expression.spel.support.StandardEvaluationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
+
  */
 public class PropertiesConversionSpelTests {
 

@@ -5,7 +5,7 @@ package org.springframework.jdbc.datasource.init;
  * wrong while processing an SQL script": for example, a {@link java.sql.SQLException}
  * from JDBC that we cannot pinpoint more precisely.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 @SuppressWarnings("serial")

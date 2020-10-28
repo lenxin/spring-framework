@@ -42,7 +42,7 @@ import static org.junit.Assert.*;
  * <li>Adding your own type converter to support conversion between any types you like
  * </ul>
  *
- * @author Andy Clement
+
  */
 public class ExpressionLanguageScenarioTests extends AbstractExpressionTests {
 

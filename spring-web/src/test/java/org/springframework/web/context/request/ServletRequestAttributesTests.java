@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rick Evans
- * @author Juergen Hoeller
+
+
  */
 public class ServletRequestAttributesTests {
 

@@ -15,7 +15,7 @@ import java.util.Map;
  * {@link #setParsePath parsePath} and {@link #setStrictEncoding strictEncoding}
  * respectively.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.2
  * @deprecated as of 5.0 in favor of {@link DefaultUriBuilderFactory}.
  * <p><strong>Note:</strong> {@link DefaultUriBuilderFactory} has a different

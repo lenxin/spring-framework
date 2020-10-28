@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link ProfileValueUtils}.
  *
- * @author Sam Brannen
+
  * @since 3.0
  */
 public class ProfileValueUtilsTests {

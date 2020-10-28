@@ -43,7 +43,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Unit tests for {@link ResourceHandlerRegistry}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ResourceHandlerRegistryTests {
 

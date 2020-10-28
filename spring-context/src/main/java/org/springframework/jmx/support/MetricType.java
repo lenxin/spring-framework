@@ -3,7 +3,7 @@ package org.springframework.jmx.support;
 /**
  * Represents how the measurement values of a {@code ManagedMetric} will change over time.
  *
- * @author Jennifer Hickey
+
  * @since 3.0
  */
 public enum MetricType {

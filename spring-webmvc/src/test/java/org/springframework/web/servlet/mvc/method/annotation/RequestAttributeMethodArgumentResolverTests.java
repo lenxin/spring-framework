@@ -6,7 +6,7 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 /**
  * Unit tests for {@link RequestAttributeMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.3
  */
 public class RequestAttributeMethodArgumentResolverTests extends AbstractRequestAttributesArgumentResolverTests {

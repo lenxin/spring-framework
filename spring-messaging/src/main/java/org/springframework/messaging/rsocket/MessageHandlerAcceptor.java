@@ -18,7 +18,7 @@ import org.springframework.util.MimeType;
  * {@link io.rsocket.RSocketFactory.ServerRSocketFactory#acceptor(SocketAcceptor) server}
  * side. Requests are handled by delegating to the "super" {@link #handleMessage(Message)}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public final class MessageHandlerAcceptor extends RSocketMessageHandler

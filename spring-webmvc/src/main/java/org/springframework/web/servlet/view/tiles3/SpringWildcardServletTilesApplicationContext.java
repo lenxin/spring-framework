@@ -22,8 +22,8 @@ import org.springframework.web.context.support.ServletContextResourcePatternReso
 /**
  * Spring-specific subclass of the Tiles ServletApplicationContext.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.2
  */
 public class SpringWildcardServletTilesApplicationContext extends ServletApplicationContext {

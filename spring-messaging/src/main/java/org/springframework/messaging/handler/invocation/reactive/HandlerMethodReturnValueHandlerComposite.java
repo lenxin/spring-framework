@@ -15,7 +15,7 @@ import org.springframework.messaging.Message;
 /**
  * A HandlerMethodReturnValueHandler that wraps and delegates to others.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public class HandlerMethodReturnValueHandlerComposite implements HandlerMethodReturnValueHandler {

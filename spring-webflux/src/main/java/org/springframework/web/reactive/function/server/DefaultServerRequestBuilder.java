@@ -46,7 +46,7 @@ import org.springframework.web.util.UriUtils;
 /**
  * Default {@link ServerRequest.Builder} implementation.
  *
- * @author Arjen Poutsma
+
  * @since 5.1
  */
 class DefaultServerRequestBuilder implements ServerRequest.Builder {

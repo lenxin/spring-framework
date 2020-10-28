@@ -11,8 +11,8 @@ import org.springframework.lang.Nullable;
  * that some TimeZone-aware infrastructure has been configured, even if it may not
  * be able to produce a non-null TimeZone at the moment.
  *
- * @author Juergen Hoeller
- * @author Nicholas Williams
+
+
  * @since 4.0
  * @see LocaleContextHolder#getTimeZone()
  */

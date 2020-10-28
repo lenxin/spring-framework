@@ -23,10 +23,10 @@ import org.springframework.util.xml.DomUtils;
  * {@link org.springframework.beans.factory.xml.BeanDefinitionParser
  * BeanDefinitionParser} for the {@code <tx:advice/>} tag.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Adrian Colyer
- * @author Chris Beams
+
+
+
+
  * @since 2.0
  */
 class TxAdviceBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {

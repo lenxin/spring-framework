@@ -9,8 +9,8 @@ import org.springframework.beans.factory.Aware;
  * {@link ServletContext} (typically determined by the {@link WebApplicationContext})
  * that it runs in.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  * @since 12.03.2004
  * @see ServletConfigAware
  */

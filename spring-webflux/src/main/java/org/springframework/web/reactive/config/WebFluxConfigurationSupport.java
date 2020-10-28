@@ -58,8 +58,8 @@ import org.springframework.web.server.i18n.LocaleContextResolver;
  *
  * <p>Import directly or extend and override protected methods to customize.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 public class WebFluxConfigurationSupport implements ApplicationContextAware {

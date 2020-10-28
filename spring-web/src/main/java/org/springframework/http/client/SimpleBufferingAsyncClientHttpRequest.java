@@ -17,7 +17,7 @@ import org.springframework.util.concurrent.ListenableFuture;
  * standard JDK facilities to execute buffered requests. Created via the
  * {@link org.springframework.http.client.SimpleClientHttpRequestFactory}.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see org.springframework.http.client.SimpleClientHttpRequestFactory#createRequest
  * @deprecated as of Spring 5.0, with no direct replacement

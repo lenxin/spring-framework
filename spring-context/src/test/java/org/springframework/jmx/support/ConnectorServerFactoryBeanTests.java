@@ -18,9 +18,9 @@ import org.springframework.jmx.AbstractMBeanServerTests;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Chris Beams
- * @author Sam Brannen
+
+
+
  */
 public class ConnectorServerFactoryBeanTests extends AbstractMBeanServerTests {
 

@@ -44,8 +44,8 @@ import org.springframework.lang.Nullable;
  * aligned with {@link HibernateJpaDialect#setPrepareConnection}, at least for non-JTA
  * scenarios; you may override this through corresponding native Hibernate properties.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 2.0
  * @see HibernateJpaDialect
  */

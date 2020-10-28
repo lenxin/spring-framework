@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
  * Implementation of the JMS ExceptionListener interface that supports chaining,
  * allowing the addition of multiple ExceptionListener instances in order.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  */
 public class ChainedExceptionListener implements ExceptionListener {

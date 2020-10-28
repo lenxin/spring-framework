@@ -17,7 +17,7 @@ import org.springframework.util.MultiValueMap;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class MultipartBodyBuilderTests {
 

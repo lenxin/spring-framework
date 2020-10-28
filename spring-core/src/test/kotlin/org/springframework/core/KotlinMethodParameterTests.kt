@@ -12,10 +12,10 @@ import kotlin.reflect.jvm.javaMethod
 /**
  * Tests for Kotlin support in [MethodParameter].
  *
- * @author Raman Gupta
- * @author Sebastien Deleuze
- * @author Juergen Hoeller
- * @author Konrad Kaminski
+
+
+
+
  */
 class KotlinMethodParameterTests {
 

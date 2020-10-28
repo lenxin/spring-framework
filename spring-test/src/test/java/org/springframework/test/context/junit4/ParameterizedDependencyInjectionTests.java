@@ -30,7 +30,7 @@ import static org.junit.Assert.*;
  * {@link TestContextManager} to provide dependency injection to a
  * <em>parameterized test instance</em>.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see org.springframework.test.context.junit4.rules.ParameterizedSpringRuleTests
  */

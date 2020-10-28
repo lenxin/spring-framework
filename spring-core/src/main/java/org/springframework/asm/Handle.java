@@ -3,8 +3,8 @@ package org.springframework.asm;
 /**
  * A reference to a field or a method.
  *
- * @author Remi Forax
- * @author Eric Bruneton
+
+
  */
 public final class Handle {
 

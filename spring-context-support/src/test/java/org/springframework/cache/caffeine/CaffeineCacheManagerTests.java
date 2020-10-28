@@ -14,9 +14,9 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Ben Manes
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  */
 public class CaffeineCacheManagerTests {
 

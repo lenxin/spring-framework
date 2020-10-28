@@ -7,7 +7,7 @@ import org.springframework.expression.spel.SpelNode;
 /**
  * An 'identifier' {@link SpelNode}.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class Identifier extends SpelNodeImpl {

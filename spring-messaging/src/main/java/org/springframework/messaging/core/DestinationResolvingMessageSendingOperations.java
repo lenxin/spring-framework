@@ -10,8 +10,8 @@ import org.springframework.messaging.MessagingException;
  * Extends {@link MessageSendingOperations} and adds operations for sending messages
  * to a destination specified as a (resolvable) String name.
  *
- * @author Mark Fisher
- * @author Rossen Stoyanchev
+
+
  * @since 4.0
  * @param <D> the destination type
  * @see DestinationResolver

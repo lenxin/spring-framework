@@ -11,8 +11,8 @@ import org.springframework.util.StringUtils;
 /**
  * Spring AOP {@link ClassFilter} implementation using AspectJ type matching.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class TypePatternClassFilter implements ClassFilter {

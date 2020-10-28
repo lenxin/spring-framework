@@ -24,8 +24,8 @@ import org.springframework.util.ClassUtils;
  * interface that does not correspond to the management interface will lead
  * to an {@code InvalidInvocationException}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see MBeanClientInterceptor
  * @see InvalidInvocationException

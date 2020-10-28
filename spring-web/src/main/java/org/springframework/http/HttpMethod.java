@@ -10,8 +10,8 @@ import org.springframework.lang.Nullable;
  * with {@link org.springframework.http.client.ClientHttpRequest}
  * and {@link org.springframework.web.client.RestTemplate}.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public enum HttpMethod {

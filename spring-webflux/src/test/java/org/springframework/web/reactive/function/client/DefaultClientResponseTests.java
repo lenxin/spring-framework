@@ -38,8 +38,8 @@ import static org.mockito.Mockito.when;
 import static org.springframework.web.reactive.function.BodyExtractors.toMono;
 
 /**
- * @author Arjen Poutsma
- * @author Denys Ivano
+
+
  */
 public class DefaultClientResponseTests {
 

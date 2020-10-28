@@ -44,9 +44,9 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link SendToMethodReturnValueHandlerTests}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
- * @author Stephane Nicoll
+
+
+
  */
 public class SendToMethodReturnValueHandlerTests {
 

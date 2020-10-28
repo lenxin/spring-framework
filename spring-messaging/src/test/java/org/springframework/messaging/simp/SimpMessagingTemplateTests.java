@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link org.springframework.messaging.simp.SimpMessagingTemplate}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class SimpMessagingTemplateTests {
 

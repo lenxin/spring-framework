@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link CorsConfiguration}.
  *
- * @author Sebastien Deleuze
- * @author Sam Brannen
+
+
  */
 public class CorsConfigurationTests {
 

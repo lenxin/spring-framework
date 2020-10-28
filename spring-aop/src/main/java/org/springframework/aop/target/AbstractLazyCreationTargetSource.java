@@ -18,8 +18,8 @@ import org.springframework.lang.Nullable;
  * but you don't actually want the dependency to be created until it is first used.
  * A typical scenario for this is a connection to a remote resource.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2.4
  * @see #isInitialized()
  * @see #createObject()

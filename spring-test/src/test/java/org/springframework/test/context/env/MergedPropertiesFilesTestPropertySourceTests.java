@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
  * Integration tests that verify support for contributing additional properties
  * files to the Spring {@code Environment} via {@link TestPropertySource @TestPropertySource}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @TestPropertySource("extended.properties")

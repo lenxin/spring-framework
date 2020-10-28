@@ -36,7 +36,7 @@ import static org.junit.Assert.*;
  * {@link javax.annotation.PreDestroy @PreDestroy} annotations</li>
  * </ul>
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 public class Spr3775InitDestroyLifecycleTests {

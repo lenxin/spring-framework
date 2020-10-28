@@ -27,7 +27,7 @@ import static org.hamcrest.Matchers.*;
 /**
  * Samples of tests using {@link WebTestClient} with XML content.
  *
- * @author Eric Deandrea
+
  * @since 5.1
  */
 public class XmlContentTests {

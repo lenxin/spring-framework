@@ -34,8 +34,8 @@ import org.springframework.util.StringUtils;
 /**
  * Adapt {@link ServerHttpRequest} to the Undertow {@link HttpServerExchange}.
  *
- * @author Marek Hawrylczak
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 class UndertowServerHttpRequest extends AbstractServerHttpRequest {

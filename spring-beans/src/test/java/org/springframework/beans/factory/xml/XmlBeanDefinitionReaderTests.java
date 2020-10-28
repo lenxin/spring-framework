@@ -18,9 +18,9 @@ import org.springframework.util.ObjectUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class XmlBeanDefinitionReaderTests {
 

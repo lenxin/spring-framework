@@ -25,8 +25,8 @@ import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException
  * Tests for {@link MergedAnnotations} and {@link RepeatableContainers} that
  * verify support for repeatable annotations.
  *
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  */
 public class MergedAnnotationsRepeatableAnnotationTests {
 

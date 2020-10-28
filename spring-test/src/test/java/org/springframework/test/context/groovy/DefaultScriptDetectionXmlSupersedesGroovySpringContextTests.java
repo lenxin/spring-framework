@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  * Integration test class that verifies proper detection of a default
  * XML config file even though a suitable Groovy script exists.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

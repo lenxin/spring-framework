@@ -27,9 +27,9 @@ import static org.springframework.test.util.AssertionErrors.fail;
  * <p>Consider adding this class as a Java editor favorite. To navigate to
  * this setting, open the Preferences and type "favorites".
  *
- * @author Craig Walls
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
  * @since 3.2
  */
 public abstract class MockRestRequestMatchers {

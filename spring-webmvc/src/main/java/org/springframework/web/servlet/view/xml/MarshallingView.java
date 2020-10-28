@@ -23,8 +23,8 @@ import org.springframework.web.servlet.view.AbstractView;
  * either specify a specific entry in the model via the {@link #setModelKey(String) sourceKey}
  * property or have Spring locate the Source object.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class MarshallingView extends AbstractView {

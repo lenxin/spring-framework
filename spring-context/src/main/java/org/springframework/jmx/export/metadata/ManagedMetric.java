@@ -9,7 +9,7 @@ import org.springframework.util.Assert;
  * with additional descriptor properties that indicate that the attribute is a
  * metric. Only valid when used on a JavaBean getter.
  *
- * @author Jennifer Hickey
+
  * @since 3.0
  * @see org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler
  */

@@ -10,7 +10,7 @@ import java.util.List;
  *
  * <p>The SockJS session is not automatically closed after this exception.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 @SuppressWarnings("serial")

@@ -17,7 +17,7 @@ import org.springframework.http.MockHttpOutputMessage;
 /**
  * Jackson 2.x Smile converter tests.
  *
- * @author Sebastien Deleuze
+
  */
 public class MappingJackson2SmileHttpMessageConverterTests {
 

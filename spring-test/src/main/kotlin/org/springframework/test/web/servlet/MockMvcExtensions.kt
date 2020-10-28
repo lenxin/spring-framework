@@ -8,7 +8,7 @@ import java.net.URI
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.get
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.get(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -20,7 +20,7 @@ fun MockMvc.get(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequ
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.get
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.get(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -32,7 +32,7 @@ fun MockMvc.get(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): Resul
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.post
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.post(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -44,7 +44,7 @@ fun MockMvc.post(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletReq
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.post
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.post(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -56,7 +56,7 @@ fun MockMvc.post(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): Resu
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.put
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.put(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -68,7 +68,7 @@ fun MockMvc.put(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequ
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.put
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.put(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -80,7 +80,7 @@ fun MockMvc.put(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): Resul
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.patch
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.patch(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -92,7 +92,7 @@ fun MockMvc.patch(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRe
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.patch
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.patch(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -104,7 +104,7 @@ fun MockMvc.patch(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): Res
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.delete
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.delete(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -116,7 +116,7 @@ fun MockMvc.delete(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletR
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.delete
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.delete(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -128,7 +128,7 @@ fun MockMvc.delete(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): Re
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.options
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.options(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -140,7 +140,7 @@ fun MockMvc.options(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServlet
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.options
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.options(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -152,7 +152,7 @@ fun MockMvc.options(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): R
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.head
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.head(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -164,7 +164,7 @@ fun MockMvc.head(urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletReq
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.head
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.head(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -176,7 +176,7 @@ fun MockMvc.head(uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): Resu
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.request
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.request(method: HttpMethod, urlTemplate: String, vararg vars: Any?, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -188,7 +188,7 @@ fun MockMvc.request(method: HttpMethod, urlTemplate: String, vararg vars: Any?, 
  * [MockMvc] extension providing access to [MockHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.request
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.request(method: HttpMethod, uri: URI, dsl: MockHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -200,7 +200,7 @@ fun MockMvc.request(method: HttpMethod, uri: URI, dsl: MockHttpServletRequestDsl
  * [MockMvc] extension providing access to [MockMultipartHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.multipart
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.multipart(urlTemplate: String, vararg vars: Any?, dsl: MockMultipartHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {
@@ -212,7 +212,7 @@ fun MockMvc.multipart(urlTemplate: String, vararg vars: Any?, dsl: MockMultipart
  * [MockMvc] extension providing access to [MockMultipartHttpServletRequestDsl] Kotlin DSL.
  *
  * @see MockMvcRequestBuilders.multipart
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun MockMvc.multipart(uri: URI, dsl: MockMultipartHttpServletRequestDsl.() -> Unit = {}): ResultActionsDsl {

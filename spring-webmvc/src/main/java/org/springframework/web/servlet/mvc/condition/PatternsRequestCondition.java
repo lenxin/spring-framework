@@ -22,7 +22,7 @@ import org.springframework.web.util.UrlPathHelper;
  * A logical disjunction (' || ') request condition that matches a request
  * against a set of URL path patterns.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  */
 public final class PatternsRequestCondition extends AbstractRequestCondition<PatternsRequestCondition> {

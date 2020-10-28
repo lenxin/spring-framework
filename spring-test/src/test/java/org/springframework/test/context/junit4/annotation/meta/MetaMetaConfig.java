@@ -11,7 +11,7 @@ import org.springframework.test.context.ActiveProfiles;
  * Custom configuration annotation that is itself meta-annotated with {@link
  * ConfigClassesAndProfilesWithCustomDefaultsMetaConfig} and {@link ActiveProfiles}.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 @Retention(RetentionPolicy.RUNTIME)

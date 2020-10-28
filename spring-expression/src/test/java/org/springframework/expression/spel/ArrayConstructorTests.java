@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Test construction of arrays.
  *
- * @author Andy Clement
+
  */
 public class ArrayConstructorTests extends AbstractExpressionTests {
 

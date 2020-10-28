@@ -35,8 +35,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  * @since 14.03.2004
  */
 public class FreeMarkerViewTests {

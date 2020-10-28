@@ -17,7 +17,7 @@
 import org.springframework.beans.factory.DisposableBean;
 
 /**
- * @author Costin Leau
+
  */
 public class DestroyBean implements DisposableBean {
 

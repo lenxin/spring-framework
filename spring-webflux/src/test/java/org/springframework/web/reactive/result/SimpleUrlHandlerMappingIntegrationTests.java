@@ -34,7 +34,7 @@ import static org.junit.Assert.*;
  * Integration tests with requests mapped via
  * {@link SimpleUrlHandlerMapping} to plain {@link WebHandler}s.
  *
- * @author Rossen Stoyanchev
+
  */
 public class SimpleUrlHandlerMappingIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

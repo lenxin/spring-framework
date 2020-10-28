@@ -8,7 +8,7 @@ import org.springframework.core.ResolvableType
 /**
  * Mock object based tests for BeanFactory Kotlin extensions.
  *
- * @author Sebastien Deleuze
+
  */
 class BeanFactoryExtensionsTests {
 

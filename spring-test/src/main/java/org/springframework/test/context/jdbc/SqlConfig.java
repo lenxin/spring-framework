@@ -37,8 +37,8 @@ import java.lang.annotation.Target;
  * {@code ""} or {@code DEFAULT}. Explicit local configuration therefore
  * <em>overrides</em> global configuration.
  *
- * @author Sam Brannen
- * @author Tadaya Tsuyukubo
+
+
  * @since 4.1
  * @see Sql
  */

@@ -27,7 +27,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RouterFunctions.*;
 
 /**
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class RenderingResponseIntegrationTests extends AbstractRouterFunctionIntegrationTests {

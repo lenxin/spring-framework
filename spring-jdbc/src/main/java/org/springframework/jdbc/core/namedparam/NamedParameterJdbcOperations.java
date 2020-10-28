@@ -23,8 +23,8 @@ import org.springframework.lang.Nullable;
  * often used directly, but provides a useful option to enhance testability,
  * as it can easily be mocked or stubbed.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see NamedParameterJdbcTemplate
  * @see org.springframework.jdbc.core.JdbcOperations

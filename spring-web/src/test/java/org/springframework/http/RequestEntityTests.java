@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link org.springframework.http.RequestEntity}.
  *
- * @author Arjen Poutsma
+
  */
 public class RequestEntityTests {
 

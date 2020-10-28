@@ -7,7 +7,7 @@ import java.util.Comparator;
  * Mainly for internal use in other Comparators, when supposed
  * to work on Comparables.
  *
- * @author Keith Donald
+
  * @since 1.2.2
  * @param <T> the type of comparable objects that may be compared by this comparator
  * @see Comparable

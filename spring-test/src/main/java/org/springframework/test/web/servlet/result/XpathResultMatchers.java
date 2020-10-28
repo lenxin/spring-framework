@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.ResultMatcher;
  * <p>An instance of this class is typically accessed via
  * {@link MockMvcResultMatchers#xpath}.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.2
  */
 public class XpathResultMatchers {

@@ -14,7 +14,7 @@ import org.springframework.core.io.Resource;
  * {@code spring.components} resource that should be loaded. Can also simulate a failure
  * by throwing a configurable {@link IOException}.
  *
- * @author Stephane Nicoll
+
  */
 public class CandidateComponentsTestClassLoader extends ClassLoader {
 

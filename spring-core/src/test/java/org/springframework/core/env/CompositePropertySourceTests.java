@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link CompositePropertySource}.
  *
- * @author Phillip Webb
+
  */
 public class CompositePropertySourceTests {
 

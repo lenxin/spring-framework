@@ -27,8 +27,8 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  */
 public abstract class AbstractHtmlElementTagTests extends AbstractTagTests {
 

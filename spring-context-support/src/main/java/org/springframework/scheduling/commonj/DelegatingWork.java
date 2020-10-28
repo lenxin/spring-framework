@@ -8,7 +8,7 @@ import org.springframework.util.Assert;
 /**
  * Simple Work adapter that delegates to a given Runnable.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @deprecated as of 5.1, in favor of EE 7's
  * {@link org.springframework.scheduling.concurrent.DefaultManagedTaskExecutor}

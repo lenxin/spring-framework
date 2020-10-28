@@ -64,7 +64,7 @@ import org.springframework.util.ObjectUtils;
  * Re-registering a durable consumer for the same subscription on the same
  * Session handle is not supported; close and reobtain a cached Session first.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.3
  */
 public class CachingConnectionFactory extends SingleConnectionFactory {

@@ -24,8 +24,8 @@ import org.springframework.test.context.MergedContextConfiguration;
  * often makes sense to perform that initialization only once per test suite or
  * JVM process.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 4.2
  * @see ContextCacheUtils#retrieveMaxCacheSize()
  */

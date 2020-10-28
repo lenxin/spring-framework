@@ -18,7 +18,7 @@ import org.springframework.cache.jcache.interceptor.SimpleExceptionCacheResolver
 import org.springframework.cache.support.SimpleCacheManager;
 
 /**
- * @author Stephane Nicoll
+
  */
 public abstract class AbstractJCacheTests {
 

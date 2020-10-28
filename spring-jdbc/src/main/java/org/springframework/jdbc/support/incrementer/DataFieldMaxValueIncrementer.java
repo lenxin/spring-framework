@@ -9,9 +9,9 @@ import org.springframework.dao.DataAccessException;
  * <p>Typical implementations may use standard SQL, native RDBMS sequences
  * or Stored Procedures to do the job.
  *
- * @author Dmitriy Kopylenko
- * @author Jean-Pierre Pawlak
- * @author Juergen Hoeller
+
+
+
  */
 public interface DataFieldMaxValueIncrementer {
 

@@ -5,8 +5,8 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * @author Chris Beams
- * @author Willem Dekker
+
+
  */
 public class Spr8955Tests {
 

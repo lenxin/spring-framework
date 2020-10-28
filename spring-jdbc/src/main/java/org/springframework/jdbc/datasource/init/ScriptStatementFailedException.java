@@ -6,8 +6,8 @@ import org.springframework.core.io.support.EncodedResource;
  * Thrown by {@link ScriptUtils} if a statement in an SQL script failed when
  * executing it against the target database.
  *
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  * @since 3.0.5
  */
 @SuppressWarnings("serial")

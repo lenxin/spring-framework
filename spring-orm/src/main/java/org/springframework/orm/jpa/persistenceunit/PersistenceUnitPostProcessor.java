@@ -5,7 +5,7 @@ package org.springframework.orm.jpa.persistenceunit;
  * Implementations can be registered with a DefaultPersistenceUnitManager
  * or via a LocalContainerEntityManagerFactoryBean.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see DefaultPersistenceUnitManager#setPersistenceUnitPostProcessors
  * @see org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean#setPersistenceUnitPostProcessors

@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * NullPointerException would be raised if a FactoryBean-returning @Bean method also
  * accepts parameters
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 public class ConfigurationWithFactoryBeanAndParametersTests {

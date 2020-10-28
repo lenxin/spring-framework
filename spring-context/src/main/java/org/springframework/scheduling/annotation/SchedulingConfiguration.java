@@ -14,7 +14,7 @@ import org.springframework.scheduling.config.TaskManagementConfigUtils;
  * {@link EnableScheduling @EnableScheduling} annotation. See
  * {@code @EnableScheduling}'s javadoc for complete usage details.
  *
- * @author Chris Beams
+
  * @since 3.1
  * @see EnableScheduling
  * @see ScheduledAnnotationBeanPostProcessor

@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * a["message1","message2"]
  * </pre>
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public interface SockJsMessageCodec {

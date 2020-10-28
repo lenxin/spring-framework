@@ -30,8 +30,8 @@ import org.springframework.util.ClassUtils;
  * <i>class-based</i> proxies by default. This can be customized
  * through switching the "proxyTargetClass" property to "false".
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see #setProxyTargetClass
  */

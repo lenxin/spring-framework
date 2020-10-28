@@ -34,8 +34,8 @@ import org.springframework.web.multipart.MultipartFile;
  * and its Part objects. Parameters get exposed through the native request's getParameter
  * methods - without any custom processing on our side.
  *
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  * @see StandardServletMultipartResolver
  */

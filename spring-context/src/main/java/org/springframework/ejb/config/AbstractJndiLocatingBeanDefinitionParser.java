@@ -17,9 +17,9 @@ import static org.springframework.beans.factory.xml.BeanDefinitionParserDelegate
  * JNDI-locating beans, supporting an optional "jndiEnvironment"
  * bean property, populated from an "environment" XML sub-element.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Oliver Gierke
+
+
+
  * @since 2.0
  */
 abstract class AbstractJndiLocatingBeanDefinitionParser extends AbstractSimpleBeanDefinitionParser {

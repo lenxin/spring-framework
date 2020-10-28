@@ -33,8 +33,8 @@ import org.springframework.util.StringUtils;
  * mappings first. If no interfaces for the bean are found, it will use the
  * interfaces defined by {@code managedInterfaces}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #setManagedInterfaces
  * @see #setInterfaceMappings

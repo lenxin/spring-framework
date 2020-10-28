@@ -16,7 +16,7 @@ import org.springframework.aop.Advisor;
  * <p>There is no need for most Spring users to implement this interface;
  * do so only if you need to introduce more Advisor or Advice types to Spring.
  *
- * @author Rod Johnson
+
  */
 public interface AdvisorAdapter {
 

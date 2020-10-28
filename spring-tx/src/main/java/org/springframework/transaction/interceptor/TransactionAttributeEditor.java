@@ -18,8 +18,8 @@ import org.springframework.util.StringUtils;
  * <p>A "+" before an exception name substring indicates that transactions should commit
  * even if this exception is thrown; a "-" that they should roll back.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 24.04.2003
  * @see org.springframework.transaction.TransactionDefinition
  * @see org.springframework.core.Constants

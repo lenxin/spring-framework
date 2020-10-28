@@ -47,7 +47,7 @@ import org.springframework.context.ApplicationContext;
  * <li>{@link org.springframework.test.context.web.GenericXmlWebContextLoader GenericXmlWebContextLoader}</li>
  * </ul>
  *
- * @author Sam Brannen
+
  * @since 3.1
  * @see ContextConfiguration
  * @see ActiveProfiles

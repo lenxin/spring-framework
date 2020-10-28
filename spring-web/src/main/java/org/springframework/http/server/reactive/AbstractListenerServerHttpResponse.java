@@ -14,7 +14,7 @@ import org.springframework.http.HttpHeaders;
  * Abstract base class for listener-based server responses, e.g. Servlet 3.1
  * and Undertow.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public abstract class AbstractListenerServerHttpResponse extends AbstractServerHttpResponse {

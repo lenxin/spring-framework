@@ -19,7 +19,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Unit tests for ERB templates running on JRuby.
  *
- * @author Sebastien Deleuze
+
  */
 @Ignore("JRuby not compatible with JDK 9 yet")
 public class JRubyScriptTemplateTests {

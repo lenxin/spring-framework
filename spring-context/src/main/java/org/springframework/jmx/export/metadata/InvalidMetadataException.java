@@ -6,7 +6,7 @@ import org.springframework.jmx.JmxException;
  * Thrown by the {@code JmxAttributeSource} when it encounters
  * incorrect metadata on a managed resource or one of its methods.
  *
- * @author Rob Harrop
+
  * @since 1.2
  * @see JmxAttributeSource
  * @see org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler

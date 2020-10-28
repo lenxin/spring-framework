@@ -5,7 +5,7 @@ package org.springframework.transaction;
  * that is, the specified timeout valid is out of range or the
  * transaction manager implementation doesn't support timeouts.
  *
- * @author Juergen Hoeller
+
  * @since 12.05.2003
  */
 @SuppressWarnings("serial")

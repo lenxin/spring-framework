@@ -27,7 +27,7 @@ import static org.junit.Assert.*;
  * NOTE: any outgoing changes from this file upon synchronizing with the repo may indicate that
  * you need to update the documentation too !
  *
- * @author Andy Clement
+
  */
 @SuppressWarnings("rawtypes")
 public class SpelDocumentationTests extends AbstractExpressionTests {

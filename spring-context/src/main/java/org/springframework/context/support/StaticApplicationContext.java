@@ -14,8 +14,8 @@ import org.springframework.lang.Nullable;
  * rather than reading bean definitions from external configuration sources.
  * Mainly useful for testing.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #registerSingleton
  * @see #registerPrototype
  * @see #registerBeanDefinition

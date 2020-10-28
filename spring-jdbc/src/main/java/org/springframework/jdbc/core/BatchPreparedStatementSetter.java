@@ -15,7 +15,7 @@ import java.sql.SQLException;
  * that may be thrown from operations they attempt. The JdbcTemplate class will
  * catch and handle SQLExceptions appropriately.
  *
- * @author Rod Johnson
+
  * @since March 2, 2003
  * @see JdbcTemplate#batchUpdate(String, BatchPreparedStatementSetter)
  * @see InterruptibleBatchPreparedStatementSetter

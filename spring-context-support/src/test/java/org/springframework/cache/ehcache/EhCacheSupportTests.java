@@ -16,8 +16,8 @@ import org.springframework.core.io.ClassPathResource;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Dmitriy Kopylenko
+
+
  * @since 27.09.2004
  */
 public class EhCacheSupportTests {

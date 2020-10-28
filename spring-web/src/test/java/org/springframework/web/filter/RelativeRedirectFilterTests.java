@@ -18,8 +18,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link RelativeRedirectFilter}.
  *
- * @author Rob Winch
- * @author Juergen Hoeller
+
+
  */
 public class RelativeRedirectFilterTests {
 

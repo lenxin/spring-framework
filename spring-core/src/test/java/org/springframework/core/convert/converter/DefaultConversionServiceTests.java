@@ -50,10 +50,10 @@ import static org.junit.Assert.*;
  * of the {@code org.springframework.core.convert.support} implementation package.
  * Only in such a scenario, {@code setAccessible(true)} is actually necessary.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Stephane Nicoll
- * @author Sam Brannen
+
+
+
+
  */
 public class DefaultConversionServiceTests {
 

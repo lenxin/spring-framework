@@ -5,8 +5,8 @@ import org.springframework.transaction.support.TransactionSynchronization;
 /**
  * The phase at which a transactional event listener applies.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.2
  * @see TransactionalEventListener
  */

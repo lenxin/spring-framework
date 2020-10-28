@@ -10,8 +10,8 @@ import javax.management.MBeanNotificationInfo;
 import javax.management.MBeanOperationInfo;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  */
 public class TestDynamicMBean implements DynamicMBean {
 

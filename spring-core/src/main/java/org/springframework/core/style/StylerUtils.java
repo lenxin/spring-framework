@@ -8,7 +8,7 @@ package org.springframework.core.style;
  * directly. This class simply uses a shared {@link DefaultValueStyler}
  * instance underneath.
  *
- * @author Keith Donald
+
  * @since 1.2.2
  * @see ValueStyler
  * @see DefaultValueStyler

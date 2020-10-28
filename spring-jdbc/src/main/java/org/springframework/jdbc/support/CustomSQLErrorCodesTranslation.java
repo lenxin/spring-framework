@@ -9,7 +9,7 @@ import org.springframework.util.StringUtils;
  * database. The "exceptionClass" property defines which exception will be
  * thrown for the list of error codes specified in the errorCodes property.
  *
- * @author Thomas Risberg
+
  * @since 1.1
  * @see SQLErrorCodeSQLExceptionTranslator
  */

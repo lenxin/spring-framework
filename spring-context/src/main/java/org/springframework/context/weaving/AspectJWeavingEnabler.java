@@ -21,8 +21,8 @@ import org.springframework.lang.Nullable;
  * with the Spring application context's default
  * {@link org.springframework.instrument.classloading.LoadTimeWeaver}.
  *
- * @author Juergen Hoeller
- * @author Ramnivas Laddad
+
+
  * @since 2.5
  */
 public class AspectJWeavingEnabler

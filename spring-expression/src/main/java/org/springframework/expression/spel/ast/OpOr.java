@@ -13,9 +13,9 @@ import org.springframework.lang.Nullable;
 /**
  * Represents the boolean OR operation.
  *
- * @author Andy Clement
- * @author Mark Fisher
- * @author Oliver Becker
+
+
+
  * @since 3.0
  */
 public class OpOr extends Operator {

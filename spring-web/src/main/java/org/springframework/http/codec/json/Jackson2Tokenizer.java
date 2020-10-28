@@ -26,9 +26,9 @@ import org.springframework.core.io.buffer.DataBufferUtils;
  * chunks into a {@code Flux<TokenBuffer>} where each token buffer is a
  * well-formed JSON object.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 5.0
  */
 final class Jackson2Tokenizer {

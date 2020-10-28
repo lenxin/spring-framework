@@ -26,7 +26,7 @@ import org.springframework.web.servlet.ModelAndView;
  *     }
  * }</pre>
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public interface ModelAndViewResolver {

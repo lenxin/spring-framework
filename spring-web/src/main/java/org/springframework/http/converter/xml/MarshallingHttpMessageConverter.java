@@ -22,7 +22,7 @@ import org.springframework.util.Assert;
  * <p>By default, this converter supports {@code text/xml} and {@code application/xml}. This can be
  * overridden by setting the {@link #setSupportedMediaTypes(java.util.List) supportedMediaTypes} property.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public class MarshallingHttpMessageConverter extends AbstractXmlHttpMessageConverter<Object> {

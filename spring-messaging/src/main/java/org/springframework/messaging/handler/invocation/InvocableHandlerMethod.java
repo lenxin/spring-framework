@@ -20,8 +20,8 @@ import org.springframework.util.ReflectionUtils;
  * argument values resolved from the current HTTP request through a list of
  * {@link HandlerMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 public class InvocableHandlerMethod extends HandlerMethod {

@@ -15,7 +15,7 @@ import org.aopalliance.aop.Advice;
  * Thus an {@link IntroductionAdvisor} can be used to specify which interfaces
  * will be exposed in an advised object.
  *
- * @author Rod Johnson
+
  * @since 1.1.1
  * @see IntroductionInfo
  * @see IntroductionAdvisor

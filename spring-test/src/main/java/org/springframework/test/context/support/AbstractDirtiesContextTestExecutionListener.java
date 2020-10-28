@@ -24,8 +24,8 @@ import org.springframework.util.Assert;
  * <p>The core functionality for this class was extracted from
  * {@link DirtiesContextTestExecutionListener} in Spring Framework 4.2.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 4.2
  * @see DirtiesContext
  */

@@ -17,9 +17,9 @@ import org.springframework.web.server.i18n.LocaleContextResolver;
  * either through {@link #builder()} to set up default strategies, or {@link #empty()} to start from
  * scratch.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
  * @since 5.0
  * @see RouterFunctions#toHttpHandler(RouterFunction, HandlerStrategies)
  */

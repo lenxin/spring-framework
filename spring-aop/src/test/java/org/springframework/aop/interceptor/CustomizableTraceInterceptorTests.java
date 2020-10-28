@@ -8,10 +8,10 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rob Harrop
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
+
  */
 public class CustomizableTraceInterceptorTests {
 

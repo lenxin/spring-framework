@@ -4,7 +4,7 @@ package org.springframework.http;
  * Represents the base interface for HTTP request and response messages.
  * Consists of {@link HttpHeaders}, retrievable via {@link #getHeaders()}.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public interface HttpMessage {

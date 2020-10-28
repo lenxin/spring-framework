@@ -21,8 +21,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link TilesView}.
  *
- * @author mick semb wever
- * @author Sebastien Deleuze
+
+
  */
 public class TilesViewTests {
 

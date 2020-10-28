@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 import static org.junit.Assume.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class ZeroCopyIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

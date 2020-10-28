@@ -25,7 +25,7 @@ import org.springframework.cache.jcache.interceptor.JCacheAspectSupport;
  * methods directly is the only way to get caching demarcation for the execution of
  * such operations.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 @RequiredTypes({"org.springframework.cache.jcache.interceptor.JCacheAspectSupport", "javax.cache.annotation.CacheResult"})

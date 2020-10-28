@@ -25,9 +25,9 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  */
 @SuppressWarnings({"unchecked", "rawtypes"})
 public class JpaTransactionManagerTests {

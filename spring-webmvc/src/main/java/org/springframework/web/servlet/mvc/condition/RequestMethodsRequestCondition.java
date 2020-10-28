@@ -20,8 +20,8 @@ import org.springframework.web.cors.CorsUtils;
  * A logical disjunction (' || ') request condition that matches a request
  * against a set of {@link RequestMethod RequestMethods}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 public final class RequestMethodsRequestCondition extends AbstractRequestCondition<RequestMethodsRequestCondition> {

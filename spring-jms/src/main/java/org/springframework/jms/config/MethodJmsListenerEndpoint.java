@@ -27,8 +27,8 @@ import org.springframework.util.StringValueResolver;
  * A {@link JmsListenerEndpoint} providing the method to invoke to process
  * an incoming message for this endpoint.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  */
 public class MethodJmsListenerEndpoint extends AbstractJmsListenerEndpoint implements BeanFactoryAware {

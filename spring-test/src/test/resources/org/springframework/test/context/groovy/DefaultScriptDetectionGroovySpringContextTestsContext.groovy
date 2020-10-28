@@ -6,7 +6,7 @@ import org.springframework.tests.sample.beans.Pet
 /**
  * Groovy script for defining Spring beans for integration tests.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 beans {

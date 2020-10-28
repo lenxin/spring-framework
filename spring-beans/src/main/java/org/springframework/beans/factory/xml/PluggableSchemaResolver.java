@@ -34,8 +34,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * <p>The pattern for the mapping files can be overridden using the
  * {@link #PluggableSchemaResolver(ClassLoader, String)} constructor.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class PluggableSchemaResolver implements EntityResolver {

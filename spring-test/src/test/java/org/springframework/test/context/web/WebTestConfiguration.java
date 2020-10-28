@@ -11,7 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
  * Custom <em>composed annotation</em> combining {@link WebAppConfiguration} and
  * {@link ContextConfiguration} as meta-annotations.
  *
- * @author Sam Brannen
+
  * @since 4.0
  */
 @WebAppConfiguration

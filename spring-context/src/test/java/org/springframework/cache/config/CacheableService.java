@@ -3,9 +3,9 @@ package org.springframework.cache.config;
 /**
  * Basic service interface for caching tests.
  *
- * @author Costin Leau
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
+
  */
 public interface CacheableService<T> {
 

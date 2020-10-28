@@ -44,8 +44,8 @@ import org.springframework.util.StringUtils;
  * <p>There are restrictions on which placeholders can be used in which messages:
  * see the individual message properties for details on the valid placeholders.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #setEnterMessage
  * @see #setExitMessage

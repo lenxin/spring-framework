@@ -45,9 +45,9 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for {@link ResolvableType}.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
  */
 @SuppressWarnings("rawtypes")
 @RunWith(MockitoJUnitRunner.class)

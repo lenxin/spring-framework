@@ -6,7 +6,7 @@ import org.springframework.test.context.ContextConfiguration;
  * Extension of {@link GroovySpringContextTests} that declares a Groovy
  * script using an absolute path.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see GroovySpringContextTests
  * @see RelativePathGroovySpringContextTests

@@ -11,7 +11,7 @@ import static org.hamcrest.CoreMatchers.*;
 /**
  * Unit tests for {@link GenericPropertiesContextLoader}.
  *
- * @author Sam Brannen
+
  * @since 4.0.4
  */
 public class GenericPropertiesContextLoaderTests {

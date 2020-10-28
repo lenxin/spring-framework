@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
  * Encapsulates the print algorithms; some other object such as a builder
  * should provide the workflow.
  *
- * @author Keith Donald
+
  * @since 1.2.2
  */
 public interface ToStringStyler {

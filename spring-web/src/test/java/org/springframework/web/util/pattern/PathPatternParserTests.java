@@ -17,7 +17,7 @@ import static org.junit.Assert.fail;
 
 /**
  * Exercise the {@link PathPatternParser}.
- * @author Andy Clement
+
  */
 public class PathPatternParserTests {
 

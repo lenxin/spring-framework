@@ -11,7 +11,7 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Chris Beams
+
  * @see ExtendedBeanInfoTests
  */
 public class SimplePropertyDescriptorTests {

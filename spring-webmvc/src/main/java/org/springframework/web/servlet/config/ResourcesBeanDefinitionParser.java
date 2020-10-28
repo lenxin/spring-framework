@@ -46,9 +46,9 @@ import org.springframework.web.servlet.resource.WebJarsResourceResolver;
  * {@link HttpRequestHandlerAdapter}. Will also create a resource handling chain with
  * {@link ResourceResolver ResourceResolvers} and {@link ResourceTransformer ResourceTransformers}.
  *
- * @author Keith Donald
- * @author Jeremy Grelle
- * @author Brian Clozel
+
+
+
  * @since 3.0.4
  */
 class ResourcesBeanDefinitionParser implements BeanDefinitionParser {

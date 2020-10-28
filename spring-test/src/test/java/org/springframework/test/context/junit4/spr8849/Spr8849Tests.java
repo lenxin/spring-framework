@@ -24,7 +24,7 @@ import org.junit.runners.Suite.SuiteClasses;
  * {@code datasource-config-with-auto-generated-db-name.xml} which makes
  * use of the new {@code generate-name} attribute of {@code <jdbc:embedded-database>}.
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 @SuppressWarnings("javadoc")

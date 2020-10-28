@@ -15,7 +15,7 @@ import org.springframework.core.io.buffer.DataBuffer;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class XmlEventDecoderTests extends AbstractLeakCheckingTestCase {
 

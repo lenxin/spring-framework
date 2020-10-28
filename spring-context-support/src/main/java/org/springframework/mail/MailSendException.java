@@ -12,8 +12,8 @@ import org.springframework.util.ObjectUtils;
  * Exception thrown when a mail sending error is encountered.
  * Can register failed messages with their exceptions.
  *
- * @author Dmitriy Kopylenko
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public class MailSendException extends MailException {

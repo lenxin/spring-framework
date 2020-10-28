@@ -36,8 +36,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link VersionResourceResolver}
  *
- * @author Brian Clozel
- * @author Sam Brannen
+
+
  */
 public class VersionResourceResolverTests {
 

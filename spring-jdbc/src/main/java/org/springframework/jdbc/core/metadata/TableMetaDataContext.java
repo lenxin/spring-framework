@@ -24,8 +24,8 @@ import org.springframework.util.Assert;
  * Class to manage context meta-data used for the configuration
  * and execution of operations on a database table.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.5
  */
 public class TableMetaDataContext {

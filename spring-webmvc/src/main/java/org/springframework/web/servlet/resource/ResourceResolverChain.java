@@ -10,9 +10,9 @@ import org.springframework.lang.Nullable;
  * A contract for invoking a chain of {@link ResourceResolver ResourceResolvers} where each resolver
  * is given a reference to the chain allowing it to delegate when necessary.
  *
- * @author Jeremy Grelle
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
  * @since 4.1
  */
 public interface ResourceResolverChain {

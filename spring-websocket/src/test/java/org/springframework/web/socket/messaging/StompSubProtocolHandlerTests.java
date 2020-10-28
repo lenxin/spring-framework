@@ -50,7 +50,7 @@ import static org.mockito.Mockito.*;
 
 /**
  * Test fixture for {@link StompSubProtocolHandler} tests.
- * @author Rossen Stoyanchev
+
  */
 public class StompSubProtocolHandlerTests {
 

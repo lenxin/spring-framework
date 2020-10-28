@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 import static org.springframework.tests.TestResourceUtils.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class CommonsPool2TargetSourceProxyTests {
 

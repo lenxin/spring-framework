@@ -32,7 +32,7 @@ import static org.springframework.web.method.MvcAnnotationPredicates.requestAttr
 /**
  * Unit tests for {@link RequestAttributeMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class RequestAttributeMethodArgumentResolverTests {
 

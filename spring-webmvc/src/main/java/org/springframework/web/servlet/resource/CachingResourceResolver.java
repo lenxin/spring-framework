@@ -20,8 +20,8 @@ import org.springframework.util.StringUtils;
  * resolves resources from a {@link org.springframework.cache.Cache} or otherwise
  * delegates to the resolver chain and saves the result in the cache.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 4.1
  */
 public class CachingResourceResolver extends AbstractResourceResolver {

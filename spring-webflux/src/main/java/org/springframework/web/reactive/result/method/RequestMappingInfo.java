@@ -33,7 +33,7 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * <li>{@code RequestCondition} (optional, custom request condition)
  * </ol>
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public final class RequestMappingInfo implements RequestCondition<RequestMappingInfo> {

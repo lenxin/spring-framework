@@ -26,8 +26,8 @@ import java.util.List;
  * Ordered interface will be considered as unordered; they will appear
  * at the end of the advisor chain in undefined order.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #findCandidateAdvisors
  */
 @SuppressWarnings("serial")

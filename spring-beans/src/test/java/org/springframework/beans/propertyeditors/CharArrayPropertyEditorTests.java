@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the {@link CharArrayPropertyEditor} class.
  *
- * @author Rick Evans
+
  */
 public class CharArrayPropertyEditorTests {
 

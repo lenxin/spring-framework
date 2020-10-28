@@ -17,7 +17,7 @@
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * @author Adrian Colyer
+
  * @since 2.0
  */
 public class ClassWithPrivateAnnotatedMember {

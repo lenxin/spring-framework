@@ -57,7 +57,7 @@ import static org.mockito.BDDMockito.mock;
 import static org.mockito.BDDMockito.verify;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class MethodJmsListenerEndpointTests {
 

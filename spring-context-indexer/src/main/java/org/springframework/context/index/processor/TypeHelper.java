@@ -15,7 +15,7 @@ import javax.lang.model.util.Types;
 /**
  * Type utilities.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 class TypeHelper {

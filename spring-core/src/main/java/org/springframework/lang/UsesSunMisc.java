@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  * Indicates that the annotated element uses an API from the {@code sun.misc}
  * package.
  *
- * @author Stephane Nicoll
+
  * @since 4.3
  */
 @Retention(RetentionPolicy.CLASS)

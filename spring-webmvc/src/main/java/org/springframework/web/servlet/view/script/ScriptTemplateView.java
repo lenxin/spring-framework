@@ -47,8 +47,8 @@ import org.springframework.web.servlet.view.AbstractUrlBasedView;
  * {@code sharedEngine} property to {@code false} in order to run properly. See
  * {@link ScriptTemplateConfigurer#setSharedEngine(Boolean)} for more details.
  *
- * @author Sebastien Deleuze
- * @author Juergen Hoeller
+
+
  * @since 4.2
  * @see ScriptTemplateConfigurer
  * @see ScriptTemplateViewResolver

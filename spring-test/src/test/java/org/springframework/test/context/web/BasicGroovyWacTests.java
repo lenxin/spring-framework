@@ -7,7 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 4.1
  * @see BasicXmlWacTests
  */

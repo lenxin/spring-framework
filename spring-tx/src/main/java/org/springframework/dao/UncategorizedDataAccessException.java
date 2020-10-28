@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
  * than "something went wrong with the underlying resource": for example,
  * a SQLException from JDBC we can't pinpoint more precisely.
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public abstract class UncategorizedDataAccessException extends NonTransientDataAccessException {

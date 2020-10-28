@@ -8,7 +8,7 @@ import org.springframework.test.context.TestContextBootstrapper;
  *
  * <p>Uses {@link DelegatingSmartContextLoader} as the default {@link ContextLoader}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 public class DefaultTestContextBootstrapper extends AbstractTestContextBootstrapper {

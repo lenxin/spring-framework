@@ -6,7 +6,7 @@ import javax.management.ObjectName;
  * A listener that allows application code to be notified when an MBean is
  * registered and unregistered via an {@link MBeanExporter}.
  *
- * @author Rob Harrop
+
  * @since 1.2.2
  * @see org.springframework.jmx.export.MBeanExporter#setListeners
  */

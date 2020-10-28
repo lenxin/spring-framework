@@ -22,9 +22,9 @@ import org.springframework.lang.Nullable;
  * does not require special initialization (no database vendor detection, etc.).
  * For more precise translation, consider {@link SQLErrorCodeSQLExceptionTranslator}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Thomas Risberg
+
+
+
  * @see java.sql.SQLException#getSQLState()
  * @see SQLErrorCodeSQLExceptionTranslator
  */

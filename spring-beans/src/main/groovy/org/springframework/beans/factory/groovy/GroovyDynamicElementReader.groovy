@@ -9,8 +9,8 @@ import org.w3c.dom.Element
  * Used by GroovyBeanDefinitionReader to read a Spring XML namespace expression
  * in the Groovy DSL.
  *
- * @author Jeff Brown
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 @groovy.transform.PackageScope

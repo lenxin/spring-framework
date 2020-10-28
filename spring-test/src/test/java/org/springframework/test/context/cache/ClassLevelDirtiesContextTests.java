@@ -28,7 +28,7 @@ import static org.springframework.test.context.junit4.JUnitTestingUtils.*;
  * application context caching} in conjunction with the {@link SpringRunner} and
  * {@link DirtiesContext @DirtiesContext} at the class level.
  *
- * @author Sam Brannen
+
  * @since 3.0
  */
 public class ClassLevelDirtiesContextTests {

@@ -49,8 +49,8 @@ import static org.mockito.Mockito.verify;
  * Integration tests for {@link EventPublishingTestExecutionListener} and
  * accompanying {@link TestContextEvent} annotations.
  *
- * @author Frank Scheffler
- * @author Sam Brannen
+
+
  * @since 5.2
  */
 public class EventPublishingTestExecutionListenerIntegrationTests {

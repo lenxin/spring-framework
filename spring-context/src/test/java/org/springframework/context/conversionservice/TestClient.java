@@ -21,8 +21,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 
 /**
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  */
 public class TestClient {
 

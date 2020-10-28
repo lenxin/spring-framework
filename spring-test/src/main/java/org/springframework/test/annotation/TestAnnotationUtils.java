@@ -7,7 +7,7 @@ import org.springframework.core.annotation.AnnotatedElementUtils;
 /**
  * Collection of utility methods for working with Spring's core testing annotations.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 public abstract class TestAnnotationUtils {

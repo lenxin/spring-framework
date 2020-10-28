@@ -22,7 +22,7 @@ import org.springframework.util.Assert;
  * JTA / EJB CMT transactions, despite the original code being built for
  * Spring transaction synchronization.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see javax.transaction.Transaction#registerSynchronization
  * @see org.springframework.transaction.support.TransactionSynchronization

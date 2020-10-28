@@ -7,8 +7,8 @@ import org.springframework.lang.Nullable;
 /**
  * Holder of meta-data for a specific parameter that is used for call processing.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see GenericCallMetaDataProvider
  */

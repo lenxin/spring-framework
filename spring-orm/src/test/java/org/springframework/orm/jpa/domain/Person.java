@@ -17,7 +17,7 @@ import org.springframework.tests.sample.beans.TestBean;
 /**
  * Simple JavaBean domain object representing an person.
  *
- * @author Rod Johnson
+
  */
 @Entity
 @EntityListeners(PersonListener.class)

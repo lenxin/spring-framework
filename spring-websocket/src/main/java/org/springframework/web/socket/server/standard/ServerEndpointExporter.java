@@ -29,8 +29,8 @@ import org.springframework.web.context.support.WebApplicationObjectSupport;
  * possible to turn off a Servlet container's scan for WebSocket endpoints. This can be
  * done with the help of the {@code <absolute-ordering>} element in {@code web.xml}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0
  * @see ServerEndpointRegistration
  * @see SpringConfigurator

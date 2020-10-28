@@ -3,7 +3,7 @@ package org.springframework.cache.jcache.config;
 import java.io.IOException;
 
 /**
- * @author Stephane Nicoll
+
  */
 public interface JCacheableService<T> {
 

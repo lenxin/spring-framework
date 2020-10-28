@@ -19,7 +19,7 @@ import static org.springframework.messaging.handler.annotation.MessagingPredicat
 
 /**
  * Test fixture for {@link DestinationVariableMethodArgumentResolver} tests.
- * @author Rossen Stoyanchev
+
  */
 public class DestinationVariableMethodArgumentResolverTests {
 

@@ -31,8 +31,8 @@ import org.springframework.util.Assert;
  * with the {@code @Repository} annotation, along with defining this post-processor
  * as a bean in the application context.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see PersistenceExceptionTranslationAdvisor
  * @see org.springframework.stereotype.Repository

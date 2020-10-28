@@ -22,7 +22,7 @@ import org.springframework.util.MultiValueMap;
 import static org.junit.Assert.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class FormHttpMessageWriterTests extends AbstractLeakCheckingTestCase {
 

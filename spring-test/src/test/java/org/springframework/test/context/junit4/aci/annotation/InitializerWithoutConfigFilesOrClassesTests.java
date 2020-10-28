@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
  * ApplicationContextInitializers} in the TestContext framework when the test class
  * declares neither XML configuration files nor annotated configuration classes.
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

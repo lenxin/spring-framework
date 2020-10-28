@@ -9,7 +9,7 @@ import org.springframework.util.StringUtils;
 /**
  * Parser for the 'scheduler' element of the 'task' namespace.
  *
- * @author Mark Fisher
+
  * @since 3.0
  */
 public class SchedulerBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {

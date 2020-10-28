@@ -19,8 +19,8 @@ package org.springframework.jdbc.core;
  * {@code setValuesIfAvailable} callback method that checks for available
  * values and sets them, returning whether values have actually been provided.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see JdbcTemplate#batchUpdate(String, BatchPreparedStatementSetter)
  * @see org.springframework.jdbc.core.support.AbstractInterruptibleBatchPreparedStatementSetter

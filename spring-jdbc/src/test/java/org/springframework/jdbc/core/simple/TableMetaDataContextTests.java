@@ -22,7 +22,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Mock object based tests for TableMetaDataContext.
  *
- * @author Thomas Risberg
+
  */
 public class TableMetaDataContextTests  {
 

@@ -3,7 +3,7 @@ package org.springframework.aop.aspectj.autoproxy;
 import org.aspectj.lang.annotation.SuppressAjWarnings;
 
 /**
- * @author Adrian Colyer
+
  */
 public aspect CodeStyleAspect {
 

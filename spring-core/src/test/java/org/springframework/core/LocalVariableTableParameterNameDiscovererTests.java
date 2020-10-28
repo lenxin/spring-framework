@@ -14,7 +14,7 @@ import org.springframework.tests.sample.objects.TestObject;
 import static org.junit.Assert.*;
 
 /**
- * @author Adrian Colyer
+
  */
 public class LocalVariableTableParameterNameDiscovererTests {
 

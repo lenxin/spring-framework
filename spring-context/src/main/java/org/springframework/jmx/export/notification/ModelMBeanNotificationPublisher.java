@@ -15,9 +15,9 @@ import org.springframework.util.Assert;
  * {@link javax.management.NotificationListener javax.management.NotificationListeners}
  * and send {@link Notification Notifications} to those listeners.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
+
  * @since 2.0
  * @see javax.management.modelmbean.ModelMBeanNotificationBroadcaster
  * @see NotificationPublisherAware

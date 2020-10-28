@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 /**
  * Tests the evaluation of real expressions in a real context.
  *
- * @author Andy Clement
+
  */
 public class PerformanceTests {
 

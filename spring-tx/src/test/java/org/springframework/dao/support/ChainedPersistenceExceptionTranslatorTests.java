@@ -9,7 +9,7 @@ import org.springframework.dao.support.DataAccessUtilsTests.MapPersistenceExcept
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
+
  * @since 2.0
  */
 public class ChainedPersistenceExceptionTranslatorTests {

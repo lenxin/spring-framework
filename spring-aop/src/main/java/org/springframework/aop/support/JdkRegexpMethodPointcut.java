@@ -17,8 +17,8 @@ import java.util.regex.PatternSyntaxException;
  * {@code .*get.*} will match com.mycom.Foo.getBar().
  * {@code get.*} will not.
  *
- * @author Dmitriy Kopylenko
- * @author Rob Harrop
+
+
  * @since 1.1
  */
 @SuppressWarnings("serial")

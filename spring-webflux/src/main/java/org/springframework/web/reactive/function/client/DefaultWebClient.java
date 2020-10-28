@@ -43,8 +43,8 @@ import org.springframework.web.util.UriBuilderFactory;
 /**
  * Default implementation of {@link WebClient}.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 class DefaultWebClient implements WebClient {

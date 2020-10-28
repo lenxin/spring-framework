@@ -43,8 +43,8 @@ import org.springframework.util.MimeType;
  * cases, {@link Flux} elements are collected into a {@link List} before serialization for
  * performance reason.
  *
- * @author Sebastien Deleuze
- * @author Arjen Poutsma
+
+
  * @since 5.0
  */
 public abstract class AbstractJackson2Encoder extends Jackson2CodecSupport implements HttpMessageEncoder<Object> {

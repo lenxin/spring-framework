@@ -19,7 +19,7 @@ import org.springframework.util.Assert;
 /**
  * Reactor-Netty implementation of {@link ClientHttpConnector}.
  *
- * @author Brian Clozel
+
  * @since 5.0
  * @see reactor.netty.http.client.HttpClient
  */

@@ -6,8 +6,8 @@ import java.io.OutputStream;
 /**
  * A strategy interface for streaming an object to an OutputStream.
  *
- * @author Gary Russell
- * @author Mark Fisher
+
+
  * @since 3.0.5
  * @param <T> the object type
  */

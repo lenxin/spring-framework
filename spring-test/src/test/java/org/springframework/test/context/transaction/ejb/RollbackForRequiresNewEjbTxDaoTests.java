@@ -15,7 +15,7 @@ import org.springframework.test.context.transaction.TransactionalTestExecutionLi
  * test-managed transaction. For example, such work may in fact be committed
  * outside the scope of the test-managed transaction.
  *
- * @author Sam Brannen
+
  * @since 4.0.1
  */
 @Rollback

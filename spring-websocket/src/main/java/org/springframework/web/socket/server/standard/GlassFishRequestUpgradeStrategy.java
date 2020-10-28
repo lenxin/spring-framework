@@ -18,9 +18,9 @@ import org.springframework.web.socket.server.HandshakeFailureException;
 /**
  * A WebSocket {@code RequestUpgradeStrategy} for Oracle's GlassFish 4.1 and higher.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Michael Irwin
+
+
+
  * @since 4.0
  */
 public class GlassFishRequestUpgradeStrategy extends AbstractTyrusRequestUpgradeStrategy {

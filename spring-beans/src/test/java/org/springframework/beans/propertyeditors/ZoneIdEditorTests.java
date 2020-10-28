@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Nicholas Williams
+
  */
 public class ZoneIdEditorTests {
 

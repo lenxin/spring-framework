@@ -5,8 +5,8 @@ import org.springframework.lang.Nullable;
 /**
  * A strategy for extracting and embedding a resource version in its URL path.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
 */
 public interface VersionPathStrategy {

@@ -59,7 +59,7 @@ import org.springframework.util.ReflectionUtils;
  * <p>Used internally by {@link HibernateTransactionManager}.
  * Can also be used directly in application code.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see HibernateExceptionTranslator
  * @see HibernateTransactionManager

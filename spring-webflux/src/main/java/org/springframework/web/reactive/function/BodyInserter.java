@@ -13,7 +13,7 @@ import org.springframework.http.server.reactive.ServerHttpRequest;
 /**
  * A combination of functions that can populate a {@link ReactiveHttpOutputMessage} body.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  * @param <T> the type of data to insert
  * @param <M> the type of {@link ReactiveHttpOutputMessage} this inserter can be applied to

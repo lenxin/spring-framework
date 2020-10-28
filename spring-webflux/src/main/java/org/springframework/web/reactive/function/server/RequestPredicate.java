@@ -7,7 +7,7 @@ import java.util.Optional;
  * Instances of this function that evaluate on common request properties
  * can be found in {@link RequestPredicates}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  * @see RequestPredicates
  * @see RouterFunctions#route(RequestPredicate, HandlerFunction)

@@ -33,8 +33,8 @@ import org.springframework.util.Assert;
  *
  * <p>This is a framework class that need not be used directly by Spring users.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see MethodBeforeAdviceInterceptor
  * @see AfterReturningAdviceInterceptor
  */

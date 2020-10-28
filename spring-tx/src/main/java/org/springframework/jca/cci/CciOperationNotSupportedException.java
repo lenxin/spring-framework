@@ -7,7 +7,7 @@ import org.springframework.dao.InvalidDataAccessResourceUsageException;
 /**
  * Exception thrown when the connector doesn't support a specific CCI operation.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  */
 @SuppressWarnings("serial")

@@ -23,8 +23,8 @@ import org.springframework.util.MimeType;
  * For non-streaming use cases, {@link Flux} elements are collected into a {@link List}
  * before serialization for performance reason.
  *
- * @author Sebastien Deleuze
- * @author Arjen Poutsma
+
+
  * @since 5.0
  * @see Jackson2JsonDecoder
  */

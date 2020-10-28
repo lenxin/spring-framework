@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
  * Integration tests for LocalContainerEntityManagerFactoryBean.
  * Uses an in-memory database.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public abstract class AbstractContainerEntityManagerFactoryIntegrationTests
 		extends AbstractEntityManagerFactoryIntegrationTests {

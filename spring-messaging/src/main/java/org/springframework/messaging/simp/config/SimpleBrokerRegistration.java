@@ -9,7 +9,7 @@ import org.springframework.scheduling.TaskScheduler;
 /**
  * Registration class for configuring a {@link SimpleBrokerMessageHandler}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public class SimpleBrokerRegistration extends AbstractBrokerRegistration {

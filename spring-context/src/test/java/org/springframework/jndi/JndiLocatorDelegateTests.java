@@ -11,8 +11,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link JndiLocatorDelegate}.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
+
+
  */
 public class JndiLocatorDelegateTests {
 

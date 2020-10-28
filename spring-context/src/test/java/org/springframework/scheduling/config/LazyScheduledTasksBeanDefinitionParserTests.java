@@ -9,8 +9,8 @@ import org.springframework.context.support.GenericXmlApplicationContext;
  * are never marked lazy, even if the enclosing <beans> element declares
  * default-lazy-init="true". See  SPR-8498
  *
- * @author Mike Youngstrom
- * @author Chris Beams
+
+
  */
 public class LazyScheduledTasksBeanDefinitionParserTests {
 

@@ -7,7 +7,7 @@ import javax.xml.transform.Source;
  * Defines the contract for Object XML Mapping unmarshallers. Implementations of this
  * interface can deserialize a given XML Stream to an Object graph.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see Marshaller
  */

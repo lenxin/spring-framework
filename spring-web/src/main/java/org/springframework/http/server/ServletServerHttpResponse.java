@@ -16,8 +16,8 @@ import org.springframework.util.CollectionUtils;
 /**
  * {@link ServerHttpResponse} implementation that is based on a {@link HttpServletResponse}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.0
  */
 public class ServletServerHttpResponse implements ServerHttpResponse {

@@ -56,12 +56,12 @@ import org.springframework.web.util.WebUtils;
  * <p><b>NOTE when using this redirect view in a Portlet environment:</b> Make sure
  * that your controller respects the Portlet {@code sendRedirect} constraints.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Colin Sampaleanu
- * @author Sam Brannen
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
+
+
+
+
  * @see #setContextRelative
  * @see #setHttp10Compatible
  * @see #setExposeModelAttributes

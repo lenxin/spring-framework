@@ -20,8 +20,8 @@ import static org.junit.Assert.assertTrue;
  * JUnit-based integration tests that verify support for loading a
  * {@link WebApplicationContext} with a custom {@link WebTestContextBootstrapper}.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 4.3
  */
 @RunWith(SpringRunner.class)

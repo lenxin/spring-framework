@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
  * specification of the default initial capacity at construction time, as well
  * as whether heap-based or direct buffers are to be preferred.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class DefaultDataBufferFactory implements DataBufferFactory {

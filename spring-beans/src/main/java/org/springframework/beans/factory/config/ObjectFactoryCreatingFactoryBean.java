@@ -73,8 +73,8 @@ import org.springframework.util.Assert;
  * consult the {@link ServiceLocatorFactoryBean ServiceLocatorFactoryBean JavaDoc}
  * for a fuller discussion of this issue.
  *
- * @author Colin Sampaleanu
- * @author Juergen Hoeller
+
+
  * @since 1.0.2
  * @see org.springframework.beans.factory.ObjectFactory
  * @see ServiceLocatorFactoryBean

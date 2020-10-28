@@ -4,7 +4,7 @@ package test.mixin;
 /**
  * Simple implementation of Lockable interface for use in mixins.
  *
- * @author Rod Johnson
+
  */
 public class DefaultLockable implements Lockable {
 

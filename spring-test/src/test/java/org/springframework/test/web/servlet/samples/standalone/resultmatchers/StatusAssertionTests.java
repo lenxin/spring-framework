@@ -22,8 +22,8 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 /**
  * Examples of expectations on the status and the status reason found in the response.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  */
 public class StatusAssertionTests {
 

@@ -46,7 +46,7 @@ import org.springframework.util.concurrent.ListenableFutureTask;
  * can be linked into the Java EE environment through "gbean-ref" entries
  * in the {@code geronimo-web.xml} deployment descriptor.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.3
  * @see #setWorkManager
  * @see javax.resource.spi.work.WorkManager#scheduleWork

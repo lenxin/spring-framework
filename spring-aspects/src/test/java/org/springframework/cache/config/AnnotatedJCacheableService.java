@@ -23,7 +23,7 @@ import org.springframework.cache.jcache.support.TestableCacheResolverFactory;
  * <p>Note: copy/pasted from its original compilation because it needs to be
  * processed by the AspectJ compiler to wave the required aspects.
  *
- * @author Stephane Nicoll
+
  */
 @CacheDefaults(cacheName = "default")
 public class AnnotatedJCacheableService implements JCacheableService<Long> {

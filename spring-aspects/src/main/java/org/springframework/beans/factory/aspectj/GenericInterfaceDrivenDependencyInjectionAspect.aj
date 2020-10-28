@@ -23,7 +23,7 @@ package org.springframework.beans.factory.aspectj;
  *     }
  * }</pre>
  *
- * @author Ramnivas Laddad
+
  * @since 3.0
  */
 public abstract aspect GenericInterfaceDrivenDependencyInjectionAspect<I> extends AbstractInterfaceDrivenDependencyInjectionAspect {

@@ -24,7 +24,7 @@ import org.springframework.context.support.StaticApplicationContext;
 /**
  * Unit tests for {@link ScriptTemplateView}.
  *
- * @author Sebastien Deleuze
+
  */
 public class ScriptTemplateViewTests {
 

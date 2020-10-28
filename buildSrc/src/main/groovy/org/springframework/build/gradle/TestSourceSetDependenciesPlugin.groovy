@@ -9,7 +9,7 @@ import org.gradle.api.artifacts.ProjectDependency;
  * Gradle plugin that automatically updates testCompile dependencies to include
  * the test source sets of project dependencies.
  *
- * @author Phillip Webb
+
  */
 class TestSourceSetDependenciesPlugin implements Plugin<Project> {
 

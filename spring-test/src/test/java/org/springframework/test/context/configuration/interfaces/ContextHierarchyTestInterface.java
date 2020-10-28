@@ -5,7 +5,7 @@ import org.springframework.test.context.ContextHierarchy;
 import org.springframework.test.context.hierarchies.standard.SingleTestClassWithTwoLevelContextHierarchyTests;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 @ContextHierarchy({

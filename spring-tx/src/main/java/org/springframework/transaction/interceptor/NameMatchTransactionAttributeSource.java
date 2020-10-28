@@ -19,7 +19,7 @@ import org.springframework.util.PatternMatchUtils;
  * Simple {@link TransactionAttributeSource} implementation that
  * allows attributes to be matched by registered name.
  *
- * @author Juergen Hoeller
+
  * @since 21.08.2003
  * @see #isMatch
  * @see MethodMapTransactionAttributeSource

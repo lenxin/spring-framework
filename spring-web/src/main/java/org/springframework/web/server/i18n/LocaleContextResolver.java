@@ -12,7 +12,7 @@ import org.springframework.web.server.ServerWebExchange;
  * <p>The {@link org.springframework.context.i18n.LocaleContext} object can potentially
  * includes associated time zone and other locale related information.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  * @see LocaleContext
  */

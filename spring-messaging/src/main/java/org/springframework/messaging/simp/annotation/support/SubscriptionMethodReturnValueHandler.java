@@ -36,8 +36,8 @@ import org.springframework.util.Assert;
  * of the {@link SendTo} or {@link SendToUser} annotations in which case a
  * message is prepared and sent to the broker instead.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  * @since 4.0
  */
 public class SubscriptionMethodReturnValueHandler implements HandlerMethodReturnValueHandler {

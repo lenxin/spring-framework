@@ -9,8 +9,8 @@ import org.springframework.util.CollectionUtils;
  * The HTTP accessor that extends the base {@link AsyncHttpAccessor} with
  * request intercepting functionality.
  *
- * @author Jakub Narloch
- * @author Rossen Stoyanchev
+
+
  * @since 4.3
  * @deprecated as of Spring 5.0, with no direct replacement
  */

@@ -93,7 +93,7 @@ import org.springframework.util.ObjectUtils;
  * reference documentation which describes this class (and it's attendant
  * XML configuration) in detail.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see #setDelegate
  * @see #setDefaultListenerMethod

@@ -58,8 +58,8 @@ import org.springframework.util.Assert;
  *
  * <p><strong>NOTE:</strong> As of Spring Framework 4.3, this class requires JUnit 4.12 or higher.
  *
- * @author Sam Brannen
- * @author Philippe Marschall
+
+
  * @since 4.2
  * @see #apply(Statement, Description)
  * @see SpringMethodRule

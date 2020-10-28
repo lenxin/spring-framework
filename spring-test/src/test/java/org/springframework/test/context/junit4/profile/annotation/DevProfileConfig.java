@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.tests.sample.beans.Employee;
 
 /**
- * @author Sam Brannen
+
  * @since 3.1
  */
 @Profile("dev")

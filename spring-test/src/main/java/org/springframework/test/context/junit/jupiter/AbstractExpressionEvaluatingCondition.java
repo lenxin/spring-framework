@@ -38,8 +38,8 @@ import org.springframework.util.StringUtils;
  * <pre style="code">true</pre>
  * </ul>
  *
- * @author Sam Brannen
- * @author Tadaya Tsuyukubo
+
+
  * @since 5.0
  * @see EnabledIf
  * @see DisabledIf

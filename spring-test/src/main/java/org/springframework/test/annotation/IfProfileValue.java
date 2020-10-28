@@ -66,8 +66,8 @@ import java.lang.annotation.Target;
  * <p>As of Spring Framework 4.0, this annotation may be used as a
  * <em>meta-annotation</em> to create custom <em>composed annotations</em>.
  *
- * @author Rod Johnson
- * @author Sam Brannen
+
+
  * @since 2.0
  * @see ProfileValueSource
  * @see SystemProfileValueSource

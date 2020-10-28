@@ -5,7 +5,7 @@ import org.springframework.expression.TypedValue;
 /**
  * A {@link TypedValue} for booleans.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public final class BooleanTypedValue extends TypedValue {

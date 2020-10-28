@@ -21,8 +21,8 @@ import static org.junit.Assert.*;
  * Tests for PersistenceExceptionTranslationAdvisor's exception translation, as applied by
  * PersistenceExceptionTranslationPostProcessor.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public class PersistenceExceptionTranslationAdvisorTests {
 

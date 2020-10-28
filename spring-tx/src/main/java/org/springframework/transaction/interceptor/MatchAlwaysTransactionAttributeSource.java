@@ -14,7 +14,7 @@ import org.springframework.util.ObjectUtils;
  * used in the cases where you want to use the same transaction attribute with all
  * methods being handled by a transaction interceptor.
  *
- * @author Colin Sampaleanu
+
  * @since 15.10.2003
  * @see org.springframework.transaction.interceptor.TransactionProxyFactoryBean
  * @see org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator

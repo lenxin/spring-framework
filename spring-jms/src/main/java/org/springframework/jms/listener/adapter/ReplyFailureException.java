@@ -5,7 +5,7 @@ import org.springframework.jms.JmsException;
 /**
  * Exception to be thrown when the reply of a message failed to be sent.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 @SuppressWarnings("serial")

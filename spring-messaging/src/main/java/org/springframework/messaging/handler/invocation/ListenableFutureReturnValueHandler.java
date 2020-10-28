@@ -6,7 +6,7 @@ import org.springframework.util.concurrent.ListenableFuture;
 /**
  * Support for {@link ListenableFuture} as a return value type.
  *
- * @author Sebastien Deleuze
+
  * @since 4.2
  */
 public class ListenableFutureReturnValueHandler extends AbstractAsyncReturnValueHandler {

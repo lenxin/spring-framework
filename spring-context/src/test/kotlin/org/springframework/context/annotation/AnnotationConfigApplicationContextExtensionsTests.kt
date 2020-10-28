@@ -8,7 +8,7 @@ import org.springframework.context.support.registerBean
 /**
  * Tests for [AnnotationConfigApplicationContext] Kotlin extensions.
  *
- * @author Sebastien Deleuze
+
  */
 class AnnotationConfigApplicationContextExtensionsTests {
  

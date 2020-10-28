@@ -20,9 +20,9 @@ import org.springframework.lang.Nullable;
  * <p>Provides also basic request reply operation using a temporary
  * queue to collect the reply.
  *
- * @author Mark Pollack
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 1.1
  * @see JmsTemplate
  * @see javax.jms.Destination

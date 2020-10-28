@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.EnabledAndIgnoredSpringRunnerTest
  * that has been modified to use {@link SpringClassRule} and
  * {@link SpringMethodRule}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 @RunWith(JUnit4.class)

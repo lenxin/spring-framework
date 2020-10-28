@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
  * Integration tests that ensure that <em>primary</em> data sources are
  * supported.
  *
- * @author Sam Brannen
+
  * @since 4.3
  * @see org.springframework.test.context.transaction.PrimaryTransactionManagerTests
  */

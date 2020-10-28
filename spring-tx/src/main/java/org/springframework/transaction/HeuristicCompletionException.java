@@ -4,8 +4,8 @@ package org.springframework.transaction;
  * Exception that represents a transaction failure caused by a heuristic
  * decision on the side of the transaction coordinator.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 17.03.2003
  */
 @SuppressWarnings("serial")

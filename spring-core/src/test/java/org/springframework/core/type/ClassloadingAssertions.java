@@ -8,8 +8,8 @@ import org.springframework.util.ReflectionUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Ramnivas Laddad
- * @author Sam Brannen
+
+
  */
 abstract class ClassloadingAssertions {
 

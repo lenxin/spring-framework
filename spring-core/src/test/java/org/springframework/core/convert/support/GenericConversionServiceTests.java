@@ -43,11 +43,11 @@ import static org.junit.Assert.*;
  *
  * <p>In this package for access to package-local converter implementations.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Phillip Webb
- * @author David Haraburda
- * @author Sam Brannen
+
+
+
+
+
  */
 public class GenericConversionServiceTests {
 

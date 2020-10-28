@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * {@code loader} is explicitly declared via {@link ContextConfiguration
  * &#064;ContextConfiguration}.
  *
- * @author Sam Brannen
+
  * @since 3.0
  * @see PropertiesBasedSpringJUnit4ClassRunnerAppCtxTests
  * @see ContextConfigurationWithPropertiesExtendingPropertiesAndInheritedLoaderTests

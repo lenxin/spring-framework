@@ -32,8 +32,8 @@ import static org.mockito.BDDMockito.*;
  * not work well with beans that have already been proxied for other reasons such
  * as @Transactional or @Async processing.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 @SuppressWarnings("resource")

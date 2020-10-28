@@ -13,8 +13,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link AbstractListenerReadPublisher}.
  *
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
  */
 public class ListenerReadPublisherTests {
 

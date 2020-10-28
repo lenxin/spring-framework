@@ -7,8 +7,8 @@ import org.springframework.util.Assert;
 /**
  * {@link RequestPostProcessor} for forward requests.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 final class ForwardRequestPostProcessor implements RequestPostProcessor {

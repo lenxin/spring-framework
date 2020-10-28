@@ -27,8 +27,8 @@ import org.springframework.util.ObjectUtils;
 /**
  * Base class providing support methods for Jackson 2.9 encoding and decoding.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public abstract class Jackson2CodecSupport {

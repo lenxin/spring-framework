@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
  * when matching methods. If there are no introductions on the target class,
  * a method matcher may be able to optimize matching more effectively for example.
  *
- * @author Adrian Colyer
+
  * @since 2.0
  */
 public interface IntroductionAwareMethodMatcher extends MethodMatcher {

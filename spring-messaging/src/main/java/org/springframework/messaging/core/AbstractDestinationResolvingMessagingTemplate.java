@@ -16,8 +16,8 @@ import org.springframework.util.Assert;
  * <li>{@link DestinationResolvingMessageRequestReplyOperations}</li>
  * </ul>
  *
- * @author Mark Fisher
- * @author Rossen Stoyanchev
+
+
  * @since 4.0
  * @param <D> the destination type
  */

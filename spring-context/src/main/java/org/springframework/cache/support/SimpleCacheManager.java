@@ -9,7 +9,7 @@ import org.springframework.cache.Cache;
  * Simple cache manager working against a given collection of caches.
  * Useful for testing or simple caching declarations.
  *
- * @author Costin Leau
+
  * @since 3.1
  */
 public class SimpleCacheManager extends AbstractCacheManager {

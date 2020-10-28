@@ -17,7 +17,7 @@ import org.springframework.tests.TestGroup;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
+
  * @since 3.0
  */
 public class DefaultLifecycleProcessorTests {

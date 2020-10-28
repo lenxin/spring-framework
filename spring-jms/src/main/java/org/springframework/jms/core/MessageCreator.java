@@ -16,7 +16,7 @@ import javax.jms.Session;
  * {@code JmsTemplate} will catch and handle these
  * {@code JMSExceptions} appropriately.
  *
- * @author Mark Pollack
+
  * @since 1.1
  */
 @FunctionalInterface

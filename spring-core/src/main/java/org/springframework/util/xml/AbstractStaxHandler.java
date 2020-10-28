@@ -21,7 +21,7 @@ import org.springframework.lang.Nullable;
  * methods, capable of throwing a {@code XMLStreamException}. Additionally, an namespace
  * context stack is used to keep track of declared namespaces.
  *
- * @author Arjen Poutsma
+
  * @since 4.0.3
  */
 abstract class AbstractStaxHandler implements ContentHandler, LexicalHandler {

@@ -1,7 +1,7 @@
 package org.springframework.context.event.test;
 
 /**
- * @author Stephane Nicoll
+
  */
 @SuppressWarnings("serial")
 public class AnotherTestEvent extends IdentifiableApplicationEvent {

@@ -22,8 +22,8 @@ import static org.mockito.Mockito.withSettings;
 /**
  * Unit tests for {@link SharedEntityManagerCreator}.
  *
- * @author Oliver Gierke
- * @author Juergen Hoeller
+
+
  */
 @RunWith(MockitoJUnitRunner.StrictStubs.class)
 public class SharedEntityManagerCreatorTests {

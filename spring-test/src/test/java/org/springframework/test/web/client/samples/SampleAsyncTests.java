@@ -22,7 +22,7 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
  * tests the RestTemplate may likely be invoked indirectly, i.e. through client
  * code.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.1
  */
 @SuppressWarnings("deprecation")

@@ -22,7 +22,7 @@ import org.springframework.test.annotation.DirtiesContext.HierarchyMode;
  * that does not provide a copy constructor will likely fail in an environment
  * that executes tests concurrently.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see TestContextManager
  * @see TestExecutionListener

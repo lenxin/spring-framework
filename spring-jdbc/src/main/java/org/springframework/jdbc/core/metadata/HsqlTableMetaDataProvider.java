@@ -8,7 +8,7 @@ import java.sql.SQLException;
  * Supports a feature for retrieving generated keys without the JDBC 3.0
  * {@code getGeneratedKeys} support.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  */
 public class HsqlTableMetaDataProvider extends GenericTableMetaDataProvider {

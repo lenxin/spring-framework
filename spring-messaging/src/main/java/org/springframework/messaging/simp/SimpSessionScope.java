@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * <p>Relies on a thread-bound {@link SimpAttributes} instance exported by
  * {@link org.springframework.messaging.simp.annotation.support.SimpAnnotationMethodMessageHandler}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.1
  */
 public class SimpSessionScope implements Scope {

@@ -11,8 +11,8 @@ import org.springframework.lang.Nullable;
 /**
  * Base model for a JMS listener endpoint.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see MethodJmsListenerEndpoint
  * @see SimpleJmsListenerEndpoint

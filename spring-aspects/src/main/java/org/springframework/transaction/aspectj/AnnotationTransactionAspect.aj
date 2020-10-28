@@ -21,9 +21,9 @@ import org.springframework.transaction.annotation.Transactional;
  * non-public methods directly is the only way to get transaction demarcation
  * for the execution of such operations.
  *
- * @author Rod Johnson
- * @author Ramnivas Laddad
- * @author Adrian Colyer
+
+
+
  * @since 2.0
  * @see org.springframework.transaction.annotation.Transactional
  */

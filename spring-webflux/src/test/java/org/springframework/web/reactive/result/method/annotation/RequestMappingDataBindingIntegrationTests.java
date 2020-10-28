@@ -32,7 +32,7 @@ import static org.junit.Assert.*;
  * Data binding and type conversion related integration tests for
  * {@code @Controller}-annotated classes.
  *
- * @author Rossen Stoyanchev
+
  */
 public class RequestMappingDataBindingIntegrationTests extends AbstractRequestMappingIntegrationTests {
 

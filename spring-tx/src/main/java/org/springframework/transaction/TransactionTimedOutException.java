@@ -20,7 +20,7 @@ package org.springframework.transaction;
  * connection pool will perform timeout checks and throw corresponding
  * native resource exceptions (for example, JDBC SQLExceptions).
  *
- * @author Juergen Hoeller
+
  * @since 1.1.5
  * @see org.springframework.transaction.support.ResourceHolderSupport#getTimeToLiveInMillis
  * @see java.sql.Statement#setQueryTimeout

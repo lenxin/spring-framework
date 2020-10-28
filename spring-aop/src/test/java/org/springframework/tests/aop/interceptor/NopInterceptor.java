@@ -6,7 +6,7 @@ import org.aopalliance.intercept.MethodInvocation;
 /**
  * Trivial interceptor that can be introduced in a chain to display it.
  *
- * @author Rod Johnson
+
  */
 public class NopInterceptor implements MethodInterceptor {
 

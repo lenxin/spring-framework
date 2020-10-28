@@ -24,7 +24,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link ExecutorSubscribableChannel}.
  *
- * @author Phillip Webb
+
  */
 public class ExecutorSubscribableChannelTests {
 

@@ -14,7 +14,7 @@ import org.springframework.jms.listener.adapter.ListenerExecutionFailedException
 import org.springframework.messaging.handler.annotation.support.MethodArgumentNotValidException;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class AnnotationDrivenNamespaceTests extends AbstractJmsAnnotationDrivenTests {
 

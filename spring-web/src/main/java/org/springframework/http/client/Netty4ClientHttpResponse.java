@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
 /**
  * {@link ClientHttpResponse} implementation based on Netty 4.
  *
- * @author Arjen Poutsma
+
  * @since 4.1.2
  * @deprecated as of Spring 5.0, in favor of
  * {@link org.springframework.http.client.reactive.ReactorClientHttpConnector}

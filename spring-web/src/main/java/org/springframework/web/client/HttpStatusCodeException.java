@@ -10,9 +10,9 @@ import org.springframework.util.StringUtils;
 /**
  * Abstract base class for exceptions based on an {@link HttpStatus}.
  *
- * @author Arjen Poutsma
- * @author Chris Beams
- * @author Rossen Stoyanchev
+
+
+
  * @since 3.0
  */
 public abstract class HttpStatusCodeException extends RestClientResponseException {

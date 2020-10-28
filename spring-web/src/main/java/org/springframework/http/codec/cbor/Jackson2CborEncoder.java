@@ -20,7 +20,7 @@ import org.springframework.util.MimeType;
  * Encode from an {@code Object} to bytes of CBOR objects using Jackson.
  * Stream encoding is not supported yet.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  * @see Jackson2CborDecoder
  * @see <a href="https://github.com/spring-projects/spring-framework/issues/20513">Add CBOR support to WebFlux</a>

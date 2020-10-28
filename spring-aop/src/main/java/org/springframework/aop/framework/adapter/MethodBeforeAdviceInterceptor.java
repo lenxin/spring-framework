@@ -14,7 +14,7 @@ import org.springframework.util.Assert;
  * Used internally by the AOP framework; application developers should not need
  * to use this class directly.
  *
- * @author Rod Johnson
+
  * @see AfterReturningAdviceInterceptor
  * @see ThrowsAdviceInterceptor
  */

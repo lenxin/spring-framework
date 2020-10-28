@@ -26,8 +26,8 @@ import static org.junit.Assert.*;
  * Integration tests for AspectJ auto proxying. Includes mixing with Spring AOP
  * Advisors to demonstrate that existing autoproxying contract is honoured.
  *
- * @author Rod Johnson
- * @author Chris Beams
+
+
  */
 public class BenchmarkTests {
 

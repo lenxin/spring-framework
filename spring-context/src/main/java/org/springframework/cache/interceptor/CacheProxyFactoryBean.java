@@ -23,8 +23,8 @@ import org.springframework.cache.CacheManager;
  * <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#cache-annotations">declarative annotation-based caching</a>
  * section of the Spring reference documentation for more information.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 3.1
  * @see org.springframework.aop.framework.ProxyFactoryBean
  * @see CacheInterceptor

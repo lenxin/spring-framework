@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.*;
 /**
  * Tests for {@link MergedAnnotationPredicates}.
  *
- * @author Phillip Webb
+
  */
 public class MergedAnnotationPredicatesTests {
 

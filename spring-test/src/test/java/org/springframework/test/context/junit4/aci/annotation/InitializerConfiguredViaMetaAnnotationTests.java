@@ -31,7 +31,7 @@ import static org.junit.Assert.assertEquals;
  * <a href="https://stackoverflow.com/questions/35733344/can-contextconfiguration-in-a-custom-annotation-be-merged">
  * Can {@code @ContextConfiguration} in a custom annotation be merged?</a>
  *
- * @author Sam Brannen
+
  * @since 4.3
  */
 @RunWith(SpringRunner.class)

@@ -32,11 +32,11 @@ import org.springframework.util.Assert;
  *
  * <p>Compatible with Apache Commons Pool 2.4, as of Spring 4.2.
  *
- * @author Rod Johnson
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Stephane Nicoll
- * @author Kazuki Shimizu
+
+
+
+
+
  * @since 4.2
  * @see GenericObjectPool
  * @see #createObjectPool()

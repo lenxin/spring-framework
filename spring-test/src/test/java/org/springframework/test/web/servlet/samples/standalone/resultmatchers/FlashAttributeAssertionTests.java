@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 /**
  * Examples of expectations on flash attributes.
  *
- * @author Rossen Stoyanchev
+
  */
 public class FlashAttributeAssertionTests {
 

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Tests with headers and cookies.
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class HeaderAndCookieTests {

@@ -13,9 +13,9 @@ import static java.lang.String.*;
  * A test group used to limit when certain tests are run.
  *
  * @see Assume#group(TestGroup)
- * @author Phillip Webb
- * @author Chris Beams
- * @author Sam Brannen
+
+
+
  */
 public enum TestGroup {
 

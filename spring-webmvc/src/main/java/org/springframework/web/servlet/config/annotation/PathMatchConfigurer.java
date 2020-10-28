@@ -19,7 +19,7 @@ import org.springframework.web.util.UrlPathHelper;
  * <li>ResourcesMappings</li>
  * </ul>
  *
- * @author Brian Clozel
+
  * @since 4.0.3
  * @see org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
  * @see org.springframework.web.servlet.handler.SimpleUrlHandlerMapping

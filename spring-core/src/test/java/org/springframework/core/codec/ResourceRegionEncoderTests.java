@@ -27,7 +27,7 @@ import static org.junit.Assert.*;
 
 /**
  * Test cases for {@link ResourceRegionEncoder} class.
- * @author Brian Clozel
+
  */
 public class ResourceRegionEncoderTests  {
 

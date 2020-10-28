@@ -15,9 +15,9 @@ import org.springframework.util.Assert;
  * class) or need further evaluation dynamically (based on arguments at the
  * time of method invocation).
  *
- * @author Rod Johnson
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
+
  * @since 11.11.2003
  * @see ClassFilters
  * @see Pointcuts

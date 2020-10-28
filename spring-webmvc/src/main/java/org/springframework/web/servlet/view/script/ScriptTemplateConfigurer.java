@@ -27,7 +27,7 @@ import org.springframework.lang.Nullable;
  * templating libraries not designed for concurrency, like Handlebars or React running on
  * Nashorn, by setting the {@link #setSharedEngine sharedEngine} property to {@code false}.
  *
- * @author Sebastien Deleuze
+
  * @since 4.2
  * @see ScriptTemplateView
  */

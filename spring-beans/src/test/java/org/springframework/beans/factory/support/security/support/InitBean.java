@@ -17,7 +17,7 @@
 import org.springframework.beans.factory.InitializingBean;
 
 /**
- * @author Costin Leau
+
  */
 public class InitBean implements InitializingBean {
 

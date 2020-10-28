@@ -7,7 +7,7 @@ import javax.cache.spi.CachingProvider;
  * Just here to be run against EHCache 3, whereas the original JCacheEhCacheAnnotationTests
  * runs against EhCache 2.x with the EhCache-JCache add-on.
  *
- * @author Juergen Hoeller
+
  */
 public class JCacheEhCache3AnnotationTests extends JCacheEhCacheAnnotationTests {
 

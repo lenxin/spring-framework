@@ -33,7 +33,7 @@ import org.springframework.util.Assert;
  * that an instance should accumulate before returning
  * {@link BackOffExecution#STOP}.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class ExponentialBackOff implements BackOff {

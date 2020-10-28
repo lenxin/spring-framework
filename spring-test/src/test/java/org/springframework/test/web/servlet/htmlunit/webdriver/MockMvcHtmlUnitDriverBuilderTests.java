@@ -30,8 +30,8 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for {@link MockMvcHtmlUnitDriverBuilder}.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 @RunWith(SpringRunner.class)

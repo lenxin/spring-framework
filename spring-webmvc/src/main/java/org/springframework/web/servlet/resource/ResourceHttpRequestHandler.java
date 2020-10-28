@@ -71,12 +71,12 @@ import org.springframework.web.util.UrlPathHelper;
  * (if present) so that a {@code 304} status code will be returned as appropriate,
  * avoiding unnecessary overhead for resources that are already cached by the client.
  *
- * @author Keith Donald
- * @author Jeremy Grelle
- * @author Juergen Hoeller
- * @author Arjen Poutsma
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
+
+
+
+
  * @since 3.0.4
  */
 public class ResourceHttpRequestHandler extends WebContentGenerator

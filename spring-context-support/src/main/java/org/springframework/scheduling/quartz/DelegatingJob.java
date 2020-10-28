@@ -14,7 +14,7 @@ import org.springframework.util.Assert;
  * Runnable instance, receiving parameters from the Quartz JobDataMap
  * that way instead of via the JobExecutionContext.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see SpringBeanJobFactory
  * @see org.quartz.Job#execute(org.quartz.JobExecutionContext)

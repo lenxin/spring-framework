@@ -11,9 +11,9 @@ import org.springframework.util.StopWatch;
  *
  * <p>Uses a {@code StopWatch} for the actual performance measuring.
  *
- * @author Rod Johnson
- * @author Dmitriy Kopylenko
- * @author Rob Harrop
+
+
+
  * @see org.springframework.util.StopWatch
  * @see JamonPerformanceMonitorInterceptor
  */

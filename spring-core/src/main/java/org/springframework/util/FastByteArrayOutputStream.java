@@ -22,8 +22,8 @@ import org.springframework.lang.Nullable;
  * There is also no copying of the internal buffer if its contents is extracted
  * with the {@link #writeTo(OutputStream)} method.
  *
- * @author Craig Andrews
- * @author Juergen Hoeller
+
+
  * @since 4.2
  * @see #resize
  * @see ResizableByteArrayOutputStream

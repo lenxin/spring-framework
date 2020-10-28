@@ -31,11 +31,11 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Nikita Khateev
- * @author Fedor Bobin
+
+
+
+
+
  */
 public class NamedParameterJdbcTemplateTests {
 

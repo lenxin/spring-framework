@@ -7,7 +7,7 @@ import org.springframework.http.MediaType;
 /**
  * Exception thrown when the request handler cannot generate a response that is acceptable by the client.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

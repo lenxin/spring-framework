@@ -17,7 +17,7 @@ import org.springframework.dao.TypeMismatchDataAccessException;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 20.10.2004
  */
 public class DataAccessUtilsTests {

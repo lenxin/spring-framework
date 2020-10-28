@@ -26,7 +26,7 @@ import java.util.Map;
  * <p>This scope is registered as default scope with key
  * {@link org.springframework.web.context.WebApplicationContext#SCOPE_APPLICATION "application"}.
  *
- * @author Juergen Hoeller
+
  * @see org.springframework.web.context.ContextCleanupListener
  * @since 3.0
  */

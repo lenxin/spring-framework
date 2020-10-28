@@ -13,7 +13,7 @@ import org.springframework.util.MimeTypeUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class ByteArrayDecoderTests extends AbstractDecoderTestCase<ByteArrayDecoder> {
 

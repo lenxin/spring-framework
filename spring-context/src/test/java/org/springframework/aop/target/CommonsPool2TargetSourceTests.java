@@ -25,10 +25,10 @@ import static org.junit.Assert.*;
  * TODO: need to make these tests stronger: it's hard to
  * make too many assumptions about a pool.
  *
- * @author Rod Johnson
- * @author Rob Harrop
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
+
+
  */
 public class CommonsPool2TargetSourceTests {
 

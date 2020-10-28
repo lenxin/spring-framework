@@ -17,7 +17,7 @@ import org.springframework.lang.Nullable;
  * general examples and context; see {@link #exceptionCacheResolver()} for
  * detailed instructions.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see CachingConfigurer
  * @see JCacheConfigurerSupport

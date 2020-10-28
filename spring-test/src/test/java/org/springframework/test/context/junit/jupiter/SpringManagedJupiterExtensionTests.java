@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Spring bean in order to have dependencies injected into an extension from
  * a Spring {@code ApplicationContext}.
  *
- * @author Sam Brannen
+
  * @since 5.1
  */
 @SpringJUnitConfig

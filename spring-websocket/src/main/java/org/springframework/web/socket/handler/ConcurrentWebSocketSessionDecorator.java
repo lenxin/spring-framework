@@ -23,8 +23,8 @@ import org.springframework.web.socket.WebSocketSession;
  * At that time, the specified buffer-size limit and send-time limit will be checked
  * and the session will be closed if the limits are exceeded.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0.3
  */
 public class ConcurrentWebSocketSessionDecorator extends WebSocketSessionDecorator {

@@ -8,7 +8,7 @@ import javax.cache.annotation.CacheResolver;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class TestableCacheResolver implements CacheResolver {
 

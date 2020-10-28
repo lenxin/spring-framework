@@ -38,7 +38,7 @@ import org.springframework.web.socket.server.support.DefaultHandshakeHandler;
 
 /**
  * Integration tests for {@link WebSocketStompClient}.
- * @author Rossen Stoyanchev
+
  */
 public class WebSocketStompClientIntegrationTests {
 

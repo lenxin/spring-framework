@@ -34,7 +34,7 @@ import org.springframework.web.util.UriBuilder;
  * Access to headers and body is offered by {@link Headers} and
  * {@link #body(Class)}, respectively.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 public interface ServerRequest {

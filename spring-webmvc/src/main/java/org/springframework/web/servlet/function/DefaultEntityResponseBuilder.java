@@ -45,7 +45,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * Default {@link EntityResponse.Builder} implementation.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  * @param <T> the entity type
  */

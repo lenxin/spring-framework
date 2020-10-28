@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
  * <p>Attributes are the raw values passed to the spring:param tag and have not
  * been encoded or escaped.
  *
- * @author Scott Andrews
+
  * @since 3.0
  * @see ParamTag
  */

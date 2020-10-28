@@ -28,8 +28,8 @@ import org.springframework.web.util.WebUtils;
  * {@link MvcResult}. The {@code MvcResult} instance is expected to be available
  * as the request attribute {@link MockMvc#MVC_RESULT_ATTRIBUTE}.
  *
- * @author Rossen Stoyanchev
- * @author Rob Winch
+
+
  * @since 3.2
  */
 @SuppressWarnings("serial")

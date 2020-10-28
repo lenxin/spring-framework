@@ -24,8 +24,8 @@ import org.springframework.util.Assert;
  * <a href="https://hc.apache.org/httpcomponents-asyncclient-dev/">Apache HttpComponents
  * HttpAsyncClient 4.0</a> to create requests.
  *
- * @author Arjen Poutsma
- * @author Stephane Nicoll
+
+
  * @since 4.0
  * @see HttpAsyncClient
  * @deprecated as of Spring 5.0, with no direct replacement

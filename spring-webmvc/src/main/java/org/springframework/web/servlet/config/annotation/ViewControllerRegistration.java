@@ -10,8 +10,8 @@ import org.springframework.web.servlet.mvc.ParameterizableViewController;
 /**
  * Assist with the registration of a single view controller.
  *
- * @author Rossen Stoyanchev
- * @author Keith Donald
+
+
  * @since 3.1
  */
 public class ViewControllerRegistration {

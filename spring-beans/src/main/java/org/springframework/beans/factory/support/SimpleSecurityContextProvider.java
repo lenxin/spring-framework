@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
 /**
  * Simple {@link SecurityContextProvider} implementation.
  *
- * @author Costin Leau
+
  * @since 3.0
  */
 public class SimpleSecurityContextProvider implements SecurityContextProvider {

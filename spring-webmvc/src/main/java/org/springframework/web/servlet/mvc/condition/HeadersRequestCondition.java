@@ -18,8 +18,8 @@ import org.springframework.web.cors.CorsUtils;
  * 'Content-Type' are ignored. See {@link ConsumesRequestCondition} and
  * {@link ProducesRequestCondition} for those.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 public final class HeadersRequestCondition extends AbstractRequestCondition<HeadersRequestCondition> {

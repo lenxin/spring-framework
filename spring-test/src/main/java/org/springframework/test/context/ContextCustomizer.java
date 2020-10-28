@@ -13,8 +13,8 @@ import org.springframework.context.ConfigurableApplicationContext;
  * methods since customizers form part of the {@link MergedContextConfiguration}
  * which is used as a cache key.
  *
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  * @since 4.3
  * @see ContextCustomizerFactory
  * @see org.springframework.test.context.support.AbstractContextLoader#customizeContext

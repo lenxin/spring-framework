@@ -34,7 +34,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.*
  * Tests the use of {@link HandlerFunction} and {@link RouterFunction} in a
  * {@link DispatcherHandler}, combined with {@link Controller}s.
  *
- * @author Arjen Poutsma
+
  */
 public class DispatcherHandlerIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

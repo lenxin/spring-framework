@@ -12,8 +12,8 @@ import org.springframework.util.Assert;
  * allowing the addition of PersistenceExceptionTranslator instances in order.
  * Returns {@code non-null} on the first (if any) match.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class ChainedPersistenceExceptionTranslator implements PersistenceExceptionTranslator {

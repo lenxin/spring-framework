@@ -4,7 +4,7 @@ package org.springframework.dao;
  * Generic exception thrown when the current process was
  * a deadlock loser, and its transaction rolled back.
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public class DeadlockLoserDataAccessException extends PessimisticLockingFailureException {

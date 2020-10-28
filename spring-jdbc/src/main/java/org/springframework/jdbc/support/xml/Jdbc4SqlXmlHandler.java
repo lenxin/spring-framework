@@ -23,8 +23,8 @@ import org.springframework.lang.Nullable;
  * retrieving XML documents to and from fields in a database,
  * relying on the JDBC 4.0 {@code java.sql.SQLXML} facility.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.5.6
  * @see java.sql.SQLXML
  * @see java.sql.ResultSet#getSQLXML

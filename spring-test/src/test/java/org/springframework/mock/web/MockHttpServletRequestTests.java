@@ -26,13 +26,13 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link MockHttpServletRequest}.
  *
- * @author Rick Evans
- * @author Mark Fisher
- * @author Rossen Stoyanchev
- * @author Sam Brannen
- * @author Brian Clozel
- * @author Jakub Narloch
- * @author Av Pinzur
+
+
+
+
+
+
+
  */
 public class MockHttpServletRequestTests {
 

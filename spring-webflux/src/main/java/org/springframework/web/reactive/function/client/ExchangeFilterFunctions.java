@@ -20,8 +20,8 @@ import org.springframework.web.reactive.function.BodyExtractors;
  * Static factory methods providing access to built-in implementations of
  * {@link ExchangeFilterFunction} for basic authentication, error handling, etc.
  *
- * @author Rob Winch
- * @author Arjen Poutsma
+
+
  * @since 5.0
  */
 public abstract class ExchangeFilterFunctions {

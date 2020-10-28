@@ -18,10 +18,10 @@ import static org.junit.Assert.*;
  * If this test case fails, uncomment diagnostics in the
  * {@link #assertProtocolAndFilenames} method.
  *
- * @author Oliver Hutchison
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Sam Brannen
+
+
+
+
  * @since 17.11.2004
  */
 public class PathMatchingResourcePatternResolverTests {

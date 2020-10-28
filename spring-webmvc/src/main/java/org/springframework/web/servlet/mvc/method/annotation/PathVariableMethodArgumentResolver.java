@@ -41,9 +41,9 @@ import org.springframework.web.util.UriComponentsBuilder;
  * <p>A {@link WebDataBinder} is invoked to apply type conversion to resolved path variable
  * values that don't yet match the method parameter type.
  *
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
+
  * @since 3.1
  */
 public class PathVariableMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver

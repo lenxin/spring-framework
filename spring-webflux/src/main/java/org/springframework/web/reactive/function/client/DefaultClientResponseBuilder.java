@@ -21,7 +21,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * Default implementation of {@link ClientResponse.Builder}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0.5
  */
 final class DefaultClientResponseBuilder implements ClientResponse.Builder {

@@ -31,8 +31,8 @@ import org.springframework.lang.Nullable;
  * with an {@link org.springframework.beans.factory.xml.XmlBeanDefinitionReader}
  * for more flexible context setup.</b>
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #getResource
  * @see #getResourceByPath
  * @see GenericApplicationContext

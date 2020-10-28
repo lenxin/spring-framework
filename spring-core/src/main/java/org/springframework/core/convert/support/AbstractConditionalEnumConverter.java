@@ -8,7 +8,7 @@ import org.springframework.util.ClassUtils;
 /**
  * A {@link ConditionalConverter} base implementation for enum-based converters.
  *
- * @author Stephane Nicoll
+
  * @since 4.3
  */
 abstract class AbstractConditionalEnumConverter implements ConditionalConverter {

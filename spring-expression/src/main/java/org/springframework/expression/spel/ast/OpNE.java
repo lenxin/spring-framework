@@ -11,7 +11,7 @@ import org.springframework.expression.spel.support.BooleanTypedValue;
 /**
  * Implements the not-equal operator.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class OpNE extends Operator {

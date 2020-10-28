@@ -11,7 +11,7 @@ import org.springframework.test.context.MergedContextConfiguration;
  * <p>Default resource locations are detected using the suffixes
  * {@code "-context.xml"} and {@code "Context.groovy"}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see GroovyBeanDefinitionReader
  * @see GenericXmlContextLoader

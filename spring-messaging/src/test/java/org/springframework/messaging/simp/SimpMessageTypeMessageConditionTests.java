@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for SimpMessageTypeMessageCondition.
  *
- * @author Rossen Stoyanchev
+
  */
 public class SimpMessageTypeMessageConditionTests {
 

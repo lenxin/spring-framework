@@ -11,8 +11,8 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
  * This interface is not often used directly, but provides the option to enhance testability,
  * as it can easily be mocked or stubbed.
  *
- * @author Thomas Risberg
- * @author Stephane Nicoll
+
+
  * @since 2.5
  */
 public interface SimpleJdbcCallOperations {

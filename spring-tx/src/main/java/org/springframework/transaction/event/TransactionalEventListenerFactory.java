@@ -11,7 +11,7 @@ import org.springframework.core.annotation.AnnotatedElementUtils;
  * {@link EventListenerFactory} implementation that handles {@link TransactionalEventListener}
  * annotated methods.
  *
- * @author Stephane Nicoll
+
  * @since 4.2
  */
 public class TransactionalEventListenerFactory implements EventListenerFactory, Ordered {

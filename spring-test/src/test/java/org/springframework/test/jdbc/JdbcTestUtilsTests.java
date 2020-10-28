@@ -14,7 +14,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link JdbcTestUtils}.
  *
- * @author Phillip Webb
+
  * @since 2.5.4
  * @see JdbcTestUtilsIntegrationTests
  */

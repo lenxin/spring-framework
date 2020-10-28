@@ -18,8 +18,8 @@ import org.springframework.core.annotation.AliasFor;
  * or {@link org.springframework.http.HttpHeaders HttpHeaders} then the map is
  * populated with all header names and values.
  *
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  * @since 3.0
  * @see RequestMapping
  * @see RequestParam

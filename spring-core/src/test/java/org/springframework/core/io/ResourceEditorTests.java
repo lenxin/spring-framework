@@ -11,9 +11,9 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the {@link ResourceEditor} class.
  *
- * @author Rick Evans
- * @author Arjen Poutsma
- * @author Dave Syer
+
+
+
  */
 public class ResourceEditorTests {
 

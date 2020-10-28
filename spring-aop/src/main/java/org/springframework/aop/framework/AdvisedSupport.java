@@ -38,8 +38,8 @@ import org.springframework.util.CollectionUtils;
  * <p>This class is serializable; subclasses need not be.
  * This class is used to hold snapshots of proxies.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.springframework.aop.framework.AopProxy
  */
 public class AdvisedSupport extends ProxyConfig implements Advised {

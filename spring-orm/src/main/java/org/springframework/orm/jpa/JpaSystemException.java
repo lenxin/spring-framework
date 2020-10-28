@@ -7,7 +7,7 @@ import org.springframework.dao.UncategorizedDataAccessException;
  * for JPA system errors that do not match any concrete
  * {@code org.springframework.dao} exceptions.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see EntityManagerFactoryUtils#convertJpaAccessExceptionIfPossible
  */

@@ -20,7 +20,7 @@ import org.springframework.util.StringUtils;
  * return values from handler methods, with the help of
  * {@link RSocketPayloadReturnValueHandler}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public class RSocketMessageHandler extends MessageMappingMessageHandler {

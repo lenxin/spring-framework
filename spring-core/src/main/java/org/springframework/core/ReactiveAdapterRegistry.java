@@ -32,8 +32,8 @@ import org.springframework.util.ReflectionUtils;
  * for Reactor, RxJava 1, RxJava 2 types, {@link CompletableFuture}, Java 9+
  * {@code Flow.Publisher} and Kotlin Coroutines {@code Deferred}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 public class ReactiveAdapterRegistry {

@@ -9,7 +9,7 @@ import org.springframework.web.server.adapter.WebHttpHandlerBuilder;
 /**
  * Spec for setting up server-less testing against a RouterFunction.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 class DefaultRouterFunctionSpec extends AbstractMockServerSpec<WebTestClient.RouterFunctionSpec>

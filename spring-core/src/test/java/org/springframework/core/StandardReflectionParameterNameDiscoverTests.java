@@ -13,7 +13,7 @@ import static org.hamcrest.MatcherAssert.*;
 /**
  * Tests for StandardReflectionParameterNameDiscoverer
  *
- * @author Rob Winch
+
  */
 public class StandardReflectionParameterNameDiscoverTests {
 	private ParameterNameDiscoverer parameterNameDiscoverer;

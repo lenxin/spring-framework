@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * Convenient superclass for JNDI accessors, providing "jndiTemplate"
  * and "jndiEnvironment" bean properties.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see #setJndiTemplate
  * @see #setJndiEnvironment

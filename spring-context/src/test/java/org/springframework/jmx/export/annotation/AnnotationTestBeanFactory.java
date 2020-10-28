@@ -4,7 +4,7 @@ import org.springframework.beans.factory.FactoryBean;
 import org.springframework.jmx.IJmxTestBean;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class AnnotationTestBeanFactory implements FactoryBean<FactoryCreatedAnnotationTestBean> {
 

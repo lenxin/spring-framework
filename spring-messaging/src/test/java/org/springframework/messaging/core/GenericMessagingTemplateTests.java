@@ -27,8 +27,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link GenericMessagingTemplate}.
  *
- * @author Rossen Stoyanchev
- * @author Gary Russell
+
+
  */
 public class GenericMessagingTemplateTests {
 

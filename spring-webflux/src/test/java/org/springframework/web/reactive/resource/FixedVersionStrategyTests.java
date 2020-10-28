@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 
 /**
  * Unit tests for {@link FixedVersionStrategy}.
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  */
 public class FixedVersionStrategyTests {
 

@@ -14,7 +14,7 @@ import static org.springframework.test.context.support.AnnotationConfigContextLo
 /**
  * Unit tests for {@link AnnotationConfigContextLoaderUtils}.
  *
- * @author Sam Brannen
+
  * @since 4.1.5
  */
 public class AnnotationConfigContextLoaderUtilsTests {

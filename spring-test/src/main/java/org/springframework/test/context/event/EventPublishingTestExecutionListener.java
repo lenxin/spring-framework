@@ -47,8 +47,8 @@ import org.springframework.test.context.support.AbstractTestExecutionListener;
  * support. For further details, consult the class-level Javadoc for
  * {@link org.springframework.context.event.EventListener @EventListener}.
  *
- * @author Sam Brannen
- * @author Frank Scheffler
+
+
  * @since 5.2
  * @see org.springframework.test.context.event.annotation.BeforeTestClass @BeforeTestClass
  * @see org.springframework.test.context.event.annotation.PrepareTestInstance @PrepareTestInstance

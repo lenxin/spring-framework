@@ -9,8 +9,8 @@ import org.springframework.lang.Nullable;
  * {@code Flux<ServerSentEvent>} or {@code Observable<ServerSentEvent>} is the
  * reactive equivalent to Spring MVC's {@code SseEmitter}.
  *
- * @author Sebastien Deleuze
- * @author Arjen Poutsma
+
+
  * @since 5.0
  * @param <T> the type of data that this event contains
  * @see ServerSentEventHttpMessageWriter

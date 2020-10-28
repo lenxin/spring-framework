@@ -9,7 +9,7 @@ import org.springframework.orm.ObjectRetrievalFailureException;
  * Hibernate-specific subclass of ObjectRetrievalFailureException.
  * Converts Hibernate's UnresolvableObjectException and WrongClassException.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see SessionFactoryUtils#convertHibernateAccessException
  */

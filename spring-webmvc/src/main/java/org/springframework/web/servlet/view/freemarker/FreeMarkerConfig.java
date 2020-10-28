@@ -8,8 +8,8 @@ import freemarker.template.Configuration;
  * FreeMarker Configuration object in a web environment. Detected and
  * used by {@link FreeMarkerView}.
  *
- * @author Darren Davison
- * @author Rob Harrop
+
+
  * @since 03.03.2004
  * @see FreeMarkerConfigurer
  * @see FreeMarkerView

@@ -52,8 +52,8 @@ import static org.springframework.context.index.processor.Metadata.*;
 /**
  * Tests for {@link CandidateComponentsIndexer}.
  *
- * @author Stephane Nicoll
- * @author Vedran Pavic
+
+
  */
 public class CandidateComponentsIndexerTests {
 

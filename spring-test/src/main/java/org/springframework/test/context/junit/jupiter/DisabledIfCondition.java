@@ -12,7 +12,7 @@ import org.junit.jupiter.api.extension.ExtensionContext;
  * {@link DisabledIf @DisabledIf} will result in an <em>enabled</em>
  * {@link ConditionEvaluationResult}.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see DisabledIf
  * @see EnabledIf

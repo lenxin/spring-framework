@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class Spr16756Tests {
 

@@ -11,8 +11,8 @@ import org.springframework.lang.Nullable;
  * without forcing a single translator to understand every single possible type
  * of exception.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 @FunctionalInterface

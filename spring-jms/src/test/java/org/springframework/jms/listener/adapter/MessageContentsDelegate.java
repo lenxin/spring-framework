@@ -5,8 +5,8 @@ import java.util.Map;
 /**
  * See the MessageListenerAdapterTests class for usage.
  *
- * @author Rick Evans
- * @author Juergen Hoeller
+
+
  */
 public interface MessageContentsDelegate {
 

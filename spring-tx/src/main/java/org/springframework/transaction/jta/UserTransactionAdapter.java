@@ -24,7 +24,7 @@ import org.springframework.util.Assert;
  * <p>Used internally by Spring's {@link JtaTransactionManager} for certain
  * scenarios. Not intended for direct use in application code.
  *
- * @author Juergen Hoeller
+
  * @since 1.1.5
  */
 public class UserTransactionAdapter implements UserTransaction {

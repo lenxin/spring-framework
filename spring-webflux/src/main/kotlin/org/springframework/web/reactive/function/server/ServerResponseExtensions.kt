@@ -14,7 +14,7 @@ import reactor.core.publisher.Mono
  * variant. This extension is not subject to type erasure and retains actual generic
  * type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ServerResponse.BodyBuilder.body(publisher: Publisher<T>): Mono<ServerResponse> =
@@ -25,7 +25,7 @@ inline fun <reified T : Any> ServerResponse.BodyBuilder.body(publisher: Publishe
  * `bodyToServerSentEvents(Publisher<T>)` variant. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ServerResponse.BodyBuilder.bodyToServerSentEvents(publisher: Publisher<T>): Mono<ServerResponse> =
@@ -33,21 +33,21 @@ inline fun <reified T : Any> ServerResponse.BodyBuilder.bodyToServerSentEvents(p
 
 /**
  * Shortcut for setting [MediaType.APPLICATION_JSON_UTF8] `Content-Type` header.
- * @author Sebastien Deleuze
+
  * @since 5.1
  */
 fun ServerResponse.BodyBuilder.json() = contentType(MediaType.APPLICATION_JSON_UTF8)
 
 /**
  * Shortcut for setting [MediaType.APPLICATION_XML] `Content-Type` header.
- * @author Sebastien Deleuze
+
  * @since 5.1
  */
 fun ServerResponse.BodyBuilder.xml() = contentType(MediaType.APPLICATION_XML)
 
 /**
  * Shortcut for setting [MediaType.TEXT_HTML] `Content-Type` header.
- * @author Sebastien Deleuze
+
  * @since 5.1
  */
 fun ServerResponse.BodyBuilder.html() = contentType(MediaType.TEXT_HTML)
@@ -55,7 +55,7 @@ fun ServerResponse.BodyBuilder.html() = contentType(MediaType.TEXT_HTML)
 /**
  * Coroutines variant of [ServerResponse.HeadersBuilder.build].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerResponse.HeadersBuilder<out ServerResponse.HeadersBuilder<*>>.buildAndAwait(): ServerResponse =
@@ -67,7 +67,7 @@ suspend fun ServerResponse.HeadersBuilder<out ServerResponse.HeadersBuilder<*>>.
  * `body(Flow<T>)` variant. This extension is not subject to type erasure and retains
  * actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 @FlowPreview
@@ -77,7 +77,7 @@ suspend inline fun <reified T : Any> ServerResponse.BodyBuilder.bodyAndAwait(flo
 /**
  * Coroutines variant of [ServerResponse.BodyBuilder.syncBody].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerResponse.BodyBuilder.bodyAndAwait(body: Any): ServerResponse =
@@ -88,7 +88,7 @@ suspend fun ServerResponse.BodyBuilder.bodyAndAwait(body: Any): ServerResponse =
  * `bodyToServerSentEvents(Flow<T>)` variant. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 @FlowPreview
@@ -100,7 +100,7 @@ suspend inline fun <reified T : Any> ServerResponse.BodyBuilder.bodyToServerSent
  * Coroutines variant of [ServerResponse.BodyBuilder.syncBody] without the sync prefix since it is ok to use it within
  * another suspendable function.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerResponse.BodyBuilder.renderAndAwait(name: String, vararg modelAttributes: String): ServerResponse =
@@ -110,7 +110,7 @@ suspend fun ServerResponse.BodyBuilder.renderAndAwait(name: String, vararg model
  * Coroutines variant of [ServerResponse.BodyBuilder.syncBody] without the sync prefix since it is ok to use it within
  * another suspendable function.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerResponse.BodyBuilder.renderAndAwait(name: String, model: Map<String, *>): ServerResponse =

@@ -12,8 +12,8 @@ import org.springframework.beans.factory.Aware;
  * <p>Currently only supported for custom JobFactory implementations
  * that are passed in via Spring's SchedulerFactoryBean.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  * @since 2.0
  * @see org.quartz.spi.JobFactory
  * @see SchedulerFactoryBean#setJobFactory

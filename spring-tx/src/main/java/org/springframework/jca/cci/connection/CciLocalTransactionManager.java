@@ -38,8 +38,8 @@ import org.springframework.util.Assert;
  * {@link TransactionAwareConnectionFactoryProxy} for your target ConnectionFactory,
  * which will automatically participate in Spring-managed transactions.
  *
- * @author Thierry Templier
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see ConnectionFactoryUtils#getConnection(javax.resource.cci.ConnectionFactory)
  * @see ConnectionFactoryUtils#releaseConnection

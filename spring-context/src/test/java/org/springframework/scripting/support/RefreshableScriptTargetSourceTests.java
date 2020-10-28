@@ -7,7 +7,7 @@ import org.springframework.beans.factory.BeanFactory;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Rick Evans
+
  */
 public class RefreshableScriptTargetSourceTests {
 

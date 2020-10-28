@@ -12,9 +12,9 @@ import org.springframework.expression.spel.support.BooleanTypedValue;
 /**
  * Represents a NOT operation.
  *
- * @author Andy Clement
- * @author Mark Fisher
- * @author Oliver Becker
+
+
+
  * @since 3.0
  */
 public class OperatorNot extends SpelNodeImpl {  // Not is a unary operator so does not extend BinaryOperator

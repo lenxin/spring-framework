@@ -7,7 +7,7 @@ import org.springframework.test.context.TestPropertySource;
  * support with an inherited explicitly named properties file that is
  * referenced using a relative path.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 public class InheritedRelativePathPropertiesFileTestPropertySourceTests extends

@@ -27,7 +27,7 @@ import org.springframework.web.multipart.support.MissingServletRequestPartExcept
 /**
  * Kotlin test fixture for [RequestParamMethodArgumentResolver].
  *
- * @author Sebastien Deleuze
+
  */
 class RequestParamMethodArgumentResolverKotlinTests {
 

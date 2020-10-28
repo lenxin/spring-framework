@@ -18,9 +18,9 @@ import org.springframework.web.WebApplicationInitializer;
  * {@link #createRootApplicationContext()}, which gets invoked from
  * {@link #registerContextLoaderListener(ServletContext)}.
  *
- * @author Arjen Poutsma
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
+
  * @since 3.2
  */
 public abstract class AbstractContextLoaderInitializer implements WebApplicationInitializer {

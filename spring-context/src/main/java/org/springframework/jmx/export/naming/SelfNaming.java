@@ -9,7 +9,7 @@ import javax.management.ObjectName;
  *
  * <p><b>Note:</b> This interface is mainly intended for internal usage.
  *
- * @author Rob Harrop
+
  * @since 1.2.2
  * @see org.springframework.jmx.export.MBeanExporter
  */

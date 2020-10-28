@@ -12,7 +12,7 @@ import org.springframework.mock.web.test.MockHttpServletRequest
 /**
  * Tests for WebMvc.fn [RouterFunctionDsl].
  *
- * @author Sebastien Deleuze
+
  */
 class RouterFunctionDslTests {
 

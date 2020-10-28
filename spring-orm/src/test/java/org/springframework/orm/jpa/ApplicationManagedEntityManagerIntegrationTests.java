@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
  * An application-managed entity manager can join an existing transaction,
  * but such joining must be made programmatically, not transactionally.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class ApplicationManagedEntityManagerIntegrationTests extends AbstractEntityManagerFactoryIntegrationTests {

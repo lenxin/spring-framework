@@ -9,7 +9,7 @@ import org.springframework.http.HttpMethod;
  * Factory for {@link ClientHttpRequest} objects.
  * Requests are created by the {@link #createRequest(URI, HttpMethod)} method.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 @FunctionalInterface

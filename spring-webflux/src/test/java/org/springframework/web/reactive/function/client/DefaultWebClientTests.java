@@ -24,8 +24,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link DefaultWebClient}.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  */
 public class DefaultWebClientTests {
 

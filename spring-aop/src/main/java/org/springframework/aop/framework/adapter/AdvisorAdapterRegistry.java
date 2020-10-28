@@ -9,8 +9,8 @@ import org.springframework.aop.Advisor;
  *
  * <p><i>This is an SPI interface, not to be implemented by any Spring user.</i>
  *
- * @author Rod Johnson
- * @author Rob Harrop
+
+
  */
 public interface AdvisorAdapterRegistry {
 

@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
  * Composite {@link TransactionAttributeSource} implementation that iterates
  * over a given array of {@link TransactionAttributeSource} instances.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

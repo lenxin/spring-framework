@@ -8,7 +8,7 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * An abstraction for transforming the content of a resource.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 @FunctionalInterface

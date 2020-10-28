@@ -8,7 +8,7 @@ import org.springframework.beans.factory.InitializingBean;
 /**
  * Registry for custom {@link SQLExceptionTranslator} instances for specific databases.
  *
- * @author Thomas Risberg
+
  * @since 3.1.1
  */
 public class CustomSQLExceptionTranslatorRegistrar implements InitializingBean {

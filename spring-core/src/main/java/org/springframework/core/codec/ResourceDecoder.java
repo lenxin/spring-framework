@@ -19,8 +19,8 @@ import org.springframework.util.MimeTypeUtils;
 /**
  * Decoder for {@link Resource Resources}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class ResourceDecoder extends AbstractDataBufferDecoder<Resource> {

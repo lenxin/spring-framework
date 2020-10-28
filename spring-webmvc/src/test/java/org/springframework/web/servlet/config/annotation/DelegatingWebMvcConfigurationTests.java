@@ -40,7 +40,7 @@ import static org.mockito.BDDMockito.verify;
 /**
  * A test fixture for {@link DelegatingWebMvcConfiguration} tests.
  *
- * @author Rossen Stoyanchev
+
  */
 public class DelegatingWebMvcConfigurationTests {
 

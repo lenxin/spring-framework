@@ -5,7 +5,7 @@ import org.springframework.lang.Nullable;
 /**
  * Success callback for a {@link ListenableFuture}.
  *
- * @author Sebastien Deleuze
+
  * @since 4.1
  * @param <T> the result type
  */

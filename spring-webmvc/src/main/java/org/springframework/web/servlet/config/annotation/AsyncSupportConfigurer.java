@@ -16,7 +16,7 @@ import org.springframework.web.context.request.async.DeferredResultProcessingInt
 /**
  * Helps with configuring options for asynchronous request processing.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.2
  */
 public class AsyncSupportConfigurer {

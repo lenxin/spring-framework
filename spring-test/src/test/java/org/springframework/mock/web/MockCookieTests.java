@@ -9,8 +9,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link MockCookie}.
  *
- * @author Vedran Pavic
- * @author Sam Brannen
+
+
  * @since 5.1
  */
 public class MockCookieTests {

@@ -16,7 +16,7 @@ import org.springframework.scripting.ScriptSource;
 /**
  * BeanShell-based implementation of Spring's {@link ScriptEvaluator} strategy interface.
  *
- * @author Juergen Hoeller
+
  * @since 4.0
  * @see Interpreter#eval(String)
  */

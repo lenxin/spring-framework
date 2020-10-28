@@ -4,7 +4,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 
 /**
- * @author Mark Fisher
+
  */
 public class TestBeanNameGenerator extends AnnotationBeanNameGenerator {
 

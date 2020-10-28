@@ -10,7 +10,7 @@ import org.springframework.http.HttpRequest;
  * <p>Used to invoke the next interceptor in the interceptor chain,
  * or - if the calling interceptor is last - execute the request itself.
  *
- * @author Arjen Poutsma
+
  * @since 3.1
  * @see ClientHttpRequestInterceptor
  */

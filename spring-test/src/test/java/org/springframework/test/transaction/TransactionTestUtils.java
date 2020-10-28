@@ -8,7 +8,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
  *
  * <p>All {@code assert*()} methods throw {@link AssertionError}s.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 public abstract class TransactionTestUtils {

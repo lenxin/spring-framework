@@ -28,7 +28,7 @@ import static org.mockito.BDDMockito.*;
  * Unit tests for
  * {@link org.springframework.web.socket.sockjs.client.AbstractClientSockJsSession}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ClientSockJsSessionTests {
 

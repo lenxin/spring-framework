@@ -46,7 +46,7 @@ import org.springframework.util.concurrent.ListenableFutureTask;
 /**
  * Unit tests for StompBrokerRelayMessageHandler.
  *
- * @author Rossen Stoyanchev
+
  */
 public class StompBrokerRelayMessageHandlerTests {
 

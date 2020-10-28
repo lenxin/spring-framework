@@ -27,7 +27,7 @@ import static org.springframework.core.io.buffer.DataBufferUtils.*;
 /**
  * Unit tests for {@link ProtobufDecoder}.
  *
- * @author Sebastien Deleuze
+
  */
 public class ProtobufDecoderTests extends AbstractDecoderTestCase<ProtobufDecoder> {
 

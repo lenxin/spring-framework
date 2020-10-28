@@ -30,7 +30,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link TilesViewResolver}.
  *
- * @author mick semb wever
+
  */
 public class TilesViewResolverTests {
 

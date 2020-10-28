@@ -15,8 +15,8 @@ import org.springframework.util.Assert;
 /**
  * Helper bean for registering {@link JmsListenerEndpoint} with a {@link JmsListenerEndpointRegistry}.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see org.springframework.jms.annotation.JmsListenerConfigurer
  */

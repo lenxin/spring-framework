@@ -23,8 +23,8 @@ import org.springframework.util.MimeTypeUtils;
  * composition chain to ensure cached data buffers are released prior to an
  * error or cancellation signal.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class DataBufferDecoder extends AbstractDataBufferDecoder<DataBuffer> {

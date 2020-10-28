@@ -11,8 +11,8 @@ import org.springframework.util.ClassUtils;
  * should be used based on the value of {@link EnableTransactionManagement#mode} on the
  * importing {@code @Configuration} class.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  * @since 3.1
  * @see EnableTransactionManagement
  * @see ProxyTransactionManagementConfiguration

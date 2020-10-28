@@ -15,7 +15,7 @@ import static org.springframework.test.context.junit4.JUnitTestingUtils.*;
  * Verifies proper handling of JUnit's {@link Test#expected() &#064;Test(expected = ...)}
  * support in conjunction with the {@link SpringRunner}.
  *
- * @author Sam Brannen
+
  * @since 3.0
  */
 @RunWith(JUnit4.class)

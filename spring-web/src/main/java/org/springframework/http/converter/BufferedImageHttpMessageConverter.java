@@ -47,7 +47,7 @@ import org.springframework.util.StringUtils;
  * <p>The {@link #process(ImageReadParam)} and {@link #process(ImageWriteParam)}
  * template methods allow subclasses to override Image I/O parameters.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public class BufferedImageHttpMessageConverter implements HttpMessageConverter<BufferedImage> {

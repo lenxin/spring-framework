@@ -42,9 +42,9 @@ import org.springframework.web.socket.sockjs.support.AbstractSockJsService;
  *
  * <p>See the {@link AbstractSockJsService} base class for important details on request mapping.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
  * @since 4.0
  */
 public class TransportHandlingSockJsService extends AbstractSockJsService implements SockJsServiceConfig, Lifecycle {

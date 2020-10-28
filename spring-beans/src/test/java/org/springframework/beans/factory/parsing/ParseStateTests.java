@@ -19,8 +19,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Chris Beams
+
+
  * @since 2.0
  */
 public class ParseStateTests {

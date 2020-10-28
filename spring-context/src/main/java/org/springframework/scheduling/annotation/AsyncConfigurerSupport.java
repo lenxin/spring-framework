@@ -10,7 +10,7 @@ import org.springframework.lang.Nullable;
  * so that the defaults are used. Provides a backward compatible alternative
  * of implementing {@link AsyncConfigurer} directly.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class AsyncConfigurerSupport implements AsyncConfigurer {

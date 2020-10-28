@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
 /**
  * Tests set value expressions.
  *
- * @author Keith Donald
- * @author Andy Clement
+
+
  */
 public class SetValueTests extends AbstractExpressionTests {
 

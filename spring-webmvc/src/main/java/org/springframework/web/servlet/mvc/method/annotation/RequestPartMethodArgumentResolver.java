@@ -45,9 +45,9 @@ import org.springframework.web.multipart.support.RequestPartServletServerHttpReq
  * is raised and a 400 response status code returned if
  * {@link org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver} is configured.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Juergen Hoeller
+
+
+
  * @since 3.1
  */
 public class RequestPartMethodArgumentResolver extends AbstractMessageConverterMethodArgumentResolver {

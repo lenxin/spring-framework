@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
 /**
  * Predicates for messaging annotations.
  *
- * @author Rossen Stoyanchev
+
  */
 public class MessagingPredicates {
 

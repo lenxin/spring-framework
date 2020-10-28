@@ -30,7 +30,7 @@ import static org.junit.Assert.*;
 /**
  * Test for {@link org.springframework.web.socket.adapter.standard.ConvertingEncoderDecoderSupport}.
  *
- * @author Phillip Webb
+
  */
 public class ConvertingEncoderDecoderSupportTests {
 

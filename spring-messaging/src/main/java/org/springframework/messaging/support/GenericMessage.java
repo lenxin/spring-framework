@@ -12,7 +12,7 @@ import org.springframework.util.ObjectUtils;
  * An implementation of {@link Message} with a generic payload.
  * Once created, a GenericMessage is immutable.
  *
- * @author Mark Fisher
+
  * @since 4.0
  * @param <T> the payload type
  * @see MessageBuilder

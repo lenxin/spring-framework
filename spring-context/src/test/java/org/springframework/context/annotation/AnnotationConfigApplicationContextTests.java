@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
 import static org.springframework.util.StringUtils.*;
 
 /**
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  */
 public class AnnotationConfigApplicationContextTests {
 

@@ -20,9 +20,9 @@ import org.springframework.web.servlet.ModelAndView;
  * {@linkplain #setMappedHandlerClasses handler classes} that the resolver
  * should be applied to and implements the {@link Ordered} interface.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @since 3.0
  */
 public abstract class AbstractHandlerExceptionResolver implements HandlerExceptionResolver, Ordered {

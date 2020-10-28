@@ -6,7 +6,7 @@ import org.springframework.jms.listener.MessageListenerContainer;
  * Factory of {@link MessageListenerContainer} based on a
  * {@link JmsListenerEndpoint} definition.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @param <C> the container type
  * @see JmsListenerEndpoint

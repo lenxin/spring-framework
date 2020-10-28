@@ -28,7 +28,7 @@ import org.springframework.validation.beanvalidation.MethodValidationPostProcess
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class MethodValidationTests {
 

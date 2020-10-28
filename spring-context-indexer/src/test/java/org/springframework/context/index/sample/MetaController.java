@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 /**
  * Sample meta-annotation.
  *
- * @author Stephane Nicoll
+
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

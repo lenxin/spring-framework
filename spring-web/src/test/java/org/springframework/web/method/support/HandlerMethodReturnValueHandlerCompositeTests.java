@@ -14,7 +14,7 @@ import static org.mockito.Mockito.when;
 
 /**
  * Test fixture with {@link HandlerMethodReturnValueHandlerComposite}.
- * @author Rossen Stoyanchev
+
  */
 @SuppressWarnings("unused")
 public class HandlerMethodReturnValueHandlerCompositeTests {

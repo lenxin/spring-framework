@@ -34,7 +34,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link ScriptTemplateView}.
  *
- * @author Sebastien Deleuze
+
  */
 public class ScriptTemplateViewTests {
 

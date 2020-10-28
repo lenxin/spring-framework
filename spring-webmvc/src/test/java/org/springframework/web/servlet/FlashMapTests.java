@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link FlashMap} tests.
  *
- * @author Rossen Stoyanchev
+
  */
 public class FlashMapTests {
 

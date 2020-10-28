@@ -19,7 +19,7 @@ import org.springframework.util.StreamUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public abstract class AbstractHttpRequestFactoryTestCase extends AbstractMockWebServerTestCase {
 

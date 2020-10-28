@@ -12,8 +12,8 @@ import org.springframework.util.Assert;
 /**
  * Abstract base class for {@link MergedAnnotation} implementations.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
+
+
  * @since 5.2
  * @param <A> the annotation type
  */

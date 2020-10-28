@@ -10,10 +10,10 @@ import org.springframework.util.Assert;
  * unnecessary refreshes. By default, a refresh will be performed every time
  * the "refreshCheckDelay" has elapsed.
  *
- * @author Rob Harrop
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Mark Fisher
+
+
+
+
  * @since 2.0
  * @see org.springframework.beans.factory.BeanFactory
  * @see #requiresRefresh()

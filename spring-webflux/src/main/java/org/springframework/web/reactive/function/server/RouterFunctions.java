@@ -34,7 +34,7 @@ import org.springframework.web.server.adapter.WebHttpHandlerBuilder;
  * {@code RouterFunction} into an {@code HttpHandler}, which can be run in Servlet 3.1+,
  * Reactor, or Undertow.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public abstract class RouterFunctions {

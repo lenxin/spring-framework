@@ -47,8 +47,8 @@ import org.springframework.util.xml.StaxUtils;
  * This implementation inspects the given {@code Source} or {@code Result}, and
  * delegates further handling to overridable template methods.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public abstract class AbstractMarshaller implements Marshaller, Unmarshaller {

@@ -18,8 +18,8 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
- * @author Chris Beams
+
+
  */
 @SuppressWarnings("unchecked")
 public class ScheduledTasksBeanDefinitionParserTests {

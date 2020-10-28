@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  *
  * <p>Configuration will be loaded from {@link DefaultConfigClassesBaseTests.ContextConfiguration}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

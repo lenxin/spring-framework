@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
  * Integration tests for SPR-13211 which verify that a custom mock request
  * is not reused by MockMvc.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see RequestContextHolderTests
  */

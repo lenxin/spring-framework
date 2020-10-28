@@ -29,8 +29,8 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * A {@link RequestUpgradeStrategy} for use with Jetty.
  *
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class JettyRequestUpgradeStrategy implements RequestUpgradeStrategy, Lifecycle {

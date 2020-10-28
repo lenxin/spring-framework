@@ -11,7 +11,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 /**
  * Unit tests for {@link DefaultRouterFunctionSpec}.
- * @author Rossen Stoyanchev
+
  */
 public class DefaultRouterFunctionSpecTests {
 

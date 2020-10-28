@@ -20,8 +20,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@code ResourceTransformerSupport}.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  */
 public class ResourceTransformerSupportTests {
 

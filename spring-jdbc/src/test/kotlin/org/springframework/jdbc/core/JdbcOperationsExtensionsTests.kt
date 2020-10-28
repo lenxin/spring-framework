@@ -25,8 +25,8 @@ import java.sql.*
 /**
  * Mock object based tests for [JdbcOperations] Kotlin extensions
  *
- * @author Mario Arias
- * @author Sebastien Deleuze
+
+
  */
 class JdbcOperationsExtensionsTests {
 

@@ -51,8 +51,8 @@ import org.springframework.web.context.ServletContextAware;
  *
  * Note: Spring's FreeMarker support requires FreeMarker 2.3 or higher.
  *
- * @author Darren Davison
- * @author Rob Harrop
+
+
  * @since 03.03.2004
  * @see #setConfigLocation
  * @see #setFreemarkerSettings

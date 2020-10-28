@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Canonical ClassFilter instance that matches all classes.
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 final class TrueClassFilter implements ClassFilter, Serializable {

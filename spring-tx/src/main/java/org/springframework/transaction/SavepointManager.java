@@ -12,7 +12,7 @@ package org.springframework.transaction;
  * <p>This interface is inspired by JDBC 3.0's Savepoint mechanism
  * but is independent from any specific persistence technology.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see TransactionStatus
  * @see TransactionDefinition#PROPAGATION_NESTED

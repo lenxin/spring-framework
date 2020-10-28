@@ -26,7 +26,7 @@ import org.springframework.web.reactive.function.client.ExchangeStrategies;
  * {@link org.springframework.web.reactive.function.client.ExchangeFilterFunction exchange filter function}.
  * All methods default to calling through to the wrapped request.
  *
- * @author Arjen Poutsma
+
  * @since 5.0.5
  */
 public class ClientResponseWrapper implements ClientResponse {

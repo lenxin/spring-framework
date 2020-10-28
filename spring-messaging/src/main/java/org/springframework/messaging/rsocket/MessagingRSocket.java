@@ -33,7 +33,7 @@ import org.springframework.util.StringUtils;
  * {@link Message}, delegates to a {@link Function} for handling, and then
  * obtains the response from a "reply" header.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 class MessagingRSocket extends AbstractRSocket {

@@ -24,7 +24,7 @@ import org.springframework.lang.Nullable;
  * or {@link #setLexicalHandler(org.xml.sax.ext.LexicalHandler)} will result in
  * {@code UnsupportedOperationException}s.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see XMLEventWriter
  * @see XMLStreamWriter

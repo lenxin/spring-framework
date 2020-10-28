@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * Interceptor that checks the authorization of the current user via the
  * user's roles, as evaluated by HttpServletRequest's isUserInRole method.
  *
- * @author Juergen Hoeller
+
  * @since 20.06.2003
  * @see javax.servlet.http.HttpServletRequest#isUserInRole
  */

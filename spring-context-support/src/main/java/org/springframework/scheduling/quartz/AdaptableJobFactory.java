@@ -14,7 +14,7 @@ import org.springframework.util.ReflectionUtils;
  *
  * <p>Compatible with Quartz 2.1.4 and higher, as of Spring 4.1.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see DelegatingJob
  * @see #adaptJob(Object)

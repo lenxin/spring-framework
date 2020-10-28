@@ -14,9 +14,9 @@ import org.springframework.lang.Nullable;
  * <p>Subclasses may wish to override the {@link #get} and {@link #remove}
  * methods to add synchronization around the call back into this super class.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
+
  * @since 2.0
  */
 public abstract class AbstractRequestAttributesScope implements Scope {

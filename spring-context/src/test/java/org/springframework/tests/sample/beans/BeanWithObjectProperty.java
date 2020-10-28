@@ -1,7 +1,7 @@
 package org.springframework.tests.sample.beans;
 
 /**
- * @author Juergen Hoeller
+
  * @since 17.08.2004
  */
 public class BeanWithObjectProperty {

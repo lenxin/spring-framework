@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
  * Exception thrown on an optimistic locking violation for a mapped object.
  * Provides information about the persistent class and the identifier.
  *
- * @author Juergen Hoeller
+
  * @since 13.10.2003
  */
 @SuppressWarnings("serial")

@@ -5,7 +5,7 @@ import javax.jms.Queue;
 /**
  * Stub implementation of the {@link javax.jms.Queue} interface.
  *
- * @author Rick Evans
+
  */
 public class StubQueue implements Queue {
 

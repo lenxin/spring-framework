@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
  * (typically bound to a Java 8 lambda expression) or a printf-style
  * format string ({@link String#format})in its {@link #toString()}.
  *
- * @author Juergen Hoeller
+
  * @since 5.2
  * @see #of(Supplier)
  * @see #format(String, Object)

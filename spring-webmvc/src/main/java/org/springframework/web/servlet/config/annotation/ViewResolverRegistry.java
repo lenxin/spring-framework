@@ -32,8 +32,8 @@ import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
  * {@link org.springframework.web.servlet.ViewResolver ViewResolver} instances.
  * This class is expected to be used via {@link WebMvcConfigurer#configureViewResolvers}.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
  */
 public class ViewResolverRegistry {

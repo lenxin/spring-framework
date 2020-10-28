@@ -13,7 +13,7 @@ import org.springframework.util.ObjectUtils;
  * Shared utility class used to evaluate and cache SpEL expressions that
  * are defined on {@link java.lang.reflect.AnnotatedElement}.
  *
- * @author Stephane Nicoll
+
  * @since 4.2
  * @see AnnotatedElementKey
  */

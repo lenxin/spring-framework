@@ -34,9 +34,9 @@ import org.springframework.lang.Nullable;
  * <p>This class handles annotation parsing and validation functionality.
  * It does not actually generate Spring AOP Advisors, which is deferred to subclasses.
  *
- * @author Rod Johnson
- * @author Adrian Colyer
- * @author Juergen Hoeller
+
+
+
  * @since 2.0
  */
 public abstract class AbstractAspectJAdvisorFactory implements AspectJAdvisorFactory {

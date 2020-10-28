@@ -28,7 +28,7 @@ import org.springframework.messaging.support.MessageHeaderAccessor;
 
 /**
  * Unit tests for {@link StompSubProtocolErrorHandler}.
- * @author Rossen Stoyanchev
+
  */
 public class StompSubProtocolErrorHandlerTests {
 

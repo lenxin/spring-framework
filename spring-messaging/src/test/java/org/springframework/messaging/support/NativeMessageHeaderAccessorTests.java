@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link NativeMessageHeaderAccessor}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class NativeMessageHeaderAccessorTests {
 

@@ -19,7 +19,7 @@ import org.springframework.util.Assert;
 /**
  * {@link ClientHttpConnector} for the Jetty Reactive Streams HttpClient.
  *
- * @author Sebastien Deleuze
+
  * @since 5.1
  * @see <a href="https://github.com/jetty-project/jetty-reactive-httpclient">Jetty ReactiveStreams HttpClient</a>
  */

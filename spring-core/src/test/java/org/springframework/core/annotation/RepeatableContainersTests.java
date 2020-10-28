@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.*;
 /**
  * Tests for {@link RepeatableContainers}.
  *
- * @author Phillip Webb
+
  */
 public class RepeatableContainersTests {
 

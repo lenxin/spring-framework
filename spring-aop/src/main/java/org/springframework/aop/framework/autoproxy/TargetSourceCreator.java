@@ -11,8 +11,8 @@ import org.springframework.lang.Nullable;
  * <p>AbstractAutoProxyCreator can support a number of TargetSourceCreators,
  * which will be applied in order.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @FunctionalInterface
 public interface TargetSourceCreator {

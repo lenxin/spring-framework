@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Tests to ensure back-compatibility with Spring Framework 5.1.
  *
- * @author Phillip Webb
+
  * @since 5.2
  */
 public class AnnotationBackCompatibiltyTests {

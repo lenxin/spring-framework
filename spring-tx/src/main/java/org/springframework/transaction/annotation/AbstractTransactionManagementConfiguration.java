@@ -20,8 +20,8 @@ import org.springframework.util.CollectionUtils;
  * Abstract base {@code @Configuration} class providing common structure for enabling
  * Spring's annotation-driven transaction management capability.
  *
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
  * @since 3.1
  * @see EnableTransactionManagement
  */

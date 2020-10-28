@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with {@link ErrorsMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ErrorsMethodArgumentResolverTests {
 

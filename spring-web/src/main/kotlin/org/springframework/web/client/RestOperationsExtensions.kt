@@ -13,8 +13,8 @@ import java.net.URI
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -27,8 +27,8 @@ inline fun <reified T> RestOperations.getForObject(url: String, vararg uriVariab
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -41,8 +41,8 @@ inline fun <reified T> RestOperations.getForObject(url: String, uriVariables: Ma
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -55,7 +55,7 @@ inline fun <reified T> RestOperations.getForObject(url: URI): T =
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0.2
  */
 @Throws(RestClientException::class)
@@ -68,8 +68,8 @@ inline fun <reified T> RestOperations.getForEntity(url: URI): ResponseEntity<T> 
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -82,7 +82,7 @@ inline fun <reified T> RestOperations.getForEntity(url: String, vararg uriVariab
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0.2
  */
 @Throws(RestClientException::class)
@@ -95,7 +95,7 @@ inline fun <reified T> RestOperations.getForEntity(url: String, uriVariables: Ma
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0.2
  */
 @Throws(RestClientException::class)
@@ -109,7 +109,7 @@ inline fun <reified T> RestOperations.patchForObject(url: String, request: Any? 
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0.2
  */
 @Throws(RestClientException::class)
@@ -123,7 +123,7 @@ inline fun <reified T> RestOperations.patchForObject(url: String, request: Any? 
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0.2
  */
 @Throws(RestClientException::class)
@@ -136,8 +136,8 @@ inline fun <reified T> RestOperations.patchForObject(url: URI, request: Any? = n
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -151,8 +151,8 @@ inline fun <reified T> RestOperations.postForObject(url: String, request: Any? =
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -166,8 +166,8 @@ inline fun <reified T> RestOperations.postForObject(url: String, request: Any? =
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -180,8 +180,8 @@ inline fun <reified T> RestOperations.postForObject(url: URI, request: Any? = nu
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -195,8 +195,8 @@ inline fun <reified T> RestOperations.postForEntity(url: String, request: Any? =
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -210,8 +210,8 @@ inline fun <reified T> RestOperations.postForEntity(url: String, request: Any? =
  * extension is subject to type erasure. Use [exchange] if you need to retain actual
  * generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -223,8 +223,8 @@ inline fun <reified T> RestOperations.postForEntity(url: URI, request: Any? = nu
  * variant leveraging Kotlin reified type parameters. This extension is not subject to
  * type erasure and retains actual generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -237,8 +237,8 @@ inline fun <reified T> RestOperations.exchange(url: String, method: HttpMethod,
  * variant leveraging Kotlin reified type parameters. This extension is not subject to
  * type erasure and retains actual generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -251,8 +251,8 @@ inline fun <reified T> RestOperations.exchange(url: String, method: HttpMethod,
  * variant leveraging Kotlin reified type parameters. This extension is not subject to
  * type erasure and retains actual generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)
@@ -265,8 +265,8 @@ inline fun <reified T> RestOperations.exchange(url: URI, method: HttpMethod,
  * variant leveraging Kotlin reified type parameters. This extension is not subject to
  * type erasure and retains actual generic type arguments.
  *
- * @author Jon Schneider
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 @Throws(RestClientException::class)

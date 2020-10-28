@@ -21,9 +21,9 @@ import org.springframework.lang.Nullable;
  *
  * <p>Mainly for use within the framework, but also useful for application code.
  *
- * @author Juergen Hoeller
- * @author Phillip Webb
- * @author Brian Clozel
+
+
+
  * @since 3.2.2
  * @see FileCopyUtils
  */

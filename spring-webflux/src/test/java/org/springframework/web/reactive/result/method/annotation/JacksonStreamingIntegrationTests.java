@@ -23,7 +23,7 @@ import org.springframework.web.server.adapter.WebHttpHandlerBuilder;
 import static org.springframework.http.MediaType.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class JacksonStreamingIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

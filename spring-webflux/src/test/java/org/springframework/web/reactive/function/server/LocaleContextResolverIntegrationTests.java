@@ -22,7 +22,7 @@ import org.springframework.web.server.i18n.FixedLocaleContextResolver;
 import static org.junit.Assert.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class LocaleContextResolverIntegrationTests extends AbstractRouterFunctionIntegrationTests {
 

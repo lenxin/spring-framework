@@ -20,7 +20,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * {@code MultiValueMap} implementation for wrapping Jetty HTTP headers.
  *
- * @author Brian Clozel
+
  * @since 5.1.1
  */
 class JettyHeadersAdapter implements MultiValueMap<String, String> {

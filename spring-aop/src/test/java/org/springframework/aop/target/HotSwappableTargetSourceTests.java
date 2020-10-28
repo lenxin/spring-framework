@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
 import static org.springframework.tests.TestResourceUtils.*;
 
 /**
- * @author Rod Johnson
- * @author Chris Beams
+
+
  */
 public class HotSwappableTargetSourceTests {
 

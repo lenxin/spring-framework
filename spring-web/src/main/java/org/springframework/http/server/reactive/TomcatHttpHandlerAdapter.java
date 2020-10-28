@@ -32,8 +32,8 @@ import org.springframework.util.ReflectionUtils;
  * {@link ServletHttpHandlerAdapter} extension that uses Tomcat APIs for reading
  * from the request and writing to the response with {@link ByteBuffer}.
  *
- * @author Violeta Georgieva
- * @author Brian Clozel
+
+
  * @since 5.0
  * @see org.springframework.web.server.adapter.AbstractReactiveWebInitializer
  */

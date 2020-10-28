@@ -18,7 +18,7 @@ import org.springframework.validation.DataBinder;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 4.2
  */
 public class MoneyFormattingTests {

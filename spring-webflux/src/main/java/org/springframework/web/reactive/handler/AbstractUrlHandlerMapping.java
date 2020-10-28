@@ -30,9 +30,9 @@ import org.springframework.web.util.pattern.PathPattern;
  * current request path. The most specific pattern is defined as the longest
  * path pattern with the fewest captured variables and wildcards.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Brian Clozel
+
+
+
  * @since 5.0
  */
 public abstract class AbstractUrlHandlerMapping extends AbstractHandlerMapping {

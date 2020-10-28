@@ -74,10 +74,10 @@ import org.springframework.util.StringValueResolver;
  * control over task registration (e.g. registration of {@link Trigger} tasks.
  * See the @{@link EnableScheduling} javadocs for complete usage details.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Elizabeth Chatman
+
+
+
+
  * @since 3.0
  * @see Scheduled
  * @see EnableScheduling

@@ -1,7 +1,7 @@
 /**
  * Information about a class being parsed in a {@link ClassReader}.
  *
- * @author Eric Bruneton
+
  */
 final class Context {
 

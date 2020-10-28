@@ -26,7 +26,7 @@ import static org.springframework.http.MediaType.APPLICATION_XML;
 /**
  * Unit tests for {@link Jackson2CborEncoder}.
  *
- * @author Sebastien Deleuze
+
  */
 public class Jackson2CborEncoderTests extends AbstractLeakCheckingTestCase {
 

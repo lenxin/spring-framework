@@ -12,8 +12,8 @@ import org.springframework.web.context.request.NativeWebRequest;
 /**
  * Holder for a {@link Callable}, a timeout value, and a task executor.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.2
  * @param <V> the value type
  */

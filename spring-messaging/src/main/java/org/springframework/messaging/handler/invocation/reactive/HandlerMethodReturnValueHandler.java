@@ -10,7 +10,7 @@ import org.springframework.messaging.Message;
  * Handle the return value from the invocation of an annotated {@link Message}
  * handling method.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public interface HandlerMethodReturnValueHandler {

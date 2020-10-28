@@ -8,7 +8,7 @@ import org.junit.rules.ExpectedException;
 /**
  * Unit tests for {@link XmlExpectationsHelper}.
  *
- * @author Matthew Depue
+
  */
 public class XmlExpectationsHelperTests {
 

@@ -25,8 +25,8 @@ import org.springframework.core.io.buffer.LeakAwareDataBufferFactory;
 import static org.junit.Assert.*;
 
 /**
- * @author Rossen Stoyanchev
- * @author Stephane Maldini
+
+
  */
 public class ChannelSendOperatorTests {
 

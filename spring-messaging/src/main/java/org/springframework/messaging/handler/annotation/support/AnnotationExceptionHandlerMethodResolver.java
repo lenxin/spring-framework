@@ -18,8 +18,8 @@ import org.springframework.messaging.handler.invocation.AbstractExceptionHandler
  * exception types handled are extracted either from the annotation, if present,
  * or from the method signature as a fallback option.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 public class AnnotationExceptionHandlerMethodResolver extends AbstractExceptionHandlerMethodResolver {

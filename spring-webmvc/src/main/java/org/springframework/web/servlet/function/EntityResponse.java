@@ -18,7 +18,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * Entity-specific subtype of {@link ServerResponse} that exposes entity data.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  * @param <T> the entity type
  */

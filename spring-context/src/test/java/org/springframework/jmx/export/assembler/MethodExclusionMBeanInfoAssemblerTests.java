@@ -12,9 +12,9 @@ import org.springframework.jmx.JmxTestBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Rick Evans
- * @author Chris Beams
+
+
+
  */
 public class MethodExclusionMBeanInfoAssemblerTests extends AbstractJmxAssemblerTests {
 

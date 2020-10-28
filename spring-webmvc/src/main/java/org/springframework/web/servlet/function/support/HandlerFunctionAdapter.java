@@ -18,7 +18,7 @@ import org.springframework.web.servlet.function.ServerResponse;
 /**
  * {@code HandlerAdapter} implementation that supports {@link HandlerFunction}s.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 public class HandlerFunctionAdapter implements HandlerAdapter, Ordered {

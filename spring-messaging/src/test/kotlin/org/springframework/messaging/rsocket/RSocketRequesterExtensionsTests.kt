@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono
 /**
  * Mock object based tests for [RSocketRequester] Kotlin extensions
  *
- * @author Sebastien Deleuze
+
  */
 @FlowPreview
 class RSocketRequesterExtensionsTests {

@@ -31,7 +31,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  * @since 5.1
  */
 public class DefaultServerRequestTests {

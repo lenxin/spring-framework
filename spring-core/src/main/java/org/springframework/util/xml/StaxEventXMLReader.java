@@ -32,7 +32,7 @@ import org.springframework.util.StringUtils;
  * SAX {@code XMLReader} that reads from a StAX {@code XMLEventReader}. Consumes {@code XMLEvents} from
  * an {@code XMLEventReader}, and calls the corresponding methods on the SAX callback interfaces.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see XMLEventReader
  * @see #setContentHandler(org.xml.sax.ContentHandler)

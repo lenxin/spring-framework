@@ -64,7 +64,7 @@ import org.springframework.util.ReflectionUtils;
  * configured WebSphere transaction strategies in your persistence provider, with no
  * need to specifically connect those setups in any way.</b>
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see #setUowManager
  * @see #setUowManagerName

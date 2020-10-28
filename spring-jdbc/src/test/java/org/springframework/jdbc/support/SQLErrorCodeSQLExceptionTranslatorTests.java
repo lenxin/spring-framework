@@ -22,9 +22,9 @@ import org.springframework.lang.Nullable;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class SQLErrorCodeSQLExceptionTranslatorTests {
 

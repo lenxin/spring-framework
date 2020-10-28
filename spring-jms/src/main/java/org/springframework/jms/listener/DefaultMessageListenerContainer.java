@@ -98,7 +98,7 @@ import org.springframework.util.backoff.FixedBackOff;
  * "AUTO_ACKNOWLEDGE" mode, this container applies automatic message acknowledgment
  * before listener execution, with no redelivery in case of an exception.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see #setTransactionManager
  * @see #setCacheLevel

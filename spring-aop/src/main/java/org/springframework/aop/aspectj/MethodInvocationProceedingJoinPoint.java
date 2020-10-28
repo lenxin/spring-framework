@@ -27,10 +27,10 @@ import org.springframework.util.Assert;
  * A common example is casting the object to an introduced interface in the implementation of
  * an introduction. There is no such distinction between target and proxy in AspectJ itself.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Adrian Colyer
- * @author Ramnivas Laddad
+
+
+
+
  * @since 2.0
  */
 public class MethodInvocationProceedingJoinPoint implements ProceedingJoinPoint, JoinPoint.StaticPart {

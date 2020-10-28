@@ -8,8 +8,8 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link TextMessage}.
  *
- * @author Shinobu Aoki
- * @author Juergen Hoeller
+
+
  */
 public class TextMessageTests {
 

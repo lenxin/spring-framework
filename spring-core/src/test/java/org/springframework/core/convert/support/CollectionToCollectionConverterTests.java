@@ -27,9 +27,9 @@ import org.springframework.core.io.Resource;
 import static org.junit.Assert.*;
 
 /**
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  */
 public class CollectionToCollectionConverterTests {
 

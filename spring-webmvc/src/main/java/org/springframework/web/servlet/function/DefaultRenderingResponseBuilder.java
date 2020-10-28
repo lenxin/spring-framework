@@ -22,7 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  * Default {@link RenderingResponse.Builder} implementation.
  *
- * @author Arjen Poutsma
+
  * @since 5.1
  */
 final class DefaultRenderingResponseBuilder implements RenderingResponse.Builder {

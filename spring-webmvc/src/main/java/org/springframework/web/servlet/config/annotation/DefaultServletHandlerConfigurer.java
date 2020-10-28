@@ -19,8 +19,8 @@ import org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler
  * it allows all other handler mappings to handle the request, and if none
  * of them do, this handler can forward it to the "default" Servlet.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.1
  * @see DefaultServletHttpRequestHandler
  */

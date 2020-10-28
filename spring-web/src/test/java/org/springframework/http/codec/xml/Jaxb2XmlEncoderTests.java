@@ -23,8 +23,8 @@ import static org.springframework.core.io.buffer.DataBufferUtils.release;
 import static org.xmlunit.matchers.CompareMatcher.isSimilarTo;
 
 /**
- * @author Sebastien Deleuze
- * @author Arjen Poutsma
+
+
  */
 public class Jaxb2XmlEncoderTests extends AbstractEncoderTestCase<Jaxb2XmlEncoder> {
 

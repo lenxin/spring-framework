@@ -22,9 +22,9 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link MessageTag}.
  *
- * @author Juergen Hoeller
- * @author Alef Arendsen
- * @author Nicholas Williams
+
+
+
  */
 @SuppressWarnings("serial")
 public class MessageTagTests extends AbstractTagTests {

@@ -36,8 +36,8 @@ import org.springframework.lang.Nullable;
  * <p>Additional mappings can be added via the {@code mappings} bean property,
  * as lines that follow the {@code mime.types} file format.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #setMappingLocation
  * @see #setMappings

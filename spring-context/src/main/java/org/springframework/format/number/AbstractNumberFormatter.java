@@ -11,8 +11,8 @@ import org.springframework.format.Formatter;
  * Abstract formatter for Numbers,
  * providing a {@link #getNumberFormat(java.util.Locale)} template method.
  *
- * @author Juergen Hoeller
- * @author Keith Donald
+
+
  * @since 3.0
  */
 public abstract class AbstractNumberFormatter implements Formatter<Number> {

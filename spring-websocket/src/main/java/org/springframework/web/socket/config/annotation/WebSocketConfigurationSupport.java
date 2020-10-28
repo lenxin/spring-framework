@@ -10,7 +10,7 @@ import org.springframework.web.servlet.HandlerMapping;
 /**
  * Configuration support for WebSocket request handling.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public class WebSocketConfigurationSupport {

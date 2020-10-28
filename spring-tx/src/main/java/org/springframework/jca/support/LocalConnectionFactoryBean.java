@@ -45,7 +45,7 @@ import org.springframework.lang.Nullable;
  * (e.g. {@link org.springframework.jca.cci.connection.CciLocalTransactionManager})
  * to drive local transactions.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see #setManagedConnectionFactory
  * @see #setConnectionManager

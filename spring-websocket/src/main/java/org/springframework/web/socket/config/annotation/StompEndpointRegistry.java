@@ -6,7 +6,7 @@ import org.springframework.web.util.UrlPathHelper;
 /**
  * A contract for registering STOMP over WebSocket endpoints.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public interface StompEndpointRegistry {

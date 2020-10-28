@@ -8,7 +8,7 @@ import org.springframework.util.Assert;
  * property sources declared on a test class and all of its superclasses
  * via {@link TestPropertySource @TestPropertySource}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see TestPropertySource
  */

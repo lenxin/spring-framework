@@ -20,9 +20,9 @@ import org.springframework.web.util.WebUtils;
  * <p>Error views are analogous to error page JSPs, but can be used with any kind of
  * exception including any checked one, with fine-granular mappings for specific handlers.
  *
- * @author Juergen Hoeller
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
+
  * @since 22.11.2003
  * @see org.springframework.web.servlet.DispatcherServlet
  */

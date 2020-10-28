@@ -26,8 +26,8 @@ package org.springframework.test.web.servlet;
  *   .andExpect(content().mimeType(MediaType.APPLICATION_JSON));
  * </pre>
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @since 3.2
  */
 @FunctionalInterface

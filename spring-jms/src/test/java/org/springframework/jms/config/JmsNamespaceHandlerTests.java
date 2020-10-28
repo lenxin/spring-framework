@@ -32,10 +32,10 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.mock;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Christian Dupuis
- * @author Stephane Nicoll
+
+
+
+
  */
 public class JmsNamespaceHandlerTests {
 	private static final String DEFAULT_CONNECTION_FACTORY = "connectionFactory";

@@ -19,7 +19,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Mock object based tests for SimpleJdbcInsert.
  *
- * @author Thomas Risberg
+
  */
 public class SimpleJdbcInsertTests {
 

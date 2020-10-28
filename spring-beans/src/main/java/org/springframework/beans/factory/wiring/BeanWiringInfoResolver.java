@@ -12,7 +12,7 @@ import org.springframework.lang.Nullable;
  * {@link ClassNameBeanWiringInfoResolver}, which uses the fully-qualified
  * class name as bean name.
  *
- * @author Rod Johnson
+
  * @since 2.0
  * @see BeanWiringInfo
  * @see ClassNameBeanWiringInfoResolver

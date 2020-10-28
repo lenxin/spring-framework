@@ -13,7 +13,7 @@ import org.springframework.transaction.PlatformTransactionManager;
  * giving clients a hint on what kind of transaction manager they have been given
  * and on what concrete resource the transaction manager is operating on.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.4
  * @see TransactionSynchronizationManager
  */

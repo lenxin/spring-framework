@@ -73,8 +73,8 @@ import static org.junit.Assert.*;
 /**
  * Test class for {@link Jackson2ObjectMapperBuilder}.
  *
- * @author Sebastien Deleuze
- * @author Eddú Meléndez
+
+
  */
 @SuppressWarnings("deprecation")
 public class Jackson2ObjectMapperBuilderTests {

@@ -34,7 +34,7 @@ import static org.junit.Assert.*;
 /**
  * Checks SpelCompiler behavior. This should cover compilation all compiled node types.
  *
- * @author Andy Clement
+
  * @since 4.1
  */
 public class SpelCompilationCoverageTests extends AbstractExpressionTests {

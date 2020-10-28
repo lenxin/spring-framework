@@ -28,7 +28,7 @@ import org.springframework.util.StringUtils;
  * <p><b>NOTE: As of Spring 4.1, this is based on the {@code com.rometools}
  * variant of ROME, version 1.5. Please upgrade your build dependency.</b>
  *
- * @author Arjen Poutsma
+
  * @since 3.0.2
  * @param <T> the converted object type
  * @see AtomFeedHttpMessageConverter

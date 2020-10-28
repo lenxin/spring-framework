@@ -182,7 +182,7 @@ import org.springframework.util.StringUtils;
  * be considered either 'option' or 'non-option' arguments and as described above can be
  * accessed through the normal {@code PropertySource} and {@code Environment} APIs.
  *
- * @author Chris Beams
+
  * @since 3.1
  * @param <T> the source type
  * @see PropertySource

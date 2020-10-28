@@ -32,7 +32,7 @@ import static org.junit.Assert.*;
 /**
  * Test case for {@link AbstractAnnotationConfigDispatcherServletInitializer}.
  *
- * @author Arjen Poutsma
+
  */
 public class AnnotationConfigDispatcherServletInitializerTests {
 

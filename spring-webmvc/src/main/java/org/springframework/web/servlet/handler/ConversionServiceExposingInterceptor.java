@@ -16,7 +16,7 @@ import org.springframework.util.Assert;
  *
  * <p>Mainly for use within JSP tags such as the spring:eval tag.
  *
- * @author Keith Donald
+
  * @since 3.0.1
  */
 public class ConversionServiceExposingInterceptor extends HandlerInterceptorAdapter {

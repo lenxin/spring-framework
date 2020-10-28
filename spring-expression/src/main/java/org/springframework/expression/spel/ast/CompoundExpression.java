@@ -14,7 +14,7 @@ import org.springframework.lang.Nullable;
  * Represents a DOT separated expression sequence, such as
  * {@code 'property1.property2.methodOne()'}.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class CompoundExpression extends SpelNodeImpl {

@@ -13,8 +13,8 @@ import org.springframework.lang.Nullable;
  * <p>Note: Does not support {@code setThemeName}, as the fixed theme
  * cannot be changed.
  *
- * @author Jean-Pierre Pawlak
- * @author Juergen Hoeller
+
+
  * @since 17.06.2003
  * @see #setDefaultThemeName
  */

@@ -40,8 +40,8 @@ import org.springframework.web.util.UriBuilder;
  * <p>Access to headers and body is offered by {@link Headers} and
  * {@link #body(BodyExtractor)}, respectively.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 public interface ServerRequest {

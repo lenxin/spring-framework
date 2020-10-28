@@ -22,11 +22,11 @@ import org.springframework.util.StringUtils;
  *
  * <p>As of Spring 5.0, this set of mocks is designed on a Servlet 4.0 baseline.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
- * @author Mark Fisher
- * @author Sam Brannen
- * @author Vedran Pavic
+
+
+
+
+
  * @since 1.0.2
  */
 @SuppressWarnings("deprecation")

@@ -45,7 +45,7 @@ import org.springframework.util.concurrent.ListenableFutureTask;
  * {@link org.springframework.scheduling.concurrent.DefaultManagedTaskExecutor}
  * should be preferred, following JSR-236 support in Java EE 7.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @deprecated as of 5.1, in favor of EE 7's
  * {@link org.springframework.scheduling.concurrent.DefaultManagedTaskExecutor}

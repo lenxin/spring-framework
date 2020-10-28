@@ -28,8 +28,8 @@ import static org.mockito.Mockito.*;
 
 /**
  * Unit tests for CORS-related handling in {@link AbstractHandlerMapping}.
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  */
 public class CorsAbstractHandlerMappingTests {
 

@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * <em>execution order</em> of registered {@link TestExecutionListener
  * TestExecutionListeners}.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 public class TestContextManagerTests {

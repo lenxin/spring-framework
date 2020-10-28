@@ -21,7 +21,7 @@ import java.lang.annotation.Target;
  * <p>As of Spring Framework 4.3, {@code @BeforeTransaction} may also be
  * declared on Java 8 based interface default methods.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see org.springframework.transaction.annotation.Transactional
  * @see AfterTransaction

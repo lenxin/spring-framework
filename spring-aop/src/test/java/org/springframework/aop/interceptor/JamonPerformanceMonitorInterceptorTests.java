@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Steve Souza
+
  * @since 4.1
  */
 public class JamonPerformanceMonitorInterceptorTests {

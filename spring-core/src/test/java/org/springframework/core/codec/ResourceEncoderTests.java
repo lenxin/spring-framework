@@ -20,7 +20,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class ResourceEncoderTests extends AbstractEncoderTestCase<ResourceEncoder> {
 

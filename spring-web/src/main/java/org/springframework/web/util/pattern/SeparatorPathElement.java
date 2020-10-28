@@ -7,7 +7,7 @@ import org.springframework.web.util.pattern.PathPattern.MatchingContext;
  * of '/' will be represented by a SeparatorPathElement (if the default
  * separator of '/' is being used).
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 class SeparatorPathElement extends PathElement {

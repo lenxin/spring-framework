@@ -13,7 +13,7 @@ import org.springframework.util.Assert;
  * Simple {@link DestinationResolver} implementation resolving destination names
  * as dynamic destinations.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see javax.jms.Session#createQueue
  * @see javax.jms.Session#createTopic

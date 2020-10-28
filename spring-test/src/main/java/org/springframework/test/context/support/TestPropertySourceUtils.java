@@ -36,7 +36,7 @@ import static org.springframework.test.util.MetaAnnotationUtils.findAnnotationDe
  *
  * <p>Primarily intended for use within the framework.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see TestPropertySource
  */

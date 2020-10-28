@@ -24,10 +24,10 @@ import java.lang.annotation.Target;
  * <p>This annotation may be used as a <em>meta-annotation</em> to create custom
  * <em>composed annotations</em> with attribute overrides.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Dave Syer
- * @author Chris Beams
+
+
+
+
  * @since 3.0
  * @see EnableScheduling
  * @see ScheduledAnnotationBeanPostProcessor

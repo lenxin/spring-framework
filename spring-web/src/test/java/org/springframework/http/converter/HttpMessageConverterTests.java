@@ -15,8 +15,8 @@ import static org.junit.Assert.fail;
 /**
  * Test-case for AbstractHttpMessageConverter.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 public class HttpMessageConverterTests {
 

@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for an issue raised in https://jira.spring.io/browse/SPR-15927.
  *
- * @author Sam Brannen
+
  * @since 5.0
  */
 public class AutowiredRuleTests {

@@ -13,8 +13,8 @@ import org.springframework.util.ClassUtils;
  * if specified; otherwise the default will be the fully-qualified name of the
  * class being configured.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see Configurable
  * @see org.springframework.beans.factory.wiring.ClassNameBeanWiringInfoResolver

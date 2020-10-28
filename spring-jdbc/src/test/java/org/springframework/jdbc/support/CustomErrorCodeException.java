@@ -3,7 +3,7 @@ package org.springframework.jdbc.support;
 import org.springframework.dao.DataAccessException;
 
 /**
- * @author Thomas Risberg
+
  */
 @SuppressWarnings("serial")
 public class CustomErrorCodeException extends DataAccessException {

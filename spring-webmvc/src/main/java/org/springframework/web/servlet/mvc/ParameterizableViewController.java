@@ -15,10 +15,10 @@ import org.springframework.web.servlet.support.RequestContextUtils;
  * sets the response status code. The view and status can be configured using
  * the provided configuration properties.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Keith Donald
- * @author Rossen Stoyanchev
+
+
+
+
  */
 public class ParameterizableViewController extends AbstractController {
 

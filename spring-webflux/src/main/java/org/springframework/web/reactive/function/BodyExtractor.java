@@ -11,7 +11,7 @@ import org.springframework.http.server.reactive.ServerHttpResponse;
 /**
  * A function that can extract data from a {@link ReactiveHttpInputMessage} body.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  * @param <T> the type of data to extract
  * @param <M> the type of {@link ReactiveHttpInputMessage} this extractor can be applied to

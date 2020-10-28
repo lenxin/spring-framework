@@ -12,8 +12,8 @@ import javax.sql.DataSource;
  * should be closed after an operation. Spring's DataSourceUtils and
  * JdbcTemplate classes automatically perform such a check.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see SingleConnectionDataSource#shouldClose
  * @see DataSourceUtils#releaseConnection
  * @see org.springframework.jdbc.core.JdbcTemplate

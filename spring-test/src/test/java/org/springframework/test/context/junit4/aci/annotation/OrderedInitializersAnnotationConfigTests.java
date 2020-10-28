@@ -29,7 +29,7 @@ import static org.junit.Assert.*;
  * appropriately in conjunction with annotation-driven configuration in the
  * TestContext framework.
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

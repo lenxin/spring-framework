@@ -21,8 +21,8 @@ import org.springframework.aop.PointcutAdvisor;
  * aspects that may have a lazy initialization strategy. For example,
  * a perThis instantiation model would mean lazy initialization of the advice.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public interface InstantiationModelAwarePointcutAdvisor extends PointcutAdvisor {

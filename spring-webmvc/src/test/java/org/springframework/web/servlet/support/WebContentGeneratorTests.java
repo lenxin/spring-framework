@@ -11,7 +11,7 @@ import static org.junit.Assert.assertNull;
 
 /**
  * Unit tests for {@link WebContentGenerator}.
- * @author Rossen Stoyanchev
+
  */
 public class WebContentGeneratorTests {
 

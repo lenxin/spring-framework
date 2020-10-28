@@ -10,8 +10,8 @@ import org.springframework.lang.Nullable;
 /**
  * Represents a server-side HTTP request.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.0
  */
 public interface ServerHttpRequest extends HttpRequest, HttpInputMessage {

@@ -4,8 +4,8 @@ package org.springframework.jmx;
  * Exception thrown when we cannot locate an instance of an {@code MBeanServer},
  * or when more than one instance is found.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see org.springframework.jmx.support.JmxUtils#locateMBeanServer
  */

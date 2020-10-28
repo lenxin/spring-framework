@@ -19,8 +19,8 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * A logical disjunction (' || ') request condition that matches a request
  * against a set of URL path patterns.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 public final class PatternsRequestCondition extends AbstractRequestCondition<PatternsRequestCondition> {

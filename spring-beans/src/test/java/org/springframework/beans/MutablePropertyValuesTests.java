@@ -10,9 +10,9 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link MutablePropertyValues}.
  *
- * @author Rod Johnson
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
+
  */
 public class MutablePropertyValuesTests extends AbstractPropertyValuesTests {
 

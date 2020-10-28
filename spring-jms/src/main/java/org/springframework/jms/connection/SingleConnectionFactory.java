@@ -60,8 +60,8 @@ import org.springframework.util.ClassUtils;
  * SingleConnectionFactory in combination only really makes sense for
  * sharing a single JMS Connection <i>across multiple listener containers</i>.
  *
- * @author Juergen Hoeller
- * @author Mark Pollack
+
+
  * @since 1.1
  * @see org.springframework.jms.core.JmsTemplate
  * @see org.springframework.jms.listener.SimpleMessageListenerContainer

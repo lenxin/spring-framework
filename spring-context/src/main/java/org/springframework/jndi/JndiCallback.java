@@ -15,7 +15,7 @@ import org.springframework.lang.Nullable;
  * interface, as JndiTemplate provides all usual JNDI operations via
  * convenience methods.
  *
- * @author Rod Johnson
+
  * @param <T> the resulting object type
  * @see JndiTemplate
  * @see org.springframework.jdbc.core.JdbcTemplate

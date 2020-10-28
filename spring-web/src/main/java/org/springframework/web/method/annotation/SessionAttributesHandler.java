@@ -26,8 +26,8 @@ import org.springframework.web.context.request.WebRequest;
  * are saved in the HTTP session and remain there until the controller calls
  * {@link SessionStatus#setComplete()}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 public class SessionAttributesHandler {

@@ -27,8 +27,8 @@ import org.springframework.util.MultiValueMap;
  * partial content. The caller is then responsible for dealing with that
  * incomplete content by buffering until there is more input available.
  *
- * @author Andy Wilkinson
- * @author Rossen Stoyanchev
+
+
  * @since 4.0
  */
 public class StompDecoder {

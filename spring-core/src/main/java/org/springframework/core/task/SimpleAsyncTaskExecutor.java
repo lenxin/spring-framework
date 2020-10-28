@@ -24,7 +24,7 @@ import org.springframework.util.concurrent.ListenableFutureTask;
  * thread-pooling TaskExecutor implementation instead, in particular for
  * executing a large number of short-lived tasks.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see #setConcurrencyLimit
  * @see SyncTaskExecutor

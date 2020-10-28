@@ -36,7 +36,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests verifying {@code @ModelAttribute} method inter-dependencies.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ModelFactoryOrderingTests {
 

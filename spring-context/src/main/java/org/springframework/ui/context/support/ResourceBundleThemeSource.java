@@ -21,8 +21,8 @@ import org.springframework.ui.context.ThemeSource;
  * interpreted as ResourceBundle basename, supporting a common
  * basename prefix for all themes.
  *
- * @author Jean-Pierre Pawlak
- * @author Juergen Hoeller
+
+
  * @see #setBasenamePrefix
  * @see java.util.ResourceBundle
  * @see org.springframework.context.support.ResourceBundleMessageSource

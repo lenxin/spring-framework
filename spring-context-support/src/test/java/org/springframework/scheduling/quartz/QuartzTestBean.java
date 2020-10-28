@@ -15,7 +15,7 @@
  */package org.springframework.scheduling.quartz;
 
 /**
- * @author Rob Harrop
+
  */
 public class QuartzTestBean {
 

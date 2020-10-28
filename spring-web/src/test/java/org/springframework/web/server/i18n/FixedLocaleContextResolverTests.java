@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link FixedLocaleContextResolver}.
  *
- * @author Sebastien Deleuze
+
  */
 public class FixedLocaleContextResolverTests {
 

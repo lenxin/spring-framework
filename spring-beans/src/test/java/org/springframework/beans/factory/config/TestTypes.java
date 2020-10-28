@@ -5,12 +5,12 @@ import org.springframework.beans.factory.ObjectFactory;
 /**
  * Shared test types for this package.
  *
- * @author Chris Beams
+
  */
 final class TestTypes {}
 
 /**
- * @author Juergen Hoeller
+
  */
 class NoOpScope implements Scope {
 

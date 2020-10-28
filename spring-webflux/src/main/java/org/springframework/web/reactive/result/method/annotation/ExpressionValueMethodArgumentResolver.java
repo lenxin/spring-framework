@@ -15,7 +15,7 @@ import org.springframework.web.server.ServerWebExchange;
  * value string, which may contain ${...} placeholder or Spring Expression
  * Language #{...} expressions.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class ExpressionValueMethodArgumentResolver extends AbstractNamedValueSyncArgumentResolver {

@@ -11,8 +11,8 @@ package org.springframework.asm;
  *     4.7.16</a>
  * @see <a href="https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-4.html#jvms-4.7.20">JVMS
  *     4.7.20</a>
- * @author Eric Bruneton
- * @author Eugene Kuleshov
+
+
  */
 final class AnnotationWriter extends AnnotationVisitor {
 

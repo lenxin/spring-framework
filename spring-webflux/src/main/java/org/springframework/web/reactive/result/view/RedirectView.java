@@ -31,8 +31,8 @@ import org.springframework.web.util.UriUtils;
  * <p>By default {@link HttpStatus#SEE_OTHER} is used but alternate status
  * codes may be via constructor or setters arguments.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class RedirectView extends AbstractUrlBasedView {

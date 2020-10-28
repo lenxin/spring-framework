@@ -15,8 +15,8 @@ import org.springframework.lang.Nullable;
  * <p>Typically used in combination with {@link JmsMessageEndpointManager},
  * but not tied to it.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 2.5
  * @see JmsActivationSpecFactory
  * @see JmsMessageEndpointManager#setActivationSpecConfig

@@ -11,7 +11,7 @@ import org.springframework.ui.Model;
 /**
  * Default implementation of {@link Rendering}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 class DefaultRendering implements Rendering {

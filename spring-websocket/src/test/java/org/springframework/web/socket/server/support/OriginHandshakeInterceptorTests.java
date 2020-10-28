@@ -20,7 +20,7 @@ import org.springframework.web.socket.WebSocketHandler;
 /**
  * Test fixture for {@link OriginHandshakeInterceptor}.
  *
- * @author Sebastien Deleuze
+
  */
 public class OriginHandshakeInterceptorTests extends AbstractHttpRequestTests {
 

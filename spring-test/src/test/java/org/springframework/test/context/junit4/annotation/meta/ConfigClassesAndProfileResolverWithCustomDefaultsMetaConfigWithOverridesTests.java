@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * Integration tests for meta-annotation attribute override support, overriding
  * default attribute values defined in {@link ConfigClassesAndProfileResolverWithCustomDefaultsMetaConfig}.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 @RunWith(SpringJUnit4ClassRunner.class)

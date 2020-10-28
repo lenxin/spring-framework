@@ -47,8 +47,8 @@ import org.springframework.util.Assert;
  * cases, an attempt will still be made to detect defaults, but their absence will
  * not result in an exception.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 3.2
  * @see SmartContextLoader
  */

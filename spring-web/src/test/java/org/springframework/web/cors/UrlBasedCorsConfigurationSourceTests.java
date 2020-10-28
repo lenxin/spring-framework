@@ -8,7 +8,7 @@ import org.springframework.mock.web.test.MockHttpServletRequest;
 
 /**
  * Unit tests for {@link UrlBasedCorsConfigurationSource}.
- * @author Sebastien Deleuze
+
  */
 public class UrlBasedCorsConfigurationSourceTests {
 

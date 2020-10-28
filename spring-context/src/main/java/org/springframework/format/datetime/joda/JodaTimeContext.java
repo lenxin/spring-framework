@@ -17,7 +17,7 @@ import org.springframework.lang.Nullable;
  *
  * <p>A {@code null} property value indicate the user has not specified a setting.
  *
- * @author Keith Donald
+
  * @since 3.0
  * @see JodaTimeContextHolder
  */

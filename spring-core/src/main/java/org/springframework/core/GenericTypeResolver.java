@@ -19,10 +19,10 @@ import org.springframework.util.ConcurrentReferenceHashMap;
  * <p>Mainly intended for usage within the framework, resolving method
  * parameter types even when they are declared generically.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Sam Brannen
- * @author Phillip Webb
+
+
+
+
  * @since 2.5.2
  */
 public final class GenericTypeResolver {

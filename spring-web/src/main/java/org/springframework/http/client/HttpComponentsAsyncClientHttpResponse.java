@@ -17,8 +17,8 @@ import org.springframework.util.StreamUtils;
  *
  * <p>Created via the {@link HttpComponentsAsyncClientHttpRequest}.
  *
- * @author Oleg Kalnichevski
- * @author Arjen Poutsma
+
+
  * @since 4.0
  * @see HttpComponentsAsyncClientHttpRequest#executeAsync()
  * @deprecated as of Spring 5.0, with no direct replacement

@@ -17,12 +17,12 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AntPathMatcher}.
  *
- * @author Alef Arendsen
- * @author Seth Ladd
- * @author Juergen Hoeller
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
+
+
+
  */
 public class AntPathMatcherTests {
 

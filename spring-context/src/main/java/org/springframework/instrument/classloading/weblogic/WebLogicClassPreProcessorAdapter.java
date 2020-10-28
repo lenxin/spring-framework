@@ -15,8 +15,8 @@ import org.springframework.lang.Nullable;
  * <p>To avoid compile time checks again the vendor API, a dynamic proxy is
  * being used.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 2.5
  */
 class WebLogicClassPreProcessorAdapter implements InvocationHandler {

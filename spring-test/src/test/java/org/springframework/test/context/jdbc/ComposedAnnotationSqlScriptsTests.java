@@ -18,7 +18,7 @@ import static org.springframework.test.context.jdbc.Sql.ExecutionPhase.*;
  * Integration tests that verify support for using {@link Sql @Sql} as a
  * merged, composed annotation.
  *
- * @author Sam Brannen
+
  * @since 4.3
  */
 @ContextConfiguration(classes = EmptyDatabaseConfig.class)

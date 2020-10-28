@@ -10,9 +10,9 @@ import org.springframework.lang.Nullable;
  * <p>Provides a set of properties corresponding to the set of HTML attributes
  * that are common across form input elements.
  *
- * @author Rob Harrop
- * @author Rick Evans
- * @author Juergen Hoeller
+
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

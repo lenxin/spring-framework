@@ -43,7 +43,7 @@ import org.springframework.web.util.UriBuilder;
 /**
  * {@code ServerRequest} implementation based on a {@link HttpServletRequest}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 class DefaultServerRequest implements ServerRequest {

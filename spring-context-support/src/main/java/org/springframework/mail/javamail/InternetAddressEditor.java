@@ -13,7 +13,7 @@ import org.springframework.util.StringUtils;
  * <p>Expects the same syntax as InternetAddress's constructor with
  * a String argument. Converts empty Strings into null values.
  *
- * @author Juergen Hoeller
+
  * @since 1.2.3
  * @see javax.mail.internet.InternetAddress
  */

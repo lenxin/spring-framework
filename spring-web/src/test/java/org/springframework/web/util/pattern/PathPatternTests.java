@@ -29,7 +29,7 @@ import static org.junit.Assert.fail;
 /**
  * Exercise matching of {@link PathPattern} objects.
  *
- * @author Andy Clement
+
  */
 public class PathPatternTests {
 

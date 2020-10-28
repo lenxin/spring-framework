@@ -25,8 +25,8 @@ import org.springframework.util.Assert;
  * an error, the write function is bypassed, and the error is sent directly
  * through the result publisher. Otherwise the write function is invoked.
  *
- * @author Rossen Stoyanchev
- * @author Stephane Maldini
+
+
  * @since 5.0
  * @param <T> the type of element signaled
  */

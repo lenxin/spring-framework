@@ -1,8 +1,8 @@
 package org.springframework.tests.sample.beans;
 
 /**
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  * @since 10.06.2003
  */
 public class BooleanTestBean {

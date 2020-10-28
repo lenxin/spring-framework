@@ -9,7 +9,7 @@ import java.sql.SQLException;
  * don't need to worry about exception handling. SQLExceptions will be caught
  * and handled correctly by the JdbcUtils class.
  *
- * @author Thomas Risberg
+
  * @see JdbcUtils#extractDatabaseMetaData
  */
 @FunctionalInterface

@@ -26,8 +26,8 @@ import org.springframework.util.ClassUtils;
  * This class may also serve as base class for a custom TransactionAttributeSource,
  * or get customized through {@link TransactionAnnotationParser} strategies.
  *
- * @author Colin Sampaleanu
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see Transactional
  * @see TransactionAnnotationParser

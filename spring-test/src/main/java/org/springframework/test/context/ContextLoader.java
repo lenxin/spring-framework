@@ -25,8 +25,8 @@ import org.springframework.context.ApplicationContext;
  * <li>{@link org.springframework.test.context.support.GenericPropertiesContextLoader GenericPropertiesContextLoader}</li>
  * </ul>
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see SmartContextLoader
  * @see org.springframework.test.context.support.AnnotationConfigContextLoader AnnotationConfigContextLoader

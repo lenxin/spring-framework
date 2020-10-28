@@ -22,8 +22,8 @@ import org.springframework.web.servlet.DispatcherServlet;
 /**
  * Tomcat based {@link WebSocketTestServer}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  */
 public class TomcatWebSocketTestServer implements WebSocketTestServer {
 

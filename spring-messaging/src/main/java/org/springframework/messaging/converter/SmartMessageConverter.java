@@ -11,7 +11,7 @@ import org.springframework.messaging.MessageHeaders;
  * these extended methods if a converter implements this interface, instead
  * of calling the regular {@code fromMessage} / {@code toMessage} variants.
  *
- * @author Juergen Hoeller
+
  * @since 4.2.1
  */
 public interface SmartMessageConverter extends MessageConverter {

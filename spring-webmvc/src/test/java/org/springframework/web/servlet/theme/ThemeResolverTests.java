@@ -10,8 +10,8 @@ import org.springframework.web.servlet.ThemeResolver;
 import static org.junit.Assert.*;
 
 /**
- * @author Jean-Pierre Pawlak
- * @author Juergen Hoeller
+
+
  * @since 19.06.2003
  */
 public class ThemeResolverTests {

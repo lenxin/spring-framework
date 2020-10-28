@@ -9,7 +9,7 @@ import org.springframework.util.Assert;
 /**
  * Represents a function that filters a {@linkplain HandlerFunction handler function}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  * @param <T> the type of the {@linkplain HandlerFunction handler function} to filter
  * @param <R> the type of the response of the function

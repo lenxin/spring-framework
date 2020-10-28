@@ -16,8 +16,8 @@ import org.springframework.util.StringUtils;
  *
  * <p>Detects the presence of JSR-107 and enables JCache support accordingly.
  *
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
  * @since 3.1
  * @see EnableCaching
  * @see ProxyCachingConfiguration

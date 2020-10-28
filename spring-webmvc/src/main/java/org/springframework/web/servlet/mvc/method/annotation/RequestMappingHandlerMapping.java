@@ -36,9 +36,9 @@ import org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMappi
  * {@link RequestMapping @RequestMapping} annotations in
  * {@link Controller @Controller} classes.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
  * @since 3.1
  */
 public class RequestMappingHandlerMapping extends RequestMappingInfoHandlerMapping

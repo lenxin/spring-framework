@@ -29,7 +29,7 @@ import org.springframework.util.ObjectUtils;
  * considered a {@link org.springframework.test.context.SmartContextLoader SmartContextLoader}
  * rather than a {@link org.springframework.test.context.ContextLoader ContextLoader}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  * @see #processContextConfiguration(ContextConfigurationAttributes)
  * @see #detectDefaultConfigurationClasses(Class)

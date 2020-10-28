@@ -42,7 +42,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 /**
  * Mock implementation of {@link ServerRequest}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class MockServerRequest implements ServerRequest {

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author Mark Fisher
+
  */
 @Repository
 @Qualifier("testing")

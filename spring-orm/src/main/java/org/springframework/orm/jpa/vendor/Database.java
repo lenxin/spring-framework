@@ -10,8 +10,8 @@ package org.springframework.orm.jpa.vendor;
  * are the same as those explicitly supported for Spring JDBC exception translation
  * in {@code sql-error-codes.xml}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see AbstractJpaVendorAdapter#setDatabase
  */

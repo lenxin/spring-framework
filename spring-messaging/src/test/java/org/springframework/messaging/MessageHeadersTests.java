@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link MessageHeaders}.
  *
- * @author Rossen Stoyanchev
- * @author Gary Russell
- * @author Juergen Hoeller
+
+
+
  */
 public class MessageHeadersTests {
 

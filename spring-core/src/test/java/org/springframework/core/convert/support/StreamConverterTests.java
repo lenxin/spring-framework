@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link StreamConverter}.
  *
- * @author Stephane Nicoll
+
  * @since 4.2
  */
 public class StreamConverterTests {

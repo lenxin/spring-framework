@@ -26,7 +26,7 @@ import static org.assertj.core.api.Assertions.*;
 /**
  * Tests for {@link AnnotationTypeMappings} and {@link AnnotationTypeMapping}.
  *
- * @author Phillip Webb
+
  */
 public class AnnotationTypeMappingsTests {
 

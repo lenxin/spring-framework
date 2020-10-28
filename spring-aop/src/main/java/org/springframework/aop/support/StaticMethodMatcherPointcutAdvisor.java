@@ -13,8 +13,8 @@ import org.springframework.util.Assert;
  * Convenient base class for Advisors that are also static pointcuts.
  * Serializable if Advice and subclass are.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public abstract class StaticMethodMatcherPointcutAdvisor extends StaticMethodMatcherPointcut

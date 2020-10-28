@@ -11,7 +11,7 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Resolver that looks at the 'Accept' header of the request.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class HeaderContentTypeResolver implements RequestedContentTypeResolver {

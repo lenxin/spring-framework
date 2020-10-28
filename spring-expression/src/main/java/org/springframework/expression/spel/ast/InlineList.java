@@ -17,7 +17,7 @@ import org.springframework.util.Assert;
 /**
  * Represent a list in an expression, e.g. '{1,2,3}'
  *
- * @author Andy Clement
+
  * @since 3.0.4
  */
 public class InlineList extends SpelNodeImpl {

@@ -19,7 +19,7 @@ import static org.springframework.web.reactive.function.BodyInserters.*;
 import static org.springframework.web.reactive.function.server.RouterFunctions.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class SseHandlerFunctionIntegrationTests extends AbstractRouterFunctionIntegrationTests {
 

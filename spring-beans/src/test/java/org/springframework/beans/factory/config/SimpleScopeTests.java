@@ -17,9 +17,9 @@ import static org.springframework.tests.TestResourceUtils.*;
 /**
  * Simple test to illustrate and verify scope usage.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class SimpleScopeTests {
 

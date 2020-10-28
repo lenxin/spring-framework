@@ -8,10 +8,10 @@ import org.springframework.tests.transaction.CallCountingTransactionManager;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Ramnivas Laddad
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
+
  */
 public class TransactionAspectTests {
 

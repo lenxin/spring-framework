@@ -31,8 +31,8 @@ import static org.springframework.http.MediaType.*;
 /**
  * Unit tests for {@link SynchronossPartHttpMessageReader}.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  */
 public class SynchronossPartHttpMessageReaderTests {
 

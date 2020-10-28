@@ -13,7 +13,7 @@ import org.springframework.web.context.WebApplicationContext;
  * and stores it in the {@code ServletContext} under the attribute named
  * {@code "javax.websocket.server.ServerContainer"}.
  *
- * @author Sam Brannen
+
  * @since 4.3.1
  */
 class MockServerContainerContextCustomizer implements ContextCustomizer {

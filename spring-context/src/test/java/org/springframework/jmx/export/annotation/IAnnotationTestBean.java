@@ -1,7 +1,7 @@
 package org.springframework.jmx.export.annotation;
 
 /**
- * @author Rob Harrop
+
  */
 public interface IAnnotationTestBean {
 

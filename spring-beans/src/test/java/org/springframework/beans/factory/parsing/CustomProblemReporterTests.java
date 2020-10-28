@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 import static org.springframework.tests.TestResourceUtils.*;
 
 /**
- * @author Rob Harrop
- * @author Chris Beams
+
+
  * @since 2.0
  */
 public class CustomProblemReporterTests {

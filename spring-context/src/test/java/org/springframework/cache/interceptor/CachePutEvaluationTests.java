@@ -25,7 +25,7 @@ import static org.junit.Assert.*;
  * Tests corner case of using {@link Cacheable} and  {@link CachePut} on the
  * same operation.
  *
- * @author Stephane Nicoll
+
  */
 public class CachePutEvaluationTests {
 

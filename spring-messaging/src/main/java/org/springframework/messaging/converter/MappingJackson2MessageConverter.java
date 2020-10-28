@@ -40,9 +40,9 @@ import org.springframework.util.MimeType;
  *
  * <p>Compatible with Jackson 2.9 and higher, as of Spring 5.1.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
  * @since 4.0
  */
 public class MappingJackson2MessageConverter extends AbstractMessageConverter {

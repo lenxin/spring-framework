@@ -30,8 +30,8 @@ import org.springframework.util.StringUtils;
  * mappings first. If no method names for the bean are found, it will use the
  * method names defined by {@code ignoredMethods}.
  *
- * @author Rob Harrop
- * @author Seth Ladd
+
+
  * @since 1.2.5
  * @see #setIgnoredMethods
  * @see #setIgnoredMethodMappings

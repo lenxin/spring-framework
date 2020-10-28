@@ -47,8 +47,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link RequestMappingHandlerAdapter}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @see ServletAnnotationControllerHandlerMethodTests
  * @see HandlerMethodAnnotationDetectionTests
  * @see RequestMappingHandlerAdapterIntegrationTests

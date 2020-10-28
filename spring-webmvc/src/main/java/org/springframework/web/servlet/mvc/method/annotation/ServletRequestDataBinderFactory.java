@@ -12,7 +12,7 @@ import org.springframework.web.method.support.InvocableHandlerMethod;
 /**
  * Creates a {@code ServletRequestDataBinder}.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  */
 public class ServletRequestDataBinderFactory extends InitBinderDataBinderFactory {

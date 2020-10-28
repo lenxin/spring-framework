@@ -3,7 +3,7 @@ package org.springframework.scripting.groovy;
 import org.springframework.scripting.ConfigurableMessenger;
 
 /**
- * @author Dave Syer
+
  *
  */
 public class ConcreteMessenger implements ConfigurableMessenger {

@@ -19,7 +19,7 @@ import org.springframework.core.NestedRuntimeException;
 /**
  * Raised after a failure to encode or decode a STOMP message.
  *
- * @author Gary Russell
+
  * @since 4.0
  */
 @SuppressWarnings("serial")

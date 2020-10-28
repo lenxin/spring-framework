@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 @SuppressWarnings("unchecked")
 public class RouterFunctionsTests {

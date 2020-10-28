@@ -26,8 +26,8 @@ import static org.junit.Assert.*;
  * Tests proving that @Qualifier annotations work when used
  * with @Configuration classes on @Bean methods.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  */
 public class BeanMethodQualificationTests {
 

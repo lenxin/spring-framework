@@ -11,8 +11,8 @@ import org.apache.commons.logging.Log;
  * <p>Consider using {@code CustomizableTraceInterceptor} for more
  * advanced needs.
  *
- * @author Dmitriy Kopylenko
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see CustomizableTraceInterceptor
  */

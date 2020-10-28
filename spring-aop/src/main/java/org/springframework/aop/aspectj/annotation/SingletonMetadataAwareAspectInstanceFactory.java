@@ -11,8 +11,8 @@ import org.springframework.core.annotation.OrderUtils;
  * by a specified singleton object, returning the same instance for every
  * {@link #getAspectInstance()} call.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see SimpleMetadataAwareAspectInstanceFactory
  */

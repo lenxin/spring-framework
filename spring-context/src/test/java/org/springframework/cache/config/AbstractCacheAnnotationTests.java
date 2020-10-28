@@ -20,10 +20,10 @@ import static org.junit.Assert.*;
 /**
  * Abstract cache annotation tests (containing several reusable methods).
  *
- * @author Costin Leau
- * @author Chris Beams
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
+
+
  */
 public abstract class AbstractCacheAnnotationTests {
 

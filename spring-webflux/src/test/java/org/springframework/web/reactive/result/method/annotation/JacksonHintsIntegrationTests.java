@@ -24,7 +24,7 @@ import org.springframework.web.reactive.config.EnableWebFlux;
 import static org.junit.Assert.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class JacksonHintsIntegrationTests extends AbstractRequestMappingIntegrationTests {
 

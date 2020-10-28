@@ -12,8 +12,8 @@ import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.
 /**
  * Integration tests for {@link EmbeddedDatabaseBuilder}.
  *
- * @author Keith Donald
- * @author Sam Brannen
+
+
  */
 public class EmbeddedDatabaseBuilderTests {
 

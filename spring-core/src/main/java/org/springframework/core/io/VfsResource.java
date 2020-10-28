@@ -16,10 +16,10 @@ import org.springframework.util.Assert;
  * (package {@code org.jboss.vfs}) and is in particular compatible with
  * JBoss AS 7 and WildFly 8+.
  *
- * @author Ales Justin
- * @author Juergen Hoeller
- * @author Costin Leau
- * @author Sam Brannen
+
+
+
+
  * @since 3.0
  * @see org.jboss.vfs.VirtualFile
  */

@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link UrlBasedViewResolver}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  */
 public class UrlBasedViewResolverTests {
 

@@ -14,7 +14,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for {@link DelegatingDataSource}.
  *
- * @author Phillip Webb
+
  */
 public class DelegatingDataSourceTests {
 

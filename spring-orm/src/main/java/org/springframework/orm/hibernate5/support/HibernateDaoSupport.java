@@ -31,7 +31,7 @@ import org.springframework.util.Assert;
  * This HibernateTemplate primarily exists as a migration helper for Hibernate 3
  * based data access code, to benefit from bug fixes in Hibernate 5.x.</b>
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see #setSessionFactory
  * @see #getHibernateTemplate

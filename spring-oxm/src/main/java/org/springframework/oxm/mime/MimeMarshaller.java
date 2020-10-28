@@ -11,7 +11,7 @@ import org.springframework.oxm.XmlMappingException;
  * Subinterface of {@link Marshaller} that can use MIME attachments to optimize
  * storage of binary data. Attachments can be added as MTOM, XOP, or SwA.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see <a href="https://www.w3.org/TR/2004/WD-soap12-mtom-20040608/">SOAP Message Transmission Optimization Mechanism</a>
  * @see <a href="https://www.w3.org/TR/2005/REC-xop10-20050125/">XML-binary Optimized Packaging</a>

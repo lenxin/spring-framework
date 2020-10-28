@@ -43,8 +43,8 @@ import org.springframework.web.client.support.RestGatewaySupport;
  * allows executing requests against an instance of
  * {@link org.springframework.test.web.servlet.MockMvc MockMvc}.
  *
- * @author Craig Walls
- * @author Rossen Stoyanchev
+
+
  * @since 3.2
  */
 @SuppressWarnings("deprecation")

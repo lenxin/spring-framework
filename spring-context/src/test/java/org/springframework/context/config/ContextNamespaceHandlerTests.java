@@ -17,10 +17,10 @@ import org.springframework.mock.env.MockEnvironment;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Dave Syer
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
+
+
  * @since 2.5.6
  */
 public class ContextNamespaceHandlerTests {

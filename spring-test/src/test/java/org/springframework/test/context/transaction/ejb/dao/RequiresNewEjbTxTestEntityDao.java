@@ -10,8 +10,8 @@ import javax.ejb.TransactionAttributeType;
  * semantics for {@link #incrementCount(String)} with
  * {@link TransactionAttributeType#REQUIRES_NEW}.
  *
- * @author Sam Brannen
- * @author Xavier Detant
+
+
  * @since 4.0.1
  * @see RequiredEjbTxTestEntityDao
  */

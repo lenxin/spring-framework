@@ -32,9 +32,9 @@ import org.springframework.web.multipart.support.MultipartResolutionDelegate;
  * and all their values for cases where request parameters have multiple values
  * (or multiple multipart files of the same name).
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 3.1
  * @see RequestParamMethodArgumentResolver
  * @see HttpServletRequest#getParameterMap()

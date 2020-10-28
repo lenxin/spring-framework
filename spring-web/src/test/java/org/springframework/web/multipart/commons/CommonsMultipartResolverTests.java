@@ -48,8 +48,8 @@ import org.springframework.web.util.WebUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Arjen Poutsma
+
+
  * @since 08.10.2003
  */
 public class CommonsMultipartResolverTests {

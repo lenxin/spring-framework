@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
  * Represents an HTTP request message, consisting of
  * {@linkplain #getMethod() method} and {@linkplain #getURI() uri}.
  *
- * @author Arjen Poutsma
+
  * @since 3.1
  */
 public interface HttpRequest extends HttpMessage {

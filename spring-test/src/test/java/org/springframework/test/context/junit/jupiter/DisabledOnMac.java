@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  * disables a test class or test method if the current operating system is
  * Mac OS.
  *
- * @author Sam Brannen
+
  * @since 5.0
  */
 @Target({ ElementType.TYPE, ElementType.METHOD })

@@ -15,8 +15,8 @@ import org.springframework.lang.Nullable;
  * Abstract base class for SAX {@code XMLReader} implementations.
  * Contains properties as defined in {@link XMLReader}, and does not recognize any features.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see #setContentHandler(org.xml.sax.ContentHandler)
  * @see #setDTDHandler(org.xml.sax.DTDHandler)

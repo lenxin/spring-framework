@@ -82,7 +82,7 @@ import org.springframework.util.CollectionUtils;
  * nested transactions! Hence, do not expect JPA access code to semantically
  * participate in a nested transaction.</i>
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see #setEntityManagerFactory
  * @see #setDataSource

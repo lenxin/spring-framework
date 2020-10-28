@@ -67,10 +67,10 @@ import static org.springframework.web.servlet.mvc.method.annotation.MvcUriCompon
 /**
  * Unit tests for {@link MvcUriComponentsBuilder}.
  *
- * @author Oliver Gierke
- * @author Dietrich Schulten
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
+
  */
 public class MvcUriComponentsBuilderTests {
 

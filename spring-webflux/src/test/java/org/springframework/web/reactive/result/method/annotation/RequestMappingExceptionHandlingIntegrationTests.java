@@ -26,8 +26,8 @@ import static org.junit.Assert.*;
 /**
  * {@code @RequestMapping} integration tests with exception handling scenarios.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  */
 public class RequestMappingExceptionHandlingIntegrationTests extends AbstractRequestMappingIntegrationTests {
 

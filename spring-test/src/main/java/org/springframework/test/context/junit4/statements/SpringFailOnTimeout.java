@@ -19,7 +19,7 @@ import org.springframework.util.Assert;
  * the next {@code statement} will be executed in the same thread as the
  * caller and will therefore not be aborted preemptively.
  *
- * @author Sam Brannen
+
  * @since 3.0
  * @see #evaluate()
  */

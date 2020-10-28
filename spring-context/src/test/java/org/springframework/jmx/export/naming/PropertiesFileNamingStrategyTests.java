@@ -3,7 +3,7 @@ package org.springframework.jmx.export.naming;
 import org.springframework.core.io.ClassPathResource;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class PropertiesFileNamingStrategyTests extends PropertiesNamingStrategyTests {
 

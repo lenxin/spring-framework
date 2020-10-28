@@ -22,7 +22,7 @@ import org.springframework.lang.Nullable;
  * <p>Provides accessor methods for XML fields and acts as factory for
  * {@link SqlXmlValue} instances.
  *
- * @author Thomas Risberg
+
  * @since 2.5.5
  * @see Jdbc4SqlXmlHandler
  * @see java.sql.SQLXML

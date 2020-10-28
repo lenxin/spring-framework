@@ -24,8 +24,8 @@ import org.springframework.util.Assert;
  * {@link ServletHttpHandlerAdapter} extension that uses Jetty APIs for writing
  * to the response with {@link ByteBuffer}.
  *
- * @author Violeta Georgieva
- * @author Brian Clozel
+
+
  * @since 5.0
  * @see org.springframework.web.server.adapter.AbstractReactiveWebInitializer
  */

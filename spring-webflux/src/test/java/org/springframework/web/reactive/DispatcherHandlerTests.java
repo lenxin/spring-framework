@@ -23,7 +23,7 @@ import static org.mockito.Mockito.*;
 
 /**
  * Unit tests for {@link DispatcherHandler}.
- * @author Rossen Stoyanchev
+
  */
 public class DispatcherHandlerTests {
 

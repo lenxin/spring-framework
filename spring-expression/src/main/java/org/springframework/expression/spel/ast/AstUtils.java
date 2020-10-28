@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
 /**
  * Utilities methods for use in the Ast classes.
  *
- * @author Andy Clement
+
  * @since 3.0.2
  */
 public abstract class AstUtils {

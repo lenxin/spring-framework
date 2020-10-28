@@ -8,7 +8,7 @@ import javax.servlet.http.Part
  * Provide a [MockMultipartHttpServletRequestBuilder] Kotlin DSL in order to be able to write idiomatic Kotlin code.
  *
  * @see MockMvc.multipart
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 class MockMultipartHttpServletRequestDsl(private val builder: MockMultipartHttpServletRequestBuilder) : MockHttpServletRequestDsl(builder) {

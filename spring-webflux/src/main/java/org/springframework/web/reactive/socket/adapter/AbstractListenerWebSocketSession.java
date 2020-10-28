@@ -31,8 +31,8 @@ import org.springframework.web.reactive.socket.WebSocketSession;
  * <p>Also an implementation of {@code Subscriber&lt;Void&gt;} so it can be used as
  * the completion subscriber for session handling
  *
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @param <T> the native delegate type
  */

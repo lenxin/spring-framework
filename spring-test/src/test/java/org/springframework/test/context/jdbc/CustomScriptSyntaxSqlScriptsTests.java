@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  * Integration tests that verify support for custom SQL script syntax
  * configured via {@link SqlConfig @SqlConfig}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @ContextConfiguration(classes = EmptyDatabaseConfig.class)

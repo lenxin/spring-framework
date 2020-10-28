@@ -25,7 +25,7 @@ import static org.junit.Assert.*;
  * runner in conjunction with {@link SpringClassRule} and {@link SpringMethodRule}
  * to provide dependency injection to a <em>parameterized test instance</em>.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see org.springframework.test.context.junit4.ParameterizedDependencyInjectionTests
  */

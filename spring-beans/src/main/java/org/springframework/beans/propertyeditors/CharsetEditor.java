@@ -12,7 +12,7 @@ import org.springframework.util.StringUtils;
  * <p>Expects the same syntax as Charset's {@link java.nio.charset.Charset#name()},
  * e.g. {@code UTF-8}, {@code ISO-8859-16}, etc.
  *
- * @author Arjen Poutsma
+
  * @since 2.5.4
  * @see Charset
  */

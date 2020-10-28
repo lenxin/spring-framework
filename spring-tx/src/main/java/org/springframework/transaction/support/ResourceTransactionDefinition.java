@@ -6,7 +6,7 @@ import org.springframework.transaction.TransactionDefinition;
  * Extended variant of {@link TransactionDefinition}, indicating a resource transaction
  * and in particular whether the transactional resource is ready for local optimizations.
  *
- * @author Juergen Hoeller
+
  * @since 5.1
  * @see ResourceTransactionManager
  */

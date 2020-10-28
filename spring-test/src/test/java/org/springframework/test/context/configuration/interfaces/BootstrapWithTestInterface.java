@@ -11,8 +11,8 @@ import org.springframework.test.context.support.DefaultTestContextBootstrapper;
 import static java.util.Collections.*;
 
 /**
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 4.3
  */
 @BootstrapWith(CustomTestContextBootstrapper.class)

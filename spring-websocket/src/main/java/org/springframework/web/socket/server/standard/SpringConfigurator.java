@@ -29,7 +29,7 @@ import org.springframework.web.context.WebApplicationContext;
  * }
  * </pre>
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  * @see ServerEndpointExporter
  */

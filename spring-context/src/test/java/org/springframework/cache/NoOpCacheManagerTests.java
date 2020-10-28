@@ -25,8 +25,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link NoOpCacheManager}.
  *
- * @author Costin Leau
- * @author Stephane Nicoll
+
+
  */
 public class NoOpCacheManagerTests {
 

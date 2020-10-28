@@ -12,8 +12,8 @@ import static org.junit.Assert.assertNull;
 /**
  * Unit tests for {@link UrlBasedCorsConfigurationSource}.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  */
 public class UrlBasedCorsConfigurationSourceTests {
 

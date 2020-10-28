@@ -8,8 +8,8 @@ import java.io.IOException;
  * <p>Two methods are the same as on Person, but if this
  * extends person it breaks quite a few tests..
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public interface ITestBean extends AgeHolder {
 

@@ -28,9 +28,9 @@ import static org.junit.Assert.assertTrue;
 /**
  * Test fixture for {@link MessageHeaderAccessor}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
- * @author Juergen Hoeller
+
+
+
  */
 public class MessageHeaderAccessorTests {
 

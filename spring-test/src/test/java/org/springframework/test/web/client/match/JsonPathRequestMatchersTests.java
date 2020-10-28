@@ -11,8 +11,8 @@ import static org.hamcrest.CoreMatchers.*;
 /**
  * Unit tests for {@link JsonPathRequestMatchers}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  */
 public class JsonPathRequestMatchersTests {
 

@@ -44,10 +44,10 @@ import org.springframework.util.StringUtils;
  * <p>A transaction aspect is serializable if its {@code PlatformTransactionManager}
  * and {@code TransactionAttributeSource} are serializable.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Stéphane Nicoll
- * @author Sam Brannen
+
+
+
+
  * @since 1.1
  * @see #setTransactionManager
  * @see #setTransactionAttributes

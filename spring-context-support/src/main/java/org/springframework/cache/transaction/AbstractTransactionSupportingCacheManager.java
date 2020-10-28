@@ -8,7 +8,7 @@ import org.springframework.cache.support.AbstractCacheManager;
  * awareness of Spring-managed transactions. This usually needs to be switched
  * on explicitly through the {@link #setTransactionAware} bean property.
  *
- * @author Juergen Hoeller
+
  * @since 3.2
  * @see #setTransactionAware
  * @see TransactionAwareCacheDecorator

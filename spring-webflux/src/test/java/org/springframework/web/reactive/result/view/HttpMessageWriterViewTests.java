@@ -29,7 +29,7 @@ import static org.junit.Assert.fail;
 
 /**
  * Unit tests for {@link HttpMessageWriterView}.
- * @author Rossen Stoyanchev
+
  */
 public class HttpMessageWriterViewTests {
 

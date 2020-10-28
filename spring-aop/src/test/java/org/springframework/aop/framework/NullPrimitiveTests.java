@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * Test for SPR-4675. A null value returned from around advice is very hard to debug if
  * the caller expects a primitive.
  *
- * @author Dave Syer
+
  */
 public class NullPrimitiveTests {
 

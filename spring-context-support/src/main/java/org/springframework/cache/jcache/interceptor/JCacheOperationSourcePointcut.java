@@ -11,7 +11,7 @@ import org.springframework.util.ObjectUtils;
  * A Pointcut that matches if the underlying {@link JCacheOperationSource}
  * has an operation for a given method.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 @SuppressWarnings("serial")

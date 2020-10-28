@@ -29,8 +29,8 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with a {@link ViewResolverRegistry}.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  */
 public class ViewResolverRegistryTests {
 

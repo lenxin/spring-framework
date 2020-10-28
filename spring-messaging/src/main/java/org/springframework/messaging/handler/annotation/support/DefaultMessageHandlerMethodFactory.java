@@ -34,8 +34,8 @@ import org.springframework.validation.Validator;
  * can be customized in a similar manner to tune how the message payload
  * can be converted
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see #setConversionService
  * @see #setValidator

@@ -9,8 +9,8 @@ import java.io.Serializable;
  * A {@link Serializer} implementation that writes an object to an output stream
  * using Java serialization.
  *
- * @author Gary Russell
- * @author Mark Fisher
+
+
  * @since 3.0.5
  */
 public class DefaultSerializer implements Serializer<Object> {

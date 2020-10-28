@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * Integration tests that verify detection of a default properties file
  * when {@link TestPropertySource @TestPropertySource} is <em>empty</em>.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * methods, specifically as regards static @Bean methods and the avoidance of
  * container lifecycle issues when BFPPs are in the mix.
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 public class ConfigurationClassAndBFPPTests {

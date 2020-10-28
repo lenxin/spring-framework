@@ -38,8 +38,8 @@ import org.springframework.util.StringUtils;
  * {@link org.springframework.context.ApplicationContext ApplicationContext}
  * that was loaded using properties of this {@code MergedContextConfiguration}.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 3.1
  * @see ContextConfiguration
  * @see ContextHierarchy

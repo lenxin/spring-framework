@@ -19,8 +19,8 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest}
  * can be subclassed.
  *
- * @author Juergen Hoeller
- * @author Trevor D. Cook
+
+
  * @since 29.09.2003
  * @see MultipartResolver
  * @see MultipartFile

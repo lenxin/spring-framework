@@ -18,7 +18,7 @@ import static org.springframework.test.context.support.ContextLoaderUtils.*;
 /**
  * Unit tests for {@link ContextLoaderUtils} involving {@link ContextConfigurationAttributes}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 public class ContextLoaderUtilsConfigurationAttributesTests extends AbstractContextConfigurationUtilsTests {

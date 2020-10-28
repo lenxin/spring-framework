@@ -11,7 +11,7 @@ import org.springframework.util.ConcurrentReferenceHashMap;
  * providing a cache based on {@code Class} keys instead of class names,
  * and allowing for selective use of the cache.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see #isWorthTrying()
  * @see #newInstance(Class, boolean)

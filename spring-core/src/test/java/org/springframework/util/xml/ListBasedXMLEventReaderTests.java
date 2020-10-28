@@ -18,8 +18,8 @@ import static org.junit.Assert.*;
 import static org.xmlunit.matchers.CompareMatcher.*;
 
 /**
- * @author Arjen Poutsma
- * @author Andrzej Hołowko
+
+
  */
 public class ListBasedXMLEventReaderTests {
 

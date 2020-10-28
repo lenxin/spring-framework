@@ -12,8 +12,8 @@ import org.springframework.util.MimeTypeUtils;
 /**
  * Decoder for {@code byte} arrays.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class ByteArrayDecoder extends AbstractDataBufferDecoder<byte[]> {

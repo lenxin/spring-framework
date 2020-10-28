@@ -15,9 +15,9 @@ import org.springframework.util.Assert;
  * Pointcut pc = new ComposablePointcut().union(classFilter).intersection(methodMatcher).intersection(pointcut);
  * }
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
+
  * @since 11.11.2003
  * @see Pointcuts
  */

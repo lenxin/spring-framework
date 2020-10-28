@@ -6,7 +6,7 @@ import javax.faces.event.PhaseListener;
 import javax.faces.lifecycle.Lifecycle;
 
 /**
- * @author Juergen Hoeller
+
  * @since 29.01.2006
  */
 public class MockLifecycle extends Lifecycle {

@@ -11,8 +11,8 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  */
 public class AnnotationTransactionInterceptorTests {
 

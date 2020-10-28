@@ -35,8 +35,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 
 /**
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  */
 public class MultipartControllerTests {
 

@@ -20,8 +20,8 @@ import org.springframework.web.socket.WebSocketSession;
  * delegate messages to based on the sub-protocol requested by the client through
  * the {@code Sec-WebSocket-Protocol} request header.
  *
- * @author Andy Wilkinson
- * @author Rossen Stoyanchev
+
+
  * @since 4.0
  */
 public interface SubProtocolHandler {

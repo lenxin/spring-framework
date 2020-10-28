@@ -25,8 +25,8 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 /**
  * Configures the JSR-310 <code>java.time</code> formatting system for use with Spring.
  *
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
  * @since 4.0
  * @see #setDateStyle
  * @see #setTimeStyle

@@ -20,7 +20,7 @@ import org.springframework.web.reactive.resource.WebJarsResourceResolver;
 /**
  * Assists with the registration of resource resolvers and transformers.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class ResourceChainRegistration {

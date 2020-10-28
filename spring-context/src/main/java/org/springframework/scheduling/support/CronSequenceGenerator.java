@@ -32,9 +32,9 @@ import org.springframework.util.StringUtils;
  * <li>"0 0 0 25 12 ?" = every Christmas Day at midnight</li>
  * </ul>
  *
- * @author Dave Syer
- * @author Juergen Hoeller
- * @author Ruslan Sibgatullin
+
+
+
  * @since 3.0
  * @see CronTrigger
  */

@@ -7,7 +7,7 @@ import java.io.Writer
 /**
  * Provide a [MockMvcResultHandlers] Kotlin DSL in order to be able to write idiomatic Kotlin code.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 class MockMvcResultHandlersDsl(private val actions: ResultActions) {

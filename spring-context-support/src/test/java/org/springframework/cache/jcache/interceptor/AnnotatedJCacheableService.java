@@ -20,7 +20,7 @@ import org.springframework.cache.jcache.support.TestableCacheResolverFactory;
 /**
  * Repository sample with a @CacheDefaults annotation
  *
- * @author Stephane Nicoll
+
  */
 @CacheDefaults(cacheName = "default")
 public class AnnotatedJCacheableService implements JCacheableService<Long> {

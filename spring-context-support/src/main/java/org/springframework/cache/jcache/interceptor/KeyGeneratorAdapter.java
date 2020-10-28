@@ -18,8 +18,8 @@ import org.springframework.util.CollectionUtils;
  * {@link javax.cache.annotation.CacheKeyGenerator}, or wrap a standard {@link KeyGenerator}
  * so that only relevant parameters are handled.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  */
 class KeyGeneratorAdapter implements KeyGenerator {

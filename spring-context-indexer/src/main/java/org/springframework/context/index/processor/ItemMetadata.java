@@ -9,7 +9,7 @@ import java.util.Set;
  * be used to retrieve the candidates. A typical use case is the presence of a given
  * annotation on the candidate.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 class ItemMetadata {

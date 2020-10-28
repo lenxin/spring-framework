@@ -43,11 +43,11 @@ import org.springframework.util.TypeUtils;
  *
  * <p>Compatible with Jackson 2.9 and higher, as of Spring 5.0.
  *
- * @author Arjen Poutsma
- * @author Keith Donald
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
+
+
  * @since 4.1
  * @see MappingJackson2HttpMessageConverter
  */

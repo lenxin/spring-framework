@@ -35,10 +35,10 @@ import org.springframework.web.util.WebUtils;
  *
  * <p>As of Spring Framework 5.0, this set of mocks is designed on a Servlet 4.0 baseline.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
- * @author Brian Clozel
- * @author Vedran Pavic
+
+
+
+
  * @since 1.0.2
  */
 public class MockHttpServletResponse implements HttpServletResponse {

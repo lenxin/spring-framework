@@ -11,7 +11,7 @@ import org.springframework.lang.Nullable;
  * information about a controller method that failed, or a controller method
  * argument that could not be resolved.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 @SuppressWarnings("serial")

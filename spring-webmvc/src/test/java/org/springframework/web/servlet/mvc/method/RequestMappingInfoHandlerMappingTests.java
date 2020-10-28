@@ -49,8 +49,8 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with {@link RequestMappingInfoHandlerMapping}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 public class RequestMappingInfoHandlerMappingTests {
 

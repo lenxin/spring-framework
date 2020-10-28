@@ -136,10 +136,10 @@ import org.springframework.core.io.support.PropertySourceFactory;
  * same custom annotation. Mixing of direct annotations and meta-annotations is not
  * recommended since direct annotations will effectively override meta-annotations.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Phillip Webb
- * @author Sam Brannen
+
+
+
+
  * @since 3.1
  * @see PropertySources
  * @see Configuration

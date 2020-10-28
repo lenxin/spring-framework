@@ -71,7 +71,7 @@ import org.springframework.web.accept.PathExtensionContentNegotiationStrategy;
  * to {@literal false} or otherwise set the strategies to use explicitly via
  * {@link #strategies(List)}.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.2
  */
 public class ContentNegotiationConfigurer {

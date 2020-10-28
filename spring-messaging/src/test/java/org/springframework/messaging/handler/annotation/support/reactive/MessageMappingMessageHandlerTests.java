@@ -38,7 +38,7 @@ import static org.junit.Assert.*;
 
 /**
  * Unit tests for {@link MessageMappingMessageHandler}.
- * @author Rossen Stoyanchev
+
  */
 @SuppressWarnings("ALL")
 public class MessageMappingMessageHandlerTests {

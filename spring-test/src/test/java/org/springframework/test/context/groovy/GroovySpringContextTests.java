@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
  * Integration tests for loading an {@code ApplicationContext} from a
  * Groovy script with the TestContext framework.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

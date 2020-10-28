@@ -9,7 +9,7 @@ import org.springframework.web.server.ServerWebExchange;
  * {@link org.springframework.web.bind.annotation.RequestMapping#params()} and
  * {@link org.springframework.web.bind.annotation.RequestMapping#headers()}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  * @param <T> the value type
  */

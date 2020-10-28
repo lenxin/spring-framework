@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  *
  * Where implementation is missing the tests are commented out.
  *
- * @author Andy Clement
+
  */
 public class InProgressTests extends AbstractExpressionTests {
 

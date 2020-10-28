@@ -35,8 +35,8 @@ import static org.springframework.mock.http.server.reactive.test.MockServerHttpR
 /**
  * Unit tests for {@link InvocableHandlerMethod}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  */
 public class InvocableHandlerMethodTests {
 

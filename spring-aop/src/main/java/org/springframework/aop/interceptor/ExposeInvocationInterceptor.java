@@ -21,8 +21,8 @@ import org.springframework.core.PriorityOrdered;
  *
  * <p>If used, this interceptor will normally be the first in the interceptor chain.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public final class ExposeInvocationInterceptor implements MethodInterceptor, PriorityOrdered, Serializable {

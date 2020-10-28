@@ -6,7 +6,7 @@ import org.springframework.test.context.jdbc.EmptyDatabaseConfig;
 import org.springframework.test.context.jdbc.SqlConfig;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 @ContextConfiguration(classes = EmptyDatabaseConfig.class)

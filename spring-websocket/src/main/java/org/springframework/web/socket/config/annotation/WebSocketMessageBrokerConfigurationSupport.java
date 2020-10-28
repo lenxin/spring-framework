@@ -28,8 +28,8 @@ import org.springframework.web.socket.messaging.WebSocketAnnotationMethodMessage
  * {@link EnableWebSocketMessageBroker @EnableWebSocketMessageBroker} but can
  * also be extended directly.
  *
- * @author Rossen Stoyanchev
- * @author Artem Bilan
+
+
  * @since 4.0
  */
 public abstract class WebSocketMessageBrokerConfigurationSupport extends AbstractMessageBrokerConfiguration {

@@ -4,8 +4,8 @@ package org.springframework.jmx.support;
  * Indicates registration behavior when attempting to register an MBean that already
  * exists.
  *
- * @author Phillip Webb
- * @author Chris Beams
+
+
  * @since 3.2
  */
 public enum RegistrationPolicy {

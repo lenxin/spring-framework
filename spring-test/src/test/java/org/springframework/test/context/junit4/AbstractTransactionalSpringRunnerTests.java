@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Abstract base class for verifying support of Spring's {@link Transactional
  * &#64;Transactional} annotation.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see ClassLevelTransactionalSpringRunnerTests
  * @see MethodLevelTransactionalSpringRunnerTests

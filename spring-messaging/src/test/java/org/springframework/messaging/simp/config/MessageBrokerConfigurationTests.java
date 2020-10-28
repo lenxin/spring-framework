@@ -67,9 +67,9 @@ import static org.mockito.Mockito.*;
 /**
  * Test fixture for {@link AbstractMessageBrokerConfiguration}.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Sebastien Deleuze
+
+
+
  */
 public class MessageBrokerConfigurationTests {
 

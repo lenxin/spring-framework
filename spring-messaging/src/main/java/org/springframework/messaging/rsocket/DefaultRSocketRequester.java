@@ -23,7 +23,7 @@ import org.springframework.util.MimeType;
 /**
  * Default, package-private {@link RSocketRequester} implementation.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 final class DefaultRSocketRequester implements RSocketRequester {

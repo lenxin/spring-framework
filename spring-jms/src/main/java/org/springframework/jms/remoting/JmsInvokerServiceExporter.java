@@ -30,8 +30,8 @@ import org.springframework.remoting.support.RemoteInvocationResult;
  * <p>Thanks to James Strachan for the original prototype that this
  * JMS invoker mechanism was inspired by!
  *
- * @author Juergen Hoeller
- * @author James Strachan
+
+
  * @since 2.0
  * @see JmsInvokerClientInterceptor
  * @see JmsInvokerProxyFactoryBean

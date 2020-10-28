@@ -17,7 +17,7 @@ import org.springframework.http.client.ClientHttpRequest;
  * <li>{@link RestTemplate#httpEntityCallback(Object, Type)}
  * </ul>
  *
- * @author Arjen Poutsma
+
  * @see RestTemplate#execute
  * @since 3.0
  */

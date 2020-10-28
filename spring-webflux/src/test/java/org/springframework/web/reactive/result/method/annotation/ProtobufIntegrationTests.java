@@ -23,7 +23,7 @@ import org.springframework.web.reactive.protobuf.SecondMsg;
 /**
  * Integration tests for Protobuf support.
  *
- * @author Sebastien Deleuze
+
  */
 public class ProtobufIntegrationTests extends AbstractRequestMappingIntegrationTests {
 

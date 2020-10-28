@@ -15,7 +15,7 @@ import org.xml.sax.Locator;
 /**
  * SAX {@code ContentHandler} that transforms callback calls to DOM {@code Node}s.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see org.w3c.dom.Node
  */

@@ -6,7 +6,7 @@ import org.springframework.lang.Nullable;
  * Thrown by {@link HttpMessageConverter} implementations when the
  * {@link HttpMessageConverter#write} method fails.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

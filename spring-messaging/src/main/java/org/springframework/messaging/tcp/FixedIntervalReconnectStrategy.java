@@ -3,7 +3,7 @@ package org.springframework.messaging.tcp;
 /**
  * A simple strategy for making reconnect attempts at a fixed interval.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public class FixedIntervalReconnectStrategy implements ReconnectStrategy {

@@ -21,7 +21,7 @@ import static org.springframework.test.context.cache.ContextCacheTestUtils.*;
 import static org.springframework.test.context.junit4.JUnitTestingUtils.*;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 public class DirtiesContextInterfaceTests {

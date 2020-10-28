@@ -43,8 +43,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link BaseDefaultCodecs}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  */
 public class CodecConfigurerTests {
 

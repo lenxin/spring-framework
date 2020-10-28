@@ -32,10 +32,10 @@ import org.springframework.util.xml.DomUtils;
  * refreshable. To enable refreshing, specify the refresh check delay for each
  * object (in milliseconds) using the '{@code refresh-check-delay}' attribute.
  *
- * @author Rob Harrop
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Mark Fisher
+
+
+
+
  * @since 2.0
  */
 class ScriptBeanDefinitionParser extends AbstractBeanDefinitionParser {

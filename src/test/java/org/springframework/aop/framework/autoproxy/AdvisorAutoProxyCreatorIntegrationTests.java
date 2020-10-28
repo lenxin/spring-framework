@@ -31,8 +31,8 @@ import org.springframework.transaction.interceptor.TransactionInterceptor;
  *
  * @see org.springframework.aop.framework.autoproxy.AdvisorAutoProxyCreatorTests
  *
- * @author Rod Johnson
- * @author Chris Beams
+
+
  */
 public class AdvisorAutoProxyCreatorIntegrationTests {
 

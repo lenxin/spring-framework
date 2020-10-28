@@ -30,8 +30,8 @@ import org.springframework.util.StringUtils;
  * "/user/{username}" prefix is removed and a suffix based on active session id's
  * is added, e.g. "/queue/position-updates-useri9oqdfzo".
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 4.0
  */
 public class DefaultUserDestinationResolver implements UserDestinationResolver {

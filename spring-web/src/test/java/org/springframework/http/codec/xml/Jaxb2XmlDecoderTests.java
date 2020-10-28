@@ -26,7 +26,7 @@ import org.springframework.http.codec.xml.jaxb.XmlTypeWithNameAndNamespace;
 import static org.junit.Assert.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class Jaxb2XmlDecoderTests extends AbstractLeakCheckingTestCase {
 

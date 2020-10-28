@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
  * Assist with configuration for handler method return value handlers.
  * At present, it supports only providing a list of custom handlers.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public class ReturnValueHandlerConfigurer {

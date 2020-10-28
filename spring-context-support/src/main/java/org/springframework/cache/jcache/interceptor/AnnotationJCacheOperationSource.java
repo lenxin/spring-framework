@@ -23,7 +23,7 @@ import org.springframework.util.StringUtils;
  * the JSR-107 {@link CacheResult}, {@link CachePut}, {@link CacheRemove} and
  * {@link CacheRemoveAll} annotations.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public abstract class AnnotationJCacheOperationSource extends AbstractFallbackJCacheOperationSource {

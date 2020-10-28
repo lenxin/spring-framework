@@ -4,7 +4,7 @@ package org.springframework.dao;
  * Exception thrown when the underlying resource denied a permission
  * to access a specific element, such as a specific database table.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

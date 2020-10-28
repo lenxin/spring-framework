@@ -8,8 +8,8 @@ import org.springframework.util.function.SingletonSupplier;
  * A base component for invoking {@link Cache} operations and using a
  * configurable {@link CacheErrorHandler} when an exception occurs.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see org.springframework.cache.interceptor.CacheErrorHandler
  */

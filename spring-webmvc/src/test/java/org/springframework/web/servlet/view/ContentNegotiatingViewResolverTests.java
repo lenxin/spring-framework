@@ -33,7 +33,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class ContentNegotiatingViewResolverTests {
 

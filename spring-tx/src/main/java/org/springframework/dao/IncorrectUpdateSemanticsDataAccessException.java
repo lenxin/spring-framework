@@ -6,7 +6,7 @@ package org.springframework.dao;
  * Thrown, for example, when we wanted to update 1 row in an RDBMS but actually
  * updated 3.
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public class IncorrectUpdateSemanticsDataAccessException extends InvalidDataAccessResourceUsageException {

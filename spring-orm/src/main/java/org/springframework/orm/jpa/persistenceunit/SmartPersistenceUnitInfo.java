@@ -8,7 +8,7 @@ import javax.persistence.spi.PersistenceUnitInfo;
  * between Spring's {@link org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean}
  * and {@link PersistenceUnitManager} implementations.
  *
- * @author Juergen Hoeller
+
  * @since 3.0.1
  * @see PersistenceUnitManager
  * @see org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean

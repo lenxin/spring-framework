@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Import;
  * {@code <context:spring-configured>} XML element. Often used in conjunction with
  * {@link org.springframework.context.annotation.EnableLoadTimeWeaving @EnableLoadTimeWeaving}.
  *
- * @author Chris Beams
+
  * @since 3.1
  * @see org.springframework.context.annotation.EnableLoadTimeWeaving
  */

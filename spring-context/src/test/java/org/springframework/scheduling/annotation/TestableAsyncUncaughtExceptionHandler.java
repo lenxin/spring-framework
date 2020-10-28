@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  * An {@link AsyncUncaughtExceptionHandler} implementation used for testing purposes.
- * @author Stephane Nicoll
+
  */
 class TestableAsyncUncaughtExceptionHandler
 		implements AsyncUncaughtExceptionHandler {

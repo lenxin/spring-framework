@@ -10,9 +10,9 @@ import org.springframework.util.Assert;
  * Subclass of {@link BeanFactoryRefreshableTargetSource} that determines whether
  * a refresh is required through the given {@link ScriptFactory}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Mark Fisher
+
+
+
  * @since 2.0
  */
 public class RefreshableScriptTargetSource extends BeanFactoryRefreshableTargetSource {

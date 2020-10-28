@@ -7,7 +7,7 @@ import java.io.Writer;
  * Interface defining handling involved with providing {@code Writer}
  * data for XML input.
  *
- * @author Thomas Risberg
+
  * @since 2.5.5
  * @see java.io.Writer
  */

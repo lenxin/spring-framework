@@ -18,7 +18,7 @@ import java.security.Principal
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  * 
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ServerRequest.bodyToMono(): Mono<T> =
@@ -29,7 +29,7 @@ inline fun <reified T : Any> ServerRequest.bodyToMono(): Mono<T> =
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ServerRequest.bodyToFlux(): Flux<T> =
@@ -41,7 +41,7 @@ inline fun <reified T : Any> ServerRequest.bodyToFlux(): Flux<T> =
  * Backpressure is controlled by [batchSize] parameter that controls the size of in-flight elements
  * and [org.reactivestreams.Subscription.request] size.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 @FlowPreview
@@ -51,7 +51,7 @@ inline fun <reified T : Any> ServerRequest.bodyToFlow(batchSize: Int = 1): Flow<
 /**
  * Non-nullable Coroutines variant of [ServerRequest.bodyToMono].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend inline fun <reified T : Any> ServerRequest.awaitBody(): T =
@@ -60,7 +60,7 @@ suspend inline fun <reified T : Any> ServerRequest.awaitBody(): T =
 /**
  * Nullable Coroutines variant of [ServerRequest.bodyToMono].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend inline fun <reified T : Any> ServerRequest.awaitBodyOrNull(): T? =
@@ -69,7 +69,7 @@ suspend inline fun <reified T : Any> ServerRequest.awaitBodyOrNull(): T? =
 /**
  * Coroutines variant of [ServerRequest.formData].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerRequest.awaitFormData(): MultiValueMap<String, String> =
@@ -78,7 +78,7 @@ suspend fun ServerRequest.awaitFormData(): MultiValueMap<String, String> =
 /**
  * Coroutines variant of [ServerRequest.multipartData].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerRequest.awaitMultipartData(): MultiValueMap<String, Part> =
@@ -87,7 +87,7 @@ suspend fun ServerRequest.awaitMultipartData(): MultiValueMap<String, Part> =
 /**
  * Coroutines variant of [ServerRequest.principal].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerRequest.awaitPrincipalOrNull(): Principal? =
@@ -96,7 +96,7 @@ suspend fun ServerRequest.awaitPrincipalOrNull(): Principal? =
 /**
  * Coroutines variant of [ServerRequest.session].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerRequest.awaitSession(): WebSession =

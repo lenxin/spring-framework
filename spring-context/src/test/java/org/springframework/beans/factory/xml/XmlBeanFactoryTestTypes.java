@@ -17,7 +17,7 @@ import java.util.*;
 /**
  * Types used by {@link XmlBeanFactoryTests} and its attendant XML config files.
  *
- * @author Chris Beams
+
  */
 final class XmlBeanFactoryTestTypes {
 }
@@ -25,7 +25,7 @@ final class XmlBeanFactoryTestTypes {
 /**
  * Simple bean used to check constructor dependency checking.
  *
- * @author Juergen Hoeller
+
  * @since 09.11.2003
  */
 @SuppressWarnings("serial")
@@ -132,7 +132,7 @@ class SimpleConstructorArgBean {
  * There is also a property ("setterString") to be set via
  * Setter Injection.
  *
- * @author Rod Johnson
+
  */
 abstract class ConstructorInjectedOverrides {
 
@@ -162,7 +162,7 @@ abstract class ConstructorInjectedOverrides {
 /**
  * Simple bean used to check constructor dependency checking.
  *
- * @author Juergen Hoeller
+
  * @since 09.11.2003
  */
 @SuppressWarnings({"serial", "unused"})
@@ -199,7 +199,7 @@ class DerivedConstructorDependenciesBean extends ConstructorDependenciesBean {
 }
 
 /**
- * @author Rod Johnson
+
  */
 interface DummyBo {
 
@@ -207,7 +207,7 @@ interface DummyBo {
 }
 
 /**
- * @author Rod Johnson
+
  */
 class DummyBoImpl implements DummyBo {
 
@@ -223,13 +223,13 @@ class DummyBoImpl implements DummyBo {
 }
 
 /**
- * @author Rod Johnson
+
  */
 class DummyDao {
 }
 
 /**
- * @author Juergen Hoeller
+
  * @since 21.07.2003
  */
 class DummyReferencer {
@@ -276,8 +276,8 @@ class DummyReferencer {
  * Test class for Spring's ability to create objects using static
  * factory methods, rather than constructors.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("unused")
 class FactoryMethods {
@@ -371,7 +371,7 @@ class FactoryMethods {
 /**
  * Fixed method replacer for String return types
  *
- * @author Rod Johnson
+
  */
 class FixedMethodReplacer implements MethodReplacer {
 
@@ -384,7 +384,7 @@ class FixedMethodReplacer implements MethodReplacer {
 }
 
 /**
- * @author Chris Beams
+
  */
 class MapAndSet {
 
@@ -404,7 +404,7 @@ class MapAndSet {
 }
 
 /**
- * @author Rod Johnson
+
  */
 class MethodReplaceCandidate {
 
@@ -431,7 +431,7 @@ class MixedCollectionBean {
 }
 
 /**
- * @author Juergen Hoeller
+
  */
 interface OverrideInterface {
 
@@ -441,8 +441,8 @@ interface OverrideInterface {
 }
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 abstract class OverrideOneMethod extends MethodReplaceCandidate implements OverrideInterface {
 
@@ -486,7 +486,7 @@ abstract class OverrideOneMethod extends MethodReplaceCandidate implements Overr
  * Subclass of OverrideOneMethod, to check that overriding is
  * supported for inherited methods.
  *
- * @author Rod Johnson
+
  */
 abstract class OverrideOneMethodSubclass extends OverrideOneMethod {
 
@@ -499,8 +499,8 @@ abstract class OverrideOneMethodSubclass extends OverrideOneMethod {
 /**
  * Simple test of BeanFactory initialization and lifecycle callbacks.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 class ProtectedLifecycleBean implements BeanNameAware, BeanFactoryAware, InitializingBean, DisposableBean {
 
@@ -637,7 +637,7 @@ class ProtectedLifecycleBean implements BeanNameAware, BeanFactoryAware, Initial
 }
 
 /**
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 class ReverseMethodReplacer implements MethodReplacer, Serializable {
@@ -650,7 +650,7 @@ class ReverseMethodReplacer implements MethodReplacer, Serializable {
 }
 
 /**
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 abstract class SerializableMethodReplacerCandidate extends MethodReplaceCandidate implements Serializable {
@@ -659,7 +659,7 @@ abstract class SerializableMethodReplacerCandidate extends MethodReplaceCandidat
 }
 
 /**
- * @author Juergen Hoeller
+
  * @since 23.10.2004
  */
 class SingleSimpleTypeConstructorBean {

@@ -20,8 +20,8 @@ import org.springframework.core.annotation.AliasFor;
  * method allows you to prioritize that listener amongst other listeners running before
  * or after transaction completion.
  *
- * @author Stephane Nicoll
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 @Target({ElementType.METHOD, ElementType.ANNOTATION_TYPE})

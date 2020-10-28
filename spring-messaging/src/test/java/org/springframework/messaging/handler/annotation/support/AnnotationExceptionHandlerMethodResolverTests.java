@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link AnnotationExceptionHandlerMethodResolver} tests.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  */
 public class AnnotationExceptionHandlerMethodResolverTests {
 

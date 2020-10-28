@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
  * <p>This annotation may be used as a <em>meta-annotation</em> to create custom
  * <em>composed annotations</em>.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see Sql
  */

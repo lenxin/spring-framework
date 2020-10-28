@@ -7,7 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
  * we can specify an explicit, <em>relative path</em> location for our
  * application context.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see SpringJUnit4ClassRunnerAppCtxTests
  * @see AbsolutePathSpringJUnit4ClassRunnerAppCtxTests

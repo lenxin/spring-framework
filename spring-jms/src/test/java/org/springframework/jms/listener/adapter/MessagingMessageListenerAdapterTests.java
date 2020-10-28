@@ -35,7 +35,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class MessagingMessageListenerAdapterTests {
 

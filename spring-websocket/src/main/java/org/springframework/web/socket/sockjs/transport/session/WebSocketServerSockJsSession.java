@@ -26,8 +26,8 @@ import org.springframework.web.socket.sockjs.transport.SockJsServiceConfig;
 /**
  * A SockJS session for use with the WebSocket transport.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 public class WebSocketServerSockJsSession extends AbstractSockJsSession implements NativeWebSocketSession {

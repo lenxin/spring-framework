@@ -34,7 +34,7 @@ import org.springframework.validation.annotation.Validated;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class DefaultMessageHandlerMethodFactoryTests {
 

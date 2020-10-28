@@ -16,8 +16,8 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
  * @since 14.09.2005
  */
 public class UrlFilenameViewControllerTests {

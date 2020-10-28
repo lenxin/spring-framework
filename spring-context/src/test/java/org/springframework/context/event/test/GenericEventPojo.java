@@ -6,7 +6,7 @@ import org.springframework.core.ResolvableTypeProvider;
 /**
  * A simple POJO that implements {@link ResolvableTypeProvider}.
  *
- * @author Stephane Nicoll
+
  */
 public class GenericEventPojo<T> implements ResolvableTypeProvider {
 	private final T value;

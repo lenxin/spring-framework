@@ -29,7 +29,7 @@ import org.springframework.util.Assert;
  * <p>You can either pass in a CCI Connection directly, or let this
  * factory lazily create a Connection via a given target ConnectionFactory.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see #getConnection()
  * @see javax.resource.cci.Connection#close()

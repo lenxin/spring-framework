@@ -8,8 +8,8 @@ import org.junit.Test;
  * Yes this will re-run the tests from the superclass, but that
  * doesn't matter in the grand scheme of things...
  *
- * @author Adrian Colyer
- * @author Chris Beams
+
+
  */
 public class AspectJAdviceParameterNameDiscoverAnnotationTests extends AspectJAdviceParameterNameDiscovererTests {
 

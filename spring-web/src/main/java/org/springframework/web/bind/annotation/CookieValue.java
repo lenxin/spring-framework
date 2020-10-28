@@ -14,8 +14,8 @@ import org.springframework.core.annotation.AliasFor;
  * <p>The method parameter may be declared as type {@link javax.servlet.http.Cookie}
  * or as cookie value type (String, int, etc.).
  *
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  * @since 3.0
  * @see RequestMapping
  * @see RequestParam

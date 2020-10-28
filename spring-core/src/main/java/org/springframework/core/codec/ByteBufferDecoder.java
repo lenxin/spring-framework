@@ -13,9 +13,9 @@ import org.springframework.util.MimeTypeUtils;
 /**
  * Decoder for {@link ByteBuffer ByteBuffers}.
  *
- * @author Sebastien Deleuze
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
+
  * @since 5.0
  */
 public class ByteBufferDecoder extends AbstractDataBufferDecoder<ByteBuffer> {

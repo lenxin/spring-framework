@@ -12,7 +12,7 @@ import org.springframework.transaction.support.TransactionTemplate;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 29.04.2003
  */
 public class TransactionSupportTests {

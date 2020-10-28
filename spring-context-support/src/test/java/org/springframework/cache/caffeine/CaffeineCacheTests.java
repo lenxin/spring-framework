@@ -10,8 +10,8 @@ import org.springframework.cache.Cache;
 import static org.junit.Assert.*;
 
 /**
- * @author Ben Manes
- * @author Stephane Nicoll
+
+
  */
 public class CaffeineCacheTests extends AbstractValueAdaptingCacheTests<CaffeineCache> {
 

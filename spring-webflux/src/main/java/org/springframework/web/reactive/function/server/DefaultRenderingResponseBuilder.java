@@ -29,8 +29,8 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Default {@link RenderingResponse.Builder} implementation.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 5.0
  */
 final class DefaultRenderingResponseBuilder implements RenderingResponse.Builder {

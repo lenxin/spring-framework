@@ -18,7 +18,7 @@ import static org.mockito.BDDMockito.*;
  * Unit tests for
  * {@link org.springframework.web.servlet.resource.WebJarsResourceResolver}.
  *
- * @author Brian Clozel
+
  */
 public class WebJarsResourceResolverTests {
 

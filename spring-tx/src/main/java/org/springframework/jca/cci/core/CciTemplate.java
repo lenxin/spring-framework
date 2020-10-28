@@ -46,8 +46,8 @@ import org.springframework.util.Assert;
  * always be configured as a bean in the application context, in the first case
  * given to the service directly, in the second case to the prepared template.
  *
- * @author Thierry Templier
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see RecordCreator
  * @see RecordExtractor

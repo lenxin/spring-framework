@@ -7,7 +7,7 @@ import org.junit.After;
  * After each unit test, this base class checks whether all created buffers have been released,
  * throwing an {@link AssertionError} if not.
  *
- * @author Arjen Poutsma
+
  * @since 5.1.3
  * @see LeakAwareDataBufferFactory
  */

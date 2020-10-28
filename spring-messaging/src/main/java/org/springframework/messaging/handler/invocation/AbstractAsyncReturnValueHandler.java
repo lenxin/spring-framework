@@ -10,7 +10,7 @@ import org.springframework.messaging.Message;
  * and merely serve as adapters of such types to Spring's
  * {@link org.springframework.util.concurrent.ListenableFuture ListenableFuture}.
  *
- * @author Sebastien Deleuze
+
  * @since 4.2
  */
 public abstract class AbstractAsyncReturnValueHandler implements AsyncHandlerMethodReturnValueHandler {

@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rod Johnson
- * @author Chris Beams
+
+
  */
 public class ThrowsAdviceInterceptorTests {
 

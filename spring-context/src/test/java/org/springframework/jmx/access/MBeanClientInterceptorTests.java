@@ -26,10 +26,10 @@ import static org.junit.Assert.*;
 import static org.junit.Assume.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Chris Beams
+
+
+
+
  */
 public class MBeanClientInterceptorTests extends AbstractMBeanServerTests {
 

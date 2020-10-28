@@ -32,8 +32,8 @@ import org.springframework.util.CollectionUtils;
  * {@link #setAlwaysUseFullPath "alwaysUseFullPath"} property. For details on the
  * pattern options, see the {@link org.springframework.util.AntPathMatcher} javadoc.
 
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #setMappings
  * @see #setUrlMap
  * @see BeanNameUrlHandlerMapping

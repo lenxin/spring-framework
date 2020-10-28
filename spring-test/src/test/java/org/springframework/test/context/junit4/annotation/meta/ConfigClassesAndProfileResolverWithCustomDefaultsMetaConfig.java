@@ -17,7 +17,7 @@ import org.springframework.test.context.ContextConfiguration;
  * {@link ContextConfiguration#classes} and {@link ActiveProfiles#resolver} and
  * with default configuration local to the composed annotation.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 @ContextConfiguration

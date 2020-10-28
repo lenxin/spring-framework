@@ -3,8 +3,8 @@ package org.springframework.jdbc.datasource.embedded;
 /**
  * A supported embedded database type.
  *
- * @author Keith Donald
- * @author Oliver Gierke
+
+
  * @since 3.0
  */
 public enum EmbeddedDatabaseType {

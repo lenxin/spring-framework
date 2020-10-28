@@ -6,7 +6,7 @@ import org.springframework.lang.Nullable;
  * Metadata that indicates to expose a given bean property as JMX attribute.
  * Only valid when used on a JavaBean getter or setter.
  *
- * @author Rob Harrop
+
  * @since 1.2
  * @see org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler
  * @see org.springframework.jmx.export.MBeanExporter

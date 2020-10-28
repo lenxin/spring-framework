@@ -7,7 +7,7 @@ import org.springframework.aop.ClassFilter;
 /**
  * Simple ClassFilter implementation that passes classes (and optionally subclasses).
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public class RootClassFilter implements ClassFilter, Serializable {

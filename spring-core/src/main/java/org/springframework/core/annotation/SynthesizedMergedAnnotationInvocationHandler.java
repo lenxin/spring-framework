@@ -20,8 +20,8 @@ import org.springframework.util.ReflectionUtils;
  * <em>synthesized</em> (i.e. wrapped in a dynamic proxy) with additional
  * functionality such as attribute alias handling.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 5.2
  * @param <A> the annotation type
  * @see Annotation

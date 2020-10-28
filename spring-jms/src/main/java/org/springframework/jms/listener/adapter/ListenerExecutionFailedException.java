@@ -5,7 +5,7 @@ import org.springframework.jms.JmsException;
 /**
  * Exception to be thrown when the execution of a listener method failed.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see MessageListenerAdapter
  */

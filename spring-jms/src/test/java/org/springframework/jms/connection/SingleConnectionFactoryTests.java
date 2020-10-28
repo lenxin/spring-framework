@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 26.07.2004
  */
 public class SingleConnectionFactoryTests {

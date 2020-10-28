@@ -27,8 +27,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for type comparison
  *
- * @author Andy Clement
- * @author Giovanni Dall'Oglio Risso
+
+
  */
 public class DefaultComparatorUnitTests {
 

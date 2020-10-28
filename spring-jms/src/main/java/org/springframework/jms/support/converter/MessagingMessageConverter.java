@@ -20,7 +20,7 @@ import org.springframework.util.Assert;
  * for the payload and a {@link org.springframework.jms.support.JmsHeaderMapper}
  * to map the JMS headers to and from standard message headers.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class MessagingMessageConverter implements MessageConverter, InitializingBean {

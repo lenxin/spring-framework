@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
  * <p>Multiple such rules can be applied to determine whether a transaction
  * should commit or rollback after an exception has been thrown.
  *
- * @author Rod Johnson
+
  * @since 09.04.2003
  * @see NoRollbackRuleAttribute
  */

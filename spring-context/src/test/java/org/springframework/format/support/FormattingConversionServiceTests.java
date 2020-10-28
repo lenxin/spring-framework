@@ -42,10 +42,10 @@ import org.springframework.format.number.NumberStyleFormatter;
 import static org.junit.Assert.*;
 
 /**
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Kazuki Shimizu
- * @author Sam Brannen
+
+
+
+
  */
 public class FormattingConversionServiceTests {
 

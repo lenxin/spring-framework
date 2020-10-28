@@ -12,9 +12,9 @@ import static org.junit.Assert.*;
  * Test the conversion of Strings to {@link java.util.Properties} objects,
  * and other property editors.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
+
  */
 public class PropertiesEditorTests {
 

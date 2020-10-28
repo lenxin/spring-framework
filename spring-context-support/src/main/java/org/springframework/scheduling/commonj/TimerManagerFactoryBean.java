@@ -30,7 +30,7 @@ import org.springframework.lang.Nullable;
  * shared between repeated executions, in contrast to Quartz which
  * instantiates a new Job for each execution.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see ScheduledTimerListener
  * @see commonj.timers.TimerManager

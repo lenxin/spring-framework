@@ -14,7 +14,7 @@ import org.springframework.util.backoff.BackOff;
  * <p>This should be the default for most users and a good transition paths
  * for those that are used to build such container definition manually.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class DefaultJmsListenerContainerFactory

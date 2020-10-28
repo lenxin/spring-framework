@@ -10,7 +10,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 /**
  * Bean exposing a map. Used for bean factory tests.
  *
- * @author Rod Johnson
+
  * @since 05.06.2003
  */
 public class HasMap {

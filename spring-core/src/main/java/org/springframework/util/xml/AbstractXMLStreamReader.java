@@ -10,7 +10,7 @@ import org.springframework.lang.Nullable;
 /**
  * Abstract base class for {@code XMLStreamReader}s.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 abstract class AbstractXMLStreamReader implements XMLStreamReader {

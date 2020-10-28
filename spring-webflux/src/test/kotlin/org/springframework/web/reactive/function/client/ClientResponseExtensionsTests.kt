@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono
 /**
  * Mock object based tests for [ClientResponse] Kotlin extensions.
  *
- * @author Sebastien Deleuze
+
  */
 class ClientResponseExtensionsTests {
 

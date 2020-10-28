@@ -33,8 +33,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AppCacheManifestTransformer}.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  */
 public class AppCacheManifestTransformerTests {
 

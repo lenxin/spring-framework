@@ -21,8 +21,8 @@ import org.springframework.util.ErrorHandler;
  * Implementation of Spring's {@link TaskScheduler} interface, wrapping
  * a CommonJ {@link commonj.timers.TimerManager}.
  *
- * @author Juergen Hoeller
- * @author Mark Fisher
+
+
  * @since 3.0
  * @deprecated as of 5.1, in favor of EE 7's
  * {@link org.springframework.scheduling.concurrent.DefaultManagedTaskScheduler}

@@ -32,7 +32,7 @@ import org.springframework.core.codec.Encoder;
  * <li>Custom readers and writers.
  * </ol>
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public interface CodecConfigurer {

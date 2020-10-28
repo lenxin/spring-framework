@@ -14,7 +14,7 @@ import org.springframework.util.FileCopyUtils;
  * <p>To avoid compile time checks again the vendor API, a dynamic proxy is
  * being used.
  *
- * @author Costin Leau
+
  * @since 3.1
  */
 class WebSphereClassPreDefinePlugin implements InvocationHandler {

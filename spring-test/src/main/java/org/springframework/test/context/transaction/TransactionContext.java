@@ -16,8 +16,8 @@ import org.springframework.util.Assert;
 /**
  * Transaction context for a specific {@link TestContext}.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see org.springframework.transaction.annotation.Transactional
  * @see org.springframework.test.context.transaction.TransactionalTestExecutionListener

@@ -9,7 +9,7 @@ import org.springframework.aop.support.DelegatingIntroductionInterceptor;
  * Test/demonstration of AOP mixin support rather than a
  * useful interceptor in its own right.
  *
- * @author Rod Johnson
+
  * @since 10.07.2003
  */
 @SuppressWarnings("serial")

@@ -52,7 +52,7 @@ import org.springframework.util.Assert;
  * {@link org.springframework.core.task.TaskExecutor} abstraction,
  * including dynamic scaling of concurrent consumers and automatic self recovery.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.3
  * @see #createListenerConsumer
  * @see #receiveAndExecute

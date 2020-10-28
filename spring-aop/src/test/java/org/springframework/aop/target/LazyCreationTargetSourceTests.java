@@ -8,9 +8,9 @@ import org.springframework.aop.framework.ProxyFactory;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class LazyCreationTargetSourceTests {
 

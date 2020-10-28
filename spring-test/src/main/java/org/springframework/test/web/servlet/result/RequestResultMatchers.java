@@ -21,8 +21,8 @@ import static org.springframework.test.util.AssertionErrors.assertEquals;
  * <p>An instance of this class is typically accessed via
  * {@link MockMvcResultMatchers#request}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  * @since 3.2
  */
 public class RequestResultMatchers {

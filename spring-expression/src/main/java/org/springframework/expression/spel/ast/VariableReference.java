@@ -14,7 +14,7 @@ import org.springframework.lang.Nullable;
  * Represents a variable reference, eg. #someVar. Note this is different to a *local*
  * variable like $someVar
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class VariableReference extends SpelNodeImpl {

@@ -16,8 +16,8 @@ import org.springframework.web.context.WebApplicationContext;
  * {@linkplain #mockMvcSetup supplied directly} or created transparently
  * from a {@link #webAppContextSetup WebApplicationContext}.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  * @see #mockMvcSetup(MockMvc)
  * @see #webAppContextSetup(WebApplicationContext)

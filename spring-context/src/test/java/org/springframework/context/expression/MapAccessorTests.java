@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for compilation of {@link MapAccessor}.
  *
- * @author Andy Clement
+
  */
 public class MapAccessorTests {
 

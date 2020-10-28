@@ -30,8 +30,8 @@ import org.springframework.web.reactive.socket.adapter.JettyWebSocketSession;
  * managed when this class is declared as a Spring bean and created with the
  * default constructor. See constructor notes for more details.
  *
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class JettyWebSocketClient implements WebSocketClient, Lifecycle {

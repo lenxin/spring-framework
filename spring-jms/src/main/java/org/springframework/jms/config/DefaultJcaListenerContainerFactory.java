@@ -12,7 +12,7 @@ import org.springframework.lang.Nullable;
  * A {@link JmsListenerContainerFactory} implementation to build a
  * JCA-based {@link JmsMessageEndpointManager}.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class DefaultJcaListenerContainerFactory extends JmsActivationSpecConfig

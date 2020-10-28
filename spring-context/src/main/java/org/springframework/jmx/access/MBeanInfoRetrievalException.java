@@ -6,8 +6,8 @@ import org.springframework.jmx.JmxException;
  * Thrown if an exception is encountered when trying to retrieve
  * MBean metadata.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see MBeanClientInterceptor
  * @see MBeanProxyFactoryBean

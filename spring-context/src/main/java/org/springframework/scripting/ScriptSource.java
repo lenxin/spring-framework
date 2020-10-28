@@ -8,8 +8,8 @@ import org.springframework.lang.Nullable;
  * Interface that defines the source of a script.
  * Tracks whether the underlying script has been modified.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public interface ScriptSource {

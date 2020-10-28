@@ -36,8 +36,8 @@ import static org.junit.Assert.assertTrue;
 /**
  * Unit tests for {@link ModelAttributeMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  */
 public class ModelAttributeMethodArgumentResolverTests {
 

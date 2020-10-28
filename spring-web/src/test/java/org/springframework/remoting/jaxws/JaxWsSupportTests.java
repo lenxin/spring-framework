@@ -23,7 +23,7 @@ import org.springframework.remoting.RemoteAccessException;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 2.5
  */
 public class JaxWsSupportTests {

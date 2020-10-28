@@ -35,7 +35,7 @@ import org.springframework.validation.annotation.Validated;
  *
  * <p>As of Spring 5.0, this functionality requires a Bean Validation 1.1 provider.
  *
- * @author Juergen Hoeller
+
  * @since 3.1
  * @see MethodValidationPostProcessor
  * @see javax.validation.executable.ExecutableValidator

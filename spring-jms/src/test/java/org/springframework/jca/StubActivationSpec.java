@@ -6,7 +6,7 @@ import javax.resource.spi.InvalidPropertyException;
 import javax.resource.spi.ResourceAdapter;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class StubActivationSpec implements ActivationSpec {
 

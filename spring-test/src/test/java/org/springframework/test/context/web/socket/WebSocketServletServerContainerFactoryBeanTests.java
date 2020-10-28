@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * in conjunction with {@link WebAppConfiguration @WebAppConfiguration} and the
  * Spring TestContext Framework.
  *
- * @author Sam Brannen
+
  * @since 4.3.1
  */
 @RunWith(SpringRunner.class)

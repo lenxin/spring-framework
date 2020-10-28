@@ -11,9 +11,9 @@ import org.springframework.tests.sample.beans.TestBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Arjen Poutsma
+
+
+
  */
 public class SimplePropertyNamespaceHandlerTests {
 

@@ -10,7 +10,7 @@ import org.springframework.expression.spel.ExpressionState;
  *
  * <p>Example: 'someNumberProperty=42'
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class Assign extends SpelNodeImpl {

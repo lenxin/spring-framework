@@ -10,8 +10,8 @@ import org.springframework.util.ObjectUtils;
  * Represent an {@link AnnotatedElement} on a particular {@link Class}
  * and is suitable as a key.
  *
- * @author Costin Leau
- * @author Stephane Nicoll
+
+
  * @since 4.2
  * @see CachedExpressionEvaluator
  */

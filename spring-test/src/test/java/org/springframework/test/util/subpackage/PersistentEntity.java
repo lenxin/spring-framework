@@ -18,7 +18,7 @@
  * Abstract base class for <em>persistent entities</em>; intended for use in
  * unit tests.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 public abstract class PersistentEntity {

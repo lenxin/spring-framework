@@ -25,9 +25,9 @@ import static java.util.Arrays.*;
 import static java.util.Collections.*;
 
 /**
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  */
 public class Jackson2TokenizerTests extends AbstractLeakCheckingTestCase {
 

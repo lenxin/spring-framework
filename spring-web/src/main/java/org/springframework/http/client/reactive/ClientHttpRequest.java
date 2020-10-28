@@ -10,8 +10,8 @@ import org.springframework.util.MultiValueMap;
 /**
  * Represents a client-side reactive HTTP request.
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 public interface ClientHttpRequest extends ReactiveHttpOutputMessage {

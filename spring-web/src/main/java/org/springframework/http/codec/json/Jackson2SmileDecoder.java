@@ -13,8 +13,8 @@ import org.springframework.util.MimeType;
  * Decode a byte stream into Smile and convert to Object's with Jackson 2.9,
  * leveraging non-blocking parsing.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @see Jackson2JsonEncoder
  */

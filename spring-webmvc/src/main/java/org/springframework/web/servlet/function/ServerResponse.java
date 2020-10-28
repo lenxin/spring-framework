@@ -34,7 +34,7 @@ import org.springframework.web.servlet.ModelAndView;
  * by a {@linkplain HandlerFunction handler function} or
  * {@linkplain HandlerFilterFunction filter function}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 public interface ServerResponse {

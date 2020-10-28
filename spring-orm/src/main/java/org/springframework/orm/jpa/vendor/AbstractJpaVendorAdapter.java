@@ -14,8 +14,8 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
  * Abstract {@link JpaVendorAdapter} implementation that defines common properties,
  * to be translated into vendor-specific JPA properties by concrete subclasses.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 2.0
  */
 public abstract class AbstractJpaVendorAdapter implements JpaVendorAdapter {

@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 /**
  * Test for SPR-10277 (multiple method chaining when building MockMvc).
  *
- * @author Wesley Hall
+
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

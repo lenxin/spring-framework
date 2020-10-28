@@ -12,8 +12,8 @@ import org.springframework.util.StringUtils;
  * The file "sql-error-codes.xml" in this package contains default
  * {@code SQLErrorCodes} instances for various databases.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @see SQLErrorCodesFactory
  * @see SQLErrorCodeSQLExceptionTranslator
  */

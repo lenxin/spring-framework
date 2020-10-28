@@ -34,9 +34,9 @@ import org.springframework.util.ReflectionUtils;
  * collection of framework-specific AOP utility methods which depend
  * on internals of Spring's AOP framework implementation.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
+
  * @see org.springframework.aop.framework.AopProxyUtils
  */
 public abstract class AopUtils {

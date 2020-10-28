@@ -30,7 +30,7 @@ import static org.mockito.Mockito.*;
 
 /**
  *
- * @author Stephane Nicoll
+
  */
 public abstract class AbstractJmsAnnotationDrivenTests {
 

@@ -20,7 +20,7 @@ import org.springframework.transaction.PlatformTransactionManager;
  * that has been modified to use {@link SpringClassRule} and
  * {@link SpringMethodRule}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 @RunWith(JUnit4.class)

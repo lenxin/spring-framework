@@ -49,9 +49,9 @@ import static org.junit.Assert.*;
  * Abstract tests for AspectJAdvisorFactory.
  * See subclasses for tests of concrete factories.
  *
- * @author Rod Johnson
- * @author Chris Beams
- * @author Phillip Webb
+
+
+
  */
 public abstract class AbstractAspectJAdvisorFactoryTests {
 
@@ -862,7 +862,7 @@ public abstract class AbstractAspectJAdvisorFactoryTests {
  * Add a DeclareParents field in concrete subclasses, to identify
  * the type pattern to apply the introduction to.
  *
- * @author Rod Johnson
+
  * @since 2.0
  */
 @Aspect
@@ -948,7 +948,7 @@ abstract class AbstractMakeModifiable {
 
 /**
  * Adds a declare parents pointcut.
- * @author Rod Johnson
+
  * @since 2.0
  */
 @Aspect
@@ -963,7 +963,7 @@ class MakeITestBeanModifiable extends AbstractMakeModifiable {
 
 /**
  * Adds a declare parents pointcut - spr5307
- * @author Andy Clement
+
  * @since 3.0
  */
 @Aspect
@@ -1024,7 +1024,7 @@ class CannotBeUnlocked implements Lockable, Comparable<Object> {
 /**
  * Used as a mixin.
  *
- * @author Rod Johnson
+
  */
 interface Modifiable {
 
@@ -1037,7 +1037,7 @@ interface Modifiable {
 
 /**
  * Used as a target.
- * @author Andy Clement
+
  */
 interface AnnotatedTarget {
 }

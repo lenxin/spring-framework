@@ -21,9 +21,9 @@ import org.springframework.util.StreamUtils;
  * <p>By default, this converter can read all media types. The {@link MediaTypeFactory} is used
  * to determine the {@code Content-Type} of written resources.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Kazuki Shimizu
+
+
+
  * @since 3.0.2
  */
 public class ResourceHttpMessageConverter extends AbstractHttpMessageConverter<Resource> {

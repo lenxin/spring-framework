@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 /**
  * Transactional integration tests for {@link Sql @Sql} support.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

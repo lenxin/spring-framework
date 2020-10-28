@@ -36,9 +36,9 @@ import org.springframework.jdbc.support.JdbcUtils;
  * "useNewConnection" property to false. In this case you <i>MUST</i> use a non-transactional
  * storage engine like MYISAM when defining the incrementer table.
  *
- * @author Jean-Pierre Pawlak
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
+
  */
 public class MySQLMaxValueIncrementer extends AbstractColumnMaxValueIncrementer {
 

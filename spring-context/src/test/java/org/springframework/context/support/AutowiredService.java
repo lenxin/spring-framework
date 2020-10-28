@@ -3,7 +3,7 @@ package org.springframework.context.support;
 import org.springframework.context.MessageSource;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class AutowiredService {
 

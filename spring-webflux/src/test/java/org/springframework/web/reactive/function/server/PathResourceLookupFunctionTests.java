@@ -13,7 +13,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class PathResourceLookupFunctionTests {
 

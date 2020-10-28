@@ -7,7 +7,7 @@ import java.util.Comparator;
  * A {@link Comparator} for {@link Boolean} objects that can sort either
  * {@code true} or {@code false} first.
  *
- * @author Keith Donald
+
  * @since 1.2.2
  */
 @SuppressWarnings("serial")

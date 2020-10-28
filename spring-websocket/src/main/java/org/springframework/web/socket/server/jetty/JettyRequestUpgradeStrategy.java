@@ -36,10 +36,10 @@ import org.springframework.web.socket.server.RequestUpgradeStrategy;
  * A {@link RequestUpgradeStrategy} for use with Jetty 9.4. Based on Jetty's
  * internal {@code org.eclipse.jetty.websocket.server.WebSocketHandler} class.
  *
- * @author Phillip Webb
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Juergen Hoeller
+
+
+
+
  * @since 4.0
  */
 public class JettyRequestUpgradeStrategy implements RequestUpgradeStrategy, ServletContextAware, Lifecycle {

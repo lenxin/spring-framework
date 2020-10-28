@@ -10,7 +10,7 @@ import org.springframework.util.MimeType;
 /**
  * Base class providing support methods for Protobuf encoding and decoding.
  *
- * @author Sebastien Deleuze
+
  * @since 5.1
  */
 public abstract class ProtobufCodecSupport {

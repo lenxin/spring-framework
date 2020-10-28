@@ -5,7 +5,7 @@ package org.springframework.web.util.pattern;
  * to another method (e.g. a java regex matcher) but not wanting to create a new string object
  * to hold all that data.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 class SubSequence implements CharSequence {

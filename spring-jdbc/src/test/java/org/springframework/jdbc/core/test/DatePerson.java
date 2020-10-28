@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class DatePerson {
 

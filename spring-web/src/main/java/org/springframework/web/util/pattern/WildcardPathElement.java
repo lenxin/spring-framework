@@ -9,7 +9,7 @@ import org.springframework.web.util.pattern.PathPattern.MatchingContext;
  * represented by a WildcardPathElement. Within a path it matches at least
  * one character but at the end of a path it can match zero characters.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 class WildcardPathElement extends PathElement {

@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link StandardServletEnvironment}.
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 public class StandardServletEnvironmentTests {

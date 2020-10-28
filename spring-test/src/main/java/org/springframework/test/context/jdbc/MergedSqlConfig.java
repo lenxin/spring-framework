@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  *
  * <p>Explicit local configuration attributes override global configuration attributes.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see SqlConfig
  */

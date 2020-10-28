@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component
 import static groovy.test.GroovyAssert.*
 
 /**
- * @author Jeff Brown
- * @author Sam Brannen
+
+
  */
 class GroovyBeanDefinitionReaderTests {
 

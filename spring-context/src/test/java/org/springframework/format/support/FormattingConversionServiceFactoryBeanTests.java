@@ -26,8 +26,8 @@ import org.springframework.format.annotation.NumberFormat;
 import static org.junit.Assert.*;
 
 /**
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  */
 public class FormattingConversionServiceFactoryBeanTests {
 

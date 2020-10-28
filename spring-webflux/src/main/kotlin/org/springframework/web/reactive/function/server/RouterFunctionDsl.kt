@@ -32,7 +32,7 @@ import java.util.function.Supplier
  *
  * }
  * ```
- * @author Sebastien Deleuze
+
  * @see coRouter
  * @since 5.0
  */
@@ -41,8 +41,8 @@ fun router(routes: RouterFunctionDsl.() -> Unit) = RouterFunctionDsl(routes).bui
 /**
  * Provide a WebFlux.fn [RouterFunction] Reactive Kotlin DSL created by [`router { }`][router] in order to be able to write idiomatic Kotlin code.
  *
- * @author Sebastien Deleuze
- * @author Yevhenii Melnyk
+
+
  * @since 5.0
  */
 class RouterFunctionDsl(private val init: RouterFunctionDsl.() -> Unit) {

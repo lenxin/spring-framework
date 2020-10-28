@@ -34,7 +34,7 @@ import static org.springframework.web.method.ResolvableMethod.*;
 
 /**
  * Unit tests for ResponseBodyEmitterReturnValueHandler.
- * @author Rossen Stoyanchev
+
  */
 public class ResponseBodyEmitterReturnValueHandlerTests {
 

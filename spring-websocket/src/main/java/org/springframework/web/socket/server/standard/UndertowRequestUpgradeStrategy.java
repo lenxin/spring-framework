@@ -24,7 +24,7 @@ import org.springframework.web.socket.server.HandshakeFailureException;
  *
  * <p>Requires Undertow 1.3.5+ as of Spring Framework 5.0.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0.1
  */
 public class UndertowRequestUpgradeStrategy extends AbstractStandardUpgradeStrategy {

@@ -29,7 +29,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 /**
  * Tests for SPR-10093 (support for OPTIONS requests).
  *
- * @author Arnaud Cogoluègnes
+
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

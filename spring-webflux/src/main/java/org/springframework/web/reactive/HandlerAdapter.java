@@ -10,8 +10,8 @@ import org.springframework.web.server.ServerWebExchange;
  * Contract that decouples the {@link DispatcherHandler} from the details of
  * invoking a handler and makes it possible to support any handler type.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 public interface HandlerAdapter {

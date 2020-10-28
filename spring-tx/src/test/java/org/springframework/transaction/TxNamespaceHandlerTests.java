@@ -17,8 +17,8 @@ import org.springframework.transaction.interceptor.TransactionInterceptor;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Adrian Colyer
+
+
  */
 public class TxNamespaceHandlerTests {
 

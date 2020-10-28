@@ -12,8 +12,8 @@ import org.springframework.lang.Nullable;
  * Class that provides helper methods for the use of {@link SqlParameterSource},
  * in particular with {@link NamedParameterJdbcTemplate}.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.5
  */
 public abstract class SqlParameterSourceUtils {

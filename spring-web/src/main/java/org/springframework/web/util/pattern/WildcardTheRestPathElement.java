@@ -4,7 +4,7 @@ package org.springframework.web.util.pattern;
  * A path element representing wildcarding the rest of a path. In the pattern
  * '/foo/**' the /** is represented as a {@link WildcardTheRestPathElement}.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 class WildcardTheRestPathElement extends PathElement {

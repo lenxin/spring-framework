@@ -11,7 +11,7 @@ import org.springframework.util.ObjectUtils;
  * interface, detecting URL mappings for handler beans through introspection of all
  * defined beans in the application context.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see #determineUrlsForHandler
  */

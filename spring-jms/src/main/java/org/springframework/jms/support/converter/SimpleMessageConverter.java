@@ -24,7 +24,7 @@ import org.springframework.util.ObjectUtils;
  * {@link javax.jms.BytesMessage}, a Map to a {@link javax.jms.MapMessage}, and
  * a Serializable object to a {@link javax.jms.ObjectMessage} (or vice versa).
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see org.springframework.jms.core.JmsTemplate#convertAndSend
  * @see org.springframework.jms.core.JmsTemplate#receiveAndConvert

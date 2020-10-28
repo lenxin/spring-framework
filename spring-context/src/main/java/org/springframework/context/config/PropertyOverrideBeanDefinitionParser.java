@@ -9,8 +9,8 @@ import org.springframework.beans.factory.xml.ParserContext;
 /**
  * Parser for the &lt;context:property-override/&gt; element.
  *
- * @author Juergen Hoeller
- * @author Dave Syer
+
+
  * @since 2.5.2
  */
 class PropertyOverrideBeanDefinitionParser extends AbstractPropertyLoadingBeanDefinitionParser {

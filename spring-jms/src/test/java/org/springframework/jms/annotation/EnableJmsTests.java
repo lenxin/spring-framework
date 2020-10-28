@@ -37,8 +37,8 @@ import org.springframework.stereotype.Component;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
- * @author Sam Brannen
+
+
  */
 public class EnableJmsTests extends AbstractJmsAnnotationDrivenTests {
 

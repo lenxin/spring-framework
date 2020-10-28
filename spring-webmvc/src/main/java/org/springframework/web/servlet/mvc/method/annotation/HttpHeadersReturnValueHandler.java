@@ -14,7 +14,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 /**
  * Handles {@link HttpHeaders} return values.
  *
- * @author Stephane Nicoll
+
  * @since 4.0.1
  */
 public class HttpHeadersReturnValueHandler implements HandlerMethodReturnValueHandler {

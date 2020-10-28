@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link MockWebResponseBuilder}.
  *
- * @author Rob Winch
+
  * @since 4.2
  */
 public class MockWebResponseBuilderTests {

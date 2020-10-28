@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
 /**
  * DataBuffer implementation created by {@link LeakAwareDataBufferFactory}.
  *
- * @author Arjen Poutsma
+
  */
 class LeakAwareDataBuffer implements PooledDataBuffer {
 

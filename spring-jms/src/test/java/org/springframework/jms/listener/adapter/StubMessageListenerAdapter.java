@@ -3,7 +3,7 @@ package org.springframework.jms.listener.adapter;
 /**
  * Stub extension of the {@link MessageListenerAdapter} class for use in testing.
  *
- * @author Rick Evans
+
  */
 public class StubMessageListenerAdapter extends MessageListenerAdapter {
 

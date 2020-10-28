@@ -18,7 +18,7 @@ import org.junit.rules.TemporaryFolder;
 /**
  * Wrapper to make the {@link JavaCompiler} easier to use in tests.
  *
- * @author Stephane Nicoll
+
  */
 public class TestCompiler {
 

@@ -6,7 +6,7 @@ import org.springframework.lang.Nullable;
  * Utility methods for classes that perform bean property access
  * according to the {@link PropertyAccessor} interface.
  *
- * @author Juergen Hoeller
+
  * @since 1.2.6
  */
 public abstract class PropertyAccessorUtils {

@@ -17,7 +17,7 @@ import org.springframework.transaction.interceptor.TransactionAttribute;
 /**
  * Strategy implementation for parsing JTA 1.2's {@link javax.transaction.Transactional} annotation.
  *
- * @author Juergen Hoeller
+
  * @since 4.0
  */
 @SuppressWarnings("serial")

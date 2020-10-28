@@ -18,9 +18,9 @@ import static org.springframework.beans.factory.support.BeanDefinitionBuilder.*;
 /**
  * Unit tests for {@link ServiceLocatorFactoryBean}.
  *
- * @author Colin Sampaleanu
- * @author Rick Evans
- * @author Chris Beams
+
+
+
  */
 public class ServiceLocatorFactoryBeanTests {
 

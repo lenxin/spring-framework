@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Role;
  * to enable AspectJ-based annotation-driven cache management for standard JSR-107
  * annotations.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see org.springframework.cache.annotation.EnableCaching
  * @see org.springframework.cache.annotation.CachingConfigurationSelector

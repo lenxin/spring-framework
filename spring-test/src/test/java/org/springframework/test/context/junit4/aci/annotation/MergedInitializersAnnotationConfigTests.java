@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  * ApplicationContextInitializers} in conjunction with annotation-driven
  * configuration in the TestContext framework.
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 @ContextConfiguration(initializers = DevProfileInitializer.class)

@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for the LRU eviction policy in {@link DefaultContextCache}.
  *
- * @author Sam Brannen
+
  * @since 4.3
  * @see ContextCacheTests
  */

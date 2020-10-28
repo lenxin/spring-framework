@@ -13,8 +13,8 @@ import org.springframework.util.Assert;
  * by the {@code <aop:advisor>} tag and the component definition
  * infrastructure.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class AdvisorComponentDefinition extends AbstractComponentDefinition {

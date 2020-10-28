@@ -14,7 +14,7 @@ import org.springframework.web.context.WebApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 3.2.2
  */
 @ContextHierarchy(@ContextConfiguration)

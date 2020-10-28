@@ -14,8 +14,8 @@ import org.springframework.web.socket.WebSocketSession;
  * <p>Text messages are rejected with {@link CloseStatus#NOT_ACCEPTABLE}.
  * All other methods have empty implementations.
  *
- * @author Rossen Stoyanchev
- * @author Phillip Webb
+
+
  * @since 4.0
  */
 public class BinaryWebSocketHandler extends AbstractWebSocketHandler {

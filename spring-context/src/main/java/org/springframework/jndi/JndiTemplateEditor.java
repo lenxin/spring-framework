@@ -10,7 +10,7 @@ import org.springframework.lang.Nullable;
  * Properties editor for JndiTemplate objects. Allows properties of type
  * JndiTemplate to be populated with a properties-format string.
  *
- * @author Rod Johnson
+
  * @since 09.05.2003
  */
 public class JndiTemplateEditor extends PropertyEditorSupport {

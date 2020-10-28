@@ -25,8 +25,8 @@ import static org.junit.Assert.*;
  * Integration tests that verify proper behavior of {@link DirtiesContext @DirtiesContext}
  * in conjunction with context hierarchies configured via {@link ContextHierarchy @ContextHierarchy}.
  *
- * @author Sam Brannen
- * @author Tadaya Tsuyukubo
+
+
  * @since 3.2.2
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

@@ -11,8 +11,8 @@ import org.springframework.util.ObjectUtils;
  * (or just the target class known), and behavior is supplied
  * by interfaces and advisors only.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public final class EmptyTargetSource implements TargetSource, Serializable {
 

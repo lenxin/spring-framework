@@ -32,8 +32,8 @@ import org.springframework.util.Assert;
  * An abstract JMS {@link MessageListener} adapter providing the necessary
  * infrastructure to extract the payload of a JMS {@link Message}.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 4.1
  * @see MessageListener
  * @see SessionAwareMessageListener

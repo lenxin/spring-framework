@@ -5,7 +5,7 @@ import example.scannable.FooService;
 import org.springframework.core.convert.converter.Converter;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class FooServiceDependentConverter implements Converter<String, org.springframework.tests.sample.beans.TestBean> {
 

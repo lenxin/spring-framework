@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
 /**
  * The default {@link CacheKeyInvocationContext} implementation.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @param <A> the annotation type
  */

@@ -15,9 +15,9 @@ import org.springframework.util.Assert;
  * Increment operator. Can be used in a prefix or postfix form. This will throw
  * appropriate exceptions if the operand in question does not support increment.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Giovanni Dall'Oglio Risso
+
+
+
  * @since 3.2
  */
 public class OpInc extends Operator {

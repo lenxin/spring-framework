@@ -14,7 +14,7 @@ import org.springframework.lang.Nullable;
  * the response has a message body, but also if its length is 0 (i.e. empty)
  * by actually reading the input stream.
  *
- * @author Brian Clozel
+
  * @since 4.1.5
  * @see <a href="https://tools.ietf.org/html/rfc7230#section-3.3.3">RFC 7230 Section 3.3.3</a>
  */

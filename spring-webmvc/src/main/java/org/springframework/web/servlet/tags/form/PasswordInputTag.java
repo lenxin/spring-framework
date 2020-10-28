@@ -216,9 +216,9 @@ import javax.servlet.jsp.JspException;
  * </tbody>
  * </table>
  *
- * @author Rob Harrop
- * @author Rick Evans
- * @author Rossen Stoyanchev
+
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

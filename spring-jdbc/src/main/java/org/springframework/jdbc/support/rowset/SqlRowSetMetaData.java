@@ -12,8 +12,8 @@ import org.springframework.jdbc.InvalidResultSetAccessException;
  * SqlRowSetMetaData will throw Spring's {@link InvalidResultSetAccessException}
  * instead (when appropriate).
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see SqlRowSet#getMetaData()
  * @see java.sql.ResultSetMetaData

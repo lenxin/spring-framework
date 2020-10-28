@@ -10,8 +10,8 @@ import org.springframework.util.StringUtils;
  * Extension of {@code Cookie} with extra attributes, as defined in
  * <a href="https://tools.ietf.org/html/rfc6265">RFC 6265</a>.
  *
- * @author Vedran Pavic
- * @author Juergen Hoeller
+
+
  * @since 5.1
  */
 public class MockCookie extends Cookie {

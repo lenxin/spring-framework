@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Unit tests for Kotlin script templates running on Kotlin JSR-223 support.
  *
- * @author Sebastien Deleuze
+
  */
 public class KotlinScriptTemplateTests {
 

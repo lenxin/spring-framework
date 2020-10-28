@@ -83,9 +83,9 @@ import org.springframework.util.StringUtils;
  * {@link #getBeanClass(org.w3c.dom.Element)} method to return the
  * {@code PropertiesFactoryBean} type.
  *
- * @author Rob Harrop
- * @author Rick Evans
- * @author Juergen Hoeller
+
+
+
  * @since 2.0
  * @see Conventions#attributeNameToPropertyName(String)
  */

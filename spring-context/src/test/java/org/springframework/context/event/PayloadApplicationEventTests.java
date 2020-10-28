@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class PayloadApplicationEventTests {
 

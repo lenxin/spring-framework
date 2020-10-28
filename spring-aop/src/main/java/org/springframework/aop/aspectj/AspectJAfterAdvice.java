@@ -11,7 +11,7 @@ import org.springframework.aop.AfterAdvice;
 /**
  * Spring AOP advice wrapping an AspectJ after advice method.
  *
- * @author Rod Johnson
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

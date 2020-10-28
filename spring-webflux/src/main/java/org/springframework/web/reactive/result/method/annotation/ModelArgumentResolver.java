@@ -19,7 +19,7 @@ import org.springframework.web.server.ServerWebExchange;
  * {@code @ResponseBody}. As of 5.2 this resolver returns false if a
  * parameter of type {@code Map} is also annotated.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class ModelArgumentResolver extends HandlerMethodArgumentResolverSupport

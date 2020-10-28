@@ -27,7 +27,7 @@ import static org.junit.Assert.*;
 
 /**
  * HTTPS-specific integration test for {@link ServerHttpRequest}.
- * @author Arjen Poutsma
+
  */
 @RunWith(Parameterized.class)
 public class ServerHttpsRequestIntegrationTests {

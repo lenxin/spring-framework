@@ -25,7 +25,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Unit tests for {@link MockServerHttpResponse}.
- * @author Rossen Stoyanchev
+
  */
 public class MockServerHttpResponseTests {
 

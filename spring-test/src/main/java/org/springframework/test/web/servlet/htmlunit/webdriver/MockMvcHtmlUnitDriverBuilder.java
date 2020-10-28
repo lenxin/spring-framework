@@ -21,8 +21,8 @@ import org.springframework.web.context.WebApplicationContext;
  * requests to {@code localhost} and to a {@link WebClient} to handle any
  * other URL (i.e. to perform an actual HTTP request).
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  * @see #mockMvcSetup(MockMvc)
  * @see #webAppContextSetup(WebApplicationContext)

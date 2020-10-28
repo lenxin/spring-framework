@@ -34,9 +34,9 @@ import static org.xmlunit.matchers.CompareMatcher.*;
 /**
  * Tests for {@link Jaxb2RootElementHttpMessageConverter}.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
+
  */
 public class Jaxb2RootElementHttpMessageConverterTests {
 

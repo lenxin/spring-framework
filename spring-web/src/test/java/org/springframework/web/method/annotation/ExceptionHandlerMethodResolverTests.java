@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link ExceptionHandlerMethodResolver} tests.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ExceptionHandlerMethodResolverTests {
 

@@ -16,9 +16,9 @@ import static org.mockito.Mockito.*;
  * Abstract base class for integration tests for {@link ResourceDatabasePopulator}
  * and {@link DatabasePopulatorUtils}.
  *
- * @author Dave Syer
- * @author Sam Brannen
- * @author Oliver Gierke
+
+
+
  */
 public abstract class AbstractDatabasePopulatorTests extends AbstractDatabaseInitializationTests {
 

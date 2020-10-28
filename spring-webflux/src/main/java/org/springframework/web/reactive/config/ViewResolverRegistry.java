@@ -27,8 +27,8 @@ import org.springframework.web.reactive.result.view.script.ScriptTemplateViewRes
  * defaultViews} for rendering according to the requested content type, e.g.
  * JSON, XML, etc.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 public class ViewResolverRegistry {

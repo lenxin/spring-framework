@@ -26,9 +26,9 @@ import org.springframework.web.cors.CorsConfiguration;
  * and {@code maxAge}, the local overrides the global value.
  * See {@link CorsConfiguration#combine(CorsConfiguration)} for more details.
  *
- * @author Russell Allen
- * @author Sebastien Deleuze
- * @author Sam Brannen
+
+
+
  * @since 4.2
  */
 @Target({ ElementType.METHOD, ElementType.TYPE })

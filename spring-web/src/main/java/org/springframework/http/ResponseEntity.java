@@ -48,8 +48,8 @@ import org.springframework.util.ObjectUtils;
  * }
  * </pre>
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
+
+
  * @since 3.0.2
  * @param <T> the body type
  * @see #getStatusCode()

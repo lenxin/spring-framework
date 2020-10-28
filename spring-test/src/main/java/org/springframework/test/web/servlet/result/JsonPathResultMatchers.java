@@ -21,10 +21,10 @@ import org.springframework.util.StringUtils;
  * {@link MockMvcResultMatchers#jsonPath(String, Matcher)} or
  * {@link MockMvcResultMatchers#jsonPath(String, Object...)}.
  *
- * @author Rossen Stoyanchev
- * @author Craig Andrews
- * @author Sam Brannen
- * @author Brian Clozel
+
+
+
+
  * @since 3.2
  */
 public class JsonPathResultMatchers {

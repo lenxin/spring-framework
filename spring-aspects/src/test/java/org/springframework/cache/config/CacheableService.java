@@ -3,9 +3,9 @@ package org.springframework.cache.config;
 /**
  * Basic service interface.
  *
- * @author Costin Leau
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
+
  */
 public interface CacheableService<T> {
 

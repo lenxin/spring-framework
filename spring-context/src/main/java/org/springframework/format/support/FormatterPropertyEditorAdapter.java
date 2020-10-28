@@ -11,7 +11,7 @@ import org.springframework.util.StringUtils;
 /**
  * Adapter that bridges between {@link Formatter} and {@link PropertyEditor}.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  */
 public class FormatterPropertyEditorAdapter extends PropertyEditorSupport {

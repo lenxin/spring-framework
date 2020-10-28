@@ -3,7 +3,7 @@ package org.springframework.jdbc.core.test;
 import java.math.BigDecimal;
 
 /**
- * @author Thomas Risberg
+
  */
 public class Person {
 

@@ -44,8 +44,8 @@ import org.springframework.web.context.request.ServletWebRequest;
  * class} is not annotated with {@link WebAppConfiguration @WebAppConfiguration}.
  * See the javadocs for individual methods in this class for details.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 3.2
  */
 public class ServletTestExecutionListener extends AbstractTestExecutionListener {

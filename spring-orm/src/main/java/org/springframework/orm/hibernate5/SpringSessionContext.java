@@ -25,7 +25,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
  * SessionFactory setup through the "hibernate.current_session_context_class"
  * property, with the fully qualified name of this class as value.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  */
 @SuppressWarnings("serial")

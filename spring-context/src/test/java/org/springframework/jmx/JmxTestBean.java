@@ -9,8 +9,8 @@ import java.io.IOException;
  *    persistPeriod=200, persistLocation="./foo", persistName="bar.jmx")
  * @@org.springframework.jmx.export.metadata.ManagedNotification
  *    (name="My Notification", description="A Notification", notificationType="type.foo,type.bar")
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  */
 public class JmxTestBean implements IJmxTestBean {
 

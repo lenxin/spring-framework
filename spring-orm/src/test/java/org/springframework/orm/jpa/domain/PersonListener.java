@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class PersonListener {
 

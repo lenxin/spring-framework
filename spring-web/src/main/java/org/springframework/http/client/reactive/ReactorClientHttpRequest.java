@@ -21,7 +21,7 @@ import org.springframework.http.ZeroCopyHttpOutputMessage;
 /**
  * {@link ClientHttpRequest} implementation for the Reactor-Netty HTTP client.
  *
- * @author Brian Clozel
+
  * @since 5.0
  * @see reactor.netty.http.client.HttpClient
  */

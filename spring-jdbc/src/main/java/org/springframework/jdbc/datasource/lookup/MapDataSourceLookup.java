@@ -14,9 +14,9 @@ import org.springframework.util.Assert;
  * <p>Useful for testing environments or applications that need to match arbitrary
  * {@link String} names to target {@link DataSource} objects.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
+
  * @since 2.0
  */
 public class MapDataSourceLookup implements DataSourceLookup {

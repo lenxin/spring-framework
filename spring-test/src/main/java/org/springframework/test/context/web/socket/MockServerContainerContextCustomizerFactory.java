@@ -15,7 +15,7 @@ import org.springframework.util.ClassUtils;
  * if WebSocket support is present in the classpath and the test class is annotated
  * with {@code @WebAppConfiguration}.
  *
- * @author Sam Brannen
+
  * @since 4.3.1
  */
 class MockServerContainerContextCustomizerFactory implements ContextCustomizerFactory {

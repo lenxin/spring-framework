@@ -18,7 +18,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for {@link LiveBeansView}
  *
- * @author Stephane Nicoll
+
  */
 public class LiveBeansViewTests {
 

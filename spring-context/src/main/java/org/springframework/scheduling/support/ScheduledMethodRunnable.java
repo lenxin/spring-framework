@@ -11,7 +11,7 @@ import org.springframework.util.ReflectionUtils;
  * of no-arg scheduled methods. Propagates user exceptions to the caller,
  * assuming that an error strategy for Runnables is in place.
  *
- * @author Juergen Hoeller
+
  * @since 3.0.6
  * @see org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor
  */

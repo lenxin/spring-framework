@@ -29,9 +29,9 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link PayloadArgumentResolver}.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Stephane Nicoll
+
+
+
  */
 public class PayloadArgumentResolverTests {
 

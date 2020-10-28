@@ -22,7 +22,7 @@ import org.springframework.util.Assert;
  * a JUnit {@link After} method yourself, and any buffers have not been released will result in an
  * {@link AssertionError}.
  *
- * @author Arjen Poutsma
+
  * @see LeakAwareDataBufferFactory
  */
 public class LeakAwareDataBufferFactory implements DataBufferFactory {

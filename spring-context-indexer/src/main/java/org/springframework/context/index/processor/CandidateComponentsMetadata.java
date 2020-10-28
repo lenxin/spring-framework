@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Meta-data for candidate components.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 class CandidateComponentsMetadata {

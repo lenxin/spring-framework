@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Integration tests that verify support for default SQL script detection.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @ContextConfiguration(classes = EmptyDatabaseConfig.class)

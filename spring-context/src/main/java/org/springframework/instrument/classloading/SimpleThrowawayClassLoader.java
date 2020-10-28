@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
  * into the parent loader. Intended to support JPA "temp class loader"
  * requirement, but not JPA-specific.
  *
- * @author Rod Johnson
+
  * @since 2.0
  */
 public class SimpleThrowawayClassLoader extends OverridingClassLoader {

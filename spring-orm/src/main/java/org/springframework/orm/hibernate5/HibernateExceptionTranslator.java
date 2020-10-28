@@ -22,7 +22,7 @@ import org.springframework.orm.jpa.EntityManagerFactoryUtils;
  * <p>When configuring the container with {@code @Configuration} classes, a {@code @Bean}
  * of this type must be registered manually.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor
  * @see SessionFactoryUtils#convertHibernateAccessException(HibernateException)

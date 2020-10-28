@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * that the test class is used as the <em>declaring class</em> when detecting default
  * configuration classes for the declaration of {@code @ContextConfiguration}.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 @RunWith(SpringJUnit4ClassRunner.class)

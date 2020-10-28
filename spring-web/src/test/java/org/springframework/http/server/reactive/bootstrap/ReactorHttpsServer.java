@@ -10,7 +10,7 @@ import reactor.netty.tcp.SslProvider.DefaultConfigurationType;
 import org.springframework.http.server.reactive.ReactorHttpHandlerAdapter;
 
 /**
- * @author Stephane Maldini
+
  */
 public class ReactorHttpsServer extends AbstractHttpServer {
 

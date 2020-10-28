@@ -45,8 +45,8 @@ import org.springframework.util.Assert;
  * <li>{@link org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener}
  * </ul>
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see AbstractTestNGSpringContextTests
  * @see org.springframework.test.context.ContextConfiguration

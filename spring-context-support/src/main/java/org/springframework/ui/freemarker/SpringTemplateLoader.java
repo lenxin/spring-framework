@@ -17,7 +17,7 @@ import org.springframework.lang.Nullable;
  * Used by {@link FreeMarkerConfigurationFactory} for any resource loader path that cannot
  * be resolved to a {@link java.io.File}.
  *
- * @author Juergen Hoeller
+
  * @since 14.03.2004
  * @see FreeMarkerConfigurationFactory#setTemplateLoaderPath
  * @see freemarker.template.Configuration#setDirectoryForTemplateLoading

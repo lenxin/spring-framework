@@ -27,8 +27,8 @@ import org.springframework.util.xml.StaxUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
  */
 public abstract class AbstractUnmarshallerTests<U extends Unmarshaller> {
 

@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
  * for the {@link TransactionalTestExecutionListener} to {@code false} (i.e.,
  * <em>commit</em>).
  *
- * @author Sam Brannen
+
  * @since 4.0.1
  */
 @Test(suiteName = "Commit for REQUIRES_NEW")

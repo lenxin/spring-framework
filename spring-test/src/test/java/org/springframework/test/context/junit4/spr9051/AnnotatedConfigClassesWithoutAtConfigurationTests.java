@@ -30,8 +30,8 @@ import static org.junit.Assert.*;
  * wiring/injection appeared to work.
  * </blockquote>
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 3.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

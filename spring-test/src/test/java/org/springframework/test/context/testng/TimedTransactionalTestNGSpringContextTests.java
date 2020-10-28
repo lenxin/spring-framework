@@ -12,7 +12,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * raised in <a href="https://jira.springframework.org/browse/SPR-6124"
  * target="_blank">SPR-6124</a>.
  *
- * @author Sam Brannen
+
  * @since 3.0
  */
 @ContextConfiguration

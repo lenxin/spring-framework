@@ -10,8 +10,8 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Request and response header-based {@link WebSessionIdResolver}.
  *
- * @author Greg Turnquist
- * @author Rob Winch
+
+
  * @since 5.0
  */
 public class HeaderWebSessionIdResolver implements WebSessionIdResolver {

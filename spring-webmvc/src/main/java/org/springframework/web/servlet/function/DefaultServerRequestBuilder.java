@@ -39,7 +39,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 /**
  * Default {@link ServerRequest.Builder} implementation.
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 class DefaultServerRequestBuilder implements ServerRequest.Builder {

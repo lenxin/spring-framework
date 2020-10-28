@@ -18,7 +18,7 @@ import org.springframework.lang.Nullable;
  * shared between repeated executions, in contrast to Quartz which
  * instantiates a new Job for each execution.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @deprecated as of 5.1, in favor of EE 7's
  * {@link org.springframework.scheduling.concurrent.DefaultManagedTaskScheduler}

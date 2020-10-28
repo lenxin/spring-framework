@@ -30,8 +30,8 @@ import static io.undertow.servlet.Servlets.servlet;
 /**
  * Undertow-based {@link WebSocketTestServer}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  */
 public class UndertowTestServer implements WebSocketTestServer {
 

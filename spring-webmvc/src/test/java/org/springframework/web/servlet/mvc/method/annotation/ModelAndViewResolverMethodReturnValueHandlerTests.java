@@ -22,7 +22,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with {@link ModelAndViewResolverMethodReturnValueHandler}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ModelAndViewResolverMethodReturnValueHandlerTests {
 

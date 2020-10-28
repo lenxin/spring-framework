@@ -10,7 +10,7 @@ import org.springframework.http.HttpHeaders;
  * Base implementation of {@link ClientHttpRequest} that buffers output
  * in a byte array before sending it over the wire.
  *
- * @author Arjen Poutsma
+
  * @since 3.0.6
  */
 abstract class AbstractBufferingClientHttpRequest extends AbstractClientHttpRequest {

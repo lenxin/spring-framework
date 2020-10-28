@@ -41,8 +41,8 @@ import org.springframework.util.ObjectUtils;
  * emitter.complete();
  * </pre>
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.2
  */
 public class ResponseBodyEmitter {

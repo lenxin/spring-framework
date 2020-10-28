@@ -23,10 +23,10 @@ import org.springframework.util.ClassUtils;
  * a bean with the same name as the fully-qualified class name. (This is the default
  * name of the bean in a Spring XML file if the '{@code id}' attribute is not used.)
 
- * @author Rob Harrop
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Adrian Colyer
+
+
+
+
  * @since 2.0
  * @see #setBeanWiringInfoResolver
  * @see ClassNameBeanWiringInfoResolver

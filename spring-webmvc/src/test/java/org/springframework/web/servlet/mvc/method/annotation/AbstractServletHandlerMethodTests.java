@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
  * <li>ExceptionHandlerExceptionResolver
  * </ul>
  *
- * @author Rossen Stoyanchev
+
  */
 public abstract class AbstractServletHandlerMethodTests {
 

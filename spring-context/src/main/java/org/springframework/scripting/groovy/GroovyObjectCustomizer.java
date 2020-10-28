@@ -10,7 +10,7 @@ import groovy.lang.GroovyObject;
  * methods, and so forth. For example, a custom {@link groovy.lang.MetaClass}
  * could be specified.
  *
- * @author Rod Johnson
+
  * @since 2.0.2
  * @see GroovyScriptFactory
  */

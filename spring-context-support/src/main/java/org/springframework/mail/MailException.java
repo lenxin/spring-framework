@@ -6,7 +6,7 @@ import org.springframework.lang.Nullable;
 /**
  * Base class for all mail exceptions.
  *
- * @author Dmitriy Kopylenko
+
  */
 @SuppressWarnings("serial")
 public abstract class MailException extends NestedRuntimeException {

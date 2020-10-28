@@ -12,7 +12,7 @@ import org.springframework.cache.transaction.AbstractTransactionSupportingCacheM
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class JCacheCacheManagerTests extends AbstractTransactionSupportingCacheManagerTests<JCacheCacheManager> {
 

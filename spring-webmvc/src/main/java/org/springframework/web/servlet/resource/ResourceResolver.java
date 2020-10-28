@@ -13,9 +13,9 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.core.io.Resource} and for obtaining the
  * public URL path that clients should use when requesting the resource.
  *
- * @author Jeremy Grelle
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
  * @since 4.1
  * @see org.springframework.web.servlet.resource.ResourceResolverChain
  */

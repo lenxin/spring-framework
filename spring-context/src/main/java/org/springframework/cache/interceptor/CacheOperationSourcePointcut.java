@@ -14,8 +14,8 @@ import org.springframework.util.ObjectUtils;
  * A Pointcut that matches if the underlying {@link CacheOperationSource}
  * has an attribute for a given method.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 @SuppressWarnings("serial")

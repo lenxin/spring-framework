@@ -8,8 +8,8 @@ import com.google.protobuf.ExtensionRegistry;
  *
  * <p>This interface provides a facility to populate the {@code ExtensionRegistry}.
  *
- * @author Alex Antonov
- * @author Sebastien Deleuze
+
+
  * @since 4.1
  * @see <a href="https://developers.google.com/protocol-buffers/docs/reference/java/com/google/protobuf/ExtensionRegistry">
  * com.google.protobuf.ExtensionRegistry</a>

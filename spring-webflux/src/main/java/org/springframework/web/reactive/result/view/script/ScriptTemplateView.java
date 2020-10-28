@@ -44,8 +44,8 @@ import org.springframework.web.server.ServerWebExchange;
  * {@code sharedEngine} property to {@code false} in order to run properly. See
  * {@link ScriptTemplateConfigurer#setSharedEngine(Boolean)} for more details.
  *
- * @author Sebastien Deleuze
- * @author Juergen Hoeller
+
+
  * @since 5.0
  * @see ScriptTemplateConfigurer
  * @see ScriptTemplateViewResolver

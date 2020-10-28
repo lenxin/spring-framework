@@ -36,7 +36,7 @@ import org.springframework.web.server.ServerWebInputException;
  * is either auto-detected (no-arg constructor) from the classpath but can
  * also be explicitly configured.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class HandshakeWebSocketService implements WebSocketService, Lifecycle {

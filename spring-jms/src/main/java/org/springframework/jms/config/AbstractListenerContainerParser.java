@@ -23,8 +23,8 @@ import org.springframework.util.StringUtils;
  * Abstract parser for JMS listener container elements, providing support for
  * common properties that are identical for all listener container variants.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 2.5
  */
 abstract class AbstractListenerContainerParser implements BeanDefinitionParser {

@@ -18,7 +18,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * {@link ClientHttpResponse} implementation for the Jetty ReactiveStreams HTTP client.
  *
- * @author Sebastien Deleuze
+
  * @since 5.1
  * @see <a href="https://github.com/jetty-project/jetty-reactive-httpclient">Jetty ReactiveStreams HttpClient</a>
  */

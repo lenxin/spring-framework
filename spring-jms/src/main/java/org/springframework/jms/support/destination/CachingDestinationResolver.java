@@ -18,7 +18,7 @@
  * Extension of the DestinationResolver interface,
  * exposing methods for clearing the cache.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  */
 public interface CachingDestinationResolver extends DestinationResolver {

@@ -31,8 +31,8 @@ import static org.junit.Assert.assertNull;
 /**
  * Test for {@link AbstractHandlerMethodMapping}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 @SuppressWarnings("unused")
 public class HandlerMethodMappingTests {

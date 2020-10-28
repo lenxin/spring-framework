@@ -13,7 +13,7 @@ import org.springframework.util.ObjectUtils;
  * <p>Default resource locations are detected using the suffix
  * {@code "-context.xml"}.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see XmlBeanDefinitionReader
  * @see GenericGroovyXmlContextLoader

@@ -32,8 +32,8 @@ import org.springframework.util.ObjectUtils;
 /**
  * Expression language AST node that represents a method reference.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class MethodReference extends SpelNodeImpl {

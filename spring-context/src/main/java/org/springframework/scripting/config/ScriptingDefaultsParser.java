@@ -11,7 +11,7 @@ import org.springframework.util.StringUtils;
 /**
  * A {@link BeanDefinitionParser} for use when loading scripting XML.
  *
- * @author Mark Fisher
+
  * @since 2.5
  */
 class ScriptingDefaultsParser implements BeanDefinitionParser {

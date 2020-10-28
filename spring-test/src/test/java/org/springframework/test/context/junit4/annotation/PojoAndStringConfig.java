@@ -13,7 +13,7 @@ import org.springframework.tests.sample.beans.Pet;
  * Consequently, the application contexts loaded from these two sources
  * should be identical with regard to bean definitions.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 @Configuration

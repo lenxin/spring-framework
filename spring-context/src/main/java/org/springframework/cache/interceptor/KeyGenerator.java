@@ -6,9 +6,9 @@ import java.lang.reflect.Method;
  * Cache key generator. Used for creating a key based on the given method
  * (used as context) and its parameters.
  *
- * @author Costin Leau
- * @author Chris Beams
- * @author Phillip Webb
+
+
+
  * @since 3.1
  */
 @FunctionalInterface

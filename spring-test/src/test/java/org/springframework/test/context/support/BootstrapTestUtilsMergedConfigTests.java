@@ -23,7 +23,7 @@ import static org.junit.Assert.assertNotEquals;
 /**
  * Unit tests for {@link BootstrapTestUtils} involving {@link MergedContextConfiguration}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 public class BootstrapTestUtilsMergedConfigTests extends AbstractContextConfigurationUtilsTests {

@@ -6,7 +6,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
  * Twee advice that 'scrambles' the return value
  * of a {@link Messenger} invocation.
  *
- * @author Rick Evans
+
  */
 public class MessengerScrambler {
 

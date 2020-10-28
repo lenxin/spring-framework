@@ -43,8 +43,8 @@ import org.springframework.util.ReflectionUtils;
  * <tr><td>Other types</td><td>An exact match or the appropriate primitive wrapper</td></tr>
  * </table>
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
+
+
  * @since 5.2
  * @param <A> the annotation type
  * @see TypeMappedAnnotations

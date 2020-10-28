@@ -8,7 +8,7 @@ import org.springframework.test.web.reactive.server.WebTestClient.*
  * Extension for [RequestBodySpec.body] providing a variant without explicit class
  * parameter thanks to Kotlin reified type parameters.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any, S : Publisher<T>> RequestBodySpec.body(publisher: S): RequestHeadersSpec<*>
@@ -19,7 +19,7 @@ inline fun <reified T : Any, S : Publisher<T>> RequestBodySpec.body(publisher: S
  * a workaround for [KT-5464](https://youtrack.jetbrains.com/issue/KT-5464) which
  * prevents to use `WebTestClient.BodySpec` in Kotlin.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 @Suppress("EXTENSION_SHADOWED_BY_MEMBER")
@@ -68,7 +68,7 @@ interface KotlinBodySpec<B> {
 /**
  * Extension for [ResponseSpec.expectBodyList] providing a `expectBodyList<Foo>()` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified E : Any> ResponseSpec.expectBodyList(): ListBodySpec<E> =
@@ -77,7 +77,7 @@ inline fun <reified E : Any> ResponseSpec.expectBodyList(): ListBodySpec<E> =
 /**
  * Extension for [ResponseSpec.returnResult] providing a `returnResult<Foo>()` variant.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 @Suppress("EXTENSION_SHADOWED_BY_MEMBER")

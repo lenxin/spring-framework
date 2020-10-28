@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link ParamTag}.
  *
- * @author Scott Andrews
- * @author Nicholas Williams
+
+
  */
 public class ParamTagTests extends AbstractTagTests {
 

@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with {@link ViewNameMethodReturnValueHandler}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ViewNameMethodReturnValueHandlerTests {
 

@@ -25,7 +25,7 @@ import org.springframework.util.Assert;
  * providing transaction management capabilities as well as ClassLoader
  * exposure for endpoint invocations.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see #setTransactionManager
  */

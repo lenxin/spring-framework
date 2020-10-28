@@ -9,7 +9,7 @@ import org.springframework.http.HttpHeaders;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class SimpleClientHttpRequestFactoryTests {
 

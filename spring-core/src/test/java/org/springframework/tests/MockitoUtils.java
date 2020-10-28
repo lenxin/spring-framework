@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 /**
  * General test utilities for use with {@link Mockito}.
  *
- * @author Phillip Webb
+
  */
 public abstract class MockitoUtils {
 

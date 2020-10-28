@@ -12,7 +12,7 @@ import org.springframework.web.context.support.GenericWebApplicationContext;
  * <p>Default resource locations are detected using the suffix
  * {@code "-context.xml"}.
  *
- * @author Sam Brannen
+
  * @since 3.2
  * @see GenericGroovyXmlWebContextLoader
  * @see AnnotationConfigWebContextLoader

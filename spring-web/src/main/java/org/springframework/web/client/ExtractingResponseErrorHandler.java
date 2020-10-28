@@ -34,8 +34,8 @@ import org.springframework.util.CollectionUtils;
  * {@code HttpStatus.Series#CLIENT_ERROR} and/or {@code HttpStatus.Series#SERVER_ERROR}
  * to {@code null}.
  *
- * @author Simon Galperin
- * @author Arjen Poutsma
+
+
  * @since 5.0
  * @see RestTemplate#setErrorHandler(ResponseErrorHandler)
  */

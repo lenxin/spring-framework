@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
 /**
  * Test cases for {@link ObjectToStringHttpMessageConverter} class.
  *
- * @author <a href="mailto:dmitry.katsubo@gmail.com">Dmitry Katsubo</a>
- * @author Rossen Stoyanchev
+
+
  */
 public class ObjectToStringHttpMessageConverterTests {
 

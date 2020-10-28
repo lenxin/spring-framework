@@ -22,7 +22,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for {@link MarshallingHttpMessageConverter}.
  *
- * @author Arjen Poutsma
+
  */
 public class MarshallingHttpMessageConverterTests {
 

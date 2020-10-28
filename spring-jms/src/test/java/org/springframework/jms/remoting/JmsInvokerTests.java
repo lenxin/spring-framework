@@ -30,8 +30,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  */
 public class JmsInvokerTests {
 

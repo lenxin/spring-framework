@@ -13,7 +13,7 @@ import java.security.Principal
 /**
  * Coroutines variant of [ServerWebExchange.getFormData].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerWebExchange.awaitFormData(): MultiValueMap<String, String> =
@@ -22,7 +22,7 @@ suspend fun ServerWebExchange.awaitFormData(): MultiValueMap<String, String> =
 /**
  * Coroutines variant of [ServerWebExchange.getMultipartData].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerWebExchange.awaitMultipartData(): MultiValueMap<String, Part> =
@@ -31,7 +31,7 @@ suspend fun ServerWebExchange.awaitMultipartData(): MultiValueMap<String, Part> 
 /**
  * Coroutines variant of [ServerWebExchange.getPrincipal].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun <T : Principal> ServerWebExchange.awaitPrincipal(): T =
@@ -40,7 +40,7 @@ suspend fun <T : Principal> ServerWebExchange.awaitPrincipal(): T =
 /**
  * Coroutines variant of [ServerWebExchange.getSession].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend fun ServerWebExchange.awaitSession(): WebSession =
@@ -49,7 +49,7 @@ suspend fun ServerWebExchange.awaitSession(): WebSession =
 /**
  * Coroutines variant of [ServerWebExchange.Builder.principal].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun ServerWebExchange.Builder.principal(supplier: suspend () -> Principal): ServerWebExchange.Builder

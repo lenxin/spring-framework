@@ -22,7 +22,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 import static org.junit.Assert.*;
 
 /**
- * @author Keith Donald
+
  */
 public class EvalTagTests extends AbstractTagTests {
 

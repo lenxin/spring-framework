@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
 /**
  * Exception thrown when an HTTP 4xx is received.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see DefaultResponseErrorHandler
  */

@@ -12,8 +12,8 @@ import org.springframework.util.NumberUtils;
 /**
  * The power operator.
  *
- * @author Andy Clement
- * @author Giovanni Dall'Oglio Risso
+
+
  * @since 3.0
  */
 public class OperatorPower extends Operator {

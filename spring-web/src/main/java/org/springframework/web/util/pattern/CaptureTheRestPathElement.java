@@ -12,7 +12,7 @@ import org.springframework.web.util.pattern.PathPattern.MatchingContext;
  * A path element representing capturing the rest of a path. In the pattern
  * '/foo/{*foobar}' the /{*foobar} is represented as a {@link CaptureTheRestPathElement}.
  *
- * @author Andy Clement
+
  * @since 5.0
  */
 class CaptureTheRestPathElement extends PathElement {

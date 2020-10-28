@@ -12,7 +12,7 @@ import org.springframework.util.ReflectionUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
+
  */
 public class GroovyClassLoadingTests {
 

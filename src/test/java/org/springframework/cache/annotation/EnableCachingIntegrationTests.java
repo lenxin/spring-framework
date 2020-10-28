@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for the @EnableCaching annotation.
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 @SuppressWarnings("resource")

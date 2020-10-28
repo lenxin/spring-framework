@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * support path-based and class-based resources simultaneously, as is done in
  * Spring Boot.
  *
- * @author Sam Brannen
+
  * @since 4.0.4
  * @see HybridContextLoader
  */

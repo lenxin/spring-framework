@@ -22,10 +22,10 @@ import org.springframework.web.util.UrlPathHelper;
  * {@link HttpServletResponse#encodeURL(String) encodeURL} method in order to
  * translate internal resource request URLs into public URL paths for external use.
  *
- * @author Jeremy Grelle
- * @author Rossen Stoyanchev
- * @author Sam Brannen
- * @author Brian Clozel
+
+
+
+
  * @since 4.1
  */
 public class ResourceUrlEncodingFilter extends GenericFilterBean {

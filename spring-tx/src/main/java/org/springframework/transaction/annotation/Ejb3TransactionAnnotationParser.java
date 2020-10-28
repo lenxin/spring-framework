@@ -14,7 +14,7 @@ import org.springframework.transaction.interceptor.TransactionAttribute;
  * Strategy implementation for parsing EJB3's {@link javax.ejb.TransactionAttribute}
  * annotation.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  */
 @SuppressWarnings("serial")

@@ -6,7 +6,7 @@ import org.springframework.core.type.Scope;
 /**
  * Candidate with no matching annotation.
  *
- * @author Stephane Nicoll
+
  */
 @Scope("None")
 @Qualifier("None")

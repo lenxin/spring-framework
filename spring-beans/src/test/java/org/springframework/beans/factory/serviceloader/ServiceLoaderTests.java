@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
 import static org.junit.Assume.*;
 
 /**
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
  */
 public class ServiceLoaderTests {
 

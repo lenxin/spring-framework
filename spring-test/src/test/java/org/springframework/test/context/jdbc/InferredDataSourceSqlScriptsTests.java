@@ -26,7 +26,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * Integration tests for {@link Sql @Sql} that verify support for inferring
  * {@link DataSource}s from {@link PlatformTransactionManager}s.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see InferredDataSourceTransactionalSqlScriptsTests
  */

@@ -7,7 +7,7 @@ import javax.cache.annotation.CacheResolverFactory;
 import javax.cache.annotation.CacheResult;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class TestableCacheResolverFactory implements CacheResolverFactory {
 

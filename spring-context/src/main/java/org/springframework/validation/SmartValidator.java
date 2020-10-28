@@ -6,8 +6,8 @@ import org.springframework.lang.Nullable;
  * Extended variant of the {@link Validator} interface, adding support for
  * validation 'hints'.
  *
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  * @since 3.1
  */
 public interface SmartValidator extends Validator {

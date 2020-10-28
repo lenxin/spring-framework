@@ -18,9 +18,9 @@ import static org.mockito.BDDMockito.*;
 /**
  * Tests for SQLErrorCodes loading.
  *
- * @author Rod Johnson
- * @author Thomas Risberg
- * @author Stephane Nicoll
+
+
+
  */
 public class SQLErrorCodesFactoryTests {
 

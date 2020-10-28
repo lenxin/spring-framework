@@ -16,8 +16,8 @@ import static org.xmlunit.matchers.CompareMatcher.isSimilarTo;
  * NOTE: These tests fail under Eclipse/IDEA because JiBX binding does not occur by
  * default. The Gradle build should succeed, however.
  *
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
  */
 @Deprecated
 public class JibxMarshallerTests extends AbstractMarshallerTests<JibxMarshaller> {

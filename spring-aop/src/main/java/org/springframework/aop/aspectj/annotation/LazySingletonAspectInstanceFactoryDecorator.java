@@ -8,8 +8,8 @@ import org.springframework.util.Assert;
 /**
  * Decorator to cause a {@link MetadataAwareAspectInstanceFactory} to instantiate only once.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

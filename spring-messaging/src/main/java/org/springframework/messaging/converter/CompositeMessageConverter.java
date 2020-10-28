@@ -16,8 +16,8 @@ import org.springframework.util.Assert;
  * <p>As of 4.2.1, this composite converter implements {@link SmartMessageConverter}
  * in order to support the delegation of conversion hints.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 public class CompositeMessageConverter implements SmartMessageConverter {

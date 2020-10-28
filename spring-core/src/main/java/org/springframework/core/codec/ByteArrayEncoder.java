@@ -15,7 +15,7 @@ import org.springframework.util.MimeTypeUtils;
 /**
  * Encoder for {@code byte} arrays.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class ByteArrayEncoder extends AbstractEncoder<byte[]> {

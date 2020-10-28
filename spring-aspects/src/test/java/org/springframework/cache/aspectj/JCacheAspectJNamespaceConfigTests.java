@@ -5,7 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class JCacheAspectJNamespaceConfigTests extends AbstractJCacheAnnotationTests {
 

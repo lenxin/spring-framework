@@ -33,7 +33,7 @@ import org.springframework.util.ObjectUtils;
  * annotation attributes (e.g.
  * {@link org.springframework.test.context.ContextConfiguration#inheritLocations}).
  *
- * @author Sam Brannen
+
  * @since 4.0
  * @see AnnotationUtils
  * @see AnnotationDescriptor

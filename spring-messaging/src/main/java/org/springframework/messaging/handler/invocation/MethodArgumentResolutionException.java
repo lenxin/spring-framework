@@ -9,7 +9,7 @@ import org.springframework.messaging.MessagingException;
  * Common exception resulting from the invocation of
  * {@link org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolver}.
  *
- * @author Juergen Hoeller
+
  * @since 4.3.6
  * @see HandlerMethodArgumentResolver
  */

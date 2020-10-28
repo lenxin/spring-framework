@@ -23,8 +23,8 @@ import static org.springframework.test.context.cache.ContextCacheTestUtils.*;
  * Integration tests for verifying proper behavior of the {@link ContextCache} in
  * conjunction with cache keys used in {@link TestContext}.
  *
- * @author Sam Brannen
- * @author Michail Nikolaev
+
+
  * @since 3.1
  * @see LruContextCacheTests
  * @see SpringRunnerContextCacheTests

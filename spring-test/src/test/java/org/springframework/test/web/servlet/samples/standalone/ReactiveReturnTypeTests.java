@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Tests with reactive return value types.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ReactiveReturnTypeTests {
 

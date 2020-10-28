@@ -36,8 +36,8 @@ import org.springframework.util.Assert;
  * specific message listener container, use {@link #getListenerContainer(String)}
  * with the id of the endpoint.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see JmsListenerEndpoint
  * @see MessageListenerContainer

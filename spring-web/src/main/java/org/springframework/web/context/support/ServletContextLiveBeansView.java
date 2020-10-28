@@ -13,7 +13,7 @@ import org.springframework.util.Assert;
  * {@link LiveBeansView} subclass which looks for all ApplicationContexts
  * in the web application, as exposed in ServletContext attributes.
  *
- * @author Juergen Hoeller
+
  * @since 3.2
  */
 public class ServletContextLiveBeansView extends LiveBeansView {

@@ -5,7 +5,7 @@ import org.springframework.core.convert.converter.Converter;
 /**
  * Converts from any JDK-standard Number implementation to a Character.
  *
- * @author Keith Donald
+
  * @since 3.0
  * @see java.lang.Character
  * @see java.lang.Short

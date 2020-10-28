@@ -15,8 +15,8 @@ import org.springframework.util.Assert;
  * interface based on a JPA {@code ClassTransformer} which a JPA PersistenceProvider
  * asks the {@code PersistenceUnitInfo} to install in the current runtime.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see javax.persistence.spi.PersistenceUnitInfo#addTransformer(javax.persistence.spi.ClassTransformer)
  */

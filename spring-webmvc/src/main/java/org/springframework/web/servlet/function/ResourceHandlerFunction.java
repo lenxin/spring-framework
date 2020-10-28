@@ -17,7 +17,7 @@ import org.springframework.lang.Nullable;
 /**
  * Resource-based implementation of {@link HandlerFunction}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 class ResourceHandlerFunction implements HandlerFunction<ServerResponse> {

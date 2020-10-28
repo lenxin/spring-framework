@@ -4,7 +4,7 @@ package org.springframework.dao;
  * Data access exception thrown when a resource fails temporarily
  * and the operation can be retried.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  * @see java.sql.SQLTransientConnectionException
  */

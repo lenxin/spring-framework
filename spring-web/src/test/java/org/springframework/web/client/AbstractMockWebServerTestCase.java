@@ -19,7 +19,7 @@ import org.springframework.http.MediaType;
 import static org.junit.Assert.*;
 
 /**
- * @author Brian Clozel
+
  */
 public class AbstractMockWebServerTestCase {
 

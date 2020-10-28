@@ -40,7 +40,7 @@ import org.springframework.util.Assert;
  * and uses its extended timeout functionality where appropriate.
  * JCA WorkListeners are fully supported in any case.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.3
  * @see #setSyncTaskExecutor
  * @see #setAsyncTaskExecutor

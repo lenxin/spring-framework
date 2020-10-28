@@ -6,8 +6,8 @@ import org.springframework.core.io.Resource;
  * An extension of {@link VersionPathStrategy} that adds a method
  * to determine the actual version of a {@link Resource}.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
  * @see VersionResourceResolver
 */

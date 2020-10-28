@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.springframework.cache.transaction.AbstractTransactionSupportingCacheManagerTests;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class EhCacheCacheManagerTests extends AbstractTransactionSupportingCacheManagerTests<EhCacheCacheManager> {
 

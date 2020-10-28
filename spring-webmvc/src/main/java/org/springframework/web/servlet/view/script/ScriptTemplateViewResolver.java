@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
  * existence of the specified template resources and only return a non-null
  * View object if a template is actually found.
  *
- * @author Sebastien Deleuze
+
  * @since 4.2
  * @see ScriptTemplateConfigurer
  */

@@ -19,7 +19,7 @@ import org.springframework.messaging.Message;
  * {@link HandlerMethodArgumentResolver HandlerMethodArgumentResolvers}.
  * Previously resolved method parameters are cached for faster lookups.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 class HandlerMethodArgumentResolverComposite implements HandlerMethodArgumentResolver {

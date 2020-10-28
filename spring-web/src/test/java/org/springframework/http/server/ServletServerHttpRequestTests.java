@@ -18,8 +18,8 @@ import org.springframework.util.FileCopyUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  */
 public class ServletServerHttpRequestTests {
 

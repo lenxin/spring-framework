@@ -32,8 +32,8 @@ import org.springframework.util.ClassUtils;
  * <p>A {@link ConversionService} is used to convert a resolved String argument
  * value to the expected target method parameter type.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 public abstract class AbstractNamedValueMethodArgumentResolver implements HandlerMethodArgumentResolver {

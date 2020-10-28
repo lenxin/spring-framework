@@ -10,7 +10,7 @@ import org.springframework.expression.spel.support.StandardEvaluationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Andy Clement
+
  */
 public class LiteralExpressionTests {
 

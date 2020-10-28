@@ -20,7 +20,7 @@ import org.springframework.util.ResourceUtils;
  * {@code TestPropertySourceAttributes} also enforces configuration rules
  * and detects default properties files.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see TestPropertySource
  * @see MergedTestPropertySources

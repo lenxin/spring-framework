@@ -20,7 +20,7 @@ import org.springframework.util.MultiValueMap;
  * <p>Initially created with a map of file extensions and media types.
  * Subsequently subclasses can use {@link #addMapping} to add more mappings.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.2
  */
 public class MappingMediaTypeFileExtensionResolver implements MediaTypeFileExtensionResolver {

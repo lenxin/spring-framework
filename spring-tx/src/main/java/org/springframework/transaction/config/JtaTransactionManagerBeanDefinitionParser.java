@@ -11,8 +11,8 @@ import org.springframework.beans.factory.xml.ParserContext;
  * autodetecting WebLogic and WebSphere servers and exposing the corresponding
  * {@link org.springframework.transaction.jta.JtaTransactionManager} subclass.
  *
- * @author Juergen Hoeller
- * @author Christian Dupuis
+
+
  * @since 2.5
  * @see org.springframework.transaction.jta.WebLogicJtaTransactionManager
  * @see org.springframework.transaction.jta.WebSphereUowTransactionManager

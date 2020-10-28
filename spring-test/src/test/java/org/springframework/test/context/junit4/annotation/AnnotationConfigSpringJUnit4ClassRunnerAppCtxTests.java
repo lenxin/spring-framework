@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunnerAppCtxTest
  *
  * <p>Configuration will be loaded from {@link PojoAndStringConfig}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 @ContextConfiguration(classes = PojoAndStringConfig.class, inheritLocations = false)

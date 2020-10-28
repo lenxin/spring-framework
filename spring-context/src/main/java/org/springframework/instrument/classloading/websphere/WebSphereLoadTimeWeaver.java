@@ -12,7 +12,7 @@ import org.springframework.util.ClassUtils;
  * {@link LoadTimeWeaver} implementation for WebSphere's instrumentable ClassLoader.
  * Compatible with WebSphere 7 as well as 8 and 9.
  *
- * @author Costin Leau
+
  * @since 3.1
  */
 public class WebSphereLoadTimeWeaver implements LoadTimeWeaver {

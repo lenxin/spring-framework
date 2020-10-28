@@ -47,8 +47,8 @@ import org.springframework.util.CollectionUtils;
  * is now primarily in the join mode default and in the restricted lifecycle of a
  * container-managed EntityManager (i.e. tied to the object that it is injected into).
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 2.0
  * @see javax.persistence.EntityManagerFactory#createEntityManager()
  * @see javax.persistence.PersistenceContextType#EXTENDED

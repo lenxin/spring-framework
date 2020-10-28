@@ -17,7 +17,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * {@code MultiValueMap} implementation for wrapping Netty HTTP headers.
  *
- * @author Brian Clozel
+
  * @since 5.1.1
  */
 class NettyHeadersAdapter implements MultiValueMap<String, String> {

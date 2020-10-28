@@ -146,8 +146,8 @@ import org.springframework.util.StringUtils;
  * Remove or turn off the default annotation configuration there if you intend
  * to specify a custom PersistenceAnnotationBeanPostProcessor bean definition.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see javax.persistence.PersistenceUnit
  * @see javax.persistence.PersistenceContext

@@ -11,8 +11,8 @@ import org.springframework.test.context.TestExecutionListeners;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  */
 @RunWith(SpringRunner.class)
 @TestExecutionListeners(ClassLevelDisabledSpringRunnerTests.CustomTestExecutionListener.class)

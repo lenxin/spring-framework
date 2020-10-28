@@ -15,8 +15,8 @@ import org.springframework.util.StringUtils;
  * {@link FactoryBean} for creating {@link ThreadPoolTaskExecutor} instances,
  * primarily used behind the XML task namespace.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class TaskExecutorFactoryBean implements

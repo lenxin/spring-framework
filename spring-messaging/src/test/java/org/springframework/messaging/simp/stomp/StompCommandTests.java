@@ -12,7 +12,7 @@ import org.springframework.messaging.simp.SimpMessageType;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class StompCommandTests {
 

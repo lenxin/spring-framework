@@ -26,7 +26,7 @@ import static org.springframework.core.annotation.AnnotatedElementUtils.*;
  *
  * <p>See <a href="https://jira.spring.io/browse/SPR-13973">SPR-13973</a>.
  *
- * @author Sam Brannen
+
  * @since 4.3
  * @see AnnotatedElementUtils#getMergedRepeatableAnnotations
  * @see AnnotatedElementUtils#findMergedRepeatableAnnotations

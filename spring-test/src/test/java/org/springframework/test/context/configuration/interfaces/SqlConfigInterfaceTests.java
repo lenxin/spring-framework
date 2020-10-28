@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.AbstractTransactionalJUnit4Spring
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 public class SqlConfigInterfaceTests extends AbstractTransactionalJUnit4SpringContextTests

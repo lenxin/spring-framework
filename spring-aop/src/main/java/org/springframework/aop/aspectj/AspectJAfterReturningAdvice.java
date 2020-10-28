@@ -13,9 +13,9 @@ import org.springframework.util.TypeUtils;
 /**
  * Spring AOP advice wrapping an AspectJ after-returning advice method.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Ramnivas Laddad
+
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

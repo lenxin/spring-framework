@@ -4,7 +4,7 @@
  * 'extends', 'implements' or 'throws' clause, a 'new' instruction, a 'catch' clause, a type cast, a
  * local variable declaration, etc).
  *
- * @author Eric Bruneton
+
  */
 public class TypeReference {
 

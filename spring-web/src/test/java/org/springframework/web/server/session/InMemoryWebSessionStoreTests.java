@@ -20,7 +20,7 @@ import static org.junit.Assert.fail;
 
 /**
  * Unit tests for {@link InMemoryWebSessionStore}.
- * @author Rob Winch
+
  */
 public class InMemoryWebSessionStoreTests {
 

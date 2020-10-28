@@ -17,9 +17,9 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @since 3.1
  */
 public class ExtendedBeanInfoTests {

@@ -72,8 +72,8 @@ import org.springframework.context.annotation.Import;
  * }
  * </pre>
  *
- * @author Dave Syer
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  * @see org.springframework.web.servlet.config.annotation.WebMvcConfigurer
  * @see org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport

@@ -43,10 +43,10 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Jeremy Grelle
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
+
+
  */
 public class MappingJackson2JsonViewTests {
 

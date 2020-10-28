@@ -7,8 +7,8 @@ import org.springframework.transaction.TransactionDefinition;
  * with the {@link Transactional} annotation, corresponding to the
  * {@link TransactionDefinition} interface.
  *
- * @author Colin Sampaleanu
- * @author Juergen Hoeller
+
+
  * @since 1.2
  */
 public enum Propagation {

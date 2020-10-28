@@ -9,8 +9,8 @@ import org.springframework.context.ApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  */
 public class Spr7816Tests {
 

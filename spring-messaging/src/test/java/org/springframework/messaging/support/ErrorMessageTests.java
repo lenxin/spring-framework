@@ -6,7 +6,7 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Gary Russell
+
  * @since 5.0
  */
 public class ErrorMessageTests {

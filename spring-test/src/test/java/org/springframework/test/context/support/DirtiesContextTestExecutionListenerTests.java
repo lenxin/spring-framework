@@ -22,7 +22,7 @@ import static org.springframework.test.annotation.DirtiesContext.MethodMode.*;
  * Unit tests for {@link DirtiesContextBeforeModesTestExecutionListener}.
  * and {@link DirtiesContextTestExecutionListener}
  *
- * @author Sam Brannen
+
  * @since 4.0
  */
 public class DirtiesContextTestExecutionListenerTests {

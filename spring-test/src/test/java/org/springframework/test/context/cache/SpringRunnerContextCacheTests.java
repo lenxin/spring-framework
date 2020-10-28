@@ -25,8 +25,8 @@ import static org.springframework.test.context.cache.ContextCacheTestUtils.*;
  * {@link SpringJUnit4ClassRunner} and the {@link DirtiesContext
  * &#064;DirtiesContext} annotation at the method level.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see ContextCacheTests
  * @see LruContextCacheTests

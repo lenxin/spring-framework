@@ -14,7 +14,7 @@ import org.springframework.util.ResourceUtils;
  * {@code @ContextConfiguration}'s {@code locations} attribute.
  * </p>
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see SpringJUnit4ClassRunnerAppCtxTests
  */

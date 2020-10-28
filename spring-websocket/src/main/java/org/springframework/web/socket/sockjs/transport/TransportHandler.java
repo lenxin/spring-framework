@@ -9,8 +9,8 @@ import org.springframework.web.socket.sockjs.SockJsService;
 /**
  * Handle a SockJS session URL, i.e. transport-specific request.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 4.0
  */
 public interface TransportHandler {

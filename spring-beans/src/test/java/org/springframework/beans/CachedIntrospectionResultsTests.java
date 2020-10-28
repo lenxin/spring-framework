@@ -13,9 +13,9 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Arjen Poutsma
+
+
+
  */
 public class CachedIntrospectionResultsTests {
 

@@ -18,8 +18,8 @@ import org.springframework.lang.Nullable;
  *
  * <p>Will simply accept any items into the cache not actually storing them.
  *
- * @author Costin Leau
- * @author Stephane Nicoll
+
+
  * @since 3.1
  * @see CompositeCacheManager
  */

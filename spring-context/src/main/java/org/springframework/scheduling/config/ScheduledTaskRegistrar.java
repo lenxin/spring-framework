@@ -31,9 +31,9 @@ import org.springframework.util.CollectionUtils;
  * {@link org.springframework.scheduling.annotation.SchedulingConfigurer
  * SchedulingConfigurer} callback interface.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Tobias Montagna-Hay
+
+
+
  * @since 3.0
  * @see org.springframework.scheduling.annotation.EnableAsync
  * @see org.springframework.scheduling.annotation.SchedulingConfigurer

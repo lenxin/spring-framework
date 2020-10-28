@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * <p>To run these tests in an IDE that does not have built-in support for the JUnit
  * Platform, simply run {@link SpringJUnitJupiterTestSuite} as a JUnit 4 test.
  *
- * @author Sam Brannen
+
  * @since 5.0
  */
 @SpringJUnitConfig(TestConfig.class)

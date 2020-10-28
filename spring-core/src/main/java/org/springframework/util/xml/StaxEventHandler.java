@@ -21,7 +21,7 @@ import org.springframework.lang.Nullable;
  * SAX {@link org.xml.sax.ContentHandler} and {@link LexicalHandler}
  * that writes to a {@link javax.xml.stream.util.XMLEventConsumer}.
  *
- * @author Arjen Poutsma
+
  * @since 4.0.3
  */
 class StaxEventHandler extends AbstractStaxHandler {

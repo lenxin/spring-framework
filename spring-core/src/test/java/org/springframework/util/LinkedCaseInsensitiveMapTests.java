@@ -9,8 +9,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link LinkedCaseInsensitiveMap}.
  *
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
  */
 public class LinkedCaseInsensitiveMapTests {
 

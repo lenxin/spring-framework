@@ -18,8 +18,8 @@ import org.springframework.expression.spel.support.BooleanTypedValue;
  * It will return {@code true} when {@link #getValue} is called
  * if the first operand matches the regex.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class OperatorMatches extends Operator {

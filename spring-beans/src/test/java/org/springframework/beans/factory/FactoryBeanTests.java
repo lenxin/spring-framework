@@ -18,9 +18,9 @@ import static org.junit.Assert.*;
 import static org.springframework.tests.TestResourceUtils.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class FactoryBeanTests {
 

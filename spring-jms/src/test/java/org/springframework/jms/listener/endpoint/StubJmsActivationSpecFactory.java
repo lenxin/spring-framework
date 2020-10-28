@@ -6,7 +6,7 @@ import javax.resource.spi.ResourceAdapter;
 import org.springframework.jca.StubActivationSpec;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class StubJmsActivationSpecFactory implements JmsActivationSpecFactory {
 

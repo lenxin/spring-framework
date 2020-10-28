@@ -24,7 +24,7 @@ import org.springframework.web.reactive.result.view.ViewResolver;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class ResourceHandlerFunctionTests {

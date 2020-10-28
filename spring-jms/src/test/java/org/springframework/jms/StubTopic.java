@@ -5,7 +5,7 @@ import javax.jms.Topic;
 /**
  * Stub implementation of the {@link Topic} interface.
  *
- * @author Rick Evans
+
  */
 public class StubTopic implements Topic {
 

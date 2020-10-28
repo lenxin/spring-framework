@@ -36,8 +36,8 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
  * SimpleJdbcCall in order to provide the ability to chain multiple ones
  * together in a "fluent" interface style.
  *
- * @author Thomas Risberg
- * @author Stephane Nicoll
+
+
  * @since 2.5
  * @see java.sql.DatabaseMetaData
  * @see org.springframework.jdbc.core.JdbcTemplate

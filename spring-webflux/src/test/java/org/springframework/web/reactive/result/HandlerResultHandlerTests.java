@@ -27,7 +27,7 @@ import static org.springframework.http.MediaType.TEXT_PLAIN;
 /**
  * Unit tests for {@link HandlerResultHandlerSupport}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class HandlerResultHandlerTests {
 

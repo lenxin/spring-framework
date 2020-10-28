@@ -20,7 +20,7 @@ import org.springframework.util.CollectionUtils;
  *
  * <p>This class is typically imported via {@link EnableWebSocketMessageBroker}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 @Configuration

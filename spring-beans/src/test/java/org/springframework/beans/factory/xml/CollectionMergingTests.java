@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
 /**
  * Unit and integration tests for the collection merging support.
  *
- * @author Rob Harrop
- * @author Rick Evans
+
+
  */
 @SuppressWarnings("rawtypes")
 public class CollectionMergingTests {

@@ -54,9 +54,9 @@ import static org.springframework.http.HttpMethod.PUT;
 import static org.springframework.http.MediaType.parseMediaType;
 
 /**
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
+
  */
 @SuppressWarnings("unchecked")
 public class RestTemplateTests {

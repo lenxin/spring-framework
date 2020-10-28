@@ -20,7 +20,7 @@ import org.springframework.util.ExceptionTypeFilter;
 /**
  * A base {@link JCacheOperation} implementation.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @param <A> the annotation type
  */

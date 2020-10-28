@@ -25,9 +25,9 @@ import org.springframework.util.StringUtils;
  * <p>This base class is serializable. Subclasses should declare all fields transient;
  * the {@link #initPatternRepresentation} method will be invoked again on deserialization.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
+
  * @since 1.1
  * @see JdkRegexpMethodPointcut
  */

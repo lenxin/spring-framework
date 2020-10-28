@@ -15,7 +15,7 @@ import org.springframework.mail.MailParseException;
  * <p>Uses a MimeMessageHelper underneath. Can either be created with a
  * MimeMessageHelper instance or with a JavaMail MimeMessage instance.
  *
- * @author Juergen Hoeller
+
  * @since 1.1.5
  * @see MimeMessageHelper
  * @see javax.mail.internet.MimeMessage

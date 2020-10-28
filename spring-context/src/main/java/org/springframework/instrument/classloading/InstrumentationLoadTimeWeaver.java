@@ -28,8 +28,8 @@ import org.springframework.util.ClassUtils;
  *
  * <p><code>-javaagent:${project_loc}/lib/spring-instrument-{version}.jar</code>
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see InstrumentationSavingAgent
  */

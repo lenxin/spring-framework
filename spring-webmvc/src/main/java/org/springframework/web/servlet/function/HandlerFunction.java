@@ -3,7 +3,7 @@ package org.springframework.web.servlet.function;
 /**
  * Represents a function that handles a {@linkplain ServerRequest request}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  * @param <T> the type of the response of the function
  * @see RouterFunction

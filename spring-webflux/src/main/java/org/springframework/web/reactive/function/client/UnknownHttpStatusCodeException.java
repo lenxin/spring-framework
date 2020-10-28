@@ -9,7 +9,7 @@ import org.springframework.lang.Nullable;
 /**
  * Exception thrown when an unknown (or custom) HTTP status code is received.
  *
- * @author Brian Clozel
+
  * @since 5.1
  */
 public class UnknownHttpStatusCodeException extends WebClientResponseException {

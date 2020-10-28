@@ -38,9 +38,9 @@ import org.springframework.util.StringUtils;
  * where {@code example.MyService} is the name of the interface, and {@code MyServiceImpl1}
  * and {@code MyServiceImpl2} are two implementations.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @since 3.2
  */
 public final class SpringFactoriesLoader {

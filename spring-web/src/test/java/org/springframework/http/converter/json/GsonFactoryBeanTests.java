@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 /**
  * {@link GsonFactoryBean} tests.
  *
- * @author Roy Clarkson
+
  */
 public class GsonFactoryBeanTests {
 

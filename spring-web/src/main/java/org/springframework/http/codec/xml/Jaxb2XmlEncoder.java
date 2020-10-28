@@ -34,8 +34,8 @@ import org.springframework.util.MimeTypeUtils;
  * {@link javax.xml.bind.annotation.XmlElement @XmlElement} can be used
  * to specify how collections should be marshalled.
  *
- * @author Sebastien Deleuze
- * @author Arjen Poutsma
+
+
  * @since 5.0
  * @see Jaxb2XmlDecoder
  */

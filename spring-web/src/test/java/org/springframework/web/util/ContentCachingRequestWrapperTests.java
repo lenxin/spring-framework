@@ -8,7 +8,7 @@ import org.springframework.util.FileCopyUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Brian Clozel
+
  */
 public class ContentCachingRequestWrapperTests {
 

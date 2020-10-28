@@ -23,9 +23,9 @@ import org.springframework.format.datetime.DateFormatterRegistrar;
  * and relies on several of them for its formatters. Some additional
  * converters are just being registered for custom conversion scenarios.
  *
- * @author Keith Donald
- * @author Phillip Webb
- * @author Juergen Hoeller
+
+
+
  * @since 3.0
  */
 final class JodaTimeConverters {

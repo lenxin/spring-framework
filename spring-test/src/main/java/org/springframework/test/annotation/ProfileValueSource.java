@@ -18,8 +18,8 @@ import org.springframework.lang.Nullable;
  * <li>{@link SystemProfileValueSource}</li>
  * </ul>
  *
- * @author Rod Johnson
- * @author Sam Brannen
+
+
  * @since 2.0
  * @see ProfileValueSourceConfiguration
  * @see IfProfileValue

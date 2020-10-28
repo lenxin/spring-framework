@@ -14,8 +14,8 @@ import org.springframework.http.MockHttpOutputMessage;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  */
 public class StringHttpMessageConverterTests {
 

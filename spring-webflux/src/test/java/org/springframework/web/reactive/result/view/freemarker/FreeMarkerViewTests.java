@@ -29,7 +29,7 @@ import org.springframework.web.server.session.DefaultWebSessionManager;
 import static org.junit.Assert.*;
 
 /**
- * @author Rossen Stoyanchev
+
  */
 public class FreeMarkerViewTests {
 

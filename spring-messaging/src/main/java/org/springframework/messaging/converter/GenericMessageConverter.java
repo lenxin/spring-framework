@@ -16,7 +16,7 @@ import org.springframework.util.ClassUtils;
  * <p>Return {@code null} if the conversion service cannot convert
  * from the payload type to the requested type.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see ConversionService
  */

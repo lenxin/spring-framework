@@ -8,7 +8,7 @@ import org.springframework.util.ResourceUtils;
  * we can specify an explicit, <em>classpath</em> location for our application
  * context.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see SpringJUnit4ClassRunnerAppCtxTests
  * @see #CLASSPATH_CONTEXT_RESOURCE_PATH

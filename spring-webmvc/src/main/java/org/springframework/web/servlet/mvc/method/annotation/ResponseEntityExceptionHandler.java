@@ -56,7 +56,7 @@ import org.springframework.web.util.WebUtils;
  * <p>Note that in order for an {@code @ControllerAdvice} subclass to be
  * detected, {@link ExceptionHandlerExceptionResolver} must be configured.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.2
  * @see #handleException(Exception, WebRequest)
  * @see org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver

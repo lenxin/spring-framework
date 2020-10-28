@@ -50,8 +50,8 @@ import org.springframework.util.StringUtils;
  *
  * <p>Thanks to David Leal Valmana for the suggestion and initial prototype.
  *
- * @author Rick Evans
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class ResourceBundleEditor extends PropertyEditorSupport {

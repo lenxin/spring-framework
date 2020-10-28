@@ -16,8 +16,8 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 /**
  * A simple implementation of {@link MvcResult} with setters.
  *
- * @author Rossen Stoyanchev
- * @author Rob Winch
+
+
  * @since 3.2
  */
 class DefaultMvcResult implements MvcResult {

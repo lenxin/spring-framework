@@ -8,7 +8,7 @@ import java.security.MessageDigest;
  * Extension of {@link java.io.InputStream} that allows for optimized
  * implementations of message digesting.
  *
- * @author Craig Andrews
+
  * @since 4.2
  */
 abstract class UpdateMessageDigestInputStream extends InputStream {

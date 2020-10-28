@@ -19,7 +19,7 @@ import org.springframework.util.Assert;
  * {@link #addDateConverters(ConverterRegistry)} utility method for
  * ad-hoc use against any {@code ConverterRegistry} instance.
  *
- * @author Phillip Webb
+
  * @since 3.2
  * @see org.springframework.format.datetime.standard.DateTimeFormatterRegistrar
  * @see org.springframework.format.datetime.joda.JodaTimeFormatterRegistrar

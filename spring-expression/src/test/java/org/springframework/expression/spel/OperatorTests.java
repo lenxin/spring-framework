@@ -13,9 +13,9 @@ import static org.junit.Assert.*;
 /**
  * Tests the evaluation of expressions using relational operators.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Giovanni Dall'Oglio Risso
+
+
+
  */
 public class OperatorTests extends AbstractExpressionTests {
 

@@ -6,7 +6,7 @@ package org.springframework.test.context.groovy
  *
  * <p>See: {@code DefaultScriptDetectionXmlSupersedesGroovySpringContextTests-context.xml}
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 beans {

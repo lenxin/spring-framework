@@ -14,7 +14,7 @@ import org.springframework.web.context.WebApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class SpringBeanAutowiringSupportTests {
 

@@ -23,9 +23,9 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
  * discover such beans. However, a {@code ControllerAdviceBean} may be created
  * from any object, including ones without an {@code @ControllerAdvice} annotation.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Juergen Hoeller
+
+
+
  * @since 3.2
  */
 public class ControllerAdviceBean implements Ordered {

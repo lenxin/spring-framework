@@ -18,8 +18,8 @@ import static org.springframework.util.SocketUtils.PORT_RANGE_MAX;
 /**
  * Unit tests for {@link SocketUtils}.
  *
- * @author Sam Brannen
- * @author Gary Russell
+
+
  */
 public class SocketUtilsTests {
 

@@ -31,7 +31,7 @@ import static org.springframework.test.util.MetaAnnotationUtils.findAnnotationDe
  * {@link ContextHierarchy @ContextHierarchy} annotations for use with
  * {@link SmartContextLoader SmartContextLoaders}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  * @see SmartContextLoader
  * @see ContextConfigurationAttributes

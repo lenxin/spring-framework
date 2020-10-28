@@ -6,7 +6,7 @@ import org.springframework.test.web.servlet.result.*
 /**
  * Provide a [MockMvcResultMatchers] Kotlin DSL in order to be able to write idiomatic Kotlin code.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 class MockMvcResultMatchersDsl(private val actions: ResultActions) {

@@ -30,7 +30,7 @@ import org.springframework.web.reactive.function.BodyInserters;
 /**
  * Default implementation of {@link ClientRequest.Builder}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 final class DefaultClientRequestBuilder implements ClientRequest.Builder {

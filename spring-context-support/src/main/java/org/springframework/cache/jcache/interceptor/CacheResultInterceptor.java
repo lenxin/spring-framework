@@ -15,7 +15,7 @@ import org.springframework.util.SerializationUtils;
 /**
  * Intercept methods annotated with {@link CacheResult}.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 @SuppressWarnings("serial")

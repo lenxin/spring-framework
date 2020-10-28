@@ -12,7 +12,7 @@ import static org.springframework.test.util.AopTestUtils.*;
 /**
  * Unit tests for {@link AopTestUtils}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 public class AopTestUtilsTests {

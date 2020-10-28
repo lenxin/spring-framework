@@ -16,8 +16,8 @@ import org.springframework.util.ObjectUtils;
  * PropertyAccessExceptions, applying those changes that can be applied
  * and storing rejected changes in an object of this class.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 18 April 2001
  */
 @SuppressWarnings("serial")

@@ -16,9 +16,9 @@ import java.util.*
 /**
  * [MockMvc] DSL tests that verifies builder, actions and expect blocks.
  *
- * @author Clint Checketts
- * @author Petr Balat
- * @author Sebastien Deleuze
+
+
+
  */
 class MockMvcExtensionsTests {
 

@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
  *     .then(response -> response.bodyToMono(String.class));
  * </pre>
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 @FunctionalInterface

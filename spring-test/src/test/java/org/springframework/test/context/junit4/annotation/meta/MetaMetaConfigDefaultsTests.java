@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  * values defined in {@link ConfigClassesAndProfilesWithCustomDefaultsMetaConfig} and
  * overrides in {@link MetaMetaConfig}.
  *
- * @author Sam Brannen
+
  * @since 4.0.3
  */
 @RunWith(SpringJUnit4ClassRunner.class)

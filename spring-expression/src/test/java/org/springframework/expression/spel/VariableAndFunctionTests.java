@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Tests the evaluation of expressions that access variables and functions (lambda/java).
  *
- * @author Andy Clement
+
  */
 public class VariableAndFunctionTests extends AbstractExpressionTests {
 

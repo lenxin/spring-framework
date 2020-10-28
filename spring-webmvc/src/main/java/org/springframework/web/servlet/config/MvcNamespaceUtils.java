@@ -21,8 +21,8 @@ import org.springframework.web.util.UrlPathHelper;
 /**
  * Convenience methods for use in MVC namespace BeanDefinitionParsers.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 3.1
  */
 public abstract class MvcNamespaceUtils {

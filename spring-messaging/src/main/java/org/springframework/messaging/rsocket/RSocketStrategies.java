@@ -16,7 +16,7 @@ import org.springframework.util.MimeType;
 /**
  * Access to strategies for use by RSocket requester and responder components.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public interface RSocketStrategies {

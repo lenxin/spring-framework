@@ -7,7 +7,7 @@ import org.springframework.test.context.TestExecutionListener;
  * Abstract {@linkplain Ordered ordered} implementation of the
  * {@link TestExecutionListener} API.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see #getOrder()
  */

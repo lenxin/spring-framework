@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * A constant whose value is computed at runtime, with a bootstrap method.
  *
- * @author Remi Forax
+
  */
 public final class ConstantDynamic {
 

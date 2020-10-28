@@ -11,7 +11,7 @@ import org.springframework.core.Ordered;
  * {@link #getOrder() order} is {@link Ordered#LOWEST_PRECEDENCE}, indicating
  * late execution; return a lower value for earlier execution.
  *
- * @author Juergen Hoeller
+
  * @since 22.01.2004
  */
 public abstract class TransactionSynchronizationAdapter implements TransactionSynchronization, Ordered {

@@ -44,8 +44,8 @@ import org.springframework.web.util.WebUtils;
  * identify that a request is already filtered. The default implementation is
  * based on the configured name of the concrete filter instance.
  *
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
  * @since 06.12.2003
  */
 public abstract class OncePerRequestFilter extends GenericFilterBean {

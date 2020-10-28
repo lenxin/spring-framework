@@ -19,7 +19,7 @@ import org.springframework.web.util.UrlPathHelper;
  * matches the pattern it is mapped to using pattern matching as defined in the
  * Servlet spec.
  *
- * @author Rob Winch
+
  * @since 3.2
  */
 final class PatternMappingFilterProxy implements Filter {

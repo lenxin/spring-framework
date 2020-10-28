@@ -45,8 +45,8 @@ import org.springframework.web.util.UriBuilderFactory;
  * <li>{@link RequestBodySpec#body(BodyInserter) body(BodyInserter)}
  * </ul>
  *
- * @author Rossen Stoyanchev
- * @author Arjen Poutsma
+
+
  * @since 5.0
  */
 public interface WebClient {

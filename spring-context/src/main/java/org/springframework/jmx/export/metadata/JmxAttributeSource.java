@@ -8,8 +8,8 @@ import org.springframework.lang.Nullable;
  * Interface used by the {@code MetadataMBeanInfoAssembler} to
  * read source-level metadata from a managed resource's class.
  *
- * @author Rob Harrop
- * @author Jennifer Hickey
+
+
  * @since 1.2
  * @see org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler#setAttributeSource
  * @see org.springframework.jmx.export.MBeanExporter#setAssembler

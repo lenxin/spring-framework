@@ -50,7 +50,7 @@ import org.springframework.util.ClassUtils;
  * In combination with {@link HibernateTransactionManager}, this naturally allows for
  * mixing JPA access code with native Hibernate access code within the same transaction.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see #setDataSource
  * @see #setPackagesToScan

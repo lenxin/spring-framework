@@ -9,7 +9,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author Brian Clozel
+
  */
 public class CacheControlTests {
 

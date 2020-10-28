@@ -13,7 +13,7 @@ import org.springframework.mock.web.test.MockHttpServletResponse;
 /**
  * Base class for tests using {@link ServerHttpRequest} and {@link ServerHttpResponse}.
  *
- * @author Rossen Stoyanchev
+
  */
 public abstract class AbstractHttpRequestTests {
 

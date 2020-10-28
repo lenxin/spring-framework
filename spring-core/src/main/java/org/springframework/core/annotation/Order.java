@@ -36,8 +36,8 @@ import org.springframework.core.Ordered;
  * <p>Consult the javadoc for {@link org.springframework.core.OrderComparator
  * OrderComparator} for details on the sort semantics for non-ordered objects.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see org.springframework.core.Ordered
  * @see AnnotationAwareOrderComparator

@@ -47,8 +47,8 @@ import static org.mockito.BDDMockito.*;
 import static org.xmlunit.matchers.CompareMatcher.*;
 
 /**
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
  */
 public class XStreamMarshallerTests {
 

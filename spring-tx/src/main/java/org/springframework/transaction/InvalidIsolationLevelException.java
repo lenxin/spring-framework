@@ -5,7 +5,7 @@ package org.springframework.transaction;
  * i.e. an isolation level that the transaction manager implementation
  * doesn't support.
  *
- * @author Juergen Hoeller
+
  * @since 12.05.2003
  */
 @SuppressWarnings("serial")

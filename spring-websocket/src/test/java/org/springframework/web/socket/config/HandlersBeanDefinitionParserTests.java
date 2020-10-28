@@ -51,8 +51,8 @@ import static org.junit.Assert.*;
  * Test fixture for HandlersBeanDefinitionParser.
  * See test configuration files websocket-config-handlers-*.xml.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  */
 public class HandlersBeanDefinitionParserTests {
 

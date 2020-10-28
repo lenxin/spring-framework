@@ -14,8 +14,8 @@ import org.springframework.util.StringUtils;
  * {@link ClientHttpRequest} implementation that uses standard JDK facilities to
  * execute buffered requests. Created via the {@link SimpleClientHttpRequestFactory}.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see SimpleClientHttpRequestFactory#createRequest(java.net.URI, HttpMethod)
  */

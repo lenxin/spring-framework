@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  * Modified copy of {@link CustomScriptSyntaxSqlScriptsTests} with
  * {@link SqlConfig @SqlConfig} defined at the class level.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @ContextConfiguration(classes = EmptyDatabaseConfig.class)

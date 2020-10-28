@@ -13,7 +13,7 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class RouterFunctionMappingTests {
 

@@ -4,7 +4,7 @@ package org.springframework.dao;
  * Data access exception thrown when a result was expected to have at least
  * one row (or element) but zero rows (or elements) were actually returned.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see IncorrectResultSizeDataAccessException
  */

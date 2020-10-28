@@ -59,7 +59,7 @@ import org.springframework.messaging.handler.annotation.MessageMapping;
  * <p>This annotation may be used as a <em>meta-annotation</em> to create custom
  * <em>composed annotations</em> with attribute overrides.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see EnableJms
  * @see JmsListenerAnnotationBeanPostProcessor

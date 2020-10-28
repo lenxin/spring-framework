@@ -21,7 +21,7 @@ import org.springframework.util.Assert;
  * either the top-level header map or the nested
  * {@link NativeMessageHeaderAccessor native} header map.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  * @see HeadersMethodArgumentResolver
  * @see NativeMessageHeaderAccessor

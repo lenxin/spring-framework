@@ -9,7 +9,7 @@ import org.springframework.lang.NonNull;
  * attempt: typically registering a new definition for the same bean name while
  * {@link DefaultListableBeanFactory#isAllowBeanDefinitionOverriding()} is {@code false}.
  *
- * @author Juergen Hoeller
+
  * @since 5.1
  * @see DefaultListableBeanFactory#setAllowBeanDefinitionOverriding
  * @see DefaultListableBeanFactory#registerBeanDefinition

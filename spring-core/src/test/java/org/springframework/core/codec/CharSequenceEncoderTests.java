@@ -16,7 +16,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.junit.Assert.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class CharSequenceEncoderTests
 		extends AbstractEncoderTestCase<CharSequenceEncoder> {

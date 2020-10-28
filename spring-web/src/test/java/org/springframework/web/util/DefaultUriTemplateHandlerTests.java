@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link DefaultUriTemplateHandler}.
  *
- * @author Rossen Stoyanchev
+
  */
 @SuppressWarnings("deprecation")
 public class DefaultUriTemplateHandlerTests {

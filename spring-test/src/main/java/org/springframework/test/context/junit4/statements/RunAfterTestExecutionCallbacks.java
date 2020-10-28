@@ -17,7 +17,7 @@ import org.springframework.test.context.TestContextManager;
  *
  * <p><strong>NOTE:</strong> This class requires JUnit 4.9 or higher.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see #evaluate()
  * @see RunBeforeTestExecutionCallbacks

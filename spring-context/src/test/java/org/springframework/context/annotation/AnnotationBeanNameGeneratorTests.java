@@ -22,11 +22,11 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AnnotationBeanNameGenerator}.
  *
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Mark Fisher
- * @author Chris Beams
- * @author Sam Brannen
+
+
+
+
+
  */
 public class AnnotationBeanNameGeneratorTests {
 

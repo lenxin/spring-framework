@@ -24,8 +24,8 @@ import org.springframework.util.Assert;
  * also be used with programmatic endpoint management on a native
  * {@link javax.resource.spi.ResourceAdapter} instance.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 2.5
  * @see #setMessageListener
  * @see #setTransactionManager

@@ -22,8 +22,8 @@ package org.springframework.aop.framework;
  * the configuration was frozen) a proxy should throw an
  * {@link AopConfigException} on an attempted advice change.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public interface AopProxyFactory {
 

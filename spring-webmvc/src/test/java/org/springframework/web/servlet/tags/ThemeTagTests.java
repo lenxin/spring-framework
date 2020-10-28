@@ -17,8 +17,8 @@ import org.springframework.web.servlet.support.RequestContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Alef Arendsen
+
+
  */
 public class ThemeTagTests extends AbstractTagTests {
 

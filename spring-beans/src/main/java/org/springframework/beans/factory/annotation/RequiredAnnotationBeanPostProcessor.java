@@ -50,8 +50,8 @@ import org.springframework.util.Assert;
  * Remove or turn off the default annotation configuration there if you intend
  * to specify a custom RequiredAnnotationBeanPostProcessor bean definition.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see #setRequiredAnnotationType
  * @see Required

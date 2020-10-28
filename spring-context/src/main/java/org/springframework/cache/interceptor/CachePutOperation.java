@@ -5,9 +5,9 @@ import org.springframework.lang.Nullable;
 /**
  * Class describing a cache 'put' operation.
  *
- * @author Costin Leau
- * @author Phillip Webb
- * @author Marcin Kamionowski
+
+
+
  * @since 3.1
  */
 public class CachePutOperation extends CacheOperation {

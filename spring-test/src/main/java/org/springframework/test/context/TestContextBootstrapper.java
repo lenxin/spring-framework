@@ -34,7 +34,7 @@ import java.util.List;
  * {@link org.springframework.test.context.support.AbstractTestContextBootstrapper
  * AbstractTestContextBootstrapper} or one of its concrete subclasses instead.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see BootstrapWith
  * @see BootstrapContext

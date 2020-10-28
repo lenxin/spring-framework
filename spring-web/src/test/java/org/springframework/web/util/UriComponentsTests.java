@@ -18,9 +18,9 @@ import static org.springframework.web.util.UriComponentsBuilder.*;
 /**
  * Unit tests for {@link UriComponents}.
  *
- * @author Arjen Poutsma
- * @author Phillip Webb
- * @author Rossen Stoyanchev
+
+
+
  */
 public class UriComponentsTests {
 

@@ -18,7 +18,7 @@ import org.springframework.util.StringUtils;
  * SAX {@code XMLReader} that reads from a StAX {@code XMLStreamReader}. Reads from an
  * {@code XMLStreamReader}, and calls the corresponding methods on the SAX callback interfaces.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see XMLStreamReader
  * @see #setContentHandler(org.xml.sax.ContentHandler)

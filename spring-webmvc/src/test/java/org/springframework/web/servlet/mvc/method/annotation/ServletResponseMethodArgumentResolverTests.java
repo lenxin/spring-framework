@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with {@link ServletResponseMethodArgumentResolver}.
  *
- * @author Arjen Poutsma
+
  */
 public class ServletResponseMethodArgumentResolverTests {
 

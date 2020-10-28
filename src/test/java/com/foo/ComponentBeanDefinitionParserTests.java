@@ -13,7 +13,7 @@ import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.io.ClassPathResource;
 
 /**
- * @author Costin Leau
+
  */
 public class ComponentBeanDefinitionParserTests {
 

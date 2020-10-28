@@ -10,8 +10,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Unit tests for {@link MockMvcResultMatchers}.
  *
- * @author Brian Clozel
- * @author Sam Brannen
+
+
  */
 public class MockMvcResultMatchersTests {
 

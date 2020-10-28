@@ -38,9 +38,9 @@ import org.springframework.util.ClassUtils;
  * <p>Note: When using Spring's Marshaller/Unmarshaller abstractions from {@code spring-oxm},
  * you should use the {@link MarshallingHttpMessageConverter} instead.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
+
  * @since 3.0
  * @see MarshallingHttpMessageConverter
  */

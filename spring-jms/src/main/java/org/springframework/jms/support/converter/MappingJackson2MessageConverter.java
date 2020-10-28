@@ -40,10 +40,10 @@ import org.springframework.util.ClassUtils;
  *
  * <p>Compatible with Jackson 2.6 and higher, as of Spring 4.3.
  *
- * @author Mark Pollack
- * @author Dave Syer
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
+
  * @since 3.1.4
  */
 public class MappingJackson2MessageConverter implements SmartMessageConverter, BeanClassLoaderAware {

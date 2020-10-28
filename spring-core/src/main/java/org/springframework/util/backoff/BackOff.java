@@ -23,7 +23,7 @@ package org.springframework.util.backoff;
  * Once the underlying operation has completed successfully,
  * the execution instance can be simply discarded.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see BackOffExecution
  */

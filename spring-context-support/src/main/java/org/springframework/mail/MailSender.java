@@ -8,8 +8,8 @@ package org.springframework.mail;
  * <p>Allows for easy testing of clients, as it does not depend on JavaMail's
  * infrastructure classes: no mocking of JavaMail Session or Transport necessary.
  *
- * @author Dmitriy Kopylenko
- * @author Juergen Hoeller
+
+
  * @since 10.09.2003
  * @see org.springframework.mail.javamail.JavaMailSender
  */

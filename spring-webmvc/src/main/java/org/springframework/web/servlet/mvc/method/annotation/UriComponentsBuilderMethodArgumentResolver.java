@@ -19,7 +19,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  * <p>The returned instance is initialized via
  * {@link ServletUriComponentsBuilder#fromServletMapping(HttpServletRequest)}.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  */
 public class UriComponentsBuilderMethodArgumentResolver implements HandlerMethodArgumentResolver {

@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * Shared tests for {@link CacheManager} that inherit from
  * {@link AbstractTransactionSupportingCacheManager}.
  *
- * @author Stephane Nicoll
+
  */
 public abstract class AbstractTransactionSupportingCacheManagerTests<T extends CacheManager> {
 

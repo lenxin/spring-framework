@@ -24,8 +24,8 @@ import org.springframework.web.servlet.view.AbstractView;
  *
  * <p>Thanks to Jettro Coenradie and Sergio Bossa for the original feed view prototype!
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @param <T> the {@link WireFeed} type
  * @see AbstractRssFeedView

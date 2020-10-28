@@ -54,9 +54,9 @@ import org.springframework.util.StringUtils;
  * {@link org.springframework.test.context.cache.ContextCache ContextCache}
  * support, override {@link #getCacheAwareContextLoaderDelegate()}.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  * @since 4.1
  */
 public abstract class AbstractTestContextBootstrapper implements TestContextBootstrapper {

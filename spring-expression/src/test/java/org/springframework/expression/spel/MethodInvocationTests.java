@@ -28,8 +28,8 @@ import static org.junit.Assert.*;
 /**
  * Tests invocation of methods.
  *
- * @author Andy Clement
- * @author Phillip Webb
+
+
  */
 public class MethodInvocationTests extends AbstractExpressionTests {
 

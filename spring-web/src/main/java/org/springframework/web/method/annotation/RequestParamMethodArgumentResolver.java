@@ -52,9 +52,9 @@ import org.springframework.web.util.UriComponentsBuilder;
  * <p>A {@link WebDataBinder} is invoked to apply type conversion to resolved request
  * header values that don't yet match the method parameter type.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
+
  * @since 3.1
  * @see RequestParamMapMethodArgumentResolver
  */

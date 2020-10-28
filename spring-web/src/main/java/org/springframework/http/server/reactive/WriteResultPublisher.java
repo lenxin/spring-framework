@@ -15,9 +15,9 @@ import org.springframework.util.Assert;
 /**
  * Publisher returned from {@link ServerHttpResponse#writeWith(Publisher)}.
  *
- * @author Arjen Poutsma
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
+
  * @since 5.0
  */
 class WriteResultPublisher implements Publisher<Void> {

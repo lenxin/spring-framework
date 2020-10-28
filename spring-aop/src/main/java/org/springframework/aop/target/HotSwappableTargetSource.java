@@ -16,8 +16,8 @@ import org.springframework.util.Assert;
  * <p>This TargetSource is serializable if the target is at the time
  * of serialization.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 public class HotSwappableTargetSource implements TargetSource, Serializable {
 

@@ -22,9 +22,9 @@ import org.springframework.util.Assert;
  * objects with different parameters based on a SQL statement and a single
  * set of parameter declarations.
  *
- * @author Rod Johnson
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
+
  */
 public class PreparedStatementCreatorFactory {
 

@@ -23,7 +23,7 @@ import org.springframework.lang.Nullable;
  * input source obtained via {@link #getInputSource()}. Calling {@link #setXMLReader(XMLReader)}
  * or {@link #setInputSource(InputSource)} will result in {@code UnsupportedOperationException #setInputSource(InputSource)} will result in {@code UnsupportedOperationExceptions}.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see XMLEventReader
  * @see XMLStreamReader

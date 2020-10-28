@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ClientResponse.bodyToMono(): Mono<T> =
@@ -26,7 +26,7 @@ inline fun <reified T : Any> ClientResponse.bodyToMono(): Mono<T> =
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ClientResponse.bodyToFlux(): Flux<T> =
@@ -38,7 +38,7 @@ inline fun <reified T : Any> ClientResponse.bodyToFlux(): Flux<T> =
  * Backpressure is controlled by [batchSize] parameter that controls the size of in-flight elements
  * and [org.reactivestreams.Subscription.request] size.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 @FlowPreview
@@ -50,7 +50,7 @@ inline fun <reified T : Any> ClientResponse.bodyToFlow(batchSize: Int = 1): Flow
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ClientResponse.toEntity(): Mono<ResponseEntity<T>> =
@@ -61,7 +61,7 @@ inline fun <reified T : Any> ClientResponse.toEntity(): Mono<ResponseEntity<T>> 
  * leveraging Kotlin reified type parameters. This extension is not subject to type
  * erasure and retains actual generic type arguments.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 inline fun <reified T : Any> ClientResponse.toEntityList(): Mono<ResponseEntity<List<T>>> =
@@ -70,7 +70,7 @@ inline fun <reified T : Any> ClientResponse.toEntityList(): Mono<ResponseEntity<
 /**
  * Non-nullable Coroutines variant of [ClientResponse.bodyToMono].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend inline fun <reified T : Any> ClientResponse.awaitBody(): T =
@@ -79,7 +79,7 @@ suspend inline fun <reified T : Any> ClientResponse.awaitBody(): T =
 /**
  * Nullable coroutines variant of [ClientResponse.bodyToMono].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend inline fun <reified T : Any> ClientResponse.awaitBodyOrNull(): T? =
@@ -88,7 +88,7 @@ suspend inline fun <reified T : Any> ClientResponse.awaitBodyOrNull(): T? =
 /**
  * Coroutines variant of [ClientResponse.toEntity].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend inline fun <reified T : Any> ClientResponse.awaitEntity(): ResponseEntity<T> =
@@ -97,7 +97,7 @@ suspend inline fun <reified T : Any> ClientResponse.awaitEntity(): ResponseEntit
 /**
  * Coroutines variant of [ClientResponse.toEntityList].
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 suspend inline fun <reified T : Any> ClientResponse.awaitEntityList(): ResponseEntity<List<T>> =

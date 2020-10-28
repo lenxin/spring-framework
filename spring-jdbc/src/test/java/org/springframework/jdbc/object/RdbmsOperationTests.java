@@ -22,9 +22,9 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Trevor Cook
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 public class RdbmsOperationTests {
 

@@ -15,7 +15,7 @@ import org.springframework.test.annotation.ProfileValueSourceConfiguration;
  * conjunction with the {@link SpringRunner}.
  * </p>
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see EnabledAndIgnoredSpringRunnerTests
  */

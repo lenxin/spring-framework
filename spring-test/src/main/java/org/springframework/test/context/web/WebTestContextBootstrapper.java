@@ -17,7 +17,7 @@ import org.springframework.test.context.support.DefaultTestContextBootstrapper;
  * with {@link WebAppConfiguration @WebAppConfiguration}.
  * </ul>
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 public class WebTestContextBootstrapper extends DefaultTestContextBootstrapper {

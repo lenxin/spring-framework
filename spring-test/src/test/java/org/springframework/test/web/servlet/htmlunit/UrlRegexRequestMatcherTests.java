@@ -5,8 +5,8 @@ import org.junit.Test;
 /**
  * Unit tests for {@link UrlRegexRequestMatcher}.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 public class UrlRegexRequestMatcherTests extends AbstractWebRequestMatcherTests {

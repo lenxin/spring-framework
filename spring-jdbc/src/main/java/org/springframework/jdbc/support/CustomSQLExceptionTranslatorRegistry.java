@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * specific databases allowing for overriding translation based on values contained in the configuration file
  * named "sql-error-codes.xml".
  *
- * @author Thomas Risberg
+
  * @since 3.1.1
  * @see SQLErrorCodesFactory
  */

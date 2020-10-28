@@ -20,7 +20,7 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * {@code HandlerResultHandler} implementation that supports {@link ServerResponse ServerResponses}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class ServerResponseResultHandler implements HandlerResultHandler, InitializingBean, Ordered {

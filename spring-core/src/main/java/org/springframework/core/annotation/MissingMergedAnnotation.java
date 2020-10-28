@@ -14,8 +14,8 @@ import org.springframework.lang.Nullable;
  * An {@link AbstractMergedAnnotation} used as the implementation of
  * {@link MergedAnnotation#missing()}.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
+
+
  * @since 5.2
  * @param <A> the annotation type
  */

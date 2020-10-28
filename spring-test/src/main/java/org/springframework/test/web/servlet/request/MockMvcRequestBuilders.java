@@ -20,12 +20,12 @@ import org.springframework.test.web.servlet.RequestBuilder;
  * <p>Consider adding this class as a Java editor favorite. To navigate to
  * this setting, open the Preferences and type "favorites".
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Greg Turnquist
- * @author Sebastien Deleuze
- * @author Sam Brannen
- * @author Kamill Sokol
+
+
+
+
+
+
  * @since 3.2
  */
 public abstract class MockMvcRequestBuilders {

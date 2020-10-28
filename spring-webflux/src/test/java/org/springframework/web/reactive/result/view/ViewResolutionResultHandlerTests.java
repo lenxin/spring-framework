@@ -50,7 +50,7 @@ import static org.springframework.web.method.ResolvableMethod.*;
  * ViewResolutionResultHandler relying on a canned {@link TestViewResolver}
  * or a (Mockito) "mock".
  *
- * @author Rossen Stoyanchev
+
  */
 public class ViewResolutionResultHandlerTests {
 

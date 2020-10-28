@@ -43,7 +43,7 @@ import static org.junit.Assert.*;
  * INFO : org.springframework.test.context.junit4.spr4868.LifecycleBean - destroying
  * </pre>
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

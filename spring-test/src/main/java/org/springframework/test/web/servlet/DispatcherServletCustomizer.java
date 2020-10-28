@@ -6,7 +6,7 @@ import org.springframework.web.servlet.DispatcherServlet;
  * Strategy interface for customizing {@link DispatcherServlet} instances that are
  * managed by {@link MockMvc}.
  *
- * @author Stephane Nicoll
+
  * @since 4.3.4
  */
 public interface DispatcherServletCustomizer {

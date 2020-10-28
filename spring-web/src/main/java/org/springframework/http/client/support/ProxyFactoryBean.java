@@ -12,7 +12,7 @@ import org.springframework.util.Assert;
 /**
  * {@link FactoryBean} that creates a {@link Proxy java.net.Proxy}.
  *
- * @author Arjen Poutsma
+
  * @since 3.0.4
  * @see	FactoryBean
  * @see Proxy

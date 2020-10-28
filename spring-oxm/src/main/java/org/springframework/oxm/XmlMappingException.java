@@ -5,7 +5,7 @@ import org.springframework.core.NestedRuntimeException;
 /**
  * Root of the hierarchy of Object XML Mapping exceptions.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

@@ -11,7 +11,7 @@ import org.springframework.cache.interceptor.CacheOperationInvoker;
 /**
  * Intercept methods annotated with {@link CachePut}.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 @SuppressWarnings("serial")

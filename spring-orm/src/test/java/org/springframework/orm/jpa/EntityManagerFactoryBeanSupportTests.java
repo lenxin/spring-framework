@@ -5,8 +5,8 @@ import org.junit.Test;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rod Johnson
- * @author Phillip Webb
+
+
  */
 public class EntityManagerFactoryBeanSupportTests extends AbstractEntityManagerFactoryBeanTests {
 

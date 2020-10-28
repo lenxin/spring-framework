@@ -18,8 +18,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link KeyHolder} and {@link GeneratedKeyHolder}.
  *
- * @author Thomas Risberg
- * @author Sam Brannen
+
+
  * @since July 18, 2004
  */
 @SuppressWarnings("serial")

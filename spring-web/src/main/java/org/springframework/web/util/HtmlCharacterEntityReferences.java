@@ -17,9 +17,9 @@ import org.springframework.util.Assert;
  * <p>A complete description of the HTML 4.0 character set can be found
  * at https://www.w3.org/TR/html4/charset.html.
  *
- * @author Juergen Hoeller
- * @author Martin Kersten
- * @author Craig Andrews
+
+
+
  * @since 1.2.1
  */
 class HtmlCharacterEntityReferences {

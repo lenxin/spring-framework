@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with a {@link CorsRegistry}.
  *
- * @author Sebastien Deleuze
+
  */
 public class CorsRegistryTests {
 

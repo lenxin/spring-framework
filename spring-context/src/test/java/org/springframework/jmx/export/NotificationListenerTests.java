@@ -22,9 +22,9 @@ import org.springframework.jmx.support.ObjectNameManager;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Mark Fisher
- * @author Sam Brannen
+
+
+
  */
 public class NotificationListenerTests extends AbstractMBeanServerTests {
 

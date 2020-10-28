@@ -42,9 +42,9 @@ import org.springframework.web.servlet.support.RequestContextUtils;
  * <li>{@link java.time.ZoneId} (as of Spring 4.0 and Java 8)
  * </ul>
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 3.1
  */
 public class ServletRequestMethodArgumentResolver implements HandlerMethodArgumentResolver {

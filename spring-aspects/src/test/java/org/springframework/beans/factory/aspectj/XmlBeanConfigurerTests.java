@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Chris Beams
+
  */
 public class XmlBeanConfigurerTests {
 

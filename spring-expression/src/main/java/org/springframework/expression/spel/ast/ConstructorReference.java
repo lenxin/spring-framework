@@ -35,8 +35,8 @@ import org.springframework.util.Assert;
  * new int[]{1,2,3,4}<br>
  * new int[3] new int[3]{1,2,3}
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class ConstructorReference extends SpelNodeImpl {

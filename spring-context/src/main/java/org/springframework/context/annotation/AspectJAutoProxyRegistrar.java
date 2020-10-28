@@ -10,8 +10,8 @@ import org.springframework.core.type.AnnotationMetadata;
  * AnnotationAwareAspectJAutoProxyCreator} against the current {@link BeanDefinitionRegistry}
  * as appropriate based on a given @{@link EnableAspectJAutoProxy} annotation.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  * @since 3.1
  * @see EnableAspectJAutoProxy
  */

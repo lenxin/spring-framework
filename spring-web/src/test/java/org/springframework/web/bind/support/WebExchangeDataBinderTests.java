@@ -36,7 +36,7 @@ import static org.springframework.core.ResolvableType.forClassWithGenerics;
 /**
  * Unit tests for {@link WebExchangeDataBinder}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class WebExchangeDataBinderTests {
 

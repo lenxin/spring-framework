@@ -1,7 +1,7 @@
 package org.springframework.jmx.export.assembler;
 
 /**
- * @author Rob Harrop
+
  */
 public class ReflectiveAssemblerTests extends AbstractJmxAssemblerTests {
 

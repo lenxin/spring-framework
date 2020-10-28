@@ -61,7 +61,7 @@ import org.springframework.util.ReflectionUtils;
  * HibernateTemplate are deprecated in the meantime and primarily exist as a migration
  * helper for older Hibernate 3.x/4.x data access code in existing applications.</b>
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see #setSessionFactory
  * @see HibernateCallback

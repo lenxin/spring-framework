@@ -8,7 +8,7 @@ import org.springframework.core.annotation.AliasFor;
 /**
  * Non-public mock of {@code org.springframework.web.bind.annotation.RequestMapping}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 @Retention(RetentionPolicy.RUNTIME)

@@ -34,7 +34,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link MappedInterceptor} tests.
  *
- * @author Rossen Stoyanchev
+
  */
 public class MappedInterceptorTests {
 

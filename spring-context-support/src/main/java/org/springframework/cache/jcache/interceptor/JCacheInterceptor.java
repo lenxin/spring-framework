@@ -23,8 +23,8 @@ import org.springframework.util.function.SingletonSupplier;
  *
  * <p>JCacheInterceptors are thread-safe.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see org.springframework.cache.interceptor.CacheInterceptor
  */

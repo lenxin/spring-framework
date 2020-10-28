@@ -12,7 +12,7 @@ import org.springframework.util.Assert;
  * Resolves arguments of type {@link RSocket} that can be used for making
  * requests to the remote peer.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public class RSocketRequesterMethodArgumentResolver implements HandlerMethodArgumentResolver {

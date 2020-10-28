@@ -23,8 +23,8 @@ import org.springframework.jmx.support.JmxUtils;
  * class or interface that will be searched for annotations and exposed
  * to the JMX runtime.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  */
 public abstract class AbstractMBeanInfoAssembler implements MBeanInfoAssembler {

@@ -17,9 +17,9 @@ import org.springframework.aop.support.DefaultPointcutAdvisor;
  * {@link org.springframework.aop.AfterReturningAdvice},
  * {@link org.springframework.aop.ThrowsAdvice}.
  *
- * @author Rod Johnson
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
+
  */
 @SuppressWarnings("serial")
 public class DefaultAdvisorAdapterRegistry implements AdvisorAdapterRegistry, Serializable {

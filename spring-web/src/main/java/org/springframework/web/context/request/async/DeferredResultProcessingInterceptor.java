@@ -20,8 +20,8 @@ import org.springframework.web.context.request.NativeWebRequest;
  * <p>The {@link #handleTimeout(NativeWebRequest, DeferredResult) handleTimeout}
  * method can set the {@code DeferredResult} in order to resume processing.
  *
- * @author Rossen Stoyanchev
- * @author Rob Winch
+
+
  * @since 3.2
  */
 public interface DeferredResultProcessingInterceptor {

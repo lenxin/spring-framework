@@ -114,7 +114,7 @@ import org.springframework.web.util.UriUtils;
  * </tbody>
  * </table>
  *
- * @author Scott Andrews
+
  * @since 3.0
  * @see ParamTag
  */

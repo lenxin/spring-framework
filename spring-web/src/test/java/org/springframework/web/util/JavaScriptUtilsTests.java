@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link JavaScriptUtils}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class JavaScriptUtilsTests {
 

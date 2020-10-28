@@ -5,7 +5,7 @@ package org.springframework.transaction;
  * amounts to an illegal state according to the transaction propagation
  * behavior that applies.
  *
- * @author Juergen Hoeller
+
  * @since 21.01.2004
  */
 @SuppressWarnings("serial")

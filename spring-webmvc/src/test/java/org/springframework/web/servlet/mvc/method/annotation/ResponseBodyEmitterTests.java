@@ -16,8 +16,8 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link ResponseBodyEmitter}.
  *
- * @author Rossen Stoyanchev
- * @author Tomasz Nurkiewicz
+
+
  */
 public class ResponseBodyEmitterTests {
 

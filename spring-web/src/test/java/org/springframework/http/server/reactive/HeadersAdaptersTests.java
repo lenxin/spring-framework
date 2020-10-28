@@ -23,7 +23,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Unit tests for {@code HeadersAdapters} {@code MultiValueMap} implementations.
  *
- * @author Brian Clozel
+
  */
 @RunWith(Parameterized.class)
 public class HeadersAdaptersTests {

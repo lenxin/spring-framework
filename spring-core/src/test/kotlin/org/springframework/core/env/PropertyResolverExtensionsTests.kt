@@ -8,7 +8,7 @@ import org.junit.Test
 /**
  * Mock object based tests for PropertyResolver Kotlin extensions.
  *
- * @author Sebastien Deleuze
+
  */
 class PropertyResolverExtensionsTests {
 

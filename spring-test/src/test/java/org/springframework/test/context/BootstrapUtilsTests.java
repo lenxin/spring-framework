@@ -19,8 +19,8 @@ import static org.springframework.test.context.BootstrapUtils.resolveTestContext
 /**
  * Unit tests for {@link BootstrapUtils}.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 4.2
  */
 public class BootstrapUtilsTests {

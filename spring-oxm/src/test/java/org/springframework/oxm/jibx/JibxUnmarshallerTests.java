@@ -15,8 +15,8 @@ import static org.junit.Assert.*;
  * NOTE: These tests fail under Eclipse/IDEA because JiBX binding does
  * not occur by default. The Gradle build should succeed, however.
  *
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
  */
 @Deprecated
 public class JibxUnmarshallerTests extends AbstractUnmarshallerTests<JibxMarshaller> {

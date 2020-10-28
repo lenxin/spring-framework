@@ -9,7 +9,7 @@ import javax.resource.spi.endpoint.MessageEndpointFactory;
 import javax.transaction.xa.XAResource;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class StubResourceAdapter implements ResourceAdapter {
 

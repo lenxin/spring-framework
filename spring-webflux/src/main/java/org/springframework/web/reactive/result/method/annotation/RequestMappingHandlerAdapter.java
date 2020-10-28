@@ -33,7 +33,7 @@ import org.springframework.web.server.ServerWebExchange;
  * {@link org.springframework.web.bind.annotation.RequestMapping @RequestMapping}
  * handler methods.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class RequestMappingHandlerAdapter implements HandlerAdapter, ApplicationContextAware, InitializingBean {

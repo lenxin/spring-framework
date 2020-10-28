@@ -12,7 +12,7 @@ import org.springframework.http.codec.HttpMessageWriter;
 /**
  * Default implementation of {@link ExchangeStrategies.Builder}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 final class DefaultExchangeStrategiesBuilder implements ExchangeStrategies.Builder {

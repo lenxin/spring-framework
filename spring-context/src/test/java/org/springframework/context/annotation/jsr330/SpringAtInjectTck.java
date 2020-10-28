@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.support.GenericApplicationContext;
 
 /**
- * @author Juergen Hoeller
+
  * @since 3.0
  */
 public class SpringAtInjectTck {

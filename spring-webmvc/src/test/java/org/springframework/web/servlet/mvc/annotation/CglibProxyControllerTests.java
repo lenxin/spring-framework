@@ -25,7 +25,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public class CglibProxyControllerTests {

@@ -19,8 +19,8 @@ import org.springframework.util.ObjectUtils;
  * Implementation of the {@code DataBuffer} interface that wraps a Netty
  * {@link ByteBuf}. Typically constructed with {@link NettyDataBufferFactory}.
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 public class NettyDataBuffer implements PooledDataBuffer {

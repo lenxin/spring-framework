@@ -26,9 +26,9 @@ import org.springframework.core.annotation.AliasFor;
  * attribute may be declared, allowing the user to choose a custom {@link BeanDefinitionReader}
  * implementation.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @since 3.0
  * @see Configuration
  * @see Import

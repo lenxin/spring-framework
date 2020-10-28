@@ -18,7 +18,7 @@ import org.springframework.core.env.PropertySource;
  * }
  * </pre>
  *
- * @author Chris Beams
+
  * @since 3.1
  * @see org.springframework.mock.env.MockEnvironment
  */

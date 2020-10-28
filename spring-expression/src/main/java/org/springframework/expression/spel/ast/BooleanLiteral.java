@@ -7,7 +7,7 @@ import org.springframework.expression.spel.support.BooleanTypedValue;
 /**
  * Represents the literal values {@code TRUE} and {@code FALSE}.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class BooleanLiteral extends Literal {

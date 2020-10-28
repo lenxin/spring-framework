@@ -53,8 +53,8 @@ import java.lang.annotation.Target;
  * {@code AFTER_*} modes are supported by the
  * {@link org.springframework.test.context.support.DirtiesContextTestExecutionListener DirtiesContextTestExecutionListener}.
  *
- * @author Sam Brannen
- * @author Rod Johnson
+
+
  * @since 2.0
  * @see org.springframework.test.context.ContextConfiguration
  * @see org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener

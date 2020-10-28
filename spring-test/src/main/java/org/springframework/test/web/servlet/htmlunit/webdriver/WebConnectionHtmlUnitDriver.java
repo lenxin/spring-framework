@@ -17,8 +17,8 @@ import org.springframework.util.Assert;
  * {@link org.springframework.test.web.servlet.htmlunit.MockMvcWebConnection
  * MockMvcWebConnection} to be injected.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  * @see MockMvcHtmlUnitDriverBuilder
  */

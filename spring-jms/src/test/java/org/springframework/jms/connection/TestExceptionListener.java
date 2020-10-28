@@ -4,7 +4,7 @@ import javax.jms.ExceptionListener;
 import javax.jms.JMSException;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class TestExceptionListener implements ExceptionListener {
 

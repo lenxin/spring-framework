@@ -14,8 +14,8 @@ import org.springframework.lang.Nullable;
  * into Spring's EntityManagerFactory creators. Serves as single
  * configuration point for all vendor-specific properties.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 2.0
  * @see AbstractEntityManagerFactoryBean#setJpaVendorAdapter
  */

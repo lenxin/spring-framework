@@ -15,7 +15,7 @@ import org.springframework.core.annotation.AliasFor;
  * <p>Specifically, {@code @PutMapping} is a <em>composed annotation</em> that
  * acts as a shortcut for {@code @RequestMapping(method = RequestMethod.PUT)}.
  *
- * @author Sam Brannen
+
  * @since 4.3
  * @see GetMapping
  * @see PostMapping

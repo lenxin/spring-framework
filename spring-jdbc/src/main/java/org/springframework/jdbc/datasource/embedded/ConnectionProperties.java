@@ -8,8 +8,8 @@ import java.sql.Driver;
  * independent of the actual {@link javax.sql.DataSource DataSource}
  * implementation.
  *
- * @author Keith Donald
- * @author Sam Brannen
+
+
  * @since 3.0
  * @see DataSourceFactory
  */

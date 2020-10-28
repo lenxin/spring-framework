@@ -10,8 +10,8 @@ import org.springframework.util.ClassUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Arjen Poutsma
+
+
  */
 public class URIEditorTests {
 

@@ -8,8 +8,8 @@ import org.springframework.messaging.MessageChannel;
  * A {@link ChannelInterceptor} base class with empty method implementations
  * as a convenience.
  *
- * @author Mark Fisher
- * @author Rossen Stoyanchev
+
+
  * @since 4.0
  * @deprecated as of 5.0.7 {@link ChannelInterceptor} has default methods (made
  * possible by a Java 8 baseline) and can be implemented directly without the

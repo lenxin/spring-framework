@@ -18,7 +18,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Unit tests for String templates running on Jython.
  *
- * @author Sebastien Deleuze
+
  */
 public class JythonScriptTemplateTests {
 

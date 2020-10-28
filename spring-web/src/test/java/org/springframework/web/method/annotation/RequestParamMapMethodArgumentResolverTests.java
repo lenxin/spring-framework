@@ -26,9 +26,9 @@ import static org.springframework.web.method.MvcAnnotationPredicates.*;
 /**
  * Test fixture with {@link RequestParamMapMethodArgumentResolver}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  */
 public class RequestParamMapMethodArgumentResolverTests {
 

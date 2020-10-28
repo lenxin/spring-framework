@@ -14,9 +14,9 @@ import org.springframework.util.StringUtils;
 /**
  * Parser for the JMS {@code <listener-container>} element.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 2.5
  */
 class JmsListenerContainerParser extends AbstractListenerContainerParser {

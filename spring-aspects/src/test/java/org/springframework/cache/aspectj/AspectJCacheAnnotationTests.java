@@ -12,7 +12,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Costin Leau
+
  */
 public class AspectJCacheAnnotationTests extends AbstractCacheAnnotationTests {
 

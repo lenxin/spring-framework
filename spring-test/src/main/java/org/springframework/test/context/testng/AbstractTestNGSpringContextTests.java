@@ -54,8 +54,8 @@ import org.springframework.test.context.web.ServletTestExecutionListener;
  * <li>{@link org.springframework.test.context.support.DirtiesContextTestExecutionListener}
  * </ul>
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 2.5
  * @see ContextConfiguration
  * @see TestContext

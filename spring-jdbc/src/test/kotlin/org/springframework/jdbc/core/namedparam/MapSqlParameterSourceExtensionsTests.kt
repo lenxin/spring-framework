@@ -21,7 +21,7 @@ import java.sql.JDBCType
 /**
  * Tests for [MapSqlParameterSource] Kotlin extensions.
  *
- * @author Mario Arias
+
  */
 class MapSqlParameterSourceExtensionsTests {
 

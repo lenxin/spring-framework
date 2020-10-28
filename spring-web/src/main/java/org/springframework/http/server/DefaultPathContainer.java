@@ -17,7 +17,7 @@ import org.springframework.util.StringUtils;
 /**
  * Default implementation of {@link PathContainer}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 final class DefaultPathContainer implements PathContainer {

@@ -3,7 +3,7 @@ package org.springframework.test.context.junit4.orm.domain;
 /**
  * DriversLicense POJO.
  *
- * @author Sam Brannen
+
  * @since 3.0
  */
 public class DriversLicense {

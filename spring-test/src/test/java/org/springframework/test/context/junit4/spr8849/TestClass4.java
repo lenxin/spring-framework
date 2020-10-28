@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * This name of this class intentionally does not end with "Test" or "Tests"
  * since it should only be run as part of the test suite: {@link Spr8849Tests}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see Spr8849Tests
  */

@@ -22,8 +22,8 @@ import org.springframework.util.Assert;
  * also be used when working with a Connection directly or when using
  * {@code org.springframework.jca.cci.object} classes.
  *
- * @author Thierry Templier
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #setConnectionFactory
  * @see #getCciTemplate

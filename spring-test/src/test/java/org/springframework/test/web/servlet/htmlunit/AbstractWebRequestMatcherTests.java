@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Abstract base class for testing {@link WebRequestMatcher} implementations.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 public class AbstractWebRequestMatcherTests {

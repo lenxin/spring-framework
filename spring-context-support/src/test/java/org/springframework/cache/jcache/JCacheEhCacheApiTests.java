@@ -12,7 +12,7 @@ import org.junit.Before;
 import org.springframework.cache.AbstractValueAdaptingCacheTests;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class JCacheEhCacheApiTests extends AbstractValueAdaptingCacheTests<JCacheCache> {
 

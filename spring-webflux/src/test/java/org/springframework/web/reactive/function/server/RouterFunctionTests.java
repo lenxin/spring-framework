@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 import static org.springframework.web.reactive.function.BodyInserters.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 @SuppressWarnings("unchecked")
 public class RouterFunctionTests {

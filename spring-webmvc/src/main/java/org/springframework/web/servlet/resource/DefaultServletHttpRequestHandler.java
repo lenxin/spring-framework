@@ -30,8 +30,8 @@ import org.springframework.web.context.ServletContextAware;
  * container where the default Servlet's name is not known, or where it has been customized
  * via server configuration, the  {@code defaultServletName} will need to be set explicitly.
  *
- * @author Jeremy Grelle
- * @author Juergen Hoeller
+
+
  * @since 3.0.4
  */
 public class DefaultServletHttpRequestHandler implements HttpRequestHandler, ServletContextAware {

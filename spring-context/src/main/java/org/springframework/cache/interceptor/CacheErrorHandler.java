@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * a given id can be transparently managed as a cache miss by not
  * throwing back such exception.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public interface CacheErrorHandler {

@@ -61,8 +61,8 @@ import org.springframework.util.ReflectionUtils;
  * {@link org.springframework.orm.jpa.JpaDialect} implementation for
  * Hibernate EntityManager. Developed against Hibernate 5.1/5.2/5.3.
  *
- * @author Juergen Hoeller
- * @author Costin Leau
+
+
  * @since 2.0
  * @see HibernateJpaVendorAdapter
  * @see org.hibernate.Session#setFlushMode

@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Alef Arendsen
+
  */
 public class LobSupportTests {
 

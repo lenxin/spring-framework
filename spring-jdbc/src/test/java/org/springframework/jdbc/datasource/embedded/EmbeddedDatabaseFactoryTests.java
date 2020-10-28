@@ -9,7 +9,7 @@ import org.springframework.jdbc.datasource.init.DatabasePopulator;
 import static org.junit.Assert.*;
 
 /**
- * @author Keith Donald
+
  */
 public class EmbeddedDatabaseFactoryTests {
 

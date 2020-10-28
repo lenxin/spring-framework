@@ -9,8 +9,8 @@ import org.springframework.lang.Nullable;
  * Exception thrown when we can't classify a SQLException into
  * one of our generic data access exceptions.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public class UncategorizedSQLException extends UncategorizedDataAccessException {

@@ -131,13 +131,13 @@ import static org.junit.Assert.*;
 /**
  * Tests loading actual MVC namespace configuration.
  *
- * @author Keith Donald
- * @author Arjen Poutsma
- * @author Jeremy Grelle
- * @author Brian Clozel
- * @author Sebastien Deleuze
- * @author Kazuki Shimizu
- * @author Sam Brannen
+
+
+
+
+
+
+
  */
 public class MvcNamespaceTests {
 

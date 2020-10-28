@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  *
- * @author Rob Winch
+
  */
 @Configuration
 public class ParentConfig {

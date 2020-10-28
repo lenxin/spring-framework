@@ -40,8 +40,8 @@ import javax.persistence.spi.PersistenceProvider;
  * JPA 1.0/2.0 based applications are still supported; however, a JPA 2.1 compliant
  * persistence provider is needed at runtime.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 2.0
  * @see #setJpaProperties
  * @see #setJpaVendorAdapter

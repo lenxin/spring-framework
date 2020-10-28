@@ -27,7 +27,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * Exact copy of {@link InferredDataSourceSqlScriptsTests}, except that test
  * methods are transactional.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see InferredDataSourceSqlScriptsTests
  */

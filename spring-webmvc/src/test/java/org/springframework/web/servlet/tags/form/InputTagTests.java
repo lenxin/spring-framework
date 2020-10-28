@@ -15,9 +15,9 @@ import org.springframework.web.servlet.tags.NestedPathTag;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Rick Evans
- * @author Jeremy Grelle
+
+
+
  */
 public class InputTagTests extends AbstractFormTagTests {
 

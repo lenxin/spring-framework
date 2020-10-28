@@ -26,8 +26,8 @@ import org.springframework.lang.Nullable;
  * variant, simply because the JCA endpoint management contract does not allow
  * for obtaining the current JMS {@link javax.jms.Session}.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 2.5
  * @see javax.jms.MessageListener
  * @see #setActivationSpecConfig

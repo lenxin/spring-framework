@@ -18,7 +18,7 @@ import org.springframework.util.concurrent.ListenableFuture;
  * Implemented by {@link AsyncRestTemplate}. Not often used directly, but a useful
  * option to enhance testability, as it can easily be mocked or stubbed.
  *
- * @author Arjen Poutsma
+
  * @since 4.0
  * @see AsyncRestTemplate
  * @see RestOperations

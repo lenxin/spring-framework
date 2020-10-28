@@ -9,8 +9,8 @@ import org.springframework.util.Assert;
  * Contains common behavior relating to {@link javax.xml.transform.Transformer Transformers}
  * and the {@code javax.xml.transform} package in general.
  *
- * @author Rick Evans
- * @author Juergen Hoeller
+
+
  * @since 2.5.5
  */
 public abstract class TransformerUtils {

@@ -54,8 +54,8 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  */
 public class AnnotationDrivenEventListenerTests {
 

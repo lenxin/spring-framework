@@ -24,8 +24,8 @@ import org.springframework.util.Assert;
 /**
  * An implementation of {@link JmsMessageOperations}.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  */
 public class JmsMessagingTemplate extends AbstractMessagingTemplate<Destination>

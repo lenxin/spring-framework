@@ -12,8 +12,8 @@ import org.springframework.util.StringUtils;
  * <p>Accepts the classic {@link Locale} String format ({@link Locale#toString()})
  * as well as BCP 47 language tags ({@link Locale#forLanguageTag} on Java 7+).
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see StringUtils#parseLocale
  */

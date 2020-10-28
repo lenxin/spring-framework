@@ -17,10 +17,10 @@ import org.springframework.core.task.AsyncTaskExecutor;
  * or with a {@link org.springframework.beans.factory.BeanFactory} for default
  * executor lookup. Otherwise it will simply delegate all calls synchronously.
  *
- * @author Ramnivas Laddad
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
+
+
  * @since 3.0.5
  * @see #setExecutor
  * @see #setBeanFactory

@@ -31,9 +31,9 @@ import org.springframework.util.ReflectionUtils;
  * An Indexer can index into some proceeding structure to access a particular piece of it.
  * Supported structures are: strings / collections (lists/sets) / arrays.
  *
- * @author Andy Clement
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
+
  * @since 3.0
  */
 // TODO support multidimensional arrays

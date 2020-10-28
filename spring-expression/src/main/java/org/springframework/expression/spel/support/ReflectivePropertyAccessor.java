@@ -35,9 +35,9 @@ import org.springframework.util.StringUtils;
  * <p>A property can be referenced through a public getter method (when being read)
  * or a public setter method (when being written), and also as a public field.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  * @since 3.0
  * @see StandardEvaluationContext
  * @see SimpleEvaluationContext

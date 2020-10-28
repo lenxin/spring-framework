@@ -29,8 +29,8 @@ import org.springframework.util.ClassUtils;
  * (which is very unlikely), caching could be made configurable. Caching is
  * desirable because of the cost of evaluating rollback rules.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 1.1
  */
 public abstract class AbstractFallbackTransactionAttributeSource implements TransactionAttributeSource {

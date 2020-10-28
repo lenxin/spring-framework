@@ -9,8 +9,8 @@ import org.springframework.util.ClassUtils;
  * This matches the default name of the bean in a Spring XML file if the
  * bean tag's "id" attribute is not used.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class ClassNameBeanWiringInfoResolver implements BeanWiringInfoResolver {

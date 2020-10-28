@@ -64,8 +64,8 @@ import org.springframework.util.CollectionUtils;
  * Hence, the presence of e.g. LocalEntityManagerFactoryBean automatically enables
  * a PersistenceExceptionTranslationPostProcessor to translate JPA exceptions.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 2.0
  * @see LocalEntityManagerFactoryBean
  * @see LocalContainerEntityManagerFactoryBean

@@ -35,10 +35,10 @@ import org.springframework.util.Assert;
  *
  * <p><b>NOTE:</b> Requires Apache HttpComponents 4.3 or higher, as of Spring 4.0.
  *
- * @author Oleg Kalnichevski
- * @author Arjen Poutsma
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
+
+
  * @since 3.1
  */
 public class HttpComponentsClientHttpRequestFactory implements ClientHttpRequestFactory, DisposableBean {

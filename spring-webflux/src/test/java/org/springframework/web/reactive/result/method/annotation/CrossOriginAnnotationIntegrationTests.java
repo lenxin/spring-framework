@@ -31,8 +31,8 @@ import static org.junit.Assert.*;
  * Integration tests with {@code @CrossOrigin} and {@code @RequestMapping}
  * annotated handler methods.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  */
 public class CrossOriginAnnotationIntegrationTests extends AbstractRequestMappingIntegrationTests {
 

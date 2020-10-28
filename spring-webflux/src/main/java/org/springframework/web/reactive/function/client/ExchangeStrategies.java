@@ -13,8 +13,8 @@ import org.springframework.http.codec.HttpMessageWriter;
  * <p>To create an instance, see the static methods {@link #withDefaults()},
  * {@link #builder()}, and {@link #empty()}.
  *
- * @author Brian Clozel
- * @author Arjen Poutsma
+
+
  * @since 5.0
  */
 public interface ExchangeStrategies {

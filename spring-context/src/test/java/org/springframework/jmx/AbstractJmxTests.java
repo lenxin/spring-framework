@@ -7,8 +7,8 @@ import org.springframework.context.ConfigurableApplicationContext;
  * Base JMX test class that pre-loads an ApplicationContext from a user-configurable file. Override the
  * {@link #getApplicationContextPath()} method to control the configuration file location.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  */
 public abstract class AbstractJmxTests extends AbstractMBeanServerTests {
 

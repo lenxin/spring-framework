@@ -23,8 +23,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  */
 @Service @Lazy @DependsOn("myNamedComponent")
 public abstract class FooServiceImpl implements FooService {

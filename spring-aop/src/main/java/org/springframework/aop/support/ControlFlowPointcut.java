@@ -16,9 +16,9 @@ import org.springframework.util.ObjectUtils;
  * Note that evaluating such pointcuts is 10-15 times slower than evaluating
  * normal pointcuts, but they are useful in some cases.
  *
- * @author Rod Johnson
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
+
  */
 @SuppressWarnings("serial")
 public class ControlFlowPointcut implements Pointcut, ClassFilter, MethodMatcher, Serializable {

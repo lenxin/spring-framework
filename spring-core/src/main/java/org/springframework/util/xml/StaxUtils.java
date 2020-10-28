@@ -30,8 +30,8 @@ import org.springframework.util.StreamUtils;
  * the TrAX API ({@code javax.xml.transform}), and converting StAX readers/writers into SAX
  * readers/handlers and vice-versa.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public abstract class StaxUtils {

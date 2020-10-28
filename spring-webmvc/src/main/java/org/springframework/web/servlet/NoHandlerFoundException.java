@@ -12,7 +12,7 @@ import org.springframework.http.HttpHeaders;
  * is set to {@code true} this exception is raised and may be handled with
  * a configured HandlerExceptionResolver.
  *
- * @author Brian Clozel
+
  * @since 4.0
  * @see DispatcherServlet#setThrowExceptionIfNoHandlerFound(boolean)
  * @see DispatcherServlet#noHandlerFound(HttpServletRequest, HttpServletResponse)

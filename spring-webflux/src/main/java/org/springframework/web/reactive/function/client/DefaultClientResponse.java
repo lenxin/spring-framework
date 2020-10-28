@@ -26,8 +26,8 @@ import org.springframework.web.reactive.function.BodyExtractors;
 /**
  * Default implementation of {@link ClientResponse}.
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 class DefaultClientResponse implements ClientResponse {

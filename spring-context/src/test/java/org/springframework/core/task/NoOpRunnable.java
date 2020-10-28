@@ -3,7 +3,7 @@ package org.springframework.core.task;
 /**
  * A no-op Runnable implementation.
  *
- * @author Rick Evans
+
  */
 public class NoOpRunnable implements Runnable {
 

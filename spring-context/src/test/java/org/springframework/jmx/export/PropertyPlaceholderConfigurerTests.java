@@ -10,8 +10,8 @@ import org.springframework.jmx.IJmxTestBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Chris Beams
+
+
  */
 public class PropertyPlaceholderConfigurerTests extends AbstractJmxTests {
 

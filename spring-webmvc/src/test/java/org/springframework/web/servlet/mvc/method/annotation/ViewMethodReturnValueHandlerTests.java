@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with {@link ViewMethodReturnValueHandler}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ViewMethodReturnValueHandlerTests {
 

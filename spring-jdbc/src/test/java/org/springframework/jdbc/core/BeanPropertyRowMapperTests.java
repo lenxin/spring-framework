@@ -17,8 +17,8 @@ import org.springframework.jdbc.core.test.SpacePerson;
 import static org.junit.Assert.*;
 
 /**
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  */
 public class BeanPropertyRowMapperTests extends AbstractRowMapperTests {
 

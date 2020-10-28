@@ -10,8 +10,8 @@ import org.springframework.util.Assert;
 /**
  * Comparator capable of sorting exceptions based on their depth from the thrown exception type.
  *
- * @author Juergen Hoeller
- * @author Arjen Poutsma
+
+
  * @since 3.0.3
  */
 public class ExceptionDepthComparator implements Comparator<Class<? extends Throwable>> {

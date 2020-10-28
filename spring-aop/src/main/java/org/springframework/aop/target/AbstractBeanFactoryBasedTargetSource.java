@@ -22,8 +22,8 @@ import org.springframework.util.ObjectUtils;
  * <p>BeanFactory-based TargetSources are serializable. This involves
  * disconnecting the current target and turning into a {@link SingletonTargetSource}.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
+
+
  * @since 1.1.4
  * @see org.springframework.beans.factory.BeanFactory#getBean
  * @see LazyInitTargetSource

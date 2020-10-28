@@ -12,7 +12,7 @@ import org.springframework.lang.Nullable;
  * <p>Subclasses may want to override {@link #match(Object, Object)} to provide
  * a custom matching algorithm.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @param <T> the instance type
  */

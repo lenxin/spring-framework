@@ -20,7 +20,7 @@ import org.springframework.util.ReflectionUtils;
  * <li>{@link MessageHeaderAccessor}
  * </ul>
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public class HeadersMethodArgumentResolver implements SyncHandlerMethodArgumentResolver {

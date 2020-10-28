@@ -12,7 +12,7 @@ import org.springframework.util.MimeTypeUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class ByteBufferEncoderTests extends AbstractEncoderTestCase<ByteBufferEncoder> {
 

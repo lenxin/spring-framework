@@ -36,7 +36,7 @@ import static org.mockito.BDDMockito.mock;
 /**
  * Text fixture for {@link ModelFactory} tests.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ModelFactoryTests {
 

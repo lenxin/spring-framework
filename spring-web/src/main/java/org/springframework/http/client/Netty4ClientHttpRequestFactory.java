@@ -36,10 +36,10 @@ import org.springframework.util.Assert;
  * <p>Note that this implementation consistently closes the HTTP connection on each
  * request.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Mark Paluch
+
+
+
+
  * @since 4.1.2
  * @deprecated as of Spring 5.0, in favor of
  * {@link org.springframework.http.client.reactive.ReactorClientHttpConnector}

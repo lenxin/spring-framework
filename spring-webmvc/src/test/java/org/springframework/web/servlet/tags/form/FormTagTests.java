@@ -13,12 +13,12 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rob Harrop
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Scott Andrews
- * @author Jeremy Grelle
- * @author Rossen Stoyanchev
+
+
+
+
+
+
  */
 public class FormTagTests extends AbstractHtmlElementTagTests {
 

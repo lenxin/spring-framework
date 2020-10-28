@@ -20,7 +20,7 @@ import static org.springframework.test.util.MetaAnnotationUtils.findAnnotationDe
  * configured declaratively via {@link ActiveProfiles#profiles} or
  * {@link ActiveProfiles#value}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see ActiveProfiles
  * @see ActiveProfilesResolver

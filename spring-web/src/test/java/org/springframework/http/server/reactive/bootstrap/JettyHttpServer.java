@@ -9,7 +9,7 @@ import org.springframework.http.server.reactive.JettyHttpHandlerAdapter;
 import org.springframework.http.server.reactive.ServletHttpHandlerAdapter;
 
 /**
- * @author Rossen Stoyanchev
+
  */
 public class JettyHttpServer extends AbstractHttpServer {
 

@@ -11,7 +11,7 @@ import org.springframework.transaction.support.DelegatingTransactionDefinition;
  * with subclasses overriding specific methods that are not supposed to simply delegate
  * to the target instance.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  */
 @SuppressWarnings("serial")

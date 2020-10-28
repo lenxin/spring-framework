@@ -19,8 +19,8 @@ import org.springframework.util.StreamUtils;
  *
  * <p>Created via the {@link HttpComponentsClientHttpRequest}.
  *
- * @author Oleg Kalnichevski
- * @author Arjen Poutsma
+
+
  * @since 3.1
  * @see HttpComponentsClientHttpRequest#execute()
  */

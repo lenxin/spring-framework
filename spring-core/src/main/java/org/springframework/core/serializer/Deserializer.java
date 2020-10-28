@@ -6,8 +6,8 @@ import java.io.InputStream;
 /**
  * A strategy interface for converting from data in an InputStream to an Object.
  *
- * @author Gary Russell
- * @author Mark Fisher
+
+
  * @since 3.0.5
  * @param <T> the object type
  */

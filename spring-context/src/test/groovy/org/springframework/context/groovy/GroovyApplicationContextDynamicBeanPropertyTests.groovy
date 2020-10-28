@@ -8,8 +8,8 @@ import org.springframework.context.support.GenericGroovyApplicationContext
 import static groovy.test.GroovyAssert.*
 
 /**
- * @author Jeff Brown
- * @author Sam Brannen
+
+
  */
 class GroovyApplicationContextDynamicBeanPropertyTests {
 

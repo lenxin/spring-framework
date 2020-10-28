@@ -22,9 +22,9 @@ import org.springframework.util.SerializationTestUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @see RequestScopeTests
  */
 public class SessionScopeTests {

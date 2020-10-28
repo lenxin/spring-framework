@@ -9,10 +9,10 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
  * Convenience subclass of {@link UrlBasedViewResolver} that supports
  * {@link TilesView} (i.e. Tiles definitions) and custom subclasses of it.
  *
- * @author Nicolas Le Bas
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
+
  * @since 3.2
  */
 public class TilesViewResolver extends UrlBasedViewResolver {

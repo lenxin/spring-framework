@@ -11,7 +11,7 @@ import org.springframework.validation.ObjectError;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 02.05.2003
  */
 public class EscapedErrorsTests {

@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 /**
  * Test case for {@link AbstractDispatcherServletInitializer}.
  *
- * @author Arjen Poutsma
+
  */
 public class DispatcherServletInitializerTests {
 

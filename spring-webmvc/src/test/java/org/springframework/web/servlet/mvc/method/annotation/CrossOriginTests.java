@@ -45,9 +45,9 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link CrossOrigin @CrossOrigin} annotated methods.
  *
- * @author Sebastien Deleuze
- * @author Sam Brannen
- * @author Nicolas Labrot
+
+
+
  */
 public class CrossOriginTests {
 

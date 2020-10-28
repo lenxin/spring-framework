@@ -32,7 +32,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link RequestResponseBodyAdviceChain}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.2
  */
 public class RequestResponseBodyAdviceChainTests {

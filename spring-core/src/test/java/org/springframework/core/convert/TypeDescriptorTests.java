@@ -32,11 +32,11 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link TypeDescriptor}.
  *
- * @author Keith Donald
- * @author Andy Clement
- * @author Phillip Webb
- * @author Sam Brannen
- * @author Nathan Piper
+
+
+
+
+
  */
 @SuppressWarnings("rawtypes")
 public class TypeDescriptorTests {

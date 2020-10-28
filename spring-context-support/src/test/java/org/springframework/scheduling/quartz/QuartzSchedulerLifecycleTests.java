@@ -9,7 +9,7 @@ import org.springframework.util.StopWatch;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
+
  * @since 3.0
  */
 public class QuartzSchedulerLifecycleTests {

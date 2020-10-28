@@ -8,8 +8,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link SimpleKeyGenerator} and {@link SimpleKey}.
  *
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
  */
 public class SimpleKeyGeneratorTests {
 

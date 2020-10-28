@@ -21,8 +21,8 @@ import org.springframework.util.MultiValueMap;
 /**
  * Base class for {@link ClientHttpRequest} implementations.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 public abstract class AbstractClientHttpRequest implements ClientHttpRequest {

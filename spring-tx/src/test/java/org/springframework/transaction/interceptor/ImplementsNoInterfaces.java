@@ -6,7 +6,7 @@ import org.springframework.tests.sample.beans.TestBean;
  * Test for CGLIB proxying that implements no interfaces
  * and has one dependency.
  *
- * @author Rod Johnson
+
  */
 public class ImplementsNoInterfaces {
 

@@ -21,7 +21,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RouterFunctions.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class PublisherHandlerFunctionIntegrationTests extends AbstractRouterFunctionIntegrationTests {
 

@@ -16,9 +16,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 /**
  * Unit tests for {@link MockRestRequestMatchers}.
  *
- * @author Craig Walls
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
  */
 public class MockRestRequestMatchersTests {
 

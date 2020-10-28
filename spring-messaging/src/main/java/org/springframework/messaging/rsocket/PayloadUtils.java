@@ -15,7 +15,7 @@ import org.springframework.core.io.buffer.NettyDataBufferFactory;
  * Static utility methods to create {@link Payload} from {@link DataBuffer}s
  * and vice versa.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 abstract class PayloadUtils {

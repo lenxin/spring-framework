@@ -3,7 +3,7 @@ package org.springframework.jmx.export;
 import java.util.Date;
 
 /**
- * @author Rob Harrop
+
  */
 public class DateRange {
 

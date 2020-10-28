@@ -23,7 +23,7 @@ import static org.junit.Assert.assertThat;
  * <p>In other words, these tests verify that mutated state and attributes
  * are only be visible to the thread in which the mutation occurred.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see org.springframework.test.context.junit4.concurrency.SpringJUnit4ConcurrencyTests
  */

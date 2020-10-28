@@ -12,9 +12,9 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link SpringFactoriesLoader}.
  *
- * @author Arjen Poutsma
- * @author Phillip Webb
- * @author Sam Brannen
+
+
+
  */
 public class SpringFactoriesLoaderTests {
 

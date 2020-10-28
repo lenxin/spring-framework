@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * configuration files and Groovy scripts to load an {@code ApplicationContext}
  * using the TestContext framework.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

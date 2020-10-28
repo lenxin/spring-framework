@@ -17,7 +17,7 @@ import org.springframework.util.Assert;
 /**
  * Default, package-private {@link RSocketStrategies} implementation.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 final class DefaultRSocketStrategies implements RSocketStrategies {

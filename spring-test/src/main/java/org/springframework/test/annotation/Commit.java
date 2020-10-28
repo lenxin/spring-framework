@@ -28,7 +28,7 @@ import java.lang.annotation.Target;
  * {@code @Commit} and {@code @Rollback} on the same test method or on the
  * same test class is unsupported and may lead to unpredictable results.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see Rollback
  * @see org.springframework.test.context.transaction.TransactionalTestExecutionListener

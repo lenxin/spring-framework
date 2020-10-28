@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  * <p>Works with a CciTemplate instance underneath. EIS operation objects
  * are an alternative to working with a CciTemplate directly.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see #setConnectionFactory
  * @see #setInteractionSpec

@@ -19,9 +19,9 @@ import org.springframework.messaging.MessageHeaders;
  * The exception is caught and an error message produced that contains both the original
  * message, and the transformed message that failed.
  *
- * @author Mark Fisher
- * @author Oleg Zhurakousky
- * @author Gary Russell
+
+
+
  * @since 4.0
  * @see MessageBuilder
  */

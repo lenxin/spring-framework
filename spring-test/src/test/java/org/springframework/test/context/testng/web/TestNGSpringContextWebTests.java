@@ -25,7 +25,7 @@ import static org.junit.Assert.*;
  * TestNG-based integration tests that verify support for loading a
  * {@link WebApplicationContext} when extending {@link AbstractTestNGSpringContextTests}.
  *
- * @author Sam Brannen
+
  * @since 3.2.7
  */
 @ContextConfiguration

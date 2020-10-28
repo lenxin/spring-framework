@@ -26,11 +26,11 @@ import static org.junit.Assert.*;
 /**
  * Additional and overridden tests for CGLIB proxies.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Ramnivas Laddad
- * @author Chris Beams
+
+
+
+
+
  */
 @SuppressWarnings("serial")
 public class CglibProxyTests extends AbstractAopProxyTests implements Serializable {

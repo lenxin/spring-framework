@@ -27,9 +27,9 @@ import org.springframework.util.ReflectionUtils;
 /**
  * Represents a simple property or field reference.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Clark Duplichien
+
+
+
  * @since 3.0
  */
 public class PropertyOrFieldReference extends SpelNodeImpl {

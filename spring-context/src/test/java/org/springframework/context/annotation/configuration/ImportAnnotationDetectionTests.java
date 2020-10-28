@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
  * annotation, that all declarations are processed, and that any local declaration
  * is processed last.
  *
- * @author Chris Beams
+
  * @since 3.1
  */
 @SuppressWarnings("resource")

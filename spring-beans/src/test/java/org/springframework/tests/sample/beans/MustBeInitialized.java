@@ -4,7 +4,7 @@ import org.springframework.beans.factory.InitializingBean;
 
 /**
  * Simple test of BeanFactory initialization
- * @author Rod Johnson
+
  * @since 12.03.2003
  */
 public class MustBeInitialized implements InitializingBean {

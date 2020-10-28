@@ -22,8 +22,8 @@ import org.springframework.scheduling.annotation.Async;
  * or with a {@link org.springframework.beans.factory.BeanFactory} for default
  * executor lookup. Otherwise it will simply delegate all calls synchronously.
  *
- * @author Ramnivas Laddad
- * @author Chris Beams
+
+
  * @since 3.0.5
  * @see #setExecutor
  * @see #setBeanFactory

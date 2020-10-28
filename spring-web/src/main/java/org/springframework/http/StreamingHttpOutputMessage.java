@@ -7,7 +7,7 @@ import java.io.OutputStream;
  * Represents a HTTP output message that allows for setting a streaming body.
  * Note that such messages typically do not support {@link #getBody()} access.
  *
- * @author Arjen Poutsma
+
  * @since 4.0
  * @see #setBody
  */

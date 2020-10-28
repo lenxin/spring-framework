@@ -29,7 +29,7 @@ import static org.junit.Assert.assertTrue;
  * Test fixture for
  * {@link org.springframework.web.socket.config.annotation.AbstractWebSocketHandlerRegistration}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class WebSocketHandlerRegistrationTests {
 

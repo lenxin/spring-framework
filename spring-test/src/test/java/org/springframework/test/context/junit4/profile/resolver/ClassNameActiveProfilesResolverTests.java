@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import static org.junit.Assert.*;
 
 /**
- * @author Michail Nikolaev
+
  * @since 4.0
  */
 @RunWith(SpringJUnit4ClassRunner.class)

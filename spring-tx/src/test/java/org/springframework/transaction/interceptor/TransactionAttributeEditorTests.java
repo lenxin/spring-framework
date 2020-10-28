@@ -12,9 +12,9 @@ import static org.junit.Assert.*;
 /**
  * Tests to check conversion from String to TransactionAttribute.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  * @since 26.04.2003
  */
 public class TransactionAttributeEditorTests {

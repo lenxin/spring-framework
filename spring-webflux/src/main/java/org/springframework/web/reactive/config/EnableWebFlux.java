@@ -53,8 +53,8 @@ import org.springframework.context.annotation.Import;
  * the latter allows detecting and delegating to one or more
  * {@code WebFluxConfigurer} configuration classes.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @see WebFluxConfigurer
  * @see WebFluxConfigurationSupport

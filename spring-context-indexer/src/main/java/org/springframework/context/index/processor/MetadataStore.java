@@ -10,7 +10,7 @@ import javax.tools.StandardLocation;
 /**
  * Store {@link CandidateComponentsMetadata} on the filesystem.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 class MetadataStore {

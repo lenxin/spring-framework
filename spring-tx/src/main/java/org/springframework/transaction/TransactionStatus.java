@@ -13,7 +13,7 @@ import java.io.Flushable;
  * to savepoint management facilities. Note that savepoint management
  * is only available if supported by the underlying transaction manager.
  *
- * @author Juergen Hoeller
+
  * @since 27.03.2003
  * @see #setRollbackOnly()
  * @see PlatformTransactionManager#getTransaction

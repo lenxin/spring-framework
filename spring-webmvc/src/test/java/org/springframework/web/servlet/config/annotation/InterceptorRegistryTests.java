@@ -33,8 +33,8 @@ import static org.junit.Assert.fail;
  * Test fixture with a {@link InterceptorRegistry}, two {@link HandlerInterceptor}s and two
  * {@link WebRequestInterceptor}s.
  *
- * @author Rossen Stoyanchev
- * @author Eko Kurniawan Khannedy
+
+
  */
 public class InterceptorRegistryTests {
 

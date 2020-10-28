@@ -31,8 +31,8 @@ import org.springframework.util.CollectionUtils;
  * <p>The {@code JMXConnectorServer} is correctly shutdown when an instance of this
  * class is destroyed on shutdown of the containing {@code ApplicationContext}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see JMXConnectorServer
  * @see MBeanServer

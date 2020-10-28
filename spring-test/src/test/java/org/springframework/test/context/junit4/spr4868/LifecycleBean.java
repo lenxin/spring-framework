@@ -7,7 +7,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * @author Sam Brannen
+
  * @since 3.2
  */
 class LifecycleBean {

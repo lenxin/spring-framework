@@ -18,7 +18,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * which tests method-level <em>rollback override</em> behavior via the
  * {@link Rollback @Rollback} annotation.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see Rollback
  */

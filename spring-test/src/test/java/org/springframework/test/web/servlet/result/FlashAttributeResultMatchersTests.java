@@ -6,7 +6,7 @@ import org.springframework.test.web.servlet.StubMvcResult;
 import org.springframework.web.servlet.FlashMap;
 
 /**
- * @author Craig Walls
+
  */
 public class FlashAttributeResultMatchersTests {
 

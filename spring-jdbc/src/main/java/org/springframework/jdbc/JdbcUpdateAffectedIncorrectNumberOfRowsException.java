@@ -7,8 +7,8 @@ import org.springframework.dao.IncorrectUpdateSemanticsDataAccessException;
  * Typically we expect an update to affect a single row, meaning it's an
  * error if it affects multiple rows.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("serial")
 public class JdbcUpdateAffectedIncorrectNumberOfRowsException extends IncorrectUpdateSemanticsDataAccessException {

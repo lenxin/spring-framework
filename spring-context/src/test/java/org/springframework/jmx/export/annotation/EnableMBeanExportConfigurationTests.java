@@ -30,8 +30,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link EnableMBeanExport} and {@link MBeanExportConfiguration}.
  *
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
  * @see AnnotationLazyInitMBeanTests
  */
 public class EnableMBeanExportConfigurationTests {

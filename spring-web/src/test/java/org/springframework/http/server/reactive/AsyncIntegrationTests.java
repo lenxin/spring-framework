@@ -20,7 +20,7 @@ import org.springframework.web.client.RestTemplate;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Maldini
+
  * @since 5.0
  */
 public class AsyncIntegrationTests extends AbstractHttpHandlerIntegrationTests {

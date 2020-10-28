@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
 /**
  * Mock implementation of {@link ClientHttpResponse}.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.2
  */
 public class MockClientHttpResponse extends MockHttpInputMessage implements ClientHttpResponse {

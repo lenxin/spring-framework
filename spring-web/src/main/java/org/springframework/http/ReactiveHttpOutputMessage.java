@@ -14,8 +14,8 @@ import org.springframework.core.io.buffer.DataBufferFactory;
  * <p>Typically implemented by an HTTP request on the client-side or an
  * HTTP response on the server-side.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 public interface ReactiveHttpOutputMessage extends HttpMessage {

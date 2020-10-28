@@ -29,7 +29,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Brian Clozel
+
  */
 public class GroovyMarkupViewTests {
 

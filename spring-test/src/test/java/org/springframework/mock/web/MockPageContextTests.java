@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the {@code MockPageContext} class.
  *
- * @author Rick Evans
+
  */
 public class MockPageContextTests {
 

@@ -26,8 +26,8 @@ import org.springframework.util.MultiValueMap;
 /**
  * Static factory methods for {@link BodyInserter} implementations.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public abstract class BodyInserters {

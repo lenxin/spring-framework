@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * but that should not result in any adverse side effects in terms of
  * proper test failure for failed assertions.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see TrackingRunListener
  */

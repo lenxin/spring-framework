@@ -28,8 +28,8 @@ import org.springframework.web.reactive.socket.adapter.StandardWebSocketSession;
 /**
  * {@link WebSocketClient} implementation for use with the Java WebSocket API.
  *
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  * @see <a href="https://www.jcp.org/en/jsr/detail?id=356">https://www.jcp.org/en/jsr/detail?id=356</a>
  */

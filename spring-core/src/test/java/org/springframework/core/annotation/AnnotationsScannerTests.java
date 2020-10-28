@@ -24,7 +24,7 @@ import static org.assertj.core.api.Assertions.*;
 /**
  * Tests for {@link AnnotationsScanner}.
  *
- * @author Phillip Webb
+
  */
 public class AnnotationsScannerTests {
 

@@ -25,7 +25,7 @@ import java.lang.annotation.Target;
  * <p>As of Spring Framework 4.0, this annotation may be used as a
  * <em>meta-annotation</em> to create custom <em>composed annotations</em>.
  *
- * @author Sam Brannen
+
  * @since 3.2
  * @see org.springframework.web.context.WebApplicationContext
  * @see org.springframework.test.context.ContextConfiguration

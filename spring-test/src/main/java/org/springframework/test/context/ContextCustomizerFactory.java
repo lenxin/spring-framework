@@ -16,8 +16,8 @@ import org.springframework.lang.Nullable;
  * mechanism for loading factories configured in all {@code META-INF/spring.factories}
  * files on the classpath.
  *
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  * @since 4.3
  */
 @FunctionalInterface

@@ -20,9 +20,9 @@ import org.springframework.util.ObjectUtils;
 /**
  * Simple test bean used for testing bean factories, the AOP framework etc.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 15 April 2001
  */
 public class TestBean implements BeanNameAware, BeanFactoryAware, ITestBean, IOther, Comparable<Object> {

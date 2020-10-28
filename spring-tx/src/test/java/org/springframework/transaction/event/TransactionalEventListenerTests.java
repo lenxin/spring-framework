@@ -38,8 +38,8 @@ import static org.springframework.transaction.event.TransactionPhase.*;
 /**
  * Integration tests for {@link TransactionalEventListener} support
  *
- * @author Stephane Nicoll
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 public class TransactionalEventListenerTests {

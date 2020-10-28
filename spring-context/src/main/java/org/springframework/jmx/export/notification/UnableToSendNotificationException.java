@@ -8,7 +8,7 @@ import org.springframework.jmx.JmxException;
  * <p>The root cause of just why a particular notification could not be sent
  * will <i>typically</i> be available via the {@link #getCause()} property.
  *
- * @author Rob Harrop
+
  * @since 2.0
  * @see NotificationPublisher
  */

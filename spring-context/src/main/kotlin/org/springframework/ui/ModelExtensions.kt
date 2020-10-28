@@ -21,7 +21,7 @@
  * model["firstName"] = "Mario"
  * ```
  *
- * @author Mario Arias
+
  * @since 5.0
  */
 operator fun Model.set(attributeName: String, attributeValue: Any) {

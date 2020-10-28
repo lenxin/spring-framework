@@ -18,8 +18,8 @@ import org.springframework.util.CustomizableThreadCreator;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  */
 public class ExecutorBeanDefinitionParserTests {
 

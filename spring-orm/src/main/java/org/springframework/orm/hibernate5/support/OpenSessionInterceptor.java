@@ -24,7 +24,7 @@ import org.springframework.util.Assert;
  * MVC setup. It opens a new {@link Session} with flush mode "MANUAL" since the
  * Session is only meant for reading, except when participating in a transaction.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see OpenSessionInViewInterceptor
  * @see OpenSessionInViewFilter

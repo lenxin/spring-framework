@@ -30,7 +30,7 @@ import org.springframework.web.server.i18n.LocaleContextResolver;
 import static org.junit.Assert.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class LocaleContextResolverIntegrationTests extends AbstractRequestMappingIntegrationTests {
 

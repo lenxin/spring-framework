@@ -9,7 +9,7 @@ import static org.springframework.test.context.junit4.JUnitTestingUtils.*;
  *
  * <p>Yes, this test class does in fact use JUnit to run JUnit. ;)
  *
- * @author Sam Brannen
+
  * @since 4.0.2
  */
 public class ServletContextAwareBeanWacTests {

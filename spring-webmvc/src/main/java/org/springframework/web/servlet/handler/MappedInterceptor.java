@@ -21,9 +21,9 @@ import org.springframework.web.servlet.ModelAndView;
  * {@code AbstractHandlerMethodMapping} (including ancestor ApplicationContext's) which
  * effectively means the interceptor is registered "globally" with all handler mappings.
  *
- * @author Keith Donald
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
+
  * @since 3.0
  */
 public final class MappedInterceptor implements HandlerInterceptor {

@@ -26,10 +26,10 @@ import static org.springframework.context.annotation.ScopedProxyMode.NO;
 import static org.springframework.context.annotation.ScopedProxyMode.TARGET_CLASS;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Sam Brannen
+
+
+
+
  */
 public class ClassPathBeanDefinitionScannerScopeIntegrationTests {
 

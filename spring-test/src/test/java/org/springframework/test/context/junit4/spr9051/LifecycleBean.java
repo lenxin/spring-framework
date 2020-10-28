@@ -5,7 +5,7 @@ import javax.annotation.PostConstruct;
 /**
  * Simple POJO that contains lifecycle callbacks.
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 public class LifecycleBean {

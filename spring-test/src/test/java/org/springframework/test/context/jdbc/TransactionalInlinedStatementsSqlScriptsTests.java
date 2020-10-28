@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
  * Transactional integration tests for {@link Sql @Sql} support with
  * inlined SQL {@link Sql#statements statements}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  * @see TransactionalSqlScriptsTests
  */

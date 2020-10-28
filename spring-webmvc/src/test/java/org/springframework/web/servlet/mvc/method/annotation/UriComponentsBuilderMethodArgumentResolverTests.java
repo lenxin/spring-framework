@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture with {@link UriComponentsBuilderMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class UriComponentsBuilderMethodArgumentResolverTests {
 

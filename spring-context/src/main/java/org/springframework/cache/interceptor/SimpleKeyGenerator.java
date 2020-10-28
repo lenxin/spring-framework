@@ -12,8 +12,8 @@ import java.lang.reflect.Method;
  * might not be suitable for all {@link org.springframework.cache.Cache}
  * implementations.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
+
+
  * @since 4.0
  * @see SimpleKey
  * @see org.springframework.cache.annotation.CachingConfigurer

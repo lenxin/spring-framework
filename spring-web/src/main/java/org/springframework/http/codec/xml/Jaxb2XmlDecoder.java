@@ -45,8 +45,8 @@ import org.springframework.util.xml.StaxUtils;
  * Decode from a bytes stream containing XML elements to a stream of
  * {@code Object}s (POJOs).
  *
- * @author Sebastien Deleuze
- * @author Arjen Poutsma
+
+
  * @since 5.0
  * @see Jaxb2XmlEncoder
  */

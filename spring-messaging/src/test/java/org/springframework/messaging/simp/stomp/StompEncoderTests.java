@@ -11,8 +11,8 @@ import static org.junit.Assert.assertTrue;
 /**
  * Test fixture for {@link StompEncoder}.
  *
- * @author Andy Wilkinson
- * @author Stephane Maldini
+
+
  */
 public class StompEncoderTests {
 

@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
 /**
  * Test utility to collect and assert events.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  */
 @Component
 public class EventCollector {

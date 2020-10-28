@@ -5,7 +5,7 @@ import org.springframework.core.convert.converter.Converter;
 /**
  * Converts a String to a Character.
  *
- * @author Keith Donald
+
  * @since 3.0
  */
 final class StringToCharacterConverter implements Converter<String, Character> {

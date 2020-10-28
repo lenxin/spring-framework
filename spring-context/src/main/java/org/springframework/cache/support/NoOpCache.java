@@ -11,8 +11,8 @@ import org.springframework.util.Assert;
  *
  * <p>Will simply accept any items into the cache not actually storing them.
  *
- * @author Costin Leau
- * @author Stephane Nicoll
+
+
  * @since 4.3.4
  */
 public class NoOpCache implements Cache {

@@ -10,7 +10,7 @@ import javax.lang.model.element.ElementKind;
  * A {@link StereotypesProvider} that extract a stereotype for each
  * {@code javax.*} annotation placed on a class or interface.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 class StandardStereotypesProvider implements StereotypesProvider {

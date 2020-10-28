@@ -20,8 +20,8 @@ import static org.springframework.beans.factory.config.YamlProcessor.*;
 /**
  * Tests for {@link YamlPropertiesFactoryBean}.
  *
- * @author Dave Syer
- * @author Juergen Hoeller
+
+
  */
 public class YamlPropertiesFactoryBeanTests {
 

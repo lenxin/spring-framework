@@ -12,7 +12,7 @@ import java.util.Date;
  * to let message population code interact with a simple message or a
  * MIME message through a common interface.
  *
- * @author Juergen Hoeller
+
  * @since 1.1.5
  * @see SimpleMailMessage
  * @see org.springframework.mail.javamail.MimeMessageHelper

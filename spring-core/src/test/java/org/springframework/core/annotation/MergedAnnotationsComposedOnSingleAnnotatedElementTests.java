@@ -22,8 +22,8 @@ import static org.assertj.core.api.Assertions.*;
  * Unit tests that verify support for finding multiple composed annotations on a single
  * annotated element.
  *
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  */
 public class MergedAnnotationsComposedOnSingleAnnotatedElementTests {
 

@@ -18,7 +18,7 @@ import org.springframework.lang.Nullable;
  * Compared to {@link StandardReflectionParameterNameDiscoverer}, it allows in addition to
  * determine interface parameter names without requiring Java 8 -parameters compiler flag.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 public class KotlinReflectionParameterNameDiscoverer implements ParameterNameDiscoverer {

@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
  * <p>The filter is executed when a {@code Subscriber} subscribes to the
  * {@code Publisher} returned by the {@code WebClient}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 @FunctionalInterface

@@ -14,8 +14,8 @@ import org.springframework.tests.sample.beans.TestBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Chris Beams
+
+
  */
 public class ComposablePointcutTests {
 

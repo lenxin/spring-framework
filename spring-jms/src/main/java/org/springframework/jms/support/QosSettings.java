@@ -5,7 +5,7 @@ import javax.jms.Message;
 /**
  * Gather the Quality-of-Service settings that can be used when sending a message.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 public class QosSettings {

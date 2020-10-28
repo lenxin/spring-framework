@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Value;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class CacheResultOperationTests extends AbstractCacheOperationTests<CacheResultOperation> {
 

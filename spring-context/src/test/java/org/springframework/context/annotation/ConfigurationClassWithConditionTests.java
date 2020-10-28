@@ -21,8 +21,8 @@ import static org.junit.Assert.*;
 /**
  * Test for {@link Conditional} beans.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("resource")
 public class ConfigurationClassWithConditionTests {

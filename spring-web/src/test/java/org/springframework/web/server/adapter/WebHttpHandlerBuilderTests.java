@@ -26,7 +26,7 @@ import static org.junit.Assert.*;
 
 /**
  * Unit tests for {@link WebHttpHandlerBuilder}.
- * @author Rossen Stoyanchev
+
  */
 public class WebHttpHandlerBuilderTests {
 

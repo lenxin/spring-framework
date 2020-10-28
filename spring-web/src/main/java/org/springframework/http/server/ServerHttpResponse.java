@@ -10,7 +10,7 @@ import org.springframework.http.HttpStatus;
 /**
  * Represents a server-side HTTP response.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public interface ServerHttpResponse extends HttpOutputMessage, Flushable, Closeable {

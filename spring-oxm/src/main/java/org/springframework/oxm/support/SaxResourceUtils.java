@@ -10,8 +10,8 @@ import org.springframework.lang.Nullable;
 /**
  * Convenient utility methods for dealing with SAX.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public abstract class SaxResourceUtils {

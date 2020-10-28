@@ -27,7 +27,7 @@ import org.springframework.web.util.pattern.PathPattern;
  * will detect all router functions in the application context, and consult them in
  * {@linkplain org.springframework.core.annotation.Order order}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class RouterFunctionMapping extends AbstractHandlerMapping implements InitializingBean {

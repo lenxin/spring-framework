@@ -39,7 +39,7 @@ import static org.junit.Assume.*;
 import static org.springframework.http.MediaType.*;
 
 /**
- * @author Sebastien Deleuze
+
  */
 public class SseIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 

@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
  * {@link org.springframework.web.servlet.HandlerExceptionResolver HandlerExceptionResolver}
  * implementations that support handling exceptions from handlers of type {@link HandlerMethod}.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  */
 public abstract class AbstractHandlerMethodExceptionResolver extends AbstractHandlerExceptionResolver {

@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Rod Johnson
+
  */
 public class JtaTransactionManagerSerializationTests {
 

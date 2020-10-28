@@ -17,8 +17,8 @@ import org.springframework.lang.Nullable;
  * Implemented by {@link RestTemplate}. Not often used directly, but a useful
  * option to enhance testability, as it can easily be mocked or stubbed.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  * @see RestTemplate
  */

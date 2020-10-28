@@ -31,7 +31,7 @@ import org.springframework.web.reactive.result.view.ViewResolver;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class DefaultServerResponseBuilderTests {
 

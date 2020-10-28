@@ -8,7 +8,7 @@ import org.springframework.jdbc.support.SqlValue;
  * cleanup callback, to be invoked after the value has been set and
  * the corresponding statement has been executed.
  *
- * @author Thomas Risberg
+
  * @since 2.5.5
  * @see org.springframework.jdbc.support.SqlValue
  */

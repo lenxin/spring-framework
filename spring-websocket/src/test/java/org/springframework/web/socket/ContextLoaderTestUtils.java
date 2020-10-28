@@ -9,7 +9,7 @@ import org.springframework.web.context.WebApplicationContext;
 /**
  * General test utilities for manipulating the {@link ContextLoader}.
  *
- * @author Phillip Webb
+
  */
 public class ContextLoaderTestUtils {
 

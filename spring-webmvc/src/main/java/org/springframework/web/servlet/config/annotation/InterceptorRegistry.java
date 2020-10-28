@@ -14,8 +14,8 @@ import org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapt
 /**
  * Helps with configuring a list of mapped interceptors.
  *
- * @author Rossen Stoyanchev
- * @author Keith Donald
+
+
  * @since 3.1
  */
 public class InterceptorRegistry {

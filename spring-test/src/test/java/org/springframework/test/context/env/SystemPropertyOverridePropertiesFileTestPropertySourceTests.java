@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * support with an explicitly named properties file that overrides a
  * system property.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

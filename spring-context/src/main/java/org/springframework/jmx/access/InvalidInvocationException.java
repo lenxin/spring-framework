@@ -6,8 +6,8 @@ import javax.management.JMRuntimeException;
  * Thrown when trying to invoke an operation on a proxy that is not exposed
  * by the proxied MBean resource's management interface.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see MBeanClientInterceptor
  */

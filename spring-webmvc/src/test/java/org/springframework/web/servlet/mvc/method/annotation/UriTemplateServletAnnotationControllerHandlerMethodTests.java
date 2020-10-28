@@ -37,7 +37,7 @@ import org.springframework.web.servlet.view.AbstractView;
 import static org.junit.Assert.*;
 
 /**
- * @author Rossen Stoyanchev
+
  * @since 3.1
  */
 public class UriTemplateServletAnnotationControllerHandlerMethodTests extends AbstractServletHandlerMethodTests {

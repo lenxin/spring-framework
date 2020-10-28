@@ -24,7 +24,7 @@ import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.multipart.support.StringMultipartFileEditor;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class WebRequestDataBinderTests {
 

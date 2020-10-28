@@ -11,7 +11,7 @@ import org.springframework.util.Assert;
  * <p>Note that this class is in the {@code test} tree of the project:
  * the methods contained herein are not suitable for production code bases.
  *
- * @author Arjen Poutsma
+
  */
 public abstract class DataBufferTestUtils {
 

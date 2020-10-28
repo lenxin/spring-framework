@@ -8,9 +8,9 @@ import org.springframework.core.io.DescriptiveResource;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class FailFastProblemReporterTests {
 

@@ -23,7 +23,7 @@ import static org.springframework.test.util.AssertionErrors.assertTrue;
  * <p>An instance of this class is typically accessed via
  * {@link MockMvcResultMatchers#content}.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.2
  */
 public class ContentResultMatchers {

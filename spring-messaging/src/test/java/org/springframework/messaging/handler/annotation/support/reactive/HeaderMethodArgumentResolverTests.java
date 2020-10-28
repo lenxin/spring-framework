@@ -23,7 +23,7 @@ import static org.springframework.messaging.handler.annotation.MessagingPredicat
 
 /**
  * Test fixture for {@link HeaderMethodArgumentResolver} tests.
- * @author Rossen Stoyanchev
+
  */
 public class HeaderMethodArgumentResolverTests {
 

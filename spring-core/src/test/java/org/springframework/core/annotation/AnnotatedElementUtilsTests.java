@@ -41,9 +41,9 @@ import static org.springframework.core.annotation.AnnotationUtilsTests.*;
 /**
  * Unit tests for {@link AnnotatedElementUtils}.
  *
- * @author Sam Brannen
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 4.0.3
  * @see AnnotationUtilsTests
  * @see MultipleComposedAnnotationsOnSingleAnnotatedElementTests

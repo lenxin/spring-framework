@@ -14,9 +14,9 @@ import org.springframework.util.Assert;
  *
  * <p>This class is restricted to package visibility, in contrast to its superclass.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Costin Leau
+
+
+
  * @since 2.0
  * @see PersistenceUnitManager
  */

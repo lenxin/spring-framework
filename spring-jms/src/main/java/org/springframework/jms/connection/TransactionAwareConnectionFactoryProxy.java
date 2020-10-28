@@ -61,7 +61,7 @@ import org.springframework.util.ClassUtils;
  * It may nevertheless run against a JMS 1.1 driver (bound to the JMS 2.0 API)
  * as long as no actual JMS 2.0 calls are triggered by the application's setup.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see UserCredentialsConnectionFactoryAdapter
  * @see SingleConnectionFactory

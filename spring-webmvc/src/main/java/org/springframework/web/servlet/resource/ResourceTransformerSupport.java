@@ -12,9 +12,9 @@ import org.springframework.util.StringUtils;
  * A base class for a {@code ResourceTransformer} with an optional helper method
  * for resolving public links within a transformed resource.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 4.1
  */
 public abstract class ResourceTransformerSupport implements ResourceTransformer {

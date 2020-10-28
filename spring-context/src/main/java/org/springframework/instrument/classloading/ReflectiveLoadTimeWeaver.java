@@ -40,8 +40,8 @@ import org.springframework.util.ReflectionUtils;
  * <p>This is the LoadTimeWeaver to use e.g. with the Resin application server
  * version 3.1+.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see #addTransformer(java.lang.instrument.ClassFileTransformer)
  * @see #getThrowawayClassLoader()

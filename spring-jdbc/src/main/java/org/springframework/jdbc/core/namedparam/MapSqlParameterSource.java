@@ -20,8 +20,8 @@ import org.springframework.util.StringUtils;
  * easier. The methods return a reference to the {@link MapSqlParameterSource}
  * itself, so you can chain several method calls together within a single statement.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see #addValue(String, Object)
  * @see #addValue(String, Object, int)

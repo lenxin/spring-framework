@@ -25,8 +25,8 @@ import static org.junit.Assert.*;
  * annotations in conjunction with Bean propagate their respective metadata
  * correctly into the resulting BeanDefinition
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  */
 public class BeanAnnotationAttributePropagationTests {
 

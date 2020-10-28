@@ -71,7 +71,7 @@ package org.springframework.asm;
  * simulate DUPx_y instructions, whose effect would be dependent on the concrete types represented
  * by the abstract types in the stack (which are not always known).
  *
- * @author Eric Bruneton
+
  */
 class Frame {
 

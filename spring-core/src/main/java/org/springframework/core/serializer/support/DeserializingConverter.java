@@ -12,9 +12,9 @@ import org.springframework.util.Assert;
  * {@link org.springframework.core.serializer.Deserializer}
  * to convert data in a byte array to an object.
  *
- * @author Gary Russell
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
+
  * @since 3.0.5
  */
 public class DeserializingConverter implements Converter<byte[], Object> {

@@ -23,11 +23,11 @@ import org.springframework.web.servlet.tags.RequestContextAwareTag;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Mark Fisher
- * @author Jeremy Grelle
+
+
+
+
+
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class ErrorsTagTests extends AbstractFormTagTests {

@@ -25,10 +25,10 @@ import org.springframework.util.StringUtils;
  * initialization model to start with open defaults that permit all cross-origin
  * requests for GET, HEAD, and POST requests.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
+
  * @since 4.2
  * @see <a href="https://www.w3.org/TR/cors/">CORS spec</a>
  */

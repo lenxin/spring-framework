@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 /**
  * Tests demonstrating the use of request parameters.
  *
- * @author Rossen Stoyanchev
+
  */
 public class RequestParameterTests {
 

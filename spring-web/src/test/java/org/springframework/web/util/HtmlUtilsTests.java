@@ -5,9 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Alef Arendsen
- * @author Martin Kersten
- * @author Rick Evans
+
+
+
  */
 public class HtmlUtilsTests {
 

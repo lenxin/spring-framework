@@ -46,7 +46,7 @@ import org.springframework.util.ObjectUtils;
  * <p>Also supports discovering and invoking exception handling methods to process
  * exceptions raised during message handling.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  * @param <T> the type of the Object that contains information mapping information
  */

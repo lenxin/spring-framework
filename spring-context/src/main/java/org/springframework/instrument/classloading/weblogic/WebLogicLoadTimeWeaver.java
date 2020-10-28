@@ -14,8 +14,8 @@ import org.springframework.util.ClassUtils;
  *
  * <p><b>NOTE:</b> Requires BEA WebLogic version 10 or higher.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 2.5
  */
 public class WebLogicLoadTimeWeaver implements LoadTimeWeaver {

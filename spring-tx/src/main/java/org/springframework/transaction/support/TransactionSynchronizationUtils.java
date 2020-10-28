@@ -15,7 +15,7 @@ import org.springframework.util.ClassUtils;
  * Utility methods for triggering specific {@link TransactionSynchronization}
  * callback methods on all currently registered synchronizations.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see TransactionSynchronization
  * @see TransactionSynchronizationManager#getSynchronizations()

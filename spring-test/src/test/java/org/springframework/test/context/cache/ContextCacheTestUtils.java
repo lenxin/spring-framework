@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
  * Collection of utility methods for testing scenarios involving the
  * {@link ContextCache}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 public class ContextCacheTestUtils {

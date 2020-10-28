@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link TilesConfigurer}.
  *
- * @author Nicolas Le Bas
+
  */
 public class TilesConfigurerTests {
 

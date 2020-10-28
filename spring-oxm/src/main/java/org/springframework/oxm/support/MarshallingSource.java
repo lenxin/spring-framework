@@ -30,7 +30,7 @@ import org.springframework.util.Assert;
  * #getInputSource()}. Calling {@link #setXMLReader(XMLReader)} or {@link #setInputSource(InputSource)} will result in
  * {@code UnsupportedOperationException}s.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see javax.xml.transform.Transformer
  */

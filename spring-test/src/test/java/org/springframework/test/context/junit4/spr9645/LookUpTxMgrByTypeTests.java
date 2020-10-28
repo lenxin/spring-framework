@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * Integration tests that verify the behavior requested in
  * <a href="https://jira.spring.io/browse/SPR-9645">SPR-9645</a>.
  *
- * @author Sam Brannen
+
  * @since 3.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

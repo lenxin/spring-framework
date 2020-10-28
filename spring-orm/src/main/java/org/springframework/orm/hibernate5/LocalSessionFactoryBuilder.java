@@ -69,7 +69,7 @@ import org.springframework.util.ClassUtils;
  * setup, as well as other advanced Hibernate configuration options beyond the
  * standard JPA bootstrap contract.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see HibernateTransactionManager
  * @see LocalSessionFactoryBean

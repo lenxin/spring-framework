@@ -7,7 +7,7 @@ package org.springframework.asm;
  * modified class from one or more existing Java classes.
  *
  * @see <a href="https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-4.html">JVMS 4</a>
- * @author Eric Bruneton
+
  */
 public class ClassWriter extends ClassVisitor {
 

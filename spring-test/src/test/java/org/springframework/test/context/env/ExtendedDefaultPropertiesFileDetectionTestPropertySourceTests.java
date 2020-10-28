@@ -9,7 +9,7 @@ import org.springframework.test.context.TestPropertySource;
  * when {@link TestPropertySource @TestPropertySource} is <em>empty</em>
  * at multiple levels within a class hierarchy.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @TestPropertySource

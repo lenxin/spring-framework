@@ -24,8 +24,8 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * The method parameter type may be a {@link MultiValueMap} to receive all
  * values for a header, not only the first one.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 public class RequestHeaderMapMethodArgumentResolver implements HandlerMethodArgumentResolver {

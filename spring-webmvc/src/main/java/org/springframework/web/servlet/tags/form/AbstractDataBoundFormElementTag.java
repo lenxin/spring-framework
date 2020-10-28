@@ -22,8 +22,8 @@ import org.springframework.web.servlet.tags.NestedPathTag;
  * of their bound value and also for {@link #writeOptionalAttribute interacting}
  * with the {@link TagWriter}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

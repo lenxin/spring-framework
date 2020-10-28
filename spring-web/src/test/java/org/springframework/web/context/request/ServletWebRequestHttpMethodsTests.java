@@ -34,9 +34,9 @@ import static org.junit.Assert.*;
 /**
  * Parameterized tests for {@link ServletWebRequest}.
  *
- * @author Juergen Hoeller
- * @author Brian Clozel
- * @author Markus Malkusch
+
+
+
  */
 @RunWith(Parameterized.class)
 public class ServletWebRequestHttpMethodsTests {

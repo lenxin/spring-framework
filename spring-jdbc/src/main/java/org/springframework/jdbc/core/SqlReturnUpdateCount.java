@@ -8,7 +8,7 @@ import java.sql.Types;
  * <p>Returned update counts - like all stored procedure
  * parameters - <b>must</b> have names.
  *
- * @author Thomas Risberg
+
  */
 public class SqlReturnUpdateCount extends SqlParameter {
 

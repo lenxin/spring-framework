@@ -32,7 +32,7 @@ import org.springframework.util.CollectionUtils;
  * "/test/**" matches all paths below "/test". For details, see the
  * {@link org.springframework.web.util.pattern.PathPattern} javadoc.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public class SimpleUrlHandlerMapping extends AbstractUrlHandlerMapping {

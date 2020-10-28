@@ -41,8 +41,8 @@ import org.springframework.util.StringUtils;
  * links within CSS files to also contain the appropriate versions generated
  * by this resolver.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
  * @see VersionStrategy
  */

@@ -11,8 +11,8 @@ import org.springframework.jndi.JndiTemplate;
  *
  * <p>Very useful for testing. Effectively a mock object.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @deprecated Deprecated as of Spring Framework 5.2 in favor of complete solutions from
  * third parties such as <a href="https://github.com/h-thurow/Simple-JNDI">Simple-JNDI</a>
  */

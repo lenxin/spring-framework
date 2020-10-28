@@ -24,7 +24,7 @@ import java.lang.reflect.Method;
  * in an interceptor chain, will have run, so any state changes they have produced in
  * parameters or ThreadLocal state will be available at the time of evaluation.
  *
- * @author Rod Johnson
+
  * @since 11.11.2003
  * @see Pointcut
  * @see ClassFilter

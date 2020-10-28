@@ -21,8 +21,8 @@ import org.springframework.web.method.HandlerMethod;
  * argument values resolved from the current HTTP request through a list of
  * {@link HandlerMethodArgumentResolver}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 public class InvocableHandlerMethod extends HandlerMethod {

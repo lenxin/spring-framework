@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.AbstractTemplateViewResolver;
  * existence of the specified template resources and only return a non-null
  * View object if a template is actually found.
  *
- * @author Brian Clozel
+
  * @since 4.1
  * @see GroovyMarkupConfigurer
  */

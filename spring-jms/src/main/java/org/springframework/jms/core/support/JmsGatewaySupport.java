@@ -18,7 +18,7 @@ import org.springframework.lang.Nullable;
  * A custom JmsTemplate instance can be created for a given ConnectionFactory
  * through overriding the {@link #createJmsTemplate} method.
  *
- * @author Mark Pollack
+
  * @since 1.1.1
  * @see #setConnectionFactory
  * @see #setJmsTemplate

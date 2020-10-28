@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * Transactional integration tests that verify rollback semantics for
  * {@link Sql @Sql} support.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @ContextConfiguration(classes = PopulatedSchemaDatabaseConfig.class)

@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Juergen Hoeller
+
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

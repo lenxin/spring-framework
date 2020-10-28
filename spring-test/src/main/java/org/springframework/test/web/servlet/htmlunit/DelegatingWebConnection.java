@@ -33,8 +33,8 @@ import org.springframework.util.Assert;
  * webClient.setWebConnection(webConnection);
  * </pre>
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 public final class DelegatingWebConnection implements WebConnection {

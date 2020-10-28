@@ -101,9 +101,9 @@ import org.springframework.web.context.ServletContextAware;
  * &lt;/bean>
  * </pre>
  *
- * @author mick semb wever
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  * @since 3.2
  * @see TilesView
  * @see TilesViewResolver

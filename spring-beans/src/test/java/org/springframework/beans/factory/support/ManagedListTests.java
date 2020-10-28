@@ -7,9 +7,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class ManagedListTests {

@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the StaticScriptSource class.
  *
- * @author Rick Evans
- * @author Sam Brannen
+
+
  */
 public class StaticScriptSourceTests {
 

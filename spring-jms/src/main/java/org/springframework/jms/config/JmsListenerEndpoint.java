@@ -7,7 +7,7 @@ import org.springframework.jms.listener.MessageListenerContainer;
  * {@link org.springframework.jms.annotation.JmsListenerConfigurer
  * JmsListenerConfigurer} to register endpoints programmatically.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public interface JmsListenerEndpoint {

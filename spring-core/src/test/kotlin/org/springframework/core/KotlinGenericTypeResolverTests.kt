@@ -8,8 +8,8 @@ import java.lang.reflect.Method
 /**
  * Tests for Kotlin support in [GenericTypeResolver].
  *
- * @author Konrad Kaminski
- * @author Sebastien Deleuze
+
+
  */
 class KotlinGenericTypeResolverTests {
 

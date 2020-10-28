@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
  * error through the ProblemReporter, as this could never be an intended/valid
  * situation.
  *
- * @author Chris Beams
+
  * @since 3.1
  * @see org.springframework.beans.factory.xml.XmlBeanFactoryTests#testWithDuplicateName
  * @see org.springframework.beans.factory.xml.XmlBeanFactoryTests#testWithDuplicateNameInAlias

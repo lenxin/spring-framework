@@ -61,9 +61,9 @@ import org.springframework.web.servlet.ViewResolver;
  * that has the {@code text/html} content type (based on the {@code html} file extension). A request
  * for {@code /view} with a {@code text/html} request {@code Accept} header has the same result.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
+
  * @since 3.0
  * @see ViewResolver
  * @see InternalResourceViewResolver

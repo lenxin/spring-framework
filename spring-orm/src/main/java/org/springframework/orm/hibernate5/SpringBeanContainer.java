@@ -51,7 +51,7 @@ import org.springframework.util.ConcurrentReferenceHashMap;
  * will natively expose the JPA {@code EntityManagerFactory} interface as well, and
  * Hibernate {@code BeanContainer} integration will be registered out of the box.
  *
- * @author Juergen Hoeller
+
  * @since 5.1
  * @see LocalSessionFactoryBean#setBeanFactory
  * @see LocalSessionFactoryBuilder#setBeanContainer

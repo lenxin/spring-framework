@@ -55,9 +55,9 @@ import static org.springframework.web.servlet.HandlerMapping.*;
  *
  * <p>Also see {@link HttpEntityMethodProcessorTests}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
+
  */
 public class HttpEntityMethodProcessorMockTests {
 

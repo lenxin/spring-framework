@@ -22,7 +22,7 @@ import org.springframework.web.util.WebUtils;
  * An interceptor to check request {@code Origin} header value against a
  * collection of allowed origins.
  *
- * @author Sebastien Deleuze
+
  * @since 4.1.2
  */
 public class OriginHandshakeInterceptor implements HandshakeInterceptor {

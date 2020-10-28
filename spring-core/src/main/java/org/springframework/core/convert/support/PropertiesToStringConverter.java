@@ -10,7 +10,7 @@ import org.springframework.core.convert.converter.Converter;
  * Converts from a Properties to a String by calling {@link Properties#store(java.io.OutputStream, String)}.
  * Decodes with the ISO-8859-1 charset before returning the String.
  *
- * @author Keith Donald
+
  * @since 3.0
  */
 final class PropertiesToStringConverter implements Converter<Properties, String> {

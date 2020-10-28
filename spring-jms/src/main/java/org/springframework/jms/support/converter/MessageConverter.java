@@ -10,8 +10,8 @@ import javax.jms.Session;
  * <p>Check out {@link SimpleMessageConverter} for a default implementation,
  * converting between the 'standard' message payloads and JMS Message types.
  *
- * @author Mark Pollack
- * @author Juergen Hoeller
+
+
  * @since 1.1
  * @see org.springframework.jms.core.JmsTemplate#setMessageConverter
  * @see org.springframework.jms.listener.adapter.MessageListenerAdapter#setMessageConverter

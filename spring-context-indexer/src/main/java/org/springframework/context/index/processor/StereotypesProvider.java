@@ -8,7 +8,7 @@ import javax.lang.model.element.Element;
  * If an element has one more stereotypes, it is referenced in the index
  * of candidate components and each stereotype can be queried individually.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 interface StereotypesProvider {

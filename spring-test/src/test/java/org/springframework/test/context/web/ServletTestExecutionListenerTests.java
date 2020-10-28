@@ -21,8 +21,8 @@ import static org.springframework.test.context.web.ServletTestExecutionListener.
 /**
  * Unit tests for {@link ServletTestExecutionListener}.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 3.2.6
  */
 public class ServletTestExecutionListenerTests {

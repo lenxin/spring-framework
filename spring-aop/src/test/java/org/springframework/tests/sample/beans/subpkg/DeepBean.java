@@ -7,7 +7,7 @@ import org.springframework.aop.aspectj.AspectJExpressionPointcutTests;
  *
  * @see AspectJExpressionPointcutTests#testWithinRootAndSubpackages()
  *
- * @author Chris Beams
+
  */
 public class DeepBean {
 	public void aMethod(String foo) {

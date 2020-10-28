@@ -28,8 +28,8 @@ import org.springframework.util.StringUtils;
  * <p>Note that the order of extensions in HTTP headers defines their order of execution,
  * e.g. extensions "foo, bar" will be executed as "bar(foo(message))".</p>
  *
- * @author Brian Clozel
- * @author Juergen Hoeller
+
+
  * @since 4.0
  * @see <a href="https://tools.ietf.org/html/rfc6455#section-9">WebSocket Protocol Extensions, RFC 6455 - Section 9</a>
  */

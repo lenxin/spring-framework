@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
  * <p>This exception should be subclassed to indicate the type of failure:
  * optimistic locking, failure to acquire lock, etc.
  *
- * @author Thomas Risberg
+
  * @since 1.1
  * @see OptimisticLockingFailureException
  * @see PessimisticLockingFailureException

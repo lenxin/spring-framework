@@ -4,7 +4,7 @@ package org.springframework.asm;
  * Exception thrown when the constant pool of a class produced by a {@link ClassWriter} is too
  * large.
  *
- * @author Jason Zaugg
+
  */
 public final class ClassTooLargeException extends IndexOutOfBoundsException {
   private static final long serialVersionUID = 160715609518896765L;

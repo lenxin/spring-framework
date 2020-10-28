@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link CandidateComponentsIndexLoader}.
  *
- * @author Stephane Nicoll
+
  */
 public class CandidateComponentsIndexLoaderTests {
 

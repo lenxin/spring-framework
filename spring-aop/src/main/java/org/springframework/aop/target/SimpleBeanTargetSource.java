@@ -8,7 +8,7 @@ package org.springframework.aop.target;
  * <p>Can obtain any kind of target bean: singleton, scoped, or prototype.
  * Typically used for scoped beans.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.3
  */
 @SuppressWarnings("serial")

@@ -32,8 +32,8 @@ import static org.springframework.http.MediaType.*;
 
 /**
  * Unit tests for {@link EncoderHttpMessageWriter}.
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  */
 public class EncoderHttpMessageWriterTests {
 

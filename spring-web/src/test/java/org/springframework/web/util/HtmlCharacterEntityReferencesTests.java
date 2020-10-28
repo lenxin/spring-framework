@@ -13,8 +13,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Martin Kersten
- * @author Juergen Hoeller
+
+
  */
 public class HtmlCharacterEntityReferencesTests {
 

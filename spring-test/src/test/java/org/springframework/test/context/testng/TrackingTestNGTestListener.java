@@ -8,7 +8,7 @@ import org.testng.ITestResult;
  * Simple {@link ITestListener} which tracks how many times certain TestNG
  * callback methods were called: only intended for the integration test suite.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 public class TrackingTestNGTestListener implements ITestListener {

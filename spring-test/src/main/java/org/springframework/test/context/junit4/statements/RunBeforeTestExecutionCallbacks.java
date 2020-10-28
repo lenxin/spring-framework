@@ -12,7 +12,7 @@ import org.springframework.test.context.TestContextManager;
  * JUnit 4 execution chain by calling {@link TestContextManager#beforeTestExecution
  * beforeTestExecution()} on the supplied {@link TestContextManager}.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see #evaluate()
  * @see RunAfterTestExecutionCallbacks

@@ -7,7 +7,7 @@ import org.springframework.tests.sample.beans.TestBean;
  * Class to test that @FactoryMethods are detected only when inside a class with an @Component
  * class annotation.
  *
- * @author Mark Pollack
+
  */
 public class SimpleBean {
 

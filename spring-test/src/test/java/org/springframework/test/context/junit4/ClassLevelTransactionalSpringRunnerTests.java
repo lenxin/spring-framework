@@ -37,7 +37,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * <p>This class specifically tests usage of {@code @Transactional} defined
  * at the <strong>class level</strong>.
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see MethodLevelTransactionalSpringRunnerTests
  */

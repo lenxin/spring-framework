@@ -16,7 +16,7 @@ import org.springframework.lang.Nullable;
  * <p>The typical implementation will perform multiple operations on the
  * supplied JMS {@link Session} and {@link MessageProducer}.
  *
- * @author Mark Pollack
+
  * @since 1.1
  * @param <T> the result type
  * @see JmsTemplate#execute(ProducerCallback)

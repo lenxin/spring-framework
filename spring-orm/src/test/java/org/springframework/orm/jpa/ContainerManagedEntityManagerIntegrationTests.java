@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
 /**
  * Integration tests using in-memory database for container-managed JPA
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class ContainerManagedEntityManagerIntegrationTests extends AbstractEntityManagerFactoryIntegrationTests {

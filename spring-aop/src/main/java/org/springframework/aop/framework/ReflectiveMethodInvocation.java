@@ -34,9 +34,9 @@ import org.springframework.lang.Nullable;
  * with existing framework integrations (e.g. Pitchfork). For any other
  * purposes, use the {@link ProxyMethodInvocation} interface instead.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Adrian Colyer
+
+
+
  * @see #invokeJoinpoint
  * @see #proceed
  * @see #invocableClone

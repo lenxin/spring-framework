@@ -16,8 +16,8 @@ import org.springframework.util.ObjectUtils;
  * then delegates to {@link CollectionToArrayConverter} to perform the target
  * array conversion.
  *
- * @author Keith Donald
- * @author Phillip Webb
+
+
  * @since 3.0
  */
 final class ArrayToArrayConverter implements ConditionalGenericConverter {

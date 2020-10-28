@@ -28,10 +28,10 @@ import org.springframework.util.NumberUtils;
  * Otherwise, if either operand is of type long, the other is converted to long.<br>
  * Otherwise, both operands are converted to type int.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Giovanni Dall'Oglio Risso
+
+
+
+
  * @since 3.0
  */
 public class OpMultiply extends Operator {

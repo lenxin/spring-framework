@@ -7,8 +7,8 @@ import javax.transaction.Transactional;
  * can process an annotation that declares itself with an annotation that is not on the
  * classpath.
  *
- * @author Vedran Pavic
- * @author Stephane Nicoll
+
+
  */
 @Transactional
 public class SampleTransactional {

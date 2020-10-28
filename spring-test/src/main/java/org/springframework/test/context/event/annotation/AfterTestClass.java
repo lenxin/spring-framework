@@ -34,8 +34,8 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * for this annotation to have an effect &mdash; for example, via
  * {@link org.springframework.test.context.TestExecutionListeners @TestExecutionListeners}.
  *
- * @author Frank Scheffler
- * @author Sam Brannen
+
+
  * @since 5.2
  * @see AfterTestClassEvent
  */

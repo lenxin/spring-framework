@@ -42,9 +42,9 @@ import org.springframework.util.ClassUtils;
  * preferred for use due to its support for executor qualification in conjunction with
  * Spring's {@code @Async} annotation.
  *
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
+
  * @since 3.0
  * @see org.springframework.scheduling.annotation.Async
  * @see org.springframework.scheduling.annotation.AsyncAnnotationAdvisor

@@ -21,7 +21,7 @@ import org.springframework.util.Assert;
  * those methods (such as {@link #getConnection()}) that should not simply
  * delegate to the target {@link ConnectionFactory}.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see #getConnection
  */

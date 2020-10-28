@@ -14,7 +14,7 @@ import org.springframework.util.xml.DomUtils;
 /**
  * Parser for the {@code <oxm:jaxb2-marshaller/>} element.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 class Jaxb2MarshallerBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {

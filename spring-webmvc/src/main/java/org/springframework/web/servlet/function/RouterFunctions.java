@@ -22,7 +22,7 @@ import org.springframework.util.Assert;
  * {@linkplain #nest(RequestPredicate, RouterFunction) subrouting} on an existing routing
  * function.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 public abstract class RouterFunctions {

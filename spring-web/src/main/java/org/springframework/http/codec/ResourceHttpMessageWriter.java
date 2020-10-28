@@ -43,9 +43,9 @@ import org.springframework.util.MimeTypeUtils;
  * <p>For reading to a Resource, use {@link ResourceDecoder} wrapped with
  * {@link DecoderHttpMessageReader}.
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
+
  * @since 5.0
  * @see ResourceEncoder
  * @see ResourceRegionEncoder

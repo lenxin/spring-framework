@@ -22,9 +22,9 @@ import org.springframework.util.ClassUtils;
  * <p>This implementation is largely a JavaBean, offering mutators
  * for all standard {@code PersistenceUnitInfo} properties.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Costin Leau
+
+
+
  * @since 2.0
  */
 public class MutablePersistenceUnitInfo implements SmartPersistenceUnitInfo {

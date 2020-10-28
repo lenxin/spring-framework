@@ -10,7 +10,7 @@ import java.io.InputStream;
  * <p>Typically implemented by an HTTP request handle on the server side,
  * or an HTTP response handle on the client side.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public interface HttpInputMessage extends HttpMessage {

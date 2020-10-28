@@ -16,7 +16,7 @@ import kotlin.reflect.jvm.kotlinFunction
 /**
  * Mock object based tests for [RestOperations] Kotlin extensions.
  *
- * @author Sebastien Deleuze
+
  */
 class RestOperationsExtensionsTests {
 

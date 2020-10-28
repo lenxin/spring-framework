@@ -15,7 +15,7 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * {@code HandlerAdapter} implementation that supports {@link HandlerFunction HandlerFunctions}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class HandlerFunctionAdapter implements HandlerAdapter {

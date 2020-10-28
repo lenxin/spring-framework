@@ -12,8 +12,8 @@ import org.springframework.lang.Nullable;
 /**
  * A {@link FactoryBean} for creating a Google Gson 2.x {@link Gson} instance.
  *
- * @author Roy Clarkson
- * @author Juergen Hoeller
+
+
  * @since 4.1
  */
 public class GsonFactoryBean implements FactoryBean<Gson>, InitializingBean {

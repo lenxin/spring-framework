@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * that has been modified to use {@link SpringClassRule} and
  * {@link SpringMethodRule}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 public class TimedSpringRuleTests extends TimedSpringRunnerTests {

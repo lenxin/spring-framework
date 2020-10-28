@@ -17,7 +17,7 @@ import static org.springframework.web.servlet.function.RequestPredicates.pathExt
 import static org.springframework.web.servlet.function.RouterFunctions.route;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class ToStringVisitorTests {
 

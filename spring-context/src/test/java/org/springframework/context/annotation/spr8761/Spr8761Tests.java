@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 /**
  * Tests cornering the regression reported in SPR-8761.
  *
- * @author Chris Beams
+
  */
 public class Spr8761Tests {
 

@@ -15,7 +15,7 @@ import org.springframework.test.annotation.DirtiesContext.HierarchyMode;
  * <p>Note: {@code CacheAwareContextLoaderDelegate} does not extend the
  * {@link ContextLoader} or {@link SmartContextLoader} interface.
  *
- * @author Sam Brannen
+
  * @since 3.2.2
  */
 public interface CacheAwareContextLoaderDelegate {

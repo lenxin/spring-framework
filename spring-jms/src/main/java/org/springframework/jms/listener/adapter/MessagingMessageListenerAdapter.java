@@ -26,7 +26,7 @@ import org.springframework.util.Assert;
  * are provided as additional arguments so that these can be injected as
  * method arguments if necessary.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see Message
  * @see JmsHeaderMapper

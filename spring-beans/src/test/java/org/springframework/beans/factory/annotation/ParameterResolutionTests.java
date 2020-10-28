@@ -19,9 +19,9 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link ParameterResolutionDelegate}.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
- * @author Loïc Ledoyen
+
+
+
  */
 public class ParameterResolutionTests {
 

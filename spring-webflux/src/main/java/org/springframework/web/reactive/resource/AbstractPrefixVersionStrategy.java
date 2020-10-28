@@ -9,8 +9,8 @@ import org.springframework.util.Assert;
  * Abstract base class for {@link VersionStrategy} implementations that insert
  * a prefix into the URL path, e.g. "version/static/myresource.js".
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 5.0
  */
 public abstract class AbstractPrefixVersionStrategy implements VersionStrategy {

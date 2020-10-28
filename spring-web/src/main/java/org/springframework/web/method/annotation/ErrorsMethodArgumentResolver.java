@@ -20,8 +20,8 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * last two attributes added to the model to be the model attribute and its
  * {@link BindingResult}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 public class ErrorsMethodArgumentResolver implements HandlerMethodArgumentResolver {

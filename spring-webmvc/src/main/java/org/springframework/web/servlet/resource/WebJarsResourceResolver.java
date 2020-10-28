@@ -22,7 +22,7 @@ import org.springframework.lang.Nullable;
  * <p>This resolver requires the {@code org.webjars:webjars-locator-core} library
  * on the classpath and is automatically registered if that library is present.
  *
- * @author Brian Clozel
+
  * @since 4.2
  * @see org.springframework.web.servlet.config.annotation.ResourceChainRegistration
  * @see <a href="https://www.webjars.org">webjars.org</a>

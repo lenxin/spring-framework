@@ -33,8 +33,8 @@ import org.springframework.ui.Model;
  * {@link ExceptionHandler @ExceptionHandler} methods do not provide
  * access to a {@link Model} argument.
  *
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
  * @since 2.5
  */
 @Target({ElementType.PARAMETER, ElementType.METHOD})

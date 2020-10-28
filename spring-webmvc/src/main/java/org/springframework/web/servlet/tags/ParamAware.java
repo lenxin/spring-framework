@@ -3,7 +3,7 @@ package org.springframework.web.servlet.tags;
 /**
  * Allows implementing tag to utilize nested {@code spring:param} tags.
  *
- * @author Scott Andrews
+
  * @since 3.0
  * @see ParamTag
  */

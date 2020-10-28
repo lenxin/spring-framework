@@ -36,7 +36,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link ControllerMethodResolver}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ControllerMethodResolverTests {
 

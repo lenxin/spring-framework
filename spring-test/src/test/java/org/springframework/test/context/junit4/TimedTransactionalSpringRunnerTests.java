@@ -17,7 +17,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * with {@link Timed &#64;Timed} and JUnit 4's {@link Test#timeout()
  * timeout} attribute.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 @RunWith(SpringRunner.class)

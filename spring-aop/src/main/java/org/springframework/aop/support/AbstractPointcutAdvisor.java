@@ -14,8 +14,8 @@ import org.springframework.util.ObjectUtils;
  * implementations. Can be subclassed for returning a specific pointcut/advice
  * or a freely configurable pointcut/advice.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 1.1.2
  * @see AbstractGenericPointcutAdvisor
  */

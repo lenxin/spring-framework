@@ -30,10 +30,10 @@ import org.springframework.web.servlet.i18n.FixedLocaleResolver;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Nicholas Williams
+
+
+
+
  */
 public class ServletRequestMethodArgumentResolverTests {
 

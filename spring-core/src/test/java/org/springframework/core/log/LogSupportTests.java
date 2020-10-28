@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 5.2
  */
 public class LogSupportTests {

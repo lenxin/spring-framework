@@ -34,7 +34,7 @@ import org.springframework.util.Assert;
  * {@code @ExtendWith(SpringExtension.class)}, {@code @SpringJUnitConfig}, or
  * {@code @SpringJUnitWebConfig}.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see org.springframework.test.context.junit.jupiter.EnabledIf
  * @see org.springframework.test.context.junit.jupiter.DisabledIf

@@ -12,7 +12,7 @@ import static org.springframework.test.context.jdbc.SqlConfig.TransactionMode.*;
 /**
  * Unit tests for {@link MergedSqlConfig}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 public class MergedSqlConfigTests {

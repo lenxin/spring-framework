@@ -7,8 +7,8 @@ import java.lang.reflect.Method;
  * A Java field or method type. This class can be used to make it easier to manipulate type and
  * method descriptors.
  *
- * @author Eric Bruneton
- * @author Chris Nokleberg
+
+
  */
 public final class Type {
 

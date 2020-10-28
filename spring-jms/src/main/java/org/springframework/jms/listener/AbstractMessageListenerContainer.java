@@ -112,8 +112,8 @@ import org.springframework.util.ErrorHandler;
  * set the transaction manager only if you are using JTA or if you need to
  * synchronize with custom external transaction arrangements.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 2.0
  * @see #setMessageListener
  * @see javax.jms.MessageListener

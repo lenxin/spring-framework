@@ -9,8 +9,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Adrian Colyer
- * @author Chris Beams
+
+
  */
 public class AopNamespaceHandlerAdviceTypeTests {
 

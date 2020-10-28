@@ -3,7 +3,7 @@ package org.springframework.util.concurrent;
 /**
  * Failure callback for a {@link ListenableFuture}.
  *
- * @author Sebastien Deleuze
+
  * @since 4.1
  */
 @FunctionalInterface

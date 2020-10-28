@@ -9,7 +9,7 @@ import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.destination.DestinationResolver;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class MessageListenerTestContainer implements MessageListenerContainer, InitializingBean, DisposableBean {
 

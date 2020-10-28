@@ -45,7 +45,7 @@ import org.springframework.util.Assert;
  * just for the <i>option</i> of implicitly passing in a ConnectionSpec if the
  * particular target ConnectionFactory requires it.
  *
- * @author Juergen Hoeller
+
  * @since 1.2
  * @see #getConnection
  */

@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rick Evans
+
  */
 public class DynamicDestinationResolverTests {
 

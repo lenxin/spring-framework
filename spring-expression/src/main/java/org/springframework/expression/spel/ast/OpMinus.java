@@ -24,9 +24,9 @@ import org.springframework.util.NumberUtils;
  * The standard promotions are performed when the operand types vary (double-int=double).
  * For other options it defers to the registered overloader.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Giovanni Dall'Oglio Risso
+
+
+
  * @since 3.0
  */
 public class OpMinus extends Operator {

@@ -45,8 +45,8 @@ import static org.mockito.Mockito.*;
 /**
  * Tests for {@link ImportSelector} and {@link DeferredImportSelector}.
  *
- * @author Phillip Webb
- * @author Stephane Nicoll
+
+
  */
 @SuppressWarnings("resource")
 public class ImportSelectorTests {

@@ -24,7 +24,7 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for Kotlin script templates running on Kotlin JSR-223 support.
  *
- * @author Sebastien Deleuze
+
  */
 public class KotlinScriptTemplateTests {
 

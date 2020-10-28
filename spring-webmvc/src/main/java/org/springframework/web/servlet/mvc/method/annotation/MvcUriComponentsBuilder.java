@@ -73,9 +73,9 @@ import org.springframework.web.util.UriComponentsBuilder;
  * central place whether to extract and use, or to discard such headers.
  * See the Spring Framework reference for more on this filter.
  *
- * @author Oliver Gierke
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
+
  * @since 4.0
  */
 public class MvcUriComponentsBuilder {

@@ -8,7 +8,7 @@ import javax.jms.JMSException;
 /**
  * A stub implementation of the JMS ConnectionFactory for testing.
  *
- * @author Mark Fisher
+
  */
 public class StubConnectionFactory implements ConnectionFactory {
 

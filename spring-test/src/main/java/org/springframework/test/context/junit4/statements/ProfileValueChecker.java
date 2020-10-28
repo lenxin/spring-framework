@@ -17,8 +17,8 @@ import org.springframework.util.Assert;
  * whether a test class or test method is enabled in the current environment
  * via Spring's {@link IfProfileValue @IfProfileValue} annotation.
  *
- * @author Sam Brannen
- * @author Philippe Marschall
+
+
  * @since 4.2
  * @see #evaluate()
  * @see IfProfileValue

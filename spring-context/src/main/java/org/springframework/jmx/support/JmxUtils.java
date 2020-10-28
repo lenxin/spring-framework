@@ -27,8 +27,8 @@ import org.springframework.util.StringUtils;
  * Collection of generic utility methods to support Spring JMX.
  * Includes a convenient method to locate an MBeanServer.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #locateMBeanServer
  */

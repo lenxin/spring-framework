@@ -6,7 +6,7 @@ package org.springframework.asm;
  * however that there can be other elements between a label and the instruction it designates (such
  * as other labels, stack map frames, line numbers, etc.).
  *
- * @author Eric Bruneton
+
  */
 public class Label {
 

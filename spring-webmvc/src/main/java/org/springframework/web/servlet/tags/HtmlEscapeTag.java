@@ -31,7 +31,7 @@ import javax.servlet.jsp.JspException;
  * </tbody>
  * </table>
  *
- * @author Juergen Hoeller
+
  * @since 04.03.2003
  * @see HtmlEscapingAwareTag#setHtmlEscape
  */

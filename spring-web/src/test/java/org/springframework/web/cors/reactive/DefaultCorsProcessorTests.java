@@ -28,7 +28,7 @@ import static org.springframework.http.HttpHeaders.VARY;
 /**
  * {@link DefaultCorsProcessor} tests with simple or pre-flight CORS request.
  *
- * @author Sebastien Deleuze
+
  */
 public class DefaultCorsProcessorTests {
 

@@ -19,8 +19,8 @@ import org.springframework.util.Assert;
  * Will perform an element conversion from the collection's parameterized type to the
  * array's component type if necessary.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 final class CollectionToArrayConverter implements ConditionalGenericConverter {

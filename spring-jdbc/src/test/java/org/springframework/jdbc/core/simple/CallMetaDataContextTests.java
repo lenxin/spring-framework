@@ -24,7 +24,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Mock object based tests for CallMetaDataContext.
  *
- * @author Thomas Risberg
+
  */
 public class CallMetaDataContextTests {
 

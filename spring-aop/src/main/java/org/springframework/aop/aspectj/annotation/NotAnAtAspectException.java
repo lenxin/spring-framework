@@ -7,7 +7,7 @@ import org.springframework.aop.framework.AopConfigException;
  * an advisor generation operation on a class that is not an
  * AspectJ annotation-style aspect.
  *
- * @author Rod Johnson
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

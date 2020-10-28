@@ -12,7 +12,7 @@ import org.xml.sax.SAXParseException;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
+
  */
 public class SchemaValidationTests {
 

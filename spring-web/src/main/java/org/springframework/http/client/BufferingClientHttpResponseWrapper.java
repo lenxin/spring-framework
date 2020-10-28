@@ -13,7 +13,7 @@ import org.springframework.util.StreamUtils;
  * Simple implementation of {@link ClientHttpResponse} that reads the response's body
  * into memory, thus allowing for multiple invocations of {@link #getBody()}.
  *
- * @author Arjen Poutsma
+
  * @since 3.1
  */
 final class BufferingClientHttpResponseWrapper implements ClientHttpResponse {

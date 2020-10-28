@@ -11,8 +11,8 @@ import org.springframework.util.ConcurrentReferenceHashMap;
  * General utility for determining the order of an object based on its type declaration.
  * Handles Spring's {@link Order} annotation as well as {@link javax.annotation.Priority}.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see Order
  * @see javax.annotation.Priority

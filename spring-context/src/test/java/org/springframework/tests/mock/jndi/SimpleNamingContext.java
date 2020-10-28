@@ -30,8 +30,8 @@ import org.springframework.util.StringUtils;
  * method in unit tests. Typically, SimpleNamingContextBuilder will be used to
  * set up a JVM-level JNDI environment.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see SimpleNamingContextBuilder
  * @see org.springframework.jndi.JndiTemplate#createInitialContext
  */

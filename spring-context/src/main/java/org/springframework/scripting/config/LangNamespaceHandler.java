@@ -16,9 +16,9 @@ import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
  * &lt;/lang:groovy&gt;
  * </pre>
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Mark Fisher
+
+
+
  * @since 2.0
  */
 public class LangNamespaceHandler extends NamespaceHandlerSupport {

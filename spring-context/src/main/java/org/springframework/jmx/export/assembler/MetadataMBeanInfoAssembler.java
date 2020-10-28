@@ -32,9 +32,9 @@ import org.springframework.util.StringUtils;
  * Spring provides an implementation based on annotations:
  * {@code AnnotationJmxAttributeSource}.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Jennifer Hickey
+
+
+
  * @since 1.2
  * @see #setAttributeSource
  * @see org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource

@@ -6,8 +6,8 @@ import org.springframework.test.context.TestContext;
 /**
  * Base class for events published by the {@link EventPublishingTestExecutionListener}.
  *
- * @author Frank Scheffler
- * @author Sam Brannen
+
+
  * @since 5.2
  */
 @SuppressWarnings("serial")

@@ -20,8 +20,8 @@ import org.springframework.web.bind.annotation.CookieValue;
  * <p>A {@link WebDataBinder} may be invoked to apply type conversion to the
  * resolved cookie value.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 public abstract class AbstractCookieValueMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver {

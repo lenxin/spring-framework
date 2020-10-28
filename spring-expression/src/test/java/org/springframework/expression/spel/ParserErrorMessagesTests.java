@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Tests the messages and exceptions that come out for badly formed expressions
  *
- * @author Andy Clement
+
  */
 public class ParserErrorMessagesTests extends AbstractExpressionTests {
 

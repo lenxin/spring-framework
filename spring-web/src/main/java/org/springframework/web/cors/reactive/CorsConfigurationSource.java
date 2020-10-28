@@ -8,7 +8,7 @@ import org.springframework.web.server.ServerWebExchange;
  * Interface to be implemented by classes (usually HTTP request handlers) that
  * provides a {@link CorsConfiguration} instance based on the provided reactive request.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 public interface CorsConfigurationSource {

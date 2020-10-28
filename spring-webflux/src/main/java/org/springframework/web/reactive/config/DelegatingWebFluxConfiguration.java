@@ -18,7 +18,7 @@ import org.springframework.web.reactive.result.method.annotation.ArgumentResolve
  * configuration provided by {@code WebFluxConfigurationSupport}. This is the
  * class actually imported by {@link EnableWebFlux @EnableWebFlux}.
  *
- * @author Brian Clozel
+
  * @since 5.0
  */
 @Configuration

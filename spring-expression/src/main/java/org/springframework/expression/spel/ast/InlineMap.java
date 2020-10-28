@@ -14,7 +14,7 @@ import org.springframework.util.Assert;
 /**
  * Represent a map in an expression, e.g. '{name:'foo',age:12}'
  *
- * @author Andy Clement
+
  * @since 4.1
  */
 public class InlineMap extends SpelNodeImpl {

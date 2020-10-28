@@ -11,8 +11,8 @@ import org.springframework.lang.Nullable;
  * based on a configurable {@link CacheManager} and the name of the
  * cache(s) as provided by {@link BasicOperation#getCacheNames() getCacheNames()}.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  * @see BasicOperation#getCacheNames()
  */

@@ -241,7 +241,7 @@ import org.springframework.context.annotation.Import;
  * invoked in a similar fashion. The example above can be translated in a regular bean
  * definition registered in the context in case you use the XML configuration.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see JmsListener
  * @see JmsListenerAnnotationBeanPostProcessor

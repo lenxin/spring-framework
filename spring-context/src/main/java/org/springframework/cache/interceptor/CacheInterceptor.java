@@ -20,8 +20,8 @@ import org.springframework.lang.Nullable;
  *
  * <p>CacheInterceptors are thread-safe.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 @SuppressWarnings("serial")

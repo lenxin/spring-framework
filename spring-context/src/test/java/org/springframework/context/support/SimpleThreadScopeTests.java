@@ -11,8 +11,8 @@ import org.springframework.tests.sample.beans.TestBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
  */
 public class SimpleThreadScopeTests {
 

@@ -26,9 +26,9 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Arjen Poutsma
- * @author Biju Kunjummen
- * @author Sam Brannen
+
+
+
  */
 public class Jaxb2UnmarshallerTests extends AbstractUnmarshallerTests<Jaxb2Marshaller> {
 

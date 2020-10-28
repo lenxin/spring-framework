@@ -11,7 +11,7 @@ import org.springframework.orm.ObjectOptimisticLockingFailureException;
  * Converts Hibernate's StaleObjectStateException, StaleStateException
  * and OptimisticEntityLockException.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see SessionFactoryUtils#convertHibernateAccessException
  */

@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * to ensure that there is nothing wrong with the Groovy script used by
  * other tests in this package.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 public class GroovyControlGroupTests {

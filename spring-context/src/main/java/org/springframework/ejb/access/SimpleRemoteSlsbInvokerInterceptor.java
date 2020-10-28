@@ -38,8 +38,8 @@ import org.springframework.remoting.rmi.RmiClientInterceptorUtils;
  * In the latter case, RemoteExceptions thrown by the EJB stub will automatically get
  * converted to Spring's unchecked RemoteAccessException.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 09.05.2003
  * @see org.springframework.remoting.RemoteAccessException
  * @see AbstractSlsbInvokerInterceptor#setLookupHomeOnStartup

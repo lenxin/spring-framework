@@ -8,9 +8,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Med Belamachi
+
+
+
  */
 public class UriUtilsTests {
 

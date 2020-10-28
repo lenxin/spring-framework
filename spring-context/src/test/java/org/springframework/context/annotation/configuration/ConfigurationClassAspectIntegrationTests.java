@@ -32,8 +32,8 @@ import static org.junit.Assert.*;
  * annotation-config or component-scan), and thus will also use {@code <aop:aspectj-autoproxy/>} to enable
  * processing of the Aspect annotation.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  */
 public class ConfigurationClassAspectIntegrationTests {
 

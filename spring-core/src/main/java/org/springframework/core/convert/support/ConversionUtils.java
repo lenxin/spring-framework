@@ -11,8 +11,8 @@ import org.springframework.util.ClassUtils;
 /**
  * Internal utilities for the conversion package.
  *
- * @author Keith Donald
- * @author Stephane Nicoll
+
+
  * @since 3.0
  */
 abstract class ConversionUtils {

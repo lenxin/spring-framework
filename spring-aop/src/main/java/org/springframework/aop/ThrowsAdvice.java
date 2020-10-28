@@ -27,8 +27,8 @@ package org.springframework.aop;
  * <b>Do not throw an undeclared checked exception that is incompatible with
  * the target method's signature!</b>
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see AfterReturningAdvice
  * @see MethodBeforeAdvice
  */

@@ -36,8 +36,8 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  */
 public class JmsListenerAnnotationBeanPostProcessorTests {
 

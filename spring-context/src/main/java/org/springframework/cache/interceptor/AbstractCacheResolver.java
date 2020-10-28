@@ -15,8 +15,8 @@ import org.springframework.util.Assert;
  * implementation to provide the collection of cache name(s) based on the
  * invocation context.
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.1
  */
 public abstract class AbstractCacheResolver implements CacheResolver, InitializingBean {

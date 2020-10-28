@@ -9,8 +9,8 @@ import org.springframework.lang.Nullable;
  * DB2 specific implementation for the {@link CallMetaDataProvider} interface.
  * This class is intended for internal use by the Simple JDBC classes.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.5
  */
 public class Db2CallMetaDataProvider extends GenericCallMetaDataProvider {

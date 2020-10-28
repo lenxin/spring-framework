@@ -16,7 +16,7 @@ import org.springframework.web.server.ServerWebExchange;
  * <p>Note: Does not support {@link #setLocaleContext}, as the fixed locale and
  * time zone cannot be changed.
  *
- * @author Sebastien Deleuze
+
  * @since 5.0
  */
 public class FixedLocaleContextResolver implements LocaleContextResolver {

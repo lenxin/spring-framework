@@ -47,9 +47,9 @@ import static org.mockito.BDDMockito.*;
  *
  * <p>Also see {@link RequestResponseBodyMethodProcessorTests}.
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
+
  */
 public class RequestResponseBodyMethodProcessorMockTests {
 

@@ -16,10 +16,10 @@ import org.springframework.util.StringUtils;
  *
  * <p>Mainly for use within the framework and in particular the binding facility.
  *
- * @author Alef Arendsen
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
+
  * @since 2.0
  * @see #forProperty(String, Class)
  * @see #forField(String, Class)

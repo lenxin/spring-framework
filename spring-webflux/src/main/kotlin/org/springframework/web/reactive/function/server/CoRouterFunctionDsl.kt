@@ -34,7 +34,7 @@ import java.net.URI
  * }
  * ```
  *
- * @author Sebastien Deleuze
+
  * @see router
  * @since 5.2
  */
@@ -44,7 +44,7 @@ fun coRouter(routes: (CoRouterFunctionDsl.() -> Unit)) =
 /**
  * Provide a WebFlux.fn [RouterFunction] Coroutines Kotlin DSL created by [`coRouter { }`][coRouter] in order to be able to write idiomatic Kotlin code.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 class CoRouterFunctionDsl(private val init: (CoRouterFunctionDsl.() -> Unit)) {

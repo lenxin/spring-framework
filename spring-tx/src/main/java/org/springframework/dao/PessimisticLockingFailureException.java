@@ -8,7 +8,7 @@ package org.springframework.dao;
  * <p>Serves as superclass for more specific exceptions, like
  * CannotAcquireLockException and DeadlockLoserDataAccessException.
  *
- * @author Thomas Risberg
+
  * @since 1.2
  * @see CannotAcquireLockException
  * @see DeadlockLoserDataAccessException

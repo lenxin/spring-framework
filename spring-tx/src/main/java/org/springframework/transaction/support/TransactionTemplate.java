@@ -39,7 +39,7 @@ import org.springframework.util.Assert;
  * <p>Supports setting the propagation behavior and the isolation level by name,
  * for convenient configuration in context definitions.
  *
- * @author Juergen Hoeller
+
  * @since 17.03.2003
  * @see #execute
  * @see #setTransactionManager

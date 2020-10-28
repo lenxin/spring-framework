@@ -10,7 +10,7 @@ import javax.management.ObjectName;
  * management interface generation capabilities and, optionally, it's {@link ObjectName}
  * generation capabilities.
  *
- * @author Rob Harrop
+
  * @since 2.0
  * @see MBeanExporter
  */

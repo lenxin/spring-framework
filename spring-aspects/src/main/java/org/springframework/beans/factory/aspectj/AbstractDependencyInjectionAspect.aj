@@ -7,7 +7,7 @@ import org.aspectj.lang.annotation.control.CodeGenerationHint;
  * Abstract base aspect that can perform Dependency
  * Injection on objects, however they may be created.
  *
- * @author Ramnivas Laddad
+
  * @since 2.5.2
  */
 public abstract aspect AbstractDependencyInjectionAspect {

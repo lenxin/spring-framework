@@ -45,7 +45,7 @@ import static org.mockito.Mockito.mock;
 /**
  * Unit tests for {@link ModelInitializer}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ModelInitializerTests {
 

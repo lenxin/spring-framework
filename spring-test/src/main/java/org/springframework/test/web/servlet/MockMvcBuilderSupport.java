@@ -17,9 +17,9 @@ import org.springframework.web.context.WebApplicationContext;
  * which derives from this class, provides a concrete {@code build} method,
  * and delegates to abstract methods to obtain a {@link WebApplicationContext}.
  *
- * @author Rossen Stoyanchev
- * @author Rob Winch
- * @author Stephane Nicoll
+
+
+
  * @since 3.2
  */
 public abstract class MockMvcBuilderSupport {

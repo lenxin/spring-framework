@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the ClassNameBeanWiringInfoResolver class.
  *
- * @author Rick Evans
+
  */
 public class ClassNameBeanWiringInfoResolverTests {
 

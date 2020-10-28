@@ -20,8 +20,8 @@ import org.springframework.util.MimeType;
  * and returning higher level Objects for input and for output, along with
  * methods specify routing and other metadata.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 5.2
  */
 public interface RSocketRequester {

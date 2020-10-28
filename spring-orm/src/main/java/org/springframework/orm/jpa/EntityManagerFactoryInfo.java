@@ -14,8 +14,8 @@ import org.springframework.lang.Nullable;
  * <p>This facility can be obtained from Spring-managed EntityManagerFactory
  * proxies through casting the EntityManagerFactory handle to this interface.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public interface EntityManagerFactoryInfo {

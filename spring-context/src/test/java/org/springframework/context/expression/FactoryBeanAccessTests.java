@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for expressions accessing beans and factory beans.
  *
- * @author Andy Clement
+
  */
 public class FactoryBeanAccessTests {
 

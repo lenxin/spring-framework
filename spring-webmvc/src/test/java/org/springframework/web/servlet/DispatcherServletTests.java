@@ -47,10 +47,10 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Sam Brannen
+
+
+
+
  */
 public class DispatcherServletTests {
 

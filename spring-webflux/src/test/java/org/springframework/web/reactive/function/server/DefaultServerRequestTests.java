@@ -44,7 +44,7 @@ import static org.junit.Assert.*;
 import static org.springframework.web.reactive.function.BodyExtractors.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class DefaultServerRequestTests {
 

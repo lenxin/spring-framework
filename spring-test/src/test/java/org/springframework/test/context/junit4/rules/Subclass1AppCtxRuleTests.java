@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 /**
  * Subclass #1 of {@link BaseAppCtxRuleTests}.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 @ContextConfiguration

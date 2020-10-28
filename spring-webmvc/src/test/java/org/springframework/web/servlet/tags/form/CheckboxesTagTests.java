@@ -34,11 +34,11 @@ import org.springframework.validation.BindingResult;
 import static org.junit.Assert.*;
 
 /**
- * @author Thomas Risberg
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Benjamin Hoffmann
- * @author Jeremy Grelle
+
+
+
+
+
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class CheckboxesTagTests extends AbstractFormTagTests {

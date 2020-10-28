@@ -21,7 +21,7 @@ import org.springframework.transaction.TransactionException;
  *
  * <p><b>NOTE: Spring's JPA support requires JPA 2.1 or higher, as of Spring 5.0.</b>
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see JpaTransactionManager#setJpaDialect
  */

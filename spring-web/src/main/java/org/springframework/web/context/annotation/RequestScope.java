@@ -22,7 +22,7 @@ import org.springframework.web.context.WebApplicationContext;
  * <p>{@code @RequestScope} may be used as a meta-annotation to create custom
  * composed annotations.
  *
- * @author Sam Brannen
+
  * @since 4.3
  * @see SessionScope
  * @see ApplicationScope

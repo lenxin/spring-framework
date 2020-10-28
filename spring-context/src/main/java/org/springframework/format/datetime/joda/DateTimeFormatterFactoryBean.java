@@ -10,8 +10,8 @@ import org.springframework.lang.Nullable;
  * {@link FactoryBean} that creates a Joda-Time {@link DateTimeFormatter}.
  * See the {@link DateTimeFormatterFactory base class} for configuration details.
  *
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  * @since 3.2
  * @see #setPattern
  * @see #setIso

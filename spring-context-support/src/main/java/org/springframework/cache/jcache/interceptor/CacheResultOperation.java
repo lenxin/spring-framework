@@ -12,7 +12,7 @@ import org.springframework.util.StringUtils;
 /**
  * The {@link JCacheOperation} implementation for a {@link CacheResult} operation.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @see CacheResult
  */

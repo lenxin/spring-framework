@@ -32,10 +32,10 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link ResourceHttpRequestHandler}.
  *
- * @author Keith Donald
- * @author Jeremy Grelle
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
+
+
  */
 public class ResourceHttpRequestHandlerTests {
 

@@ -21,8 +21,8 @@ import org.springframework.web.context.WebApplicationContext;
  * <p>The default is to use {@link MockMvc} for requests to {@code localhost}
  * and otherwise use a real {@link WebConnection}.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  * @param <T> a self reference to the builder type
  */

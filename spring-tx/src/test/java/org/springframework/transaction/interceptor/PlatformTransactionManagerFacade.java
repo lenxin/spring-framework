@@ -12,7 +12,7 @@ import org.springframework.transaction.TransactionStatus;
  * <p>Allows behavior of an entire class to change with static delegate change.
  * Not multi-threaded.
  *
- * @author Rod Johnson
+
  * @since 26.04.2003
  */
 public class PlatformTransactionManagerFacade implements PlatformTransactionManager {

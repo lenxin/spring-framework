@@ -21,7 +21,7 @@ import org.springframework.util.CollectionUtils;
  * Base class for any class that needs to access a JPA {@link EntityManagerFactory},
  * usually in order to obtain a JPA {@link EntityManager}. Defines common properties.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see EntityManagerFactoryUtils
  */

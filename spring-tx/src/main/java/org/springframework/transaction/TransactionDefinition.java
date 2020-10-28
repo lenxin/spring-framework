@@ -19,7 +19,7 @@ import org.springframework.lang.Nullable;
  * at the resource level. In the latter case, the flag will only apply to managed
  * resources within the application, such as a Hibernate {@code Session}.
  *
- * @author Juergen Hoeller
+
  * @since 08.05.2003
  * @see PlatformTransactionManager#getTransaction(TransactionDefinition)
  * @see org.springframework.transaction.support.DefaultTransactionDefinition

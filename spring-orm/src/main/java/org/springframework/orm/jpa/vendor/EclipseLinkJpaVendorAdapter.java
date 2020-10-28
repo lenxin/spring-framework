@@ -23,8 +23,8 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.orm.jpa.persistenceunit.SmartPersistenceUnitInfo#getManagedPackages()})
  * since EclipseLink doesn't use package-level metadata.
  *
- * @author Juergen Hoeller
- * @author Thomas Risberg
+
+
  * @since 2.5.2
  * @see EclipseLinkJpaDialect
  * @see org.eclipse.persistence.jpa.PersistenceProvider

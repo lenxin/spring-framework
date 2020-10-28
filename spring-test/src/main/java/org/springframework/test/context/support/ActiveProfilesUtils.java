@@ -26,8 +26,8 @@ import org.springframework.util.StringUtils;
  * 4.1, the initial implementations of methods in this class were based on the
  * existing code base in {@code ContextLoaderUtils}.
  *
- * @author Sam Brannen
- * @author Michail Nikolaev
+
+
  * @since 4.1
  * @see ActiveProfiles
  * @see ActiveProfilesResolver

@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * the Spring TestContext Framework in conjunction with the
  * {@link DelegatingSmartContextLoader}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

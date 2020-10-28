@@ -11,8 +11,8 @@ import javax.servlet.jsp.PageContext;
  * '{@code person.name2}'. This supports the common use case where a set of radio or check buttons
  * are generated for the same data field, with each button being a distinct tag instance.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 abstract class TagIdGenerator {

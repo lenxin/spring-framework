@@ -18,7 +18,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class ToStringVisitorTests {
 

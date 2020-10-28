@@ -15,7 +15,7 @@ import java.util.*
 /**
  * Tests for WebMvc.fn [ServerRequest] extensions.
  *
- * @author Sebastien Deleuze
+
  */
 class ServerRequestExtensionsTests {
 

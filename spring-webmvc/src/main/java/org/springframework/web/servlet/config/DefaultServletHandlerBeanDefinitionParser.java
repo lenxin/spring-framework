@@ -22,8 +22,8 @@ import org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler
  * {@link SimpleUrlHandlerMapping} for mapping resource requests, and a
  * {@link HttpRequestHandlerAdapter}.
  *
- * @author Jeremy Grelle
- * @author Rossen Stoyanchev
+
+
  * @since 3.0.4
  */
 class DefaultServletHandlerBeanDefinitionParser implements BeanDefinitionParser {

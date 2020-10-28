@@ -21,7 +21,7 @@ import org.springframework.beans.factory.getBean
 import org.springframework.context.support.ClassPathXmlApplicationContext
 
 /**
- * @author Sebastien Deleuze
+
  */
 class Spr16022Tests {
 

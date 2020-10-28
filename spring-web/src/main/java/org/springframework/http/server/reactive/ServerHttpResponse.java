@@ -9,8 +9,8 @@ import org.springframework.util.MultiValueMap;
 /**
  * Represents a reactive server-side HTTP response.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 public interface ServerHttpResponse extends ReactiveHttpOutputMessage {

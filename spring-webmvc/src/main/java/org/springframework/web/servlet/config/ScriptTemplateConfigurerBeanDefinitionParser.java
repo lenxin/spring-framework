@@ -17,7 +17,7 @@ import org.springframework.util.xml.DomUtils;
  * Parse the <code>&lt;mvc:script-template-configurer&gt;</code> MVC namespace element and
  * register a {@code ScriptTemplateConfigurer} bean.
  *
- * @author Sebastien Deleuze
+
  * @since 4.2
  */
 public class ScriptTemplateConfigurerBeanDefinitionParser extends AbstractSimpleBeanDefinitionParser {

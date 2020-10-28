@@ -18,7 +18,7 @@ import org.springframework.util.Assert;
  * but it can also be manually enabled via the
  * {@link TestExecutionListeners @TestExecutionListeners} annotation.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see TransactionalTestExecutionListener
  */

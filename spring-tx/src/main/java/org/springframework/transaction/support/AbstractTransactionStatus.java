@@ -18,7 +18,7 @@ import org.springframework.transaction.TransactionUsageException;
  * <p>Does not assume any specific internal transaction handling, such as an
  * underlying transaction object, and no transaction synchronization mechanism.
  *
- * @author Juergen Hoeller
+
  * @since 1.2.3
  * @see #setRollbackOnly()
  * @see #isRollbackOnly()

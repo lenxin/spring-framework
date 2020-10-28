@@ -24,7 +24,7 @@ import org.springframework.lang.Nullable;
  * jdbcTemplate.query("select * from user", countCallback);
  * int rowCount = countCallback.getRowCount();</pre>
  *
- * @author Rod Johnson
+
  * @since May 3, 2001
  */
 public class RowCountCallbackHandler implements RowCallbackHandler {

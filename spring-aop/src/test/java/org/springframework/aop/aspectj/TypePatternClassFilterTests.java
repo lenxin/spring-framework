@@ -15,9 +15,9 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the {@link TypePatternClassFilter} class.
  *
- * @author Rod Johnson
- * @author Rick Evans
- * @author Chris Beams
+
+
+
  */
 public class TypePatternClassFilterTests {
 

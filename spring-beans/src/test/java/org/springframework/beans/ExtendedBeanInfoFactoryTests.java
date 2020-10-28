@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link ExtendedBeanInfoTests}.
  *
- * @author Chris Beams
+
  */
 public class ExtendedBeanInfoFactoryTests {
 

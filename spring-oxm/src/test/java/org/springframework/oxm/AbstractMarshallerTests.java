@@ -25,8 +25,8 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
  */
 public abstract class AbstractMarshallerTests<M extends Marshaller> {
 

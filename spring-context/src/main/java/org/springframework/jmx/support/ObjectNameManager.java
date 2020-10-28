@@ -7,8 +7,8 @@ import javax.management.ObjectName;
 /**
  * Helper class for the creation of {@link javax.management.ObjectName} instances.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see javax.management.ObjectName#getInstance(String)
  */

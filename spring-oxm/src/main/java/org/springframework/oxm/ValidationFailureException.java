@@ -3,7 +3,7 @@ package org.springframework.oxm;
 /**
  * Exception thrown on marshalling validation failure.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

@@ -13,8 +13,8 @@ import org.springframework.lang.Nullable;
  * <li>% ThreadLocalTargetSource
  * <li>! PrototypeTargetSource
  *
- * @author Rod Johnson
- * @author Stephane Nicoll
+
+
  * @see org.springframework.aop.target.CommonsPool2TargetSource
  * @see org.springframework.aop.target.ThreadLocalTargetSource
  * @see org.springframework.aop.target.PrototypeTargetSource

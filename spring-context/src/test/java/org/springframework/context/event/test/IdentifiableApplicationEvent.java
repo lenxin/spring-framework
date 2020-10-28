@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationEvent;
 /**
  * A basic test event that can be uniquely identified easily.
  *
- * @author Stephane Nicoll
+
  */
 @SuppressWarnings("serial")
 public abstract class IdentifiableApplicationEvent extends ApplicationEvent implements Identifiable {

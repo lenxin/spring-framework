@@ -5,7 +5,7 @@ import java.util.Optional;
 /**
  * Represents a function that routes to a {@linkplain HandlerFunction handler function}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  * @param <T> the type of the {@linkplain HandlerFunction handler function} to route to
  * @see RouterFunctions

@@ -19,7 +19,7 @@ import org.springframework.web.server.i18n.LocaleContextResolver;
 /**
  * Default implementation of {@link HandlerStrategies.Builder}.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 class DefaultHandlerStrategiesBuilder implements HandlerStrategies.Builder {

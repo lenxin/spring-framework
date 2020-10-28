@@ -21,7 +21,7 @@ import org.springframework.util.Assert;
  *
  * <p>Compatible with Jackson 2.9 and higher, as of Spring 5.0.
  *
- * @author Sebastien Deleuze
+
  * @since 4.1
  */
 public class MappingJackson2XmlHttpMessageConverter extends AbstractJackson2HttpMessageConverter {

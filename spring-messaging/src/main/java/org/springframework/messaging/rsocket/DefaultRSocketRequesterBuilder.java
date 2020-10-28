@@ -17,7 +17,7 @@ import org.springframework.util.MimeType;
 /**
  * Default implementation of {@link RSocketRequester.Builder}.
  *
- * @author Brian Clozel
+
  * @since 5.2
  */
 final class DefaultRSocketRequesterBuilder implements RSocketRequester.Builder {

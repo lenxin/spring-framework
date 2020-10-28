@@ -5,8 +5,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Brian Hanafee
- * @author Sam Brannen
+
+
  * @since 09.07.2005
  */
 public class InternetAddressEditorTests {

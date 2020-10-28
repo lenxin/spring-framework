@@ -41,7 +41,7 @@ import org.springframework.test.context.transaction.programmatic.ProgrammaticTxM
  * run from an automated build process, test runner, etc. that is not configured
  * to exclude tests based on a {@code "*TestSuite.class"} pattern match.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 @RunWith(Suite.class)

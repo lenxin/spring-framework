@@ -21,7 +21,7 @@ import org.springframework.util.Assert;
  * in Spring Framework 4.1, the initial implementations of methods in this class
  * were based on the existing code base in {@code ContextLoaderUtils}.
  *
- * @author Sam Brannen
+
  * @since 4.1
  * @see ContextConfiguration#initializers
  */

@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * Integration test that verifies meta-annotation support for {@link WebAppConfiguration}
  * and {@link ContextConfiguration}.
  *
- * @author Sam Brannen
+
  * @since 4.0
  * @see WebTestConfiguration
  */

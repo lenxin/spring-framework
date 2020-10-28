@@ -89,7 +89,7 @@ import org.springframework.util.StringUtils;
  *
  * <p>This class is serializable. However, active synchronizations do not survive serialization.
  *
- * @author Juergen Hoeller
+
  * @since 24.03.2003
  * @see javax.transaction.UserTransaction
  * @see javax.transaction.TransactionManager

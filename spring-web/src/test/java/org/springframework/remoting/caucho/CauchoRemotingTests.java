@@ -18,8 +18,8 @@ import org.springframework.util.SocketUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  * @since 16.05.2003
  */
 public class CauchoRemotingTests {

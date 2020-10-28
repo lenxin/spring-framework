@@ -35,9 +35,9 @@ import org.springframework.validation.DataBinder;
 import static org.junit.Assert.*;
 
 /**
- * @author Keith Donald
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  */
 public class DateTimeFormattingTests {
 

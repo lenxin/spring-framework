@@ -8,7 +8,7 @@ import javax.management.MBeanServerFactory;
 /**
  * Utilities for MBean tests.
  *
- * @author Phillip Webb
+
  */
 public class MBeanTestUtils {
 

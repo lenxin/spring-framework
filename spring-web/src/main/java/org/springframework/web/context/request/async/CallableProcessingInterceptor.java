@@ -23,8 +23,8 @@ import org.springframework.web.context.request.NativeWebRequest;
  * <p>The {@link #handleTimeout(NativeWebRequest, Callable) handleTimeout} method
  * can select a value to be used to resume processing.
  *
- * @author Rossen Stoyanchev
- * @author Rob Winch
+
+
  * @since 3.2
  */
 public interface CallableProcessingInterceptor {

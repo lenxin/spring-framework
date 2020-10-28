@@ -28,7 +28,7 @@ import static org.springframework.test.annotation.DirtiesContext.MethodMode.*;
  * {@link DirtiesContextTestExecutionListener} when
  * {@link DirtiesContext @DirtiesContext} is used at the method level.
  *
- * @author Sam Brannen
+
  * @since 4.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

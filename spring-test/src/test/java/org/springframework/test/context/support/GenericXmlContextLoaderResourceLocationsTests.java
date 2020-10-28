@@ -27,7 +27,7 @@ import static org.junit.Assert.*;
  * target="_blank">SPR-3949</a>:
  * <em>ContextConfiguration annotation should accept not only classpath resources</em>.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 @RunWith(Parameterized.class)

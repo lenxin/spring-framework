@@ -28,8 +28,8 @@ import org.springframework.util.ReflectionUtils;
  * <p>Functions are very simplistic. The arguments are not part of the definition
  * (right now), so the names must be unique.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class FunctionReference extends SpelNodeImpl {

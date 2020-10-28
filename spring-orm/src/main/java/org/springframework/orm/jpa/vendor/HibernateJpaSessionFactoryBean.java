@@ -39,7 +39,7 @@ import org.springframework.util.ReflectionUtils;
  * original factory and your custom {@code SessionFactory} matching {@code EntityManagerFactory}.
  * An explicit qualifier for the original factory (as indicated above) is recommended here.
  *
- * @author Juergen Hoeller
+
  * @since 3.1
  * @see #setPersistenceUnitName
  * @see #setEntityManagerFactory

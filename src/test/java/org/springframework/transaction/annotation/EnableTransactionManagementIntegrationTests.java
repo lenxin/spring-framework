@@ -33,8 +33,8 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for the @EnableTransactionManagement annotation.
  *
- * @author Chris Beams
- * @author Sam Brannen
+
+
  * @since 3.1
  */
 @SuppressWarnings("resource")

@@ -17,8 +17,8 @@ import org.springframework.util.Assert;
  * <p>This facilitates in-memory sorting similar to multi-column sorting in SQL.
  * The order of any single Comparator in the list can also be reversed.
  *
- * @author Keith Donald
- * @author Juergen Hoeller
+
+
  * @since 1.2.2
  * @param <T> the type of objects that may be compared by this comparator
  * @deprecated as of Spring Framework 5.0, in favor of the standard JDK 8

@@ -24,8 +24,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AbstractHandlerMethodMapping}.
  *
- * @author Rossen Stoyanchev
- * @author Sam Brannen
+
+
  */
 public class HandlerMethodMappingTests {
 

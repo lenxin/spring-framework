@@ -22,7 +22,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 /**
  * Unit tests for {@link Jackson2SmileDecoder}.
  *
- * @author Sebastien Deleuze
+
  */
 public class Jackson2SmileDecoderTests extends AbstractDecoderTestCase<Jackson2SmileDecoder> {
 

@@ -12,7 +12,7 @@ import org.springframework.http.HttpMethod;
  * Implementation of {@link RouterFunctions.Visitor} that creates a formatted
  * string representation of router functions.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 class ToStringVisitor implements RouterFunctions.Visitor, RequestPredicates.Visitor {

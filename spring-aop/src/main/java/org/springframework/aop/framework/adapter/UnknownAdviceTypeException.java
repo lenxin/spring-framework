@@ -4,8 +4,8 @@ package org.springframework.aop.framework.adapter;
  * Exception thrown when an attempt is made to use an unsupported
  * Advisor or Advice type.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.aopalliance.aop.Advice
  * @see org.springframework.aop.Advisor
  */

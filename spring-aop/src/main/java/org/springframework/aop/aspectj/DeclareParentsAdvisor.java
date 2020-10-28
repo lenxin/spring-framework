@@ -13,8 +13,8 @@ import org.springframework.aop.support.DelegatingIntroductionInterceptor;
  * Introduction advisor delegating to the given object.
  * Implements AspectJ annotation-style behavior for the DeclareParents annotation.
  *
- * @author Rod Johnson
- * @author Ramnivas Laddad
+
+
  * @since 2.0
  */
 public class DeclareParentsAdvisor implements IntroductionAdvisor {

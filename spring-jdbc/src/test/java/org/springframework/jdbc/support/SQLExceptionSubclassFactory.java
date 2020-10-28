@@ -15,7 +15,7 @@ import java.sql.SQLTransientConnectionException;
 /**
  * Class to generate Java 6 SQLException subclasses for testing purposes.
  *
- * @author Thomas Risberg
+
  */
 public class SQLExceptionSubclassFactory {
 

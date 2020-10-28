@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  * performing the actual cache put operation only in the after-commit phase of a successful transaction.
  * If no transaction is active, {@link Cache#put} operations will be performed immediately, as usual.
  *
- * @author Juergen Hoeller
+
  * @since 3.2
  * @see #setTargetCacheManager
  * @see TransactionAwareCacheDecorator

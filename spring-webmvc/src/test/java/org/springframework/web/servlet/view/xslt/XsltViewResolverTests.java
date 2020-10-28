@@ -24,7 +24,7 @@ import org.springframework.context.support.StaticApplicationContext;
 import org.springframework.util.ClassUtils;
 
 /**
- * @author Rob Harrop
+
  * @since 2.0
  */
 public class XsltViewResolverTests {

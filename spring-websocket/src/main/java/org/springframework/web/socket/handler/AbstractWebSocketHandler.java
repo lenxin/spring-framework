@@ -11,8 +11,8 @@ import org.springframework.web.socket.WebSocketSession;
 /**
  * A convenient base class for {@link WebSocketHandler} implementation with empty methods.
  *
- * @author Rossen Stoyanchev
- * @author Phillip Webb
+
+
  * @since 4.0
  */
 public abstract class AbstractWebSocketHandler implements WebSocketHandler {

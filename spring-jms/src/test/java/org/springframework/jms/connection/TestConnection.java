@@ -11,7 +11,7 @@ import javax.jms.Session;
 import javax.jms.Topic;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class TestConnection implements Connection {
 

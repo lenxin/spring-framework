@@ -11,7 +11,7 @@ import org.springframework.web.socket.sockjs.transport.TransportType;
 /**
  * A {@link TransportHandler} that receives messages over HTTP.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public class XhrReceivingTransportHandler extends AbstractHttpReceivingTransportHandler {

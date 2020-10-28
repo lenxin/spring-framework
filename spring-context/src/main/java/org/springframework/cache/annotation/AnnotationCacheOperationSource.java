@@ -23,9 +23,9 @@ import org.springframework.util.Assert;
  * infrastructure. This class may also serve as base class for a custom
  * {@code CacheOperationSource}.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 3.1
  */
 @SuppressWarnings("serial")

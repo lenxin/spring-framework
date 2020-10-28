@@ -6,8 +6,8 @@ import org.springframework.util.ObjectUtils;
 /**
  * JUnit independent assertion class.
  *
- * @author Lukas Krecan
- * @author Arjen Poutsma
+
+
  * @since 3.2
  */
 public abstract class AssertionErrors {

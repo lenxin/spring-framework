@@ -26,7 +26,7 @@ import static org.springframework.test.transaction.TransactionTestUtils.*;
  * <a href="https://jira.spring.io/browse/SPR-9051" target="_blank">SPR-9051</a>
  * with regard to transactional tests.
  *
- * @author Sam Brannen
+
  * @since 3.2
  * @see org.springframework.test.context.testng.AnnotationConfigTransactionalTestNGSpringContextTests
  */

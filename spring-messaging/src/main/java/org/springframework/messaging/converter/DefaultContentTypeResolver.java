@@ -11,7 +11,7 @@ import org.springframework.util.MimeType;
  * <p>The header value is expected to be a {@link org.springframework.util.MimeType}
  * or a {@code String} that can be parsed into a {@code MimeType}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public class DefaultContentTypeResolver implements ContentTypeResolver {

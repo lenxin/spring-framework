@@ -1,7 +1,7 @@
 package org.springframework.context.conversionservice;
 
 /**
- * @author Keith Donald
+
  */
 public class Bar {
 

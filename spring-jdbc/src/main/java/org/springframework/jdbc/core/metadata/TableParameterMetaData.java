@@ -3,7 +3,7 @@ package org.springframework.jdbc.core.metadata;
 /**
  * Holder of meta-data for a specific parameter that is used for table processing.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  * @see GenericTableMetaDataProvider
  */

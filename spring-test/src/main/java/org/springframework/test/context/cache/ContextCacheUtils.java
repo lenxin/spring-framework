@@ -6,7 +6,7 @@ import org.springframework.util.StringUtils;
 /**
  * Collection of utilities for working with {@link ContextCache ContextCaches}.
  *
- * @author Sam Brannen
+
  * @since 4.3
  */
 public abstract class ContextCacheUtils {

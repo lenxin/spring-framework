@@ -22,8 +22,8 @@ import org.springframework.lang.Nullable;
  * is invoked by this class ONLY when a particular invocation SHOULD be traced.
  * Subclasses should write to the {@code Log} instance provided.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #setUseDynamicLogger
  * @see #invokeUnderTrace(org.aopalliance.intercept.MethodInvocation, org.apache.commons.logging.Log)

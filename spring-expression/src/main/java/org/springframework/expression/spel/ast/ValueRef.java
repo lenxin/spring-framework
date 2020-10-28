@@ -13,7 +13,7 @@ import org.springframework.lang.Nullable;
  * twice (once to get the value, once to determine where the value goes) and that would
  * double increment index.
  *
- * @author Andy Clement
+
  * @since 3.2
  */
 public interface ValueRef {

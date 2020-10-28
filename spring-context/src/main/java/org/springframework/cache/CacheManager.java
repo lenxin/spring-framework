@@ -8,7 +8,7 @@ import java.util.Collection;
  * Spring's central cache manager SPI.
  * Allows for retrieving named {@link Cache} regions.
  *
- * @author Costin Leau
+
  * @since 3.1
  */
 public interface CacheManager {

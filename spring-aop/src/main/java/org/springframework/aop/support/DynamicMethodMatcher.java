@@ -8,7 +8,7 @@ import org.springframework.aop.MethodMatcher;
  * Convenient abstract superclass for dynamic method matchers,
  * which do care about arguments at runtime.
  *
- * @author Rod Johnson
+
  */
 public abstract class DynamicMethodMatcher implements MethodMatcher {
 

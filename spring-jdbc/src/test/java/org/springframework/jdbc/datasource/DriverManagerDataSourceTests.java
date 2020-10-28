@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rod Johnson
+
  */
 public class DriverManagerDataSourceTests {
 

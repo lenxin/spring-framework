@@ -36,7 +36,7 @@ import org.springframework.util.ClassUtils;
  * {@link AbstractMessageListenerContainer} subclass. For a concrete listener
  * invoker mechanism, check out the {@link DefaultMessageListenerContainer} class.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.3
  * @see #sharedConnectionEnabled()
  * @see #doInitialize()

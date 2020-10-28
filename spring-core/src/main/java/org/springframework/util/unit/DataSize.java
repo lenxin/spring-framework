@@ -12,7 +12,7 @@ import org.springframework.util.StringUtils;
  *
  * <p>This class models a size in terms of bytes and is immutable and thread-safe.
  *
- * @author Stephane Nicoll
+
  * @since 5.1
  */
 public final class DataSize implements Comparable<DataSize> {

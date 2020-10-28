@@ -25,7 +25,7 @@ import org.springframework.util.StreamUtils;
 /**
  * Encoder for {@link ResourceRegion ResourceRegions}.
  *
- * @author Brian Clozel
+
  * @since 5.0
  */
 public class ResourceRegionEncoder extends AbstractEncoder<ResourceRegion> {

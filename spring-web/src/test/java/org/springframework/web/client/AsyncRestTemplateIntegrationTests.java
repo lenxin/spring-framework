@@ -35,8 +35,8 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
+
+
  */
 @SuppressWarnings("deprecation")
 public class AsyncRestTemplateIntegrationTests extends AbstractMockWebServerTestCase {

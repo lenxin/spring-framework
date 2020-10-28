@@ -15,7 +15,7 @@ import javax.websocket.server.ServerEndpointConfig;
 /**
  * Mock implementation of the {@link javax.websocket.server.ServerContainer} interface.
  *
- * @author Sam Brannen
+
  * @since 4.3.1
  */
 class MockServerContainer implements ServerContainer {

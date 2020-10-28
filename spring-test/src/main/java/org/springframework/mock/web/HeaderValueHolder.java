@@ -14,8 +14,8 @@ import org.springframework.util.CollectionUtils;
 /**
  * Internal helper class that serves as value holder for request headers.
  *
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
  * @since 2.0.1
  */
 class HeaderValueHolder {

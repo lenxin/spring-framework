@@ -84,10 +84,10 @@ import org.springframework.transaction.PlatformTransactionManager;
  *   &lt;property name="target" ref="yourTarget"/&gt;
  * &lt;/bean&gt;</pre>
  *
- * @author Juergen Hoeller
- * @author Dmitriy Kopylenko
- * @author Rod Johnson
- * @author Chris Beams
+
+
+
+
  * @since 21.08.2003
  * @see #setTransactionManager
  * @see #setTarget

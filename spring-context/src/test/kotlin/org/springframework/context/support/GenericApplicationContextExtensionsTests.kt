@@ -7,7 +7,7 @@ import org.springframework.beans.factory.getBean
 /**
  * Tests for [GenericApplicationContext] Kotlin extensions
  *
- * @author Sebastien Deleuze
+
  */
 class GenericApplicationContextExtensionsTests {
 

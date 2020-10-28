@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 import static org.springframework.core.ResolvableType.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class ResourceDecoderTests extends AbstractDecoderTestCase<ResourceDecoder> {
 

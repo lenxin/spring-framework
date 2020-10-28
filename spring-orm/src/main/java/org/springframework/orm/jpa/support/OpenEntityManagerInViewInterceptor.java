@@ -33,7 +33,7 @@ import org.springframework.web.context.request.async.WebAsyncUtils;
  * <p>In contrast to {@link OpenEntityManagerInViewFilter}, this interceptor is set
  * up in a Spring application context and can thus take advantage of bean wiring.
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see OpenEntityManagerInViewFilter
  * @see org.springframework.orm.jpa.JpaTransactionManager

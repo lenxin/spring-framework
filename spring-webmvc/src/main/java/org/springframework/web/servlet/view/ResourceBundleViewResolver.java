@@ -38,8 +38,8 @@ import org.springframework.web.servlet.View;
  * (giving it 0 as "order" value), while all remaining views could be resolved by
  * a {@link UrlBasedViewResolver}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see java.util.ResourceBundle#getBundle
  * @see java.util.PropertyResourceBundle
  * @see UrlBasedViewResolver

@@ -30,7 +30,7 @@ import static org.junit.Assert.*;
 /**
  * Test case for {@link AbstractContextLoaderInitializer}.
  *
- * @author Arjen Poutsma
+
  */
 public class ContextLoaderInitializerTests {
 

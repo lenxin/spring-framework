@@ -56,12 +56,12 @@ import org.springframework.util.function.SupplierUtils;
  * <p>Note: A cache aspect is serializable but does not perform any actual caching
  * after deserialization.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Phillip Webb
- * @author Sam Brannen
- * @author Stephane Nicoll
+
+
+
+
+
+
  * @since 3.1
  */
 public abstract class CacheAspectSupport extends AbstractCacheInvoker

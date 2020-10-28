@@ -34,7 +34,7 @@ import org.springframework.util.MimeType;
 
 /**
  * Test scenarios for data buffer leaks.
- * @author Rossen Stoyanchev
+
  */
 public class CancelWithoutDemandCodecTests {
 

@@ -9,7 +9,7 @@ package org.springframework.jms.listener;
  * {@link SessionAwareMessageListener} objects and plain listener methods
  * (as supported by {@link org.springframework.jms.listener.adapter.MessageListenerAdapter}.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.6
  */
 public interface SubscriptionNameProvider {

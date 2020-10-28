@@ -10,8 +10,8 @@ import org.springframework.beans.BeansException;
  * <p>Obtains bean instances from its containing
  * {@link org.springframework.beans.factory.BeanFactory}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see #setBeanFactory
  * @see #setTargetBeanName
  */

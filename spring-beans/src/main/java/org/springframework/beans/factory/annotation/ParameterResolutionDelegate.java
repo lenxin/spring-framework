@@ -20,8 +20,8 @@ import org.springframework.util.ClassUtils;
  * Public delegate for resolving autowirable parameters on externally managed
  * constructors and methods.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
+
+
  * @since 5.2
  * @see #isAutowirable
  * @see #resolveDependency

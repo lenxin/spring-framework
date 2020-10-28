@@ -12,10 +12,10 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for the various {@link TransactionAttributeSource} implementations.
  *
- * @author Colin Sampaleanu
- * @author Juergen Hoeller
- * @author Rick Evans
- * @author Chris Beams
+
+
+
+
  * @since 15.10.2003
  * @see org.springframework.transaction.interceptor.TransactionProxyFactoryBean
  */

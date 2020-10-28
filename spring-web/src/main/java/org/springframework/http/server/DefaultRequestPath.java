@@ -9,7 +9,7 @@ import org.springframework.util.StringUtils;
 /**
  * Default implementation of {@link RequestPath}.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 class DefaultRequestPath implements RequestPath {

@@ -55,7 +55,7 @@ import javax.servlet.ServletContext;
  * application context might allow for configuration in custom startup code
  * (for example, {@link org.springframework.context.support.GenericApplicationContext}).
  *
- * @author Juergen Hoeller
+
  * @see #loadBeanDefinitions
  * @see org.springframework.web.context.ConfigurableWebApplicationContext#setConfigLocations
  * @see org.springframework.ui.context.ThemeSource

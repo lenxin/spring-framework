@@ -28,7 +28,7 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for WebSocket Java server-side configuration.
  *
- * @author Rossen Stoyanchev
+
  */
 @RunWith(Parameterized.class)
 public class WebSocketConfigurationTests extends AbstractWebSocketIntegrationTests {

@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * <p>Please do consult the javadoc for the {@link RequiredAnnotationBeanPostProcessor}
  * class (which, by default, checks for the presence of this annotation).
  *
- * @author Rob Harrop
+
  * @since 2.0
  * @see RequiredAnnotationBeanPostProcessor
  * @deprecated as of 5.1, in favor of using constructor injection for required settings

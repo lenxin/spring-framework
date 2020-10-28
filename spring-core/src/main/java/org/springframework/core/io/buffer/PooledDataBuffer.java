@@ -4,7 +4,7 @@ package org.springframework.core.io.buffer;
  * Extension of {@link DataBuffer} that allows for buffer that share
  * a memory pool. Introduces methods for reference counting.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public interface PooledDataBuffer extends DataBuffer {

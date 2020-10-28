@@ -24,7 +24,7 @@ import static org.junit.Assume.*;
  * {@link org.junit.AfterClass @AfterClass} and {@link org.junit.After @After}.
  * </p>
  *
- * @author Sam Brannen
+
  * @since 2.5
  * @see StandardJUnit4FeaturesSpringRunnerTests
  */

@@ -22,7 +22,7 @@ import org.springframework.util.Assert;
  * as RSocket payloads and by passing those to the {@link MonoProcessor}
  * from the {@link #RESPONSE_HEADER} header.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  */
 public class RSocketPayloadReturnValueHandler extends AbstractEncoderMethodReturnValueHandler {

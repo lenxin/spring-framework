@@ -9,8 +9,8 @@ import reactor.core.publisher.Mono;
  * Specialization of {@link Part} that represents an uploaded file received in
  * a multipart request.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 5.0
  */
 public interface FilePart extends Part {

@@ -16,7 +16,7 @@
 
 /**
  *
- * @author Andy Clement
+
  * @since 4.1.2
  */
 public class PersonInOtherPackage {

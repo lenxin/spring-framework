@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
  * Exception thrown if a mapped object could not be retrieved via its identifier.
  * Provides information about the persistent class and the identifier.
  *
- * @author Juergen Hoeller
+
  * @since 13.10.2003
  */
 @SuppressWarnings("serial")

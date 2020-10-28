@@ -28,10 +28,10 @@ import static org.junit.Assert.*;
 /**
  * Tests demonstrating use of @EnableTransactionManagement @Configuration classes.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Stephane Nicoll
- * @author Sam Brannen
+
+
+
+
  * @since 3.1
  */
 public class EnableTransactionManagementTests {

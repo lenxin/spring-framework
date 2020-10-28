@@ -22,9 +22,9 @@ import org.springframework.util.MultiValueMap;
  * to {@link java.net.URI}, but with more powerful encoding options and support for
  * URI template variables.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
+
  * @since 3.1
  * @see UriComponentsBuilder
  */

@@ -37,8 +37,8 @@ import org.springframework.util.ReflectionUtils;
  *
  * <p>See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=151593">Bug 151593</a>
  *
- * @author Adrian Colyer
- * @author Ramnivas Laddad
+
+
  * @since 2.0
  */
 class RuntimeTestWalker {

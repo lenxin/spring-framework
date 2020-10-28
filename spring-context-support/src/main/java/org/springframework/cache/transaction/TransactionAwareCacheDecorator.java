@@ -18,9 +18,9 @@ import org.springframework.util.Assert;
  * <p>Use of more aggressive operations such as {@link #putIfAbsent} cannot be deferred
  * to the after-commit phase of a running transaction. Use these with care.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
- * @author Stas Volsky
+
+
+
  * @since 3.2
  * @see TransactionAwareCacheManagerProxy
  */

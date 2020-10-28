@@ -30,7 +30,7 @@ import org.springframework.web.servlet.handler.AbstractHandlerMapping;
  * all router functions in the application context, and consult them in
  * {@linkplain org.springframework.core.annotation.Order order}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 public class RouterFunctionMapping extends AbstractHandlerMapping implements InitializingBean {

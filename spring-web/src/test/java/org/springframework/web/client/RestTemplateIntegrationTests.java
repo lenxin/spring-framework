@@ -45,8 +45,8 @@ import static org.junit.Assert.*;
 import static org.springframework.http.HttpMethod.POST;
 
 /**
- * @author Arjen Poutsma
- * @author Brian Clozel
+
+
  */
 @RunWith(Parameterized.class)
 public class RestTemplateIntegrationTests extends AbstractMockWebServerTestCase {

@@ -26,9 +26,9 @@ import static org.mockito.BDDMockito.any;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Arjen Poutsma
- * @author Kazuki Shimizu
- * @author Brian Clozel
+
+
+
  */
 public class ResourceHttpMessageConverterTests {
 

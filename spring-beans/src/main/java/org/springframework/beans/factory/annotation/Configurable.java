@@ -12,10 +12,10 @@ import java.lang.annotation.Target;
  *
  * <p>Typically used with the AspectJ {@code AnnotationBeanConfigurerAspect}.
  *
- * @author Rod Johnson
- * @author Rob Harrop
- * @author Adrian Colyer
- * @author Ramnivas Laddad
+
+
+
+
  * @since 2.0
  */
 @Target(ElementType.TYPE)

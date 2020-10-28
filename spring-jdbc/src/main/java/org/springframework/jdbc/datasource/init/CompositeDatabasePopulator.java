@@ -11,10 +11,10 @@ import java.util.List;
  * Composite {@link DatabasePopulator} that delegates to a list of given
  * {@code DatabasePopulator} implementations, executing all scripts.
  *
- * @author Dave Syer
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Kazuki Shimizu
+
+
+
+
  * @since 3.1
  */
 public class CompositeDatabasePopulator implements DatabasePopulator {

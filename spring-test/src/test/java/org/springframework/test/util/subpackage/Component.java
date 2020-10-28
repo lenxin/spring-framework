@@ -11,7 +11,7 @@ import org.springframework.util.StringUtils;
  * Simple POJO representing a <em>component</em>; intended for use in
  * unit tests.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 public class Component {

@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * not provide that return type, this handler can be used to manage such
  * uncaught exceptions.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 @FunctionalInterface

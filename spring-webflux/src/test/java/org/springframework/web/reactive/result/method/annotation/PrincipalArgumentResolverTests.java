@@ -33,7 +33,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * Unit tests for {@link PrincipalArgumentResolver}.
- * @author Rossen Stoyanchev
+
  */
 public class PrincipalArgumentResolverTests {
 

@@ -40,9 +40,9 @@ import org.springframework.util.CollectionUtils;
  * discussion in the JPA spec document. This is also the default being used
  * for the annotation-based {@link javax.persistence.PersistenceContext#type()}.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
- * @author Oliver Gierke
+
+
+
  * @since 2.0
  * @see javax.persistence.PersistenceContext
  * @see javax.persistence.PersistenceContextType#TRANSACTION

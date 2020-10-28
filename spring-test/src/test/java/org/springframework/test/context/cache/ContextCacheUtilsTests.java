@@ -13,7 +13,7 @@ import static org.springframework.test.context.cache.ContextCache.*;
 /**
  * Unit tests for {@link ContextCacheUtils}.
  *
- * @author Sam Brannen
+
  * @since 4.3
  */
 public class ContextCacheUtilsTests {

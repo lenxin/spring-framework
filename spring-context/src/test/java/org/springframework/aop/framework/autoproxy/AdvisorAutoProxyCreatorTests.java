@@ -28,9 +28,9 @@ import static org.junit.Assert.*;
  *
  * @see org.springframework.aop.framework.autoproxy.AdvisorAutoProxyCreatorIntegrationTests
  *
- * @author Rod Johnson
- * @author Dave Syer
- * @author Chris Beams
+
+
+
  */
 @SuppressWarnings("resource")
 public class AdvisorAutoProxyCreatorTests {

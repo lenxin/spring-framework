@@ -14,8 +14,8 @@ import org.springframework.util.StringUtils;
  * Obtained via {@link SimpleBufferingClientHttpRequest#execute()} and
  * {@link SimpleStreamingClientHttpRequest#execute()}.
  *
- * @author Arjen Poutsma
- * @author Brian Clozel
+
+
  * @since 3.0
  */
 final class SimpleClientHttpResponse extends AbstractClientHttpResponse {

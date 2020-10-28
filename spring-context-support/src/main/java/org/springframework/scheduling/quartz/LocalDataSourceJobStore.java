@@ -36,7 +36,7 @@ import org.springframework.lang.Nullable;
  * job store should usually be performed within active transactions,
  * as they assume to get proper locks etc.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see SchedulerFactoryBean#setDataSource
  * @see SchedulerFactoryBean#setNonTransactionalDataSource

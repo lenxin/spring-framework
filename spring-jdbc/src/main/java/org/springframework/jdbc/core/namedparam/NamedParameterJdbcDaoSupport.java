@@ -7,8 +7,8 @@ import org.springframework.lang.Nullable;
 /**
  * Extension of JdbcDaoSupport that exposes a NamedParameterJdbcTemplate as well.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see NamedParameterJdbcTemplate
  */

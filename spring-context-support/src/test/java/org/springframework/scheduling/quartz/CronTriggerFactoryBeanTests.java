@@ -8,7 +8,7 @@ import org.quartz.CronTrigger;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class CronTriggerFactoryBeanTests {
 

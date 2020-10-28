@@ -9,7 +9,7 @@ import javax.jms.TextMessage;
 /**
  * Stub JMS Message implementation intended for testing purposes only.
  *
- * @author Mark Fisher
+
  * @since 4.1
  */
 public class StubTextMessage implements TextMessage {

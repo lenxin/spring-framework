@@ -4,7 +4,7 @@ package org.springframework.asm;
  * Exception thrown when the Code attribute of a method produced by a {@link ClassWriter} is too
  * large.
  *
- * @author Jason Zaugg
+
  */
 public final class MethodTooLargeException extends IndexOutOfBoundsException {
   private static final long serialVersionUID = 6807380416709738314L;

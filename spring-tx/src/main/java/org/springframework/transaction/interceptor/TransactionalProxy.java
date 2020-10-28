@@ -9,7 +9,7 @@ import org.springframework.aop.SpringProxy;
  * transactional proxies during AOP auto-proxying and therefore avoid
  * re-processing transaction metadata on them.
  *
- * @author Juergen Hoeller
+
  * @since 4.1.7
  */
 public interface TransactionalProxy extends SpringProxy {

@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
  * are to be registered with a JMX server.
  * Only valid when used on a {@code Class}.
  *
- * @author Rob Harrop
+
  * @since 1.2
  * @see org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler
  * @see org.springframework.jmx.export.naming.MetadataNamingStrategy

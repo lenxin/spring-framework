@@ -21,8 +21,8 @@ import static org.junit.Assert.assertNotNull;
  * Test fixture for
  * {@link org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  */
 public class DefaultSubscriptionRegistryTests {
 

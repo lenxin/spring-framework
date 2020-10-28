@@ -23,10 +23,10 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Costin Leau
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
+
  */
 public class EntityManagerFactoryUtilsTests {
 

@@ -15,7 +15,7 @@ import org.springframework.scheduling.config.ScheduledTaskRegistrar;
  *
  * <p>See @{@link EnableScheduling} for detailed usage examples.
  *
- * @author Chris Beams
+
  * @since 3.1
  * @see EnableScheduling
  * @see ScheduledTaskRegistrar

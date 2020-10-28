@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
  * TCK-style unit tests for handling circular use of the {@link Import} annotation.
  * Explore the subclass hierarchy for specific concrete implementations.
  *
- * @author Chris Beams
+
  */
 public abstract class AbstractCircularImportDetectionTests {
 

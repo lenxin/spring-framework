@@ -16,8 +16,8 @@ import org.springframework.lang.Nullable;
  * <p>Mainly for internal use within the framework; consider Apache's
  * Commons Lang for a more comprehensive suite of number utilities.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
+
+
  * @since 1.1.2
  */
 public abstract class NumberUtils {

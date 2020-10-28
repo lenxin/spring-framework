@@ -7,8 +7,8 @@ import org.springframework.dao.DataAccessResourceFailureException;
 /**
  * Fatal exception thrown when we can't connect to an EIS using CCI.
  *
- * @author Thierry Templier
- * @author Juergen Hoeller
+
+
  * @since 1.2
  */
 @SuppressWarnings("serial")

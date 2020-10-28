@@ -20,8 +20,8 @@ import static org.junit.Assert.*;
  * that not only the predicted bean type is considered, but also the original bean
  * definition's beanClass.
  *
- * @author Chris Beams
- * @author Oliver Gierke
+
+
  */
 @SuppressWarnings("resource")
 public class Spr8954Tests {

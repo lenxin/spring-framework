@@ -20,7 +20,7 @@ import org.springframework.lang.Nullable;
  * {@link XMLEventReader}. Useful because the StAX {@link javax.xml.stream.XMLInputFactory}
  * allows one to create a event reader from a stream reader, but not vice-versa.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see StaxUtils#createEventStreamReader(javax.xml.stream.XMLEventReader)
  */

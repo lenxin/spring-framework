@@ -10,9 +10,9 @@ import org.springframework.lang.Nullable;
  *
  * <p>Output parameters - like all stored procedure parameters - must have names.
  *
- * @author Rod Johnson
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
+
  * @see SqlReturnResultSet
  * @see SqlInOutParameter
  */

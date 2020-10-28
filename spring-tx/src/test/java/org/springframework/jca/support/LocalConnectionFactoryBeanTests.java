@@ -11,8 +11,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for the {@link LocalConnectionFactoryBean} class.
  *
- * @author Rick Evans
- * @author Chris Beams
+
+
  */
 public class LocalConnectionFactoryBeanTests {
 

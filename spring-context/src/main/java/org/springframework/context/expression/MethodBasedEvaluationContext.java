@@ -19,8 +19,8 @@ import org.springframework.util.ObjectUtils;
  * <li>the name of the parameter as discovered by a configurable {@link ParameterNameDiscoverer}</li>
  * </ol>
  *
- * @author Stephane Nicoll
- * @author Juergen Hoeller
+
+
  * @since 4.2
  */
 public class MethodBasedEvaluationContext extends StandardEvaluationContext {

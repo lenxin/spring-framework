@@ -47,7 +47,7 @@ import java.io.Serializable;
  * (a subaspect of this aspect would be a logical choice) that declares the classes that
  * need to be configured by supplying the {@link ConfigurableObject} interface.
  *
- * @author Ramnivas Laddad
+
  * @since 2.5.2
  */
 public abstract aspect AbstractInterfaceDrivenDependencyInjectionAspect extends AbstractDependencyInjectionAspect {

@@ -19,7 +19,7 @@ import org.springframework.core.log.LogDelegateFactory;
  * <p>To see logging from the primary class loggers simply enable logging for
  * "org.springframework.http" and "org.springframework.codec".
  *
- * @author Rossen Stoyanchev
+
  * @since 5.1
  * @see LogDelegateFactory
  */

@@ -28,11 +28,11 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link org.springframework.http.HttpHeaders}.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
- * @author Brian Clozel
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
+
+
  */
 public class HttpHeadersTests {
 

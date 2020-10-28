@@ -10,8 +10,8 @@ import org.springframework.core.io.Resource;
  * used such as when using JavaScript module loaders which are in charge of
  * loading the JavaScript resources and need to know their relative paths.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
  * @see VersionResourceResolver
  */

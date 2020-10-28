@@ -14,7 +14,7 @@ import org.springframework.web.context.WebApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 3.2.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

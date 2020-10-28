@@ -10,8 +10,8 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.type.AnnotationMetadata;
 
 /**
- * @author Juergen Hoeller
- * @author Alex Pogrebnyak
+
+
  */
 public class Spr12334Tests {
 

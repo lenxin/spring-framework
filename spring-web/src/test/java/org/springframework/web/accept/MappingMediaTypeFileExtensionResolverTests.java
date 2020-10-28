@@ -27,8 +27,8 @@ import static org.junit.Assert.*;
 /**
  * Test fixture for {@link MappingMediaTypeFileExtensionResolver}.
  *
- * @author Rossen Stoyanchev
- * @author Melissa Hartsock
+
+
  */
 public class MappingMediaTypeFileExtensionResolverTests {
 

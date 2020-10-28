@@ -16,7 +16,7 @@ import org.springframework.http.MediaType;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class RouterFunctionBuilderTests {
 

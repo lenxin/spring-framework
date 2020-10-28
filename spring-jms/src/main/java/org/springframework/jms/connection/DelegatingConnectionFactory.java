@@ -35,7 +35,7 @@ import org.springframework.util.Assert;
  * The latter may be necessary for some connection pools that simply return
  * released connections to the pool, not stopping them while they sit in the pool.
  *
- * @author Juergen Hoeller
+
  * @since 2.0.2
  * @see #createConnection()
  * @see #setShouldStopConnections

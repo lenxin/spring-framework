@@ -17,8 +17,8 @@ import org.springframework.web.util.WebUtils;
  * <p>This class is not immutable to be able to efficiently remove property
  * values that should be ignored for binding.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.springframework.web.util.WebUtils#getParametersStartingWith
  */
 @SuppressWarnings("serial")

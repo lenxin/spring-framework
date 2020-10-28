@@ -25,8 +25,8 @@ import org.springframework.util.StringUtils;
  * Provides mapping information for a single annotation (or meta-annotation) in
  * the context of a root annotation type.
  *
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  * @since 5.2
  * @see AnnotationTypeMappings
  */

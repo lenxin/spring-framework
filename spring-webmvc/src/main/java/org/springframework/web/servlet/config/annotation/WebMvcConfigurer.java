@@ -23,9 +23,9 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
  * this interface to be called back and given a chance to customize the
  * default configuration.
  *
- * @author Rossen Stoyanchev
- * @author Keith Donald
- * @author David Syer
+
+
+
  * @since 3.1
  */
 public interface WebMvcConfigurer {

@@ -14,7 +14,7 @@ import org.springframework.util.ConcurrentReferenceHashMap;
  * Provides a quick way to access the attribute methods of an {@link Annotation}
  * with consistent ordering as well as a few useful utility methods.
  *
- * @author Phillip Webb
+
  * @since 5.2
  */
 final class AttributeMethods {

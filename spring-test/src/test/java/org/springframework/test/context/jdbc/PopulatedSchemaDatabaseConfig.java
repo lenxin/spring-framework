@@ -13,7 +13,7 @@ import org.springframework.transaction.PlatformTransactionManager;
  * Database configuration class for SQL script integration tests with the 'user'
  * table already created.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @Configuration

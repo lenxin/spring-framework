@@ -21,7 +21,7 @@ import de.bechte.junit.runners.context.HierarchicalContextRunner;
  * executed via a custom JUnit 4 {@link HierarchicalContextRunner} and Spring's
  * {@link SpringClassRule} and {@link SpringMethodRule} support.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see org.springframework.test.context.junit.jupiter.nested.NestedTestsWithSpringAndJUnitJupiterTestCase
  */

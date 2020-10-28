@@ -11,8 +11,8 @@ import org.springframework.tests.sample.beans.ITestBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Chris Beams
+
+
  */
 public class DeclareParentsTests {
 

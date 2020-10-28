@@ -10,7 +10,7 @@ import org.springframework.web.context.WebApplicationContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 @RunWith(SpringRunner.class)

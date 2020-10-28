@@ -11,8 +11,8 @@ import org.springframework.lang.Nullable;
 /**
  * Common superclass for nodes representing literals (boolean, string, number, etc).
  *
- * @author Andy Clement
- * @author Juergen Hoeller
+
+
  */
 public abstract class Literal extends SpelNodeImpl {
 

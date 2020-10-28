@@ -41,13 +41,13 @@ import static org.assertj.core.api.Assertions.*;
  * cover common usage scenarios and were mainly ported from the original
  * {@code AnnotationUtils} and {@code AnnotatedElementUtils} tests.
  *
- * @author Phillip Webb
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Chris Beams
- * @author Oleg Zhurakousky
- * @author Rossen Stoyanchev
+
+
+
+
+
+
+
  * @see MergedAnnotationsRepeatableAnnotationTests
  * @see MergedAnnotationClassLoaderTests
  */

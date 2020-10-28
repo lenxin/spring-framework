@@ -50,8 +50,8 @@ import org.springframework.util.MethodInvoker;
  *
  * <p>Compatible with Quartz 2.1.4 and higher, as of Spring 4.1.
  *
- * @author Juergen Hoeller
- * @author Alef Arendsen
+
+
  * @since 18.02.2004
  * @see #setTargetBeanName
  * @see #setTargetObject

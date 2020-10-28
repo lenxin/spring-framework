@@ -15,7 +15,7 @@ import org.springframework.expression.spel.support.BooleanTypedValue;
  * between (using the registered comparator) the two elements in the list. The definition
  * of between being inclusive follows the SQL BETWEEN definition.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class OperatorBetween extends Operator {

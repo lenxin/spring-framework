@@ -26,8 +26,8 @@ import org.springframework.util.Assert;
  * <p>Many framework classes are derived from this class, particularly
  * within the web support.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.springframework.web.context.support.WebApplicationObjectSupport
  */
 public abstract class ApplicationObjectSupport implements ApplicationContextAware {

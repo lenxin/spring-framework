@@ -37,7 +37,7 @@ import static org.junit.Assert.*;
  * Unit tests for
  * {@link org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer}.
  *
- * @author Brian Clozel
+
  */
 public class GroovyMarkupConfigurerTests {
 

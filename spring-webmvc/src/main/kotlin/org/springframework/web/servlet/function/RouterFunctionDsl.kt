@@ -31,7 +31,7 @@ import java.util.function.Supplier
  *
  * }
  * ```
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 fun router(routes: (RouterFunctionDsl.() -> Unit)) = RouterFunctionDsl(routes).build()
@@ -39,7 +39,7 @@ fun router(routes: (RouterFunctionDsl.() -> Unit)) = RouterFunctionDsl(routes).b
 /**
  * Provide a WebMvc.fn [RouterFunction] Reactive Kotlin DSL created by [`router { }`][router] in order to be able to write idiomatic Kotlin code.
  *
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 class RouterFunctionDsl(private val init: (RouterFunctionDsl.() -> Unit)) {

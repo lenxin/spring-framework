@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link PropertyMatches}.
  *
- * @author Stephane Nicoll
+
  */
 public class PropertyMatchesTests {
 

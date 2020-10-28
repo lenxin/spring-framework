@@ -13,7 +13,7 @@ import org.springframework.util.concurrent.MonoToListenableFutureAdapter;
  * Support for single-value reactive types (like {@code Mono} or {@code Single})
  * as a return value type.
  *
- * @author Sebastien Deleuze
+
  * @since 5.1
  */
 public class ReactiveReturnValueHandler extends AbstractAsyncReturnValueHandler {

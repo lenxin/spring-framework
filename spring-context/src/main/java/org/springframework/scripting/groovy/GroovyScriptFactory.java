@@ -34,9 +34,9 @@ import org.springframework.util.ReflectionUtils;
  *
  * <p>Note: Spring 4.0 supports Groovy 1.8 and higher.
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Rod Johnson
+
+
+
  * @since 2.0
  * @see groovy.lang.GroovyClassLoader
  * @see org.springframework.scripting.support.ScriptFactoryPostProcessor

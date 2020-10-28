@@ -189,8 +189,8 @@ import javax.servlet.jsp.JspException;
  * </tbody>
  * </table>
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 @SuppressWarnings("serial")

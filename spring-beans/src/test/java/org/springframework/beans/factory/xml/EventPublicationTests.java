@@ -20,8 +20,8 @@ import org.springframework.tests.beans.CollectingReaderEventListener;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  */
 @SuppressWarnings("rawtypes")
 public class EventPublicationTests {

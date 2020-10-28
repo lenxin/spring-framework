@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
  * where a retry of the same operation would fail unless the cause of the Exception
  * is corrected.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  * @see java.sql.SQLNonTransientException
  */

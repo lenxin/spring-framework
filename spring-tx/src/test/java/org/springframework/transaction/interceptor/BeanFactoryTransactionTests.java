@@ -32,8 +32,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test cases for AOP transaction management.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 23.04.2003
  */
 public class BeanFactoryTransactionTests {

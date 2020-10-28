@@ -35,7 +35,7 @@ import org.springframework.mail.MailSender;
  * {@code Session.getInstance(new Properties())} call, and check the passed-in
  * messages in your mock implementations of the various {@code send} methods.
  *
- * @author Juergen Hoeller
+
  * @since 07.10.2003
  * @see javax.mail.internet.MimeMessage
  * @see javax.mail.Session

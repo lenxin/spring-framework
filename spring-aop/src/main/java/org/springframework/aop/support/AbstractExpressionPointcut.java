@@ -8,8 +8,8 @@ import org.springframework.lang.Nullable;
  * Abstract superclass for expression pointcuts,
  * offering location and expression properties.
  *
- * @author Rod Johnson
- * @author Rob Harrop
+
+
  * @since 2.0
  * @see #setLocation
  * @see #setExpression

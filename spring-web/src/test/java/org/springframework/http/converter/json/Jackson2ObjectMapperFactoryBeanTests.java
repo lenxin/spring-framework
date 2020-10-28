@@ -56,10 +56,10 @@ import static org.junit.Assert.*;
 /**
  * Test cases for {@link Jackson2ObjectMapperFactoryBean}.
  *
- * @author Dmitry Katsubo
- * @author Brian Clozel
- * @author Sebastien Deleuze
- * @author Sam Brannen
+
+
+
+
  */
 @SuppressWarnings("deprecation")
 public class Jackson2ObjectMapperFactoryBeanTests {

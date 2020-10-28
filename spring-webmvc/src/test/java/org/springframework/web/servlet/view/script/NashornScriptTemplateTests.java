@@ -20,7 +20,7 @@ import org.springframework.web.context.WebApplicationContext;
 /**
  * Unit tests for pure Javascript templates running on Nashorn engine.
  *
- * @author Sebastien Deleuze
+
  */
 public class NashornScriptTemplateTests {
 

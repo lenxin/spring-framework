@@ -4,7 +4,7 @@ package org.springframework.messaging.core;
  * Strategy for resolving a String destination name to an actual destination
  * of type {@code <D>}.
  *
- * @author Mark Fisher
+
  * @since 4.0
  * @param <D> the destination type
  */

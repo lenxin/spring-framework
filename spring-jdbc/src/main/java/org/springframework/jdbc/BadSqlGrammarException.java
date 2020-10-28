@@ -12,7 +12,7 @@ import org.springframework.dao.InvalidDataAccessResourceUsageException;
  * A custom SQLExceptionTranslator could create such more specific exceptions,
  * without affecting code using this class.
  *
- * @author Rod Johnson
+
  * @see InvalidResultSetAccessException
  */
 @SuppressWarnings("serial")

@@ -7,7 +7,7 @@ import java.io.OutputStream;
  * Interface defining handling involved with providing {@code OutputStream}
  * data for XML input.
  *
- * @author Thomas Risberg
+
  * @since 2.5.5
  * @see java.io.OutputStream
  */

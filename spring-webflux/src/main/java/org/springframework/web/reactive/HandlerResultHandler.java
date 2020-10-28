@@ -7,8 +7,8 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Process the {@link HandlerResult}, usually returned by an {@link HandlerAdapter}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  * @since 5.0
  */
 public interface HandlerResultHandler {

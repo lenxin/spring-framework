@@ -27,8 +27,8 @@ import org.springframework.util.CollectionUtils;
  * to a remote {@code MBeanServer} exposed via a {@code JMXServerConnector}.
  * Exposes the {@code MBeanServer} for bean references.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see MBeanServerFactoryBean
  * @see ConnectorServerFactoryBean

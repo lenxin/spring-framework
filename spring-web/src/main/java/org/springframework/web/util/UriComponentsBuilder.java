@@ -36,12 +36,12 @@ import org.springframework.web.util.UriComponents.UriTemplateVariables;
  * <li>Build the {@link UriComponents} instance with the {@link #build()} method.</li>
  * </ol>
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
- * @author Phillip Webb
- * @author Oliver Gierke
- * @author Brian Clozel
- * @author Sebastien Deleuze
+
+
+
+
+
+
  * @since 3.1
  * @see #newInstance()
  * @see #fromPath(String)

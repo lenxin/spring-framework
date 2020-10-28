@@ -11,8 +11,8 @@ import org.springframework.transaction.support.ResourceHolderSupport;
  *
  * <p>Note: This is an SPI class, not intended to be used by applications.
  *
- * @author Thierry Templier
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see CciLocalTransactionManager
  * @see ConnectionFactoryUtils

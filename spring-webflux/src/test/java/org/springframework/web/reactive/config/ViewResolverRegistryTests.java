@@ -22,8 +22,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link ViewResolverRegistry}.
  *
- * @author Rossen Stoyanchev
- * @author Sebastien Deleuze
+
+
  */
 public class ViewResolverRegistryTests {
 

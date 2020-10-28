@@ -13,7 +13,7 @@ import org.springframework.test.annotation.TestAnnotationUtils;
  * for Spring's {@link org.springframework.test.annotation.Repeat @Repeat}
  * annotation by repeating the test the specified number of times.
  *
- * @author Sam Brannen
+
  * @since 3.0
  * @see #evaluate()
  */

@@ -8,7 +8,7 @@ import org.springframework.beans.DirectFieldAccessor;
 /**
  * Unit tests for {@link ScriptTemplateViewResolver}.
  *
- * @author Sebastien Deleuze
+
  */
 public class ScriptTemplateViewResolverTests {
 

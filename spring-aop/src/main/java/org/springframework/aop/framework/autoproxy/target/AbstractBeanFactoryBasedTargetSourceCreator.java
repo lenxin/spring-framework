@@ -32,8 +32,8 @@ import org.springframework.lang.Nullable;
  * <p>Requires running in an
  * {@link org.springframework.beans.factory.support.AbstractBeanFactory}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.springframework.aop.target.AbstractBeanFactoryBasedTargetSource
  * @see org.springframework.beans.factory.support.AbstractBeanFactory
  */

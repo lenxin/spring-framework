@@ -5,7 +5,7 @@ import javax.transaction.Synchronization;
 import javax.transaction.xa.XAResource;
 
 /**
- * @author Juergen Hoeller
+
  * @since 31.08.2004
  */
 public class MockJtaTransaction implements javax.transaction.Transaction {

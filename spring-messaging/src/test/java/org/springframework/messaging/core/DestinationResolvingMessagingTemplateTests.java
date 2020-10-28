@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link AbstractDestinationResolvingMessagingTemplate}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class DestinationResolvingMessagingTemplateTests {
 

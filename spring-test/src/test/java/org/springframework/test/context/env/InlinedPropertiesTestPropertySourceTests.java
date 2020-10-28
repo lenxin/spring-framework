@@ -19,7 +19,7 @@ import static org.springframework.test.context.support.TestPropertySourceUtils.*
  * Integration tests for {@link TestPropertySource @TestPropertySource} support with
  * inlined properties.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @RunWith(SpringJUnit4ClassRunner.class)

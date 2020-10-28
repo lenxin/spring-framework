@@ -12,9 +12,9 @@ import org.springframework.lang.Nullable;
  * A default {@link Deserializer} implementation that reads an input stream
  * using Java serialization.
  *
- * @author Gary Russell
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
+
  * @since 3.0.5
  * @see ObjectInputStream
  */

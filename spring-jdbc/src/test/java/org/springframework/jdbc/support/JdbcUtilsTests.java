@@ -9,8 +9,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link JdbcUtils}.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  */
 public class JdbcUtilsTests {
 

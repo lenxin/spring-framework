@@ -17,7 +17,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 /**
  * Tests cornering the regression reported in SPR-12233.
  *
- * @author Phillip Webb
+
  */
 public class Spr12233Tests {
 

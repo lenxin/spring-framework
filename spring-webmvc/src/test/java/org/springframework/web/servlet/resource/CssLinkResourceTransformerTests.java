@@ -20,9 +20,9 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link CssLinkResourceTransformer}.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Sam Brannen
+
+
+
  * @since 4.1
  */
 public class CssLinkResourceTransformerTests {

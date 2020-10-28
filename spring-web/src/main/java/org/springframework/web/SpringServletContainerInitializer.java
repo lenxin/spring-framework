@@ -85,9 +85,9 @@ import org.springframework.util.ReflectionUtils;
  * See {@link WebApplicationInitializer} Javadoc for examples and detailed usage
  * recommendations.<p>
  *
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Rossen Stoyanchev
+
+
+
  * @since 3.1
  * @see #onStartup(Set, ServletContext)
  * @see WebApplicationInitializer

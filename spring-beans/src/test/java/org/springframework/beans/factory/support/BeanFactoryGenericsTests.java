@@ -43,9 +43,9 @@ import org.springframework.tests.sample.beans.TestBean;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Chris Beams
- * @author Sam Brannen
+
+
+
  * @since 20.01.2006
  */
 public class BeanFactoryGenericsTests {

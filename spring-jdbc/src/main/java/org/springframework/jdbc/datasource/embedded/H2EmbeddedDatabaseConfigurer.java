@@ -10,9 +10,9 @@ import org.springframework.util.ClassUtils;
  *
  * <p>Call {@link #getInstance()} to get the singleton instance of this class.
  *
- * @author Oliver Gierke
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
+
  * @since 3.0
  */
 final class H2EmbeddedDatabaseConfigurer extends AbstractEmbeddedDatabaseConfigurer {

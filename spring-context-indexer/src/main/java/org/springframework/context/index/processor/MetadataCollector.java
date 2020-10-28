@@ -12,7 +12,7 @@ import javax.lang.model.element.TypeElement;
 /**
  * Used by {@link CandidateComponentsIndexer} to collect {@link CandidateComponentsMetadata}.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 class MetadataCollector {

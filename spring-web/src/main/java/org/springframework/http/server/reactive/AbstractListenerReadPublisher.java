@@ -23,9 +23,9 @@ import org.springframework.util.Assert;
  * WebSocket messages with standard Java WebSocket (JSR-356), Jetty, and
  * Undertow.
  *
- * @author Arjen Poutsma
- * @author Violeta Georgieva
- * @author Rossen Stoyanchev
+
+
+
  * @since 5.0
  * @param <T> the type of element signaled
  */

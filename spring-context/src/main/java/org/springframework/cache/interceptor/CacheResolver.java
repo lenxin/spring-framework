@@ -9,7 +9,7 @@ import org.springframework.cache.Cache;
  *
  * <p>Implementations must be thread-safe.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 @FunctionalInterface

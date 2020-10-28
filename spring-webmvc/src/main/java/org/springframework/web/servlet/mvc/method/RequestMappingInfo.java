@@ -32,8 +32,8 @@ import org.springframework.web.util.UrlPathHelper;
  * <li>{@code RequestCondition} (optional, custom request condition)
  * </ol>
  *
- * @author Arjen Poutsma
- * @author Rossen Stoyanchev
+
+
  * @since 3.1
  */
 public final class RequestMappingInfo implements RequestCondition<RequestMappingInfo> {

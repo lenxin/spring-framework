@@ -58,7 +58,7 @@ import org.springframework.validation.Validator;
  * return value handlers. Sub-classes may also override
  * {@link #initReturnValueHandlers()} to set up default return value handlers.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.2
  * @see AbstractEncoderMethodReturnValueHandler
  */

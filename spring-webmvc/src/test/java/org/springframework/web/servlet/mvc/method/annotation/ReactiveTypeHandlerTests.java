@@ -47,7 +47,7 @@ import static org.springframework.web.method.ResolvableMethod.on;
 
 /**
  * Unit tests for {@link ReactiveTypeHandler}.
- * @author Rossen Stoyanchev
+
  */
 public class ReactiveTypeHandlerTests {
 

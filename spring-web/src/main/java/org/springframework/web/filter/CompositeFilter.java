@@ -20,7 +20,7 @@ import javax.servlet.ServletResponse;
  * composite would be used in conjunction with {@link DelegatingFilterProxy},
  * so that it can be declared in Spring but applied to a servlet context.
  *
- * @author Dave Syer
+
  * @since 3.1
  */
 public class CompositeFilter implements Filter {

@@ -6,8 +6,8 @@ import javax.servlet.http.HttpServletRequest;
  * Simple request logging filter that writes the request URI
  * (and optionally the query string) to the Commons Log.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2.5
  * @see #setIncludeQueryString
  * @see #setBeforeMessagePrefix

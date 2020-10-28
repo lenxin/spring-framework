@@ -10,7 +10,7 @@ import org.springframework.mock.web.test.MockHttpServletRequest;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class RequestPredicateTests {
 

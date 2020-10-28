@@ -24,7 +24,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.XmlViewResolver;
 
 /**
- * @author Juergen Hoeller
+
  * @since 21.05.2003
  */
 public class SimpleWebApplicationContext extends StaticWebApplicationContext {

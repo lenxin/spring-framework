@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Role;
  * {@link EnableSpringConfigured @EnableSpringConfigured} annotation. See
  * {@code @EnableSpringConfigured}'s javadoc for complete usage details.
  *
- * @author Chris Beams
+
  * @since 3.1
  * @see EnableSpringConfigured
  */

@@ -27,12 +27,12 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for the {@link PathResource} class.
  *
- * @author Philippe Marschall
- * @author Phillip Webb
- * @author Nicholas Williams
- * @author Stephane Nicoll
- * @author Juergen Hoeller
- * @author Arjen Poutsma
+
+
+
+
+
+
  */
 @Deprecated
 public class PathResourceTests {

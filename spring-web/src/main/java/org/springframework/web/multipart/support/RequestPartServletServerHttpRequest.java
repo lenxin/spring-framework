@@ -21,8 +21,8 @@ import org.springframework.web.multipart.MultipartResolver;
  * through a {@link MultipartFile}. Or if using Servlet 3.0 multipart processing
  * the part is accessed through {@code ServletRequest.getPart}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 public class RequestPartServletServerHttpRequest extends ServletServerHttpRequest {

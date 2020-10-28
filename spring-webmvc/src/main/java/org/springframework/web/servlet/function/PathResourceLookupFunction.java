@@ -19,7 +19,7 @@ import org.springframework.web.util.pattern.PathPatternParser;
 /**
  * Lookup function used by {@link RouterFunctions#resources(String, Resource)}.
  *
- * @author Arjen Poutsma
+
  * @since 5.2
  */
 class PathResourceLookupFunction implements Function<ServerRequest, Optional<Resource>> {

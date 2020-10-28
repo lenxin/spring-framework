@@ -12,7 +12,7 @@ import javax.xml.transform.Result;
  * {@code Object}s. Instead, a object class must be registered with the marshaller,
  * or have a common base class.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see Unmarshaller
  */

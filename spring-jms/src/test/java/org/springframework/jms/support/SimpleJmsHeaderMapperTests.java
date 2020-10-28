@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Mark Fisher
- * @author Gary Russel
- * @author Stephane Nicoll
+
+
+
  */
 public class SimpleJmsHeaderMapperTests {
 

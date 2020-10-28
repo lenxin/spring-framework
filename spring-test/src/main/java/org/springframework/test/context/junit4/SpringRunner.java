@@ -14,7 +14,7 @@ import org.junit.runners.model.InitializationError;
  *
  * <p><strong>NOTE:</strong> This class requires JUnit 4.12 or higher.
  *
- * @author Sam Brannen
+
  * @since 4.3
  * @see SpringJUnit4ClassRunner
  * @see org.springframework.test.context.junit4.rules.SpringClassRule

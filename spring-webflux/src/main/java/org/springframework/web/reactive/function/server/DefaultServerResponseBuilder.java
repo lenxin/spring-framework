@@ -41,8 +41,8 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Default {@link ServerResponse.BodyBuilder} implementation.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 5.0
  */
 class DefaultServerResponseBuilder implements ServerResponse.BodyBuilder {

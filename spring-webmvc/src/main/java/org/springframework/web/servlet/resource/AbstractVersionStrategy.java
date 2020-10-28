@@ -22,8 +22,8 @@ import org.springframework.util.StringUtils;
  * <p>Note: This base class does <i>not</i> provide support for generating the
  * version string.
  *
- * @author Brian Clozel
- * @author Rossen Stoyanchev
+
+
  * @since 4.1
  */
 public abstract class AbstractVersionStrategy implements VersionStrategy {

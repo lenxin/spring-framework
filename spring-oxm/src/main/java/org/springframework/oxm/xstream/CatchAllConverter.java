@@ -26,7 +26,7 @@ import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
  * MyDomainClass myObject = unmarshaller.unmarshal(source);
  * </pre>
  *
- * @author Arjen Poutsma
+
  * @since 3.2.5
  */
 public class CatchAllConverter implements Converter {

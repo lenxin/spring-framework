@@ -25,7 +25,7 @@ import org.springframework.util.concurrent.ListenableFutureTask;
  * and other TaskExecutor users, or even used completely independent of
  * a Quartz Scheduler (as plain TaskExecutor backend).
  *
- * @author Juergen Hoeller
+
  * @since 2.0
  * @see org.quartz.simpl.SimpleThreadPool
  * @see org.springframework.core.task.TaskExecutor

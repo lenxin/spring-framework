@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link SerializableTypeWrapper}.
  *
- * @author Phillip Webb
+
  */
 public class SerializableTypeWrapperTests {
 

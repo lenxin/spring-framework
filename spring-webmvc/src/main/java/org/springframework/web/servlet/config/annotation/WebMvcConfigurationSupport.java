@@ -149,9 +149,9 @@ import org.springframework.web.util.UrlPathHelper;
  * libraries available on the classpath.
  * </ul>
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
- * @author Sebastien Deleuze
+
+
+
  * @since 3.1
  * @see EnableWebMvc
  * @see WebMvcConfigurer

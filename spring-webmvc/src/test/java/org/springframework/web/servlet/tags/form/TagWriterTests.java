@@ -7,8 +7,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Rick Evans
+
+
  */
 public class TagWriterTests {
 

@@ -67,8 +67,8 @@ import org.springframework.util.StringUtils;
  * <p>This functionality is usually used through {@link MBeanProxyFactoryBean}.
  * See the javadoc of that class for more information.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see MBeanProxyFactoryBean
  * @see #setConnectOnStartup

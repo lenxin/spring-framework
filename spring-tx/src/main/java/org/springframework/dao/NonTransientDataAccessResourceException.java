@@ -5,7 +5,7 @@ import org.springframework.lang.Nullable;
 /**
  * Data access exception thrown when a resource fails completely and the failure is permanent.
  *
- * @author Thomas Risberg
+
  * @since 2.5
  * @see java.sql.SQLNonTransientConnectionException
  */

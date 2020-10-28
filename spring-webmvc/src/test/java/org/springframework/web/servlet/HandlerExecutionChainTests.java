@@ -12,7 +12,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * A test fixture with HandlerExecutionChain and mock handler interceptors.
  *
- * @author Rossen Stoyanchev
+
  */
 public class HandlerExecutionChainTests {
 

@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Scott Andrews
+
  */
 public class UrlTagTests extends AbstractTagTests {
 

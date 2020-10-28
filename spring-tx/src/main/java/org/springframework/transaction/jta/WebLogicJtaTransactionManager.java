@@ -47,7 +47,7 @@ import org.springframework.util.Assert;
  * configured WebLogic transaction strategies in your persistence provider, with no
  * need to specifically connect those setups in any way.</b>
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see org.springframework.transaction.TransactionDefinition#getName
  * @see org.springframework.transaction.TransactionDefinition#getIsolationLevel

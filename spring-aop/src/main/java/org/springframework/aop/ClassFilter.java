@@ -7,7 +7,7 @@ package org.springframework.aop;
  * <p>Can be used as part of a {@link Pointcut} or for the entire
  * targeting of an {@link IntroductionAdvisor}.
  *
- * @author Rod Johnson
+
  * @see Pointcut
  * @see MethodMatcher
  */

@@ -8,7 +8,7 @@ package org.springframework.asm;
  *     4.4</a>
  * @see <a href="https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-4.html#jvms-4.7.23">JVMS
  *     4.7.23</a>
- * @author Eric Bruneton
+
  */
 abstract class Symbol {
 

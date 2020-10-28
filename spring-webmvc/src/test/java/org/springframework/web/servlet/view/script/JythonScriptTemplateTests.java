@@ -20,7 +20,7 @@ import org.springframework.web.context.WebApplicationContext;
 /**
  * Unit tests for String templates running on Jython.
  *
- * @author Sebastien Deleuze
+
  */
 public class JythonScriptTemplateTests {
 

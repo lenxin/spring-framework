@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * Marshaller to write {@link CandidateComponentsMetadata} as properties.
  *
- * @author Stephane Nicoll
+
  * @since 5.0
  */
 abstract class PropertiesMarshaller {

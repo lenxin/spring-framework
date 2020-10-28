@@ -28,7 +28,7 @@ import org.springframework.lang.Nullable;
  * of this class, supporting some further default conventions beyond the plain
  * JMS 1.5 specification.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see #setActivationSpecClass
  * @see DefaultJmsActivationSpecFactory

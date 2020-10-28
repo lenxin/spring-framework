@@ -10,8 +10,8 @@ import org.springframework.lang.Nullable;
  * cache operation attributes, whether from configuration, metadata attributes at
  * source level, or elsewhere.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 public interface CacheOperationSource {

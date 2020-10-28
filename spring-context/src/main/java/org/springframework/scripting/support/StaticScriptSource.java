@@ -10,8 +10,8 @@ import org.springframework.util.Assert;
  * encapsulating a given String that contains the script source text.
  * Supports programmatic updates of the script String.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public class StaticScriptSource implements ScriptSource {

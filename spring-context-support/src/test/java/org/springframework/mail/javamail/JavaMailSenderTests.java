@@ -31,8 +31,8 @@ import org.springframework.util.ObjectUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 09.10.2004
  */
 public class JavaMailSenderTests {

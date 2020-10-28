@@ -56,7 +56,7 @@ import static org.springframework.web.reactive.HandlerMapping.*;
  * <li>{@code MessageWriterResultHandlerTests},
  * <li>{@code ContentNegotiatingResultHandlerSupportTests}
  * </ul>
- * @author Rossen Stoyanchev
+
  */
 public class ResponseEntityResultHandlerTests {
 

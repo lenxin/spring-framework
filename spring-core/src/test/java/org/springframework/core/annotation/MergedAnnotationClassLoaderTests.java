@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Tests for {@link MergedAnnotation} to ensure the correct class loader is
  * used.
  *
- * @author Phillip Webb
+
  * @since 5.2
  */
 public class MergedAnnotationClassLoaderTests {

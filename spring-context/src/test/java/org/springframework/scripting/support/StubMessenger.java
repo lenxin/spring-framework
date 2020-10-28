@@ -3,7 +3,7 @@ package org.springframework.scripting.support;
 import org.springframework.scripting.ConfigurableMessenger;
 
 /**
- * @author Rick Evans
+
  */
 public class StubMessenger implements ConfigurableMessenger {
 

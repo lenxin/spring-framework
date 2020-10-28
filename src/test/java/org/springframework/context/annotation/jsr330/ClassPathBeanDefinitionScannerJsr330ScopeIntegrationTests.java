@@ -27,9 +27,9 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.context.support.GenericWebApplicationContext;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Chris Beams
+
+
+
  */
 public class ClassPathBeanDefinitionScannerJsr330ScopeIntegrationTests {
 

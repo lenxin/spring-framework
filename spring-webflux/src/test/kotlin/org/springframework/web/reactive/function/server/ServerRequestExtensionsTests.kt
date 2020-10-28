@@ -19,7 +19,7 @@ import java.security.Principal
 /**
  * Mock object based tests for [ServerRequest] Kotlin extensions.
  *
- * @author Sebastien Deleuze
+
  */
 class ServerRequestExtensionsTests {
 

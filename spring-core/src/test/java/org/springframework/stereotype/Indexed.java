@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 /**
  * Copy of the standard {@code Indexed} annotation for testing purposes.
  *
- * @author Stephane Nicoll
+
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

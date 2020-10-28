@@ -23,8 +23,8 @@ import org.springframework.jdbc.InvalidResultSetAccessException;
  * Implementations, which typically hold disconnected data, are encouraged to be actually
  * serializable (as far as possible).
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see javax.sql.RowSet
  * @see java.sql.ResultSet

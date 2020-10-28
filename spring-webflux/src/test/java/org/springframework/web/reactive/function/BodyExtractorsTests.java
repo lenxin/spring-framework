@@ -52,9 +52,9 @@ import static org.junit.Assert.*;
 import static org.springframework.http.codec.json.Jackson2CodecSupport.*;
 
 /**
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
- * @author Brian Clozel
+
+
+
  */
 public class BodyExtractorsTests {
 

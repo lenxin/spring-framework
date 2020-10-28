@@ -8,8 +8,8 @@ import org.springframework.util.StringUtils;
  * Spring's common transaction attribute implementation.
  * Rolls back on runtime, but not checked, exceptions by default.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 16.03.2003
  */
 @SuppressWarnings("serial")

@@ -16,7 +16,7 @@ import org.springframework.web.servlet.HandlerExceptionResolver;
 /**
  * A {@link WebMvcConfigurer} that delegates to one or more others.
  *
- * @author Rossen Stoyanchev
+
  * @since 3.1
  */
 class WebMvcConfigurerComposite implements WebMvcConfigurer {

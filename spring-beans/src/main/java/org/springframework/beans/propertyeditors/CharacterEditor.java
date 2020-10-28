@@ -17,9 +17,9 @@ import org.springframework.util.StringUtils;
  * <p>Also supports conversion from a Unicode character sequence; e.g.
  * {@code u0041} ('A').
  *
- * @author Juergen Hoeller
- * @author Rob Harrop
- * @author Rick Evans
+
+
+
  * @since 1.2
  * @see Character
  * @see org.springframework.beans.BeanWrapperImpl

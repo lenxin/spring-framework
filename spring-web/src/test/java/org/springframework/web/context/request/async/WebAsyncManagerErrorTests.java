@@ -24,7 +24,7 @@ import static org.springframework.web.context.request.async.CallableProcessingIn
  * {@link WebAsyncManager} tests where container-triggered error/completion
  * events are simulated.
  *
- * @author Violeta Georgieva
+
  * @since 5.0
  */
 public class WebAsyncManagerErrorTests {

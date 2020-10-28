@@ -9,9 +9,9 @@ import org.springframework.aop.interceptor.ExposeInvocationInterceptor;
 /**
  * Utility methods for working with AspectJ proxies.
  *
- * @author Rod Johnson
- * @author Ramnivas Laddad
- * @author Juergen Hoeller
+
+
+
  * @since 2.0
  */
 public abstract class AspectJProxyUtils {

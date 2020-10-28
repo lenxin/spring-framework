@@ -23,8 +23,8 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@link Conventions}.
  *
- * @author Rob Harrop
- * @author Sam Brannen
+
+
  */
 public class ConventionsTests {
 

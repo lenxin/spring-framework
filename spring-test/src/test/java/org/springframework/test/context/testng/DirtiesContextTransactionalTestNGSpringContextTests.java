@@ -27,7 +27,7 @@ import static org.testng.Assert.*;
  * therefore verifies the expected behavior and correct semantics.
  * </p>
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 @ContextConfiguration

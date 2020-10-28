@@ -3,7 +3,7 @@ package org.springframework.scheduling.concurrent;
 import org.springframework.core.task.AsyncListenableTaskExecutor;
 
 /**
- * @author Juergen Hoeller
+
  * @since 5.0.5
  */
 public class ThreadPoolTaskExecutorTests extends AbstractSchedulingTaskExecutorTests {

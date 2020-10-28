@@ -11,7 +11,7 @@ import org.springframework.test.web.client.response.MockRestResponseCreators;
  * A contract for creating a {@link ClientHttpResponse}.
  * Implementations can be obtained via {@link MockRestResponseCreators}.
  *
- * @author Craig Walls
+
  * @since 3.2
  */
 @FunctionalInterface

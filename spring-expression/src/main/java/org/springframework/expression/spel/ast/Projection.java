@@ -20,9 +20,9 @@ import org.springframework.util.ObjectUtils;
  * input sequence, returning a new sequence of the same size. For example:
  * "{1,2,3,4,5,6,7,8,9,10}.!{#isEven(#this)}" returns "[n, y, n, y, n, y, n, y, n, y]"
  *
- * @author Andy Clement
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
+
  * @since 3.0
  */
 public class Projection extends SpelNodeImpl {

@@ -22,11 +22,11 @@ import org.springframework.lang.Nullable;
  *
  * <p>Compatible with Jackson 2.9 and higher, as of Spring 5.0.
  *
- * @author Arjen Poutsma
- * @author Keith Donald
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
+
+
+
+
+
  * @since 3.1.2
  */
 public class MappingJackson2HttpMessageConverter extends AbstractJackson2HttpMessageConverter {

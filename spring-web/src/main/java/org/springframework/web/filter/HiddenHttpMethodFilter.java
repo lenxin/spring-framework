@@ -33,8 +33,8 @@ import org.springframework.web.util.WebUtils;
  * So typically, put a Spring {@link org.springframework.web.multipart.support.MultipartFilter}
  * <i>before</i> this HiddenHttpMethodFilter in your {@code web.xml} filter chain.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class HiddenHttpMethodFilter extends OncePerRequestFilter {

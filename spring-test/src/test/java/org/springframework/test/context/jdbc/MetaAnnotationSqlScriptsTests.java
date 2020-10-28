@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * Integration tests that verify support for using {@link Sql @Sql} and
  * {@link SqlGroup @SqlGroup} as meta-annotations.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 @ContextConfiguration(classes = EmptyDatabaseConfig.class)

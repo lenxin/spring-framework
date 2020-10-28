@@ -14,9 +14,9 @@ import org.springframework.web.util.WebUtils;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rick Evans
- * @author Juergen Hoeller
- * @author Vedran Pavic
+
+
+
  */
 public class CharacterEncodingFilterTests {
 

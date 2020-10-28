@@ -13,7 +13,7 @@ import org.springframework.http.HttpStatus;
  * <p>A {@code ClientHttpResponse} must be {@linkplain #close() closed},
  * typically in a {@code finally} block.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  */
 public interface ClientHttpResponse extends HttpInputMessage, Closeable {

@@ -39,7 +39,7 @@ import static org.mockito.Mockito.isA;
 import static org.mockito.Mockito.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class DataBufferUtilsTests extends AbstractDataBufferAllocatingTestCase {
 

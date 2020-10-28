@@ -7,7 +7,7 @@ import org.springframework.expression.spel.CodeFlow;
 /**
  * Expression language AST node that represents a long integer literal.
  *
- * @author Andy Clement
+
  * @since 3.0
  */
 public class LongLiteral extends Literal {

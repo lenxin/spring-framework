@@ -8,8 +8,8 @@ import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.*;
 
 /**
- * @author Rick Evans
- * @author Chris Beams
+
+
  */
 public class JmsDestinationAccessorTests {
 

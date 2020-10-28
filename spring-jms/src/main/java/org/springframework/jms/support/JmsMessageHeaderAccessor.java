@@ -12,7 +12,7 @@ import org.springframework.messaging.support.NativeMessageHeaderAccessor;
  * A {@link org.springframework.messaging.support.MessageHeaderAccessor}
  * implementation giving access to JMS-specific headers.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  */
 public class JmsMessageHeaderAccessor extends NativeMessageHeaderAccessor {

@@ -14,7 +14,7 @@ import static org.junit.Assert.assertSame;
 /**
  * Unit tests for {@link RequestConditionHolder}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class RequestConditionHolderTests {
 

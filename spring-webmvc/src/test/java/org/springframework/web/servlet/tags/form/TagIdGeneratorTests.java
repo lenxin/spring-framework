@@ -11,8 +11,8 @@ import org.springframework.mock.web.test.MockPageContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Sam Brannen
+
+
  * @since 2.0
  */
 public class TagIdGeneratorTests {

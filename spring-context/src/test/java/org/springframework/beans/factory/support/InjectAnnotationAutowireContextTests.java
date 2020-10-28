@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
 /**
  * Integration tests for handling JSR-303 {@link javax.inject.Qualifier} annotations.
  *
- * @author Juergen Hoeller
+
  * @since 3.0
  */
 public class InjectAnnotationAutowireContextTests {

@@ -14,7 +14,7 @@ import org.springframework.util.Base64Utils;
 /**
  * {@link ClientHttpRequestInterceptor} to apply a BASIC authorization header.
  *
- * @author Phillip Webb
+
  * @since 4.3.1
  * @deprecated as of 5.1.1, in favor of {@link BasicAuthenticationInterceptor}
  * which reuses {@link org.springframework.http.HttpHeaders#setBasicAuth},

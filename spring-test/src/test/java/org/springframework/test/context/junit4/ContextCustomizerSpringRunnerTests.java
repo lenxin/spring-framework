@@ -19,8 +19,8 @@ import static org.junit.Assert.*;
  * JUnit 4 based integration test which verifies support of
  * {@link ContextCustomizerFactory} and {@link ContextCustomizer}.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 4.3
  */
 @RunWith(SpringRunner.class)

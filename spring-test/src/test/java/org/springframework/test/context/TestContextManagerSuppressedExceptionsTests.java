@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
  * support for <em>suppressed exceptions</em> thrown by {@link TestExecutionListener
  * TestExecutionListeners}.
  *
- * @author Sam Brannen
+
  * @since 5.0
  * @see Throwable#getSuppressed()
  */

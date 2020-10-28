@@ -78,10 +78,10 @@ import static org.junit.Assert.*;
  * Integration tests for {@link WebMvcConfigurationSupport} (imported via
  * {@link EnableWebMvc @EnableWebMvc}).
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
- * @author Sebastien Deleuze
- * @author Sam Brannen
+
+
+
+
  */
 public class WebMvcConfigurationSupportTests {
 

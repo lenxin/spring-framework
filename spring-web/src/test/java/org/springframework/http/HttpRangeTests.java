@@ -19,8 +19,8 @@ import static org.mockito.BDDMockito.*;
 /**
  * Unit tests for {@link HttpRange}.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  */
 public class HttpRangeTests {
 

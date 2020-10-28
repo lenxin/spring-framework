@@ -15,8 +15,8 @@ import org.springframework.lang.Nullable;
  * <p>Intended to wrap various implementations like a Map or a JavaBean
  * with a consistent interface.
  *
- * @author Thomas Risberg
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see NamedParameterJdbcOperations
  * @see NamedParameterJdbcTemplate

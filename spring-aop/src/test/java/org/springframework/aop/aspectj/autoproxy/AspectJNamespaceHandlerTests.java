@@ -18,8 +18,8 @@ import org.springframework.tests.beans.CollectingReaderEventListener;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Chris Beams
+
+
  */
 public class AspectJNamespaceHandlerTests {
 

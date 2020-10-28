@@ -27,8 +27,8 @@ import org.springframework.util.StringUtils;
  * For details on the pattern options, see the
  * {@link org.springframework.util.AntPathMatcher} javadoc.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see SimpleUrlHandlerMapping
  */
 public class BeanNameUrlHandlerMapping extends AbstractDetectingUrlHandlerMapping {

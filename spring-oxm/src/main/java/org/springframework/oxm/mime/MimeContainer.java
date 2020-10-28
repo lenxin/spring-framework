@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
  * Represents a container for MIME attachments
  * Concrete implementations might adapt a SOAPMessage or an email message.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see <a href="https://www.w3.org/TR/2005/REC-xop10-20050125/">XML-binary Optimized Packaging</a>
  */

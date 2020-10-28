@@ -30,7 +30,7 @@ import org.springframework.util.ReflectionUtils;
  * also be used with programmatic endpoint management on a native
  * {@link javax.resource.spi.ResourceAdapter} instance.
  *
- * @author Juergen Hoeller
+
  * @since 2.5
  * @see #setMessageListener
  * @see #setTransactionManager

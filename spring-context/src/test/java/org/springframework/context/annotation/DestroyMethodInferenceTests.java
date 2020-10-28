@@ -12,9 +12,9 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Chris Beams
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  */
 public class DestroyMethodInferenceTests {
 

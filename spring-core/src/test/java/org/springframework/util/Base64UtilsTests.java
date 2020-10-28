@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 4.2
  */
 public class Base64UtilsTests {

@@ -14,11 +14,11 @@ import static org.springframework.jdbc.datasource.init.ScriptUtils.*;
 /**
  * Unit tests for {@link ScriptUtils}.
  *
- * @author Thomas Risberg
- * @author Sam Brannen
- * @author Phillip Webb
- * @author Chris Baldwin
- * @author Nicolas Debeissat
+
+
+
+
+
  * @since 4.0.3
  * @see ScriptUtilsIntegrationTests
  */

@@ -29,8 +29,8 @@ import static org.junit.Assert.*;
 /**
  * Client and server-side WebSocket integration tests.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  */
 @RunWith(Parameterized.class)
 public class WebSocketHandshakeTests extends AbstractWebSocketIntegrationTests {

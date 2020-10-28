@@ -10,8 +10,8 @@ import org.springframework.util.ConcurrentReferenceHashMap;
 /**
  * Utilities for processing {@link Bean}-annotated methods.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 abstract class BeanAnnotationHelper {

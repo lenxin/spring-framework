@@ -7,7 +7,7 @@ package org.springframework.dao;
  * <p>This represents a problem in our Java data access framework,
  * not the underlying data access infrastructure.
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public class InvalidDataAccessApiUsageException extends NonTransientDataAccessException {

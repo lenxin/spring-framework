@@ -6,7 +6,7 @@ import org.junit.Test
 /**
  * Kotlin tests for {@link BeanUtils}.
  * 
- * @author Sebastien Deleuze
+
  */
 @Suppress("unused", "UNUSED_PARAMETER")
 class KotlinBeanUtilsTests {

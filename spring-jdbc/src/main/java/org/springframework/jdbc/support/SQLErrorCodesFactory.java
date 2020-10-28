@@ -27,9 +27,9 @@ import org.springframework.util.StringUtils;
  * Reads the default file in this package if not overridden by a file in
  * the root of the class path (for example in the "/WEB-INF/classes" directory).
  *
- * @author Thomas Risberg
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
+
  * @see java.sql.DatabaseMetaData#getDatabaseProductName()
  */
 public class SQLErrorCodesFactory {

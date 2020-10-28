@@ -16,8 +16,8 @@ import org.springframework.util.ClassUtils;
  * {@code BootstrapUtils} is a collection of utility methods to assist with
  * bootstrapping the <em>Spring TestContext Framework</em>.
  *
- * @author Sam Brannen
- * @author Phillip Webb
+
+
  * @since 4.1
  * @see BootstrapWith
  * @see BootstrapContext

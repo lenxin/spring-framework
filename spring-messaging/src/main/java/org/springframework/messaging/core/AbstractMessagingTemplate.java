@@ -9,9 +9,9 @@ import org.springframework.messaging.Message;
  * An extension of {@link AbstractMessageReceivingTemplate} that adds support for
  * request-reply style operations as defined by {@link MessageRequestReplyOperations}.
  *
- * @author Mark Fisher
- * @author Rossen Stoyanchev
- * @author Stephane Nicoll
+
+
+
  * @since 4.0
  * @param <D> the destination type
  */

@@ -12,8 +12,8 @@ import org.springframework.dao.UncategorizedDataAccessException;
  * We might choose to ignore (and log) the warning, or to wrap and throw it
  * in the shape of this SQLWarningException instead.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.springframework.jdbc.core.JdbcTemplate#setIgnoreWarnings
  */
 @SuppressWarnings("serial")

@@ -50,7 +50,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
  * Supports a "sessionFactoryBeanName" filter init-param in {@code web.xml};
  * the default bean name is "sessionFactory".
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see #lookupSessionFactory
  * @see OpenSessionInViewInterceptor

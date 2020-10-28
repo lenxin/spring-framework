@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  * including all of its superclasses, and helps to resolve a given {@link Exception}
  * to the exception types supported by a given {@link Method}.
  *
- * @author Rossen Stoyanchev
- * @author Juergen Hoeller
+
+
  * @since 3.1
  */
 public class ExceptionHandlerMethodResolver {

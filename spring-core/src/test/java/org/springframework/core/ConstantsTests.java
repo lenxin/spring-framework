@@ -8,9 +8,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * @author Rod Johnson
- * @author Juergen Hoeller
- * @author Rick Evans
+
+
+
  * @since 28.04.2003
  */
 public class ConstantsTests {

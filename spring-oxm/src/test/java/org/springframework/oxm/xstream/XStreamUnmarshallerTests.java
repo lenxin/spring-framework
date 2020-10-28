@@ -22,7 +22,7 @@ import org.springframework.util.xml.StaxUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class XStreamUnmarshallerTests {
 

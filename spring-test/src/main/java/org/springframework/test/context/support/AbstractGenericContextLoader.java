@@ -34,9 +34,9 @@ import org.springframework.util.StringUtils;
  * potentially overriding {@link #loadBeanDefinitions loadBeanDefinitions()}
  * as well.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  * @since 2.5
  * @see #loadContext(MergedContextConfiguration)
  * @see #loadContext(String...)

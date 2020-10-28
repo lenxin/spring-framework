@@ -18,7 +18,7 @@ import org.springframework.util.concurrent.ListenableFuture;
  * that uses standard Java facilities to execute streaming requests. Created
  * via the {@link org.springframework.http.client.SimpleClientHttpRequestFactory}.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see org.springframework.http.client.SimpleClientHttpRequestFactory#createRequest
  * @see org.springframework.http.client.support.AsyncHttpAccessor

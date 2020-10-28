@@ -9,8 +9,8 @@ import org.springframework.util.StringUtils;
  * that were not specified in the bean factory definition, although
  * dependency checking was enabled.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 03.09.2003
  */
 @SuppressWarnings("serial")

@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 /**
  * Unit tests for {@code ResourceUrlEncodingFilter}.
  *
- * @author Brian Clozel
+
  */
 public class ResourceUrlEncodingFilterTests {
 

@@ -13,7 +13,7 @@ import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
  * handlers that implement {@link Lifecycle}. The handlers are typically expected
  * to be {@code WebSocketHttpRequestHandler} or {@code SockJsHttpRequestHandler}.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.2
  */
 public class WebSocketHandlerMapping extends SimpleUrlHandlerMapping implements SmartLifecycle {

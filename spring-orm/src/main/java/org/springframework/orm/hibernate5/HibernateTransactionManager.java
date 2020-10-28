@@ -79,7 +79,7 @@ import org.springframework.util.Assert;
  * support nested transactions! Hence, do not expect Hibernate access code to
  * semantically participate in a nested transaction.</i>
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see #setSessionFactory
  * @see #setDataSource

@@ -32,7 +32,7 @@ import static org.junit.Assert.*;
  * <p>Indirectly, this class also verifies that all {@code TestExecutionListener}
  * lifecycle callbacks are called.
  *
- * @author Sam Brannen
+
  * @since 2.5
  */
 @RunWith(Parameterized.class)

@@ -31,7 +31,7 @@ import org.springframework.util.Assert;
  * Generic utility methods for working with JMS. Mainly for internal use
  * within the framework, but also useful for custom JMS access code.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  */
 public abstract class JmsUtils {

@@ -28,8 +28,8 @@ import org.springframework.util.StringUtils;
  * Implementation of an {@link HttpMessageReader} to read HTML form data, i.e.
  * request body with media type {@code "application/x-www-form-urlencoded"}.
  *
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class FormHttpMessageReader extends LoggingCodecSupport

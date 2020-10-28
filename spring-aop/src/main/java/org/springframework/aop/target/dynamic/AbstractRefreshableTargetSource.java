@@ -14,9 +14,9 @@ import org.springframework.lang.Nullable;
  * <p>Implements the {@link Refreshable} interface in order to allow for
  * explicit control over the refresh status.
  *
- * @author Rod Johnson
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
+
  * @since 2.0
  * @see #requiresRefresh()
  * @see #freshTarget()

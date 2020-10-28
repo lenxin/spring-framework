@@ -6,7 +6,7 @@ import org.springframework.dao.InvalidDataAccessApiUsageException;
  * Exception thrown when the underlying implementation does not support the
  * requested feature of the API.
  *
- * @author Thomas Risberg
+
  * @since 2.5.5
  */
 @SuppressWarnings("serial")

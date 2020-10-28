@@ -3,7 +3,7 @@ package org.springframework.context.support;
 import org.springframework.context.Lifecycle;
 
 /**
- * @author Mark Fisher
+
  */
 public class LifecycleTestBean implements Lifecycle {
 

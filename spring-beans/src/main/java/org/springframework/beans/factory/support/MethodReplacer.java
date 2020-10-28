@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * <p>Such methods may be (but need not be) abstract, in which case the
  * container will create a concrete subclass to instantiate.
  *
- * @author Rod Johnson
+
  * @since 1.1
  */
 public interface MethodReplacer {

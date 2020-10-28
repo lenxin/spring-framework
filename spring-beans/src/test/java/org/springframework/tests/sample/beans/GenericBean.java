@@ -15,7 +15,7 @@ import java.util.Set;
 import org.springframework.core.io.Resource;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class GenericBean<T> {
 

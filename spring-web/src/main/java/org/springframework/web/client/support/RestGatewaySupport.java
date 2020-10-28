@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
  *
  * <p>Requires a {@link ClientHttpRequestFactory} or a {@link RestTemplate} instance to be set.
  *
- * @author Arjen Poutsma
+
  * @since 3.0
  * @see #setRestTemplate
  * @see org.springframework.web.client.RestTemplate

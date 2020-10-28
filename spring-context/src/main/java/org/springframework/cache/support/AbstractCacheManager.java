@@ -16,9 +16,9 @@ import org.springframework.lang.Nullable;
  * Abstract base class implementing the common {@link CacheManager} methods.
  * Useful for 'static' environments where the backing caches do not change.
  *
- * @author Costin Leau
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 3.1
  */
 public abstract class AbstractCacheManager implements CacheManager, InitializingBean {

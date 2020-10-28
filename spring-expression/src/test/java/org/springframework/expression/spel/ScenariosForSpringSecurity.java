@@ -26,7 +26,7 @@ import static org.junit.Assert.*;
 /**
  * Spring Security scenarios from https://wiki.springsource.com/display/SECURITY/Spring+Security+Expression-based+Authorization
  *
- * @author Andy Clement
+
  */
 public class ScenariosForSpringSecurity extends AbstractExpressionTests {
 

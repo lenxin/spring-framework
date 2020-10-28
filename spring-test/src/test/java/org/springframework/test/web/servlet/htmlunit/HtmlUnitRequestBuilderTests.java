@@ -43,8 +43,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 /**
  * Unit tests for {@link HtmlUnitRequestBuilder}.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 public class HtmlUnitRequestBuilderTests {

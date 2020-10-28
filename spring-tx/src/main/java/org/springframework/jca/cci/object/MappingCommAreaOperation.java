@@ -14,7 +14,7 @@ import org.springframework.jca.cci.core.support.CommAreaRecord;
  * EIS operation object for access to COMMAREA records.
  * Subclass of the generic MappingRecordOperation class.
  *
- * @author Thierry Templier
+
  * @since 1.2
  */
 public abstract class MappingCommAreaOperation extends MappingRecordOperation {

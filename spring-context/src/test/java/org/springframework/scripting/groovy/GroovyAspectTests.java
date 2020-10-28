@@ -13,8 +13,8 @@ import org.springframework.util.ClassUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Dave Syer
- * @author Sam Brannen
+
+
  */
 public class GroovyAspectTests {
 

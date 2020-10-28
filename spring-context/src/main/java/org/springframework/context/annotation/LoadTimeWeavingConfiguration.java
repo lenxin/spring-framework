@@ -20,7 +20,7 @@ import org.springframework.util.Assert;
  * {@link EnableLoadTimeWeaving} annotation. See {@code @EnableLoadTimeWeaving}
  * javadoc for complete usage details.
  *
- * @author Chris Beams
+
  * @since 3.1
  * @see LoadTimeWeavingConfigurer
  * @see ConfigurableApplicationContext#LOAD_TIME_WEAVER_BEAN_NAME

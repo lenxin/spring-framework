@@ -17,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * Default implementation of the {@link LifecycleProcessor} strategy.
  *
- * @author Mark Fisher
- * @author Juergen Hoeller
+
+
  * @since 3.0
  */
 public class DefaultLifecycleProcessor implements LifecycleProcessor, BeanFactoryAware {

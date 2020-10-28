@@ -7,8 +7,8 @@ import org.springframework.lang.Nullable;
  * Holder for the current proxy creation context, as exposed by auto-proxy creators
  * such as {@link AbstractAdvisorAutoProxyCreator}.
  *
- * @author Juergen Hoeller
- * @author Ramnivas Laddad
+
+
  * @since 2.5
  */
 public final class ProxyCreationContext {

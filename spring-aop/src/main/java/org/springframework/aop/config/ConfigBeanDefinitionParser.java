@@ -36,11 +36,11 @@ import org.springframework.util.xml.DomUtils;
 /**
  * {@link BeanDefinitionParser} for the {@code <aop:config>} tag.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Adrian Colyer
- * @author Mark Fisher
- * @author Ramnivas Laddad
+
+
+
+
+
  * @since 2.0
  */
 class ConfigBeanDefinitionParser implements BeanDefinitionParser {

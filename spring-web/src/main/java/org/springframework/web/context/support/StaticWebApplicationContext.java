@@ -35,8 +35,8 @@ import org.springframework.web.context.ServletContextAware;
  * this class detects a bean of type {@link org.springframework.ui.context.ThemeSource}
  * in the context, under the special bean name "themeSource".
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.springframework.ui.context.ThemeSource
  */
 public class StaticWebApplicationContext extends StaticApplicationContext

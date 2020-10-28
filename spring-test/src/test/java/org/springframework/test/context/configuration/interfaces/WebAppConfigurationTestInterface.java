@@ -6,7 +6,7 @@ import org.springframework.test.context.configuration.interfaces.WebAppConfigura
 import org.springframework.test.context.web.WebAppConfiguration;
 
 /**
- * @author Sam Brannen
+
  * @since 4.3
  */
 @WebAppConfiguration

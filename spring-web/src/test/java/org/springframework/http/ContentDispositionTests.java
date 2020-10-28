@@ -14,7 +14,7 @@ import org.springframework.util.ReflectionUtils;
 /**
  * Unit tests for {@link ContentDisposition}
  *
- * @author Sebastien Deleuze
+
  */
 public class ContentDispositionTests {
 

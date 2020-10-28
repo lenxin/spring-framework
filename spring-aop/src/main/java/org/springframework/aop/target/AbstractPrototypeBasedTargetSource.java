@@ -20,8 +20,8 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
  * call the {@code getBean} method to create a new prototype instance.
  * Therefore, this base class extends {@link AbstractBeanFactoryBasedTargetSource}.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see org.springframework.beans.factory.BeanFactory#getBean
  * @see PrototypeTargetSource
  * @see ThreadLocalTargetSource

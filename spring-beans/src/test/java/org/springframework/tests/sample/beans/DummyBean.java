@@ -15,7 +15,7 @@
  */package org.springframework.tests.sample.beans;
 
 /**
- * @author Costin Leau
+
  */
 public class DummyBean {
 

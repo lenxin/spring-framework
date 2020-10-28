@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import static org.junit.Assert.*;
 
 /**
- * @author Brian Clozel
+
  */
 public class ControllerAdviceBeanTests {
 

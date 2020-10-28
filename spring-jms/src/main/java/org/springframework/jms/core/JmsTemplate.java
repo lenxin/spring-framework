@@ -59,9 +59,9 @@ import org.springframework.util.Assert;
  * application's environment naming context via JNDI; application servers
  * typically expose pooled, transaction-aware factories there.
  *
- * @author Mark Pollack
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  * @since 1.1
  * @see #setConnectionFactory
  * @see #setPubSubDomain

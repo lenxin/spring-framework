@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServletRequest;
  * through the {@link org.springframework.web.context.request.WebRequest#checkNotModified}
  * method, allowing for last-modified checking within the main handler method.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @see javax.servlet.http.HttpServlet#getLastModified
  * @see Controller
  * @see SimpleControllerHandlerAdapter

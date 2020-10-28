@@ -9,8 +9,8 @@ import org.springframework.lang.Nullable;
  * be used based on the value of {@link EnableAsync#mode} on the importing
  * {@code @Configuration} class.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  * @since 3.1
  * @see EnableAsync
  * @see ProxyAsyncConfiguration

@@ -8,8 +8,8 @@ import org.springframework.util.StringUtils;
 /**
  * Utility methods for converting Spring JMX metadata into their plain JMX equivalents.
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  */
 public abstract class JmxMetadataUtils {

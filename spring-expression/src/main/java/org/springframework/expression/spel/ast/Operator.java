@@ -17,9 +17,9 @@ import org.springframework.util.ObjectUtils;
  * In the case of multiply or divide there would be two operands, but for
  * unary plus or minus, there is only one.
  *
- * @author Andy Clement
- * @author Juergen Hoeller
- * @author Giovanni Dall'Oglio Risso
+
+
+
  * @since 3.0
  */
 public abstract class Operator extends SpelNodeImpl {

@@ -57,11 +57,11 @@ import static org.junit.Assert.*;
 /**
  * Miscellaneous tests for XML bean definitions.
  *
- * @author Juergen Hoeller
- * @author Rod Johnson
- * @author Rick Evans
- * @author Chris Beams
- * @author Sam Brannen
+
+
+
+
+
  */
 public class XmlBeanFactoryTests {
 

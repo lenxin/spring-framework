@@ -11,7 +11,7 @@ import org.springframework.mock.web.test.MockServletContext;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class RequestContextListenerTests {
 

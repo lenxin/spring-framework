@@ -8,7 +8,7 @@ import org.xml.sax.InputSource;
 /**
  * Strategy interface for loading an XML {@link Document}.
  *
- * @author Rob Harrop
+
  * @since 2.0
  * @see DefaultDocumentLoader
  */

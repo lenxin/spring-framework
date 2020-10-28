@@ -8,7 +8,7 @@ package org.springframework.dao;
  * <p>This exception can be thrown by user code trapping the native database exception or
  * by exception translation.
  *
- * @author Thomas Risberg
+
  * @since 3.1
  */
 @SuppressWarnings("serial")

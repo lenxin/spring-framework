@@ -14,7 +14,7 @@ import org.springframework.util.Assert;
  *
  * <p>These methods default to calling through to the wrapped request object.
  *
- * @author Arjen Poutsma
+
  * @since 3.1
  */
 public class HttpRequestWrapper implements HttpRequest {

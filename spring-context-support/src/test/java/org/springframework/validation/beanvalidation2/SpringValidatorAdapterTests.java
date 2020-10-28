@@ -45,8 +45,8 @@ import static org.hamcrest.core.StringContains.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Kazuki Shimizu
- * @author Juergen Hoeller
+
+
  */
 public class SpringValidatorAdapterTests {
 

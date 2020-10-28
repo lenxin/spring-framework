@@ -15,7 +15,7 @@ import static org.testng.AssertJUnit.*;
  * transactional methods that participate in the test-managed transaction will
  * be rolled back automatically.
  *
- * @author Sam Brannen
+
  * @since 4.0.1
  */
 @Test(suiteName = "Rollback for REQUIRED")

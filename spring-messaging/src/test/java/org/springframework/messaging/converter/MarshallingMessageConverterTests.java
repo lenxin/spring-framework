@@ -19,7 +19,7 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 
 /**
- * @author Arjen Poutsma
+
  */
 public class MarshallingMessageConverterTests {
 

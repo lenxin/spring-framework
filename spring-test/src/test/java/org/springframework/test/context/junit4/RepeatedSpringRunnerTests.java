@@ -28,7 +28,7 @@ import static org.springframework.test.context.junit4.JUnitTestingUtils.*;
  * <li>Spring's {@link Timed @Timed}</li>
  * </ul>
  *
- * @author Sam Brannen
+
  * @since 3.0
  */
 @RunWith(Parameterized.class)

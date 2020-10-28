@@ -6,7 +6,7 @@ import org.springframework.lang.Nullable;
 /**
  * Thrown by a DestinationResolver when it cannot resolve a destination name.
  *
- * @author Juergen Hoeller
+
  * @since 1.1
  * @see DestinationResolver
  */

@@ -5,8 +5,8 @@ import org.springframework.core.io.support.EncodedResource;
 /**
  * Thrown by {@link ScriptUtils} if an SQL script cannot be read.
  *
- * @author Keith Donald
- * @author Sam Brannen
+
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

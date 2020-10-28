@@ -68,8 +68,8 @@ import org.springframework.web.context.ServletContextAware;
  * to {@literal false} or otherwise set the strategies to use explicitly via
  * {@link #setStrategies(List)}.
  *
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
  * @since 3.2
  */
 public class ContentNegotiationManagerFactoryBean

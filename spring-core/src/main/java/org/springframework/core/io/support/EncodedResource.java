@@ -19,8 +19,8 @@ import java.nio.charset.Charset;
  * <p>Used as an argument for operations that support reading content with
  * a specific encoding, typically via a {@code java.io.Reader}.
  *
- * @author Juergen Hoeller
- * @author Sam Brannen
+
+
  * @see Resource#getInputStream()
  * @see java.io.Reader
  * @see java.nio.charset.Charset

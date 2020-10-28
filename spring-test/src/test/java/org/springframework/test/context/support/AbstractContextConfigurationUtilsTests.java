@@ -28,7 +28,7 @@ import static org.junit.Assert.*;
  * Abstract base class for tests involving {@link ContextLoaderUtils},
  * {@link BootstrapTestUtils}, and {@link ActiveProfilesUtils}.
  *
- * @author Sam Brannen
+
  * @since 3.1
  */
 abstract class AbstractContextConfigurationUtilsTests {

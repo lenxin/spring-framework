@@ -13,8 +13,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link ByteBufferConverter}.
  *
- * @author Phillip Webb
- * @author Juergen Hoeller
+
+
  */
 public class ByteBufferConverterTests {
 

@@ -14,7 +14,7 @@ import javax.mail.internet.MimeMessage;
  * special character encodings.
  * See {@link MimeMessageHelper MimeMessageHelper's javadoc} for an example.
  *
- * @author Juergen Hoeller
+
  * @since 07.10.2003
  * @see JavaMailSender#send(MimeMessagePreparator)
  * @see JavaMailSender#send(MimeMessagePreparator[])

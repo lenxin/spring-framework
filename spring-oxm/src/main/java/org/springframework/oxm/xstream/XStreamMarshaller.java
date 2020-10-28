@@ -93,9 +93,9 @@ import org.springframework.util.xml.StaxUtils;
  * Note that {@link XStream} construction has been reworked in 4.0, with the
  * stream driver and the class loader getting passed into XStream itself now.
  *
- * @author Peter Meijer
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
+
  * @since 3.0
  */
 public class XStreamMarshaller extends AbstractMarshaller implements BeanClassLoaderAware, InitializingBean {

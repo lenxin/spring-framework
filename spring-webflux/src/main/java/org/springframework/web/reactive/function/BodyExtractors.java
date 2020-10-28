@@ -25,10 +25,10 @@ import org.springframework.util.MultiValueMap;
 /**
  * Static factory methods for {@link BodyExtractor} implementations.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
- * @author Rossen Stoyanchev
- * @author Brian Clozel
+
+
+
+
  * @since 5.0
  */
 public abstract class BodyExtractors {

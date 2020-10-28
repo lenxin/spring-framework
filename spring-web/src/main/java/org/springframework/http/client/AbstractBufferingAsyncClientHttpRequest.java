@@ -11,7 +11,7 @@ import org.springframework.util.concurrent.ListenableFuture;
  * Base implementation of {@link AsyncClientHttpRequest} that buffers output
  * in a byte array before sending it over the wire.
  *
- * @author Arjen Poutsma
+
  * @since 4.0
  * @deprecated as of Spring 5.0, with no direct replacement
  */

@@ -32,9 +32,9 @@ import org.springframework.util.StringUtils;
  * values will <em>not</em> be passed along from a Message to an outbound
  * JMS Message.
  *
- * @author Mark Fisher
- * @author Gary Russell
- * @author Stephane Nicoll
+
+
+
  * @since 4.1
  */
 public class SimpleJmsHeaderMapper extends AbstractHeaderMapper<Message> implements JmsHeaderMapper {

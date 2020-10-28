@@ -15,8 +15,8 @@ import org.springframework.lang.Nullable;
  * Spring 3.1.2. Supports detecting qualifier metadata via {@code @Async} at the method or
  * declaring class level. See {@link #getExecutorQualifier(Method)} for details.
  *
- * @author Chris Beams
- * @author Stephane Nicoll
+
+
  * @since 3.1.2
  * @see org.springframework.scheduling.annotation.Async
  * @see org.springframework.scheduling.annotation.AsyncAnnotationAdvisor

@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Subclass of NopInterceptor that is serializable and
  * can be used to test proxy serialization.
  *
- * @author Rod Johnson
+
  */
 @SuppressWarnings("serial")
 public class SerializableNopInterceptor extends NopInterceptor implements Serializable {

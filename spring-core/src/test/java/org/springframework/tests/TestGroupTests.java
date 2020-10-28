@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 /**
  * Tests for {@link TestGroup}.
  *
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  */
 public class TestGroupTests {
 

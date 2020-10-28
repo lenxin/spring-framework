@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 /**
  * Test suite for {@link FastByteArrayOutputStream}.
  *
- * @author Craig Andrews
+
  */
 public class FastByteArrayOutputStreamTests {
 

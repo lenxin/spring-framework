@@ -9,9 +9,9 @@ import org.springframework.util.ObjectUtils;
 /**
  * Static utility methods for composing {@link ClassFilter ClassFilters}.
  *
- * @author Rod Johnson
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
+
  * @since 11.11.2003
  * @see MethodMatchers
  * @see Pointcuts

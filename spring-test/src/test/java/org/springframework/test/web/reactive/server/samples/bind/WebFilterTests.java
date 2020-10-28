@@ -12,7 +12,7 @@ import org.springframework.web.server.WebFilter;
 
 /**
  * Tests for a {@link WebFilter}.
- * @author Rossen Stoyanchev
+
  */
 public class WebFilterTests {
 

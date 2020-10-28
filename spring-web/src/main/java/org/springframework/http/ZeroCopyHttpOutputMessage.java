@@ -9,8 +9,8 @@ import reactor.core.publisher.Mono;
  * Sub-interface of {@code ReactiveOutputMessage} that has support for "zero-copy"
  * file transfers.
  *
- * @author Arjen Poutsma
- * @author Juergen Hoeller
+
+
  * @since 5.0
  * @see <a href="https://en.wikipedia.org/wiki/Zero-copy">Zero-copy</a>
  */

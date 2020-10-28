@@ -23,7 +23,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Provides various failure scenario linked to the use of {@link Cacheable#sync()}.
  *
- * @author Stephane Nicoll
+
  * @since 4.3
  */
 public class CacheSyncFailureTests {

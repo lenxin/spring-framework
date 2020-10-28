@@ -23,8 +23,8 @@ import org.springframework.util.Assert;
  * Record from an object and to convert an output Record into an object,
  * respectively.
  *
- * @author Thierry Templier
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #createInputRecord(javax.resource.cci.RecordFactory, Object)
  * @see #extractOutputData(javax.resource.cci.Record)

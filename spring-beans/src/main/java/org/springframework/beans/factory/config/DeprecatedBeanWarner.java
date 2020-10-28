@@ -11,7 +11,7 @@ import org.springframework.util.StringUtils;
 /**
  * Bean factory post processor that logs a warning for {@link Deprecated @Deprecated} beans.
  *
- * @author Arjen Poutsma
+
  * @since 3.0.3
  */
 public class DeprecatedBeanWarner implements BeanFactoryPostProcessor {

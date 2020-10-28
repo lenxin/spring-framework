@@ -11,7 +11,7 @@ import org.springframework.web.socket.WebSocketSession;
 /**
  * A {@link WebSocketHandlerDecorator} that adds logging to WebSocket lifecycle events.
  *
- * @author Rossen Stoyanchev
+
  * @since 4.0
  */
 public class LoggingWebSocketHandlerDecorator extends WebSocketHandlerDecorator {

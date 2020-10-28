@@ -38,8 +38,8 @@ import org.springframework.transaction.support.DefaultTransactionDefinition;
  *
  * <p>Compatible with Quartz 2.1.4 and higher, as of Spring 4.1.
  *
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
  * @since 2.5.6
  */
 public abstract class SchedulerAccessor implements ResourceLoaderAware {

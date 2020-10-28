@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for reflection helper code.
  *
- * @author Andy Clement
+
  */
 public class ReflectionHelperTests extends AbstractExpressionTests {
 

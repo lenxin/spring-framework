@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  * {@code 0}. Consider combining with {@link Comparator#thenComparing(Comparator)}
  * if additional sorting is required.
  *
- * @author Phillip Webb
+
  * @since 3.2
  * @param <T> the type of objects that may be compared by this comparator
  * @see Comparator#thenComparing(Comparator)

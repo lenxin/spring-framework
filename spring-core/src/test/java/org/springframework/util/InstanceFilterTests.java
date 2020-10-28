@@ -6,7 +6,7 @@ import static java.util.Arrays.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class InstanceFilterTests {
 

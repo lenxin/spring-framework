@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.*;
  * Tests that trigger annotation introspection failures and ensure that they are
  * dealt with correctly.
  *
- * @author Phillip Webb
+
  * @since 5.2
  * @see AnnotationUtils
  * @see AnnotatedElementUtils

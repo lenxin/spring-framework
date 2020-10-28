@@ -1,7 +1,7 @@
 package org.springframework.context;
 
 /**
- * @author Juergen Hoeller
+
  */
 public class BeanThatBroadcasts implements ApplicationContextAware {
 

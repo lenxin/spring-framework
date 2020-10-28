@@ -24,7 +24,7 @@ import static org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder.*
  * that accept {@code @Autowired} arguments can be executed in parallel without issues
  * regarding concurrent access to the {@linkplain Parameter parameters} of such methods.
  *
- * @author Sam Brannen
+
  * @since 5.1.3
  */
 class ParallelExecutionSpringExtensionTests {

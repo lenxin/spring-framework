@@ -26,8 +26,8 @@ import org.springframework.web.server.WebFilterChain;
  * <p>The name of the request parameter defaults to {@code _method}, but can be
  * adapted via the {@link #setMethodParamName(String) methodParamName} property.
  *
- * @author Greg Turnquist
- * @author Rossen Stoyanchev
+
+
  * @since 5.0
  */
 public class HiddenHttpMethodFilter implements WebFilter {

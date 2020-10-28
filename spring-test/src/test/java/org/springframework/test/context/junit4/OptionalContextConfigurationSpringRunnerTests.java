@@ -13,8 +13,8 @@ import static org.junit.Assert.assertEquals;
  * JUnit 4 based integration test which verifies that {@link @ContextConfiguration}
  * is optional.
  *
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  * @since 4.3
  */
 @RunWith(SpringRunner.class)

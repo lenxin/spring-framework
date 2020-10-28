@@ -14,9 +14,9 @@ import org.springframework.http.HttpMethod;
  *
  * <p>Created via the {@link OkHttp3ClientHttpRequestFactory}.
  *
- * @author Luciano Leggieri
- * @author Arjen Poutsma
- * @author Roy Clarkson
+
+
+
  * @since 4.3
  */
 class OkHttp3ClientHttpRequest extends AbstractBufferingClientHttpRequest {

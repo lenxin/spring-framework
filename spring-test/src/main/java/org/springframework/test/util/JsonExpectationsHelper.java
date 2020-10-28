@@ -8,7 +8,7 @@ import org.skyscreamer.jsonassert.JSONAssert;
  * <p>Use of this class requires the <a
  * href="https://jsonassert.skyscreamer.org/">JSONassert</a> library.
  *
- * @author Sebastien Deleuze
+
  * @since 4.1
  */
 public class JsonExpectationsHelper {

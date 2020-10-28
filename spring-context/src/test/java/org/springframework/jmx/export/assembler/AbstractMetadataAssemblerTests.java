@@ -22,8 +22,8 @@ import org.springframework.tests.aop.interceptor.NopInterceptor;
 import static org.junit.Assert.*;
 
 /**
- * @author Rob Harrop
- * @author Chris Beams
+
+
  */
 public abstract class AbstractMetadataAssemblerTests extends AbstractJmxAssemblerTests {
 

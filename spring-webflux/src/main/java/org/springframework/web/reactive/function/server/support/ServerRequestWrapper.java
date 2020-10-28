@@ -37,7 +37,7 @@ import org.springframework.web.util.UriBuilder;
  * {@link org.springframework.web.reactive.function.server.HandlerFilterFunction handler filter function}.
  * All methods default to calling through to the wrapped request.
  *
- * @author Arjen Poutsma
+
  * @since 5.0
  */
 public class ServerRequestWrapper implements ServerRequest {

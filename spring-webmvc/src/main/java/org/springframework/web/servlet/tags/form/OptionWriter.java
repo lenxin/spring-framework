@@ -65,10 +65,10 @@ import org.springframework.web.servlet.support.BindStatus;
  * {@link #isOptionSelected matches} the value that is bound to the tag instance.</li>
  * </ul>
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
- * @author Sam Brannen
- * @author Scott Andrews
+
+
+
+
  * @since 2.0
  */
 class OptionWriter {

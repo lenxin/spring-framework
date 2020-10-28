@@ -17,7 +17,7 @@ import static org.mockito.Mockito.*;
 /**
  * Unit tests for {@link AbstractListenerWriteProcessor}.
  *
- * @author Rossen Stoyanchev
+
  */
 public class ListenerWriteProcessorTests {
 

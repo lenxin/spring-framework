@@ -6,8 +6,8 @@ import org.springframework.lang.Nullable;
 /**
  * Thrown by {@link HttpMessageConverter} implementations when a conversion attempt fails.
  *
- * @author Arjen Poutsma
- * @author Sebastien Deleuze
+
+
  * @since 3.0
  */
 @SuppressWarnings("serial")

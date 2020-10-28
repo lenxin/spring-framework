@@ -59,8 +59,8 @@ import org.springframework.util.xml.StaxUtils;
  * <p>Note that this decoder is not registered by default but is used internally
  * by other decoders which are registered by default.
  *
- * @author Arjen Poutsma
- * @author Sam Brannen
+
+
  * @since 5.0
  */
 public class XmlEventDecoder extends AbstractDecoder<XMLEvent> {

@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 /**
- * @author Stephane Nicoll
+
  */
 public class JmsListenerEndpointRegistryTests {
 

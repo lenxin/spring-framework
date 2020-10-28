@@ -28,7 +28,7 @@ import static org.springframework.beans.factory.support.BeanDefinitionBuilder.*;
  * class, e.g.: forgets to annotate with {@link Configuration} or declares
  * a Configuration class as final.
  *
- * @author Chris Beams
+
  */
 public class InvalidConfigurationClassDefinitionTests {
 

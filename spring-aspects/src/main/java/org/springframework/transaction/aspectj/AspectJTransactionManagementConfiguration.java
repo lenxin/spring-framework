@@ -14,8 +14,8 @@ import org.springframework.transaction.config.TransactionManagementConfigUtils;
  * to enable AspectJ-based annotation-driven transaction management for Spring's own
  * {@link org.springframework.transaction.annotation.Transactional} annotation.
  *
- * @author Chris Beams
- * @author Juergen Hoeller
+
+
  * @since 3.1
  * @see EnableTransactionManagement
  * @see TransactionManagementConfigurationSelector

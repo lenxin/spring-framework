@@ -24,7 +24,7 @@ import static org.junit.Assert.assertNull;
 /**
  * Unit tests for {@link AbstractView}.
  *
- * @author Sebastien Deleuze
+
  */
 public class AbstractViewTests {
 

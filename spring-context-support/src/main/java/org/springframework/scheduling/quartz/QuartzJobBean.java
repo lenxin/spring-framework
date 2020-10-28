@@ -29,7 +29,7 @@ import org.springframework.beans.PropertyAccessorFactory;
  * This allows to implement dependency-injected Quartz Jobs without
  * a dependency on Spring base classes.
  *
- * @author Juergen Hoeller
+
  * @since 18.02.2004
  * @see org.quartz.JobExecutionContext#getMergedJobDataMap()
  * @see org.quartz.Scheduler#getContext()

@@ -23,7 +23,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 /**
  * Unit tests for {@link Jackson2CborDecoder}.
  *
- * @author Sebastien Deleuze
+
  */
 public class Jackson2CborDecoderTests extends AbstractDecoderTestCase<Jackson2CborDecoder> {
 

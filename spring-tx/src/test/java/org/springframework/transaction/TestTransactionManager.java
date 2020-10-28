@@ -4,7 +4,7 @@ import org.springframework.transaction.support.AbstractPlatformTransactionManage
 import org.springframework.transaction.support.DefaultTransactionStatus;
 
 /**
- * @author Juergen Hoeller
+
  * @since 29.04.2003
  */
 @SuppressWarnings("serial")

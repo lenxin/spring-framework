@@ -21,8 +21,8 @@ import org.springframework.cache.interceptor.CacheOperationSource;
  * <p><b>NB:</b> If a method implements an interface that is itself cache annotated, the
  * relevant Spring cache definition will <i>not</i> be resolved.
  *
- * @author Costin Leau
- * @author Stephane Nicoll
+
+
  * @since 3.1
  */
 public abstract aspect AbstractCacheAspect extends CacheAspectSupport implements DisposableBean {

@@ -19,7 +19,7 @@ import static org.mockito.BDDMockito.*;
 /**
  * Test fixture for {@link MockFilterChain}.
  *
- * @author Rob Winch
+
  */
 public class MockFilterChainTests {
 

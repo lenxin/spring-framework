@@ -5,8 +5,8 @@ import org.junit.Test;
 /**
  * Unit tests for {@link HostRequestMatcher}.
  *
- * @author Rob Winch
- * @author Sam Brannen
+
+
  * @since 4.2
  */
 public class HostRequestMatcherTests extends AbstractWebRequestMatcherTests {

@@ -24,8 +24,8 @@ import org.springframework.lang.Nullable;
  * {@code MBeanServer} first, set the value of the
  * "locateExistingServerIfPossible" property to "true".
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 1.2
  * @see #setLocateExistingServerIfPossible
  * @see #locateMBeanServer

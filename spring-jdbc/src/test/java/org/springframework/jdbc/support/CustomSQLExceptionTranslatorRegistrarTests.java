@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 /**
  * Tests for custom {@link SQLExceptionTranslator}.
  *
- * @author Thomas Risberg
+
  */
 public class CustomSQLExceptionTranslatorRegistrarTests {
 

@@ -20,8 +20,8 @@ import static org.junit.Assert.*;
  * Abstract base class for all tests involving EJB transaction support in the
  * TestContext framework.
  *
- * @author Sam Brannen
- * @author Xavier Detant
+
+
  * @since 4.0.1
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

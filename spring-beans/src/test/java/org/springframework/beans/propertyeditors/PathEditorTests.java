@@ -11,7 +11,7 @@ import org.springframework.util.ClassUtils;
 import static org.junit.Assert.*;
 
 /**
- * @author Juergen Hoeller
+
  * @since 4.3.2
  */
 public class PathEditorTests {

@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
  * Unit tests relating to the abstract {@link AbstractPrototypeBasedTargetSource}
  * and not subclasses.
  *
- * @author Rod Johnson
- * @author Chris Beams
+
+
  */
 public class PrototypeBasedTargetSourceTests {
 

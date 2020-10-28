@@ -3,8 +3,8 @@ package org.springframework.cache.interceptor;
 /**
  * Class describing a cache 'evict' operation.
  *
- * @author Costin Leau
- * @author Marcin Kamionowski
+
+
  * @since 3.1
  */
 public class CacheEvictOperation extends CacheOperation {

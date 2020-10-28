@@ -14,9 +14,9 @@ import org.springframework.lang.Nullable;
 /**
  * Represents the boolean AND operation.
  *
- * @author Andy Clement
- * @author Mark Fisher
- * @author Oliver Becker
+
+
+
  * @since 3.0
  */
 public class OpAnd extends Operator {

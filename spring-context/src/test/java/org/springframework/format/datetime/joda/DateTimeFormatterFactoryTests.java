@@ -15,8 +15,8 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Phillip Webb
- * @author Sam Brannen
+
+
  */
 public class DateTimeFormatterFactoryTests {
 

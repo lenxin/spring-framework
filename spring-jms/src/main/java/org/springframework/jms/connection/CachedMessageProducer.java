@@ -16,7 +16,7 @@ import org.springframework.lang.Nullable;
  * JMS MessageProducer decorator that adapts calls to a shared MessageProducer
  * instance underneath, managing QoS settings locally within the decorator.
  *
- * @author Juergen Hoeller
+
  * @since 2.5.3
  */
 class CachedMessageProducer implements MessageProducer, QueueSender, TopicPublisher {

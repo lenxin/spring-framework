@@ -20,7 +20,7 @@ import org.springframework.util.Assert;
  * invoke the {@link #DefaultCacheAwareContextLoaderDelegate(ContextCache)}
  * and provide a custom {@link ContextCache} implementation.
  *
- * @author Sam Brannen
+
  * @since 4.1
  */
 public class DefaultCacheAwareContextLoaderDelegate implements CacheAwareContextLoaderDelegate {

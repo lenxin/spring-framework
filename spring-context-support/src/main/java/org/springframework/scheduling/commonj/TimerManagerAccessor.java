@@ -15,7 +15,7 @@ import org.springframework.util.Assert;
  * Base class for classes that are accessing a CommonJ {@link commonj.timers.TimerManager}
  * Defines common configuration settings and common lifecycle handling.
  *
- * @author Juergen Hoeller
+
  * @since 3.0
  * @see commonj.timers.TimerManager
  * @deprecated as of 5.1, in favor of EE 7's

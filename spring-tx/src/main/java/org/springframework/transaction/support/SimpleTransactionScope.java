@@ -18,7 +18,7 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.beans.factory.config.ConfigurableBeanFactory#registerScope}
  * or through a {@link org.springframework.beans.factory.config.CustomScopeConfigurer} bean.
  *
- * @author Juergen Hoeller
+
  * @since 4.2
  * @see org.springframework.context.support.SimpleThreadScope
  * @see org.springframework.beans.factory.config.ConfigurableBeanFactory#registerScope

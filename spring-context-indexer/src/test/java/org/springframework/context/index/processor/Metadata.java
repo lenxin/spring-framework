@@ -10,7 +10,7 @@ import org.hamcrest.Description;
 /**
  * Hamcrest {@link org.hamcrest.Matcher Matcher} to help test {@link CandidateComponentsMetadata}.
  *
- * @author Stephane Nicoll
+
  */
 public class Metadata {
 

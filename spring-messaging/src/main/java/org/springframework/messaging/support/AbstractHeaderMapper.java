@@ -12,7 +12,7 @@ import org.springframework.util.StringUtils;
 /**
  * A base {@link HeaderMapper} implementation.
  *
- * @author Stephane Nicoll
+
  * @since 4.1
  * @param <T> type of the instance to and from which headers will be mapped
  */

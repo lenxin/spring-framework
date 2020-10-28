@@ -10,8 +10,8 @@ import org.springframework.lang.Nullable;
  * ServletRequestHandledEvent subclass), but can also be raised by any
  * other web component.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since January 17, 2001
  * @see ServletRequestHandledEvent
  * @see org.springframework.web.servlet.FrameworkServlet

@@ -20,8 +20,8 @@ import org.springframework.aop.SpringProxy;
  * <p>In general, specify {@code proxyTargetClass} to enforce a CGLIB proxy,
  * or specify one or more interfaces to use a JDK dynamic proxy.
  *
- * @author Rod Johnson
- * @author Juergen Hoeller
+
+
  * @since 12.03.2004
  * @see AdvisedSupport#setOptimize
  * @see AdvisedSupport#setProxyTargetClass

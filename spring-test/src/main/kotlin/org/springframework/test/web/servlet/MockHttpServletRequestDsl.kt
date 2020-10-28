@@ -21,7 +21,7 @@ import javax.servlet.http.Cookie
  * @see MockMvc.options
  * @see MockMvc.head
  * @see MockMvc.request
- * @author Sebastien Deleuze
+
  * @since 5.2
  */
 open class MockHttpServletRequestDsl(private val builder: MockHttpServletRequestBuilder) {

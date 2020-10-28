@@ -29,9 +29,9 @@ import org.springframework.util.concurrent.ListenableFuture;
 import static org.junit.Assert.*;
 
 /**
- * @author Mark Fisher
- * @author Juergen Hoeller
- * @author Stephane Nicoll
+
+
+
  */
 public class AsyncAnnotationBeanPostProcessorTests {
 

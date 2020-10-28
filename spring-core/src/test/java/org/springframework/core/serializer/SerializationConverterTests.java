@@ -12,8 +12,8 @@ import org.springframework.core.serializer.support.SerializingConverter;
 import static org.junit.Assert.*;
 
 /**
- * @author Gary Russell
- * @author Mark Fisher
+
+
  * @since 3.0.5
  */
 public class SerializationConverterTests {

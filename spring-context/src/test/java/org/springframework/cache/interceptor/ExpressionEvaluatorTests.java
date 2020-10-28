@@ -24,10 +24,10 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * @author Costin Leau
- * @author Phillip Webb
- * @author Sam Brannen
- * @author Stephane Nicoll
+
+
+
+
  */
 public class ExpressionEvaluatorTests {
 

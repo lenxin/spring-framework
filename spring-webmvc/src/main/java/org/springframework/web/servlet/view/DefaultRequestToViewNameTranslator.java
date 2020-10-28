@@ -33,8 +33,8 @@ import org.springframework.web.util.UrlPathHelper;
  * <li>{@code http://localhost:8080/gamecast/admin/index.html} &raquo; {@code admin/index}</li>
  * </ul>
  *
- * @author Rob Harrop
- * @author Juergen Hoeller
+
+
  * @since 2.0
  * @see org.springframework.web.servlet.RequestToViewNameTranslator
  * @see org.springframework.web.servlet.ViewResolver

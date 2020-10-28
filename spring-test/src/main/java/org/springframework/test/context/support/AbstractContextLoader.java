@@ -39,9 +39,9 @@ import org.springframework.util.ResourceUtils;
  * {@link #processContextConfiguration(ContextConfigurationAttributes)} delegates
  * to {@link #processLocations(Class, String...)}.
  *
- * @author Sam Brannen
- * @author Juergen Hoeller
- * @author Phillip Webb
+
+
+
  * @since 2.5
  * @see #generateDefaultLocations
  * @see #getResourceSuffixes

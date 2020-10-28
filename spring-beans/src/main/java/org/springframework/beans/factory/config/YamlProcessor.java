@@ -27,8 +27,8 @@ import org.springframework.util.StringUtils;
  *
  * <p>Requires SnakeYAML 1.18 or higher, as of Spring Framework 5.0.6.
  *
- * @author Dave Syer
- * @author Juergen Hoeller
+
+
  * @since 4.1
  */
 public abstract class YamlProcessor {

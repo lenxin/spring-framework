@@ -26,8 +26,8 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
  * requests.
  * <p>See <a href="https://jira.spring.io/browse/SPR-13260" target="_blank">SPR-13260</a>.
  *
- * @author Sam Brannen
- * @author Rob Winch
+
+
  * @since 4.2
  */
 @RunWith(SpringJUnit4ClassRunner.class)

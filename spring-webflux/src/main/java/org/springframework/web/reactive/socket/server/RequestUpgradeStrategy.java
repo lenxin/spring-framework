@@ -20,7 +20,7 @@ import org.springframework.web.server.ServerWebExchange;
  * for which the standard Java WebSocket API JSR-356 does not define a way to
  * upgrade a request so a custom strategy is needed for every Servlet container.
  *
- * @author Rossen Stoyanchev
+
  * @since 5.0
  */
 public interface RequestUpgradeStrategy {

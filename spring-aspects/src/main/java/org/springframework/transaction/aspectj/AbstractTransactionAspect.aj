@@ -24,9 +24,9 @@ import org.springframework.transaction.interceptor.TransactionAttributeSource;
  * interfaces, as they are an implementation detail rather than a contract
  * specification validation.
  *
- * @author Rod Johnson
- * @author Ramnivas Laddad
- * @author Juergen Hoeller
+
+
+
  * @since 2.0
  */
 public abstract aspect AbstractTransactionAspect extends TransactionAspectSupport implements DisposableBean {
