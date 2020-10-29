@@ -115,10 +115,8 @@ public class PropertiesBeanDefinitionReader extends AbstractBeanDefinitionReader
 	 * Prefix used to denote a constructor argument definition.
 	 */
 	public static final String CONSTRUCTOR_ARG_PREFIX = "$";
-
 	@Nullable
 	private String defaultParentBean;
-
 	private PropertiesPersister propertiesPersister = new DefaultPropertiesPersister();
 
 	/**

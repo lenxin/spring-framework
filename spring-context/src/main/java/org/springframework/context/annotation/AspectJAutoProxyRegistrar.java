@@ -10,13 +10,10 @@ import org.springframework.core.type.AnnotationMetadata;
  * AnnotationAwareAspectJAutoProxyCreator} against the current {@link BeanDefinitionRegistry}
  * as appropriate based on a given @{@link EnableAspectJAutoProxy} annotation.
  *
-
-
- * @since 3.1
  * @see EnableAspectJAutoProxy
+ * @since 3.1
  */
 class AspectJAutoProxyRegistrar implements ImportBeanDefinitionRegistrar {
-
 	/**
 	 * Register, escalate, and configure the AspectJ auto proxy creator based on the value
 	 * of the @{@link EnableAspectJAutoProxy#proxyTargetClass()} attribute on the importing
@@ -25,7 +22,6 @@ class AspectJAutoProxyRegistrar implements ImportBeanDefinitionRegistrar {
 	@Override
 	public void registerBeanDefinitions(
 			AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
-
 		AopConfigUtils.registerAspectJAnnotationAutoProxyCreatorIfNecessary(registry);
 
 		AnnotationAttributes enableAspectJAutoProxy =
@@ -39,5 +35,4 @@ class AspectJAutoProxyRegistrar implements ImportBeanDefinitionRegistrar {
 			}
 		}
 	}
-
 }

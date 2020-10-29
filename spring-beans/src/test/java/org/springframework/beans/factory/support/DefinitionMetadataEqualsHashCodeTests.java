@@ -1,22 +1,18 @@
 package org.springframework.beans.factory.support;
 
 import org.junit.Test;
-
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.RuntimeBeanReference;
 import org.springframework.tests.sample.beans.TestBean;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  * Unit tests for {@code equals()} and {@code hashCode()} in bean definitions.
- *
-
-
  */
 @SuppressWarnings("serial")
 public class DefinitionMetadataEqualsHashCodeTests {
-
 	@Test
 	public void rootBeanDefinition() {
 		RootBeanDefinition master = new RootBeanDefinition(TestBean.class);
@@ -33,8 +29,8 @@ public class DefinitionMetadataEqualsHashCodeTests {
 	}
 
 	/**
-	 * @since 3.2.8
 	 * @see <a href="https://jira.spring.io/browse/SPR-11420">SPR-11420</a>
+	 * @since 3.2.8
 	 */
 	@Test
 	public void rootBeanDefinitionAndMethodOverridesWithDifferentOverloadedValues() {
@@ -88,7 +84,7 @@ public class DefinitionMetadataEqualsHashCodeTests {
 		definition.setAutowireMode(AbstractBeanDefinition.AUTOWIRE_BY_TYPE);
 		// definition.getConstructorArgumentValues().addGenericArgumentValue("foo");
 		definition.setDependencyCheck(AbstractBeanDefinition.DEPENDENCY_CHECK_OBJECTS);
-		definition.setDependsOn(new String[] { "foo", "bar" });
+		definition.setDependsOn(new String[]{"foo", "bar"});
 		definition.setDestroyMethodName("destroy");
 		definition.setEnforceDestroyMethod(false);
 		definition.setEnforceInitMethod(true);
@@ -115,5 +111,4 @@ public class DefinitionMetadataEqualsHashCodeTests {
 		assertEquals("Subclass should be equal", master, subclass);
 		assertEquals("Hash code for subclass should match", master.hashCode(), subclass.hashCode());
 	}
-
 }

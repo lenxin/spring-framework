@@ -1,13 +1,9 @@
 package org.springframework.context.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import org.springframework.beans.factory.support.BeanDefinitionReader;
 import org.springframework.core.annotation.AliasFor;
+
+import java.lang.annotation.*;
 
 /**
  * Indicates one or more resources containing bean definitions to import.
@@ -26,20 +22,17 @@ import org.springframework.core.annotation.AliasFor;
  * attribute may be declared, allowing the user to choose a custom {@link BeanDefinitionReader}
  * implementation.
  *
-
-
-
- * @since 3.0
  * @see Configuration
  * @see Import
+ * @since 3.0
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
 public @interface ImportResource {
-
 	/**
 	 * Alias for {@link #locations}.
+	 *
 	 * @see #locations
 	 * @see #reader
 	 */
@@ -52,9 +45,10 @@ public @interface ImportResource {
 	 * {@code file:}, etc.
 	 * <p>Consult the Javadoc for {@link #reader} for details on how resources
 	 * will be processed.
-	 * @since 4.2
+	 *
 	 * @see #value
 	 * @see #reader
+	 * @since 4.2
 	 */
 	@AliasFor("value")
 	String[] locations() default {};
@@ -67,8 +61,8 @@ public @interface ImportResource {
 	 * {@link org.springframework.beans.factory.groovy.GroovyBeanDefinitionReader GroovyBeanDefinitionReader};
 	 * whereas, all other resources will be processed with an
 	 * {@link org.springframework.beans.factory.xml.XmlBeanDefinitionReader XmlBeanDefinitionReader}.
+	 *
 	 * @see #value
 	 */
 	Class<? extends BeanDefinitionReader> reader() default BeanDefinitionReader.class;
-
 }

@@ -22,19 +22,16 @@ import org.springframework.core.type.AnnotationMetadata;
  * selection of imports until all {@code @Configuration} classes have been processed
  * (see {@link DeferredImportSelector} for details).
  *
-
- * @since 3.1
  * @see DeferredImportSelector
  * @see Import
  * @see ImportBeanDefinitionRegistrar
  * @see Configuration
+ * @since 3.1
  */
 public interface ImportSelector {
-
 	/**
 	 * Select and return the names of which class(es) should be imported based on
 	 * the {@link AnnotationMetadata} of the importing @{@link Configuration} class.
 	 */
 	String[] selectImports(AnnotationMetadata importingClassMetadata);
-
 }

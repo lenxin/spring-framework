@@ -31,10 +31,12 @@ import java.util.*;
 /**
  * Reads a given fully-populated set of ConfigurationClass instances, registering bean
  * definitions with the given {@link BeanDefinitionRegistry} based on its contents.
+ * 读取给定的完全填充的ConfigurationClass实例集，并根据其内容向给定的BeanDefinitionRegistry注册bean定义。
  *
  * <p>This class was modeled after the {@link BeanDefinitionReader} hierarchy, but does
  * not implement/extend any of its artifacts as a set of configuration classes is not a
  * {@link Resource}.
+ * 这个类是按照BeanDefinitionReader层次结构建模的，但是没有实现/扩展它的任何构件，因为一组配置类不是资源。
  *
  * @see ConfigurationClassParser
  * @since 3.0

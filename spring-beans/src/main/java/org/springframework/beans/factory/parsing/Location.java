@@ -18,12 +18,12 @@ import org.springframework.util.Assert;
  */
 public class Location {
 	private final Resource resource;
-
 	@Nullable
 	private final Object source;
 
 	/**
 	 * Create a new instance of the {@link Location} class.
+	 *
 	 * @param resource the resource with which this location is associated
 	 */
 	public Location(Resource resource) {
@@ -32,9 +32,10 @@ public class Location {
 
 	/**
 	 * Create a new instance of the {@link Location} class.
+	 *
 	 * @param resource the resource with which this location is associated
-	 * @param source the actual location within the associated resource
-	 * (may be {@code null})
+	 * @param source   the actual location within the associated resource
+	 *                 (may be {@code null})
 	 */
 	public Location(Resource resource, @Nullable Object source) {
 		Assert.notNull(resource, "Resource must not be null");

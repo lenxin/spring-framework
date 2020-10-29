@@ -74,7 +74,6 @@ public class ConfigurationClassPostProcessor implements BeanDefinitionRegistryPo
 
 	private static final String IMPORT_REGISTRY_BEAN_NAME =
 			ConfigurationClassPostProcessor.class.getName() + ".importRegistry";
-
 	private final Log logger = LogFactory.getLog(getClass());
 	private SourceExtractor sourceExtractor = new PassThroughSourceExtractor();
 	private ProblemReporter problemReporter = new FailFastProblemReporter();

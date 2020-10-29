@@ -1,9 +1,9 @@
 package org.springframework.context.annotation;
 
-import java.util.Objects;
-
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.lang.Nullable;
+
+import java.util.Objects;
 
 /**
  * A variation of {@link ImportSelector} that runs after all {@code @Configuration} beans
@@ -17,15 +17,13 @@ import org.springframework.lang.Nullable;
  * <p>Implementations may also provide an {@link #getImportGroup() import group} which
  * can provide additional sorting and filtering logic across different selectors.
  *
-
-
  * @since 4.0
  */
 public interface DeferredImportSelector extends ImportSelector {
-
 	/**
 	 * Return a specific import group.
 	 * <p>The default implementations return {@code null} for no grouping required.
+	 *
 	 * @return the import group class, or {@code null} if none
 	 * @since 5.0
 	 */
@@ -34,12 +32,10 @@ public interface DeferredImportSelector extends ImportSelector {
 		return null;
 	}
 
-
 	/**
 	 * Interface used to group results from different import selectors.
 	 */
 	interface Group {
-
 		/**
 		 * Process the {@link AnnotationMetadata} of the importing @{@link Configuration}
 		 * class using the specified {@link DeferredImportSelector}.
@@ -52,15 +48,12 @@ public interface DeferredImportSelector extends ImportSelector {
 		 */
 		Iterable<Entry> selectImports();
 
-
 		/**
 		 * An entry that holds the {@link AnnotationMetadata} of the importing
 		 * {@link Configuration} class and the class name to import.
 		 */
 		class Entry {
-
 			private final AnnotationMetadata metadata;
-
 			private final String importClassName;
 
 			public Entry(AnnotationMetadata metadata, String importClassName) {
@@ -102,5 +95,4 @@ public interface DeferredImportSelector extends ImportSelector {
 			}
 		}
 	}
-
 }
