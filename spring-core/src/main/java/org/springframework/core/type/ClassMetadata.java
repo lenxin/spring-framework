@@ -14,16 +14,19 @@ import org.springframework.lang.Nullable;
 public interface ClassMetadata {
 	/**
 	 * Return the name of the underlying class.
+	 * 返回类名
 	 */
 	String getClassName();
 
 	/**
 	 * Return whether the underlying class represents an interface.
+	 * 是否是接口
 	 */
 	boolean isInterface();
 
 	/**
 	 * Return whether the underlying class represents an annotation.
+	 * 是否是注解
 	 *
 	 * @since 4.1
 	 */
@@ -31,17 +34,20 @@ public interface ClassMetadata {
 
 	/**
 	 * Return whether the underlying class is marked as abstract.
+	 * 是否是抽象类
 	 */
 	boolean isAbstract();
 
 	/**
 	 * Return whether the underlying class represents a concrete class,
 	 * i.e. neither an interface nor an abstract class.
+	 * 是否是具体类，不是接口或抽象类
 	 */
 	boolean isConcrete();
 
 	/**
 	 * Return whether the underlying class is marked as 'final'.
+	 * 是否是最终类，有final修饰
 	 */
 	boolean isFinal();
 
@@ -49,6 +55,7 @@ public interface ClassMetadata {
 	 * Determine whether the underlying class is independent, i.e. whether
 	 * it is a top-level class or a nested class (static inner class) that
 	 * can be constructed independently from an enclosing class.
+	 * 是否独立，顶层类或静态内部类
 	 */
 	boolean isIndependent();
 

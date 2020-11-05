@@ -8,16 +8,13 @@ package org.springframework.cglib.core;
  * version (used by some other library) and Spring's embedded variant,
  * in case the same class happens to get proxied for different purposes.
  *
-
  * @since 3.2.8
  */
 public class SpringNamingPolicy extends DefaultNamingPolicy {
-
 	public static final SpringNamingPolicy INSTANCE = new SpringNamingPolicy();
 
 	@Override
 	protected String getTag() {
 		return "BySpringCGLIB";
 	}
-
 }

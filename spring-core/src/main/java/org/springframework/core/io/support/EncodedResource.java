@@ -19,8 +19,6 @@ import java.nio.charset.Charset;
  * <p>Used as an argument for operations that support reading content with
  * a specific encoding, typically via a {@code java.io.Reader}.
  *
-
-
  * @see Resource#getInputStream()
  * @see java.io.Reader
  * @see java.nio.charset.Charset
@@ -28,10 +26,8 @@ import java.nio.charset.Charset;
  */
 public class EncodedResource implements InputStreamSource {
 	private final Resource resource;
-
 	@Nullable
 	private final String encoding;
-
 	@Nullable
 	private final Charset charset;
 

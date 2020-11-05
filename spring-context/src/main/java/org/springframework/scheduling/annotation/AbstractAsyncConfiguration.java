@@ -1,9 +1,5 @@
 package org.springframework.scheduling.annotation;
 
-import java.util.Collection;
-import java.util.concurrent.Executor;
-import java.util.function.Supplier;
-
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -13,28 +9,25 @@ import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.lang.Nullable;
 import org.springframework.util.CollectionUtils;
 
+import java.util.Collection;
+import java.util.concurrent.Executor;
+import java.util.function.Supplier;
+
 /**
  * Abstract base {@code Configuration} class providing common structure for enabling
  * Spring's asynchronous method execution capability.
  *
-
-
-
- * @since 3.1
  * @see EnableAsync
+ * @since 3.1
  */
 @Configuration
 public abstract class AbstractAsyncConfiguration implements ImportAware {
-
 	@Nullable
 	protected AnnotationAttributes enableAsync;
-
 	@Nullable
 	protected Supplier<Executor> executor;
-
 	@Nullable
 	protected Supplier<AsyncUncaughtExceptionHandler> exceptionHandler;
-
 
 	@Override
 	public void setImportMetadata(AnnotationMetadata importMetadata) {
@@ -61,5 +54,4 @@ public abstract class AbstractAsyncConfiguration implements ImportAware {
 		this.executor = configurer::getAsyncExecutor;
 		this.exceptionHandler = configurer::getAsyncUncaughtExceptionHandler;
 	}
-
 }
