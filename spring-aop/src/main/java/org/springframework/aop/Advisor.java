@@ -13,23 +13,21 @@ import org.aopalliance.aop.Advice;
  * The Advisor interface allows support for different types of advice,
  * such as <b>before</b> and <b>after</b> advice, which need not be
  * implemented using interception.
- *
-
-
  */
 public interface Advisor {
-
 	/**
 	 * Common placeholder for an empty {@code Advice} to be returned from
 	 * {@link #getAdvice()} if no proper advice has been configured (yet).
+	 *
 	 * @since 5.0
 	 */
-	Advice EMPTY_ADVICE = new Advice() {};
-
+	Advice EMPTY_ADVICE = new Advice() {
+	};
 
 	/**
 	 * Return the advice part of this aspect. An advice may be an
 	 * interceptor, a before advice, a throws advice, etc.
+	 *
 	 * @return the advice that should apply if the pointcut matches
 	 * @see org.aopalliance.intercept.MethodInterceptor
 	 * @see BeforeAdvice
@@ -46,8 +44,8 @@ public interface Advisor {
 	 * Typical Advisor implementations always return {@code true}.
 	 * Use singleton/prototype bean definitions or appropriate programmatic
 	 * proxy creation to ensure that Advisors have the correct lifecycle model.
+	 *
 	 * @return whether this advice is associated with a particular target instance
 	 */
 	boolean isPerInstance();
-
 }

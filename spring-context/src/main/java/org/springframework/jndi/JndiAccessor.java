@@ -1,34 +1,30 @@
 package org.springframework.jndi;
 
-import java.util.Properties;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.lang.Nullable;
+
+import java.util.Properties;
 
 /**
  * Convenient superclass for JNDI accessors, providing "jndiTemplate"
  * and "jndiEnvironment" bean properties.
  *
-
- * @since 1.1
  * @see #setJndiTemplate
  * @see #setJndiEnvironment
+ * @since 1.1
  */
 public class JndiAccessor {
-
 	/**
 	 * Logger, available to subclasses.
 	 */
 	protected final Log logger = LogFactory.getLog(getClass());
-
 	private JndiTemplate jndiTemplate = new JndiTemplate();
-
 
 	/**
 	 * Set the JNDI template to use for JNDI lookups.
 	 * <p>You can also specify JNDI environment settings via "jndiEnvironment".
+	 *
 	 * @see #setJndiEnvironment
 	 */
 	public void setJndiTemplate(@Nullable JndiTemplate jndiTemplate) {
@@ -45,6 +41,7 @@ public class JndiAccessor {
 	/**
 	 * Set the JNDI environment to use for JNDI lookups.
 	 * <p>Creates a JndiTemplate with the given environment settings.
+	 *
 	 * @see #setJndiTemplate
 	 */
 	public void setJndiEnvironment(@Nullable Properties jndiEnvironment) {
@@ -58,5 +55,4 @@ public class JndiAccessor {
 	public Properties getJndiEnvironment() {
 		return this.jndiTemplate.getEnvironment();
 	}
-
 }

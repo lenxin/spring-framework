@@ -8,9 +8,7 @@ import org.aopalliance.aop.Advice;
  * <p>Spring supports only method before advice. Although this is unlikely to change,
  * this API is designed to allow field advice in future if desired.
  *
-
  * @see AfterAdvice
  */
 public interface BeforeAdvice extends Advice {
-
 }

@@ -1,11 +1,11 @@
 package org.springframework.jndi;
 
-import javax.naming.NamingException;
-
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import javax.naming.NamingException;
 
 /**
  * Convenient superclass for JNDI-based service locators,
@@ -23,26 +23,23 @@ import org.springframework.util.StringUtils;
  * on demand. The latter strategy is more flexible in that it allows for
  * initialization of the locator before the JNDI object is available.
  *
-
- * @since 1.1
  * @see #setJndiName
  * @see #setJndiTemplate
  * @see #setJndiEnvironment
  * @see #setResourceRef
  * @see #lookup()
+ * @since 1.1
  */
 public abstract class JndiObjectLocator extends JndiLocatorSupport implements InitializingBean {
-
 	@Nullable
 	private String jndiName;
-
 	@Nullable
 	private Class<?> expectedType;
-
 
 	/**
 	 * Specify the JNDI name to look up. If it doesn't begin with "java:comp/env/"
 	 * this prefix is added automatically if "resourceRef" is set to "true".
+	 *
 	 * @param jndiName the JNDI name to look up
 	 * @see #setResourceRef
 	 */
@@ -82,12 +79,12 @@ public abstract class JndiObjectLocator extends JndiLocatorSupport implements In
 		}
 	}
 
-
 	/**
 	 * Perform the actual JNDI lookup for this locator's target resource.
+	 *
 	 * @return the located target object
 	 * @throws NamingException if the JNDI lookup failed or if the
-	 * located JNDI object is not assignable to the expected type
+	 *                         located JNDI object is not assignable to the expected type
 	 * @see #setJndiName
 	 * @see #setExpectedType
 	 * @see #lookup(String, Class)
@@ -97,5 +94,4 @@ public abstract class JndiObjectLocator extends JndiLocatorSupport implements In
 		Assert.state(jndiName != null, "No JNDI name specified");
 		return lookup(jndiName, getExpectedType());
 	}
-
 }

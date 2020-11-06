@@ -1,14 +1,13 @@
 package org.springframework.aop.framework.adapter;
 
+import org.aopalliance.aop.Advice;
+import org.aopalliance.intercept.MethodInterceptor;
+import org.springframework.aop.Advisor;
+import org.springframework.aop.support.DefaultPointcutAdvisor;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.aopalliance.aop.Advice;
-import org.aopalliance.intercept.MethodInterceptor;
-
-import org.springframework.aop.Advisor;
-import org.springframework.aop.support.DefaultPointcutAdvisor;
 
 /**
  * Default implementation of the {@link AdvisorAdapterRegistry} interface.
@@ -16,16 +15,10 @@ import org.springframework.aop.support.DefaultPointcutAdvisor;
  * {@link org.springframework.aop.MethodBeforeAdvice},
  * {@link org.springframework.aop.AfterReturningAdvice},
  * {@link org.springframework.aop.ThrowsAdvice}.
- *
-
-
-
  */
 @SuppressWarnings("serial")
 public class DefaultAdvisorAdapterRegistry implements AdvisorAdapterRegistry, Serializable {
-
 	private final List<AdvisorAdapter> adapters = new ArrayList<>(3);
-
 
 	/**
 	 * Create a new DefaultAdvisorAdapterRegistry, registering well-known adapters.
@@ -35,7 +28,6 @@ public class DefaultAdvisorAdapterRegistry implements AdvisorAdapterRegistry, Se
 		registerAdvisorAdapter(new AfterReturningAdviceAdapter());
 		registerAdvisorAdapter(new ThrowsAdviceAdapter());
 	}
-
 
 	@Override
 	public Advisor wrap(Object adviceObject) throws UnknownAdviceTypeException {
@@ -81,5 +73,4 @@ public class DefaultAdvisorAdapterRegistry implements AdvisorAdapterRegistry, Se
 	public void registerAdvisorAdapter(AdvisorAdapter adapter) {
 		this.adapters.add(adapter);
 	}
-
 }

@@ -1,28 +1,26 @@
 package org.springframework.aop.framework;
 
+import org.springframework.util.Assert;
+
 import java.util.LinkedList;
 import java.util.List;
-
-import org.springframework.util.Assert;
 
 /**
  * Base class for proxy factories.
  * Provides convenient access to a configurable AopProxyFactory.
  *
-
- * @since 2.0.3
  * @see #createAopProxy()
+ * @since 2.0.3
  */
 @SuppressWarnings("serial")
 public class ProxyCreatorSupport extends AdvisedSupport {
-
 	private AopProxyFactory aopProxyFactory;
-
 	private final List<AdvisedSupportListener> listeners = new LinkedList<>();
 
-	/** Set to true when the first AOP proxy has been created. */
+	/**
+	 * Set to true when the first AOP proxy has been created.
+	 */
 	private boolean active = false;
-
 
 	/**
 	 * Create a new ProxyCreatorSupport instance.
@@ -33,13 +31,13 @@ public class ProxyCreatorSupport extends AdvisedSupport {
 
 	/**
 	 * Create a new ProxyCreatorSupport instance.
+	 *
 	 * @param aopProxyFactory the AopProxyFactory to use
 	 */
 	public ProxyCreatorSupport(AopProxyFactory aopProxyFactory) {
 		Assert.notNull(aopProxyFactory, "AopProxyFactory must not be null");
 		this.aopProxyFactory = aopProxyFactory;
 	}
-
 
 	/**
 	 * Customize the AopProxyFactory, allowing different strategies
@@ -61,6 +59,7 @@ public class ProxyCreatorSupport extends AdvisedSupport {
 
 	/**
 	 * Add the given AdvisedSupportListener to this proxy configuration.
+	 *
 	 * @param listener the listener to register
 	 */
 	public void addListener(AdvisedSupportListener listener) {
@@ -70,13 +69,13 @@ public class ProxyCreatorSupport extends AdvisedSupport {
 
 	/**
 	 * Remove the given AdvisedSupportListener from this proxy configuration.
+	 *
 	 * @param listener the listener to deregister
 	 */
 	public void removeListener(AdvisedSupportListener listener) {
 		Assert.notNull(listener, "AdvisedSupportListener must not be null");
 		this.listeners.remove(listener);
 	}
-
 
 	/**
 	 * Subclasses should call this to get a new AOP proxy. They should <b>not</b>
@@ -91,6 +90,7 @@ public class ProxyCreatorSupport extends AdvisedSupport {
 
 	/**
 	 * Activate this proxy configuration.
+	 *
 	 * @see AdvisedSupportListener#activated
 	 */
 	private void activate() {
@@ -102,6 +102,7 @@ public class ProxyCreatorSupport extends AdvisedSupport {
 
 	/**
 	 * Propagate advice change event to all AdvisedSupportListeners.
+	 *
 	 * @see AdvisedSupportListener#adviceChanged
 	 */
 	@Override
@@ -122,5 +123,4 @@ public class ProxyCreatorSupport extends AdvisedSupport {
 	protected final synchronized boolean isActive() {
 		return this.active;
 	}
-
 }

@@ -3,16 +3,11 @@ package org.springframework.aop.framework.adapter;
 /**
  * Singleton to publish a shared DefaultAdvisorAdapterRegistry instance.
  *
-
-
-
  * @see DefaultAdvisorAdapterRegistry
  */
 public final class GlobalAdvisorAdapterRegistry {
-
 	private GlobalAdvisorAdapterRegistry() {
 	}
-
 
 	/**
 	 * Keep track of a single instance so we can return it to classes that request it.
@@ -34,5 +29,4 @@ public final class GlobalAdvisorAdapterRegistry {
 	static void reset() {
 		instance = new DefaultAdvisorAdapterRegistry();
 	}
-
 }
