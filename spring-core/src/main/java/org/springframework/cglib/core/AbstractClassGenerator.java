@@ -1,15 +1,15 @@
 package org.springframework.cglib.core;
 
+import org.springframework.asm.ClassReader;
+import org.springframework.cglib.core.internal.Function;
+import org.springframework.cglib.core.internal.LoadingCache;
+
 import java.lang.ref.WeakReference;
 import java.security.ProtectionDomain;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.WeakHashMap;
-
-import org.springframework.asm.ClassReader;
-import org.springframework.cglib.core.internal.Function;
-import org.springframework.cglib.core.internal.LoadingCache;
 
 /**
  * Abstract class for all code-generating CGLIB utilities.
@@ -19,38 +19,22 @@ import org.springframework.cglib.core.internal.LoadingCache;
  */
 @SuppressWarnings({"rawtypes", "unchecked"})
 abstract public class AbstractClassGenerator<T> implements ClassGenerator {
-
 	private static final ThreadLocal CURRENT = new ThreadLocal();
-
 	private static volatile Map<ClassLoader, ClassLoaderData> CACHE = new WeakHashMap<ClassLoader, ClassLoaderData>();
-
 	private static final boolean DEFAULT_USE_CACHE =
 			Boolean.parseBoolean(System.getProperty("cglib.useCache", "true"));
-
-
 	private GeneratorStrategy strategy = DefaultGeneratorStrategy.INSTANCE;
-
 	private NamingPolicy namingPolicy = DefaultNamingPolicy.INSTANCE;
-
 	private Source source;
-
 	private ClassLoader classLoader;
-
 	private Class contextClass;
-
 	private String namePrefix;
-
 	private Object key;
-
 	private boolean useCache = DEFAULT_USE_CACHE;
-
 	private String className;
-
 	private boolean attemptLoad;
 
-
 	protected static class ClassLoaderData {
-
 		private final Set<String> reservedClassNames = new HashSet<String>();
 
 		/**
@@ -113,14 +97,12 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 		public Object get(AbstractClassGenerator gen, boolean useCache) {
 			if (!useCache) {
 				return gen.generate(ClassLoaderData.this);
-			}
-			else {
+			} else {
 				Object cachedValue = generatedClasses.get(gen);
 				return gen.unwrapCachedValue(cachedValue);
 			}
 		}
 	}
-
 
 	protected T wrapCachedClass(Class klass) {
 		return (T) new WeakReference(klass);
@@ -130,16 +112,13 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 		return ((WeakReference) cached).get();
 	}
 
-
 	protected static class Source {
-
 		String name;
 
 		public Source(String name) {
 			this.name = name;
 		}
 	}
-
 
 	protected AbstractClassGenerator(Source source) {
 		this.source = source;
@@ -168,6 +147,7 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 	 * <p>
 	 * Classes are cached per-<code>ClassLoader</code> using a <code>WeakHashMap</code>, to allow
 	 * the generated classes to be removed when the associated loader is garbage collected.
+	 *
 	 * @param classLoader the loader to generate the new class with, or null to use the default
 	 */
 	public void setClassLoader(ClassLoader classLoader) {
@@ -182,6 +162,7 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 
 	/**
 	 * Override the default naming policy.
+	 *
 	 * @param namingPolicy the custom policy, or null to use the default
 	 * @see DefaultNamingPolicy
 	 */
@@ -276,6 +257,7 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 	 * Default implementation returns <code>null</code> for using a default protection domain. Sub-classes may
 	 * override to use a more specific protection domain.
 	 * </p>
+	 *
 	 * @return the protection domain (<code>null</code> for using a default)
 	 */
 	protected ProtectionDomain getProtectionDomain() {
@@ -305,11 +287,9 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 				return firstInstance((Class) obj);
 			}
 			return nextInstance(obj);
-		}
-		catch (RuntimeException | Error ex) {
+		} catch (RuntimeException | Error ex) {
 			throw ex;
-		}
-		catch (Exception ex) {
+		} catch (Exception ex) {
 			throw new CodeGenerationException(ex);
 		}
 	}
@@ -334,8 +314,7 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 				try {
 					gen = classLoader.loadClass(getClassName());
 					return gen;
-				}
-				catch (ClassNotFoundException e) {
+				} catch (ClassNotFoundException e) {
 					// ignore
 				}
 			}
@@ -348,14 +327,11 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 				// SPRING PATCH END
 			}
 			return gen;
-		}
-		catch (RuntimeException | Error ex) {
+		} catch (RuntimeException | Error ex) {
 			throw ex;
-		}
-		catch (Exception ex) {
+		} catch (Exception ex) {
 			throw new CodeGenerationException(ex);
-		}
-		finally {
+		} finally {
 			CURRENT.set(save);
 		}
 	}
@@ -363,5 +339,4 @@ abstract public class AbstractClassGenerator<T> implements ClassGenerator {
 	abstract protected Object firstInstance(Class type) throws Exception;
 
 	abstract protected Object nextInstance(Object instance) throws Exception;
-
 }
