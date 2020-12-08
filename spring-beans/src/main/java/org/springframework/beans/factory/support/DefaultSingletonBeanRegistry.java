@@ -100,7 +100,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 
 	/**
 	 * Map between containing bean names: bean name to Set of bean names that the bean contains.
-	 * bean名称与bean锁包含的bean名称的映射
+	 * bean名称与bean包含的bean名称的映射
 	 */
 	private final Map<String, Set<String>> containedBeanMap = new ConcurrentHashMap<>(16);
 
