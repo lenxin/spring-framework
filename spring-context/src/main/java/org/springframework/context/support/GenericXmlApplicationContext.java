@@ -16,17 +16,13 @@ import org.springframework.core.io.Resource;
  * intentionally override certain bean definitions via an extra configuration
  * file appended to the list.
  *
-
-
- * @since 3.0
  * @see #load
  * @see XmlBeanDefinitionReader
  * @see org.springframework.context.annotation.AnnotationConfigApplicationContext
+ * @since 3.0
  */
 public class GenericXmlApplicationContext extends GenericApplicationContext {
-
 	private final XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(this);
-
 
 	/**
 	 * Create a new GenericXmlApplicationContext that needs to be
@@ -38,6 +34,7 @@ public class GenericXmlApplicationContext extends GenericApplicationContext {
 	/**
 	 * Create a new GenericXmlApplicationContext, loading bean definitions
 	 * from the given resources and automatically refreshing the context.
+	 *
 	 * @param resources the resources to load from
 	 */
 	public GenericXmlApplicationContext(Resource... resources) {
@@ -48,6 +45,7 @@ public class GenericXmlApplicationContext extends GenericApplicationContext {
 	/**
 	 * Create a new GenericXmlApplicationContext, loading bean definitions
 	 * from the given resource locations and automatically refreshing the context.
+	 *
 	 * @param resourceLocations the resources to load from
 	 */
 	public GenericXmlApplicationContext(String... resourceLocations) {
@@ -58,15 +56,15 @@ public class GenericXmlApplicationContext extends GenericApplicationContext {
 	/**
 	 * Create a new GenericXmlApplicationContext, loading bean definitions
 	 * from the given resource locations and automatically refreshing the context.
+	 *
 	 * @param relativeClass class whose package will be used as a prefix when
-	 * loading each specified resource name
+	 *                      loading each specified resource name
 	 * @param resourceNames relatively-qualified names of resources to load
 	 */
 	public GenericXmlApplicationContext(Class<?> relativeClass, String... resourceNames) {
 		load(relativeClass, resourceNames);
 		refresh();
 	}
-
 
 	/**
 	 * Exposes the underlying {@link XmlBeanDefinitionReader} for additional
@@ -93,13 +91,13 @@ public class GenericXmlApplicationContext extends GenericApplicationContext {
 		this.reader.setEnvironment(getEnvironment());
 	}
 
-
 	//---------------------------------------------------------------------
 	// Convenient methods for loading XML bean definition files
 	//---------------------------------------------------------------------
 
 	/**
 	 * Load bean definitions from the given XML resources.
+	 *
 	 * @param resources one or more resources to load from
 	 */
 	public void load(Resource... resources) {
@@ -108,6 +106,7 @@ public class GenericXmlApplicationContext extends GenericApplicationContext {
 
 	/**
 	 * Load bean definitions from the given XML resources.
+	 *
 	 * @param resourceLocations one or more resource locations to load from
 	 */
 	public void load(String... resourceLocations) {
@@ -116,8 +115,9 @@ public class GenericXmlApplicationContext extends GenericApplicationContext {
 
 	/**
 	 * Load bean definitions from the given XML resources.
+	 *
 	 * @param relativeClass class whose package will be used as a prefix when
-	 * loading each specified resource name
+	 *                      loading each specified resource name
 	 * @param resourceNames relatively-qualified names of resources to load
 	 */
 	public void load(Class<?> relativeClass, String... resourceNames) {
@@ -127,5 +127,4 @@ public class GenericXmlApplicationContext extends GenericApplicationContext {
 		}
 		this.load(resources);
 	}
-
 }

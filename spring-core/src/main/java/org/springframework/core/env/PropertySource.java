@@ -41,9 +41,7 @@ import org.springframework.util.ObjectUtils;
  */
 public abstract class PropertySource<T> {
 	protected final Log logger = LogFactory.getLog(getClass());
-
 	protected final String name;
-
 	protected final T source;
 
 	/**
