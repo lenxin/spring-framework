@@ -1,12 +1,12 @@
 package org.springframework.beans;
 
+import org.springframework.core.Ordered;
+import org.springframework.lang.Nullable;
+
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.lang.reflect.Method;
-
-import org.springframework.core.Ordered;
-import org.springframework.lang.Nullable;
 
 /**
  * {@link BeanInfoFactory} implementation that evaluates whether bean classes have
@@ -16,13 +16,11 @@ import org.springframework.lang.Nullable;
  * <p>Ordered at {@link Ordered#LOWEST_PRECEDENCE} to allow other user-defined
  * {@link BeanInfoFactory} types to take precedence.
  *
-
- * @since 3.2
  * @see BeanInfoFactory
  * @see CachedIntrospectionResults
+ * @since 3.2
  */
 public class ExtendedBeanInfoFactory implements BeanInfoFactory, Ordered {
-
 	/**
 	 * Return an {@link ExtendedBeanInfo} for the given bean class, if applicable.
 	 */
@@ -49,5 +47,4 @@ public class ExtendedBeanInfoFactory implements BeanInfoFactory, Ordered {
 	public int getOrder() {
 		return Ordered.LOWEST_PRECEDENCE;
 	}
-
 }

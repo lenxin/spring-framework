@@ -5,15 +5,13 @@ import java.util.UUID;
 /**
  * Contract for generating universally unique identifiers {@link UUID (UUIDs)}.
  *
-
  * @since 4.0
  */
 public interface IdGenerator {
-
 	/**
 	 * Generate a new identifier.
+	 *
 	 * @return the generated identifier
 	 */
 	UUID generateId();
-
 }

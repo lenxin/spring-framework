@@ -1,12 +1,12 @@
 package org.springframework.dao.annotation;
 
-import java.lang.annotation.Annotation;
-
 import org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.Assert;
+
+import java.lang.annotation.Annotation;
 
 /**
  * Bean post-processor that automatically applies persistence exception translation to any
@@ -22,7 +22,7 @@ import org.springframework.util.Assert;
  * PersistenceExceptionTranslator} interface, which are subsequently asked to translate
  * candidate exceptions.
  *
-
+ *
  * <p>All of Spring's applicable resource factories (e.g.
  * {@link org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean})
  * implement the {@code PersistenceExceptionTranslator} interface out of the box.
@@ -31,19 +31,15 @@ import org.springframework.util.Assert;
  * with the {@code @Repository} annotation, along with defining this post-processor
  * as a bean in the application context.
  *
-
-
- * @since 2.0
  * @see PersistenceExceptionTranslationAdvisor
  * @see org.springframework.stereotype.Repository
  * @see org.springframework.dao.DataAccessException
  * @see org.springframework.dao.support.PersistenceExceptionTranslator
+ * @since 2.0
  */
 @SuppressWarnings("serial")
 public class PersistenceExceptionTranslationPostProcessor extends AbstractBeanFactoryAwareAdvisingPostProcessor {
-
 	private Class<? extends Annotation> repositoryAnnotationType = Repository.class;
-
 
 	/**
 	 * Set the 'repository' annotation type.
@@ -51,6 +47,7 @@ public class PersistenceExceptionTranslationPostProcessor extends AbstractBeanFa
 	 * <p>This setter property exists so that developers can provide their own
 	 * (non-Spring-specific) annotation type to indicate that a class has a
 	 * repository role.
+	 *
 	 * @param repositoryAnnotationType the desired annotation type
 	 */
 	public void setRepositoryAnnotationType(Class<? extends Annotation> repositoryAnnotationType) {
@@ -69,5 +66,4 @@ public class PersistenceExceptionTranslationPostProcessor extends AbstractBeanFa
 		this.advisor = new PersistenceExceptionTranslationAdvisor(
 				(ListableBeanFactory) beanFactory, this.repositoryAnnotationType);
 	}
-
 }

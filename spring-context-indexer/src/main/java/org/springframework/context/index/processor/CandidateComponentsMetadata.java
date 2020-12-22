@@ -7,18 +7,14 @@ import java.util.List;
 /**
  * Meta-data for candidate components.
  *
-
  * @since 5.0
  */
 class CandidateComponentsMetadata {
-
 	private final List<ItemMetadata> items;
-
 
 	public CandidateComponentsMetadata() {
 		this.items = new ArrayList<>();
 	}
-
 
 	public void add(ItemMetadata item) {
 		this.items.add(item);
@@ -32,5 +28,4 @@ class CandidateComponentsMetadata {
 	public String toString() {
 		return "CandidateComponentsMetadata{" + "items=" + this.items + '}';
 	}
-
 }

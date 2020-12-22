@@ -1,31 +1,26 @@
 package org.springframework.context.index.processor;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
 import javax.lang.model.element.AnnotationMirror;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.ElementKind;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * A {@link StereotypesProvider} implementation that extracts the stereotypes
  * flagged by the {@value INDEXED_ANNOTATION} annotation. This implementation
  * honors stereotypes defined this way on meta-annotations.
  *
-
  * @since 5.0
  */
 class IndexedStereotypesProvider implements StereotypesProvider {
-
 	private static final String INDEXED_ANNOTATION = "org.springframework.stereotype.Indexed";
-
 	private final TypeHelper typeHelper;
-
 
 	public IndexedStereotypesProvider(TypeHelper typeHelper) {
 		this.typeHelper = typeHelper;
 	}
-
 
 	@Override
 	public Set<String> getStereotypes(Element element) {
@@ -66,8 +61,7 @@ class IndexedStereotypesProvider implements StereotypesProvider {
 	}
 
 	private Element collectStereotypes(Set<Element> seen, Set<String> stereotypes, Element element,
-			AnnotationMirror annotation) {
-
+									   AnnotationMirror annotation) {
 		if (isIndexedAnnotation(annotation)) {
 			stereotypes.add(this.typeHelper.getType(element));
 		}
@@ -98,5 +92,4 @@ class IndexedStereotypesProvider implements StereotypesProvider {
 	private boolean isIndexedAnnotation(AnnotationMirror annotation) {
 		return INDEXED_ANNOTATION.equals(annotation.getAnnotationType().toString());
 	}
-
 }

@@ -41,7 +41,6 @@ import java.util.Collection;
  */
 public class SimpleConstructorNamespaceHandler implements NamespaceHandler {
 	private static final String REF_SUFFIX = "-ref";
-
 	private static final String DELIMITER_PREFIX = "_";
 
 	@Override

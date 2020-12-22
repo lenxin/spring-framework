@@ -6,15 +6,11 @@ import java.util.concurrent.atomic.AtomicLong;
 /**
  * A simple {@link IdGenerator} that starts at 1 and increments by 1 with each call.
  *
-
  * @since 4.1.5
  */
 public class SimpleIdGenerator implements IdGenerator {
-
 	private final AtomicLong mostSigBits = new AtomicLong(0);
-
 	private final AtomicLong leastSigBits = new AtomicLong(0);
-
 
 	@Override
 	public UUID generateId() {
@@ -24,5 +20,4 @@ public class SimpleIdGenerator implements IdGenerator {
 		}
 		return new UUID(this.mostSigBits.get(), leastSigBits);
 	}
-
 }

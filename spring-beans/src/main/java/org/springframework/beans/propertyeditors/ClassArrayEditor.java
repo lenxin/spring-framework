@@ -1,12 +1,12 @@
 package org.springframework.beans.propertyeditors;
 
-import java.beans.PropertyEditorSupport;
-import java.util.StringJoiner;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
+
+import java.beans.PropertyEditorSupport;
+import java.util.StringJoiner;
 
 /**
  * Property editor for an array of {@link Class Classes}, to enable
@@ -16,15 +16,11 @@ import org.springframework.util.StringUtils;
  * <p>Also supports "java.lang.String[]"-style array class names, in contrast
  * to the standard {@link Class#forName(String)} method.
  *
-
-
  * @since 2.0
  */
 public class ClassArrayEditor extends PropertyEditorSupport {
-
 	@Nullable
 	private final ClassLoader classLoader;
-
 
 	/**
 	 * Create a default {@code ClassEditor}, using the thread
@@ -37,13 +33,13 @@ public class ClassArrayEditor extends PropertyEditorSupport {
 	/**
 	 * Create a default {@code ClassArrayEditor}, using the given
 	 * {@code ClassLoader}.
+	 *
 	 * @param classLoader the {@code ClassLoader} to use
-	 * (or pass {@code null} for the thread context {@code ClassLoader})
+	 *                    (or pass {@code null} for the thread context {@code ClassLoader})
 	 */
 	public ClassArrayEditor(@Nullable ClassLoader classLoader) {
 		this.classLoader = (classLoader != null ? classLoader : ClassUtils.getDefaultClassLoader());
 	}
-
 
 	@Override
 	public void setAsText(String text) throws IllegalArgumentException {
@@ -55,8 +51,7 @@ public class ClassArrayEditor extends PropertyEditorSupport {
 				classes[i] = ClassUtils.resolveClassName(className, this.classLoader);
 			}
 			setValue(classes);
-		}
-		else {
+		} else {
 			setValue(null);
 		}
 	}
@@ -73,5 +68,4 @@ public class ClassArrayEditor extends PropertyEditorSupport {
 		}
 		return sj.toString();
 	}
-
 }

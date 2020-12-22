@@ -3,11 +3,9 @@ package org.springframework.beans.support;
 /**
  * Definition for sorting bean instances by a property.
  *
-
  * @since 26.05.2003
  */
 public interface SortDefinition {
-
 	/**
 	 * Return the name of the bean property to compare.
 	 * Can also be a nested bean property path.
@@ -23,5 +21,4 @@ public interface SortDefinition {
 	 * Return whether to sort ascending (true) or descending (false).
 	 */
 	boolean isAscending();
-
 }

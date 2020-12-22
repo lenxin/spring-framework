@@ -1,10 +1,10 @@
 package org.springframework.beans.propertyeditors;
 
-import java.beans.PropertyEditorSupport;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
+
+import java.beans.PropertyEditorSupport;
 
 /**
  * Property editor for {@link Class java.lang.Class}, to enable the direct
@@ -14,17 +14,13 @@ import org.springframework.util.StringUtils;
  * <p>Also supports "java.lang.String[]"-style array class names, in contrast to the
  * standard {@link Class#forName(String)} method.
  *
-
-
- * @since 13.05.2003
  * @see Class#forName
  * @see org.springframework.util.ClassUtils#forName(String, ClassLoader)
+ * @since 13.05.2003
  */
 public class ClassEditor extends PropertyEditorSupport {
-
 	@Nullable
 	private final ClassLoader classLoader;
-
 
 	/**
 	 * Create a default ClassEditor, using the thread context ClassLoader.
@@ -35,20 +31,19 @@ public class ClassEditor extends PropertyEditorSupport {
 
 	/**
 	 * Create a default ClassEditor, using the given ClassLoader.
+	 *
 	 * @param classLoader the ClassLoader to use
-	 * (or {@code null} for the thread context ClassLoader)
+	 *                    (or {@code null} for the thread context ClassLoader)
 	 */
 	public ClassEditor(@Nullable ClassLoader classLoader) {
 		this.classLoader = (classLoader != null ? classLoader : ClassUtils.getDefaultClassLoader());
 	}
 
-
 	@Override
 	public void setAsText(String text) throws IllegalArgumentException {
 		if (StringUtils.hasText(text)) {
 			setValue(ClassUtils.resolveClassName(text.trim(), this.classLoader));
-		}
-		else {
+		} else {
 			setValue(null);
 		}
 	}
@@ -58,10 +53,8 @@ public class ClassEditor extends PropertyEditorSupport {
 		Class<?> clazz = (Class<?>) getValue();
 		if (clazz != null) {
 			return ClassUtils.getQualifiedName(clazz);
-		}
-		else {
+		} else {
 			return "";
 		}
 	}
-
 }

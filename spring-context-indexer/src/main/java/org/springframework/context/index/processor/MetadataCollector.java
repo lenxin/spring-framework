@@ -1,46 +1,38 @@
 package org.springframework.context.index.processor;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Used by {@link CandidateComponentsIndexer} to collect {@link CandidateComponentsMetadata}.
  *
-
  * @since 5.0
  */
 class MetadataCollector {
-
 	private final List<ItemMetadata> metadataItems = new ArrayList<>();
-
 	private final ProcessingEnvironment processingEnvironment;
-
 	private final CandidateComponentsMetadata previousMetadata;
-
 	private final TypeHelper typeHelper;
-
 	private final Set<String> processedSourceTypes = new HashSet<>();
-
 
 	/**
 	 * Create a new {@code MetadataProcessor} instance.
+	 *
 	 * @param processingEnvironment the processing environment of the build
-	 * @param previousMetadata any previous metadata or {@code null}
+	 * @param previousMetadata      any previous metadata or {@code null}
 	 */
 	public MetadataCollector(ProcessingEnvironment processingEnvironment,
-			CandidateComponentsMetadata previousMetadata) {
-
+							 CandidateComponentsMetadata previousMetadata) {
 		this.processingEnvironment = processingEnvironment;
 		this.previousMetadata = previousMetadata;
 		this.typeHelper = new TypeHelper(processingEnvironment);
 	}
-
 
 	public void processing(RoundEnvironment roundEnv) {
 		for (Element element : roundEnv.getRootElements()) {
@@ -88,5 +80,4 @@ class MetadataCollector {
 	private boolean processedInCurrentBuild(String sourceType) {
 		return this.processedSourceTypes.contains(sourceType);
 	}
-
 }

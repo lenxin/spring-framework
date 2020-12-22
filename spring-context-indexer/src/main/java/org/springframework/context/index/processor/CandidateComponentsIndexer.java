@@ -1,45 +1,27 @@
 package org.springframework.context.index.processor;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.EnumSet;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import javax.annotation.processing.Completion;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
-import javax.lang.model.element.AnnotationMirror;
-import javax.lang.model.element.Element;
-import javax.lang.model.element.ElementKind;
-import javax.lang.model.element.ExecutableElement;
-import javax.lang.model.element.Modifier;
-import javax.lang.model.element.TypeElement;
+import javax.lang.model.element.*;
+import java.io.IOException;
+import java.util.*;
 
 /**
  * Annotation {@link Processor} that writes {@link CandidateComponentsMetadata}
  * file for spring components.
  *
-
-
  * @since 5.0
  */
 public class CandidateComponentsIndexer implements Processor {
-
 	private static final Set<ElementKind> TYPE_KINDS =
 			Collections.unmodifiableSet(EnumSet.of(ElementKind.CLASS, ElementKind.INTERFACE));
-
 	private MetadataStore metadataStore;
-
 	private MetadataCollector metadataCollector;
-
 	private TypeHelper typeHelper;
-
 	private List<StereotypesProvider> stereotypesProviders;
-
 
 	@Override
 	public Set<String> getSupportedOptions() {
@@ -77,10 +59,8 @@ public class CandidateComponentsIndexer implements Processor {
 	@Override
 	public Iterable<? extends Completion> getCompletions(
 			Element element, AnnotationMirror annotation, ExecutableElement member, String userText) {
-
 		return Collections.emptyList();
 	}
-
 
 	private List<StereotypesProvider> getStereotypesProviders(ProcessingEnvironment env) {
 		List<StereotypesProvider> result = new ArrayList<>();
@@ -109,8 +89,7 @@ public class CandidateComponentsIndexer implements Processor {
 		if (!metadata.getItems().isEmpty()) {
 			try {
 				this.metadataStore.writeMetadata(metadata);
-			}
-			catch (IOException ex) {
+			} catch (IOException ex) {
 				throw new IllegalStateException("Failed to write metadata", ex);
 			}
 		}
@@ -125,5 +104,4 @@ public class CandidateComponentsIndexer implements Processor {
 		}
 		return list;
 	}
-
 }
